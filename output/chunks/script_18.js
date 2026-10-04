@@ -1,9 +1,9 @@
 import {
   t as e
-} from "./Cvwp5flV.js";
+} from "./BTxSywGu.js";
 import {
   t
-} from "./FpQRl7zl.js";
+} from "./BEbNZOhy.js";
 var n = [{
   key: `dashboard`,
   href: `/dashboard/home`,
@@ -49,6 +49,11 @@ var n = [{
   href: `/dashboard/alliances`,
   label: () => e.alliances(),
   permissions: t.dashboard.alliances
+}, {
+  key: `protections`,
+  href: `/dashboard/protections`,
+  label: () => e.protection_title(),
+  permissions: t.dashboard.protections
 }, {
   key: `audit-logs`,
   href: `/dashboard/audit-logs`,

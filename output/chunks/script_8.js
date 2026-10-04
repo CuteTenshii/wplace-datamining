@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C0Vc8ZEu.js", "./DhUcoEdH.js", "./C09aqKZr.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CGRrztKn.js", "./DhUcoEdH.js", "./DatMG_8w.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -14,10 +14,10 @@ import {
 } from "./DhUcoEdH.js";
 import {
   a as d
-} from "./C09aqKZr.js";
+} from "./DatMG_8w.js";
 import {
   t as f
-} from "./Cvwp5flV.js";
+} from "./BTxSywGu.js";
 import {
   i as p,
   r as m
@@ -4167,34 +4167,73 @@ async function ec(e, t, n) {
 var L = function(e) {
     return e[e.CONTINUE = 100] = `CONTINUE`, e[e.SWITCHING_PROTOCOLS = 101] = `SWITCHING_PROTOCOLS`, e[e.PROCESSING = 102] = `PROCESSING`, e[e.EARLY_HINTS = 103] = `EARLY_HINTS`, e[e.OK = 200] = `OK`, e[e.CREATED = 201] = `CREATED`, e[e.ACCEPTED = 202] = `ACCEPTED`, e[e.NON_AUTHORITATIVE_INFORMATION = 203] = `NON_AUTHORITATIVE_INFORMATION`, e[e.NO_CONTENT = 204] = `NO_CONTENT`, e[e.RESET_CONTENT = 205] = `RESET_CONTENT`, e[e.PARTIAL_CONTENT = 206] = `PARTIAL_CONTENT`, e[e.MULTI_STATUS = 207] = `MULTI_STATUS`, e[e.ALREADY_REPORTED = 208] = `ALREADY_REPORTED`, e[e.IM_USED = 226] = `IM_USED`, e[e.MULTIPLE_CHOICES = 300] = `MULTIPLE_CHOICES`, e[e.MOVED_PERMANENTLY = 301] = `MOVED_PERMANENTLY`, e[e.MOVED_TEMPORARILY = 302] = `MOVED_TEMPORARILY`, e[e.FOUND = 302] = `FOUND`, e[e.SEE_OTHER = 303] = `SEE_OTHER`, e[e.NOT_MODIFIED = 304] = `NOT_MODIFIED`, e[e.USE_PROXY = 305] = `USE_PROXY`, e[e.SWITCH_PROXY = 306] = `SWITCH_PROXY`, e[e.TEMPORARY_REDIRECT = 307] = `TEMPORARY_REDIRECT`, e[e.PERMANENT_REDIRECT = 308] = `PERMANENT_REDIRECT`, e[e.BAD_REQUEST = 400] = `BAD_REQUEST`, e[e.UNAUTHORIZED = 401] = `UNAUTHORIZED`, e[e.PAYMENT_REQUIRED = 402] = `PAYMENT_REQUIRED`, e[e.FORBIDDEN = 403] = `FORBIDDEN`, e[e.NOT_FOUND = 404] = `NOT_FOUND`, e[e.METHOD_NOT_ALLOWED = 405] = `METHOD_NOT_ALLOWED`, e[e.NOT_ACCEPTABLE = 406] = `NOT_ACCEPTABLE`, e[e.PROXY_AUTHENTICATION_REQUIRED = 407] = `PROXY_AUTHENTICATION_REQUIRED`, e[e.REQUEST_TIMEOUT = 408] = `REQUEST_TIMEOUT`, e[e.CONFLICT = 409] = `CONFLICT`, e[e.GONE = 410] = `GONE`, e[e.LENGTH_REQUIRED = 411] = `LENGTH_REQUIRED`, e[e.PRECONDITION_FAILED = 412] = `PRECONDITION_FAILED`, e[e.REQUEST_TOO_LONG = 413] = `REQUEST_TOO_LONG`, e[e.CONTENT_TOO_LARGE = 413] = `CONTENT_TOO_LARGE`, e[e.REQUEST_URI_TOO_LONG = 414] = `REQUEST_URI_TOO_LONG`, e[e.URI_TOO_LONG = 414] = `URI_TOO_LONG`, e[e.UNSUPPORTED_MEDIA_TYPE = 415] = `UNSUPPORTED_MEDIA_TYPE`, e[e.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = `REQUESTED_RANGE_NOT_SATISFIABLE`, e[e.RANGE_NOT_SATISFIABLE = 416] = `RANGE_NOT_SATISFIABLE`, e[e.EXPECTATION_FAILED = 417] = `EXPECTATION_FAILED`, e[e.IM_A_TEAPOT = 418] = `IM_A_TEAPOT`, e[e.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = `INSUFFICIENT_SPACE_ON_RESOURCE`, e[e.MISDIRECTED_REQUEST = 421] = `MISDIRECTED_REQUEST`, e[e.UNPROCESSABLE_ENTITY = 422] = `UNPROCESSABLE_ENTITY`, e[e.UNPROCESSABLE_CONTENT = 422] = `UNPROCESSABLE_CONTENT`, e[e.LOCKED = 423] = `LOCKED`, e[e.FAILED_DEPENDENCY = 424] = `FAILED_DEPENDENCY`, e[e.TOO_EARLY = 425] = `TOO_EARLY`, e[e.UPGRADE_REQUIRED = 426] = `UPGRADE_REQUIRED`, e[e.PRECONDITION_REQUIRED = 428] = `PRECONDITION_REQUIRED`, e[e.TOO_MANY_REQUESTS = 429] = `TOO_MANY_REQUESTS`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = `REQUEST_HEADER_FIELDS_TOO_LARGE`, e[e.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = `UNAVAILABLE_FOR_LEGAL_REASONS`, e[e.INTERNAL_SERVER_ERROR = 500] = `INTERNAL_SERVER_ERROR`, e[e.NOT_IMPLEMENTED = 501] = `NOT_IMPLEMENTED`, e[e.BAD_GATEWAY = 502] = `BAD_GATEWAY`, e[e.SERVICE_UNAVAILABLE = 503] = `SERVICE_UNAVAILABLE`, e[e.GATEWAY_TIMEOUT = 504] = `GATEWAY_TIMEOUT`, e[e.HTTP_VERSION_NOT_SUPPORTED = 505] = `HTTP_VERSION_NOT_SUPPORTED`, e[e.VARIANT_ALSO_NEGOTIATES = 506] = `VARIANT_ALSO_NEGOTIATES`, e[e.INSUFFICIENT_STORAGE = 507] = `INSUFFICIENT_STORAGE`, e[e.LOOP_DETECTED = 508] = `LOOP_DETECTED`, e[e.NOT_EXTENDED = 510] = `NOT_EXTENDED`, e[e.NETWORK_AUTHENTICATION_REQUIRED = 511] = `NETWORK_AUTHENTICATION_REQUIRED`, e[e.AWS_ELB_000 = 0] = `AWS_ELB_000`, e[e.THIS_IS_FINE = 218] = `THIS_IS_FINE`, e[e.PAGE_EXPIRED = 419] = `PAGE_EXPIRED`, e[e.METHOD_FAILURE = 420] = `METHOD_FAILURE`, e[e.ENHANCE_YOUR_CALM = 420] = `ENHANCE_YOUR_CALM`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = `REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY`, e[e.SHOPIFY_SECURITY_REJECTION = 430] = `SHOPIFY_SECURITY_REJECTION`, e[e.LOGIN_TIME_OUT = 440] = `LOGIN_TIME_OUT`, e[e.NO_RESPONSE = 444] = `NO_RESPONSE`, e[e.RETRY_WITH = 449] = `RETRY_WITH`, e[e.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = `BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS`, e[e.REDIRECT_IIS = 451] = `REDIRECT_IIS`, e[e.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = `CLIENT_CLOSED_CONNECTION_AWS_ELB`, e[e.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = `X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB`, e[e.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = `INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB`, e[e.REQUEST_HEADER_TOO_LARGE = 494] = `REQUEST_HEADER_TOO_LARGE`, e[e.SSL_CERTIFICATE_ERROR = 495] = `SSL_CERTIFICATE_ERROR`, e[e.SSL_CERTIFICATE_REQUIRED = 496] = `SSL_CERTIFICATE_REQUIRED`, e[e.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = `HTTP_REQUEST_SENT_TO_HTTPS_PORT`, e[e.INVALID_TOKEN = 498] = `INVALID_TOKEN`, e[e.CLIENT_CLOSED_REQUEST = 499] = `CLIENT_CLOSED_REQUEST`, e[e.TOKEN_REQUIRED = 499] = `TOKEN_REQUIRED`, e[e.BANDWIDTH_LIMIT_EXCEEDED = 509] = `BANDWIDTH_LIMIT_EXCEEDED`, e[e.RESOURCE_LIMIT_IS_REACHED = 508] = `RESOURCE_LIMIT_IS_REACHED`, e[e.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = `WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR`, e[e.WEB_SERVER_IS_DOWN = 521] = `WEB_SERVER_IS_DOWN`, e[e.CONNECTION_TIMED_OUT = 522] = `CONNECTION_TIMED_OUT`, e[e.ORIGIN_IS_UNREACHABLE = 523] = `ORIGIN_IS_UNREACHABLE`, e[e.A_TIMEOUT_OCCURRED = 524] = `A_TIMEOUT_OCCURRED`, e[e.SSL_HANDSHAKE_FAILED = 525] = `SSL_HANDSHAKE_FAILED`, e[e.INVALID_SSL_CERTIFICATE = 526] = `INVALID_SSL_CERTIFICATE`, e[e.RAILGUN_ERROR = 527] = `RAILGUN_ERROR`, e[e.SITE_IS_OVERLOADED = 529] = `SITE_IS_OVERLOADED`, e[e.ORIGIN_UNAVAILABLE = 530] = `ORIGIN_UNAVAILABLE`, e[e.ORIGIN_DNS_ERROR = 530] = `ORIGIN_DNS_ERROR`, e[e.SITE_IS_FROZEN = 530] = `SITE_IS_FROZEN`, e[e.TEMPORARILY_DISABLED = 540] = `TEMPORARILY_DISABLED`, e[e.UNAUTHORIZED_AWS_ELB = 561] = `UNAUTHORIZED_AWS_ELB`, e[e.NETWORK_READ_TIMEOUT_ERROR = 598] = `NETWORK_READ_TIMEOUT_ERROR`, e[e.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = `NETWORK_CONNECT_TIMEOUT_ERROR`, e[e.UNEXPECTED_TOKEN = 783] = `UNEXPECTED_TOKEN`, e[e.REQUEST_DENIED = 999] = `REQUEST_DENIED`, e
   }({}),
-  tc = class extends Error {};
+  tc = class extends Error {},
+  nc = {
+    maintenance: () => f.protection_message_maintenance(),
+    restoration: () => f.protection_message_restoration(),
+    event: () => f.protection_message_event(),
+    community: () => f.protection_message_community(),
+    memorial: () => f.protection_message_memorial(),
+    historical: () => f.protection_message_historical(),
+    contest: () => f.protection_message_contest(),
+    collaboration: () => f.protection_message_collaboration(),
+    review: () => f.protection_message_review(),
+    safety: () => f.protection_message_safety(),
+    reserved: () => f.protection_message_reserved(),
+    temporary: () => f.protection_message_temporary()
+  };
 
-function nc(e, t) {
+function rc(e) {
+  return Object.prototype.hasOwnProperty.call(nc, e) ? nc[e]() : nc.temporary()
+}
+
+function ic(e, t) {
+  return t >= Date.parse(e.endsAt) ? `ended` : e.paused ? `paused` : t < Date.parse(e.startsAt) ? `scheduled` : `active`
+}
+var ac = {
+  scheduled: () => f.protection_scheduled(),
+  active: () => f.protection_active(),
+  paused: () => f.protection_paused(),
+  ended: () => f.protection_ended()
+};
+
+function oc(e) {
+  if (!e.trim()) return [];
+  let t = e.trim().split(/[\s,;]+/);
+  return t.length > 1e3 || t.some(e => !/^[1-9]\d*$/.test(e) || Number(e) > 2147483647) ? null : [...new Set(t.map(Number))].sort((e, t) => e - t)
+}
+
+function sc(e) {
+  let t = new Date(e);
+  return new Date(t.getTime() - t.getTimezoneOffset() * 6e4).toISOString().slice(0, 16)
+}
+
+function cc(e, t) {
   return (t == null ? void 0 : t.aborted) === !0 || typeof DOMException < `u` && e instanceof DOMException && e.name === `AbortError`
 }
-var rc = 6e3,
-  ic = new WeakMap,
-  ac = new WeakMap,
-  oc = class {
+var lc = 6e3,
+  uc = new WeakMap,
+  dc = new WeakMap,
+  fc = class {
     get online() {
-      return l(a(ic, this))
+      return l(a(uc, this))
     }
     set online(e) {
-      i(a(ic, this), e, !0)
+      i(a(uc, this), e, !0)
     }
     get serverTimeOffsetMs() {
-      return l(a(ac, this))
+      return l(a(dc, this))
     }
     set serverTimeOffsetMs(e) {
-      i(a(ac, this), e, !0)
+      i(a(dc, this), e, !0)
     }
     constructor(t) {
-      c(this, `url`, void 0), n(this, ic, e(!0)), c(this, `probe`, null), n(this, ac, e(null)), this.url = t
+      c(this, `url`, void 0), n(this, uc, e(!0)), c(this, `probe`, null), n(this, dc, e(null)), this.url = t
     }
     checkConnection() {
       if (this.probe) return this.probe;
       let e = new AbortController,
-        t = setTimeout(() => e.abort(), rc);
+        t = setTimeout(() => e.abort(), lc);
       return this.probe = fetch(`${this.url}/health`, {
         cache: `no-store`,
         signal: e.signal
@@ -4234,18 +4273,18 @@ var rc = 6e3,
         let n = await fetch(`${this.url}${e}`, t);
         return this.online = !0, this.updateServerTimeEstimate(n), n
       } catch (e) {
-        throw nc(e, t == null ? void 0 : t.signal) ? e : (console.error(`Fetch error:`, e), this.checkConnection(), Error(f.cant_reach_the_server()))
+        throw cc(e, t == null ? void 0 : t.signal) ? e : (console.error(`Fetch error:`, e), this.checkConnection(), Error(f.cant_reach_the_server()))
       }
     }
     async request(e, t) {
-      var n;
+      var n, r;
       t = {
         credentials: `include`,
         ...t
       };
-      let r = e.split(`?`)[0],
-        i = async () => {
-          let e = await ec(t.method ?? `GET`, r, t.body);
+      let i = e.split(`?`)[0],
+        a = async () => {
+          let e = await ec(t.method ?? `GET`, i, t.body);
           if (!e) return t;
           let n = new Headers(t.headers);
           for (let [t, r] of Object.entries(e)) n.set(t, r);
@@ -4253,20 +4292,24 @@ var rc = 6e3,
             ...t,
             headers: n
           }
-        }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./C0Vc8ZEu.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
-      if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
-      let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
-      if (a.status === 403 && o) {
+        }, o = await this.guardedFetch(e, await a());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./CGRrztKn.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), o.status === L.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (o.status === L.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
+      let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
+      if (o.status === 403 && s) {
         if ($.setCfLikelyAutomated(!0), !await vs()) throw Error(f.challenge_verification_not_completed());
-        a = await this.guardedFetch(e, await i())
+        o = await this.guardedFetch(e, await a())
       }
       if ((t == null ? void 0 : t.throwOnStatus) ?? !0) {
-        if (a.status === L.TOO_MANY_REQUESTS) throw new tc(f.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
-        if (a.status === L.REQUEST_TIMEOUT) throw Error(f.request_timeout());
-        if (a.status === L.SERVICE_UNAVAILABLE) throw Error(f.service_unavailable())
+        if (o.status === L.TOO_MANY_REQUESTS) throw new tc(f.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
+        if (o.status === L.REQUEST_TIMEOUT) throw Error(f.request_timeout());
+        if (o.status === L.SERVICE_UNAVAILABLE) throw Error(f.service_unavailable())
       }
-      return a
+      if (o.status === L.FORBIDDEN && (r = o.headers.get(`content-type`)) != null && r.includes(`application/json`)) {
+        let e = await o.clone().json().catch(() => null);
+        if ((e == null ? void 0 : e.error) === `pixel-protected`) throw Error(rc(e.messageKey))
+      }
+      return o
     }
   },
   R = class extends Error {
@@ -4274,9 +4317,9 @@ var rc = 6e3,
       super(e), c(this, `message`, void 0), c(this, `status`, void 0), this.message = e, this.status = t
     }
   },
-  sc = class extends Error {};
+  pc = class extends Error {};
 
-function cc(e) {
+function mc(e) {
   return class extends e {
     async me() {
       let e = await this.request(`/me`, {
@@ -4530,7 +4573,7 @@ function cc(e) {
   }
 }
 
-function lc(e) {
+function hc(e) {
   return class extends e {
     async getAdminB2BBusinesses(e = ``, t = 0) {
       let n = new URLSearchParams({
@@ -6679,6 +6722,10 @@ var z = {
           moderate: `staff.dashboard.alliances.moderate`,
           punish: `staff.dashboard.alliances.punish`
         },
+        protections: {
+          view: `staff.dashboard.protections.view`,
+          manage: `staff.dashboard.protections.manage`
+        },
         auditLogs: {
           see: `staff.dashboard.audit_logs.see`,
           events: {
@@ -6719,6 +6766,7 @@ var z = {
             punishmentCacheReloadRequested: `staff.dashboard.audit_logs.events.punishment_cache_reload_requested`,
             canvasPixelBatchQueued: `staff.dashboard.audit_logs.events.canvas_pixel_batch_queued`,
             canvasAreaReversed: `staff.dashboard.audit_logs.events.canvas_area_reversed`,
+            pixelProtectionChanged: `staff.dashboard.audit_logs.events.pixel_protection_changed`,
             canvasAutoPaintQueued: `staff.dashboard.audit_logs.events.canvas_auto_paint_queued`,
             cosmeticCreated: `staff.dashboard.audit_logs.events.cosmetic_created`,
             cosmeticUpdated: `staff.dashboard.audit_logs.events.cosmetic_updated`,
@@ -6850,30 +6898,30 @@ var z = {
       memberPageSize: 50
     }
   },
-  uc = z,
-  dc = z.seasons,
-  fc = z.seasons.length - 1,
-  pc = z.seasons[fc].zoom,
-  mc = z.seasons[fc].tileSize,
-  hc = z.permissions,
-  gc = z.settings,
-  _c = z.platforms.android,
-  vc = _c.googlePlayBilling.price;
+  gc = z,
+  _c = z.seasons,
+  vc = z.seasons.length - 1,
+  yc = z.seasons[vc].zoom,
+  bc = z.seasons[vc].tileSize,
+  xc = z.permissions,
+  Sc = z.settings,
+  Cc = z.platforms.android,
+  wc = Cc.googlePlayBilling.price;
 
-function yc(e) {
-  return uc.countries[e - 1]
+function Tc(e) {
+  return gc.countries[e - 1]
 }
 
-function bc(e) {
-  return bc.map.get(e)
+function Ec(e) {
+  return Ec.map.get(e)
 }(function(e) {
-  e.map = xc(e.sharedProducts = Object.entries(uc.products).map(([e, t]) => ({
+  e.map = Dc(e.sharedProducts = Object.entries(gc.products).map(([e, t]) => ({
     ...t,
     productId: e
   })).filter(e => `lookupKey` in e), e => e.lookupKey)
-})(bc || (bc = {}));
+})(Ec || (Ec = {}));
 
-function xc(e, t) {
+function Dc(e, t) {
   let n = new Map;
   for (let r in e) {
     let i = Reflect.get(e, r),
@@ -6882,12 +6930,12 @@ function xc(e, t) {
   }
   return n
 }
-var Sc = 5e3,
-  Cc = 4,
+var Oc = 5e3,
+  kc = 4,
   B = 64,
-  wc = 8;
+  Ac = 8;
 
-function Tc(e) {
+function jc(e) {
   let t = Array.isArray(e.locations) ? e.locations.map(t => ({
     ...t,
     opacity: t.opacity ?? e.opacity,
@@ -6907,12 +6955,12 @@ function Tc(e) {
   }
 }
 
-function Ec(e) {
+function Mc(e) {
   let t = e.maxX - e.minX + 1,
     n = e.maxY - e.minY + 1;
   if (t <= 0 || n <= 0) return [];
-  let r = Math.min(t, Sc),
-    i = Math.max(1, Math.floor(Sc / r)),
+  let r = Math.min(t, Oc),
+    i = Math.max(1, Math.floor(Oc / r)),
     a = [];
   for (let t = e.minY; t <= e.maxY; t += i)
     for (let n = e.minX; n <= e.maxX; n += r) a.push({
@@ -6924,7 +6972,7 @@ function Ec(e) {
   return a
 }
 
-function Dc(e) {
+function Nc(e) {
   let t = [],
     n = Math.floor(e.minX / B),
     r = Math.floor(e.maxX / B),
@@ -6940,12 +6988,12 @@ function Dc(e) {
   return t
 }
 
-function Oc(e) {
+function Pc(e) {
   let t = (e == null ? void 0 : e.role) ?? (e == null ? void 0 : e.alliance_role);
   return t === `mod` || t === `admin` || t === `leader` ? t : `member`
 }
 
-function kc(e) {
+function Fc(e) {
   return class extends e {
     async getAlliance() {
       let e = await this.request(`/alliance`, {
@@ -7042,7 +7090,7 @@ function kc(e) {
         let e = await n.json();
         return {
           ...e,
-          templates: (e.templates ?? []).map(Tc),
+          templates: (e.templates ?? []).map(jc),
           usedBytes: e.usedBytes ?? 0,
           byteLimit: e.byteLimit ?? 67108864,
           draftOptions: e.draftOptions ?? []
@@ -7058,7 +7106,7 @@ function kc(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === L.CREATED || r.status === L.OK) return Tc(await r.json());
+      if (r.status === L.CREATED || r.status === L.OK) return jc(await r.json());
       let i = await r.json().catch(() => ({}));
       throw i.error === `template_limit_reached` ? Error(f.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
@@ -7071,7 +7119,7 @@ function kc(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === L.OK) return Tc(await n.json());
+      if (n.status === L.OK) return jc(await n.json());
       throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async patchAllianceTemplatePlacement(e, t) {
@@ -7095,7 +7143,7 @@ function kc(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === L.OK) return Tc(await r.json());
+      if (r.status === L.OK) return jc(await r.json());
       let i = await r.json().catch(() => ({}));
       throw i.error === `template_image_changed` ? Error(f.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
@@ -7802,7 +7850,7 @@ function kc(e) {
     }
     async getAllianceHqWaybackEvents(e, t) {
       let n = new URLSearchParams;
-      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? gc.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
+      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? Sc.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/events?${n.toString()}`, {
         credentials: `include`
       });
@@ -7811,12 +7859,12 @@ function kc(e) {
       return r.json()
     }
     async getAdminAllianceHqArea(e, t) {
-      let n = Ec(t);
+      let n = Mc(t);
       if (n.length === 0) throw Error(f.unexpected_server_error());
       let r = await this.getAdminAllianceHqAreaChunk(e, n[0]),
         i = [...r.pixels];
-      for (let t = 1; t < n.length; t += Cc) {
-        let a = await Promise.all(n.slice(t, t + Cc).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
+      for (let t = 1; t < n.length; t += kc) {
+        let a = await Promise.all(n.slice(t, t + kc).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
         for (let e of a) i.push(...e.pixels)
       }
       return {
@@ -7827,11 +7875,11 @@ function kc(e) {
     }
     async getAdminAllianceHqSelectArea(e, t, n) {
       var r;
-      let i = Dc(t),
+      let i = Nc(t),
         a = Array(i.length),
         o = 0,
         s = Array.from({
-          length: Math.min(wc, i.length)
+          length: Math.min(Ac, i.length)
         }, async () => {
           for (; o < i.length;) {
             let t = o;
@@ -7901,8 +7949,8 @@ function kc(e) {
     async reverseAdminAllianceHqPixels(e, t, n, r = !1) {
       let i = 0,
         a = 0;
-      for (let o = 0; o < t.length; o += Sc) {
-        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + Sc), n, r);
+      for (let o = 0; o < t.length; o += Oc) {
+        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + Oc), n, r);
         i += s.reversed, a = s.eventHwm
       }
       return {
@@ -7977,7 +8025,7 @@ function kc(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: Oc(e),
+          role: Pc(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         }))
@@ -8013,7 +8061,7 @@ function kc(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: Oc(e),
+          role: Pc(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         })),
@@ -8207,7 +8255,7 @@ function kc(e) {
   }
 }
 
-function Ac(e) {
+function Ic(e) {
   return class extends e {
     async getUserAnticheat(e) {
       let t = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(e)}`, {
@@ -8252,7 +8300,7 @@ function Ac(e) {
   }
 }
 
-function jc(e) {
+function Lc(e) {
   return class extends e {
     async autoReviewBan(e) {
       let t = await this.request(`/staff/dashboard/users/auto-review-ban`, {
@@ -8352,7 +8400,7 @@ function jc(e) {
   }
 }
 
-function Mc(e) {
+function Rc(e) {
   return class extends e {
     async getDeviceAttestChallenge() {
       let e = await this.request(`/device/attest/challenge`, {
@@ -8435,7 +8483,7 @@ function Mc(e) {
   }
 }
 
-function Nc(e) {
+function zc(e) {
   return class extends e {
     async getUserFrames() {
       let e = await this.request(`/me/frames`, {
@@ -8651,7 +8699,7 @@ var V = {
   millisecond: 1
 };
 
-function Pc(e) {
+function Bc(e) {
   let t = Math.floor(e / V.hour);
   e -= t * V.hour;
   let n = Math.floor(e / V.minute);
@@ -8660,12 +8708,12 @@ function Pc(e) {
   return t > 0 ? `${t}:${n.toString().padStart(2,`0`)}:${r}` : `${n}:${r}`
 }
 
-function Fc(e) {
+function Vc(e) {
   return `${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,`0`)}-${String(e.getDate()).padStart(2,`0`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}:${String(e.getSeconds()).padStart(2,`0`)}`
 }
-var Ic = 30 * V.minute;
+var Hc = 30 * V.minute;
 
-function Lc(e) {
+function Uc(e) {
   return class extends e {
     constructor(...e) {
       super(...e), c(this, `lastHotspotRequestAt`, 0)
@@ -8703,7 +8751,7 @@ function Lc(e) {
       throw Error(f.leaderboard_disabled_temporarily())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < Ic || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
+      Date.now() - this.lastHotspotRequestAt < Hc || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
         credentials: `include`,
         keepalive: !0,
         throwOnStatus: !1
@@ -8725,7 +8773,7 @@ function Lc(e) {
   }
 }
 
-function Rc(e) {
+function Wc(e) {
   return class extends e {
     async postCaptchaSession(e, t = `include`) {
       let n = await this.request(`/anticheat/captcha/session`, {
@@ -8751,7 +8799,7 @@ function Rc(e) {
     }
   }
 }
-var zc = {
+var Gc = {
     griefing: f.griefing(),
     "multi-accounting": f.multi_accounting(),
     "hate-speech": f.hate_speech(),
@@ -8760,7 +8808,7 @@ var zc = {
     "inappropriate-content": f.inappropriate_content(),
     other: f.breaking_the_rules()
   },
-  Bc = {
+  Kc = {
     doxxing: f.doxxing_description(),
     "hate-speech": f.hate_speech_description(),
     griefing: f.griefing_description(),
@@ -8769,7 +8817,7 @@ var zc = {
     "inappropriate-content": f.inappropriate_content_description(),
     other: f.breaking_the_rules_description()
   },
-  Vc = {
+  qc = {
     doxxing: `text-red-600`,
     "hate-speech": `text-red-400`,
     "inappropriate-content": `text-amber-500`,
@@ -8778,7 +8826,7 @@ var zc = {
     griefing: `text-amber-200`,
     other: `text-cyan-600`
   },
-  Hc = {
+  Jc = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -8787,7 +8835,7 @@ var zc = {
     other: 5,
     griefing: 6
   },
-  Uc = {
+  Yc = {
     griefing: `topic-2`,
     "inappropriate-content": `topic-1`,
     bot: `topic-3`,
@@ -8796,21 +8844,21 @@ var zc = {
     doxxing: `topic-1`,
     other: ``
   },
-  Wc = 365 * V.day;
+  Xc = 365 * V.day;
 
-function Gc(e) {
+function Zc(e) {
   if (!e) return null;
   let t = (e instanceof Date ? e : new Date(e)).getTime();
   return Number.isFinite(t) ? t : null
 }
 
-function Kc(e, t = Date.now()) {
-  let n = Gc(e);
-  return n !== null && n - t >= Wc
+function Qc(e, t = Date.now()) {
+  let n = Zc(e);
+  return n !== null && n - t >= Xc
 }
 
-function qc(e, t = Date.now()) {
-  let n = Gc(e);
+function $c(e, t = Date.now()) {
+  let n = Zc(e);
   if (n === null || n <= t) return {
     days: 0,
     hours: 0,
@@ -8824,7 +8872,7 @@ function qc(e, t = Date.now()) {
   }
 }
 
-function Jc(e) {
+function el(e) {
   return class extends e {
     async getModeratorTickets() {
       let e = await this.request(`/staff/tickets/get`, {
@@ -8833,7 +8881,7 @@ function Jc(e) {
       });
       if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
-      for (let e of t.tickets) e.reports.sort((e, t) => Hc[e.reason] - Hc[t.reason]);
+      for (let e of t.tickets) e.reports.sort((e, t) => Jc[e.reason] - Jc[t.reason]);
       return t
     }
     async countMyTicketsClosedToday() {
@@ -9295,7 +9343,7 @@ function Jc(e) {
   }
 }
 
-function Yc(e) {
+function tl(e) {
   return class extends e {
     async notificationJSON(e, t = {}) {
       var n, r;
@@ -9454,16 +9502,16 @@ function Yc(e) {
     }
   }
 }
-var Xc = [`droplets`, `prism`];
+var nl = [`droplets`, `prism`];
 
-function Zc(e) {
-  return Xc.map(t => ({
+function rl(e) {
+  return nl.map(t => ({
     currency: t,
     amount: e.reduce((e, n) => e + (n.currency === t ? n.amount : 0), 0)
   })).filter(e => e.amount > 0)
 }
 
-function Qc(e) {
+function il(e) {
   return class extends e {
     async driveStatus() {
       let e = await this.request(`/drive/status`, {
@@ -9622,7 +9670,7 @@ function Qc(e) {
   }
 }
 
-function $c(e, t) {
+function al(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r),
@@ -9632,7 +9680,7 @@ function $c(e, t) {
   return n
 }
 
-function el(e, t) {
+function ol(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r);
@@ -9641,10 +9689,10 @@ function el(e, t) {
   return n
 }
 
-function tl(e) {
+function sl(e) {
   return class extends e {
     async paint(e) {
-      let t = $c(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let t = al(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         n = {
           season: e[0].season,
           tiles: Object.values(t).map(e => ({
@@ -9804,7 +9852,7 @@ function tl(e) {
       return a.json()
     }
     async sendPaintRequests(e, t, n, r) {
-      let i = $c(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let i = al(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         a = (await Promise.all(Object.values(i).map(async e => {
           let [r, i] = e[0].tile, a = e[0].season, o = {
             colors: e.map(e => e.colorIdx),
@@ -9844,8 +9892,8 @@ function tl(e) {
       }
     }
     async adminAutoPainterPaint(e, t, n) {
-      let r = nl(e),
-        i = await rl(r),
+      let r = cl(e),
+        i = await ll(r),
         a = new FormData;
       a.append(`fingerprint`, t), a.append(`season`, r.season.toString()), a.append(`px0`, r.offsetX.toString()), a.append(`py0`, r.offsetY.toString()), a.append(`width`, r.width.toString()), a.append(`height`, r.height.toString()), a.append(`pixels`, e.length.toString()), a.append(`bitmap`, i, `auto-painter.png`), a.append(`userId`, n.toString());
       let o = await this.request(`/staff/tools/auto-painter/paint`, {
@@ -9913,13 +9961,13 @@ function tl(e) {
   }
 }
 
-function nl(e) {
+function cl(e) {
   var t;
   if (!e.length) throw Error(`Auto painter request does not contain any pixels.`);
   let n = e[0].season;
   for (let t of e)
     if (t.season !== n) throw Error(`Auto painter requests cannot mix seasons.`);
-  let r = (t = uc.seasons) == null ? void 0 : t[n];
+  let r = (t = gc.seasons) == null ? void 0 : t[n];
   if (!r) throw Error(`Invalid season selected for auto painter request.`);
   let i = r.tileSize,
     a = 1 / 0,
@@ -9946,7 +9994,7 @@ function nl(e) {
     }
     of l) {
     var p;
-    let r = (p = uc.colors) == null ? void 0 : p[n];
+    let r = (p = gc.colors) == null ? void 0 : p[n];
     if (!r) throw Error(`Unknown palette color index: ${n}`);
     let i = e - a,
       s = ((t - o) * u + i) * 4,
@@ -9962,8 +10010,8 @@ function nl(e) {
     season: n
   }
 }
-async function rl(e) {
-  let t = il(e.width, e.height),
+async function ll(e) {
+  let t = ul(e.width, e.height),
     n = t.getContext(`2d`);
   if (!n) throw Error(`Canvas API is not available to encode auto painter bitmap.`);
   let r = n.createImageData(e.width, e.height);
@@ -9980,7 +10028,7 @@ async function rl(e) {
   })
 }
 
-function il(e, t) {
+function ul(e, t) {
   if (typeof OffscreenCanvas < `u`) return new OffscreenCanvas(e, t);
   if (typeof document < `u`) {
     let n = document.createElement(`canvas`);
@@ -9989,12 +10037,45 @@ function il(e, t) {
   throw Error(`Canvas API is not available in the current environment.`)
 }
 
-function al(e) {
+function dl(e) {
+  return class extends e {
+    async protectionRequest(e, t) {
+      let n = await this.request(`/staff/dashboard/protections${e}`, t);
+      if (!n.ok) {
+        let e = await n.json().catch(() => ({}));
+        throw new R(n.status === 409 ? f.protection_conflict() : e.error === `protection_bypass_user` ? f.protection_bypass_invalid() : n.status === 400 ? f.protection_invalid() : f.protection_failed(), n.status)
+      }
+      return n
+    }
+    async getProtections(e = ``, t = 0) {
+      return (await this.protectionRequest(`?${new URLSearchParams({query:e,page:String(t)})}`)).json()
+    }
+    async getProtection(e) {
+      return (await this.protectionRequest(`/${e}`)).json()
+    }
+    async saveProtection(e, t) {
+      return (await this.protectionRequest(t ? `/${t}` : ``, {
+        method: t ? `PUT` : `POST`,
+        headers: {
+          "Content-Type": `application/json`
+        },
+        body: JSON.stringify(e)
+      })).json()
+    }
+    async deleteProtection(e, t) {
+      await this.protectionRequest(`/${e}?revision=${t}`, {
+        method: `DELETE`
+      })
+    }
+  }
+}
+
+function fl(e) {
   return class extends e {
     validWaybackInput(e) {
       let t = Number.isFinite(e.timestamp) && Number.isInteger(e.timestamp) && e.timestamp >= 0 && e.timestamp <= this.getEstimatedServerNowMs(),
-        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < dc.length,
-        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= gc.tools.wayback.limit,
+        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < _c.length,
+        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= Sc.tools.wayback.limit,
         i = Number.isFinite(e.tileX) && Number.isFinite(e.tileY) && Number.isInteger(e.tileX) && Number.isInteger(e.tileY) && e.tileX >= 0 && e.tileY >= 0,
         a = e.cursorTs !== void 0,
         o = e.cursorUserId !== void 0,
@@ -10025,7 +10106,7 @@ function al(e) {
     }
   }
 }
-var H = new class extends cc(lc(kc(Ac(jc(Mc(Nc(Lc(Rc(Jc(Yc(Qc(tl(al(oc)))))))))))))) {}(me);
+var H = new class extends dl(mc(hc(Fc(Ic(Lc(Rc(zc(Uc(Wc(el(tl(il(sl(fl(fc))))))))))))))) {}(me);
 typeof window < `u` && s(() => {
   let e = H.online;
   u(() => {
@@ -10033,34 +10114,34 @@ typeof window < `u` && s(() => {
     t && !e && window.dispatchEvent(new CustomEvent(`wplace:online`)), e = t
   })
 });
-var ol = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
-  sl = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  cl = `` + new URL(`../assets/notification.CPyrWqU1.mp3`, import.meta.url).href,
-  ll = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sUZOGP8AAAf4cAAAgAAA/w4AABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  ul = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  dl = `data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
-  fl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq`,
-  pl = Ol(),
-  U, ml, W, hl = !1,
-  gl, _l;
+var pl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  ml = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  hl = `` + new URL(`../assets/notification.CPyrWqU1.mp3`, import.meta.url).href,
+  gl = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sUZOGP8AAAf4cAAAgAAA/w4AABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  _l = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  vl = `data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  yl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq`,
+  bl = Fl(),
+  U, xl, W, Sl = !1,
+  Cl, wl;
 
-function vl() {
+function Tl() {
   if (typeof AudioContext > `u`) return () => {};
   let e = () => {
       try {
         U ?? (U = new AudioContext);
         let e = U;
-        if (e.state !== `running` && e.resume().catch(() => {}), !ml) {
+        if (e.state !== `running` && e.resume().catch(() => {}), !xl) {
           let t = new AbortController;
-          _l = t;
+          wl = t;
           let n = setTimeout(() => t.abort(), 1e4);
-          ml = fetch(ll, {
+          xl = fetch(gl, {
             signal: t.signal
           }).then(async t => {
             if (!t.ok) throw Error(`Notification audio unavailable`);
             return e.decodeAudioData(await t.arrayBuffer())
           }).catch(() => {
-            U === e && (ml = void 0)
+            U === e && (xl = void 0)
           }).finally(() => clearTimeout(n))
         }
       } catch {}
@@ -10072,65 +10153,65 @@ function vl() {
   });
   return () => {
     for (let n of t) document.removeEventListener(n, e, !0);
-    _l == null || _l.abort(), W == null || W.stop(), W = void 0, gl = void 0, U == null || U.close().catch(() => {}), U = void 0, ml = void 0
+    wl == null || wl.abort(), W == null || W.stop(), W = void 0, Cl = void 0, U == null || U.close().catch(() => {}), U = void 0, xl = void 0
   }
 }
 
-function yl() {
+function El() {
   (F.muted || v.sounds.playerNotification === 0) && (W == null || W.stop())
 }
-async function bl() {
+async function Dl() {
   if (F.muted || v.sounds.playerNotification === 0) return;
   let e = U;
-  if ((e == null ? void 0 : e.state) === `running` && ml) {
-    if (W || hl) return;
-    hl = !0;
+  if ((e == null ? void 0 : e.state) === `running` && xl) {
+    if (W || Sl) return;
+    Sl = !0;
     let t;
     try {
-      let n = await Promise.race([ml, new Promise(e => {
+      let n = await Promise.race([xl, new Promise(e => {
         t = setTimeout(() => e(void 0), 1e3)
       })]);
       if (!n || F.muted || v.sounds.playerNotification === 0 || U !== e || e.state !== `running`) return;
       let r = e.createBufferSource(),
         i = e.createGain();
-      i.gain.value = pl.playerNotification.volume, r.buffer = n, r.connect(i).connect(e.destination), r.onended = () => {
-        r.disconnect(), i.disconnect(), W === r && (W = void 0, gl = void 0)
-      }, r.start(), W = r, gl = i
+      i.gain.value = bl.playerNotification.volume, r.buffer = n, r.connect(i).connect(e.destination), r.onended = () => {
+        r.disconnect(), i.disconnect(), W === r && (W = void 0, Cl = void 0)
+      }, r.start(), W = r, Cl = i
     } catch {} finally {
-      clearTimeout(t), hl = !1
+      clearTimeout(t), Sl = !1
     }
     return
   }
-  let t = pl.playerNotification;
+  let t = bl.playerNotification;
   if (t.paused) try {
     t.currentTime = 0, await t.play()
   } catch {}
 }
-var xl, Sl = new m;
-async function Cl() {
-  xl ?? (xl = new AudioContext);
-  let e = xl;
+var Ol, kl = new m;
+async function Al() {
+  Ol ?? (Ol = new AudioContext);
+  let e = Ol;
   return e.state !== `running` && await Promise.race([e.resume().catch(() => {}), new Promise(e => setTimeout(e, 150))]), e.state === `running` ? e : void 0
 }
 
-function wl() {
-  Cl()
+function jl() {
+  Al()
 }
 
-function Tl(e, t, n, r = !1) {
+function Ml(e, t, n, r = !1) {
   let i = new GainNode(e, {
     gain: t * v.sounds[n] / 50
   });
-  Sl.set(i, {
+  kl.set(i, {
     id: n,
     base: t
-  }), r && Ml.add(i);
+  }), r && zl.add(i);
   let a = new BiquadFilterNode(e, {
     type: `lowpass`,
     frequency: 5e3
   });
   return i.connect(a).connect(e.destination), setTimeout(() => {
-    Sl.delete(i), Ml.delete(i), i.disconnect(), a.disconnect()
+    kl.delete(i), zl.delete(i), i.disconnect(), a.disconnect()
   }, 1500), i
 }
 
@@ -10143,118 +10224,118 @@ function G(e, t, n, r, i, a, o) {
   let c = new GainNode(e);
   c.gain.setValueAtTime(0, r), c.gain.linearRampToValueAtTime(a, r + .008), c.gain.exponentialRampToValueAtTime(.001, r + i), s.connect(c).connect(t), s.start(r), s.stop(r + i + .05)
 }
-async function El(e) {
+async function Nl(e) {
   if (F.muted) return !0;
-  let t = await Cl();
-  if (!t || e !== void 0 && e !== Nl) return !1;
+  let t = await Al();
+  if (!t || e !== void 0 && e !== Bl) return !1;
   if (F.muted || v.sounds.purchaseSuccess === 0) return !0;
-  let n = Tl(t, .25, `purchaseSuccess`, e !== void 0),
+  let n = Ml(t, .25, `purchaseSuccess`, e !== void 0),
     r = t.currentTime + .03;
   return G(t, n, 523.25, r, .12, .5), G(t, n, 659.25, r + .085, .12, .55), G(t, n, 783.99, r + .17, .12, .6), G(t, n, 1046.5, r + .255, .55, .7), G(t, n, 1318.51, r + .255, .55, .25), G(t, n, 2093, r + .33, .4, .1), !0
 }
-async function Dl(e) {
+async function Pl(e) {
   if (F.muted) return !0;
-  let t = await Cl();
-  if (!t || e !== void 0 && e !== Nl) return !1;
+  let t = await Al();
+  if (!t || e !== void 0 && e !== Bl) return !1;
   if (F.muted || v.sounds.purchaseFail === 0) return !0;
-  let n = Tl(t, .22, `purchaseFail`, e !== void 0),
+  let n = Ml(t, .22, `purchaseFail`, e !== void 0),
     r = t.currentTime + .03;
   return G(t, n, 329.63, r, .16, .55), G(t, n, 261.63, r + .15, .5, .6, 233.08), !0
 }
 
-function Ol() {
+function Fl() {
   let e = {
-    plop: new Audio(ul),
-    smallPlop: new Audio(fl),
-    bigPlop: new Audio(ol),
-    smallDropplet: new Audio(dl),
-    droppletAndPlop: new Audio(sl),
-    notification1: new Audio(cl),
-    playerNotification: new Audio(ll)
+    plop: new Audio(_l),
+    smallPlop: new Audio(yl),
+    bigPlop: new Audio(pl),
+    smallDropplet: new Audio(vl),
+    droppletAndPlop: new Audio(ml),
+    notification1: new Audio(hl),
+    playerNotification: new Audio(gl)
   };
   for (let [t, n] of Object.entries(e)) n.preload = `auto`, n.volume = .3 * v.sounds[t] / 50;
   return e
 }
 
-function kl() {
-  F.muted && Pl(), Al && jl && (Al.volume = .3 * v.sounds[jl] / 50);
-  for (let [e, t] of Object.entries(pl)) t.volume = .3 * v.sounds[e] / 50;
-  gl && (gl.gain.value = pl.playerNotification.volume);
+function Il() {
+  F.muted && Vl(), Ll && Rl && (Ll.volume = .3 * v.sounds[Rl] / 50);
+  for (let [e, t] of Object.entries(bl)) t.volume = .3 * v.sounds[e] / 50;
+  Cl && (Cl.gain.value = bl.playerNotification.volume);
   for (let [e, {
       id: t,
       base: n
-    }] of Sl) e.gain.value = F.muted ? 0 : n * v.sounds[t] / 50;
-  yl()
+    }] of kl) e.gain.value = F.muted ? 0 : n * v.sounds[t] / 50;
+  El()
 }
-var Al, jl, Ml = new p,
-  Nl = 0;
+var Ll, Rl, zl = new p,
+  Bl = 0;
 
-function Pl() {
-  Nl++, Al == null || Al.pause(), Al = void 0, jl = void 0;
-  for (let e of Ml) e.disconnect(), Sl.delete(e);
-  Ml.clear()
+function Vl() {
+  Bl++, Ll == null || Ll.pause(), Ll = void 0, Rl = void 0;
+  for (let e of zl) e.disconnect(), kl.delete(e);
+  zl.clear()
 }
-async function Fl(e) {
-  Pl();
-  let t = Nl;
+async function Hl(e) {
+  Vl();
+  let t = Bl;
   if (F.muted || v.sounds[e] === 0) return !1;
   try {
     if (e === `purchaseSuccess` || e === `purchaseFail`) {
-      let n = await (e === `purchaseSuccess` ? El(t) : Dl(t));
-      return t === Nl && n
+      let n = await (e === `purchaseSuccess` ? Nl(t) : Pl(t));
+      return t === Bl && n
     }
-    let n = new Audio(pl[e].src);
-    n.volume = .3 * v.sounds[e] / 50, Al = n, jl = e;
+    let n = new Audio(bl[e].src);
+    n.volume = .3 * v.sounds[e] / 50, Ll = n, Rl = e;
     let r;
     try {
       return await Promise.race([n.play(), new Promise((e, t) => {
         r = setTimeout(() => t(Error(`Sound preview timed out`)), 5e3)
-      })]), t === Nl
+      })]), t === Bl
     } finally {
       clearTimeout(r)
     }
   } catch {
-    return t === Nl && Pl(), !1
+    return t === Bl && Vl(), !1
   }
 }
-var Il = new WeakMap,
-  Ll = new WeakMap,
-  Rl = new WeakMap,
-  zl = new WeakMap,
-  Bl = new WeakMap,
-  Vl = new class {
+var Ul = new WeakMap,
+  Wl = new WeakMap,
+  Gl = new WeakMap,
+  Kl = new WeakMap,
+  ql = new WeakMap,
+  Jl = new class {
     get count() {
-      return l(a(Il, this))
+      return l(a(Ul, this))
     }
     set count(e) {
-      i(a(Il, this), e, !0)
+      i(a(Ul, this), e, !0)
     }
     get items() {
-      return l(a(Ll, this))
+      return l(a(Wl, this))
     }
     set items(e) {
-      i(a(Ll, this), e, !0)
+      i(a(Wl, this), e, !0)
     }
     get nextCursor() {
-      return l(a(Rl, this))
+      return l(a(Gl, this))
     }
     set nextCursor(e) {
-      i(a(Rl, this), e, !0)
+      i(a(Gl, this), e, !0)
     }
     get loading() {
-      return l(a(zl, this))
+      return l(a(Kl, this))
     }
     set loading(e) {
-      i(a(zl, this), e, !0)
+      i(a(Kl, this), e, !0)
     }
     get markingAll() {
-      return l(a(Bl, this))
+      return l(a(ql, this))
     }
     set markingAll(e) {
-      i(a(Bl, this), e, !0)
+      i(a(ql, this), e, !0)
     }
     constructor(t) {
-      c(this, `apiClient`, void 0), n(this, Il, e()), n(this, Ll, e()), n(this, Rl, e()), n(this, zl, e(!1)), n(this, Bl, e(!1)), c(this, `open`, !1), c(this, `controller`, void 0), c(this, `running`, !1), c(this, `pending`, !1), c(this, `append`, !1), c(this, `markAll`, !1), c(this, `retry`, void 0), c(this, `onError`, void 0), c(this, `errorReported`, !1), c(this, `fullRefresh`, !0), c(this, `changedIDs`, new p), c(this, `failures`, 0), this.apiClient = t
+      c(this, `apiClient`, void 0), n(this, Ul, e()), n(this, Wl, e()), n(this, Gl, e()), n(this, Kl, e(!1)), n(this, ql, e(!1)), c(this, `open`, !1), c(this, `controller`, void 0), c(this, `running`, !1), c(this, `pending`, !1), c(this, `append`, !1), c(this, `markAll`, !1), c(this, `retry`, void 0), c(this, `onError`, void 0), c(this, `errorReported`, !1), c(this, `fullRefresh`, !0), c(this, `changedIDs`, new p), c(this, `failures`, 0), this.apiClient = t
     }
     get client() {
       return this.apiClient ?? H
@@ -10298,7 +10379,7 @@ var Il = new WeakMap,
                 r = this.changedIDs.size > 100
               }
             } catch {}
-            this.refresh(r), i && navigator.onLine && bl()
+            this.refresh(r), i && navigator.onLine && Dl()
           }), e.onerror = () => {
             n === e && u()
           }
@@ -10401,33 +10482,33 @@ var Il = new WeakMap,
     }
   };
 
-function Hl(e, t) {
+function Yl(e, t) {
   if (!(e != null && e.length)) return !1;
   for (let n of e)
     if (n === t) return !0;
   return !1
 }
 
-function Ul(e, t) {
+function Xl(e, t) {
   for (let n of t)
-    if (Hl(e, n)) return !0;
+    if (Yl(e, n)) return !0;
   return !1
 }
 
-function Wl(e) {
+function Zl(e) {
   let t = atob(e),
     n = new Uint8Array(t.length);
   for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e);
   return n
 }
 
-function Gl(e) {
+function Ql(e) {
   if (typeof Buffer < `u`) return Buffer.from(e).toString(`base64`);
   let t = ``;
   for (let n = 0; n < e.length; n++) t += String.fromCharCode(e[n]);
   return btoa(t)
 }
-var Kl = class {
+var $l = class {
   constructor(e) {
     c(this, `bytes`, void 0), this.bytes = e ?? new Uint8Array
   }
@@ -10451,7 +10532,7 @@ var Kl = class {
   }
 };
 
-function ql(e) {
+function eu(e) {
   return new Promise((t, n) => {
     let r = new FileReader;
     r.onload = () => {
@@ -10465,10 +10546,10 @@ function ql(e) {
   })
 }
 
-function Jl(e) {
+function tu(e) {
   if (typeof FileReader > `u`) {
     let t = e.type || `application/octet-stream`;
-    return e.arrayBuffer().then(e => `data:${t};base64,${Gl(new Uint8Array(e))}`)
+    return e.arrayBuffer().then(e => `data:${t};base64,${Ql(new Uint8Array(e))}`)
   }
   return new Promise((t, n) => {
     let r = new FileReader;
@@ -10483,7 +10564,7 @@ function Jl(e) {
   })
 }
 
-function Yl(e) {
+function nu(e) {
   if (!e.startsWith(`data:`)) throw Error(`Could not parse data URL`);
   let t = e.indexOf(`,`);
   if (t === -1) throw Error(`Could not parse data URL`);
@@ -10492,7 +10573,7 @@ function Yl(e) {
     i = n.indexOf(`;base64`),
     a = (i === -1 ? n : n.slice(0, i)) || `text/plain`;
   if (i !== -1) {
-    let e = Wl(r),
+    let e = Zl(r),
       t = new Uint8Array(e.byteLength);
     return t.set(e), new Blob([t], {
       type: a
@@ -10503,21 +10584,21 @@ function Yl(e) {
   })
 }
 
-function Xl(...e) {
+function ru(...e) {
   return e.filter(Boolean).join(` `)
 }
-var Zl = typeof document < `u`,
-  Ql = 0,
-  $l = new WeakMap,
-  eu = new WeakMap,
-  tu = new WeakMap,
-  nu = class {
+var iu = typeof document < `u`,
+  au = 0,
+  ou = new WeakMap,
+  su = new WeakMap,
+  cu = new WeakMap,
+  lu = class {
     constructor() {
-      n(this, $l, e(t([]))), n(this, eu, e(t([]))), n(this, tu, e => {
+      n(this, ou, e(t([]))), n(this, su, e(t([]))), n(this, cu, e => {
         let t = this.toasts.findIndex(t => t.id === e);
         return t === -1 ? null : t
       }), c(this, `addToast`, e => {
-        Zl && this.toasts.unshift(e)
+        iu && this.toasts.unshift(e)
       }), c(this, `updateToast`, ({
         id: e,
         data: t,
@@ -10539,7 +10620,7 @@ var Zl = typeof document < `u`,
         let {
           message: n,
           ...r
-        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : Ql++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
+        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : au++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
         return o(() => {
           this.toasts.find(e => e.id === i) ? this.updateToast({
             id: i,
@@ -10573,7 +10654,7 @@ var Zl = typeof document < `u`,
           this.toasts = [];
           return
         }
-        let t = a(tu, this).call(this, e);
+        let t = a(cu, this).call(this, e);
         if (t !== null) return this.toasts.splice(t, 1), e
       }), c(this, `message`, (e, t) => this.create({
         ...t,
@@ -10613,7 +10694,7 @@ var Zl = typeof document < `u`,
         return r.then(e => {
           if (typeof e == `object` && e && `ok` in e && typeof e.ok == `boolean` && !e.ok) {
             i = !1;
-            let t = ru(e);
+            let t = uu(e);
             this.create({
               id: n,
               type: `error`,
@@ -10643,7 +10724,7 @@ var Zl = typeof document < `u`,
           i && (this.dismiss(n), n = void 0), (e = t.finally) == null || e.call(t)
         }), n
       }), c(this, `custom`, (e, t) => {
-        let n = (t == null ? void 0 : t.id) || Ql++;
+        let n = (t == null ? void 0 : t.id) || au++;
         return this.create({
           component: e,
           id: n,
@@ -10652,7 +10733,7 @@ var Zl = typeof document < `u`,
       }), c(this, `removeHeight`, e => {
         this.heights = this.heights.filter(t => t.toastId !== e)
       }), c(this, `setHeight`, e => {
-        let t = a(tu, this).call(this, e.toastId);
+        let t = a(cu, this).call(this, e.toastId);
         if (t === null) {
           this.heights.push(e);
           return
@@ -10663,40 +10744,40 @@ var Zl = typeof document < `u`,
       })
     }
     get toasts() {
-      return l(a($l, this))
+      return l(a(ou, this))
     }
     set toasts(e) {
-      i(a($l, this), e, !0)
+      i(a(ou, this), e, !0)
     }
     get heights() {
-      return l(a(eu, this))
+      return l(a(su, this))
     }
     set heights(e) {
-      i(a(eu, this), e, !0)
+      i(a(su, this), e, !0)
     }
   };
 
-function ru(e) {
+function uu(e) {
   return e && typeof e == `object` && `status` in e ? `HTTP error! Status: ${e.status}` : `Error! ${e}`
 }
-var K = new nu;
+var K = new lu;
 
-function iu(e, t) {
+function du(e, t) {
   return K.create({
     message: e,
     ...t
   })
 }
-var au = new WeakMap,
-  ou = class {
+var fu = new WeakMap,
+  pu = class {
     constructor() {
-      n(this, au, r(() => K.toasts.filter(e => !e.dismiss)))
+      n(this, fu, r(() => K.toasts.filter(e => !e.dismiss)))
     }
     get toasts() {
-      return l(a(au, this))
+      return l(a(fu, this))
     }
   },
-  su = Object.assign(iu, {
+  mu = Object.assign(du, {
     success: K.success,
     info: K.info,
     warning: K.warning,
@@ -10708,75 +10789,75 @@ var au = new WeakMap,
     loading: K.loading,
     getActiveToasts: () => K.toasts.filter(e => !e.dismiss)
   }),
-  cu = new WeakMap,
-  lu = new WeakMap,
-  uu = new WeakMap,
-  du = new WeakMap,
-  fu = new WeakMap,
-  pu = new WeakMap,
-  mu = new WeakMap,
   hu = new WeakMap,
+  gu = new WeakMap,
+  _u = new WeakMap,
+  vu = new WeakMap,
+  yu = new WeakMap,
+  bu = new WeakMap,
+  xu = new WeakMap,
+  Su = new WeakMap,
   q = new class {
     get data() {
-      return l(a(cu, this))
-    }
-    set data(e) {
-      i(a(cu, this), e, !0)
-    }
-    get loading() {
-      return l(a(lu, this))
-    }
-    set loading(e) {
-      i(a(lu, this), e, !0)
-    }
-    get notificationCount() {
-      return l(a(uu, this))
-    }
-    set notificationCount(e) {
-      i(a(uu, this), e)
-    }
-    get lastFetch() {
-      return l(a(du, this))
-    }
-    set lastFetch(e) {
-      i(a(du, this), e)
-    }
-    get charges() {
-      return l(a(fu, this))
-    }
-    set charges(e) {
-      i(a(fu, this), e)
-    }
-    get cooldown() {
-      return l(a(pu, this))
-    }
-    set cooldown(e) {
-      i(a(pu, this), e)
-    }
-    get flagsBitmap() {
-      return l(a(mu, this))
-    }
-    set flagsBitmap(e) {
-      i(a(mu, this), e)
-    }
-    get timeoutUntil() {
       return l(a(hu, this))
     }
+    set data(e) {
+      i(a(hu, this), e, !0)
+    }
+    get loading() {
+      return l(a(gu, this))
+    }
+    set loading(e) {
+      i(a(gu, this), e, !0)
+    }
+    get notificationCount() {
+      return l(a(_u, this))
+    }
+    set notificationCount(e) {
+      i(a(_u, this), e)
+    }
+    get lastFetch() {
+      return l(a(vu, this))
+    }
+    set lastFetch(e) {
+      i(a(vu, this), e)
+    }
+    get charges() {
+      return l(a(yu, this))
+    }
+    set charges(e) {
+      i(a(yu, this), e)
+    }
+    get cooldown() {
+      return l(a(bu, this))
+    }
+    set cooldown(e) {
+      i(a(bu, this), e)
+    }
+    get flagsBitmap() {
+      return l(a(xu, this))
+    }
+    set flagsBitmap(e) {
+      i(a(xu, this), e)
+    }
+    get timeoutUntil() {
+      return l(a(Su, this))
+    }
     set timeoutUntil(e) {
-      i(a(hu, this), e)
+      i(a(Su, this), e)
     }
     constructor() {
-      c(this, `channel`, new BroadcastChannel(`user-channel`)), n(this, cu, e()), n(this, lu, e(!0)), n(this, uu, r(() => Vl.count)), n(this, du, e(Date.now())), n(this, fu, r(() => {
+      c(this, `channel`, new BroadcastChannel(`user-channel`)), n(this, hu, e()), n(this, gu, e(!0)), n(this, _u, r(() => Jl.count)), n(this, vu, e(Date.now())), n(this, yu, r(() => {
         if (!this.data) return;
         let e = this.data.charges;
         if (e.infinite) return 1 / 0;
         if (e.count > e.max) return e.count;
         let t = e.count + Math.max((F.now - this.lastFetch) / e.cooldownMs, 0);
         return Math.min(e.max, t)
-      })), n(this, pu, r(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), n(this, mu, r(() => {
+      })), n(this, bu, r(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), n(this, xu, r(() => {
         var e;
-        return new Kl(Wl(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
-      })), n(this, hu, r(() => {
+        return new $l(Zl(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
+      })), n(this, Su, r(() => {
         var e;
         if (!((e = this.data) != null && e.timeoutUntil)) return;
         let t = new Date(this.data.timeoutUntil),
@@ -10795,7 +10876,7 @@ var au = new WeakMap,
           data: this.data
         })), (t = this.data) != null && t.id && $.setUserId(this.data.id), !0
       } catch (e) {
-        return console.error(e), su.warning(f.no_internet_access(), {
+        return console.error(e), mu.warning(f.no_internet_access(), {
           duration: 1e4
         }), !1
       } finally {
@@ -10814,11 +10895,11 @@ var au = new WeakMap,
     }
     hasPermission(e) {
       var t;
-      return Hl((t = this.data) == null ? void 0 : t.permissions, e)
+      return Yl((t = this.data) == null ? void 0 : t.permissions, e)
     }
     hasAnyPermission(e) {
       var t;
-      return Ul((t = this.data) == null ? void 0 : t.permissions, e)
+      return Xl((t = this.data) == null ? void 0 : t.permissions, e)
     }
   },
   J, Y = Array(128).fill(void 0);
@@ -10827,12 +10908,12 @@ Y.push(void 0, null, !0, !1);
 function X(e) {
   return Y[e]
 }
-var gu = Y.length;
+var Cu = Y.length;
 
 function Z(e) {
-  gu === Y.length && Y.push(Y.length + 1);
-  let t = gu;
-  return gu = Y[t], Y[t] = e, t
+  Cu === Y.length && Y.push(Y.length + 1);
+  let t = Cu;
+  return Cu = Y[t], Y[t] = e, t
 }
 
 function Q(e, t) {
@@ -10843,10 +10924,10 @@ function Q(e, t) {
   }
 }
 
-function _u(e) {
+function wu(e) {
   return e == null
 }
-var vu = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
+var Tu = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -10854,55 +10935,55 @@ var vu = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
     throw Error(`TextDecoder not available`)
   }
 };
-typeof TextDecoder < `u` && vu.decode();
-var yu = null;
+typeof TextDecoder < `u` && Tu.decode();
+var Eu = null;
 
-function bu() {
-  return (yu === null || yu.byteLength === 0) && (yu = new Uint8Array(J.memory.buffer)), yu
+function Du() {
+  return (Eu === null || Eu.byteLength === 0) && (Eu = new Uint8Array(J.memory.buffer)), Eu
 }
 
-function xu(e, t) {
-  return e >>>= 0, vu.decode(bu().subarray(e, e + t))
+function Ou(e, t) {
+  return e >>>= 0, Tu.decode(Du().subarray(e, e + t))
 }
 
-function Su(e) {
-  e < 132 || (Y[e] = gu, gu = e)
+function ku(e) {
+  e < 132 || (Y[e] = Cu, Cu = e)
 }
 
-function Cu(e) {
+function Au(e) {
   let t = X(e);
-  return Su(e), t
+  return ku(e), t
 }
-var wu = null;
+var ju = null;
 
-function Tu() {
-  return (wu === null || wu.buffer.detached === !0 || wu.buffer.detached === void 0 && wu.buffer !== J.memory.buffer) && (wu = new DataView(J.memory.buffer)), wu
+function Mu() {
+  return (ju === null || ju.buffer.detached === !0 || ju.buffer.detached === void 0 && ju.buffer !== J.memory.buffer) && (ju = new DataView(J.memory.buffer)), ju
 }
-var Eu = 0,
-  Du = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
+var Nu = 0,
+  Pu = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
     encode: () => {
       throw Error(`TextEncoder not available`)
     }
   },
-  Ou = typeof Du.encodeInto == `function` ? function(e, t) {
-    return Du.encodeInto(e, t)
+  Fu = typeof Pu.encodeInto == `function` ? function(e, t) {
+    return Pu.encodeInto(e, t)
   } : function(e, t) {
-    let n = Du.encode(e);
+    let n = Pu.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
     }
   };
 
-function ku(e, t, n) {
+function Iu(e, t, n) {
   if (n === void 0) {
-    let n = Du.encode(e),
+    let n = Pu.encode(e),
       r = t(n.length, 1) >>> 0;
-    return bu().subarray(r, r + n.length).set(n), Eu = n.length, r
+    return Du().subarray(r, r + n.length).set(n), Nu = n.length, r
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    a = bu(),
+    a = Du(),
     o = 0;
   for (; o < r; o++) {
     let t = e.charCodeAt(o);
@@ -10911,68 +10992,68 @@ function ku(e, t, n) {
   }
   if (o !== r) {
     o !== 0 && (e = e.slice(o)), i = n(i, r, r = o + e.length * 3, 1) >>> 0;
-    let t = bu().subarray(i + o, i + r),
-      a = Ou(e, t);
+    let t = Du().subarray(i + o, i + r),
+      a = Fu(e, t);
     o += a.written, i = n(i, r, o, 1) >>> 0
   }
-  return Eu = o, i
+  return Nu = o, i
 }
 
-function Au(e) {
-  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
-    n = Eu;
+function Lu(e) {
+  let t = Iu(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Nu;
   J.set_discord_id(t, n)
 }
 
-function ju(e) {
-  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
-    n = Eu;
+function Ru(e) {
+  let t = Iu(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Nu;
   J.set_fingerprint(t, n)
 }
 
-function Mu(e) {
-  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
-    n = Eu;
+function zu(e) {
+  let t = Iu(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Nu;
   J.set_detected_bot(t, n)
 }
 
-function Nu(e) {
+function Bu(e) {
   let t, n;
   try {
     let a = J.__wbindgen_add_to_stack_pointer(-16),
-      o = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
-      s = Eu;
+      o = Iu(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+      s = Nu;
     J.get_pawtected_endpoint_payload(a, o, s);
-    var r = Tu().getInt32(a + 0, !0),
-      i = Tu().getInt32(a + 4, !0);
-    return t = r, n = i, xu(r, i)
+    var r = Mu().getInt32(a + 0, !0),
+      i = Mu().getInt32(a + 4, !0);
+    return t = r, n = i, Ou(r, i)
   } finally {
     J.__wbindgen_add_to_stack_pointer(16), J.__wbindgen_export_3(t, n, 1)
   }
 }
 
-function Pu(e) {
+function Vu(e) {
   J.set_user_id(e)
 }
 
-function Fu(e) {
+function Hu(e) {
   J.set_cf_likely_automated(e)
 }
 
-function Iu(e) {
+function Uu(e) {
   J.set_automated_clicks(e)
 }
 
-function Lu(e) {
-  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
-    n = Eu;
+function Wu(e) {
+  let t = Iu(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Nu;
   J.request_url(t, n)
 }
 
-function Ru(e) {
+function Gu(e) {
   J.set_automated_browser(e)
 }
-async function zu(e, t) {
+async function Ku(e, t) {
   if (typeof Response == `function` && e instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == `function`) try {
       return await WebAssembly.instantiateStreaming(e, t)
@@ -10991,7 +11072,7 @@ async function zu(e, t) {
   }
 }
 
-function Bu() {
+function qu() {
   let e = {};
   return e.wbg = {}, e.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
     let t = X(e).buffer;
@@ -11009,7 +11090,7 @@ function Bu() {
     return Z(t)
   }, e.wbg.__wbg_document_d249400bd7bd996d = function(e) {
     let t = X(e).document;
-    return _u(t) ? 0 : Z(t)
+    return wu(t) ? 0 : Z(t)
   }, e.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
     return Q(function(e, t) {
       X(e).getRandomValues(X(t))
@@ -11044,7 +11125,7 @@ function Bu() {
   }, e.wbg.__wbg_new_a12002a7f91c75be = function(e) {
     return Z(new Uint8Array(X(e)))
   }, e.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return Z(Function(xu(e, t)))
+    return Z(Function(Ou(e, t)))
   }, e.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, n) {
     return Z(new Uint8Array(X(e), t >>> 0, n >>> 0))
   }, e.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
@@ -11059,7 +11140,7 @@ function Bu() {
     return Z(t)
   }, e.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
     return Q(function(e, t) {
-      X(e).randomFillSync(Cu(t))
+      X(e).randomFillSync(Au(t))
     }, arguments)
   }, e.wbg.__wbg_require_60cc747a6bc5215a = function() {
     return Q(function() {
@@ -11070,16 +11151,16 @@ function Bu() {
     X(e).set(X(t), n >>> 0)
   }, e.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     let e = typeof global > `u` ? null : global;
-    return _u(e) ? 0 : Z(e)
+    return wu(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     let e = typeof globalThis > `u` ? null : globalThis;
-    return _u(e) ? 0 : Z(e)
+    return wu(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     let e = typeof self > `u` ? null : self;
-    return _u(e) ? 0 : Z(e)
+    return wu(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     let e = typeof window > `u` ? null : window;
-    return _u(e) ? 0 : Z(e)
+    return wu(e) ? 0 : Z(e)
   }, e.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(e, t, n) {
     return Z(X(e).subarray(t >>> 0, n >>> 0))
   }, e.wbg.__wbg_versions_c01dfd4722a88165 = function(e) {
@@ -11105,41 +11186,41 @@ function Bu() {
   }, e.wbg.__wbindgen_number_get = function(e, t) {
     let n = X(t),
       r = typeof n == `number` ? n : void 0;
-    Tu().setFloat64(e + 8, _u(r) ? 0 : r, !0), Tu().setInt32(e + 0, !_u(r), !0)
+    Mu().setFloat64(e + 8, wu(r) ? 0 : r, !0), Mu().setInt32(e + 0, !wu(r), !0)
   }, e.wbg.__wbindgen_object_clone_ref = function(e) {
     return Z(X(e))
   }, e.wbg.__wbindgen_object_drop_ref = function(e) {
-    Cu(e)
+    Au(e)
   }, e.wbg.__wbindgen_string_new = function(e, t) {
-    return Z(xu(e, t))
+    return Z(Ou(e, t))
   }, e.wbg.__wbindgen_throw = function(e, t) {
-    throw Error(xu(e, t))
+    throw Error(Ou(e, t))
   }, e
 }
 
-function Vu(e, t) {
-  return J = e.exports, Hu.__wbindgen_wasm_module = t, wu = null, yu = null, J
+function Ju(e, t) {
+  return J = e.exports, Yu.__wbindgen_wasm_module = t, ju = null, Eu = null, J
 }
-async function Hu(e) {
+async function Yu(e) {
   if (J !== void 0) return J;
   e !== void 0 && (Object.getPrototypeOf(e) === Object.prototype ? {
     module_or_path: e
   } = e : console.warn(`using deprecated parameters for the initialization function; pass a single object instead`)), e === void 0 && (e = new URL(`pawtect_wasm_bg.wasm`, `` + import.meta.url));
-  let t = Bu();
+  let t = qu();
   (typeof e == `string` || typeof Request == `function` && e instanceof Request || typeof URL == `function` && e instanceof URL) && (e = fetch(e));
   let {
     instance: n,
     module: r
-  } = await zu(await e, t);
-  return Vu(n, r)
+  } = await Ku(await e, t);
+  return Ju(n, r)
 }
-var Uu = class {
+var Xu = class {
   constructor() {
-    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new Gu, new Ku, new qu, new Ju]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
+    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new Qu, new $u, new ed, new td]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!q.data || this.storagesEmpty) && !localStorage.getItem(Gu.KEY)) {
+      if (!(!q.data || this.storagesEmpty) && !localStorage.getItem(Qu.KEY)) {
         for (let e of this.storages) {
           let t = e.get();
           if (t) {
@@ -11171,12 +11252,12 @@ var Uu = class {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       try {
         var e;
-        await Hu(ge), (e = q.data) != null && e.id && Pu(q.data.id);
+        await Yu(ge), (e = q.data) != null && e.id && Vu(q.data.id);
         let t = fetch;
         return Object.assign(window, {
-          fetch: Wu((e, n) => {
+          fetch: Zu((e, n) => {
             let r = null;
-            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Lu(r), t.call(window, e, n)
+            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Wu(r), t.call(window, e, n)
           })
         }), !0
       } catch (e) {
@@ -11185,10 +11266,10 @@ var Uu = class {
     })()), this.pawtectLoaded
   }
   async setUserId(e) {
-    await this.loadPawtect(), Pu(e)
+    await this.loadPawtect(), Vu(e)
   }
   async setCfLikelyAutomated(e) {
-    await this.loadPawtect(), Fu(e)
+    await this.loadPawtect(), Hu(e)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -11207,14 +11288,14 @@ var Uu = class {
       [n, r] = await Promise.all([Bo(), yt().catch(e => (console.error(e), {
         bot: !1
       }))]);
-    return Pu(q.data.id), Au(q.data.discordId ?? ``), ju(n), Ru(t), Iu(F.automatedClicks), r.bot && Mu(r.botKind ?? `unknown`), Nu(e)
+    return Vu(q.data.id), Lu(q.data.discordId ?? ``), Ru(n), Gu(t), Uu(F.automatedClicks), r.bot && zu(r.botKind ?? `unknown`), Bu(e)
   }
 };
 
-function Wu(e) {
+function Zu(e) {
   return e.bind().bind()
 }
-var Gu = class e {
+var Qu = class e {
   static codec(e) {
     let t = new TextEncoder().encode(this.XOR_KEY),
       n = new Uint8Array(e.length);
@@ -11238,8 +11319,8 @@ var Gu = class e {
     localStorage.setItem(e.KEY, btoa(String.fromCharCode(...r)))
   }
 };
-c(Gu, `KEY`, `ui_layout_v3`), c(Gu, `XOR_KEY`, `wplace-prefs`);
-var Ku = class e {
+c(Qu, `KEY`, `ui_layout_v3`), c(Qu, `XOR_KEY`, `wplace-prefs`);
+var $u = class e {
   get() {
     try {
       let t = sessionStorage.getItem(e.KEY);
@@ -11264,8 +11345,8 @@ var Ku = class e {
     sessionStorage.setItem(e.KEY, r)
   }
 };
-c(Ku, `KEY`, `nav.cursor`), c(Ku, `SHIFT`, 13);
-var qu = class e {
+c($u, `KEY`, `nav.cursor`), c($u, `SHIFT`, 13);
+var ed = class e {
   get() {
     let t = document.cookie.match(RegExp(`(?:^|; )` + e.KEY + `=([^;]*)`));
     if (t) try {
@@ -11283,8 +11364,8 @@ var qu = class e {
     document.cookie = `${e.KEY}=${encodeURIComponent(n)};path=/;max-age=${e.MAX_AGE};SameSite=Lax`
   }
 };
-c(qu, `KEY`, `_pf_uid`), c(qu, `MAX_AGE`, 31536e3);
-var Ju = class {
+c(ed, `KEY`, `_pf_uid`), c(ed, `MAX_AGE`, 31536e3);
+var td = class {
     constructor() {
       c(this, `packed`, void 0)
     }
@@ -11298,7 +11379,7 @@ var Ju = class {
       this.packed = BigInt(e.timestamp) << 32n | BigInt(e.userId) & 4294967295n
     }
   },
-  $ = new Uu;
+  $ = new Xu;
 export {
-  Zs as $, zc as A, dc as B, el as C, se as Ct, Uc as D, h as Dt, Kc as E, pe as Et, _c as F, yc as G, uc as H, fc as I, tc as J, R as K, vc as L, V as M, Pc as N, Vc as O, v as Ot, Fc as P, Qs as Q, mc as R, H as S, oe as St, qc as T, de as Tt, hc as U, gc as V, bc as W, Js as X, L as Y, Ys as Z, Fl as _, xt as _t, K as a, I as at, kl as b, le as bt, ql as c, Ss as ct, Wl as d, F as dt, Xs as et, Vl as f, Bo as ft, El as g, St as gt, Dl as h, wt as ht, su as i, vs as it, Hc as j, Bc as k, Jl as l, ws as lt, vl as m, Tt as mt, q as n, Ms as nt, Xl as o, Ts as ot, pl as p, Et as pt, sc as q, ou as r, js as rt, Kl as s, Cs as st, $ as t, As as tt, Yl as u, ms as ut, Pl as v, me as vt, Zc as w, ae as wt, wl as x, he as xt, yl as y, ue as yt, pc as z
+  ac as $, Gc as A, ae as At, _c as B, ol as C, xt as Ct, Yc as D, he as Dt, Qc as E, le as Et, Cc as F, Tc as G, gc as H, vc as I, sc as J, R as K, wc as L, V as M, pe as Mt, Bc as N, h as Nt, qc as O, oe as Ot, Vc as P, v as Pt, ic as Q, bc as R, H as S, St, $c as T, ue as Tt, xc as U, Sc as V, Ec as W, rc as X, oc as Y, nc as Z, Hl as _, F as _t, K as a, Zs as at, Il as b, Tt as bt, eu as c, Ms as ct, Zl as d, I as dt, tc as et, Jl as f, Ts as ft, Nl as g, ms as gt, Pl as h, ws as ht, mu as i, Qs as it, Jc as j, de as jt, Kc as k, se as kt, tu as l, js as lt, Tl as m, Ss as mt, q as n, Js as nt, ru as o, Xs as ot, bl as p, Cs as pt, pc as q, pu as r, Ys as rt, $l as s, As as st, $ as t, L as tt, nu as u, vs as ut, Vl as v, Bo as vt, rl as w, me as wt, jl as x, wt as xt, El as y, Et as yt, yc as z
 };
