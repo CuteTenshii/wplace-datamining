@@ -1,99 +1,406 @@
 import {
-  Ct as e,
-  D as t,
-  J as n,
-  Jt as r,
-  Nt as i,
-  O as a,
-  R as o,
-  U as s,
-  X as c,
-  Y as l,
-  _t as u,
-  a as d,
-  an as f,
-  b as p,
-  et as m,
-  qt as h,
-  st as g,
-  tn as _,
-  tt as v,
-  wt as y
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
+  kt as i,
+  on as a,
+  ut as o
+} from "./D2z8HFb7.js";
 import {
-  n as b
-} from "./CL7mF02H.js";
-import {
-  t as x
-} from "./BEbNZOhy.js";
+  H as s,
+  l as c,
+  u as l
+} from "./CZtdCIYn.js";
+var u = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
+  d = `template-overlays`,
+  f = `overlay-tag-catalog`;
+
+function p(e) {
+  return typeof e == `object` && !!e
+}
+
+function m(e) {
+  return typeof e == `number` && Number.isFinite(e)
+}
+
+function h(e) {
+  return e === `compuphase` || e === `ciede2000` ? e : `lab`
+}
+
+function g(e) {
+  if (e === `all` || e === `free` || e === `template` || e === `unlocked`) return e
+}
+
+function _(e) {
+  if (!Array.isArray(e)) return;
+  let t = new Uint8Array(s.colors.length),
+    n = [];
+  for (let r = 0; r < e.length; r++) {
+    let i = e[r];
+    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= s.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
+  }
+  return n.length > 0 ? n : void 0
+}
+
+function v(e) {
+  return e.normalize(`NFC`).toLowerCase()
+}
+
+function y(e) {
+  let t = 2166136261;
+  for (let n of v(e)) t ^= n.codePointAt(0) ?? 0, t = Math.imul(t, 16777619);
+  return u[(t >>> 0) % u.length]
+}
+
+function b(e, t) {
+  return typeof e == `number` && Number.isInteger(e) && e > 0 && e < s.colors.length ? e : y(t)
+}
+
+function x(e, t = []) {
+  let n = [],
+    r = (e, t) => {
+      if (typeof e != `string` || n.length >= 64) return;
+      let r = S(e);
+      !r || n.some(e => v(e.name) === v(r)) || n.push({
+        name: r,
+        colorIdx: b(t, r)
+      })
+    };
+  if (Array.isArray(e))
+    for (let t of e) p(t) && r(t.name, t.colorIdx);
+  for (let e of t) {
+    let t = e.tags ?? [];
+    for (let n = 0; n < t.length; n += 1) {
+      var i;
+      r(t[n], (i = e.tagColorIdxs) == null ? void 0 : i[n])
+    }
+  }
+  return n
+}
 
 function S(e) {
-  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
+  let t = e.normalize(`NFC`).trim().replace(/^(?:#\s*)+/, ``).replace(/\s+/g, `-`).slice(0, 24);
+  return /[\uD800-\uDBFF]$/.test(t) ? t.slice(0, -1) : t
 }
 
-function C(e) {
-  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+function C(e, t) {
+  if (!Array.isArray(e)) return {
+    tags: [],
+    tagColorIdxs: []
+  };
+  let n = Array.isArray(t) ? t : [],
+    r = [],
+    i = [];
+  for (let t = 0; t < e.length; t += 1) {
+    let a = e[t];
+    if (typeof a != `string`) continue;
+    let o = S(a);
+    if (!(!o || r.some(e => v(e) === v(o))) && (r.push(o), i.push(b(n[t], o)), r.length === 8)) break
+  }
+  return {
+    tags: r,
+    tagColorIdxs: i
+  }
 }
-var w = c(`<span role="link" tabindex="0"><!></span>`),
-  T = c(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
-  E = c(`<span><!></span>`);
 
-function D(c, m) {
-  r(m, !0);
-  let D = d(m, `mode`, 3, `anchor`),
-    O = d(m, `class`, 3, ``),
-    k = d(m, `linkClass`, 19, O),
-    A = d(m, `textClass`, 19, O),
-    j = i(() => m.userId != null && m.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
-    M = i(() => m.userId == null ? `` : S(m.userId));
-
-  function N(e) {
-    e.stopPropagation()
+function w(e) {
+  if (!p(e)) return null;
+  let t = e.north,
+    n = e.south,
+    r = e.west,
+    i = e.east;
+  return !m(t) || !m(n) || !m(r) || !m(i) ? null : {
+    north: t,
+    south: n,
+    west: r,
+    east: i
   }
-
-  function P(e) {
-    m.userId == null || m.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(m.userId))
-  }
-
-  function F(e) {
-    (e.key === `Enter` || e.key === ` `) && P(e)
-  }
-  var I = l(),
-    L = y(I),
-    R = r => {
-      var i = l(),
-        a = y(i),
-        c = r => {
-          var i = w(),
-            a = e(i);
-          o(a, () => m.children ?? f), _(i), u(() => {
-            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `title`, m.title)
-          }), v(`pointerdown`, i, N), v(`click`, i, P), v(`keydown`, i, F), n(r, i)
-        },
-        d = r => {
-          var i = T(),
-            a = e(i);
-          o(a, () => m.children ?? f), _(i), u(() => {
-            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `href`, g(M)), p(i, `title`, m.title)
-          }), v(`pointerdown`, i, N), v(`click`, i, N), n(r, i)
-        };
-      s(a, e => {
-        D() === `inline` ? e(c) : e(d, -1)
-      }), n(r, i)
-    },
-    z = r => {
-      var i = E(),
-        s = e(i);
-      o(s, () => m.children ?? f), _(i), u(() => {
-        t(i, 1, a(A())), p(i, `title`, m.title)
-      }), n(r, i)
-    };
-  s(L, e => {
-    g(j) ? e(R) : e(z, -1)
-  }), n(c, I), h()
 }
-m([`pointerdown`, `click`, `keydown`]);
+
+function T(e, t) {
+  if (!p(e)) return null;
+  let n = e.id,
+    r = e.name,
+    i = w(e.bounds),
+    a = e.originalWidth,
+    o = e.originalHeight,
+    s = e.opacity,
+    c = e.visible,
+    l = e.order;
+  if (typeof n != `string` || n.length === 0 || typeof r != `string` || !i || !m(a) || !m(o) || !m(s) || !m(l) || typeof c != `boolean`) return null;
+  let u = typeof e.locked == `boolean` && e.locked,
+    d = h(e.colorMetric),
+    f = typeof e.dithering == `boolean` && e.dithering,
+    v = e.useLegacyColors === !0,
+    y = g(e.colorPaletteMode),
+    b = _(e.templateColorIdxs),
+    {
+      tags: x,
+      tagColorIdxs: S
+    } = C(e.tags, e.tagColorIdxs),
+    T = typeof e.hasPlaced != `boolean` || e.hasPlaced,
+    E = m(e.updatedAt) ? e.updatedAt : t;
+  return {
+    id: n,
+    name: r,
+    bounds: i,
+    originalWidth: a,
+    originalHeight: o,
+    opacity: s,
+    visible: c,
+    locked: u,
+    colorMetric: d,
+    dithering: f,
+    useLegacyColors: v,
+    colorPaletteMode: y,
+    templateColorIdxs: b,
+    tags: x.length > 0 ? x : void 0,
+    tagColorIdxs: S.length > 0 ? S : void 0,
+    order: l,
+    hasPlaced: T,
+    updatedAt: E
+  }
+}
+
+function E(e, t = Date.now()) {
+  let n = JSON.parse(e);
+  if (!Array.isArray(n)) return null;
+  let r = [];
+  for (let e = 0; e < n.length; e++) {
+    let i = T(n[e], t);
+    i && r.push(i)
+  }
+  let i = JSON.stringify(r);
+  return {
+    templates: r,
+    serialized: i,
+    migrated: i !== e
+  }
+}
+var D = new WeakMap,
+  O = new WeakMap,
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new class {
+    get templates() {
+      return o(t(D, this))
+    }
+    set templates(e) {
+      r(t(D, this), e, !0)
+    }
+    get tagCatalog() {
+      return o(t(O, this))
+    }
+    set tagCatalog(e) {
+      r(t(O, this), e, !0)
+    }
+    get activeTemplateId() {
+      return o(t(k, this))
+    }
+    set activeTemplateId(e) {
+      r(t(k, this), e, !0)
+    }
+    get placementSession() {
+      return o(t(A, this))
+    }
+    set placementSession(e) {
+      r(t(A, this), e, !0)
+    }
+    subscribeChange(e) {
+      return this.changeListeners.add(e), () => this.changeListeners.delete(e)
+    }
+    emitChange(e) {
+      for (let t of this.changeListeners) try {
+        t(e)
+      } catch (e) {
+        console.error(`Overlay change listener failed.`, e)
+      }
+    }
+    constructor() {
+      e(this, D, n(i([]))), e(this, O, n(i([]))), e(this, k, n(null)), e(this, A, n(!1)), a(this, `suppressPersist`, !1), a(this, `persistTimeout`, null), a(this, `changeListeners`, new Set), a(this, `flushPersist`, () => {
+        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(d, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(f, JSON.stringify(this.tagCatalog)))
+      });
+      {
+        let e = localStorage.getItem(d);
+        if (e) try {
+          let t = E(e);
+          if (!t) {
+            localStorage.removeItem(d);
+            return
+          }
+          if (this.templates = t.templates, t.migrated) try {
+            localStorage.setItem(d, t.serialized)
+          } catch (e) {
+            console.error(`Failed to persist migrated overlay metadata.`, e)
+          }
+        } catch {
+          localStorage.removeItem(d)
+        }
+        let t = localStorage.getItem(f),
+          n = [];
+        if (t) try {
+          n = JSON.parse(t)
+        } catch {
+          localStorage.removeItem(f)
+        }
+        this.tagCatalog = x(n, this.templates), this.alignTemplateTagColors();
+        try {
+          localStorage.setItem(f, JSON.stringify(this.tagCatalog))
+        } catch (e) {
+          console.error(`Failed to persist the overlay tag catalog.`, e)
+        }
+        window.addEventListener(`pagehide`, this.flushPersist)
+      }
+    }
+    alignTemplateTagColors(e) {
+      let t = e ? [e] : this.templates;
+      for (let e of t) {
+        var n;
+        (n = e.tags) != null && n.length && (e.tagColorIdxs = e.tags.map(e => {
+          var t;
+          return ((t = this.tagCatalog.find(t => v(t.name) === v(e))) == null ? void 0 : t.colorIdx) ?? y(e)
+        }))
+      }
+    }
+    ensureTemplateTags(e) {
+      let t = x(this.tagCatalog, [e]);
+      t.length !== this.tagCatalog.length && (this.tagCatalog = t), this.alignTemplateTagColors(e)
+    }
+    persist() {
+      this.suppressPersist || (this.persistTimeout !== null && window.clearTimeout(this.persistTimeout), this.persistTimeout = window.setTimeout(this.flushPersist, 120))
+    }
+    commitPendingChanges() {
+      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(d, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(f, JSON.stringify(this.tagCatalog))
+    }
+    replaceServerManaged(e) {
+      let t = this.templates.filter(e => e.serverManaged);
+      if (t.length === 0 && e.length === 0) return;
+      let n = new Set(e.map(e => e.id));
+      this.templates = [...this.templates.filter(e => !e.serverManaged), ...e], this.activeTemplateId && t.some(e => e.id === this.activeTemplateId) && !n.has(this.activeTemplateId) && (this.activeTemplateId = null)
+    }
+    add(e) {
+      this.ensureTemplateTags(e);
+      for (let e of this.templates) e.order++;
+      e.order = 0, m(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
+        kind: `add`,
+        id: e.id
+      })
+    }
+    remove(e) {
+      let t = this.templates.some(t => t.id === e);
+      this.templates = this.templates.filter(t => t.id !== e), this.activeTemplateId === e && (this.activeTemplateId = null), this.persist(), t && this.emitChange({
+        kind: `remove`,
+        id: e
+      })
+    }
+    update(e, t) {
+      let n = this.templates.findIndex(t => t.id === e);
+      if (n === -1) return;
+      let r = t.updatedAt === void 0 ? {
+        ...t,
+        updatedAt: Date.now()
+      } : t;
+      Object.assign(this.templates[n], r), (t.tags !== void 0 || t.tagColorIdxs !== void 0) && this.ensureTemplateTags(this.templates[n]), !this.templates[n].serverManaged && (this.persist(), this.emitChange({
+        kind: `update`,
+        id: e
+      }))
+    }
+    createTag(e, t) {
+      let n = S(e);
+      return !n || this.tagCatalog.length >= 64 || this.tagCatalog.some(e => v(e.name) === v(n)) ? !1 : (this.tagCatalog = [...this.tagCatalog, {
+        name: n,
+        colorIdx: b(t, n)
+      }], this.persist(), !0)
+    }
+    updateTag(e, t, n) {
+      let r = v(e),
+        i = this.tagCatalog.findIndex(e => v(e.name) === r),
+        a = S(t);
+      if (i === -1 || !a || this.tagCatalog.some((e, t) => t !== i && v(e.name) === v(a))) return !1;
+      let o = b(n, a),
+        s = Date.now();
+      for (let e of this.templates) {
+        var c;
+        e.serverManaged || !((c = e.tags) != null && c.some(e => v(e) === r)) || (e.tags = e.tags.map(e => v(e) === r ? a : e), e.tagColorIdxs = e.tags.map((t, n) => {
+          var r;
+          return v(t) === v(a) ? o : ((r = e.tagColorIdxs) == null ? void 0 : r[n]) ?? y(t)
+        }), e.updatedAt = s, this.emitChange({
+          kind: `update`,
+          id: e.id
+        }))
+      }
+      return this.tagCatalog[i] = {
+        name: a,
+        colorIdx: o
+      }, this.tagCatalog = [...this.tagCatalog], this.persist(), !0
+    }
+    deleteTag(e) {
+      let t = v(e);
+      if (!this.tagCatalog.some(e => v(e.name) === t)) return !1;
+      this.tagCatalog = this.tagCatalog.filter(e => v(e.name) !== t);
+      let n = Date.now();
+      for (let e of this.templates) {
+        var r;
+        if (e.serverManaged || !((r = e.tags) != null && r.some(e => v(e) === t))) continue;
+        let i = e.tags.map((t, n) => {
+          var r;
+          return {
+            tag: t,
+            colorIdx: (r = e.tagColorIdxs) == null ? void 0 : r[n]
+          }
+        }).filter(e => v(e.tag) !== t);
+        e.tags = i.length > 0 ? i.map(e => e.tag) : void 0, e.tagColorIdxs = i.length > 0 ? i.map(e => e.colorIdx ?? y(e.tag)) : void 0, e.updatedAt = n, this.emitChange({
+          kind: `update`,
+          id: e.id
+        })
+      }
+      return this.persist(), !0
+    }
+    reorder(e, t) {
+      let n = this.sorted.filter(e => !e.serverManaged);
+      if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
+      let [r] = n.splice(e, 1);
+      n.splice(t, 0, r);
+      for (let e = 0; e < n.length; e++) {
+        let t = this.templates.findIndex(t => t.id === n[e].id);
+        t !== -1 && (this.templates[t].order = e)
+      }
+      this.persist()
+    }
+    getById(e) {
+      return this.templates.find(t => t.id === e)
+    }
+    get sorted() {
+      return Array.isArray(this.templates) ? [...this.templates].sort((e, t) => e.order - t.order) : []
+    }
+  },
+  M;
+(function(e) {
+  async function t(e) {
+    return {
+      ...e,
+      image: {
+        dataUrl: await c(e.image.data),
+        width: e.image.width,
+        height: e.image.height
+      }
+    }
+  }
+  e.toJson = t;
+  async function n(e, t) {
+    return {
+      ...e,
+      image: {
+        data: l(e.image.dataUrl),
+        width: e.image.width,
+        height: e.image.height
+      },
+      order: t
+    }
+  }
+  e.fromJson = n
+})(M || (M = {}));
 export {
-  S as n, D as t
+  j as a, C as i, y as n, v as o, S as r, M as t
 };

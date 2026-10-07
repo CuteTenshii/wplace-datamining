@@ -1,208 +1,92 @@
 import {
-  Ct as e,
-  J as t,
-  Z as n,
-  _t as r,
-  a as i,
-  b as a,
-  o,
-  tn as s,
-  v as c
-} from "./DhUcoEdH.js";
+  $ as e,
+  Dt as t,
+  G as n,
+  X as r,
+  Xt as i,
+  Z as a,
+  Zt as o,
+  o as s,
+  y as c
+} from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
   t as l
-} from "./BTxSywGu.js";
-import {
-  n as u
-} from "./dO3rAx9I.js";
-var d = new Set([`$$slots`, `$$events`, `$$legacy`, `fill`]),
-  f = n(`<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"></path></svg>`);
+} from "./d_pK3fN6.js";
+var u = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`,
+  d = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  f = e(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`),
+  p = e(`<svg><path d="M5 21H3v-2h2v2Zm4 0H7v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2ZM5 17H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 9H3V7h2v2Zm16 0h-2V7h2v2ZM5 5H3V3h2v2Zm4 0H7V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Z"></path></svg>`);
 
-function p(n, l) {
-  let u = i(l, `fill`, 3, `#5865F2`),
-    p = o(l, d);
-  var m = f();
-  c(m, () => ({
-    viewBox: `0 0 256 199`,
-    width: `256`,
-    height: `199`,
-    xmlns: `http://www.w3.org/2000/svg`,
-    preserveAspectRatio: `xMidYMid`,
-    ...p
-  }));
-  var h = e(m);
-  s(m), r(() => a(h, `fill`, u())), t(n, m)
+function m(e, u) {
+  o(u, !0);
+  let m = s(u, d);
+  var h = a(),
+    g = t(h),
+    _ = e => {
+      var t = f();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
+    },
+    v = e => {
+      var t = p();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
+    };
+  n(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(e, h), i()
 }
-var m = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  h = n(`<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>`);
+var h = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  g = e(`<svg><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="12" cy="12" r="3" fill="currentColor"></circle></svg>`),
+  _ = e(`<svg><path d="M18 22H6v-2h12v2ZM6 20H4v-2h2v2Zm14 0h-2v-2h2v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-9-5h-2v-2h2v2ZM6 6H4V4h2v2Zm14 0h-2V4h2v2Zm-2-2H6V2h12v2Z"></path></svg>`);
 
-function g(e, n) {
-  let r = o(n, m);
-  var i = h();
+function v(e, u) {
+  o(u, !0);
+  let d = s(u, h);
+  var f = a(),
+    p = t(f),
+    m = e => {
+      var t = g();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        ...d
+      })), r(e, t)
+    },
+    v = e => {
+      var t = _();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...d
+      })), r(e, t)
+    };
+  n(p, e => {
+    l.standard ? e(m) : e(v, -1)
+  }), r(e, f), i()
+}
+var y = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  b = e(`<svg><rect x="6" y="6" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" rx="2"></rect><rect x="10" y="10" width="4" height="4" fill="currentColor" rx="1"></rect></svg>`);
+
+function x(e, t) {
+  let n = s(t, y);
+  var i = b();
   c(i, () => ({
     xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...r
-  })), t(e, i)
-}
-var _ = {
-    members: l.alliance_award_members_25_name,
-    pixels: l.alliance_award_pixels_10000_name,
-    dedicated_artists: l.alliance_award_dedicated_artists_10_name,
-    age: l.alliance_award_age_30_days_name,
-    daily_members: l.alliance_award_daily_members_10_name,
-    active_days: l.alliance_award_active_7_days_name,
-    members_5: l.alliance_award_members_5_name,
-    members_25: l.alliance_award_members_25_name,
-    members_50: l.alliance_award_members_50_name,
-    members_100: l.alliance_award_members_100_name,
-    members_500: l.alliance_award_members_500_name,
-    members_1000: l.alliance_award_members_1000_name,
-    pixels_100: l.alliance_award_pixels_100_name,
-    pixels_1000: l.alliance_award_pixels_1000_name,
-    pixels_10000: l.alliance_award_pixels_10000_name,
-    pixels_100000: l.alliance_award_pixels_100000_name,
-    pixels_1000000: l.alliance_award_pixels_1000000_name,
-    pixels_10000000: l.alliance_award_pixels_10000000_name,
-    dedicated_artists_10: l.alliance_award_dedicated_artists_10_name,
-    age_30_days: l.alliance_award_age_30_days_name,
-    age_60_days: l.alliance_award_age_60_days_name,
-    age_90_days: l.alliance_award_age_90_days_name,
-    age_180_days: l.alliance_award_age_180_days_name,
-    age_365_days: l.alliance_award_age_365_days_name,
-    daily_members_10: l.alliance_award_daily_members_10_name,
-    daily_members_25: l.alliance_award_daily_members_25_name,
-    daily_members_50: l.alliance_award_daily_members_50_name,
-    daily_members_100: l.alliance_award_daily_members_100_name,
-    active_7_days: l.alliance_award_active_7_days_name
-  },
-  v = {
-    members_5: l.alliance_award_members_5_requirement,
-    members_25: l.alliance_award_members_25_requirement,
-    members_50: l.alliance_award_members_50_requirement,
-    members_100: l.alliance_award_members_100_requirement,
-    members_500: l.alliance_award_members_500_requirement,
-    members_1000: l.alliance_award_members_1000_requirement,
-    pixels_100: l.alliance_award_pixels_100_requirement,
-    pixels_1000: l.alliance_award_pixels_1000_requirement,
-    pixels_10000: l.alliance_award_pixels_10000_requirement,
-    pixels_100000: l.alliance_award_pixels_100000_requirement,
-    pixels_1000000: l.alliance_award_pixels_1000000_requirement,
-    pixels_10000000: l.alliance_award_pixels_10000000_requirement,
-    dedicated_artists_10: l.alliance_award_dedicated_artists_10_requirement,
-    age_30_days: l.alliance_award_age_30_days_requirement,
-    age_60_days: l.alliance_award_age_60_days_requirement,
-    age_90_days: l.alliance_award_age_90_days_requirement,
-    age_180_days: l.alliance_award_age_180_days_requirement,
-    age_365_days: l.alliance_award_age_365_days_requirement,
-    daily_members_10: l.alliance_award_daily_members_10_requirement,
-    daily_members_25: l.alliance_award_daily_members_25_requirement,
-    daily_members_50: l.alliance_award_daily_members_50_requirement,
-    daily_members_100: l.alliance_award_daily_members_100_requirement,
-    active_7_days: l.alliance_award_active_7_days_requirement
-  },
-  y = {
-    members: {
-      common: l.alliance_award_members_5_name,
-      uncommon: l.alliance_award_members_25_name,
-      rare: l.alliance_award_members_50_name,
-      epic: l.alliance_award_members_100_name,
-      legendary: l.alliance_award_members_500_name,
-      mythic: l.alliance_award_members_1000_name
-    },
-    pixels: {
-      common: l.alliance_award_pixels_100_name,
-      uncommon: l.alliance_award_pixels_1000_name,
-      rare: l.alliance_award_pixels_10000_name,
-      epic: l.alliance_award_pixels_100000_name,
-      legendary: l.alliance_award_pixels_1000000_name,
-      mythic: l.alliance_award_pixels_10000000_name
-    },
-    dedicated_artists: {
-      common: l.alliance_award_dedicated_artists_10_name
-    },
-    age: {
-      common: l.alliance_award_age_30_days_name,
-      uncommon: l.alliance_award_age_60_days_name,
-      rare: l.alliance_award_age_90_days_name,
-      epic: l.alliance_award_age_180_days_name,
-      legendary: l.alliance_award_age_365_days_name
-    },
-    daily_members: {
-      common: l.alliance_award_daily_members_10_name,
-      uncommon: l.alliance_award_daily_members_25_name,
-      rare: l.alliance_award_daily_members_50_name,
-      epic: l.alliance_award_daily_members_100_name
-    },
-    active_days: {
-      common: l.alliance_award_active_7_days_name
-    }
-  },
-  b = {
-    members: {
-      common: l.alliance_award_members_5_requirement,
-      uncommon: l.alliance_award_members_25_requirement,
-      rare: l.alliance_award_members_50_requirement,
-      epic: l.alliance_award_members_100_requirement,
-      legendary: l.alliance_award_members_500_requirement,
-      mythic: l.alliance_award_members_1000_requirement
-    },
-    pixels: {
-      common: l.alliance_award_pixels_100_requirement,
-      uncommon: l.alliance_award_pixels_1000_requirement,
-      rare: l.alliance_award_pixels_10000_requirement,
-      epic: l.alliance_award_pixels_100000_requirement,
-      legendary: l.alliance_award_pixels_1000000_requirement,
-      mythic: l.alliance_award_pixels_10000000_requirement
-    },
-    dedicated_artists: {
-      common: l.alliance_award_dedicated_artists_10_requirement
-    },
-    age: {
-      common: l.alliance_award_age_30_days_requirement,
-      uncommon: l.alliance_award_age_60_days_requirement,
-      rare: l.alliance_award_age_90_days_requirement,
-      epic: l.alliance_award_age_180_days_requirement,
-      legendary: l.alliance_award_age_365_days_requirement
-    },
-    daily_members: {
-      common: l.alliance_award_daily_members_10_requirement,
-      uncommon: l.alliance_award_daily_members_25_requirement,
-      rare: l.alliance_award_daily_members_50_requirement,
-      epic: l.alliance_award_daily_members_100_requirement
-    },
-    active_days: {
-      common: l.alliance_award_active_7_days_requirement
-    }
-  },
-  x = {
-    common: l.alliance_award_tier_common,
-    uncommon: l.alliance_award_tier_uncommon,
-    rare: l.alliance_award_tier_rare,
-    epic: l.alliance_award_tier_epic,
-    legendary: l.alliance_award_tier_legendary,
-    mythic: l.alliance_award_tier_mythic
-  };
-
-function S(e, t) {
-  var n, r, i, a;
-  return t ? ((n = y[e]) == null || (r = n[t]) == null ? void 0 : r.call(n)) ?? ((i = _[e]) == null ? void 0 : i.call(_)) ?? l.alliance_awards() : ((a = _[e]) == null ? void 0 : a.call(_)) ?? l.alliance_awards()
-}
-
-function C(e, t) {
-  var n, r, i;
-  return t ? ((n = b[e]) == null || (r = n[t]) == null ? void 0 : r.call(n)) ?? `` : ((i = v[e]) == null ? void 0 : i.call(v)) ?? ``
-}
-
-function w(e) {
-  return x[e]()
-}
-
-function T(e) {
-  return u(e)
+    viewBox: `0 0 24 24`,
+    ...n
+  })), r(e, i)
 }
 export {
-  g as a, T as i, C as n, p as o, w as r, S as t
+  u as i, v as n, m as r, x as t
 };

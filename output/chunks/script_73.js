@@ -1,23 +1,20 @@
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = t(`<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>`);
+  dn as e
+} from "./D2z8HFb7.js";
+var t = e({
+    default: () => n
+  }),
+  n = `This update brings several improvements and fixes for a smoother experience:
 
-function o(t, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
-}
+- Small bugs fixed on the frontend for both mobile and desktop
+- Fixed minor issues when equipping cosmetics
+- Cosmetics released within the last 7 days now display a "New" badge
+- 5 new frames are now available in the shop
+- New shop view to see all available frames
+- Improved consistency of texts for translations
+
+We continue to listen to community feedback to make WPlace even better!
+`;
 export {
-  o as t
+  t as n, n as t
 };

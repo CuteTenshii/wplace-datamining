@@ -1,36 +1,21 @@
-import "./DhUcoEdH.js";
 import {
-  g as e,
-  m as t
-} from "./C-Brjcp4.js";
-var n = {
-  get data() {
-    return e.data
-  },
-  get error() {
-    return e.error
-  },
-  get form() {
-    return e.form
-  },
-  get params() {
-    return e.params
-  },
-  get route() {
-    return e.route
-  },
-  get state() {
-    return e.state
-  },
-  get status() {
-    return e.status
-  },
-  get url() {
-    return e.url
-  }
-};
-t.updated.check;
-var r = n;
+  t as e
+} from "./DP7ilGQK.js";
+var t = /\{([A-Za-z_$][\w$]*)\}/g,
+  n = new Map,
+  r = new Proxy(Object.create(null), {
+    get(e, t) {
+      if (typeof t != `string`) return;
+      let r = n.get(t);
+      return r || (r = (e = {}) => i(t, e), n.set(t, r)), r
+    }
+  });
+
+function i(n, r) {
+  let i = e()[n];
+  if (typeof i != `string`) throw Error(`Unknown message "${n}"`);
+  return i.replace(t, (e, t) => String(r[t]))
+}
 export {
   r as t
 };

@@ -1,61 +1,15 @@
-var e = 1048576,
-  t = {
-    profile: `constrained`,
-    cpuResourceCacheBytes: 192 * e,
-    workerSourceCacheBytes: 64 * e,
-    colorLookupCacheBytes: 8 * e,
-    colorLookupCacheEntries: 131072,
-    gpuTextureCacheBytes: 16 * e,
-    processingTimeSliceMs: 3
-  },
-  n = {
-    profile: `mobile`,
-    cpuResourceCacheBytes: 256 * e,
-    workerSourceCacheBytes: 96 * e,
-    colorLookupCacheBytes: 12 * e,
-    colorLookupCacheEntries: 196608,
-    gpuTextureCacheBytes: 32 * e,
-    processingTimeSliceMs: 5
-  },
-  r = {
-    profile: `desktop`,
-    cpuResourceCacheBytes: 320 * e,
-    workerSourceCacheBytes: 192 * e,
-    colorLookupCacheBytes: 24 * e,
-    colorLookupCacheEntries: 393216,
-    gpuTextureCacheBytes: 64 * e,
-    processingTimeSliceMs: 8
-  };
+import {
+  dn as e
+} from "./D2z8HFb7.js";
+var t = e({
+    default: () => n
+  }),
+  n = `### 🆕 Key Changes
 
-function i(e) {
-  return typeof e == `number` && Number.isFinite(e) && e > 0 ? e : void 0
-}
-
-function a({
-  deviceMemoryGiB: e,
-  hardwareConcurrency: a,
-  mobile: o = !1
-} = {}) {
-  let s = i(e),
-    c = i(a);
-  return s !== void 0 && s <= 2 || c !== void 0 && c <= 2 ? t : o || s !== void 0 && s <= 4 || c !== void 0 && c <= 4 ? n : r
-}
-
-function o(e) {
-  var t;
-  return e ? {
-    deviceMemoryGiB: e.deviceMemory,
-    hardwareConcurrency: e.hardwareConcurrency,
-    mobile: ((t = e.userAgentData) == null ? void 0 : t.mobile) === !0 || /Android|iPhone|iPad|iPod|IEMobile|Mobile|Opera Mini/i.test(e.userAgent ?? ``)
-  } : {}
-}
-var s = a(o(typeof navigator > `u` ? void 0 : navigator)),
-  c = s.cpuResourceCacheBytes,
-  l = s.workerSourceCacheBytes,
-  u = s.colorLookupCacheBytes,
-  d = s.colorLookupCacheEntries,
-  f = s.gpuTextureCacheBytes,
-  p = s.processingTimeSliceMs;
+- **World Cup Event Match Predictions and Cosmetics**: You can now earn an event currency called **Cup Coins** by painting daily in any stadium area or by getting the correct prediction. Spend your Cup Coins in the new **Cup Store** on exclusive time-limited rewards, such as country badges, frames, and other cosmetics, or exchange Droplets for coins if you want a head start.
+- **Anti-cheat system improvements**: More aggressive anticheat detections and punishment of bots and multi-accounts to keep the canvas fair.
+- **Improvements to the suspension system**: Suspensions are now more granular.
+`;
 export {
-  s as a, f as i, d as n, p as o, c as r, l as s, u as t
+  t as n, n as t
 };

@@ -1,23 +1,70 @@
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = t(`<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>`);
+  dn as e
+} from "./D2z8HFb7.js";
+var t = e({
+    default: () => n
+  }),
+  n = `We have just launched a new update focused on **personalization**!
+You can now customize your profile with **profile frames**, **custom fonts**, and **name styles**, to really show off who you are to anyone who clicks on your pixels!
 
-function o(t, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
-}
+### 🖼️ Profile Frames
+
+Frame your profile in style!
+
+- Custom borders around your profile picture - just like our Event Frames
+- Launching with **over 10 frames**
+- You can own **multiple** frames and change them whenever you want
+
+### 🔤 Custom Fonts
+
+Choose the perfect font for your name!
+
+- Launching with **5 new fonts**
+- Fonts are only applied to your name, not your ID (\\\`#123456\\\`)
+
+### 🎨 Name Styles
+
+Stand out with color _and_ animation!
+
+- Colorful effects
+- Subtle animations in select styles
+
+### 🏅 Badges
+
+Badges are rare items that players earn through merit. No badge can be purchased, transferred, or obtained by any means other than:
+
+- Participating in events
+- Completing challenging missions in the game
+- In some cases, being part of Wplace's history
+
+Badges are essentially honors for players to display on their profile. We're launching with **4 visible badges**!
+
+### 🎃 Updated Event Frames
+
+We have also updated the existing **Christmas** and **Halloween** event frames:
+
+- Properly scaled to your avatar
+- More polished with detailed designs
+- Better fit for Wplace's style
+
+### 🌙 Dark Mode
+
+You can rest your eyes! We're releasing the existing version of our dark mode to all users.
+
+- Additional themes will be added in the future
+- To apply dark mode, click your profile and find the button next to the notifications icon
+
+### 🛒 Obtaining the new styles
+
+The new **profile frames**, **custom fonts** and **name styles** can all be found in **the shop**, purchasable with **Droplets**!
+To apply your profile frames, custom fonts and name styles, **click your profile**, followed by the **pencil icon**.
+
+### 🚀 Future updates
+
+This is just the beginning of a new chapter for Wplace! You can expect more frequent updates to the website, as we have many features already in the works, and even more planned! We thank you for your suggestions and patience, as we continue working to keep up with a response that's far exceeded our expectations!
+
+The **More Like You Update** is **LIVE NOW** - go check it out and share what designs you come up with! 🎉\`
+`;
 export {
-  o as t
+  t as n, n as t
 };

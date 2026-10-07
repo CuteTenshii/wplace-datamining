@@ -1,143 +1,95 @@
 import {
-  rn as e
-} from "./DhUcoEdH.js";
+  t as e
+} from "./Bpg9SJXw.js";
 import {
-  H as t
-} from "./CL7mF02H.js";
-var n = 2 * Math.PI * 6378137 / 2,
-  r = 85.0511287798066;
+  t
+} from "./DsRJG1f2.js";
+var n = [{
+  key: `support`,
+  href: `/dashboard/support`,
+  label: () => e.support_title(),
+  permissions: [...t.support.view, t.support.config, t.support.manage_levels]
+}, {
+  key: `dashboard`,
+  href: `/dashboard/home`,
+  label: () => e.home(),
+  permissions: t.dashboard.summary
+}, {
+  key: `mods`,
+  href: `/dashboard/team`,
+  label: () => e.team(),
+  permissions: t.dashboard.team
+}, {
+  key: `appeals`,
+  href: `/dashboard/appeals`,
+  label: () => e.appeals(),
+  permissions: t.dashboard.banAppeals
+}, {
+  key: `tickets`,
+  href: `/dashboard/tickets`,
+  label: () => e.tickets(),
+  permissions: t.dashboard.allTickets
+}, {
+  key: `kpi`,
+  href: `/dashboard/kpi/tickets`,
+  label: () => `KPI`,
+  permissions: t.dashboard.kpi
+}, {
+  key: `users`,
+  href: `/dashboard/users`,
+  label: () => e.users(),
+  permissions: t.dashboard.users
+}, {
+  key: `businesses`,
+  href: `/dashboard/businesses`,
+  label: () => e.businesses(),
+  permissions: t.dashboard.businesses
+}, {
+  key: `permissions`,
+  href: `/dashboard/permissions`,
+  label: () => e.permissions(),
+  permissions: t.dashboard.permissions
+}, {
+  key: `alliances`,
+  href: `/dashboard/alliances`,
+  label: () => e.alliances(),
+  permissions: t.dashboard.alliances
+}, {
+  key: `protections`,
+  href: `/dashboard/protections`,
+  label: () => e.protection_title(),
+  permissions: t.dashboard.protections
+}, {
+  key: `audit-logs`,
+  href: `/dashboard/audit-logs`,
+  label: () => e.audit_logs(),
+  permissions: t.dashboard.auditLogs.only(`see`)
+}, {
+  key: `ticket-reversals`,
+  href: `/dashboard/ticket-reversals`,
+  label: () => e.ticket_reversals_title(),
+  permissions: t.tickets.only(`revertReview`)
+}, {
+  key: `store-manager`,
+  href: `/dashboard/store-manager`,
+  label: () => e.store_manager(),
+  permissions: t.dashboard.storeManager
+}, {
+  key: `anticheat`,
+  href: `/dashboard/anticheat`,
+  label: () => `Anticheat`,
+  permissions: t.dashboard.anticheat
+}];
+
+function r(e) {
+  var r;
+  let i = e.replace(/\/$/, ``);
+  return i === `/dashboard/team/leaderboard-tickets` ? t.dashboard.team.only(`tickets`) : i === `/dashboard/team/leaderboard-reports` ? t.dashboard.team.only(`reports`) : /^\/dashboard\/ticket-reversals\/[^/]+$/.test(i) ? t.tickets.only(`revertReview`) : ((r = n.find(e => e.href === i)) == null ? void 0 : r.permissions) ?? []
+}
 
 function i(e) {
-  return ((e + 180) % 360 + 360) % 360 - 180
-}
-
-function a(e, t) {
-  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
-}
-var o = class {
-  constructor(t = 256) {
-    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
-  }
-  latLonToMeters(e, t) {
-    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
-  }
-  metersToLatLon(e, t) {
-    let r = e / n * 180,
-      i = t / n * 180;
-    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
-  }
-  pixelsToMeters(e, t, r) {
-    let i = this.resolution(r);
-    return [e * i - n, n - t * i]
-  }
-  pixelsToLatLon(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e, t, n);
-    return this.metersToLatLon(r, i)
-  }
-  latLonToPixels(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToPixels(r, i, n)
-  }
-  latLonToPixelsFloor(e, t, n) {
-    let [r, i] = this.latLonToPixels(e, t, n);
-    return [Math.floor(r), Math.floor(i)]
-  }
-  metersToPixels(e, t, r) {
-    let i = this.resolution(r);
-    return [(e + n) / i, (n - t) / i]
-  }
-  latLonToTile(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToTile(r, i, n)
-  }
-  metersToTile(e, t, n) {
-    let [r, i] = this.metersToPixels(e, t, n);
-    return this.pixelsToTile(r, i)
-  }
-  pixelsToTile(e, t) {
-    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
-  }
-  pixelsToTileLocal(e, t) {
-    return {
-      tile: this.pixelsToTile(e, t),
-      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
-    }
-  }
-  tileBounds(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
-    return {
-      min: [r, i],
-      max: [a, o]
-    }
-  }
-  tileBoundsLatLon(e, t, n) {
-    let r = this.tileBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  resolution(e) {
-    return this.initialResolution / 2 ** e
-  }
-  latLonToTileAndPixel(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
-    return {
-      tile: [a, o],
-      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
-    }
-  }
-  pixelBounds(e, t, n) {
-    return {
-      min: this.pixelsToMeters(e, t, n),
-      max: this.pixelsToMeters(e + 1, t + 1, n)
-    }
-  }
-  pixelToBoundsLatLon(e, t, n) {
-    let r = this.pixelBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  latLonToTileBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
-    return this.tileBoundsLatLon(a, o, n)
-  }
-  latLonToPixelBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
-    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
-  }
-  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
-    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
-    return {
-      region: [Math.floor(a / s), Math.floor(o / s)],
-      pixel: [a % s, o % s]
-    }
-  }
-};
-
-function s(e, t = !0) {
-  let {
-    min: n,
-    max: r
-  } = e;
-  return t ? [
-    [n[1], r[0]],
-    [r[1], r[0]],
-    [r[1], n[0]],
-    [n[1], n[0]]
-  ] : [
-    [n[0], r[1]],
-    [r[0], r[1]],
-    [r[0], n[1]],
-    [n[0], n[1]]
-  ]
-}
-
-function c(e) {
-  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
+  return n.find(t => e.hasAnyPermission(t.permissions))
 }
 export {
-  i as a, a as i, s as n, c as r, o as t
+  r as n, i as r, n as t
 };

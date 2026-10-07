@@ -1,21 +1,4 @@
-import {
-  t as e
-} from "./DatMG_8w.js";
-var t = /\{([A-Za-z_$][\w$]*)\}/g,
-  n = new Map,
-  r = new Proxy(Object.create(null), {
-    get(e, t) {
-      if (typeof t != `string`) return;
-      let r = n.get(t);
-      return r || (r = (e = {}) => i(t, e), n.set(t, r)), r
-    }
-  });
-
-function i(n, r) {
-  let i = e()[n];
-  if (typeof i != `string`) throw Error(`Unknown message "${n}"`);
-  return i.replace(t, (e, t) => String(r[t]))
+if (typeof window < `u`) {
+  var e, t;
+  ((e = (t = window).__svelte ?? (t.__svelte = {})).v ?? (e.v = new Set)).add(`5`)
 }
-export {
-  r as t
-};

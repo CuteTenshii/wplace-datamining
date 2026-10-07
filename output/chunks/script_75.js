@@ -1,23 +1,53 @@
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = t(`<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>`);
+  dn as e
+} from "./D2z8HFb7.js";
+var t = e({
+    default: () => n
+  }),
+  n = `Import any image and position it over the map as a painting guide! Access overlays from the **new button in the main sidebar**.
 
-function o(t, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
-}
+- **Import & export** overlays to share or reuse them
+- **Resize, rename, reorder, center, flip**, and restore aspect ratio
+- **Three overlay modes**: Full Pixel, Center Dots, or Half Diagonal
+- **Filter by selected color** to focus on one color at a time
+
+### 🏅 Achievement Frames
+
+New exclusive Avatar Frames that can only be unlocked through gameplay! Reach any of these milestones to earn yours:
+
+- 100,000 Pixels Painted
+- 500,000 Pixels Painted
+- 1,000,000 Pixels Painted
+
+**Note:** Existing players who already meet these milestones will need to paint at least one pixel to retroactively unlock their frames.
+
+### 🛒 Store Frames
+
+New Avatar Frames are now available for purchase in the Store:
+
+- Lucky Horse
+- Monster Trainer Cap
+- Cool Hoodie
+- Diamond Helmet
+- Elf Cap
+- Flower Hair
+- Scout Hat
+- Crimson Dragon
+- Red Astronaut
+- Empty Hero
+- Flying Berry
+- Loom Choir
+- Party Bunny
+
+### 🛠️ Fixes & Improvements
+
+- Middle-click a pixel to select its color
+- Fonts and name styles can now be equipped directly from the Store
+- Improved the selected pixel HUD layout, now also showing equipped Profile Badges
+- Fixed avatar sizes not displaying correctly with Avatar Frames equipped
+- Fixed color picker sampling on high-DPI and fullscreen setups
+- Fixed a stray canvas click when confirming a profile picture
+`;
 export {
-  o as t
+  t as n, n as t
 };

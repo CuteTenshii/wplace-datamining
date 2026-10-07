@@ -1,51 +1,110 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CkVsvSFT.js", "./D2z8HFb7.js", "./C1mx_Hw6.js", "./Dln6VEfo.js", "./Bpg9SJXw.js", "./DP7ilGQK.js", "./CZtdCIYn.js", "./a7QZC4SB.js", "./HVsDxreN.js", "./pKOrQQBa.js", "./Bz1_WS0V.js", "./BTkb9x1Z.js"]))) => i.map(i => d[i]);
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var i = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`,
-  a = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  o = t(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`);
-
-function s(t, i) {
-  let s = n(i, a);
-  var c = o();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
+  Gt as e,
+  Kt as t
+} from "./D2z8HFb7.js";
+import "./C1mx_Hw6.js";
+import {
+  a as n
+} from "./DP7ilGQK.js";
+import {
+  M as r,
+  yt as i
+} from "./CZtdCIYn.js";
+import {
+  t as a
+} from "./BwaMM2Ka.js";
+import {
+  o
+} from "./C8yDr8fi.js";
+var s = t({
+  status: `unavailable`
+});
+async function c() {
+  let t = e(s);
+  if (t.status === `available`) {
+    s.set({
+      status: `prompting`
+    });
+    try {
+      return await t.event.prompt()
+    } finally {
+      e(s).status === `prompting` && s.set({
+        status: `unavailable`
+      })
+    }
+  }
 }
-var c = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  l = t(`<svg><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="12" cy="12" r="3" fill="currentColor"></circle></svg>`);
 
-function u(t, i) {
-  let a = n(i, c);
-  var o = l();
-  r(o, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 0 24 24`,
-    ...a
-  })), e(t, o)
+function l() {
+  return window.matchMedia(`(display-mode: standalone)`).matches || `standalone` in window.navigator && window.navigator.standalone === !0
 }
-var d = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  f = t(`<svg><rect x="6" y="6" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" rx="2"></rect><rect x="10" y="10" width="4" height="4" fill="currentColor" rx="1"></rect></svg>`);
 
-function p(t, i) {
-  let a = n(i, d);
-  var o = f();
-  r(o, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 0 24 24`,
-    ...a
-  })), e(t, o)
+function u() {
+  let e = `last-unfocus`,
+    t = new AbortController,
+    c = window.pwaInstallPrompt;
+  if (window.pwaInstallPrompt = void 0, c && s.set({
+      status: `available`,
+      event: c
+    }), window.addEventListener(`beforeinstallprompt`, e => {
+      e.preventDefault(), window.pwaInstallPrompt === e && (window.pwaInstallPrompt = void 0), s.set({
+        status: `available`,
+        event: e
+      })
+    }, {
+      signal: t.signal
+    }), window.addEventListener(`appinstalled`, () => {
+      s.set({
+        status: `installed`
+      })
+    }, {
+      signal: t.signal
+    }), l() && queueMicrotask(async () => {
+      let {
+        TWAServices: e
+      } = await n(async () => {
+        let {
+          TWAServices: e
+        } = await import(`./CkVsvSFT.js`).then(e => e.i);
+        return {
+          TWAServices: e
+        }
+      }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]), import.meta.url);
+      await e.onInit(t)
+    }), l() || a.isIOSApp()) {
+    let n = () => {
+        let t = localStorage.getItem(e);
+        if (t) {
+          let e = parseInt(t, 10);
+          Date.now() - e > 5 * r.minute && window.location.reload()
+        }
+      },
+      a = () => {
+        localStorage.setItem(e, Date.now().toString());
+        let t = i.map;
+        if (t) {
+          let e = t.getCenter(),
+            n = t.getZoom();
+          o(e, n)
+        }
+      };
+    document.addEventListener(`visibilitychange`, () => {
+      document.visibilityState === `visible` ? n() : a()
+    }, {
+      signal: t.signal
+    }), window.addEventListener(`pageshow`, n, {
+      signal: t.signal
+    }), window.addEventListener(`pagehide`, a, {
+      signal: t.signal
+    })
+  }
+  return () => {
+    t.abort(), s.set({
+      status: `unavailable`
+    })
+  }
 }
 export {
-  i,
-  u as n,
-  s as r,
-  p as t
+  u as i, c as n, s as r, l as t
 };

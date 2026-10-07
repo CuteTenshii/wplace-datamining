@@ -1,84 +1,56 @@
 import {
-  t as e
-} from "./BTxSywGu.js";
+  a as e,
+  n as t,
+  t as n
+} from "./DP7ilGQK.js";
 import {
-  t
-} from "./BEbNZOhy.js";
-var n = [{
-  key: `dashboard`,
-  href: `/dashboard/home`,
-  label: () => e.home(),
-  permissions: t.dashboard.summary
-}, {
-  key: `mods`,
-  href: `/dashboard/team`,
-  label: () => e.team(),
-  permissions: t.dashboard.team
-}, {
-  key: `appeals`,
-  href: `/dashboard/appeals`,
-  label: () => e.appeals(),
-  permissions: t.dashboard.banAppeals
-}, {
-  key: `tickets`,
-  href: `/dashboard/tickets`,
-  label: () => e.tickets(),
-  permissions: t.dashboard.allTickets
-}, {
-  key: `kpi`,
-  href: `/dashboard/kpi/tickets`,
-  label: () => `KPI`,
-  permissions: t.dashboard.kpi
-}, {
-  key: `users`,
-  href: `/dashboard/users`,
-  label: () => e.users(),
-  permissions: t.dashboard.users
-}, {
-  key: `businesses`,
-  href: `/dashboard/businesses`,
-  label: () => e.businesses(),
-  permissions: t.dashboard.businesses
-}, {
-  key: `permissions`,
-  href: `/dashboard/permissions`,
-  label: () => e.permissions(),
-  permissions: t.dashboard.permissions
-}, {
-  key: `alliances`,
-  href: `/dashboard/alliances`,
-  label: () => e.alliances(),
-  permissions: t.dashboard.alliances
-}, {
-  key: `protections`,
-  href: `/dashboard/protections`,
-  label: () => e.protection_title(),
-  permissions: t.dashboard.protections
-}, {
-  key: `audit-logs`,
-  href: `/dashboard/audit-logs`,
-  label: () => e.audit_logs(),
-  permissions: t.dashboard.auditLogs.only(`see`)
-}, {
-  key: `ticket-reversals`,
-  href: `/dashboard/ticket-reversals`,
-  label: () => e.ticket_reversals_title(),
-  permissions: t.tickets.only(`revertReview`)
-}, {
-  key: `store-manager`,
-  href: `/dashboard/store-manager`,
-  label: () => e.store_manager(),
-  permissions: t.dashboard.storeManager
-}, {
-  key: `anticheat`,
-  href: `/dashboard/anticheat`,
-  label: () => `Anticheat`,
-  permissions: t.dashboard.anticheat
-}];
+  i as r,
+  r as i
+} from "./C12X9CaR.js";
 
-function r(e) {
-  return n.find(t => e.hasAnyPermission(t.permissions))
+function a(e, t) {
+  return {
+    links: [{
+      href: i(e),
+      label: t.info_how_to_play
+    }, {
+      href: `/guides/overlays`,
+      label: t.overlay_title
+    }, {
+      href: `/guides/alliances`,
+      label: t.alliances
+    }, {
+      href: `/about`,
+      label: t.public_about
+    }, {
+      href: `/patch-notes`,
+      label: t.patch_notes
+    }],
+    label: t.public_guides,
+    mapLabel: t.go_to_map,
+    relatedLabel: t.public_related,
+    guidelinesLabel: t.community_guidelines
+  }
+}
+
+function o() {
+  return a(t(), n())
+}
+var s = {
+  en: () => e(() => import(`./BOqPOJ_C.js`), [], import.meta.url),
+  "pt-br": () => e(() => import(`./Bw46ANW8.js`), [], import.meta.url),
+  es: () => e(() => import(`./CzOUM77c.js`), [], import.meta.url)
+};
+async function c(e) {
+  let t = await s[e]();
+  return a(r.find(t => t.locale === e).gameLocale, t.default)
+}
+
+function l(e, t) {
+  let n = e.replace(/\/$/, ``);
+  if (n === t) return `page`;
+  if (t === `/patch-notes` && n.startsWith(`/patch-notes/`) || t.endsWith(`/how-to-play`) && n === `/guides/how-to-play`) return `location`
 }
 export {
-  r as n, n as t
+  l as n, o as r, c as t
 };

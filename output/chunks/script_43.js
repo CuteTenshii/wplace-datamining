@@ -1,71 +1,85 @@
-import {
-  Ct as e,
-  D as t,
-  E as n,
-  J as r,
-  Jt as i,
-  K as a,
-  Nt as o,
-  Tt as s,
-  U as c,
-  X as l,
-  _t as u,
-  a as d,
-  qt as f,
-  st as p,
-  tn as m,
-  wt as h
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-import {
-  t as g
-} from "./BhBYYC6v.js";
-import {
-  i as _
-} from "./BQ17PKrs.js";
-var v = l(`<span> </span>`),
-  y = l(`<span> </span> <!>`, 1);
+function e(e, t) {
+  if (t <= 0 || e < 0) return 0;
+  let n = t - 1;
+  return e > n ? n : e
+}
 
-function b(l, b) {
-  i(b, !0);
-  let x = d(b, `showId`, 3, !0),
-    S = d(b, `class`, 3, ``),
-    C = o(() => {
-      var e;
-      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
-    }),
-    w = o(() => _(b.id ?? 0));
-  g(l, {
-    get userId() {
-      return b.id
-    },
-    get class() {
-      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
-    },
-    children: (i, o) => {
-      var l = y(),
-        d = h(l),
-        f = e(d, !0);
-      m(d);
-      var g = s(d, 2),
-        _ = n => {
-          var i = v(),
-            o = e(i);
-          m(i), u(() => {
-            t(i, 1, `${p(w)??``} ${b.idClass??``??``}`), a(o, `#${b.id??``}`)
-          }), r(n, i)
-        };
-      c(g, e => {
-        x() && e(_)
-      }), u(() => {
-        t(d, 1, `inline-block ${(p(C)?p(w):``)??``}`), n(d, p(C)), a(f, b.name)
-      }), r(i, l)
-    },
-    $$slots: {
-      default: !0
-    }
-  }), f()
+function t(t, n) {
+  let r = t.clientWidth || t.width || 1,
+    i = t.clientHeight || t.height || 1,
+    a = t.width / r,
+    o = t.height / i;
+  return [e(Math.floor(n.x * a), t.width), e(Math.floor(n.y * o), t.height)]
+}
+
+function n(e, t, n) {
+  return new Promise((r, i) => {
+    e.once(`render`, () => {
+      let a = e.getCanvas().toDataURL(),
+        o = document.createElement(`img`);
+      o.src = a, o.onload = () => {
+        let e = document.createElement(`canvas`);
+        e.width = o.width, e.height = o.height;
+        let a = e.getContext(`2d`);
+        if (a) {
+          a.drawImage(o, 0, 0);
+          let [e, i, s, c] = a.getImageData(t, n, 1, 1).data;
+          r([e, i, s, c])
+        } else i(Error(`Could not get 2d context from canvas`));
+        o.remove(), e.remove()
+      }
+    }), e.triggerRepaint()
+  })
+}
+
+function r(e, t) {
+  let n = e.getBounds(),
+    r = e.getCanvas(),
+    i = r.width || r.clientWidth || 1,
+    a = r.height || r.clientHeight || 1,
+    o = (t == null ? void 0 : t.maxWidth) ?? i,
+    s = (t == null ? void 0 : t.maxHeight) ?? a,
+    c = Math.min(1, o / i, s / a),
+    l = Math.max(1, Math.floor(i * c)),
+    u = Math.max(1, Math.floor(a * c));
+  return {
+    north: n.getNorth(),
+    south: n.getSouth(),
+    west: n.getWest(),
+    east: n.getEast(),
+    width: l,
+    height: u
+  }
+}
+
+function i(e, t) {
+  return new Promise((n, r) => {
+    e.once(`render`, () => {
+      let i = e.getCanvas(),
+        a = i;
+      if (t != null && t.maxWidth || t != null && t.maxHeight) {
+        let e = i.width,
+          n = i.height,
+          r = (t == null ? void 0 : t.maxWidth) ?? e,
+          o = (t == null ? void 0 : t.maxHeight) ?? n;
+        a = document.createElement(`canvas`);
+        let s = Math.min(r / e, o / n);
+        a.width = Math.floor(e * s), a.height = Math.floor(n * s);
+        let c = a.getContext(`2d`);
+        c && c.drawImage(i, 0, 0, a.width, a.height)
+      }
+      try {
+        a.toBlob(e => {
+          e && n(e)
+        }, (t == null ? void 0 : t.type) ?? `image/png`, (t == null ? void 0 : t.quality) ?? 1)
+      } catch (e) {
+        r(e)
+      } finally {
+        a !== i && a.remove()
+      }
+    })
+  })
 }
 export {
-  b as t
+  r as i, i as n, n as r, t
 };

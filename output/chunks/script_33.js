@@ -1,108 +1,49 @@
 import {
-  B as e,
-  n as t
-} from "./CL7mF02H.js";
+  $ as e,
+  Dt as t,
+  G as n,
+  X as r,
+  Xt as i,
+  Z as a,
+  Zt as o,
+  o as s,
+  y as c
+} from "./D2z8HFb7.js";
+import "./B8UK1oE5.js";
 import {
-  c as n,
-  s as r
-} from "./U1-Zbur8.js";
-var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
+  t as l
+} from "./d_pK3fN6.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = e(`<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>`),
+  f = e(`<svg><path d="M21 22h-2v-2h2v2Zm-8-1h-2v-2h2v2Zm6-1h-2v-2h2v2ZM9 18H7v-2h2v2Zm8 0h-2v-2h2v2Zm-4-4h2v2H9v-2h2v-2h2v2Zm-7 1H4v-2h2v2Zm14 0h-2v-2h2v2ZM9 10h2v2H8v1H6v-2h2v-1H7V8h2v2Zm9 3h-2v-2h2v2ZM3 12H1v-2h2v2Zm20 0h-2v-2h2v2Zm-7-1h-2V9h2v2ZM5 10H3V8h2v2Zm16 0h-2V8h2v2ZM7 8H5V6h2v2Zm12 0h-2V6h2v2ZM5 6H3V4h2v2Zm12 0H9V4h8v2ZM3 4H1V2h2v2Z"></path></svg>`);
 
-function a(e) {
-  if (e === null) return !1;
-  let t = e.trim().toLowerCase();
-  return t !== `0` && t !== `false`
-}
-
-function o(e) {
-  if (e === null || e.trim() === ``) return;
-  let t = Number(e);
-  return Number.isFinite(t) ? t : void 0
-}
-
-function s(t) {
-  let s = {
-      opaque: !0
+function p(e, p) {
+  o(p, !0);
+  let m = s(p, u);
+  var h = a(),
+    g = t(h),
+    _ = e => {
+      var t = d();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     },
-    c = t.searchParams,
-    l = o(c.get(`lat`)),
-    u = o(c.get(`lng`));
-  l !== void 0 && u !== void 0 && r({
-    lat: l,
-    lng: u
-  }) && (s.pos = {
-    lat: l,
-    lng: u
-  });
-  let d = o(c.get(`zoom`));
-  d !== void 0 && n(d) && (s.zoom = d);
-  let f = o(c.get(`season`));
-  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
-  let p = c.get(`opaque`);
-  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
-  let m = c.get(`area`);
-  if (m) {
-    let e = m.split(`,`);
-    if (e.length === 4) {
-      let [t, n, r, i] = e.map(e => o(e));
-      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
-        south: t,
-        west: n,
-        north: r,
-        east: i
-      })
-    }
-  }
-  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
-  let h = c.get(`error`);
-  i.includes(h ?? ``) && (s.error = h);
-  let g = c.get(`domain`);
-  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
-}
-
-function c(e, t) {
-  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
-}
-var l;
-(function(e) {
-  async function n() {
-    if (!(i() || history.length < 3)) {
-      for (let e = 0; e < 50; e++) history.pushState({}, ``);
-      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
-    }
-  }
-  e.reset = n;
-
-  function r() {
-    if (!(`navigation` in window)) return;
-    let e = window.navigation;
-    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
-    let t = e.entries();
-    return Array.isArray(t) ? t.length : void 0
-  }
-
-  function i() {
-    var e;
-    if (t != null && (e = t.data) != null && e.id) return !0;
-    try {
-      let e = r();
-      return e !== void 0 && e >= history.length
-    } catch {
-      return !1
-    }
-  }
-})(l || (l = {}));
-
-function u(e, t, n) {
-  return new Promise(r => {
-    var i;
-    let a = i => {
-      var o;
-      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
+    v = e => {
+      var t = f();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     };
-    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
-  })
+  n(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(e, h), i()
 }
 export {
-  s as n, c as t
+  p as t
 };
