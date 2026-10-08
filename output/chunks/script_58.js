@@ -1,71 +1,50 @@
 import {
-  D as e,
-  Dt as t,
-  Et as n,
-  G as r,
-  It as i,
-  J as a,
-  O as o,
-  Ot as s,
-  Q as c,
-  X as l,
-  Xt as u,
-  Zt as d,
-  a as f,
-  bt as p,
-  in as m,
-  ut as h
-} from "./D2z8HFb7.js";
-import "./B8UK1oE5.js";
-import {
-  t as g
-} from "./BztibQ2i.js";
-import {
-  i as _
-} from "./Bb_kc8p6.js";
-var v = c(`<span> </span>`),
-  y = c(`<span> </span> <!>`, 1);
+  t as e
+} from "./Bpg9SJXw.js";
+var t = [`common`, `uncommon`, `rare`, `epic`, `legendary`, `mythic`],
+  n = {
+    common: e.rarity_common,
+    uncommon: e.rarity_uncommon,
+    rare: e.rarity_rare,
+    epic: e.rarity_epic,
+    legendary: e.rarity_legendary,
+    mythic: e.rarity_mythic
+  };
 
-function b(c, b) {
-  d(b, !0);
-  let x = f(b, `showId`, 3, !0),
-    S = f(b, `class`, 3, ``),
-    C = i(() => {
-      var e;
-      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
-    }),
-    w = i(() => _(b.id ?? 0));
-  g(c, {
-    get userId() {
-      return b.id
-    },
-    get class() {
-      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
-    },
-    children: (i, c) => {
-      var u = y(),
-        d = t(u),
-        f = n(d, !0);
-      m(d);
-      var g = s(d, 2),
-        _ = e => {
-          var t = v(),
-            r = n(t);
-          m(t), p(() => {
-            o(t, 1, `${h(w)??``} ${b.idClass??``??``}`), a(r, `#${b.id??``}`)
-          }), l(e, t)
-        };
-      r(g, e => {
-        x() && e(_)
-      }), p(() => {
-        o(d, 1, `inline-block ${(h(C)?h(w):``)??``}`), e(d, h(C)), a(f, b.name)
-      }), l(i, u)
-    },
-    $$slots: {
-      default: !0
-    }
-  }), u()
+function r(e) {
+  return t.includes(e)
+}
+
+function i(e) {
+  return n[e]()
+}
+
+function a(e) {
+  return `tier--${e}`
+}
+
+function o(e) {
+  return e && r(e) ? e : `common`
+}
+var s = (e, t, n, r, i) => ({
+    x: e,
+    size: t,
+    color: n,
+    duration: r,
+    delay: i
+  }),
+  c = {
+    common: [],
+    uncommon: [],
+    rare: [],
+    epic: [s(`20%`, 5, `rgb(168 85 247 / 0.8)`, 5, 0), s(`55%`, 6, `rgb(124 58 237 / 0.7)`, 6, 1.8), s(`80%`, 5, `rgb(196 152 255 / 0.8)`, 5.5, 3.2)],
+    legendary: [s(`15%`, 5, `rgb(251 191 36 / 0.85)`, 4.8, 0), s(`42%`, 6, `rgb(245 158 11 / 0.75)`, 6, 1.4), s(`68%`, 4, `rgb(255 223 142 / 0.9)`, 5.2, 2.6), s(`86%`, 5, `rgb(251 191 36 / 0.8)`, 5.6, 3.6)],
+    mythic: [s(`12%`, 5, `rgb(255 77 109 / 0.85)`, 4.6, 0), s(`30%`, 4, `rgb(255 159 28 / 0.85)`, 5.4, 1.2), s(`50%`, 6, `rgb(74 222 128 / 0.8)`, 5, 2.2), s(`68%`, 4, `rgb(34 211 238 / 0.85)`, 5.8, 3), s(`86%`, 5, `rgb(168 85 247 / 0.85)`, 4.9, 3.8), s(`40%`, 3, `rgb(255 230 109 / 0.9)`, 6.2, 4.4)]
+  };
+
+function l(e) {
+  return c[e]
 }
 export {
-  b as t
+  l as a, i, r as n, o, a as r, t
 };

@@ -6,20 +6,18 @@ var t = e({
   }),
   n = `### Improvements
 
-- The art opacity button on the map now opens a display menu: set the art opacity to 0%, 50%, or 100%, and show or hide alliance headquarters pins and hotspot markers.
-- Clicking the alliance name on a selected pixel now opens that alliance's details.
-- Alliance leaderboards now show each alliance's picture next to its name, and alliance names show a quick summary on hover and open the alliance's details when clicked.
-- Alliance member lists can now be sorted by join date, from newest to oldest or oldest to newest.
-- Alliances can now unlock resizable square and circle brushes, paint bucket fill, and filled polygon drawing for picture and banner editors.
-- Painting on alliance canvases now uses the same sound feedback as the main canvas.
-- Alliance awards now display visual effects that grow richer with every tier upgrade, from a soft colored glow on lower tiers to sparkles and a shifting aura on the highest ones.
-- Alliance screens now respond with subtle animations for better responsiveness.
-- All alliance animations follow your device's reduced motion preference.
-- Alliance canvases now include a mobile painting lock, allowing users to paint continuously by dragging without moving the canvas.
-
-### Fixes
-
-- Fixed an issue where the join policy filter in the alliance gallery was cut off in some languages.
+- **Stable alliance canvas refreshes**:
+  - Picture and banner canvases now keep their pan and zoom positions while collaborator changes load.
+  - Headquarters canvases fetch settled positions during movement and avoid repeating temporary connection warnings.
+- **Full-screen alliance canvases**:
+  - Picture, banner, and headquarters artwork can now fill the entire screen for better visibility.
+  - Painting now uses the familiar main-canvas flow with an open-and-confirm Paint button and mouse-wheel-click color sampling.
+  - Headquarters charges and recharge time are shown on Paint, pixel clicks open the same detailed painter card used by the main canvas, and timeout management lives in a header menu.
+- **Controlled member lists**:
+  - Alliance member and ban lists now load one additional page per **Load more** click instead of continuing automatically while you scroll.
+- **Easier draft collaborators**:
+  - Managing who can paint an alliance draft now shows the full member list with a search box and a checkbox per member.
+  - Ticking a member grants access instantly, unticking removes it, and current collaborators stay visible with the date they were added.
 `;
 export {
   t as n, n as t

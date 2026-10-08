@@ -4,33 +4,22 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `### New features
+  n = `### Improvements
 
-- Alliance headquarters now include a leaderboard of canvas contributions for today, this week, this month, and all time.
-- Alliance staff with overlay management permission can now use its edit dialog to place it independently on drafts, headquarters, and the main canvas.
-
-### Improvements
-
-- The alliance asset studio has a refreshed layout: drafts and saved versions appear as image cards on a transparency checkerboard, each draft's manage actions are grouped into a compact menu, a new draft can be bought directly from the drafts grid at its shown Coin price, and the equipped version can be unequipped right from its card.
-- Finishing an asset draft and removing a saved version now ask for confirmation first.
-- Styled letters with accents in alliance descriptions now display correctly on mobile devices.
-- Alliance overlays now use shared positions chosen by staff. Positioning opens the selected canvas directly, where staff can set its size and color options independently.
-- Alliance overlays use the same painting-guide flow on every canvas, including pixel guide modes and selected-color filtering.
-- Alliance overlays refresh after staff moves them, notify viewers about the new position, and reuse images securely after rechecking access. **Existing overlays stay hidden until staff selects and positions their locations.**
+- The art opacity button on the map now opens a display menu: set the art opacity to 0%, 50%, or 100%, and show or hide alliance headquarters pins and hotspot markers.
+- Clicking the alliance name on a selected pixel now opens that alliance's details.
+- Alliance leaderboards now show each alliance's picture next to its name, and alliance names show a quick summary on hover and open the alliance's details when clicked.
+- Alliance member lists can now be sorted by join date, from newest to oldest or oldest to newest.
+- Alliances can now unlock resizable square and circle brushes, paint bucket fill, and filled polygon drawing for picture and banner editors.
+- Painting on alliance canvases now uses the same sound feedback as the main canvas.
+- Alliance awards now display visual effects that grow richer with every tier upgrade, from a soft colored glow on lower tiers to sparkles and a shifting aura on the highest ones.
+- Alliance screens now respond with subtle animations for better responsiveness.
+- All alliance animations follow your device's reduced motion preference.
+- Alliance canvases now include a mobile painting lock, allowing users to paint continuously by dragging without moving the canvas.
 
 ### Fixes
 
-- Captcha verification dialogs now stay in front of other dialogs.
-- Alliance overlays now open at the correct opacity.
-- Alliance headquarters leaderboard bars now accurately show members with no painted pixels.
-- Alliance and map overlay pixel modes now switch reliably, including on large templates.
-- Alliance overlay positioning now returns staff to the overlay editor, and main-canvas placements can be resized without reopening unexpectedly.
-- Main-canvas alliance overlays now render reliably when reopened after being closed.
-- Alliance canvases now continue showing collaborators' pixel changes while paint mode is open without discarding unconfirmed local paint.
-- Pixels placed while painting alliance canvases now show crosshairs that stay aligned while panning or zooming, until the paint session is confirmed or canceled.
-- Alliance headquarters canvases now keep loaded areas visible while zooming and refresh them when needed.
-- Starting paint mode now keeps the current map zoom whenever individual pixels are already visible.
-- Pinch zooming on headquarters canvases now stays centered beneath your fingers on touchscreens.
+- Fixed an issue where the join policy filter in the alliance gallery was cut off in some languages.
 `;
 export {
   t as n, n as t

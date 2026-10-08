@@ -6,7 +6,12 @@ var t = e({
   }),
   n = `### Improvements
 
-- Prism packages now include twice as much Prism at the same prices. Customers with previous non-refunded Prism purchases receive the additional Prism automatically.
+- Alliance Coin balances, prices, and notifications now use a dedicated coin icon, and Droplets have a refreshed icon.
+
+### Fixes
+
+- Fixed an issue where personal overlays could appear duplicated, rotated, or show incorrect pixels on some mobile devices.
+- Fixed an issue where reopened alliance picture or banner drafts could fail to finish.
 `;
 export {
   t as n, n as t

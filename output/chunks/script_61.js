@@ -1,88 +1,99 @@
 import {
-  Dt as e,
-  Et as t,
-  G as n,
-  H as r,
+  B as e,
+  Dt as t,
+  Et as n,
+  G as r,
   It as i,
-  J as a,
-  O as o,
-  Ot as s,
-  Q as c,
-  U as l,
-  X as u,
-  Xt as d,
-  Z as f,
-  Zt as p,
-  a as m,
-  bt as h,
-  in as g,
-  it as _,
-  rn as v,
-  rt as y,
-  ut as b,
-  x
+  O as a,
+  Q as o,
+  X as s,
+  Xt as c,
+  Z as l,
+  Zt as u,
+  a as d,
+  bt as f,
+  cn as p,
+  in as m,
+  it as h,
+  k as g,
+  rt as _,
+  ut as v,
+  x as y
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  t as S
-} from "./Bpg9SJXw.js";
-var C = c(`<button><div class="tooltip-content z-50"> </div> <img class="size-full object-contain"/></button>`),
-  w = c(`<button><div class="tooltip-content z-50"> </div> <span class="text-sm font-light">+</span></button>`);
+  n as b
+} from "./CzXEc-K8.js";
+import {
+  t as x
+} from "./C8I5gCKJ.js";
 
-function T(c, y) {
-  p(y, !0);
-  let T = {
-      sm: `size-5`,
-      md: `size-7`
-    },
-    E = m(y, `size`, 3, `sm`),
-    D = i(() => T[E()]),
-    O = i(() => !!y.onslotclick);
-  var k = f(),
-    A = e(k);
-  r(A, 16, () => [0, 1, 2], l, (r, c) => {
-    let l = i(() => {
-      var e;
-      return (e = y.badges) == null ? void 0 : e[c]
-    });
-    var d = f(),
-      p = e(d),
-      m = e => {
-        var n = C();
-        let r;
-        var i = t(n),
-          d = t(i, !0);
-        g(i);
-        var f = s(i, 2);
-        g(n), h(() => {
-          r = o(n, 1, `tooltip rounded-full border border-transparent ${b(D)??``} transition-colors duration-150 ${b(O)?`hover:bg-base-200/80`:``}`, null, r, {
-            "cursor-auto": !b(O)
-          }), a(d, b(l).name), x(f, `src`, b(l).imageUrl), x(f, `alt`, b(l).name)
-        }), _(`click`, n, function(...e) {
-          var t;
-          (t = b(O) ? () => {
-            var e;
-            return (e = y.onslotclick) == null ? void 0 : e.call(y, c)
-          } : void 0) == null || t.apply(this, e)
-        }), u(e, n)
-      },
-      T = e => {
-        var n = w(),
-          r = t(n),
-          i = t(r, !0);
-        g(r), v(2), g(n), h(e => {
-          o(n, 1, `border-base-content/30 bg-base-200/80 text-base-content/60 hover:bg-base-300/50 hover:border-primary/40 pixelated tooltip grid ${b(D)??``} place-items-center rounded-full transition-colors duration-150`), a(i, e)
-        }, [() => S.equip_badge()]), _(`click`, n, () => {
-          var e;
-          return (e = y.onslotclick) == null ? void 0 : e.call(y, c)
-        }), u(e, n)
-      };
-    n(p, e => {
-      b(l) ? e(m) : b(O) && e(T, 1)
-    }), u(r, d)
-  }), u(c, k), d()
+function S(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
 }
-y([`click`]);
+
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+}
+var w = o(`<span role="link" tabindex="0"><!></span>`),
+  T = o(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = o(`<span><!></span>`);
+
+function D(o, _) {
+  u(_, !0);
+  let D = d(_, `mode`, 3, `anchor`),
+    O = d(_, `class`, 3, ``),
+    k = d(_, `linkClass`, 19, O),
+    A = d(_, `textClass`, 19, O),
+    j = i(() => _.userId != null && _.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
+    M = i(() => _.userId == null ? `` : S(_.userId));
+
+  function N(e) {
+    e.stopPropagation()
+  }
+
+  function P(e) {
+    _.userId == null || _.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(_.userId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = l(),
+    L = t(I),
+    R = i => {
+      var o = l(),
+        c = t(o),
+        u = t => {
+          var r = w(),
+            i = n(r);
+          e(i, () => _.children ?? p), m(r), f(() => {
+            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `title`, _.title)
+          }), h(`pointerdown`, r, N), h(`click`, r, P), h(`keydown`, r, F), s(t, r)
+        },
+        d = t => {
+          var r = T(),
+            i = n(r);
+          e(i, () => _.children ?? p), m(r), f(() => {
+            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `href`, v(M)), y(r, `title`, _.title)
+          }), h(`pointerdown`, r, N), h(`click`, r, N), s(t, r)
+        };
+      r(c, e => {
+        D() === `inline` ? e(u) : e(d, -1)
+      }), s(i, o)
+    },
+    z = t => {
+      var r = E(),
+        i = n(r);
+      e(i, () => _.children ?? p), m(r), f(() => {
+        a(r, 1, g(A())), y(r, `title`, _.title)
+      }), s(t, r)
+    };
+  r(L, e => {
+    v(j) ? e(R) : e(z, -1)
+  }), s(o, I), c()
+}
+_([`pointerdown`, `click`, `keydown`]);
 export {
-  T as t
+  S as n, D as t
 };

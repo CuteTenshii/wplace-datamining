@@ -1,99 +1,84 @@
 import {
-  B as e,
-  Dt as t,
-  Et as n,
-  G as r,
-  It as i,
-  O as a,
-  Q as o,
-  X as s,
-  Xt as c,
-  Z as l,
-  Zt as u,
-  a as d,
-  bt as f,
-  cn as p,
-  in as m,
-  it as h,
-  k as g,
-  rt as _,
-  ut as v,
-  x as y
+  Et as e,
+  G as t,
+  It as n,
+  J as r,
+  Ot as i,
+  Q as a,
+  X as o,
+  Xt as s,
+  Zt as c,
+  a as l,
+  bt as u,
+  in as d,
+  it as f,
+  rt as p,
+  ut as m,
+  x as h
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  n as b
-} from "./CZtdCIYn.js";
+  t as g
+} from "./Bpg9SJXw.js";
 import {
-  t as x
-} from "./DsRJG1f2.js";
+  i as _
+} from "./CzXEc-K8.js";
+import {
+  o as v
+} from "./BzcxN-ac.js";
+var y = a(`<span class="text-success">(Verified)</span>`),
+  b = a(`<a target="_blank" rel="noreferer" aria-label="Discord"><!></a>`),
+  x = a(`<button><!></button>`),
+  S = a(`<span class="tooltip h-4"><div class="tooltip-content"><span> </span> <!></div> <!></span>`);
 
-function S(e) {
-  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
-}
-
-function C(e) {
-  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
-}
-var w = o(`<span role="link" tabindex="0"><!></span>`),
-  T = o(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
-  E = o(`<span><!></span>`);
-
-function D(o, _) {
-  u(_, !0);
-  let D = d(_, `mode`, 3, `anchor`),
-    O = d(_, `class`, 3, ``),
-    k = d(_, `linkClass`, 19, O),
-    A = d(_, `textClass`, 19, O),
-    j = i(() => _.userId != null && _.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
-    M = i(() => _.userId == null ? `` : S(_.userId));
-
-  function N(e) {
-    e.stopPropagation()
-  }
-
-  function P(e) {
-    _.userId == null || _.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(_.userId))
-  }
-
-  function F(e) {
-    (e.key === `Enter` || e.key === ` `) && P(e)
-  }
-  var I = l(),
-    L = t(I),
-    R = i => {
-      var o = l(),
-        c = t(o),
-        u = t => {
-          var r = w(),
-            i = n(r);
-          e(i, () => _.children ?? p), m(r), f(() => {
-            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `title`, _.title)
-          }), h(`pointerdown`, r, N), h(`click`, r, P), h(`keydown`, r, F), s(t, r)
-        },
-        d = t => {
-          var r = T(),
-            i = n(r);
-          e(i, () => _.children ?? p), m(r), f(() => {
-            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `href`, v(M)), y(r, `title`, _.title)
-          }), h(`pointerdown`, r, N), h(`click`, r, N), s(t, r)
-        };
-      r(c, e => {
-        D() === `inline` ? e(u) : e(d, -1)
-      }), s(i, o)
+function C(a, p) {
+  c(p, !0);
+  let C = l(p, `size`, 3, `md`),
+    w = n(() => !!p.id),
+    T = {
+      md: `size-5`,
+      sm: `size-4`
     },
-    z = t => {
-      var r = E(),
-        i = n(r);
-      e(i, () => _.children ?? p), m(r), f(() => {
-        a(r, 1, g(A())), y(r, `title`, _.title)
-      }), s(t, r)
+    E = n(() => `-translate-y-0.5 opacity-70 ${T[C()]}`);
+  var D = S(),
+    O = e(D),
+    k = e(O),
+    A = e(k);
+  d(k);
+  var j = i(k, 2),
+    M = e => {
+      var t = y();
+      o(e, t)
     };
-  r(L, e => {
-    v(j) ? e(R) : e(z, -1)
-  }), s(o, I), c()
+  t(j, e => {
+    m(w) && e(M)
+  }), d(O);
+  var N = i(O, 2),
+    P = t => {
+      var n = b(),
+        r = e(n);
+      v(r, {
+        get class() {
+          return m(E)
+        }
+      }), d(n), u(e => h(n, `href`, e), [() => `https://discord.com/users/${encodeURIComponent(p.id)}`]), o(t, n)
+    },
+    F = t => {
+      var n = x(),
+        r = e(n);
+      v(r, {
+        get class() {
+          return m(E)
+        }
+      }), d(n), f(`click`, n, async () => {
+        await navigator.clipboard.writeText(p.username), _.info(g.username_copied())
+      }), o(t, n)
+    };
+  t(N, e => {
+    m(w) ? e(P) : e(F, -1)
+  }), d(D), u(() => r(A, `Discord: ${p.username??``}`)), o(a, D), s()
 }
-_([`pointerdown`, `click`, `keydown`]);
+p([`click`]);
 export {
-  S as n, D as t
+  C as t
 };

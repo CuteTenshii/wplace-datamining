@@ -4,17 +4,31 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `## Improvements
+  n = `## Features
 
-- Selecting the current palette color again or pressing Z while building a map overlay now smoothly moves the map to a pixel of that color that still needs painting. Travel stops once that color is complete.
-- Faster progress calculations in the Overlays Gallery, especially for overlays sharing the same map area.
-- Progress calculations now continue when gallery cards change sort order.
+- Added a live minimap to preview overlay artwork while editing.
+- The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or a long press on mobile.
+- Use 1-9 to show or hide layers, counting from the top of the layer list, without changing the selected layer. Customize these keys in Keyboard shortcuts; V still toggles the selected layer.
+- Alliance overlays now have pixel and layer editing, layered project imports, draft recovery, gallery search and sorting, personal tags, and duplication.
+- Members who manage alliance overlays can share a personal overlay with their alliance, preserving its artwork, size, opacity, and map position while keeping the personal original.
+- Headquarters and draft overlays now show live progress, incorrect and unpainted pixel highlights, remaining color counts, and personal opacity controls. Hold Alt or Option to peek at the canvas.
+- Headquarters and draft placements now support exact coordinates, dimensions, undo, and redo.
+- Added a saved "Show palette numbers" option in overlay More tools for the main and alliance palettes.
 
 ## Fixes
 
-- Fixed alliance details getting stuck loading after returning from the gallery. Failed loads now offer a retry button.
-- Removed the duplicate screen lock button when building overlays in headquarters and alliance drafts. On mobile, the progress bar now fills the available width.
-- Fixed slow loading when entering paint mode with large overlays containing many colors, including dithered images.
+- Rotating a phone or tablet keeps overlay touch controls available and keyboard hints hidden.
+- Fixed editor controls being covered by transform handles or the minimap on small screens and touch devices.
+- Fixed overlay colors changing in some browsers when saving or restoring editor layers and drafts, or importing PNG layers.
+- Fixed incorrect and unpainted overlay markers flickering during continuous painting or spreading onto completed pixels on devices with limited graphics memory.
+- Overlay progress and markers now wait for matching results after moving an overlay or changing its image or color settings.
+- Fixed pinch zoom jumping in the overlay editor when lifting or replacing a finger.
+- Fixed screen lock taps being ignored or toggling twice while painting.
+- Fixed overlays appearing shifted by one pixel despite showing complete progress.
+- Zoomed-out overlays retain their original colors across graphics memory limits, and profiled JPEG and WebP imports use consistent color handling.
+- Fixed overlay previews getting stuck when image decoding or local storage fails.
+- Headquarters overlays recover from graphics initialization failures and context loss.
+- Conflicting alliance artwork saves keep your editor draft available to review newer changes.
 `;
 export {
   t as n, n as t

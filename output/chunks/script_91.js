@@ -6,9 +6,7 @@ var t = e({
   }),
   n = `### Fixes
 
-- Fixed an issue where saved overlays could remain stuck loading and make the overlay menu unresponsive.
-- Fixed an issue that prevented overlays with role-restricted audiences from being saved.
-- Alliance overlays now preserve full-resolution source images so their quantized colors stay consistent with matching personal overlays.
+- Fixed an issue where alliance headquarters pins could appear at the wrong zoom after loading the map and moving the pointer could repeatedly cause map errors.
 `;
 export {
   t as n, n as t

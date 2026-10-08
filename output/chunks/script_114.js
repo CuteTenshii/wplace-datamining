@@ -6,19 +6,23 @@ var t = e({
   }),
   n = `## Improvements
 
-- On mobile, Pixel-art Studio now has full-width palette, tools, and layers panels. Tap the active panel to collapse it or drag its handle to change its height.
-- Studio zoom controls now sit below the canvas on mobile, and Live Preview can be shown or hidden. Palette colors have larger touch targets, with a clearer selected-color marker.
-- Brush size can now be entered directly or adjusted one pixel at a time in Pixel-art Studio and alliance canvas painting.
+- Added a "Show palette numbers" option in overlay More tools to hide or show remaining pixel counts on the main palette.
+- Alliance overlays now open the overlay details page.
+- Members with permission to manage alliance overlays can now share a personal overlay with their alliance from its details.
+- Alliance overlays now use the shared Overlay Studio pixel editor and build controls across the main canvas, headquarters, and alliance drafts.
 
 ## Fixes
 
-- Fixed vertical symmetry controls being covered by the layers section when adjusting brush size on mobile.
-- Reduced pinch-zoom jumps when moving both fingers or resizing the canvas view, and made zoom respond immediately when reversing direction at its limits.
-- Fixed palette color names appearing behind pixel counts when building map overlays.
-
-## Changes
-
-- Removed the Colors vs Void event.
+- Fixed unnecessary progress refreshes and reduced lag while using large overlays.
+- Overlay statistics now load over unpainted map areas and refresh when alliance artwork changes.
+- Fixed pinch zoom jumping in the overlay creator on phones and tablets, including when lifting or replacing a finger during a gesture.
+- Fixed intermittent screen lock and unlock failures while painting, including taps with another finger on the canvas and delayed touch clicks that could toggle the lock back.
+- Fixed overlays appearing shifted by one pixel on the canvas even when progress showed 100% complete.
+- Fixed overlay galleries getting stuck loading when a browser image decoder stops responding. Previews now fall back to another decoder and release stalled resources.
+- Fixed blocked or interrupted local storage access leaving overlay previews loading indefinitely.
+- Fixed overlay colors changing between devices with different graphics memory limits. Zoomed-out overlays now retain template colors instead of blending neighboring pixels into new colors.
+- Fixed JPEG and WebP overlays with embedded color profiles importing with different colors depending on browser decoding support.
+- Fixed headquarters overlays staying blank after graphics initialization failures or graphics context loss. Overlays now recover automatically while preserving their image, position, opacity, and pixel mode.
 `;
 export {
   t as n, n as t

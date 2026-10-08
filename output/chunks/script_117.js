@@ -4,26 +4,23 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `## Improvements
+  n = `## Additions
 
-- Favorite places now support filled icons and a transparent background toggle, with a live preview while editing. Background color editing is disabled while transparency is enabled.
-- Existing favorites with the default hollow yellow star and black background now use a filled yellow star on a transparent background.
-- Added "Use native OS cursor" under Settings > Accessibility.
-- Fully expanded paint palettes now use two rows and grow sideways on desktop and landscape screens. Portrait mobile palettes keep expanding vertically. Applies to both the world map and alliance canvases.
-- Paint buttons inside palettes now stay centered at their natural width.
-- Added "Legacy UI" under Settings > Accessibility to restore the previous interface style.
-- Updated secondary button outlines in light mode to a softer blue-gray color (#8090A8).
+- Pixel-art Studio now supports cutting, copying, pasting, and duplicating selections. Pasted and duplicated pixels appear on separate layers that can be moved and resized.
+- Added a text tool with multiline text, font choices, size, bold, italic, alignment, spacing, and a preview before applying. Type directly on the Pixel-art Studio canvas with a text cursor, text selection, and a live preview. Enter adds a line, Ctrl/Cmd+Enter applies, and Esc cancels. Clicking another canvas point or switching tools applies the text as pixels.
+- Added linear and radial gradients with intermediate palette colors when dithering is off and two-color patterns when it is on. Start and end color options appear together above dithering. Gradients fill the current selection or the whole layer.
+
+## Improvements
+
+- Alliance overlay images and gallery thumbnails load faster.
+- The entire paint palette, including its tools and Paint button, can now be minimized to give the canvas more room. The minimized view has a larger color swatch, a clearer color name, and shows how many pixels of that color are left when painting an overlay.
+- On small phones, paint tools have larger touch targets, long labels fit within the panel, and the Paint button no longer crowds the buttons beside it. The color palette scrolls on short screens to keep every color within reach.
 
 ## Fixes
 
-- Improved pixel font sharpness with pixel-grid hinting and reduced font smoothing.
-- Fixed the login modal showing a duplicate background and border in the pixel interface.
-- Fixed selected-pixel and paint panels appearing off-screen when using Legacy UI, and kept paint palettes scrollable in both interface styles.
-- Matched primary and secondary button styling, preserving outline thickness and giving shadows the same thickness as the outlines.
-- Fixed color-name tooltips being clipped in the main and alliance paint palettes, especially on the top row and near the edges.
-- The profile button is now round to match your profile picture.
-- Fixed inconsistent styling between the Droplets and Prism balance buttons.
-- Kept the favorite color picker layout stable when its contrast warning appears or disappears.
+- Traveling to the next pixel of a color now centers it in the visible canvas above the paint palette, keeping it from being hidden behind the panel on mobile.
+- Removed extra space below game panels when mobile browser bars already provide bottom spacing.
+- Fixed the Pixel-art Studio view shifting when the canvas resizes after lifting your fingers at the end of a pinch zoom.
 `;
 export {
   t as n, n as t

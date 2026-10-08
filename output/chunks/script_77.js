@@ -4,25 +4,49 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `### Anti-Cheat
+  n = `Import any image and position it over the map as a painting guide! Access overlays from the **new button in the main sidebar**.
 
-- Fixed bugs that were incorrectly triggering SMS verification for legitimate users.
-- Reverted SMS verifications that were wrongly issued due to these bugs.
+- **Import & export** overlays to share or reuse them
+- **Resize, rename, reorder, center, flip**, and restore aspect ratio
+- **Three overlay modes**: Full Pixel, Center Dots, or Half Diagonal
+- **Filter by selected color** to focus on one color at a time
 
-### Hotspots
+### 🏅 Achievement Frames
 
-- You can now opt out of having your drawings appear in map hotspots. You can find the option in the \`Profile Configurations tab\`.
-- Fixed zoom behavior when clicking on hotspot clusters.
-- Reduced default zoom level when clicking on hotspots.
+New exclusive Avatar Frames that can only be unlocked through gameplay! Reach any of these milestones to earn yours:
 
-### Overlay
+- 100,000 Pixels Painted
+- 500,000 Pixels Painted
+- 1,000,000 Pixels Painted
 
-- Added a \`Convert to legacy colors\` option to match overlay colors to the palette from before the update. Use this if your current overlay looks off after the color changes.
+**Note:** Existing players who already meet these milestones will need to paint at least one pixel to retroactively unlock their frames.
 
-### UI & Other Fixes
+### 🛒 Store Frames
 
-- Fixed minor bugs in the Edit Profile dialog
-- Various other small bug fixes
+New Avatar Frames are now available for purchase in the Store:
+
+- Lucky Horse
+- Monster Trainer Cap
+- Cool Hoodie
+- Diamond Helmet
+- Elf Cap
+- Flower Hair
+- Scout Hat
+- Crimson Dragon
+- Red Astronaut
+- Empty Hero
+- Flying Berry
+- Loom Choir
+- Party Bunny
+
+### 🛠️ Fixes & Improvements
+
+- Middle-click a pixel to select its color
+- Fonts and name styles can now be equipped directly from the Store
+- Improved the selected pixel HUD layout, now also showing equipped Profile Badges
+- Fixed avatar sizes not displaying correctly with Avatar Frames equipped
+- Fixed color picker sampling on high-DPI and fullscreen setups
+- Fixed a stray canvas click when confirming a profile picture
 `;
 export {
   t as n, n as t

@@ -1,49 +1,117 @@
 import {
-  $ as e,
-  Dt as t,
-  G as n,
-  X as r,
-  Xt as i,
-  Z as a,
-  Zt as o,
-  o as s,
-  y as c
-} from "./D2z8HFb7.js";
-import "./B8UK1oE5.js";
+  t as e
+} from "./Bpg9SJXw.js";
 import {
-  t as l
-} from "./d_pK3fN6.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = e(`<svg><path d="m247-904 57-56 343 343q23 23 23 57t-23 57L457-313q-23 23-57 23t-57-23L153-503q-23-23-23-57t23-57l190-191-96-96Zm153 153L209-560h382L400-751Zm360 471q-33 0-56.5-23.5T680-360q0-21 12.5-45t27.5-45q9-12 19-25t21-25q11 12 21 25t19 25q15 21 27.5 45t12.5 45q0 33-23.5 56.5T760-280ZM80 0v-160h800V0H80Z"></path></svg>`),
-  f = e(`<svg><path d="M18 22H6v-2h12v2ZM6 20H4V10h2v10Zm14 0h-2V10h2v10ZM8 8h8V4h2v6h-2v2h-2v2h-2v-2h-2v4H8v-6H6V4h2v4Zm8-4H8V2h8v2Z"></path></svg>`);
+  n as t
+} from "./CCVSONu7.js";
+var n = {
+    "brush-square": `b`,
+    "brush-circle": `c`,
+    fill: `f`,
+    polygon: `p`,
+    line: `l`,
+    rectangle: `r`,
+    ellipse: `o`,
+    bezier: `q`,
+    eraser: `e`,
+    pick: `i`,
+    move: `m`
+  },
+  r = [1, 2, 3, 4, 5, 6, 7, 8, 9].map(t => ({
+    id: `visibility-${t}`,
+    label: () => e.overlay_editor_toggle_numbered_layer({
+      number: t
+    }),
+    defaultKey: String(t),
+    layerIndex: t - 1
+  })),
+  i = [...t.map(e => ({
+    id: e.value,
+    label: e.label,
+    defaultKey: n[e.value]
+  })), {
+    id: `text`,
+    label: () => e.overlay_editor_text(),
+    defaultKey: `t`
+  }, {
+    id: `gradient`,
+    label: () => e.gradient(),
+    defaultKey: `g`
+  }, {
+    id: `select-box`,
+    label: () => e.overlay_editor_select_box(),
+    defaultKey: `s`
+  }, {
+    id: `select-contiguous`,
+    label: () => e.overlay_editor_select_contiguous(),
+    defaultKey: `w`
+  }, {
+    id: `select-color`,
+    label: () => e.overlay_editor_select_color(),
+    defaultKey: `k`
+  }, {
+    id: `select-lasso`,
+    label: () => e.overlay_editor_select_lasso(),
+    defaultKey: `a`
+  }, {
+    id: `size-up`,
+    label: () => e.overlay_editor_size_up(),
+    defaultKey: `]`
+  }, {
+    id: `size-down`,
+    label: () => e.overlay_editor_size_down(),
+    defaultKey: `[`
+  }, {
+    id: `visibility`,
+    label: () => e.overlay_editor_toggle_layer(),
+    defaultKey: `v`
+  }, ...r],
+  a = `overlay-studio:hotkey:`;
 
-function p(e, p) {
-  o(p, !0);
-  let m = s(p, u);
-  var h = a(),
-    g = t(h),
-    _ = e => {
-      var t = d();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    },
-    v = e => {
-      var t = f();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    };
-  n(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(e, h), i()
+function o() {
+  let e = {};
+  for (let t of i) e[t.id] = t.defaultKey;
+  return e
+}
+
+function s(e) {
+  if (e.isComposing || e.altKey || e.getModifierState(`AltGraph`)) return null;
+  let t = e.key.toLowerCase();
+  return !/^[a-z0-9[\]]$/.test(t) || t === `0` || (e.ctrlKey || e.metaKey) && /^[zysxcvd]$/.test(t) ? null : `${e.ctrlKey?`Ctrl+`:``}${e.metaKey?`Meta+`:``}${e.shiftKey?`Shift+`:``}${t}`
+}
+
+function c(e) {
+  return /^(Ctrl\+)?(Meta\+)?(Shift\+)?[a-z1-9[\]]$/.test(e) && !(/(?:Ctrl|Meta)\+/.test(e) && /[zysxcvd]$/.test(e))
+}
+
+function l() {
+  let e = o(),
+    t = new Set,
+    n = new Set;
+  try {
+    for (let r of i) {
+      let i = window.localStorage.getItem(a + r.id);
+      i !== null && (i === `` || c(i)) && (t.add(r.id), e[r.id] = n.has(i) ? `` : i, i && n.add(i))
+    }
+  } catch {
+    return o()
+  }
+  for (let r of i) {
+    if (t.has(r.id)) continue;
+    let i = e[r.id];
+    i && n.has(i) ? e[r.id] = `` : i && n.add(i)
+  }
+  return e
+}
+
+function u(e) {
+  try {
+    for (let t of i) window.localStorage.setItem(a + t.id, e[t.id]);
+    return !0
+  } catch {
+    return !1
+  }
 }
 export {
-  p as t
+  l as a, s as i, r as n, u as o, o as r, i as t
 };

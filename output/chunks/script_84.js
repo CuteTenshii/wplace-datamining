@@ -6,8 +6,8 @@ var t = e({
   }),
   n = `### Fixes
 
-- Fixed an issue where alliance overlay lists could remain stuck loading when multiple overlays were available.
-- Alliance staff can now open and edit shared overlay permissions without waiting for the full overlay image to load.
+- Fixed additional cases where large personal overlays could appear flipped, duplicated, or scrambled on mobile devices.
+- Fixed an issue where open overlays could disappear on desktop or mobile when canvas pixels refreshed and remain hidden until the user painted or reloaded the page.
 `;
 export {
   t as n, n as t

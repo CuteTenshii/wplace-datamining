@@ -1,143 +1,85 @@
-import {
-  on as e
-} from "./D2z8HFb7.js";
-import {
-  H as t
-} from "./CZtdCIYn.js";
-var n = 2 * Math.PI * 6378137 / 2,
-  r = 85.0511287798066;
-
-function i(e) {
-  return ((e + 180) % 360 + 360) % 360 - 180
+function e(e, t) {
+  if (t <= 0 || e < 0) return 0;
+  let n = t - 1;
+  return e > n ? n : e
 }
 
-function a(e, t) {
-  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
-}
-var o = class {
-  constructor(t = 256) {
-    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
-  }
-  latLonToMeters(e, t) {
-    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
-  }
-  metersToLatLon(e, t) {
-    let r = e / n * 180,
-      i = t / n * 180;
-    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
-  }
-  pixelsToMeters(e, t, r) {
-    let i = this.resolution(r);
-    return [e * i - n, n - t * i]
-  }
-  pixelsToLatLon(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e, t, n);
-    return this.metersToLatLon(r, i)
-  }
-  latLonToPixels(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToPixels(r, i, n)
-  }
-  latLonToPixelsFloor(e, t, n) {
-    let [r, i] = this.latLonToPixels(e, t, n);
-    return [Math.floor(r), Math.floor(i)]
-  }
-  metersToPixels(e, t, r) {
-    let i = this.resolution(r);
-    return [(e + n) / i, (n - t) / i]
-  }
-  latLonToTile(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToTile(r, i, n)
-  }
-  metersToTile(e, t, n) {
-    let [r, i] = this.metersToPixels(e, t, n);
-    return this.pixelsToTile(r, i)
-  }
-  pixelsToTile(e, t) {
-    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
-  }
-  pixelsToTileLocal(e, t) {
-    return {
-      tile: this.pixelsToTile(e, t),
-      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
-    }
-  }
-  tileBounds(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
-    return {
-      min: [r, i],
-      max: [a, o]
-    }
-  }
-  tileBoundsLatLon(e, t, n) {
-    let r = this.tileBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  resolution(e) {
-    return this.initialResolution / 2 ** e
-  }
-  latLonToTileAndPixel(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
-    return {
-      tile: [a, o],
-      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
-    }
-  }
-  pixelBounds(e, t, n) {
-    return {
-      min: this.pixelsToMeters(e, t, n),
-      max: this.pixelsToMeters(e + 1, t + 1, n)
-    }
-  }
-  pixelToBoundsLatLon(e, t, n) {
-    let r = this.pixelBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  latLonToTileBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
-    return this.tileBoundsLatLon(a, o, n)
-  }
-  latLonToPixelBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
-    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
-  }
-  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
-    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
-    return {
-      region: [Math.floor(a / s), Math.floor(o / s)],
-      pixel: [a % s, o % s]
-    }
-  }
-};
-
-function s(e, t = !0) {
-  let {
-    min: n,
-    max: r
-  } = e;
-  return t ? [
-    [n[1], r[0]],
-    [r[1], r[0]],
-    [r[1], n[0]],
-    [n[1], n[0]]
-  ] : [
-    [n[0], r[1]],
-    [r[0], r[1]],
-    [r[0], n[1]],
-    [n[0], n[1]]
-  ]
+function t(t, n) {
+  let r = t.clientWidth || t.width || 1,
+    i = t.clientHeight || t.height || 1,
+    a = t.width / r,
+    o = t.height / i;
+  return [e(Math.floor(n.x * a), t.width), e(Math.floor(n.y * o), t.height)]
 }
 
-function c(e) {
-  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
+function n(e, t, n) {
+  return new Promise((r, i) => {
+    e.once(`render`, () => {
+      let a = e.getCanvas().toDataURL(),
+        o = document.createElement(`img`);
+      o.src = a, o.onload = () => {
+        let e = document.createElement(`canvas`);
+        e.width = o.width, e.height = o.height;
+        let a = e.getContext(`2d`);
+        if (a) {
+          a.drawImage(o, 0, 0);
+          let [e, i, s, c] = a.getImageData(t, n, 1, 1).data;
+          r([e, i, s, c])
+        } else i(Error(`Could not get 2d context from canvas`));
+        o.remove(), e.remove()
+      }
+    }), e.triggerRepaint()
+  })
+}
+
+function r(e, t) {
+  let n = e.getBounds(),
+    r = e.getCanvas(),
+    i = r.width || r.clientWidth || 1,
+    a = r.height || r.clientHeight || 1,
+    o = (t == null ? void 0 : t.maxWidth) ?? i,
+    s = (t == null ? void 0 : t.maxHeight) ?? a,
+    c = Math.min(1, o / i, s / a),
+    l = Math.max(1, Math.floor(i * c)),
+    u = Math.max(1, Math.floor(a * c));
+  return {
+    north: n.getNorth(),
+    south: n.getSouth(),
+    west: n.getWest(),
+    east: n.getEast(),
+    width: l,
+    height: u
+  }
+}
+
+function i(e, t) {
+  return new Promise((n, r) => {
+    e.once(`render`, () => {
+      let i = e.getCanvas(),
+        a = i;
+      if (t != null && t.maxWidth || t != null && t.maxHeight) {
+        let e = i.width,
+          n = i.height,
+          r = (t == null ? void 0 : t.maxWidth) ?? e,
+          o = (t == null ? void 0 : t.maxHeight) ?? n;
+        a = document.createElement(`canvas`);
+        let s = Math.min(r / e, o / n);
+        a.width = Math.floor(e * s), a.height = Math.floor(n * s);
+        let c = a.getContext(`2d`);
+        c && c.drawImage(i, 0, 0, a.width, a.height)
+      }
+      try {
+        a.toBlob(e => {
+          e && n(e)
+        }, (t == null ? void 0 : t.type) ?? `image/png`, (t == null ? void 0 : t.quality) ?? 1)
+      } catch (e) {
+        r(e)
+      } finally {
+        a !== i && a.remove()
+      }
+    })
+  })
 }
 export {
-  i as a, a as i, s as n, c as r, o as t
+  r as i, i as n, n as r, t
 };

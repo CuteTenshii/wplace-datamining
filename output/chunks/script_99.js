@@ -6,7 +6,7 @@ var t = e({
   }),
   n = `### Fixes
 
-- Paint charge balances no longer appear or remain negative after painting.
+- Stripe card checkout is available again and can be retried after temporary loading problems.
 `;
 export {
   t as n, n as t

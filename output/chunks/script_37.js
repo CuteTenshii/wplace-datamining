@@ -1,167 +1,76 @@
 import {
-  D as e,
-  Et as t,
+  $ as e,
+  Dt as t,
   G as n,
-  It as r,
-  J as i,
-  Nt as a,
-  O as o,
-  Ot as s,
-  Pt as c,
-  Q as l,
-  S as u,
-  X as d,
-  Xt as f,
-  Zt as p,
-  a as m,
-  b as h,
-  bt as g,
-  et as _,
-  in as v,
-  it as y,
-  jt as b,
-  mt as x,
-  rt as S,
-  ut as C,
-  x as w,
-  xt as T
+  X as r,
+  Xt as i,
+  Z as a,
+  Zt as o,
+  o as s,
+  y as c
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  t as E
-} from "./Bpg9SJXw.js";
-import {
-  S as D,
-  n as O
-} from "./CZtdCIYn.js";
-import {
-  n as k
-} from "./AaJzQw0Y.js";
-var A = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
-  j = l(`<img class="pixelated bg-base-200" alt="User profile"/>`),
-  M = l(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
-  N = l(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
+  t as l
+} from "./njokBD2q.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  d = e(`<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>`),
+  f = e(`<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>`),
+  p = e(`<svg><path d="M13 3h2v4h8v4h-2v2h-2v3h2v6h-5v-2h-2v-2h-4v2H8v2H3v-6h2v-3H3v-2H1V7h8V3h2V1h2v2Z"></path></svg>`),
+  m = e(`<svg><path d="M5 20h3v2H3v-6h2v4Zm16 2h-5v-2h3v-4h2v6Zm-11-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-2-2h-4v-2h4v2Zm-7-2H5v-3h2v3Zm12 0h-2v-3h2v3ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM9 9H3v2H1V7h8v2Zm14 2h-2V9h-6V7h8v4ZM11 7H9V3h2v4Zm4 0h-2V3h2v4Zm-2-4h-2V1h2v2Z"></path></svg>`);
 
-function P(a, c) {
-  let l = r(() => c.level % 1 * 360);
-  var u = N(),
-    f = s(t(u), 2),
-    p = s(f, 2),
-    m = t(p),
-    h = t(m),
-    _ = e => {
-      k(e, {
-        get userId() {
-          return c.userId
-        },
-        get seed() {
-          return c.avatarSeed
-        }
-      })
-    },
+function h(e, h) {
+  o(h, !0);
+  let g = s(h, u);
+  var _ = a(),
+    v = t(_),
     y = e => {
-      var t = j();
-      g(() => w(t, `src`, c.pictureUrl)), d(e, t)
+      var i = a(),
+        o = t(i),
+        s = e => {
+          var t = d();
+          c(t, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ...g
+          })), r(e, t)
+        },
+        l = e => {
+          var t = f();
+          c(t, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ...g
+          })), r(e, t)
+        };
+      n(o, e => {
+        h.filled ? e(s) : e(l, -1)
+      }), r(e, i)
+    },
+    b = e => {
+      var t = p();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...g
+      })), r(e, t)
+    },
+    x = e => {
+      var t = m();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...g
+      })), r(e, t)
     };
-  n(h, e => {
-    c.pictureUrl ? e(y, -1) : e(_)
-  }), v(m), v(p);
-  var b = s(p, 2),
-    x = t => {
-      var n = M();
-      e(n, `width: 67.87878787878788px;`), g(() => w(n, `src`, c.frameUrl)), d(t, n)
-    };
-  n(b, e => {
-    c.frameUrl && e(x)
-  });
-  var S = s(b, 2);
-  let T;
-  var E = t(S, !0);
-  v(S), v(u), g(t => {
-    e(f, `--angle: ${C(l)??``}deg; --color: var(--color-secondary)`), T = o(S, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, T, {
-      "left-0": c.level > 99,
-      "-left-1": c.level > 99
-    }), i(E, t)
-  }, [() => Math.floor(c.level)]), d(a, u)
+  n(v, e => {
+    l.standard ? e(y) : h.filled ? e(b, 1) : e(x, -1)
+  }), r(e, _), i()
 }
-var F = l(`<div class="mt-2 flex flex-wrap items-center gap-2 text-sm"><p role="alert" class="text-error min-w-0 break-words"> </p> <button class="btn btn-ghost btn-sm min-h-11"> </button></div>`),
-  I = l(`<div class="border-base-content/10 border-t py-3 text-left"><label class="flex min-h-11 cursor-pointer items-center justify-between gap-4"><span class="min-w-0 text-sm font-medium break-words"> </span> <input type="checkbox" class="checkbox checkbox-sm shrink-0"/></label> <p class="text-base-content/80 mt-1 text-xs leading-relaxed break-words"> </p> <!></div>`);
-
-function L(e, r) {
-  let o = _();
-  p(r, !0);
-  let l = m(r, `active`, 3, !0),
-    S = a(!1),
-    k = a(!1),
-    A = a(!1),
-    j = a(``),
-    M = 0,
-    N = a(0);
-  T(() => {
-    var e;
-    let t = (e = O.data) == null ? void 0 : e.id,
-      n = l();
-    C(N);
-    let r = ++M,
-      i = new AbortController;
-    return b(S, !1), b(k, !1), b(A, !1), b(j, ``), t && n && x(() => void P(r, i.signal)), () => {
-      i.abort(), M++
-    }
-  });
-  async function P(e, t) {
-    try {
-      let n = await D.getAppStoreConsumptionConsent(t);
-      if (e !== M || t.aborted) return;
-      b(S, n.granted, !0), b(k, !0)
-    } catch {
-      e === M && !t.aborted && b(j, E.settings_load_error(), !0)
-    }
-  }
-  async function L(e) {
-    if (C(A) || !C(k)) return;
-    let t = M;
-    b(A, !0), b(j, ``);
-    try {
-      let n = await D.setAppStoreConsumptionConsent(e);
-      t === M && b(S, n.granted, !0)
-    } catch {
-      t === M && (b(j, E.settings_save_error(), !0), b(k, !1))
-    } finally {
-      t === M && b(A, !1)
-    }
-  }
-  var R = I(),
-    z = t(R),
-    B = t(z),
-    V = t(B, !0);
-  v(B);
-  var H = s(B, 2);
-  h(H), v(z);
-  var U = s(z, 2),
-    W = t(U, !0);
-  v(U);
-  var G = s(U, 2),
-    K = e => {
-      var n = F(),
-        r = t(n),
-        a = t(r, !0);
-      v(r);
-      var o = s(r, 2),
-        l = t(o, !0);
-      v(o), v(n), g(e => {
-        i(a, C(j)), i(l, e)
-      }, [() => E.try_again()]), y(`click`, o, () => c(N)), d(e, n)
-    };
-  n(G, e => {
-    C(j) && e(K)
-  }), v(R), g((e, t) => {
-    w(z, `for`, o), i(V, e), w(H, `id`, o), u(H, C(S)), H.disabled = !C(k) || C(A), w(H, `aria-describedby`, `${o}-description`), w(U, `id`, `${o}-description`), i(W, t)
-  }, [() => E.appstore_consent_label(), () => E.appstore_consent_description()]), y(`change`, H, e => {
-    let t = e.currentTarget.checked;
-    e.currentTarget.checked = C(S), L(t)
-  }), d(e, R), f()
-}
-S([`change`, `click`]);
 export {
-  P as n, A as r, L as t
+  h as t
 };

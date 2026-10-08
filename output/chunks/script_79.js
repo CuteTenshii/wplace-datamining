@@ -4,11 +4,25 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `### 🆕 Key Changes
+  n = `### Anti-Cheat
 
-- **World Cup Event Match Predictions and Cosmetics**: You can now earn an event currency called **Cup Coins** by painting daily in any stadium area or by getting the correct prediction. Spend your Cup Coins in the new **Cup Store** on exclusive time-limited rewards, such as country badges, frames, and other cosmetics, or exchange Droplets for coins if you want a head start.
-- **Anti-cheat system improvements**: More aggressive anticheat detections and punishment of bots and multi-accounts to keep the canvas fair.
-- **Improvements to the suspension system**: Suspensions are now more granular.
+- Fixed bugs that were incorrectly triggering SMS verification for legitimate users.
+- Reverted SMS verifications that were wrongly issued due to these bugs.
+
+### Hotspots
+
+- You can now opt out of having your drawings appear in map hotspots. You can find the option in the \`Profile Configurations tab\`.
+- Fixed zoom behavior when clicking on hotspot clusters.
+- Reduced default zoom level when clicking on hotspots.
+
+### Overlay
+
+- Added a \`Convert to legacy colors\` option to match overlay colors to the palette from before the update. Use this if your current overlay looks off after the color changes.
+
+### UI & Other Fixes
+
+- Fixed minor bugs in the Edit Profile dialog
+- Various other small bug fixes
 `;
 export {
   t as n, n as t

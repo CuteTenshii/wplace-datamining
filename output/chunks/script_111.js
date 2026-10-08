@@ -4,31 +4,27 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `## Features
+  n = `## Improvements
 
-- Added a live minimap to preview overlay artwork while editing.
-- The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or a long press on mobile.
-- Use 1-9 to show or hide layers, counting from the top of the layer list, without changing the selected layer. Customize these keys in Keyboard shortcuts; V still toggles the selected layer.
-- Alliance overlays now have pixel and layer editing, layered project imports, draft recovery, gallery search and sorting, personal tags, and duplication.
-- Members who manage alliance overlays can share a personal overlay with their alliance, preserving its artwork, size, opacity, and map position while keeping the personal original.
-- Headquarters and draft overlays now show live progress, incorrect and unpainted pixel highlights, remaining color counts, and personal opacity controls. Hold Alt or Option to peek at the canvas.
-- Headquarters and draft placements now support exact coordinates, dimensions, undo, and redo.
-- Added a saved "Show palette numbers" option in overlay More tools for the main and alliance palettes.
+- **PSD and OpenRaster Import:** Upload Photoshop (.psd) and OpenRaster (.ora) projects directly from the Overlay Gallery, drag and drop or import them through the \`New\` menu into the gallery, or import their layers into an existing editor project.
+- **Layered Project Support:** Imported raster projects preserve layer names, order, position, visibility, and opacity. Groups are unpacked into editable layers, and projects remain layered after saving and reopening.
+- **Import Compatibility:** Projects using unsupported masks, effects, or blending modes fall back to their merged image with a notice after import. PSD import supports 8-bit RGB and grayscale files.
+- **Overlay Export:** Export overlays as transparent PNG images, white-background JPEG images, OpenRaster projects, or Photoshop projects. Project exports preserve editable layers when available.
+- **Wplace Palette Conversion:** Imported artwork is automatically converted to the Wplace palette using the editor's existing transparency rules. Layer opacity remains a visual tracing aid and does not alter saved pixel colors.
+- **Compact Paint Toolbar:** The progress and opacity controls now take up less space, leaving more of the canvas visible. Detailed pixel statistics remain available under **More tools**.
+- **Customizable Paint HUD:** Added separate **Show progress panel** and **Show opacity control** options under **More tools**. These preferences are remembered across reloads and overlay changes.
 
 ## Fixes
 
-- Rotating a phone or tablet keeps overlay touch controls available and keyboard hints hidden.
-- Fixed editor controls being covered by transform handles or the minimap on small screens and touch devices.
-- Fixed overlay colors changing in some browsers when saving or restoring editor layers and drafts, or importing PNG layers.
-- Fixed incorrect and unpainted overlay markers flickering during continuous painting or spreading onto completed pixels on devices with limited graphics memory.
-- Overlay progress and markers now wait for matching results after moving an overlay or changing its image or color settings.
-- Fixed pinch zoom jumping in the overlay editor when lifting or replacing a finger.
-- Fixed screen lock taps being ignored or toggling twice while painting.
-- Fixed overlays appearing shifted by one pixel despite showing complete progress.
-- Zoomed-out overlays retain their original colors across graphics memory limits, and profiled JPEG and WebP imports use consistent color handling.
-- Fixed overlay previews getting stuck when image decoding or local storage fails.
-- Headquarters overlays recover from graphics initialization failures and context loss.
-- Conflicting alliance artwork saves keep your editor draft available to review newer changes.
+- Fixed extra empty space below the paint palette on mobile.
+- Improved the mobile screen lock placement and fixed cases where it could fail to unlock while painting.
+- The palette toggle now remains accessible when the mobile paint menu is collapsed.
+- Fixed headquarters overlays sometimes failing to load after switching overlays or changing preview settings.
+- Fixed missing gallery thumbnails and detail previews after image memory cleanup.
+- Fixed a progress refresh race that could show outdated pixels as incorrect.
+- Saved overlay projects now reliably preserve layers, order, names, visibility, opacity, and locks after reloads or cache cleanup.
+- Duplicating a template now also copies its editor layers, keeping the duplicate fully editable.
+- Fixed an issue where users with previous web-store purchases could not delete their accounts.
 `;
 export {
   t as n, n as t

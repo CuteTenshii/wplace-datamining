@@ -6,7 +6,8 @@ var t = e({
   }),
   n = `### Fixes
 
-- Stripe card checkout is available again and can be retried after temporary loading problems.
+- Fixed charge purchases showing incorrect upgrade amounts or appearing unchanged when account refreshes are interrupted.
+- Charge purchase quantities are now limited to whole amounts the user can afford.
 `;
 export {
   t as n, n as t

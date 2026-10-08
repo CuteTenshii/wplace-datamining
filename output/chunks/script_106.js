@@ -4,20 +4,15 @@ import {
 var t = e({
     default: () => n
   }),
-  n = `## Additions
+  n = `## Improvements
 
-- Alliance headquarters now offer maximum charge upgrades to 150, 200, 250 and 300.
-- Alliance headquarters now offer charge regeneration upgrades to 10 seconds and 5 seconds.
-
-## Improvements
-
-- The profile button now pulses when there are unread patch notes, until you open them.
-- Alliance overlays now support up to 4,096 pixels per side, matching personal overlays, instead of being reduced to 2,000 pixels when placed on the main canvas.
+- Improved scrolling on alliance overlays page for mobile devices.
 
 ## Fixes
 
-- Pressing Z or tapping the selected overlay color again now smoothly travels to a remaining pixel on alliance headquarters and asset canvases.
-- Right-clicking or dragging with the right mouse button on alliance headquarters now removes unconfirmed paint instead of opening the context menu.`;
+- Hiding the progress panel in overlay build mode now keeps the overlay resolution and progress percentage visible in the top card.
+- Improved scrolling on alliance overlays page for mobile devices.
+- Added Undo, Redo, Color Picker, and Eraser buttons beside the expand button on the minimized palette.`;
 export {
   t as n, n as t
 };
