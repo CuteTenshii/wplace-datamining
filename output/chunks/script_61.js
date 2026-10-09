@@ -1,99 +1,49 @@
 import {
-  B as e,
+  $ as e,
   Dt as t,
-  Et as n,
-  G as r,
-  It as i,
-  O as a,
-  Q as o,
-  X as s,
-  Xt as c,
-  Z as l,
-  Zt as u,
-  a as d,
-  bt as f,
-  cn as p,
-  in as m,
-  it as h,
-  k as g,
-  rt as _,
-  ut as v,
-  x as y
+  G as n,
+  X as r,
+  Xt as i,
+  Z as a,
+  Zt as o,
+  o as s,
+  y as c
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  n as b
-} from "./CzXEc-K8.js";
-import {
-  t as x
-} from "./C8I5gCKJ.js";
+  t as l
+} from "./Da1b2czT.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = e(`<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>`),
+  f = e(`<svg><path d="M19 22H5v-2h14v2ZM5 20H3V10h2v10Zm16 0h-2V10h2v10ZM9 8h6V4h2v4h2v2H5V8h2V4h2v4Zm6-4H9V2h6v2Z"></path></svg>`);
 
-function S(e) {
-  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
-}
-
-function C(e) {
-  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
-}
-var w = o(`<span role="link" tabindex="0"><!></span>`),
-  T = o(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
-  E = o(`<span><!></span>`);
-
-function D(o, _) {
-  u(_, !0);
-  let D = d(_, `mode`, 3, `anchor`),
-    O = d(_, `class`, 3, ``),
-    k = d(_, `linkClass`, 19, O),
-    A = d(_, `textClass`, 19, O),
-    j = i(() => _.userId != null && _.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
-    M = i(() => _.userId == null ? `` : S(_.userId));
-
-  function N(e) {
-    e.stopPropagation()
-  }
-
-  function P(e) {
-    _.userId == null || _.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(_.userId))
-  }
-
-  function F(e) {
-    (e.key === `Enter` || e.key === ` `) && P(e)
-  }
-  var I = l(),
-    L = t(I),
-    R = i => {
-      var o = l(),
-        c = t(o),
-        u = t => {
-          var r = w(),
-            i = n(r);
-          e(i, () => _.children ?? p), m(r), f(() => {
-            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `title`, _.title)
-          }), h(`pointerdown`, r, N), h(`click`, r, P), h(`keydown`, r, F), s(t, r)
-        },
-        d = t => {
-          var r = T(),
-            i = n(r);
-          e(i, () => _.children ?? p), m(r), f(() => {
-            a(r, 1, `cursor-pointer hover:underline ${k()}`), y(r, `href`, v(M)), y(r, `title`, _.title)
-          }), h(`pointerdown`, r, N), h(`click`, r, N), s(t, r)
-        };
-      r(c, e => {
-        D() === `inline` ? e(u) : e(d, -1)
-      }), s(i, o)
+function p(e, p) {
+  o(p, !0);
+  let m = s(p, u);
+  var h = a(),
+    g = t(h),
+    _ = e => {
+      var t = d();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     },
-    z = t => {
-      var r = E(),
-        i = n(r);
-      e(i, () => _.children ?? p), m(r), f(() => {
-        a(r, 1, g(A())), y(r, `title`, _.title)
-      }), s(t, r)
+    v = e => {
+      var t = f();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     };
-  r(L, e => {
-    v(j) ? e(R) : e(z, -1)
-  }), s(o, I), c()
+  n(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(e, h), i()
 }
-_([`pointerdown`, `click`, `keydown`]);
 export {
-  S as n, D as t
+  p as t
 };

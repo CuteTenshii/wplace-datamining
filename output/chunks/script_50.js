@@ -1,129 +1,307 @@
 import {
-  $ as e,
+  D as e,
   Dt as t,
-  G as n,
-  X as r,
-  Xt as i,
-  Z as a,
-  Zt as o,
-  a as s,
-  o as c,
-  y as l
+  Et as n,
+  G as r,
+  It as i,
+  J as a,
+  Nt as o,
+  O as s,
+  Ot as c,
+  Q as l,
+  X as u,
+  Xt as d,
+  Zt as f,
+  _ as p,
+  a as m,
+  bt as h,
+  f as g,
+  in as _,
+  jt as v,
+  k as y,
+  o as b,
+  ut as x,
+  x as S,
+  xt as C,
+  y as w
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  t as u
-} from "./njokBD2q.js";
-var d = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  f = e(`<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>`),
-  p = e(`<svg><path d="M2 22H0v-4h2v4Zm14 0h-2v-4h2v4Zm8 0h-2v-4h2v4ZM4 18H2v-2h2v2Zm10 0h-2v-2h2v2Zm8 0h-2v-2h2v2Zm-10-2H4v-2h8v2Zm8 0h-4v-2h4v2Zm-9-4H5v-2h6v2Zm8 0h-4v-2h4v2ZM5 10H3V4h2v6Zm8 0h-2V4h2v6Zm8 0h-2V4h2v6ZM11 4H5V2h6v2Zm8 0h-4V2h4v2Z"></path></svg>`);
+  t as ee
+} from "./Da1b2czT.js";
+import {
+  t as T
+} from "./BMA24uln.js";
+import {
+  t as E
+} from "./D3UrmB6s.js";
+import {
+  E as D,
+  N as O,
+  T as te,
+  n as k,
+  yt as A
+} from "./DlfqLR0-.js";
+import {
+  n as ne
+} from "./D-enbVQB.js";
+import {
+  t as re
+} from "./C6Cu8O4e.js";
+import {
+  t as j
+} from "./vqNuH33A.js";
+import {
+  r as M
+} from "./DG8R2unG.js";
+var N = new Set([`$$slots`, `$$events`, `$$legacy`, `value`, `fontSize`, `color`, `weight`, `mono`, `width`]),
+  P = l(`<canvas></canvas>`);
 
-function m(e, s) {
-  o(s, !0);
-  let m = c(s, d);
-  var h = a(),
-    g = t(h),
-    _ = e => {
-      var t = f();
-      l(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    },
-    v = e => {
-      var t = p();
-      l(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    };
-  n(g, e => {
-    u.standard ? e(_) : e(v, -1)
-  }), r(e, h), i()
+function F(e, t) {
+  f(t, !0);
+  let n = m(t, `width`, 15, 0),
+    r = b(t, N),
+    i = o(0),
+    a = o(null);
+  C(() => {
+    if (!x(a)) return;
+    let e = x(a),
+      r = e.getContext(`2d`);
+    if (!r) return;
+    let o = t.value,
+      s = t.color ?? `#394e6a`,
+      c = getComputedStyle(e).getPropertyValue(t.mono ? `--font-geist-mono` : `--font-sans`),
+      l = T.current || 1,
+      u = `${t.weight??`normal`} ${t.fontSize}px ${c}`,
+      d = !0;
+
+    function f() {
+      if (!d || !r) return;
+      r.font = u, r.textBaseline = `alphabetic`;
+      let t = r.measureText(o),
+        a = Math.ceil(Math.max(0, t.actualBoundingBoxLeft) * l) / l,
+        c = Math.ceil(Math.max(0, t.actualBoundingBoxAscent) * l) / l,
+        f = Math.ceil((a + Math.max(t.width, t.actualBoundingBoxRight)) * l) / l,
+        p = Math.ceil((c + Math.max(0, t.actualBoundingBoxDescent)) * l) / l;
+      e.width = Math.max(1, Math.round(f * l)), e.height = Math.max(1, Math.round(p * l)), r.setTransform(l, 0, 0, l, 0, 0), r.font = u, r.textBaseline = `alphabetic`, r.fillStyle = s, r.fillText(o, a, c), n(f), v(i, p)
+    }
+    return f(), document.fonts.load(u, o).then(f, () => {}), document.fonts.addEventListener(`loadingdone`, f), () => {
+      d = !1, document.fonts.removeEventListener(`loadingdone`, f)
+    }
+  });
+  var s = P();
+  w(s, () => ({
+    style: `width: ${n()??``}px; height: ${x(i)??``}px`,
+    ...r
+  })), g(s, e => v(a, e), () => x(a)), u(e, s), d()
 }
-var h = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  g = e(`<svg><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M7 4V2.5M17 4V2.5M2.5 9h19"></path><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g></svg>`),
-  _ = e(`<svg><path d="M19 22H5v-2h14v2ZM5 8h14V6h2v14h-2V10H5v10H3V6h2v2Zm12-4h2v2H5V4h2V2h2v2h6V2h2v2Z"></path></svg>`);
+var I = new Set([`$$slots`, `$$events`, `$$legacy`, `loading`, `charges`, `chargeMax`, `cooldownMs`, `showCooldown`, `maxWidth`, `compact`, `onclick`]),
+  L = l(`<span class="text-sm font-semibold tabular-nums opacity-90 sm:mt-px"> </span>`),
+  R = l(`<!> <div class="flex items-center gap-2 whitespace-nowrap"> <!></div>`, 1),
+  z = l(`<span class="paint-button-balance text-xl leading-none font-semibold svelte-naszew" aria-hidden="true">&infin;</span>`),
+  B = l(`<span><!></span>`),
+  V = l(`<span> </span>`),
+  H = l(`<span><!> <!></span>`),
+  U = l(`<!> <div><span> </span> <!></div>`, 1),
+  W = l(`<span class="loading loading-spinner center-absolute absolute"></span>`),
+  G = l(`<button><div><!></div> <!></button>`);
 
-function v(e, s) {
-  o(s, !0);
-  let d = c(s, h);
-  var f = a(),
-    p = t(f),
-    m = e => {
-      var t = g();
-      l(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        ...d
-      })), r(e, t)
-    },
-    v = e => {
-      var t = _();
-      l(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...d
-      })), r(e, t)
+function K(l, C) {
+  f(C, !0);
+  let T = m(C, `showCooldown`, 3, !0),
+    N = m(C, `compact`, 3, !1),
+    P = b(C, I),
+    K = o(0),
+    q = o(void 0),
+    J = o(void 0),
+    Y = i(() => C.cooldownMs ?? k.cooldown),
+    ie = i(() => A.theme === `dark` ? `rgba(255, 255, 255, 0.3)` : `#394e6a33`),
+    X = i(() => {
+      let e = k.timeoutUntil;
+      if (!e || e.getTime() <= A.now) return;
+      let t = D(e, A.now);
+      return {
+        isBan: t,
+        countdown: t ? null : te(e, A.now)
+      }
+    });
+
+  function ae({
+    days: e,
+    hours: t,
+    minutes: n
+  }) {
+    return e > 0 ? `${e}d ${t}h` : t > 0 ? `${t}h ${n}m` : `${n}m`
+  }
+  M(() => [C.loading, C.maxWidth, N()], () => {
+    v(J, void 0), requestAnimationFrame(() => {
+      if (!x(q)) return;
+      let e = x(q).offsetWidth;
+      !N() && !C.loading && C.maxWidth !== void 0 && e + 20 > C.maxWidth ? v(J, 16 * (C.maxWidth / e) * .8) : v(J, void 0)
+    })
+  });
+  var Z = G(),
+    oe = e => {
+      var t;
+      ne(`heavy`), (t = C.onclick) == null || t.call(C, e)
     };
-  n(p, e => {
-    u.standard ? e(m) : e(v, -1)
-  }), r(e, f), i()
-}
-var y = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  b = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
-  x = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`),
-  S = e(`<svg><path d="M20 20H4v-2h16v2Zm0-4H4v-2h16v2ZM4 14H2V6h2v8Zm18 0h-2V6h2v8Zm-2-8H4V4h16v2Z"></path></svg>`);
-
-function C(e, d) {
-  o(d, !0);
-  let f = s(d, `filled`, 3, !1),
-    p = c(d, y);
-  var m = a(),
-    h = t(m),
-    g = e => {
-      var i = a(),
-        o = t(i),
-        s = e => {
-          var t = b();
-          l(t, () => ({
-            xmlns: `http://www.w3.org/2000/svg`,
-            viewBox: `0 -960 960 960`,
-            fill: `currentColor`,
-            ...p
-          })), r(e, t)
-        },
-        c = e => {
-          var t = x();
-          l(t, () => ({
-            xmlns: `http://www.w3.org/2000/svg`,
-            viewBox: `0 -960 960 960`,
-            fill: `currentColor`,
-            ...p
-          })), r(e, t)
+  w(Z, () => ({
+    ...P,
+    onclick: oe,
+    class: `btn btn-lg sm:btn-xl relative ${x(X)?x(X).isBan?`btn-error`:`btn-warning`:`btn-primary`} ${C.class??``}`,
+    style: `max-width: ${C.maxWidth?`${C.maxWidth}px`:`none`}
+	${x(J)?`;--paint-font-size: ${x(J)}px`:``}`,
+    [p]: {
+      compact: N(),
+      "pixel-ui": !ee.standard,
+      "w-max": N(),
+      scaled: x(J) !== void 0
+    }
+  }), void 0, void 0, void 0, `svelte-naszew`);
+  var Q = n(Z);
+  let $;
+  var se = n(Q),
+    ce = e => {
+      var i = R(),
+        o = t(i);
+      j(o, {
+        class: `size-6`
+      });
+      var s = c(o, 2),
+        l = n(s),
+        d = c(l),
+        f = e => {
+          var t = L(),
+            r = n(t, !0);
+          _(t), h(e => a(r, e), [() => ae(x(X).countdown)]), u(e, t)
         };
-      n(o, e => {
-        f() ? e(s) : e(c, -1)
-      }), r(e, i)
+      r(d, e => {
+        x(X).countdown && e(f)
+      }), _(s), h(e => a(l, `${e??``} `), [() => x(X).isBan ? E.banned() : E.timeout()]), u(e, i)
     },
-    _ = e => {
-      var t = S();
-      l(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...p
-      })), r(e, t)
+    le = o => {
+      var l = U(),
+        d = t(l);
+      {
+        let e = i(() => N() ? `paint-button-brush size-6 shrink-0 max-sm:hidden` : `size-6`);
+        re(d, {
+          get class() {
+            return x(e)
+          }
+        })
+      }
+      var f = c(d, 2),
+        p = n(f),
+        m = n(p, !0);
+      _(p);
+      var g = c(p, 2),
+        b = t => {
+          let o = i(() => C.chargeMax ?? k.data.charges.max),
+            l = i(() => C.chargeMax === void 0 && k.data.charges.infinite);
+          var d = H();
+          let f;
+          var p = n(d),
+            m = e => {
+              var t = z();
+              u(e, t)
+            },
+            g = t => {
+              var r = B();
+              let a;
+              var c = n(r);
+              {
+                let e = i(() => N() ? `max-w-full object-contain` : void 0),
+                  t = i(() => x(J) ?? 16),
+                  n = i(() => `${Math.floor(C.charges)}/${x(o)}`),
+                  r = i(() => C.disabled ? x(ie) : `#ffffff`);
+                F(c, {
+                  get class() {
+                    return x(e)
+                  },
+                  weight: 600,
+                  get fontSize() {
+                    return x(t)
+                  },
+                  get value() {
+                    return x(n)
+                  },
+                  get color() {
+                    return x(r)
+                  },
+                  get width() {
+                    return x(K)
+                  },
+                  set width(e) {
+                    v(K, e, !0)
+                  }
+                })
+              }
+              _(r), h(t => {
+                a = s(r, 1, `paint-button-balance svelte-naszew`, null, a, {
+                  "min-w-0": N()
+                }), e(r, `width: ${t??``}px`)
+              }, [() => (Math.floor(x(K) / 5) + 1) * 5]), u(t, r)
+            };
+          r(p, e => {
+            x(l) ? e(m) : e(g, -1)
+          });
+          var y = c(p, 2),
+            b = e => {
+              var t = V();
+              let r;
+              var i = n(t);
+              _(t), h(e => {
+                r = s(t, 1, `paint-button-cooldown min-w-7 text-xs svelte-naszew`, null, r, {
+                  "shrink-0": N()
+                }), a(i, `(${e??``})`)
+              }, [() => O(x(Y))]), u(e, t)
+            };
+          r(y, e => {
+            !x(l) && T() && C.charges < x(o) && x(Y) !== void 0 && e(b)
+          }), _(d), h(() => f = s(d, 1, `paint-button-charges flex items-center gap-1 sm:mt-px svelte-naszew`, null, f, {
+            "min-w-0": N(),
+            "max-w-full": N()
+          })), u(t, d)
+        };
+      r(g, e => {
+        C.charges !== void 0 && k.data && e(b)
+      }), _(f), h((e, t) => {
+        s(f, 1, y(N() ? `paint-button-label flex min-w-0 items-center gap-2 whitespace-nowrap max-sm:flex-col max-sm:gap-0` : `flex items-center gap-2 whitespace-nowrap`), `svelte-naszew`), s(p, 1, y(N() ? `max-w-full truncate` : void 0), `svelte-naszew`), S(p, `title`, e), a(m, t)
+      }, [() => N() ? E.paint() : void 0, () => E.paint()]), u(o, l)
     };
-  n(h, e => {
-    u.standard ? e(g) : e(_, -1)
-  }), r(e, m), i()
+  r(se, e => {
+    x(X) ? e(ce) : e(le, -1)
+  }), _(Q), g(Q, e => v(q, e), () => x(q));
+  var ue = c(Q, 2),
+    de = e => {
+      var t = W();
+      u(e, t)
+    };
+  r(ue, e => {
+    C.loading && e(de)
+  }), _(Z), h(() => $ = s(Q, 1, `paint-button-content flex items-center gap-1.5 svelte-naszew`, null, $, {
+    "min-w-0": N(),
+    "max-w-full": N()
+  })), u(l, Z), d()
+}
+
+function q(e, t, n) {
+  return e < t ? t : e > n ? n : e
+}
+
+function J(e, t) {
+  let n = 10 ** t;
+  return Math.round(e * n) / n
+}
+
+function Y(e) {
+  if (e < 1e3) return String(e);
+  let t = [`K`, `M`, `B`, `T`, `Q`],
+    n = 0,
+    r = e / 1e3;
+  for (; Math.round(r) >= 1e3 && n < t.length - 1;) r /= 1e3, n++;
+  return `${J(r,+(r<10))}${t[n]}`
 }
 export {
-  v as n, m as r, C as t
+  F as a, K as i, Y as n, J as r, q as t
 };

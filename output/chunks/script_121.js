@@ -1,8 +1,0 @@
-var e = [];
-
-function t() {
-  return e.length > 0
-}
-export {
-  t as n, e as t
-};

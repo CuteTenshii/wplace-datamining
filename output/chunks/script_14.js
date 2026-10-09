@@ -47,8 +47,7 @@ var f = new WeakMap,
   v = new WeakMap,
   y = new WeakMap,
   b = new WeakMap,
-  x = new WeakMap,
-  S = new class {
+  x = new class {
     get alerts() {
       return a(t(f, this))
     }
@@ -85,36 +84,30 @@ var f = new WeakMap,
     set nativeCursor(e) {
       r(t(_, this), e, !0), document.documentElement.toggleAttribute(`data-native-cursor`, e)
     }
-    get pixelFonts() {
+    get showHotspots() {
       return a(t(v, this))
     }
-    set pixelFonts(e) {
-      r(t(v, this), e, !0), document.documentElement.dataset.pixelFonts = String(e)
-    }
-    get showHotspots() {
-      return a(t(y, this))
-    }
     set showHotspots(e) {
-      r(t(y, this), e, !0)
+      r(t(v, this), e, !0)
     }
     get showAllianceHqPins() {
-      return a(t(b, this))
+      return a(t(y, this))
     }
     set showAllianceHqPins(e) {
-      r(t(b, this), e, !0)
+      r(t(y, this), e, !0)
     }
     get sounds() {
-      return a(t(x, this))
+      return a(t(b, this))
     }
     set sounds(e) {
-      r(t(x, this), e, !0)
+      r(t(b, this), e, !0)
     }
     constructor() {
       e(this, f, n(i({
         charges: !0,
         events: !0,
         updates: !0
-      }))), e(this, p, n(100)), e(this, m, n(`none`)), e(this, h, n(100)), e(this, g, n(!1)), e(this, _, n(!1)), e(this, v, n(!0)), e(this, y, n(!0)), e(this, b, n(!0)), e(this, x, n(i(Object.fromEntries(l.map(e => [e, 50]))))), this.pixelFonts = !0, this.nativeCursor = !1;
+      }))), e(this, p, n(100)), e(this, m, n(`none`)), e(this, h, n(100)), e(this, g, n(!1)), e(this, _, n(!1)), e(this, v, n(!0)), e(this, y, n(!0)), e(this, b, n(i(Object.fromEntries(l.map(e => [e, 50]))))), this.nativeCursor = !1;
       try {
         var t;
         let e = JSON.parse(localStorage.getItem(u) ?? `{}`);
@@ -123,7 +116,7 @@ var f = new WeakMap,
           var r;
           typeof((r = e.alerts) == null ? void 0 : r[t]) == `boolean` && (this.alerts[t] = e.alerts[t])
         }
-        this.artOpacity = d(e.artOpacity, 100), o.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = d(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.pixelFonts == `boolean` && (this.pixelFonts = e.pixelFonts), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
+        this.artOpacity = d(e.artOpacity, 100), o.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = d(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
         for (let n of l) this.sounds[n] = d((t = e.sounds) == null ? void 0 : t[n], 50)
       } catch {}
     }
@@ -136,7 +129,6 @@ var f = new WeakMap,
           colorblindStrength: this.colorblindStrength,
           oldUi: this.oldUi,
           nativeCursor: this.nativeCursor,
-          pixelFonts: this.pixelFonts,
           showHotspots: this.showHotspots,
           showAllianceHqPins: this.showAllianceHqPins,
           sounds: this.sounds
@@ -147,5 +139,5 @@ var f = new WeakMap,
     }
   };
 export {
-  c as i, S as n, o as r, l as t
+  c as i, x as n, o as r, l as t
 };

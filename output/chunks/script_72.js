@@ -1,232 +1,210 @@
-import {
-  t as e
-} from "./CZWIkZxH.js";
-import {
-  t
-} from "./BMj_2wrd.js";
-import {
-  t as n
-} from "./C-596GOK.js";
-import {
-  t as r
-} from "./CzQT5n6o.js";
-import {
-  t as i
-} from "./K8xpmCq8.js";
-import {
-  t as a
-} from "./CstwYmIK.js";
-import {
-  t as o
-} from "./DvqJgppT.js";
-import {
-  t as s
-} from "./C9-wUi2v.js";
-import {
-  t as c
-} from "./DkcmlQbD.js";
-import {
-  t as l
-} from "./CfQpuXi8.js";
-import {
-  t as u
-} from "./B1aL7Y_G.js";
-import {
-  t as d
-} from "./BjLZO0i1.js";
-import {
-  t as f
-} from "./BvrLAz4K.js";
-import {
-  t as p
-} from "./BE0i_4RX.js";
-import {
-  t as m
-} from "./9FfST3Gw.js";
-import {
-  t as h
-} from "./vwDnqOM7.js";
-import {
-  t as g
-} from "./Dp9Xv33r.js";
-import {
-  t as _
-} from "./6Jt2br2o.js";
-import {
-  t as v
-} from "./-M8_qCVK.js";
-import {
-  t as y
-} from "./CqM7BiHW.js";
-import {
-  t as b
-} from "./BNt_obGV.js";
-import {
-  t as x
-} from "./C9-88J91.js";
-import {
-  t as S
-} from "./D5hH7J9e.js";
-import {
-  t as C
-} from "./C78l-XWQ.js";
-import {
-  t as w
-} from "./B7fn7PuI.js";
-import {
-  t as T
-} from "./LqM73dKa.js";
-import {
-  t as E
-} from "./D4Jdzxqh.js";
-import {
-  t as D
-} from "./2m9wApLD.js";
-import {
-  t as O
-} from "./P_WeExn-.js";
-import {
-  t as k
-} from "./DI4dE3I0.js";
-import {
-  t as A
-} from "./Cci9krki.js";
-import {
-  t as j
-} from "./Do3CuN17.js";
-import {
-  t as M
-} from "./HBu3l2VD.js";
-import {
-  t as N
-} from "./mcufe2Hp.js";
-import {
-  t as P
-} from "./D__ZgqEo.js";
-import {
-  t as F
-} from "./CPRQy4Al.js";
-import {
-  t as I
-} from "./jEAKaJ5s.js";
-import {
-  t as L
-} from "./D5INGzLN.js";
-import {
-  t as R
-} from "./wjg1OM1Y.js";
-import {
-  t as z
-} from "./BAI7B1MK.js";
-import {
-  t as B
-} from "./DyhAeW_I.js";
-import {
-  t as V
-} from "./DmL1UE78.js";
-import {
-  t as H
-} from "./D8RwbJyK.js";
-import {
-  t as U
-} from "./IdDUpM_s.js";
-import {
-  t as W
-} from "./DxlhdXjG.js";
-import {
-  t as G
-} from "./CMV67lzL.js";
-import {
-  t as K
-} from "./DUQvhx8k.js";
-import {
-  t as q
-} from "./Bp0hytzY.js";
-
-function J(e) {
-  let t = new Map;
-  for (let n of e) {
-    let e = t.get(n.version) ?? [];
-    e.push(n), t.set(n.version, e)
-  }
-  return [...t].map(([e, t]) => t.length === 1 ? t[0] : {
-    version: e,
-    title: [...new Set(t.map(e => e.title).filter(Boolean))].join(` / `) || `v${e}`,
-    markdown: t.map(e => e.markdown.trim()).join(`
-
-`)
-  }).sort((e, t) => e.version.localeCompare(t.version, void 0, {
-    numeric: !0
-  }))
+function e(e, t, n, r, i) {
+  if (!Number.isSafeInteger(n) || !Number.isSafeInteger(r) || n <= 0 || r <= 0 || n * r > (2 ** 53 - 1) / 4) throw Error(`Overlay progress buffers must have matching positive dimensions.`);
+  let a = n * r * 4;
+  if (e.length !== a || t.length !== a) throw Error(`Overlay progress buffers must have matching positive dimensions.`);
+  if (!Number.isSafeInteger(i.originX) || !Number.isSafeInteger(i.originY) || !Number.isSafeInteger(i.tileSize) || i.tileSize <= 0 || i.tileSize > 65535 || !Number.isSafeInteger(i.originX + n - 1) || !Number.isSafeInteger(i.originY + r - 1)) throw Error(`Overlay progress geometry is invalid.`)
 }
 
-function Y(e) {
-  return J(Object.entries(e).sort(([e], [t]) => e.localeCompare(t, `en`)).map(([e, t]) => {
-    var n;
-    let r = (n = e.split(`/`).at(-1)) == null ? void 0 : n.match(/^(\d+\.\d+\.\d+)(?: - (.+))?\.md$/);
-    if (!r) throw Error(`Invalid patch note filename: ${e}`);
-    let [, i, a = ``] = r;
-    return {
-      version: i,
-      title: a,
-      markdown: t.trim()
+function t(e) {
+  if (e < -2147483648 || e > 2147483647) throw Error(`Overlay progress tile coordinates exceed the supported canvas range.`)
+}
+
+function n(e, t, n, r) {
+  let i = t + Math.floor(n / 4),
+    a = n % 4 * 2;
+  e[i] |= r << a
+}
+
+function* r(e, t, r, i) {
+  if (!Number.isSafeInteger(r) || !Number.isSafeInteger(i) || r <= 0 || i <= 0 || e.length !== r * i * 4 || t.length !== e.length) throw Error(`Overlay tile buffers must have matching positive dimensions.`);
+  let a = new Uint32Array(4),
+    o = new Uint8Array(Math.ceil(r * i / 4)),
+    s = 0;
+  for (let c = 0; c < i; c += 1) {
+    for (let i = 0; i < r; i += 1) {
+      let r = s * 4,
+        i = 0;
+      e[r + 3] >= 16 && (a[0] += 1, t[r + 3] < 16 ? (i = 2, a[2] += 1) : e[r] === t[r] && e[r + 1] === t[r + 1] && e[r + 2] === t[r + 2] ? (i = 1, a[1] += 1) : (i = 3, a[3] += 1)), n(o, 0, s, i), s += 1
     }
-  })).map(e => ({
-    ...e,
-    title: e.title || `v${e.version}`
-  }))
+    yield c
+  }
+  return {
+    counts: a,
+    statuses: o
+  }
 }
-var X = Y(Object.assign({
-    "./markdown/1.0.0 - Welcome to WPlace!.md": e,
-    "./markdown/1.1.0 - ✨ More Like You Update.md": t,
-    "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": n,
-    "./markdown/1.1.2 - 🧰 UI Fixes & Moderation Improvements.md": r,
-    "./markdown/1.2.0 - 🖼️ Pixel Overlays & Achievement Frames.md": i,
-    "./markdown/1.3.0 - 🛠️ Moderation Adjustments, Hotspots and Improved Anti-Cheat System.md": a,
-    "./markdown/1.3.1 - 🛠️  Hotfixes and Opt-out from Hotspots copy.md": o,
-    "./markdown/1.3.2 - 🤖 Anti-cheat improvements and Google Drive overlay sync.md": s,
-    "./markdown/1.3.3 - ⚽ World Cup Predictions and Cosmetics & Anti-cheat Improvements.md": c,
-    "./markdown/1.4.0 - 🛡️ The New Alliance System.md": l,
-    "./markdown/1.4.1 - 🛡️ Alliance System Fixes.md": u,
-    "./markdown/1.4.10 - 🛠️ Mobile Overlay Rendering.md": d,
-    "./markdown/1.4.11 - 🛠️ Phone Verification Fixes.md": f,
-    "./markdown/1.4.12 - 🛠️ Alliance Overlay Reliability.md": p,
-    "./markdown/1.4.2 - 🛠️ Headquarters Preview Reliability.md": m,
-    "./markdown/1.4.3 - 🛠️ Alliance Usability Fixes.md": h,
-    "./markdown/1.4.4 - 🧭 Alliance Canvas Overlays.md": g,
-    "./markdown/1.4.5 - 🎨 Alliance Canvas Tools and Map Display.md": _,
-    "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": v,
-    "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": y,
-    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": b,
-    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": x,
-    "./markdown/1.5.0 - 💎 Premium Cosmetics.md": S,
-    "./markdown/1.5.1 - 💎 More Prism Per Purchase.md": C,
-    "./markdown/1.5.2 - 🛠️ Store Purchase Reliability.md": w,
-    "./markdown/1.5.3 - 🛠️ Account and Payment Reliability.md": T,
-    "./markdown/1.5.4 - 💳 Checkout Payment Options.md": E,
-    "./markdown/1.5.5 - 🛠️ Map Loading Reliability.md": D,
-    "./markdown/1.5.6 - 🛠️ Paint Charge Reliability.md": O,
-    "./markdown/1.6.0 - 🖼️ Overlay Studio.md": k,
-    "./markdown/1.6.1 - 🛠️ Overlay Reliability.md": A,
-    "./markdown/1.6.10 - 🎨 Mobile Paint & UI Polish.md": j,
-    "./markdown/1.6.11 - 📱 Small Mobile Adjustments.md": M,
-    "./markdown/1.6.12 - 🖥️ Collapsed Palled and Alliance UI Improvements.md": N,
-    "./markdown/1.6.13 - ⚙️ Settings and Real-Time Notifications.md": P,
-    "./markdown/1.6.14 - 👨‍👩‍👧‍👦 Alliance Adjustments and Fixes.md": F,
-    "./markdown/1.6.15 - 🛠️ Push Notification Recovery.md": I,
-    "./markdown/1.6.2 - 🖼️ Layer Opacity & Overlay Peek.md": L,
-    "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": R,
-    "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": z,
-    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": B,
-    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": V,
-    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": H,
-    "./markdown/1.6.8 - 🎨 Studio Controls and Event Wrap-up.md": U,
-    "./markdown/1.6.9 - 🧑‍🎨 More Studio Tools and Collapsible Palette.md": W,
-    "./markdown/1.7.0 - ⭐ Favorite Places and Support.md": G,
-    "./markdown/1.7.1 - ⚙️ Favorite Customization & UI Polish.md": K,
-    "./markdown/1.7.2 - 🔨 Painting UI & Favorites Improvements.md": q
-  })),
-  Z = e => `/patch-notes/${encodeURIComponent(e)}`;
+
+function i(e, t, n) {
+  let r = t + Math.floor(n / 4),
+    i = n % 4 * 2;
+  return e[r] >> i & 3
+}
+
+function* a(r, i, a, s, c, l) {
+  e(r, i, a, s, c);
+  let {
+    originX: u,
+    originY: d,
+    tileSize: f
+  } = c, p = Math.floor(u / f), m = Math.floor(d / f), h = Math.floor((u + a - 1) / f), g = Math.floor((d + s - 1) / f);
+  t(p), t(m), t(h), t(g);
+  let _ = (h - p + 1) * (g - m + 1),
+    v = new Int32Array(_ * 2),
+    y = new Uint16Array(_ * 4),
+    b = new Uint32Array(_ * 4),
+    x = new Uint32Array(_ + 1),
+    S = 0,
+    C = 0;
+  for (let e = m; e <= g; e++)
+    for (let t = p; t <= h; t++) {
+      let n = Math.max(u, t * f),
+        r = Math.max(d, e * f),
+        i = Math.min(u + a, (t + 1) * f),
+        o = Math.min(d + s, (e + 1) * f),
+        c = S * 4,
+        l = i - n,
+        p = o - r;
+      v[S * 2] = t, v[S * 2 + 1] = e, y[c] = n - t * f, y[c + 1] = r - e * f, y[c + 2] = l, y[c + 3] = p, x[S] = C, C += Math.ceil(l * p / 4), S += 1
+    }
+  x[_] = C;
+  let w = new Uint8Array(C),
+    T = 0,
+    E = 0,
+    D = 0,
+    O = 0,
+    k = o(l, _);
+  for (let e of k) {
+    S = e;
+    let t = S * 2,
+      o = S * 4,
+      s = S * 4,
+      c = v[t],
+      l = v[t + 1],
+      p = y[o],
+      m = y[o + 1],
+      h = y[o + 2],
+      g = y[o + 3],
+      _ = c * f + p - u,
+      C = l * f + m - d,
+      k = 0;
+    for (let e = 0; e < g; e++) {
+      for (let t = 0; t < h; t++) {
+        let o = ((C + e) * a + _ + t) * 4,
+          c = 0;
+        r[o + 3] >= 16 && (b[s + 0] += 1, T += 1, i[o + 3] < 16 ? (c = 2, b[s + 2] += 1, D += 1) : r[o] === i[o] && r[o + 1] === i[o + 1] && r[o + 2] === i[o + 2] ? (c = 1, b[s + 1] += 1, E += 1) : (c = 3, b[s + 3] += 1, O += 1)), n(w, x[S], k, c), k += 1
+      }
+      yield C + e
+    }
+  }
+  return {
+    total: T,
+    completed: E,
+    unpainted: D,
+    mismatched: O,
+    originX: u,
+    originY: d,
+    width: a,
+    height: s,
+    tileSize: f,
+    tileCoordinates: v,
+    tileBounds: y,
+    tileCounts: b,
+    tileStatusOffsets: x,
+    statuses: w
+  }
+}
+
+function o(e, t) {
+  if (!(e != null && e.length)) return Uint32Array.from({
+    length: t
+  }, (e, t) => t);
+  let n = new Uint8Array(t),
+    r = new Uint32Array(t),
+    i = 0;
+  for (let a of e) {
+    if (a >= t) throw Error(`Overlay progress tile index is out of bounds.`);
+    n[a] || (n[a] = 1, r[i++] = a)
+  }
+  for (let e = 0; e < t; e += 1) n[e] || (r[i++] = e);
+  return r
+}
+
+function s(e, t, n, r, i, o) {
+  let s = a(e, t, n, r, i, o);
+  for (;;) {
+    let e = s.next();
+    if (e.done) return e.value
+  }
+}
+
+function c(e) {
+  let t = e.tileCoordinates.length / 2;
+  if (!Number.isInteger(t) || e.tileBounds.length !== t * 4 || e.tileCounts.length !== t * 4 || e.tileStatusOffsets.length !== t + 1 || e.tileStatusOffsets[t] !== e.statuses.length) throw Error(`Overlay progress result layout is invalid.`);
+  let n = 0;
+  for (let r = 0; r < t; r++) {
+    let t = r * 4,
+      i = e.tileBounds[t + 2],
+      a = e.tileBounds[t + 3],
+      o = e.tileStatusOffsets[r],
+      s = e.tileStatusOffsets[r + 1];
+    if (o !== n || s - o !== Math.ceil(i * a / 4)) throw Error(`Overlay progress result layout is invalid.`);
+    n = s
+  }
+}
+
+function l(e, t) {
+  let n = new Uint8Array(t),
+    r = 0;
+  for (let i = 0; i < e.length; i++) {
+    let a = e[i];
+    if (a >= t) throw Error(`Overlay progress tile index is out of bounds.`);
+    n[a] === 0 && (n[a] = 1, r += 1)
+  }
+  let i = new Uint32Array(r),
+    a = 0;
+  for (let e = 0; e < n.length; e++) n[e] !== 0 && (i[a] = e, a += 1);
+  return i
+}
+
+function* u(t, r, i, a) {
+  e(r, i, t.width, t.height, t), c(t);
+  let o = l(a, t.tileCoordinates.length / 2);
+  for (let e = 0; e < o.length; e++) {
+    let a = o[e],
+      s = a * 2,
+      c = a * 4,
+      l = a * 4,
+      u = t.tileCoordinates[s],
+      d = t.tileCoordinates[s + 1],
+      f = t.tileBounds[c],
+      p = t.tileBounds[c + 1],
+      m = t.tileBounds[c + 2],
+      h = t.tileBounds[c + 3],
+      g = u * t.tileSize + f - t.originX,
+      _ = d * t.tileSize + p - t.originY,
+      v = t.tileStatusOffsets[a],
+      y = t.tileStatusOffsets[a + 1];
+    t.total -= t.tileCounts[l + 0], t.completed -= t.tileCounts[l + 1], t.unpainted -= t.tileCounts[l + 2], t.mismatched -= t.tileCounts[l + 3], t.tileCounts.fill(0, l, l + 4), t.statuses.fill(0, v, y);
+    let b = 0;
+    for (let e = 0; e < h; e++) {
+      for (let a = 0; a < m; a++) {
+        let o = ((_ + e) * t.width + g + a) * 4,
+          s = 0;
+        r[o + 3] >= 16 && (t.tileCounts[l + 0] += 1, t.total += 1, i[o + 3] < 16 ? (s = 2, t.tileCounts[l + 2] += 1, t.unpainted += 1) : r[o] === i[o] && r[o + 1] === i[o + 1] && r[o + 2] === i[o + 2] ? (s = 1, t.tileCounts[l + 1] += 1, t.completed += 1) : (s = 3, t.tileCounts[l + 3] += 1, t.mismatched += 1)), n(t.statuses, v, b, s), b += 1
+      }
+      yield _ + e
+    }
+  }
+  return t
+}
+
+function d(e, t, n, r) {
+  let i = u(e, t, n, r);
+  for (;;) {
+    let e = i.next();
+    if (e.done) return e.value
+  }
+}
 export {
-  X as n, Z as t
+  d as a, i, a as n, r, s as t
 };

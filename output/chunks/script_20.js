@@ -2,7 +2,7 @@ import {
   a as e,
   n as t,
   t as n
-} from "./DP7ilGQK.js";
+} from "./B4266N1A.js";
 import {
   i as r,
   r as i
@@ -37,9 +37,9 @@ function o() {
   return a(t(), n())
 }
 var s = {
-  en: () => e(() => import(`./BOqPOJ_C.js`), [], import.meta.url),
-  "pt-br": () => e(() => import(`./Bw46ANW8.js`), [], import.meta.url),
-  es: () => e(() => import(`./CzOUM77c.js`), [], import.meta.url)
+  en: () => e(() => import(`./BMoJxEuT.js`), [], import.meta.url),
+  "pt-br": () => e(() => import(`./fBQ2Oym4.js`), [], import.meta.url),
+  es: () => e(() => import(`./CSnPAWAQ.js`), [], import.meta.url)
 };
 async function c(e) {
   let t = await s[e]();

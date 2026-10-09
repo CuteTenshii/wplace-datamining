@@ -1,7 +1,7 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CZWIkZxH.js", "./D2z8HFb7.js", "./BMj_2wrd.js", "./C-596GOK.js", "./CzQT5n6o.js", "./K8xpmCq8.js", "./CstwYmIK.js", "./DvqJgppT.js", "./C9-wUi2v.js", "./DkcmlQbD.js", "./CfQpuXi8.js", "./B1aL7Y_G.js", "./BjLZO0i1.js", "./BvrLAz4K.js", "./BE0i_4RX.js", "./9FfST3Gw.js", "./vwDnqOM7.js", "./Dp9Xv33r.js", "./6Jt2br2o.js", "./-M8_qCVK.js", "./CqM7BiHW.js", "./BNt_obGV.js", "./C9-88J91.js", "./D5hH7J9e.js", "./C78l-XWQ.js", "./B7fn7PuI.js", "./LqM73dKa.js", "./D4Jdzxqh.js", "./2m9wApLD.js", "./P_WeExn-.js", "./DI4dE3I0.js", "./Cci9krki.js", "./Do3CuN17.js", "./HBu3l2VD.js", "./mcufe2Hp.js", "./D__ZgqEo.js", "./CPRQy4Al.js", "./jEAKaJ5s.js", "./D5INGzLN.js", "./wjg1OM1Y.js", "./BAI7B1MK.js", "./DyhAeW_I.js", "./DmL1UE78.js", "./D8RwbJyK.js", "./IdDUpM_s.js", "./DxlhdXjG.js", "./CMV67lzL.js", "./DUQvhx8k.js", "./Bp0hytzY.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CZWIkZxH.js", "./D2z8HFb7.js", "./BMj_2wrd.js", "./C-596GOK.js", "./CzQT5n6o.js", "./K8xpmCq8.js", "./CstwYmIK.js", "./DvqJgppT.js", "./C9-wUi2v.js", "./DkcmlQbD.js", "./CfQpuXi8.js", "./B1aL7Y_G.js", "./BjLZO0i1.js", "./BvrLAz4K.js", "./BE0i_4RX.js", "./9FfST3Gw.js", "./vwDnqOM7.js", "./Dp9Xv33r.js", "./6Jt2br2o.js", "./-M8_qCVK.js", "./CqM7BiHW.js", "./BNt_obGV.js", "./C9-88J91.js", "./D5hH7J9e.js", "./C78l-XWQ.js", "./B7fn7PuI.js", "./LqM73dKa.js", "./D4Jdzxqh.js", "./2m9wApLD.js", "./P_WeExn-.js", "./DI4dE3I0.js", "./Cci9krki.js", "./Do3CuN17.js", "./HBu3l2VD.js", "./mcufe2Hp.js", "./D__ZgqEo.js", "./CPRQy4Al.js", "./jEAKaJ5s.js", "./D5INGzLN.js", "./wjg1OM1Y.js", "./BAI7B1MK.js", "./DyhAeW_I.js", "./DmL1UE78.js", "./D8RwbJyK.js", "./IdDUpM_s.js", "./DxlhdXjG.js", "./CMV67lzL.js", "./DUQvhx8k.js", "./Bp0hytzY.js", "./CfC5B9DJ.js"]))) => i.map(i => d[i]);
 import {
   a as e
-} from "./DP7ilGQK.js";
+} from "./B4266N1A.js";
 import {
   i as t,
   n
@@ -83,7 +83,8 @@ var r = `index, follow, max-image-preview:large`,
     "../patch-notes/markdown/1.6.9 - 🧑‍🎨 More Studio Tools and Collapsible Palette.md": () => e(() => import(`./DxlhdXjG.js`).then(e => e.n), __vite__mapDeps([45, 1]), import.meta.url),
     "../patch-notes/markdown/1.7.0 - ⭐ Favorite Places and Support.md": () => e(() => import(`./CMV67lzL.js`).then(e => e.n), __vite__mapDeps([46, 1]), import.meta.url),
     "../patch-notes/markdown/1.7.1 - ⚙️ Favorite Customization & UI Polish.md": () => e(() => import(`./DUQvhx8k.js`).then(e => e.n), __vite__mapDeps([47, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.2 - 🔨 Painting UI & Favorites Improvements.md": () => e(() => import(`./Bp0hytzY.js`).then(e => e.n), __vite__mapDeps([48, 1]), import.meta.url)
+    "../patch-notes/markdown/1.7.2 - 🔨 Painting UI & Favorites Improvements.md": () => e(() => import(`./Bp0hytzY.js`).then(e => e.n), __vite__mapDeps([48, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.3 - 🛠️ Support Improvements & UI Refinements.md": () => e(() => import(`./CfC5B9DJ.js`).then(e => e.n), __vite__mapDeps([49, 1]), import.meta.url)
   })).map(e => e.split(`/`).at(-1).replace(/\.md$/, ``).split(`-`)[0].trim()))].sort((e, t) => e.localeCompare(t, `en`, {
     numeric: !0
   })),

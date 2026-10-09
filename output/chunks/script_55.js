@@ -1,49 +1,8 @@
-import {
-  $ as e,
-  Dt as t,
-  G as n,
-  X as r,
-  Xt as i,
-  Z as a,
-  Zt as o,
-  o as s,
-  y as c
-} from "./D2z8HFb7.js";
-import "./B8UK1oE5.js";
-import {
-  t as l
-} from "./njokBD2q.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`),
-  f = e(`<svg><path d="M7 19H5v-2h2v2Zm12 0h-2v-2h2v2ZM9 15v2H7v-2h2Zm8 2h-2v-2h2v2Zm-6-2H9v-2h2v2Zm4 0h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-2-2H9V9h2v2Zm4 0h-2V9h2v2ZM9 9H7V7h2v2Zm8 0h-2V7h2v2ZM7 7H5V5h2v2Zm12 0h-2V5h2v2Z"></path></svg>`);
+var e = [];
 
-function p(e, p) {
-  o(p, !0);
-  let m = s(p, u);
-  var h = a(),
-    g = t(h),
-    _ = e => {
-      var t = d();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    },
-    v = e => {
-      var t = f();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    };
-  n(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(e, h), i()
+function t() {
+  return e.length > 0
 }
 export {
-  p as t
+  t as n, e as t
 };

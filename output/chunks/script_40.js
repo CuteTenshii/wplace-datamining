@@ -1,112 +1,50 @@
 import {
-  Bt as e,
-  D as t,
-  Et as n,
-  G as r,
-  It as i,
-  Lt as a,
-  O as o,
-  Ot as s,
-  Q as c,
-  Rt as l,
-  V as u,
-  Vt as d,
-  X as f,
-  Xt as p,
-  Zt as m,
-  bt as h,
-  in as g,
-  k as _,
-  o as v,
-  on as y,
-  ut as b,
-  x,
-  zt as S
+  $ as e,
+  Dt as t,
+  G as n,
+  X as r,
+  Xt as i,
+  Z as a,
+  Zt as o,
+  o as s,
+  y as c
 } from "./D2z8HFb7.js";
 import "./B8UK1oE5.js";
 import {
-  t as C
-} from "./DxdGK6Xj.js";
-var w, T, E, D, O, k, A = 9,
-  j = 95,
-  M = 45,
-  N = 5;
+  t as l
+} from "./Da1b2czT.js";
+var u = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`,
+  d = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  f = e(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`),
+  p = e(`<svg><path d="M5 21H3v-2h2v2Zm4 0H7v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2ZM5 17H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 9H3V7h2v2Zm16 0h-2V7h2v2ZM5 5H3V3h2v2Zm4 0H7V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Z"></path></svg>`);
 
-function P(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, N) >>> 2
-}
-
-function F(e = ``, t = j, n = M, r = P) {
-  let i = r(e),
-    a = i % A * (360 / A);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
-  constructor(...t) {
-    super(...t), d(this, k), e(this, O, !1)
-  }
-  connectedCallback() {
-    S(k, this, I).call(this), l(O, this, !0)
-  }
-  attributeChangedCallback() {
-    a(O, this) && S(k, this, I).call(this)
-  }
-}, y(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
-  _: {}
-}, E));
-
-function I() {
-  var e;
-  let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    n = t.join(`,`);
-  this.innerHTML = (e = S(E, E, D)._)[n] ?? (e[n] = F(...t))
-}
-var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
-  R = c(`<div></div>`);
-
-function z(e, t) {
-  m(t, !0), v(t, L);
-  let n = i(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
-  var r = R();
-  u(r, () => F(b(n), 95, 45), !0), g(r), h(() => o(r, 1, `bg-base-200 minidenticon size-full ${t.class??``??``}`, `svelte-15zr69j`)), f(e, r), p()
-}
-var B = c(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
-  V = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
-  H = c(`<div><div><!></div> <!></div>`);
-
-function U(e, i) {
-  m(i, !0);
-  var a = H(),
-    c = n(a);
-  t(c, `width: 67.76785714285714%`);
-  var l = n(c),
-    u = e => {
-      z(e, {
-        get userId() {
-          return i.userId
-        },
-        get seed() {
-          return i.avatarSeed
-        }
-      })
+function m(e, u) {
+  o(u, !0);
+  let m = s(u, d);
+  var h = a(),
+    g = t(h),
+    _ = e => {
+      var t = f();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     },
-    d = e => {
-      var t = B();
-      h(() => x(t, `src`, i.pictureUrl)), f(e, t)
+    v = e => {
+      var t = p();
+      c(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(e, t)
     };
-  r(l, e => {
-    i.pictureUrl ? e(d, -1) : e(u)
-  }), g(c);
-  var v = s(c, 2),
-    y = e => {
-      var n = V();
-      t(n, `scale: 114.99999999999999%;`), h(() => x(n, `src`, i.frameUrl)), f(e, n)
-    };
-  r(v, e => {
-    i.frameUrl && e(y)
-  }), g(a), h((e, t) => {
-    o(a, 1, e), o(c, 1, t)
-  }, [() => _(C(`relative inline-grid size-10 place-items-center`, i.class)), () => _(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, i.avatarClass))]), f(e, a), p()
+  n(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(e, h), i()
 }
 export {
-  z as n, F as r, U as t
+  u as n, m as t
 };
