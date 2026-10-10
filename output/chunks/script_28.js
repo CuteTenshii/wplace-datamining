@@ -1,110 +1,136 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./LjXxo1Gq.js", "./D2z8HFb7.js", "./C-l9IXmX.js", "./COwC9nXI.js", "./B60Wf4VA.js", "./CR04akpm.js", "./Bqje1HXi.js", "./a7QZC4SB.js", "./16AH6ZqH.js", "./pKOrQQBa.js", "./DOmS4MBC.js", "./BrtrtlEe.js", "./DG8R2unG.js"]))) => i.map(i => d[i]);
-import {
-  Gt as e,
-  Kt as t
-} from "./D2z8HFb7.js";
-import "./C-l9IXmX.js";
-import {
-  a as n
-} from "./CR04akpm.js";
-import {
-  M as r,
-  yt as i
-} from "./Bqje1HXi.js";
-import {
-  t as a
-} from "./cD22R5HB.js";
-import {
-  o
-} from "./C8yDr8fi.js";
-var s = t({
-  status: `unavailable`
-});
-async function c() {
-  let t = e(s);
-  if (t.status === `available`) {
-    s.set({
-      status: `prompting`
-    });
+function e(e, {
+  interval: t,
+  immediate: n = !1
+}) {
+  let r = n ? -1 / 0 : Date.now(),
+    i = () => typeof document > `u` || document.visibilityState === `visible`;
+  async function a() {
+    let t = r;
     try {
-      return await t.event.prompt()
-    } finally {
-      e(s).status === `prompting` && s.set({
-        status: `unavailable`
-      })
+      r = Date.now(), await e()
+    } catch (e) {
+      console.error(e), r = t
     }
   }
+  let o = setInterval(() => {
+    i() && a()
+  }, t);
+  n && a();
+  async function s() {
+    Date.now() - r >= t && await a()
+  }
+  let c = new AbortController;
+  return typeof document < `u` && (document.addEventListener(`visibilitychange`, () => s(), {
+    signal: c.signal
+  }), document.addEventListener(`resume`, () => s(), {
+    signal: c.signal
+  })), typeof window < `u` && (window.addEventListener(`pageshow`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`focus`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`online`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`wplace:online`, () => s(), {
+    signal: c.signal
+  })), () => {
+    clearInterval(o), c.abort()
+  }
+}
+var t = void 0,
+  n = new Set;
+
+function r(e) {
+  return n.add(e), () => n.delete(e)
 }
 
-function l() {
-  return window.matchMedia(`(display-mode: standalone)`).matches || `standalone` in window.navigator && window.navigator.standalone === !0
+function i(e) {
+  return t = e, d({
+    type: `previewPixels`,
+    data: e
+  })
 }
 
-function u() {
-  let e = `last-unfocus`,
-    t = new AbortController,
-    c = window.pwaInstallPrompt;
-  if (window.pwaInstallPrompt = void 0, c && s.set({
-      status: `available`,
-      event: c
-    }), window.addEventListener(`beforeinstallprompt`, e => {
-      e.preventDefault(), window.pwaInstallPrompt === e && (window.pwaInstallPrompt = void 0), s.set({
-        status: `available`,
-        event: e
-      })
-    }, {
-      signal: t.signal
-    }), window.addEventListener(`appinstalled`, () => {
-      s.set({
-        status: `installed`
-      })
-    }, {
-      signal: t.signal
-    }), l() && queueMicrotask(async () => {
-      let {
-        TWAServices: e
-      } = await n(async () => {
-        let {
-          TWAServices: e
-        } = await import(`./LjXxo1Gq.js`).then(e => e.i);
-        return {
-          TWAServices: e
-        }
-      }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]), import.meta.url);
-      await e.onInit(t)
-    }), l() || a.isIOSApp()) {
-    let n = () => {
-        let t = localStorage.getItem(e);
-        if (t) {
-          let e = parseInt(t, 10);
-          Date.now() - e > 5 * r.minute && window.location.reload()
+function a() {
+  return t = void 0, d({
+    type: `clearPixelPreview`
+  })
+}
+async function o(e) {
+  await d({
+    type: `paintPixels`,
+    data: e
+  });
+  for (let t of n) try {
+    t(e)
+  } catch (e) {
+    console.error(`Canvas paint listener failed.`, e)
+  }
+}
+
+function s() {
+  return d({
+    type: `refreshPixelArt`
+  })
+}
+async function c() {
+  t || await d({
+    type: `clearPixelPreview`
+  })
+}
+var l = 1e4,
+  u = 0;
+
+function d(e) {
+  let t = u++,
+    n = {
+      ...e,
+      id: t
+    };
+  return new Promise((e, r) => {
+    let i = navigator.serviceWorker;
+    if (!i) {
+      r(Error(`Service Workers are not supported/enabled in your browser. Some features might not work properly.`));
+      return
+    }
+    let a = !1,
+      o = e => {
+        var n;
+        ((n = e.data) == null ? void 0 : n.id) === t && c()
+      },
+      s = () => {
+        clearTimeout(d), i.removeEventListener(`message`, o)
+      },
+      c = () => {
+        a || (a = !0, s(), e())
+      },
+      u = e => {
+        a || (a = !0, s(), r(e))
+      },
+      d = setTimeout(() => u(Error(`Timed out waiting for service worker response`)), l);
+    i.addEventListener(`message`, o);
+    let f = e => {
+        try {
+          e.postMessage(n)
+        } catch (e) {
+          u(e instanceof Error ? e : Error(String(e)))
         }
       },
-      a = () => {
-        localStorage.setItem(e, Date.now().toString());
-        let t = i.map;
-        if (t) {
-          let e = t.getCenter(),
-            n = t.getZoom();
-          o(e, n)
-        }
-      };
-    document.addEventListener(`visibilitychange`, () => {
-      document.visibilityState === `visible` ? n() : a()
-    }, {
-      signal: t.signal
-    }), window.addEventListener(`pageshow`, n, {
-      signal: t.signal
-    }), window.addEventListener(`pagehide`, a, {
-      signal: t.signal
-    })
-  }
-  return () => {
-    t.abort(), s.set({
-      status: `unavailable`
-    })
-  }
+      p = i.controller;
+    p ? f(p) : i.ready.then(e => {
+      if (a) return;
+      let t = e.active;
+      t ? f(t) : u(Error(`Service worker registration not active`))
+    }, e => u(e instanceof Error ? e : Error(String(e))))
+  })
+}
+
+function f({
+  pixel: e,
+  season: t,
+  tile: n
+}) {
+  return `t=(${n[0]},${n[1]});p=(${e[0]},${e[1]});s=${t}`
 }
 export {
-  u as i, c as n, s as r, l as t
+  s as a, e as c, i, f as n, r as o, o as r, c as s, a as t
 };

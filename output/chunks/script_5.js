@@ -1,22 +1,22 @@
 import {
   a as e,
   n as t
-} from "./CR04akpm.js";
+} from "./DIWcIMbs.js";
 var n = `https://wplace.live`,
   r = `${n}/img/og-image.png`,
   i = Object.assign({
-    "../../../messages/ch.json": () => e(() => import(`./CJCA7PFx.js`), [], import.meta.url),
-    "../../../messages/de.json": () => e(() => import(`./CWxj1w1p.js`), [], import.meta.url),
-    "../../../messages/en.json": () => e(() => import(`./CIEk07K-.js`), [], import.meta.url),
-    "../../../messages/es.json": () => e(() => import(`./DrkIKIpZ.js`), [], import.meta.url),
-    "../../../messages/fr.json": () => e(() => import(`./BGYqcdl0.js`), [], import.meta.url),
-    "../../../messages/it.json": () => e(() => import(`./r51tGRoP.js`), [], import.meta.url),
-    "../../../messages/jp.json": () => e(() => import(`./CU0ab8kt.js`), [], import.meta.url),
-    "../../../messages/pl.json": () => e(() => import(`./DWYbw9_w.js`), [], import.meta.url),
-    "../../../messages/pt.json": () => e(() => import(`./DaJnK6-G.js`), [], import.meta.url),
-    "../../../messages/ru.json": () => e(() => import(`./ecNFHpPa.js`), [], import.meta.url),
-    "../../../messages/uk.json": () => e(() => import(`./Bv4Xxzk5.js`), [], import.meta.url),
-    "../../../messages/vi.json": () => e(() => import(`./DI606agd.js`), [], import.meta.url)
+    "../../../messages/ch.json": () => e(() => import(`./BlRGobEA.js`), [], import.meta.url),
+    "../../../messages/de.json": () => e(() => import(`./CDZiGWDz.js`), [], import.meta.url),
+    "../../../messages/en.json": () => e(() => import(`./DUTQIdMT.js`), [], import.meta.url),
+    "../../../messages/es.json": () => e(() => import(`./n7Vy7FjG.js`), [], import.meta.url),
+    "../../../messages/fr.json": () => e(() => import(`./BG3r1DMx.js`), [], import.meta.url),
+    "../../../messages/it.json": () => e(() => import(`./Dl86IWVz.js`), [], import.meta.url),
+    "../../../messages/jp.json": () => e(() => import(`./D9-zkEbF.js`), [], import.meta.url),
+    "../../../messages/pl.json": () => e(() => import(`./DOiv3Y5g.js`), [], import.meta.url),
+    "../../../messages/pt.json": () => e(() => import(`./BpAFBUvF.js`), [], import.meta.url),
+    "../../../messages/ru.json": () => e(() => import(`./DYG0KhrL.js`), [], import.meta.url),
+    "../../../messages/uk.json": () => e(() => import(`./_JOBULtU.js`), [], import.meta.url),
+    "../../../messages/vi.json": () => e(() => import(`./CZ5WMpDF.js`), [], import.meta.url)
   });
 async function a(e = t()) {
   return (await i[`../../../messages/${e}.json`]()).default

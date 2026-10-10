@@ -1,44 +1,61 @@
-import {
-  Bt as e,
-  Lt as t,
-  Rt as n,
-  Vt as r,
-  on as i,
-  zt as a
-} from "./D2z8HFb7.js";
-var o, s, c, l, u, d, f = 9,
-  p = 95,
-  m = 45,
-  h = 5;
+var e = 1048576,
+  t = {
+    profile: `constrained`,
+    cpuResourceCacheBytes: 192 * e,
+    workerSourceCacheBytes: 64 * e,
+    colorLookupCacheBytes: 8 * e,
+    colorLookupCacheEntries: 131072,
+    gpuTextureCacheBytes: 16 * e,
+    processingTimeSliceMs: 3
+  },
+  n = {
+    profile: `mobile`,
+    cpuResourceCacheBytes: 256 * e,
+    workerSourceCacheBytes: 96 * e,
+    colorLookupCacheBytes: 12 * e,
+    colorLookupCacheEntries: 196608,
+    gpuTextureCacheBytes: 32 * e,
+    processingTimeSliceMs: 5
+  },
+  r = {
+    profile: `desktop`,
+    cpuResourceCacheBytes: 320 * e,
+    workerSourceCacheBytes: 192 * e,
+    colorLookupCacheBytes: 24 * e,
+    colorLookupCacheEntries: 393216,
+    gpuTextureCacheBytes: 64 * e,
+    processingTimeSliceMs: 8
+  };
 
-function g(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, h) >>> 2
+function i(e) {
+  return typeof e == `number` && Number.isFinite(e) && e > 0 ? e : void 0
 }
 
-function _(e = ``, t = p, n = m, r = g) {
-  let i = r(e),
-    a = i % f * (360 / f);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(o = globalThis.customElements) != null && o.get(`minidenticon-svg`) || (s = globalThis.customElements) == null || s.define(`minidenticon-svg`, (u = new WeakMap, d = new WeakSet, c = class extends HTMLElement {
-  constructor(...t) {
-    super(...t), r(this, d), e(this, u, !1)
-  }
-  connectedCallback() {
-    a(d, this, v).call(this), n(u, this, !0)
-  }
-  attributeChangedCallback() {
-    t(u, this) && a(d, this, v).call(this)
-  }
-}, i(c, `observedAttributes`, [`username`, `saturation`, `lightness`]), l = {
-  _: {}
-}, c));
-
-function v() {
-  var e;
-  let t = c.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    n = t.join(`,`);
-  this.innerHTML = (e = a(c, c, l)._)[n] ?? (e[n] = _(...t))
+function a({
+  deviceMemoryGiB: e,
+  hardwareConcurrency: a,
+  mobile: o = !1
+} = {}) {
+  let s = i(e),
+    c = i(a);
+  return s !== void 0 && s <= 2 || c !== void 0 && c <= 2 ? t : o || s !== void 0 && s <= 4 || c !== void 0 && c <= 4 ? n : r
 }
+
+function o(e) {
+  var t;
+  return e ? {
+    deviceMemoryGiB: e.deviceMemory,
+    hardwareConcurrency: e.hardwareConcurrency,
+    mobile: ((t = e.userAgentData) == null ? void 0 : t.mobile) === !0 || /Android|iPhone|iPad|iPod|IEMobile|Mobile|Opera Mini/i.test(e.userAgent ?? ``)
+  } : {}
+}
+var s = a(o(typeof navigator > `u` ? void 0 : navigator)),
+  c = s.cpuResourceCacheBytes,
+  l = s.workerSourceCacheBytes,
+  u = s.colorLookupCacheBytes,
+  d = s.colorLookupCacheEntries,
+  f = s.gpuTextureCacheBytes,
+  p = s.processingTimeSliceMs;
 export {
-  _ as t
+  s as a, f as i, d as n, p as o, c as r, l as s, u as t
 };

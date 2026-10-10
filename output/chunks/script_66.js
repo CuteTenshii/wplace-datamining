@@ -12,10 +12,10 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as l
-} from "./R7y8S9hK.js";
+} from "./CZ9jPcVI.js";
 var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = e(`<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>`),
-  f = e(`<svg><path d="M18 22H6v-2h12v2ZM6 20H4v-2h2v2Zm14 0h-2v-2h2v2ZM4 18H2V6h2v12Zm18 0h-2V6h2v12Zm-5-1h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-2-2h-2V6h2v7ZM6 6H4V4h2v2Zm14 0h-2V4h2v2Zm-2-2H6V2h12v2Z"></path></svg>`);
+  d = e(`<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>`),
+  f = e(`<svg><path d="M2 2h6v2H6v2H4v2H2V2Zm6 6h2v2h2V8h2v6H8v-2h2l-2-2V8Zm8-6h4v8h2v2h2v8h-2v2H10v-2H8v-2H6v-4h4v2h4V4h2V2Zm0 2v14h-6v-2H8v2h2v2h10v-2h2v-4h-2v-2h-2V4h-2Z"></path></svg>`);
 
 function p(e, p) {
   o(p, !0);
@@ -37,6 +37,7 @@ function p(e, p) {
         xmlns: `http://www.w3.org/2000/svg`,
         viewBox: `0 0 24 24`,
         fill: `currentColor`,
+        "fill-rule": `evenodd`,
         ...m
       })), r(e, t)
     };

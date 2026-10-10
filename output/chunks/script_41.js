@@ -1,13 +1,4 @@
-import {
-  kt as e
-} from "./D2z8HFb7.js";
-var t = e({
-  shouldReload: !0,
-  openHeadquarters: !1,
-  hq: void 0,
-  hasHeadquarters: !1,
-  emblem: void 0
-});
+var e = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`;
 export {
-  t
+  e as t
 };

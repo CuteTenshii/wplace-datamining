@@ -1,339 +1,344 @@
-import {
-  At as e,
-  Bt as t,
-  It as n,
-  Lt as r,
-  Mt as i,
-  Nt as a,
-  Rt as o,
-  Vt as s,
-  dt as c,
-  ht as l,
-  jt as u,
-  lt as d,
-  ot as f,
-  ut as p,
-  zt as m
-} from "./D2z8HFb7.js";
-import {
-  t as h
-} from "./BrtrtlEe.js";
-var g, _ = !1,
-  v = new WeakMap,
-  y = new WeakMap,
-  b = new WeakMap,
-  x = new WeakSet;
-g = class extends Date {
-  constructor(...e) {
-    super(...e), s(this, x), t(this, v, a(super.getTime())), t(this, y, new Map), t(this, b, d), _ || m(x, this, ee).call(this)
-  }
-};
-
-function ee() {
-  _ = !0;
-  var e = g.prototype,
-    t = Date.prototype,
-    i = Object.getOwnPropertyNames(t);
-  for (let a of i)(a.startsWith(`get`) || a.startsWith(`to`) || a === `valueOf`) && (e[a] = function(...e) {
-    if (e.length > 0) return p(r(v, this)), t[a].apply(this, e);
-    var i = r(y, this).get(a);
-    if (i === void 0) {
-      let o = d;
-      c(r(b, this)), i = n(() => (p(r(v, this)), t[a].apply(this, e))), r(y, this).set(a, i), c(o)
+var e;
+(function(e) {
+  e.Unimplemented = `UNIMPLEMENTED`, e.Unavailable = `UNAVAILABLE`
+})(e || (e = {}));
+var t = class extends Error {
+    constructor(e, t, n) {
+      super(e), this.message = e, this.code = t, this.data = n
     }
-    return p(i)
-  }), a.startsWith(`set`) && (e[a] = function(...e) {
-    var n = t[a].apply(this, e);
-    return u(r(v, this), t.getTime.call(this)), n
-  })
-}
-var S, C, w = [`forEach`, `isDisjointFrom`, `isSubsetOf`, `isSupersetOf`],
-  T = [`difference`, `intersection`, `symmetricDifference`, `union`],
-  E = !1,
-  D = new WeakMap,
-  O = new WeakMap,
-  k = new WeakMap,
-  A = new WeakMap,
-  j = new WeakSet;
-C = Symbol.iterator;
-var M = class extends Set {
-  constructor(e) {
-    if (super(), s(this, j), t(this, D, new Map), t(this, O, a(0)), t(this, k, a(0)), t(this, A, l || -1), e) {
-      for (var n of e) super.add(n);
-      r(k, this).v = super.size
+  },
+  n = e => {
+    var t, n;
+    return e != null && e.androidBridge ? `android` : (n = (t = e == null ? void 0 : e.webkit) == null ? void 0 : t.messageHandlers) != null && n.bridge ? `ios` : `web`
+  },
+  r = r => {
+    let i = r.CapacitorCustomPlatform || null,
+      a = r.Capacitor || {},
+      o = a.Plugins = a.Plugins || {},
+      s = () => i === null ? n(r) : i.name,
+      c = () => s() !== `web`,
+      l = e => {
+        let t = f.get(e);
+        return !!(t != null && t.platforms.has(s()) || u(e))
+      },
+      u = e => {
+        var t;
+        return (t = a.PluginHeaders) == null ? void 0 : t.find(t => t.name === e)
+      },
+      d = e => r.console.error(e),
+      f = new Map;
+    return a.convertFileSrc || (a.convertFileSrc = e => e), a.getPlatform = s, a.handleError = d, a.isNativePlatform = c, a.isPluginAvailable = l, a.registerPlugin = (n, r = {}) => {
+      let c = f.get(n);
+      if (c) return console.warn(`Capacitor plugin "${n}" already registered. Cannot register plugins twice.`), c.proxy;
+      let l = s(),
+        d = u(n),
+        p, m = async () => (!p && l in r ? p = p = typeof r[l] == `function` ? await r[l]() : r[l] : i !== null && !p && `web` in r && (p = p = typeof r.web == `function` ? await r.web() : r.web), p), h = (r, i) => {
+          var o, s;
+          if (d) {
+            let e = d == null ? void 0 : d.methods.find(e => i === e.name);
+            if (e) return e.rtype === `promise` ? e => a.nativePromise(n, i.toString(), e) : (e, t) => a.nativeCallback(n, i.toString(), e, t);
+            if (r) return (o = r[i]) == null ? void 0 : o.bind(r)
+          } else if (r) return (s = r[i]) == null ? void 0 : s.bind(r);
+          else throw new t(`"${n}" plugin is not implemented on ${l}`, e.Unimplemented)
+        }, g = r => {
+          let i, a = (...a) => {
+            let o = m().then(o => {
+              let s = h(o, r);
+              if (s) {
+                let e = s(...a);
+                return i = e == null ? void 0 : e.remove, e
+              }
+              throw new t(`"${n}.${r}()" is not implemented on ${l}`, e.Unimplemented)
+            });
+            return r === `addListener` && (o.remove = async () => i()), o
+          };
+          return a.toString = () => `${r.toString()}() { [capacitor code] }`, Object.defineProperty(a, "name", {
+            value: r,
+            writable: !1,
+            configurable: !1
+          }), a
+        }, _ = g(`addListener`), v = g(`removeListener`), y = (e, t) => {
+          let n = _({
+              eventName: e
+            }, t),
+            r = async () => {
+              let r = await n;
+              v({
+                eventName: e,
+                callbackId: r
+              }, t)
+            }, i = new Promise(e => n.then(() => e({
+              remove: r
+            })));
+          return i.remove = async () => {
+            console.warn(`Using addListener() without 'await' is deprecated.`), await r()
+          }, i
+        }, b = new Proxy({}, {
+          get(e, t) {
+            switch (t) {
+              case `$$typeof`:
+                return;
+              case `toJSON`:
+                return () => ({});
+              case `addListener`:
+                return d ? y : _;
+              case `removeListener`:
+                return v;
+              default:
+                return g(t)
+            }
+          }
+        });
+      return o[n] = b, f.set(n, {
+        name: n,
+        proxy: b,
+        platforms: new Set([...Object.keys(r), ...d ? [l] : []])
+      }), b
+    }, a.Exception = t, a.DEBUG = !!a.DEBUG, a.isLoggingEnabled = !!a.isLoggingEnabled, a
+  },
+  i = (e => e.Capacitor = r(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
+  a = i.registerPlugin,
+  o = class {
+    constructor() {
+      this.listeners = {}, this.retainedEventArguments = {}, this.windowListeners = {}
     }
-    E || m(j, this, ne).call(this)
-  }
-  has(e) {
-    var t = super.has(e),
-      n = r(D, this),
-      i = n.get(e);
-    if (i === void 0) {
-      if (!t) return p(r(O, this)), !1;
-      i = m(j, this, te).call(this, !0), n.set(e, i)
+    addListener(e, t) {
+      let n = !1;
+      this.listeners[e] || (this.listeners[e] = [], n = !0), this.listeners[e].push(t);
+      let r = this.windowListeners[e];
+      return r && !r.registered && this.addWindowListener(r), n && this.sendRetainedArgumentsForEvent(e), Promise.resolve({
+        remove: async () => this.removeListener(e, t)
+      })
     }
-    return p(i), t
-  }
-  add(t) {
-    return super.has(t) || (super.add(t), u(r(k, this), super.size), e(r(O, this))), this
-  }
-  delete(t) {
-    var n = super.delete(t),
-      i = r(D, this),
-      a = i.get(t);
-    return a !== void 0 && (i.delete(t), u(a, !1)), n && (u(r(k, this), super.size), e(r(O, this))), n
-  }
-  clear() {
-    if (super.size !== 0) {
-      super.clear();
-      var t = r(D, this);
-      for (var n of t.values()) u(n, !1);
-      t.clear(), u(r(k, this), 0), e(r(O, this))
+    async removeAllListeners() {
+      this.listeners = {};
+      for (let e in this.windowListeners) this.removeWindowListener(this.windowListeners[e]);
+      this.windowListeners = {}
     }
-  }
-  keys() {
-    return this.values()
-  }
-  values() {
-    return p(r(O, this)), super.values()
-  }
-  entries() {
-    return p(r(O, this)), super.entries()
-  } [C]() {
-    return this.keys()
-  }
-  get size() {
-    return p(r(k, this))
-  }
-};
-S = M;
-
-function te(e) {
-  return l === r(A, this) ? a(e) : i(e)
-}
-
-function ne() {
-  E = !0;
-  var e = S.prototype,
-    t = Set.prototype;
-  for (let n of w) e[n] = function(...e) {
-    return p(r(O, this)), t[n].apply(this, e)
-  };
-  for (let n of T) e[n] = function(...e) {
-    p(r(O, this));
-    var i = t[n].apply(this, e);
-    return new S(i)
-  }
-}
-
-function N(e) {
-  return N = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
-    return e.__proto__ || Object.getPrototypeOf(e)
-  }, N(e)
-}
-
-function P(e, t) {
-  for (; !{}.hasOwnProperty.call(e, t) && (e = N(e)) !== null;);
-  return e
-}
-
-function F() {
-  return F = typeof Reflect < `u` && Reflect.get ? Reflect.get.bind() : function(e, t, n) {
-    var r = P(e, t);
-    if (r) {
-      var i = Object.getOwnPropertyDescriptor(r, t);
-      return i.get ? i.get.call(arguments.length < 3 ? e : n) : i.value
-    }
-  }, F.apply(null, arguments)
-}
-
-function I(e, t, n, r) {
-  var i = F(N(1 & r ? e.prototype : e), t, n);
-  return 2 & r && typeof i == `function` ? function(e) {
-    return i.apply(n, e)
-  } : i
-}
-var L, R, z = new WeakMap,
-  B = new WeakMap,
-  V = new WeakMap,
-  H = new WeakMap,
-  U = new WeakSet;
-R = Symbol.iterator;
-var W = class extends Map {
-  constructor(e) {
-    if (super(), s(this, U), t(this, z, new Map), t(this, B, a(0)), t(this, V, a(0)), t(this, H, l || -1), e) {
-      for (var [n, i] of e) super.set(n, i);
-      r(V, this).v = super.size
-    }
-  }
-  has(e) {
-    var t = r(z, this),
-      n = t.get(e);
-    if (n === void 0) {
-      if (super.has(e)) n = m(U, this, G).call(this, 0), t.set(e, n);
-      else return p(r(B, this)), !1
-    }
-    return p(n), !0
-  }
-  forEach(e, t) {
-    m(U, this, K).call(this), super.forEach(e, t)
-  }
-  get(e) {
-    var t = r(z, this),
-      n = t.get(e);
-    if (n === void 0) {
-      if (super.has(e)) n = m(U, this, G).call(this, 0), t.set(e, n);
-      else {
-        p(r(B, this));
+    notifyListeners(e, t, n) {
+      let r = this.listeners[e];
+      if (!r) {
+        if (n) {
+          let n = this.retainedEventArguments[e];
+          n || (n = []), n.push(t), this.retainedEventArguments[e] = n
+        }
         return
       }
+      r.forEach(e => e(t))
     }
-    return p(n), super.get(e)
-  }
-  set(t, n) {
-    var i = r(z, this),
-      a = i.get(t),
-      o = super.get(t),
-      s = super.set(t, n),
-      c = r(B, this);
-    if (a === void 0) a = m(U, this, G).call(this, 0), i.set(t, a), u(r(V, this), super.size), e(c);
-    else if (o !== n) {
-      var l;
-      e(a);
-      var d = c.reactions === null ? null : new Set(c.reactions);
-      (d === null || !((l = a.reactions) != null && l.every(e => d.has(e)))) && e(c)
+    hasListeners(e) {
+      var t;
+      return !!((t = this.listeners[e]) != null && t.length)
     }
-    return s
-  }
-  delete(t) {
-    var n = r(z, this),
-      i = n.get(t),
-      a = super.delete(t);
-    return i !== void 0 && (n.delete(t), u(i, -1)), a && (u(r(V, this), super.size), e(r(B, this))), a
-  }
-  clear() {
-    if (super.size !== 0) {
-      super.clear();
-      var t = r(z, this);
-      u(r(V, this), 0);
-      for (var n of t.values()) u(n, -1);
-      e(r(B, this)), t.clear()
-    }
-  }
-  keys() {
-    return p(r(B, this)), super.keys()
-  }
-  values() {
-    return m(U, this, K).call(this), super.values()
-  }
-  entries() {
-    return m(U, this, K).call(this), super.entries()
-  } [R]() {
-    return this.entries()
-  }
-  get size() {
-    return p(r(V, this)), super.size
-  }
-};
-L = W;
-
-function G(e) {
-  return l === r(H, this) ? a(e) : i(e)
-}
-
-function K() {
-  p(r(B, this));
-  var e = r(z, this);
-  if (r(V, this).v !== e.size) {
-    for (var t of I(L.prototype, `keys`, this, 2)([]))
-      if (!e.has(t)) {
-        var n = m(U, this, G).call(this, 0);
-        e.set(t, n)
+    registerWindowListener(e, t) {
+      this.windowListeners[t] = {
+        registered: !1,
+        windowEventName: e,
+        pluginEventName: t,
+        handler: e => {
+          this.notifyListeners(t, e)
+        }
       }
-  }
-  for ([, n] of r(z, this)) p(n)
-}
-var q, J = Symbol(`replace`),
-  Y = new WeakMap,
-  X = new WeakMap,
-  Z = new WeakMap,
-  Q = new WeakSet;
-q = Symbol.iterator;
-var re = class extends URLSearchParams {
-  constructor(...e) {
-    super(...e), s(this, Q), t(this, Y, a(0)), t(this, X, ae()), t(this, Z, !1)
-  } [J](t) {
-    if (!r(Z, this)) {
-      o(Z, this, !0);
-      for (let e of [...super.keys()]) super.delete(e);
-      for (let [e, n] of t) super.append(e, n);
-      e(r(Y, this)), o(Z, this, !1)
     }
-  }
-  append(t, n) {
-    super.append(t, n), m(Q, this, $).call(this), e(r(Y, this))
-  }
-  delete(t, n) {
-    var i = super.has(t, n);
-    super.delete(t, n), i && (m(Q, this, $).call(this), e(r(Y, this)))
-  }
-  get(e) {
-    return p(r(Y, this)), super.get(e)
-  }
-  getAll(e) {
-    return p(r(Y, this)), super.getAll(e)
-  }
-  has(e, t) {
-    return p(r(Y, this)), super.has(e, t)
-  }
-  keys() {
-    return p(r(Y, this)), super.keys()
-  }
-  set(t, n) {
-    var i = super.getAll(t);
-    super.set(t, n);
-    var a = super.getAll(t);
-    (i.length !== a.length || i.some((e, t) => e !== a[t])) && (m(Q, this, $).call(this), e(r(Y, this)))
-  }
-  sort() {
-    super.sort(), m(Q, this, $).call(this), e(r(Y, this))
-  }
-  toString() {
-    return p(r(Y, this)), super.toString()
-  }
-  values() {
-    return p(r(Y, this)), super.values()
-  }
-  entries() {
-    return p(r(Y, this)), super.entries()
-  } [q]() {
-    return this.entries()
-  }
-  get size() {
-    return p(r(Y, this)), super.size
-  }
-};
-
-function $() {
-  if (!r(X, this) || r(Z, this)) return;
-  o(Z, this, !0);
-  let e = this.toString();
-  r(X, this).search = e && `?${e}`, o(Z, this, !1)
-}
-var ie = null;
-
-function ae() {
-  return ie
-}
-var oe = /\(.+\)/,
-  se = new Set([`all`, `print`, `screen`, `and`, `or`, `not`, `only`]),
-  ce = class extends h {
-    constructor(e, t) {
-      let n = oe.test(e) || e.split(/[\s,]+/).some(e => se.has(e.trim())) ? e : `(${e})`,
-        r = window.matchMedia(n);
-      super(() => r.matches, e => f(r, `change`, e))
+    unimplemented(t = `not implemented`) {
+      return new i.Exception(t, e.Unimplemented)
+    }
+    unavailable(t = `not available`) {
+      return new i.Exception(t, e.Unavailable)
+    }
+    async removeListener(e, t) {
+      let n = this.listeners[e];
+      if (!n) return;
+      let r = n.indexOf(t);
+      this.listeners[e].splice(r, 1), this.listeners[e].length || this.removeWindowListener(this.windowListeners[e])
+    }
+    addWindowListener(e) {
+      window.addEventListener(e.windowEventName, e.handler), e.registered = !0
+    }
+    removeWindowListener(e) {
+      e && (window.removeEventListener(e.windowEventName, e.handler), e.registered = !1)
+    }
+    sendRetainedArgumentsForEvent(e) {
+      let t = this.retainedEventArguments[e];
+      t && (delete this.retainedEventArguments[e], t.forEach(t => {
+        this.notifyListeners(e, t)
+      }))
+    }
+  },
+  s = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
+  c = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
+  l = class extends o {
+    async getCookies() {
+      let e = document.cookie,
+        t = {};
+      return e.split(`;`).forEach(e => {
+        if (e.length <= 0) return;
+        let [n, r] = e.replace(/=/, `CAP_COOKIE`).split(`CAP_COOKIE`);
+        n = c(n).trim(), r = c(r).trim(), t[n] = r
+      }), t
+    }
+    async setCookie(e) {
+      try {
+        let t = s(e.key),
+          n = s(e.value),
+          r = e.expires ? `; expires=${e.expires.replace(`expires=`,``)}` : ``,
+          i = (e.path || `/`).replace(`path=`, ``),
+          a = e.url != null && e.url.length > 0 ? `domain=${e.url}` : ``;
+        document.cookie = `${t}=${n||``}${r}; path=${i}; ${a};`
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async deleteCookie(e) {
+      try {
+        document.cookie = `${e.key}=; Max-Age=0`
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async clearCookies() {
+      try {
+        let e = document.cookie.split(`;`) || [];
+        for (let t of e) document.cookie = t.replace(/^ +/, ``).replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`)
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async clearAllCookies() {
+      try {
+        await this.clearCookies()
+      } catch (e) {
+        return Promise.reject(e)
+      }
     }
   };
+a(`CapacitorCookies`, {
+  web: () => new l
+});
+var u = async e => new Promise((t, n) => {
+  let r = new FileReader;
+  r.onload = () => {
+    let e = r.result;
+    t(e.indexOf(`,`) >= 0 ? e.split(`,`)[1] : e)
+  }, r.onerror = e => n(e), r.readAsDataURL(e)
+}), d = (e = {}) => {
+  let t = Object.keys(e);
+  return Object.keys(e).map(e => e.toLocaleLowerCase()).reduce((n, r, i) => (n[r] = e[t[i]], n), {})
+}, f = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
+  let [r, i] = n, a, o;
+  return Array.isArray(i) ? (o = ``, i.forEach(e => {
+    a = t ? encodeURIComponent(e) : e, o += `${r}=${a}&`
+  }), o.slice(0, -1)) : (a = t ? encodeURIComponent(i) : i, o = `${r}=${a}`), `${e}&${o}`
+}, ``).substr(1) : null, p = (e, t = {}) => {
+  let n = Object.assign({
+      method: e.method || `GET`,
+      headers: e.headers
+    }, t),
+    r = d(e.headers)[`content-type`] || ``;
+  if (typeof e.data == `string`) n.body = e.data;
+  else if (r.includes(`application/x-www-form-urlencoded`)) {
+    let t = new URLSearchParams;
+    for (let [n, r] of Object.entries(e.data || {})) t.set(n, r);
+    n.body = t.toString()
+  } else if (r.includes(`multipart/form-data`) || e.data instanceof FormData) {
+    let t = new FormData;
+    if (e.data instanceof FormData) e.data.forEach((e, n) => {
+      t.append(n, e)
+    });
+    else
+      for (let n of Object.keys(e.data)) t.append(n, e.data[n]);
+    n.body = t;
+    let r = new Headers(n.headers);
+    r.delete(`content-type`), n.headers = r
+  } else(r.includes(`application/json`) || typeof e.data == `object`) && (n.body = JSON.stringify(e.data));
+  return n
+}, m = class extends o {
+  async request(e) {
+    let t = p(e, e.webFetchExtra),
+      n = f(e.params, e.shouldEncodeUrlParams),
+      r = n ? `${e.url}?${n}` : e.url,
+      i = await fetch(r, t),
+      a = i.headers.get(`content-type`) || ``,
+      {
+        responseType: o = `text`
+      } = i.ok ? e : {};
+    a.includes(`application/json`) && (o = `json`);
+    let s, c;
+    switch (o) {
+      case `arraybuffer`:
+      case `blob`:
+        c = await i.blob(), s = await u(c);
+        break;
+      case `json`:
+        s = await i.json();
+        break;
+      default:
+        s = await i.text()
+    }
+    let l = {};
+    return i.headers.forEach((e, t) => {
+      l[t] = e
+    }), {
+      data: s,
+      headers: l,
+      status: i.status,
+      url: i.url
+    }
+  }
+  async get(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `GET`
+    }))
+  }
+  async post(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `POST`
+    }))
+  }
+  async put(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `PUT`
+    }))
+  }
+  async patch(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `PATCH`
+    }))
+  }
+  async delete(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `DELETE`
+    }))
+  }
+};
+a(`CapacitorHttp`, {
+  web: () => new m
+});
+var h;
+(function(e) {
+  e.Dark = `DARK`, e.Light = `LIGHT`, e.Default = `DEFAULT`
+})(h || (h = {}));
+var g;
+(function(e) {
+  e.StatusBar = `StatusBar`, e.NavigationBar = `NavigationBar`
+})(g || (g = {}));
+var _ = class extends o {
+  async setStyle() {
+    this.unavailable(`not available for web`)
+  }
+  async setAnimation() {
+    this.unavailable(`not available for web`)
+  }
+  async show() {
+    this.unavailable(`not available for web`)
+  }
+  async hide() {
+    this.unavailable(`not available for web`)
+  }
+};
+a(`SystemBars`, {
+  web: () => new _
+});
 export {
-  M as i, re as n, W as r, ce as t
+  o as n, a as r, i as t
 };
