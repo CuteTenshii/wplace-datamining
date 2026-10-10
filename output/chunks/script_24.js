@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CCTyltoX.js", "./D2z8HFb7.js", "./B4266N1A.js", "./pKOrQQBa.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./cD22R5HB.js", "./D2z8HFb7.js", "./CR04akpm.js", "./pKOrQQBa.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   It as t,
@@ -14,7 +14,7 @@ import {
 } from "./D2z8HFb7.js";
 import {
   a as d
-} from "./B4266N1A.js";
+} from "./CR04akpm.js";
 import {
   n as f,
   t as p
@@ -24,7 +24,7 @@ import {
 } from "./16AH6ZqH.js";
 import {
   t as h
-} from "./D3UrmB6s.js";
+} from "./B60Wf4VA.js";
 import {
   n as ee,
   o as te,
@@ -4228,7 +4228,7 @@ var $s = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./CCTyltoX.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3]), import.meta.url), o.status === P.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./cD22R5HB.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3]), import.meta.url), o.status === P.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
       if (o.status === P.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(h.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -6761,7 +6761,7 @@ function Tc(e) {
       if (t.status === P.OK) return t.json();
       if (t.status === P.BAD_REQUEST) {
         let e = await t.json();
-        throw e.error === `max_characters` ? new I(h.alliance_name_exceeded_the_maximum_number_of_characters(), t.status) : e.error === `name_taken` ? new I(h.alliance_name_already_taken(), t.status) : e.error == `empty_name` ? new I(h.alliance_with_empty_name(), t.status) : new I(h.unexpected_server_error(), t.status)
+        throw e.error === `max_characters` ? new I(h.alliance_name_exceeded_the_maximum_number_of_characters(), t.status) : e.error === `invalid_name` ? new I(h.invalid_name(), t.status) : e.error === `name_taken` ? new I(h.alliance_name_already_taken(), t.status) : e.error == `empty_name` ? new I(h.alliance_with_empty_name(), t.status) : new I(h.unexpected_server_error(), t.status)
       }
       throw t.status === P.FORBIDDEN ? (await t.json().catch(() => ({}))).error === `not_enough_droplets` ? Error(h.not_enough_droplets()) : Error(h.you_are_already_in_an_alliance()) : Error(h.unexpected_server_error())
     }
@@ -6913,7 +6913,7 @@ function Tc(e) {
       });
       if (t.status === P.OK) return t.json();
       let n = await t.json().catch(() => ({}));
-      throw n.error === `not_enough_alliance_coins` ? Error(h.alliance_not_enough_coins()) : n.error === `name_taken` ? Error(h.alliance_name_already_taken()) : n.error === `name_unchanged` ? Error(h.alliance_name_unchanged()) : n.error === `max_characters` ? Error(h.alliance_name_exceeded_the_maximum_number_of_characters()) : Error(h.unexpected_server_error())
+      throw n.error === `not_enough_alliance_coins` ? Error(h.alliance_not_enough_coins()) : n.error === `invalid_name` ? Error(h.invalid_name()) : n.error === `name_taken` ? Error(h.alliance_name_already_taken()) : n.error === `name_unchanged` ? Error(h.alliance_name_unchanged()) : n.error === `max_characters` ? Error(h.alliance_name_exceeded_the_maximum_number_of_characters()) : Error(h.unexpected_server_error())
     }
     async getAllianceAssets(e) {
       let t = await this.request(`/alliance/assets/${e}`, {
@@ -7833,11 +7833,23 @@ function Tc(e) {
           name: t
         })
       });
-      if (n.status === P.BAD_REQUEST) {
+      if (n.status === P.BAD_REQUEST || n.status === P.CONFLICT) {
         let e = await n.json().catch(() => ({}));
-        throw Error((e == null ? void 0 : e.error) ?? h.unexpected_server_error())
-      }
-      if (n.status !== P.OK) throw new I(h.unexpected_server_error(), n.status)
+        switch (e == null ? void 0 : e.error) {
+          case `invalid_name`:
+            throw Error(h.invalid_name());
+          case `name_taken`:
+            throw Error(h.alliance_name_already_taken());
+          case `name_unchanged`:
+            throw Error(h.alliance_name_unchanged());
+          case `max_characters`:
+            throw Error(h.alliance_name_exceeded_the_maximum_number_of_characters());
+          case `empty_name`:
+            throw Error(h.alliance_with_empty_name());
+          default:
+            throw Error(h.unexpected_server_error())
+        }
+      } else if (n.status !== P.OK) throw new I(h.unexpected_server_error(), n.status)
     }
     async updateAdminAllianceDescription(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/description`, {

@@ -1,6 +1,6 @@
 import {
   t as e
-} from "./Bz88NET3.js";
+} from "./CD3N2W5s.js";
 import {
   n as t
 } from "./16AH6ZqH.js";
