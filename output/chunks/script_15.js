@@ -12,7 +12,9 @@ import {
   t as c
 } from "./BrtrtlEe.js";
 var l, u;
-new c(() => window.scrollX, e => a(window, `scroll`, e)), new c(() => window.scrollY, e => a(window, `scroll`, e)), new c(() => window.innerWidth, e => a(window, `resize`, e)), new c(() => window.innerHeight, e => a(window, `resize`, e)), new c(() => window.outerWidth, e => a(window, `resize`, e)), new c(() => window.outerHeight, e => a(window, `resize`, e)), new c(() => window.screenLeft, e => {
+new c(() => window.scrollX, e => a(window, `scroll`, e)), new c(() => window.scrollY, e => a(window, `scroll`, e));
+var d = new c(() => window.innerWidth, e => a(window, `resize`, e));
+new c(() => window.innerHeight, e => a(window, `resize`, e)), new c(() => window.outerWidth, e => a(window, `resize`, e)), new c(() => window.outerHeight, e => a(window, `resize`, e)), new c(() => window.screenLeft, e => {
   let t = window.screenLeft,
     n = requestAnimationFrame(function r() {
       n = requestAnimationFrame(r), t !== (t = window.screenLeft) && e()
@@ -35,20 +37,20 @@ new c(() => window.scrollX, e => a(window, `scroll`, e)), new c(() => window.scr
     t(), n()
   }
 });
-var d = new(l = new WeakMap, u = new WeakSet, class {
+var f = new(l = new WeakMap, u = new WeakSet, class {
   constructor() {
-    r(this, u), e(this, l, n(window.devicePixelRatio)), s(u, this, f).call(this)
+    r(this, u), e(this, l, n(window.devicePixelRatio)), s(u, this, p).call(this)
   }
   get current() {
     return o(t(l, this)), window.devicePixelRatio
   }
 });
 
-function f() {
+function p() {
   let e = a(window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`), `change`, () => {
-    i(t(l, this), window.devicePixelRatio), e(), s(u, this, f).call(this)
+    i(t(l, this), window.devicePixelRatio), e(), s(u, this, p).call(this)
   })
 }
 export {
-  d as t
+  d as n, f as t
 };

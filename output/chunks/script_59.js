@@ -12,10 +12,10 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as l
-} from "./BcyB10Wx.js";
+} from "./BVH6iMxT.js";
 var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`),
-  f = e(`<svg><path d="M7 19H5v-2h2v2Zm12 0h-2v-2h2v2ZM9 15v2H7v-2h2Zm8 2h-2v-2h2v2Zm-6-2H9v-2h2v2Zm4 0h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-2-2H9V9h2v2Zm4 0h-2V9h2v2ZM9 9H7V7h2v2Zm8 0h-2V7h2v2ZM7 7H5V5h2v2Zm12 0h-2V5h2v2Z"></path></svg>`);
+  d = e(`<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>`),
+  f = e(`<svg><path d="M10 18H8v-2h2v2Zm-2-2H6v-2h2v2Zm4-2v2h-2v-2h2Zm-6 0H4v-2h2v2Zm8 0h-2v-2h2v2Zm2-2h-2v-2h2v2Zm2-2h-2V8h2v2Zm2-2h-2V6h2v2Z"></path></svg>`);
 
 function p(e, p) {
   o(p, !0);

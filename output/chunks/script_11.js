@@ -14,7 +14,7 @@ import {
   s as u,
   t as d,
   u as f
-} from "./Bbaervy8.js";
+} from "./BjvBT4hB.js";
 var p = e({
   afterNavigate: () => d,
   beforeNavigate: () => s,
