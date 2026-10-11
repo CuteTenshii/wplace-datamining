@@ -1,6 +1,6 @@
 import {
   n as e
-} from "./DIWcIMbs.js";
+} from "./CDyJ5f5K.js";
 
 function t() {
   return e()

@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./DpQ0LiK0.js", "./D2z8HFb7.js", "./B8UK1oE5.js", "./8Sr57Oox.js", "./DIWcIMbs.js", "./BXIgRkw7.js", "./BrtrtlEe.js", "./CYCOA62Z.js", "./CZ9jPcVI.js", "./DQ8_yadc.js", "./DOt7gElS.js", "./16AH6ZqH.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CwTbqzvQ.js", "./D2z8HFb7.js", "./B8UK1oE5.js", "./DaBL0jL9.js", "./CDyJ5f5K.js", "./BXIgRkw7.js", "./BrtrtlEe.js", "./DtsW3VXE.js", "./BcyB10Wx.js", "./hp4VnVrC.js", "./Bbaervy8.js", "./16AH6ZqH.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Nt as e,
   Y as t,
@@ -12,14 +12,14 @@ import {
 } from "./D2z8HFb7.js";
 import {
   x as l
-} from "./DOt7gElS.js";
+} from "./Bbaervy8.js";
 import {
   a as u
-} from "./DIWcIMbs.js";
+} from "./CDyJ5f5K.js";
 import "./BrtrtlEe.js";
 import {
   t as d
-} from "./8Sr57Oox.js";
+} from "./DaBL0jL9.js";
 import {
   n as f
 } from "./BXIgRkw7.js";
@@ -48,7 +48,7 @@ function m(e) {
     r = n.indexOf(`?`),
     i = r < 0 ? n : n.slice(0, r),
     a = new URLSearchParams(r < 0 ? `` : n.slice(r + 1));
-  if ([...a.keys()].some(e => ![`text`, `occurrence`, `period`, `country`].includes(e)) || [`text`, `occurrence`, `period`, `country`].some(e => a.getAll(e).length > 1)) return null;
+  if ([...a.keys()].some(e => ![`text`, `occurrence`, `period`, `country`, `region`].includes(e)) || [`text`, `occurrence`, `period`, `country`, `region`].some(e => a.getAll(e).length > 1)) return null;
   let o = (t = a.get(`text`)) == null ? void 0 : t.trim(),
     s = a.get(`occurrence`);
   if (s !== null && (!o || !/^[1-9][0-9]{0,3}$/.test(s)) || a.has(`text`) && (!o || o.length > 500 || [...o].some(e => e.charCodeAt(0) < 32 || e === `�`))) return null;
@@ -65,8 +65,9 @@ function m(e) {
   let m = p[u];
   if (d && !m.includes(d)) return null;
   let h = a.get(`period`),
-    g = a.get(`country`);
-  return h !== null && (u !== `leaderboard` || ![`today`, `week`, `month`, `all-time`].includes(h)) || g !== null && (u !== `leaderboard` || d !== `regions` || !/^[1-9][0-9]{0,2}$/.test(g)) ? null : {
+    g = a.get(`country`),
+    _ = a.get(`region`);
+  return h !== null && (u !== `leaderboard` || ![`today`, `week`, `month`, `all-time`].includes(h)) || g !== null && (u !== `leaderboard` || ![`regions`, `players`].includes(d) || !/^[1-9][0-9]{0,2}$/.test(g)) || _ !== null && (u !== `leaderboard` || d !== `players` || !g || !/^[1-9][0-9]{0,9}$/.test(_) || Number(_) > 2147483647) ? null : {
     panel: u,
     section: d,
     target: f,
@@ -75,6 +76,9 @@ function m(e) {
     } : {},
     ...g ? {
       country: Number(g)
+    } : {},
+    ..._ ? {
+      region: Number(_)
     } : {},
     ...o ? {
       text: o
@@ -91,7 +95,7 @@ function h(e) {
 
 function g(e) {
   let t = new URLSearchParams;
-  return e.period && t.set(`period`, e.period), e.country && t.set(`country`, String(e.country)), e.text && (t.set(`text`, e.text), e.occurrence && t.set(`occurrence`, String(e.occurrence))), `#${h(e)}${t.size?`?${t}`:``}`
+  return e.period && t.set(`period`, e.period), e.country && t.set(`country`, String(e.country)), e.region && t.set(`region`, String(e.region)), e.text && (t.set(`text`, e.text), e.occurrence && t.set(`occurrence`, String(e.occurrence))), `#${h(e)}${t.size?`?${t}`:``}`
 }
 
 function _(e) {
@@ -162,7 +166,8 @@ function w(e, t, n, r) {
   (u == null ? void 0 : u.panel) === `leaderboard` && c.panel === `leaderboard` && u.section === c.section && (c = {
     ...c,
     period: c.period ?? u.period,
-    country: c.country ?? u.country
+    country: c.country ?? u.country,
+    region: c.region ?? u.region
   });
   let d = r && !r.isCollapsed && r.rangeCount ? r.getRangeAt(0) : null,
     f = d && e.contains(d.startContainer) && e.contains(d.endContainer) && d.intersectsNode(a) ? r.toString().replace(/\s+/g, ` `).trim().slice(0, 500) : ``,
@@ -236,7 +241,7 @@ function E(e, t) {
   pointerdown`,`
   keydown`,`
   blur`,`
-  resize`].map(e=>i(window,e,()=>m(!1),{capture:!0}));return c=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / DpQ0LiK0.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13]),import.meta.url).then(({default:e})=>{h!==r||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(c==null||c(),c=void 0,n=o(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===r&&m(e)}}}))}).catch(()=>{h===r&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
+  resize`].map(e=>i(window,e,()=>m(!1),{capture:!0}));return c=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / CwTbqzvQ.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13]),import.meta.url).then(({default:e})=>{h!==r||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(c==null||c(),c=void 0,n=o(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===r&&m(e)}}}))}).catch(()=>{h===r&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
   ContextMenu`&&!(e.shiftKey&&e.key===`
   F10`)||g(e)&&e.stopPropagation()}let y=()=>m(!1);p.addEventListener(`
   close`,y);let b=i(p,`

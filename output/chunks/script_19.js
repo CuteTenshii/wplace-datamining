@@ -1,9 +1,9 @@
 import {
   t as e
-} from "./8Sr57Oox.js";
+} from "./DaBL0jL9.js";
 import {
   r as t
-} from "./C6YUsIyu.js";
+} from "./Do_bNcet.js";
 var n = [`/how-to-play`, `/guides/overlays`, `/guides/alliances`, `/about`];
 
 function r() {
