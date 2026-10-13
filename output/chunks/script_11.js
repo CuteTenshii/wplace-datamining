@@ -1,34 +1,36 @@
+import "./R3px7NU1.js";
 import {
-  dn as e
-} from "./D2z8HFb7.js";
-import {
-  a as t,
-  c as n,
-  d as r,
-  f as i,
-  i as a,
-  l as o,
-  n as s,
-  o as c,
-  r as l,
-  s as u,
-  t as d,
-  u as f
-} from "./BjvBT4hB.js";
-var p = e({
-  afterNavigate: () => d,
-  beforeNavigate: () => s,
-  disableScrollHandling: () => l,
-  goto: () => a,
-  invalidate: () => t,
-  invalidateAll: () => c,
-  onNavigate: () => u,
-  preloadCode: () => n,
-  preloadData: () => o,
-  pushState: () => f,
-  refreshAll: () => r,
-  replaceState: () => i
-});
+  g as e,
+  m as t
+} from "./BoulVKof.js";
+var n = {
+  get data() {
+    return e.data
+  },
+  get error() {
+    return e.error
+  },
+  get form() {
+    return e.form
+  },
+  get params() {
+    return e.params
+  },
+  get route() {
+    return e.route
+  },
+  get state() {
+    return e.state
+  },
+  get status() {
+    return e.status
+  },
+  get url() {
+    return e.url
+  }
+};
+t.updated.check;
+var r = n;
 export {
-  p as t
+  r as t
 };

@@ -1,39 +1,29 @@
-var e = [{
-  locale: `en`,
-  lang: `en`,
-  ogLocale: `en_US`,
-  gameLocale: `en`,
-  name: `English`
-}, {
-  locale: `pt-br`,
-  lang: `pt-BR`,
-  ogLocale: `pt_BR`,
-  gameLocale: `pt`,
-  name: `Português (Brasil)`
-}, {
-  locale: `es`,
-  lang: `es`,
-  ogLocale: `es_ES`,
-  gameLocale: `es`,
-  name: `Español`
-}];
+import {
+  n as e
+} from "./Y0PNYP8l.js";
 
-function t(t) {
-  return e.some(e => e.locale === t)
+function t() {
+  return e()
 }
 
 function n(e) {
-  return `/${e}/how-to-play`
+  switch (e) {
+    case `ch`:
+      return `zh-CN`;
+    case `jp`:
+      return `ja-JP`;
+    case `pt`:
+      return `pt-BR`;
+    case `uk`:
+      return `uk-UA`;
+    default:
+      return e || `en`
+  }
 }
 
-function r(t) {
-  return e.find(e => n(e.locale) === t)
-}
-
-function i(t) {
-  var r;
-  return n(((r = e.find(e => e.gameLocale === t)) == null ? void 0 : r.locale) ?? `en`)
+function r() {
+  return `/terms/return${t()===`pt`?`/pt`:``}`
 }
 export {
-  t as a, e as i, n, i as r, r as t
+  t as n, r, n as t
 };

@@ -1,171 +1,344 @@
-import {
-  Bt as e,
-  Lt as t,
-  Nt as n,
-  jt as r,
-  ut as i
-} from "./D2z8HFb7.js";
-var a, o, s = `last_seen_patch_version`,
-  c = new(a = new WeakMap, o = new WeakMap, class {
-    get open() {
-      return i(t(a, this))
+var e;
+(function(e) {
+  e.Unimplemented = `UNIMPLEMENTED`, e.Unavailable = `UNAVAILABLE`
+})(e || (e = {}));
+var t = class extends Error {
+    constructor(e, t, n) {
+      super(e), this.message = e, this.code = t, this.data = n
     }
-    set open(e) {
-      r(t(a, this), e, !0)
-    }
-    get seenVersion() {
-      return i(t(o, this))
-    }
-    set seenVersion(e) {
-      r(t(o, this), e, !0)
-    }
-    constructor() {
-      e(this, a, n(!1)), e(this, o, n(``));
-      try {
-        this.seenVersion = localStorage.getItem(s) ?? ``
-      } catch {}
-    }
-    show(e) {
-      this.open = !0, this.seenVersion = e;
-      try {
-        localStorage.setItem(s, e)
-      } catch {}
-    }
-  });
-
-function l(e, {
-  interval: t,
-  immediate: n = !1
-}) {
-  let r = n ? -1 / 0 : Date.now(),
-    i = () => typeof document > `u` || document.visibilityState === `visible`;
-  async function a() {
-    let t = r;
-    try {
-      r = Date.now(), await e()
-    } catch (e) {
-      console.error(e), r = t
-    }
-  }
-  let o = setInterval(() => {
-    i() && a()
-  }, t);
-  n && a();
-  async function s() {
-    Date.now() - r >= t && await a()
-  }
-  let c = new AbortController;
-  return typeof document < `u` && (document.addEventListener(`visibilitychange`, () => s(), {
-    signal: c.signal
-  }), document.addEventListener(`resume`, () => s(), {
-    signal: c.signal
-  })), typeof window < `u` && (window.addEventListener(`pageshow`, () => s(), {
-    signal: c.signal
-  }), window.addEventListener(`focus`, () => s(), {
-    signal: c.signal
-  }), window.addEventListener(`online`, () => s(), {
-    signal: c.signal
-  }), window.addEventListener(`wplace:online`, () => s(), {
-    signal: c.signal
-  })), () => {
-    clearInterval(o), c.abort()
-  }
-}
-var u = void 0,
-  d = new Set;
-
-function f(e) {
-  return d.add(e), () => d.delete(e)
-}
-
-function p(e) {
-  return u = e, b({
-    type: `previewPixels`,
-    data: e
-  })
-}
-
-function m() {
-  return u = void 0, b({
-    type: `clearPixelPreview`
-  })
-}
-async function h(e) {
-  await b({
-    type: `paintPixels`,
-    data: e
-  });
-  for (let t of d) try {
-    t(e)
-  } catch (e) {
-    console.error(`Canvas paint listener failed.`, e)
-  }
-}
-
-function g() {
-  return b({
-    type: `refreshPixelArt`
-  })
-}
-async function _() {
-  u || await b({
-    type: `clearPixelPreview`
-  })
-}
-var v = 1e4,
-  y = 0;
-
-function b(e) {
-  let t = y++,
-    n = {
-      ...e,
-      id: t
-    };
-  return new Promise((e, r) => {
-    let i = navigator.serviceWorker;
-    if (!i) {
-      r(Error(`Service Workers are not supported/enabled in your browser. Some features might not work properly.`));
-      return
-    }
-    let a = !1,
-      o = e => {
-        var n;
-        ((n = e.data) == null ? void 0 : n.id) === t && c()
-      },
-      s = () => {
-        clearTimeout(u), i.removeEventListener(`message`, o)
-      },
-      c = () => {
-        a || (a = !0, s(), e())
-      },
+  },
+  n = e => {
+    var t, n;
+    return e != null && e.androidBridge ? `android` : (n = (t = e == null ? void 0 : e.webkit) == null ? void 0 : t.messageHandlers) != null && n.bridge ? `ios` : `web`
+  },
+  r = r => {
+    let i = r.CapacitorCustomPlatform || null,
+      a = r.Capacitor || {},
+      o = a.Plugins = a.Plugins || {},
+      s = () => i === null ? n(r) : i.name,
+      c = () => s() !== `web`,
       l = e => {
-        a || (a = !0, s(), r(e))
+        let t = f.get(e);
+        return !!(t != null && t.platforms.has(s()) || u(e))
       },
-      u = setTimeout(() => l(Error(`Timed out waiting for service worker response`)), v);
-    i.addEventListener(`message`, o);
-    let d = e => {
-        try {
-          e.postMessage(n)
-        } catch (e) {
-          l(e instanceof Error ? e : Error(String(e)))
+      u = e => {
+        var t;
+        return (t = a.PluginHeaders) == null ? void 0 : t.find(t => t.name === e)
+      },
+      d = e => r.console.error(e),
+      f = new Map;
+    return a.convertFileSrc || (a.convertFileSrc = e => e), a.getPlatform = s, a.handleError = d, a.isNativePlatform = c, a.isPluginAvailable = l, a.registerPlugin = (n, r = {}) => {
+      let c = f.get(n);
+      if (c) return console.warn(`Capacitor plugin "${n}" already registered. Cannot register plugins twice.`), c.proxy;
+      let l = s(),
+        d = u(n),
+        p, m = async () => (!p && l in r ? p = p = typeof r[l] == `function` ? await r[l]() : r[l] : i !== null && !p && `web` in r && (p = p = typeof r.web == `function` ? await r.web() : r.web), p), h = (r, i) => {
+          var o, s;
+          if (d) {
+            let e = d == null ? void 0 : d.methods.find(e => i === e.name);
+            if (e) return e.rtype === `promise` ? e => a.nativePromise(n, i.toString(), e) : (e, t) => a.nativeCallback(n, i.toString(), e, t);
+            if (r) return (o = r[i]) == null ? void 0 : o.bind(r)
+          } else if (r) return (s = r[i]) == null ? void 0 : s.bind(r);
+          else throw new t(`"${n}" plugin is not implemented on ${l}`, e.Unimplemented)
+        }, g = r => {
+          let i, a = (...a) => {
+            let o = m().then(o => {
+              let s = h(o, r);
+              if (s) {
+                let e = s(...a);
+                return i = e == null ? void 0 : e.remove, e
+              }
+              throw new t(`"${n}.${r}()" is not implemented on ${l}`, e.Unimplemented)
+            });
+            return r === `addListener` && (o.remove = async () => i()), o
+          };
+          return a.toString = () => `${r.toString()}() { [capacitor code] }`, Object.defineProperty(a, "name", {
+            value: r,
+            writable: !1,
+            configurable: !1
+          }), a
+        }, _ = g(`addListener`), v = g(`removeListener`), y = (e, t) => {
+          let n = _({
+              eventName: e
+            }, t),
+            r = async () => {
+              let r = await n;
+              v({
+                eventName: e,
+                callbackId: r
+              }, t)
+            }, i = new Promise(e => n.then(() => e({
+              remove: r
+            })));
+          return i.remove = async () => {
+            console.warn(`Using addListener() without 'await' is deprecated.`), await r()
+          }, i
+        }, b = new Proxy({}, {
+          get(e, t) {
+            switch (t) {
+              case `$$typeof`:
+                return;
+              case `toJSON`:
+                return () => ({});
+              case `addListener`:
+                return d ? y : _;
+              case `removeListener`:
+                return v;
+              default:
+                return g(t)
+            }
+          }
+        });
+      return o[n] = b, f.set(n, {
+        name: n,
+        proxy: b,
+        platforms: new Set([...Object.keys(r), ...d ? [l] : []])
+      }), b
+    }, a.Exception = t, a.DEBUG = !!a.DEBUG, a.isLoggingEnabled = !!a.isLoggingEnabled, a
+  },
+  i = (e => e.Capacitor = r(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
+  a = i.registerPlugin,
+  o = class {
+    constructor() {
+      this.listeners = {}, this.retainedEventArguments = {}, this.windowListeners = {}
+    }
+    addListener(e, t) {
+      let n = !1;
+      this.listeners[e] || (this.listeners[e] = [], n = !0), this.listeners[e].push(t);
+      let r = this.windowListeners[e];
+      return r && !r.registered && this.addWindowListener(r), n && this.sendRetainedArgumentsForEvent(e), Promise.resolve({
+        remove: async () => this.removeListener(e, t)
+      })
+    }
+    async removeAllListeners() {
+      this.listeners = {};
+      for (let e in this.windowListeners) this.removeWindowListener(this.windowListeners[e]);
+      this.windowListeners = {}
+    }
+    notifyListeners(e, t, n) {
+      let r = this.listeners[e];
+      if (!r) {
+        if (n) {
+          let n = this.retainedEventArguments[e];
+          n || (n = []), n.push(t), this.retainedEventArguments[e] = n
         }
-      },
-      f = i.controller;
-    f ? d(f) : i.ready.then(e => {
-      if (a) return;
-      let t = e.active;
-      t ? d(t) : l(Error(`Service worker registration not active`))
-    }, e => l(e instanceof Error ? e : Error(String(e))))
-  })
-}
-
-function x({
-  pixel: e,
-  season: t,
-  tile: n
-}) {
-  return `t=(${n[0]},${n[1]});p=(${e[0]},${e[1]});s=${t}`
-}
+        return
+      }
+      r.forEach(e => e(t))
+    }
+    hasListeners(e) {
+      var t;
+      return !!((t = this.listeners[e]) != null && t.length)
+    }
+    registerWindowListener(e, t) {
+      this.windowListeners[t] = {
+        registered: !1,
+        windowEventName: e,
+        pluginEventName: t,
+        handler: e => {
+          this.notifyListeners(t, e)
+        }
+      }
+    }
+    unimplemented(t = `not implemented`) {
+      return new i.Exception(t, e.Unimplemented)
+    }
+    unavailable(t = `not available`) {
+      return new i.Exception(t, e.Unavailable)
+    }
+    async removeListener(e, t) {
+      let n = this.listeners[e];
+      if (!n) return;
+      let r = n.indexOf(t);
+      this.listeners[e].splice(r, 1), this.listeners[e].length || this.removeWindowListener(this.windowListeners[e])
+    }
+    addWindowListener(e) {
+      window.addEventListener(e.windowEventName, e.handler), e.registered = !0
+    }
+    removeWindowListener(e) {
+      e && (window.removeEventListener(e.windowEventName, e.handler), e.registered = !1)
+    }
+    sendRetainedArgumentsForEvent(e) {
+      let t = this.retainedEventArguments[e];
+      t && (delete this.retainedEventArguments[e], t.forEach(t => {
+        this.notifyListeners(e, t)
+      }))
+    }
+  },
+  s = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
+  c = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
+  l = class extends o {
+    async getCookies() {
+      let e = document.cookie,
+        t = {};
+      return e.split(`;`).forEach(e => {
+        if (e.length <= 0) return;
+        let [n, r] = e.replace(/=/, `CAP_COOKIE`).split(`CAP_COOKIE`);
+        n = c(n).trim(), r = c(r).trim(), t[n] = r
+      }), t
+    }
+    async setCookie(e) {
+      try {
+        let t = s(e.key),
+          n = s(e.value),
+          r = e.expires ? `; expires=${e.expires.replace(`expires=`,``)}` : ``,
+          i = (e.path || `/`).replace(`path=`, ``),
+          a = e.url != null && e.url.length > 0 ? `domain=${e.url}` : ``;
+        document.cookie = `${t}=${n||``}${r}; path=${i}; ${a};`
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async deleteCookie(e) {
+      try {
+        document.cookie = `${e.key}=; Max-Age=0`
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async clearCookies() {
+      try {
+        let e = document.cookie.split(`;`) || [];
+        for (let t of e) document.cookie = t.replace(/^ +/, ``).replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`)
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+    async clearAllCookies() {
+      try {
+        await this.clearCookies()
+      } catch (e) {
+        return Promise.reject(e)
+      }
+    }
+  };
+a(`CapacitorCookies`, {
+  web: () => new l
+});
+var u = async e => new Promise((t, n) => {
+  let r = new FileReader;
+  r.onload = () => {
+    let e = r.result;
+    t(e.indexOf(`,`) >= 0 ? e.split(`,`)[1] : e)
+  }, r.onerror = e => n(e), r.readAsDataURL(e)
+}), d = (e = {}) => {
+  let t = Object.keys(e);
+  return Object.keys(e).map(e => e.toLocaleLowerCase()).reduce((n, r, i) => (n[r] = e[t[i]], n), {})
+}, f = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
+  let [r, i] = n, a, o;
+  return Array.isArray(i) ? (o = ``, i.forEach(e => {
+    a = t ? encodeURIComponent(e) : e, o += `${r}=${a}&`
+  }), o.slice(0, -1)) : (a = t ? encodeURIComponent(i) : i, o = `${r}=${a}`), `${e}&${o}`
+}, ``).substr(1) : null, p = (e, t = {}) => {
+  let n = Object.assign({
+      method: e.method || `GET`,
+      headers: e.headers
+    }, t),
+    r = d(e.headers)[`content-type`] || ``;
+  if (typeof e.data == `string`) n.body = e.data;
+  else if (r.includes(`application/x-www-form-urlencoded`)) {
+    let t = new URLSearchParams;
+    for (let [n, r] of Object.entries(e.data || {})) t.set(n, r);
+    n.body = t.toString()
+  } else if (r.includes(`multipart/form-data`) || e.data instanceof FormData) {
+    let t = new FormData;
+    if (e.data instanceof FormData) e.data.forEach((e, n) => {
+      t.append(n, e)
+    });
+    else
+      for (let n of Object.keys(e.data)) t.append(n, e.data[n]);
+    n.body = t;
+    let r = new Headers(n.headers);
+    r.delete(`content-type`), n.headers = r
+  } else(r.includes(`application/json`) || typeof e.data == `object`) && (n.body = JSON.stringify(e.data));
+  return n
+}, m = class extends o {
+  async request(e) {
+    let t = p(e, e.webFetchExtra),
+      n = f(e.params, e.shouldEncodeUrlParams),
+      r = n ? `${e.url}?${n}` : e.url,
+      i = await fetch(r, t),
+      a = i.headers.get(`content-type`) || ``,
+      {
+        responseType: o = `text`
+      } = i.ok ? e : {};
+    a.includes(`application/json`) && (o = `json`);
+    let s, c;
+    switch (o) {
+      case `arraybuffer`:
+      case `blob`:
+        c = await i.blob(), s = await u(c);
+        break;
+      case `json`:
+        s = await i.json();
+        break;
+      default:
+        s = await i.text()
+    }
+    let l = {};
+    return i.headers.forEach((e, t) => {
+      l[t] = e
+    }), {
+      data: s,
+      headers: l,
+      status: i.status,
+      url: i.url
+    }
+  }
+  async get(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `GET`
+    }))
+  }
+  async post(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `POST`
+    }))
+  }
+  async put(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `PUT`
+    }))
+  }
+  async patch(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `PATCH`
+    }))
+  }
+  async delete(e) {
+    return this.request(Object.assign(Object.assign({}, e), {
+      method: `DELETE`
+    }))
+  }
+};
+a(`CapacitorHttp`, {
+  web: () => new m
+});
+var h;
+(function(e) {
+  e.Dark = `DARK`, e.Light = `LIGHT`, e.Default = `DEFAULT`
+})(h || (h = {}));
+var g;
+(function(e) {
+  e.StatusBar = `StatusBar`, e.NavigationBar = `NavigationBar`
+})(g || (g = {}));
+var _ = class extends o {
+  async setStyle() {
+    this.unavailable(`not available for web`)
+  }
+  async setAnimation() {
+    this.unavailable(`not available for web`)
+  }
+  async show() {
+    this.unavailable(`not available for web`)
+  }
+  async hide() {
+    this.unavailable(`not available for web`)
+  }
+};
+a(`SystemBars`, {
+  web: () => new _
+});
 export {
-  g as a, l as c, p as i, c as l, x as n, f as o, h as r, _ as s, m as t
+  o as n, a as r, i as t
 };

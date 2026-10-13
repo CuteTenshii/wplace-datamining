@@ -1,19 +1,4 @@
-var e = `theme`;
-
-function t() {
-  try {
-    return localStorage.getItem(e) === `dark` ? `dark` : `custom-winter`
-  } catch {
-    return `custom-winter`
-  }
+if (typeof window < `u`) {
+  var e, t;
+  ((e = (t = window).__svelte ?? (t.__svelte = {})).v ?? (e.v = new Set)).add(`5`)
 }
-
-function n(t) {
-  document.documentElement.setAttribute(`data-theme`, t);
-  try {
-    localStorage.setItem(e, t)
-  } catch {}
-}
-export {
-  t as n, n as t
-};

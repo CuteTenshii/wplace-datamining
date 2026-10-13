@@ -1,36 +1,16 @@
-import "./D2z8HFb7.js";
 import {
-  g as e,
-  m as t
-} from "./BjvBT4hB.js";
+  t as e
+} from "./DwR5WZeh.js";
+import {
+  n as t
+} from "./L73Dn9nm.js";
 var n = {
-  get data() {
-    return e.data
-  },
-  get error() {
-    return e.error
-  },
-  get form() {
-    return e.form
-  },
-  get params() {
-    return e.params
-  },
-  get route() {
-    return e.route
-  },
-  get state() {
-    return e.state
-  },
-  get status() {
-    return e.status
-  },
-  get url() {
-    return e.url
+  get standard() {
+    var n;
+    let r = (n = e.route) == null ? void 0 : n.id;
+    return t.oldUi || r === `/(game)/dashboard` || (r == null ? void 0 : r.startsWith(`/(game)/dashboard/`)) === !0
   }
 };
-t.updated.check;
-var r = n;
 export {
-  r as t
+  n as t
 };

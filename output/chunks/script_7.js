@@ -1,29 +1,19 @@
-import {
-  n as e
-} from "./_a63otDQ.js";
+var e = `theme`;
 
 function t() {
-  return e()
-}
-
-function n(e) {
-  switch (e) {
-    case `ch`:
-      return `zh-CN`;
-    case `jp`:
-      return `ja-JP`;
-    case `pt`:
-      return `pt-BR`;
-    case `uk`:
-      return `uk-UA`;
-    default:
-      return e || `en`
+  try {
+    return localStorage.getItem(e) === `dark` ? `dark` : `custom-winter`
+  } catch {
+    return `custom-winter`
   }
 }
 
-function r() {
-  return `/terms/return${t()===`pt`?`/pt`:``}`
+function n(t) {
+  document.documentElement.setAttribute(`data-theme`, t);
+  try {
+    localStorage.setItem(e, t)
+  } catch {}
 }
 export {
-  t as n, r, n as t
+  t as n, n as t
 };
