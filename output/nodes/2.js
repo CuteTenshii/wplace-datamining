@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/MGcbksr9.js", "../chunks/R3px7NU1.js", "../chunks/_cshHXJe.js", "../chunks/Dzl_rlg6.js", "../chunks/DHsyxZSC.js", "../chunks/CEk4sfrv.js", "../chunks/CZpmVqO8.js", "../chunks/a7QZC4SB.js", "../chunks/L73Dn9nm.js", "../chunks/pKOrQQBa.js", "../chunks/MIjkXV5b.js", "../chunks/CRgrjRaN.js", "../chunks/CUtBdivQ.js", "../chunks/B95ES2Nu.js", "../chunks/20jsddKP.js", "../chunks/Cxs50cC3.js", "../chunks/Bsxtn1Lf.js", "../chunks/D_x9mjsy.js", "../chunks/B8UK1oE5.js", "../chunks/ByqmFFjd.js", "../chunks/DxdGK6Xj.js", "../chunks/DGe4uJZp.js", "../chunks/5uOTE7tg.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/BaV12wMm.js", "../chunks/DPq9H1d9.js", "../chunks/DmK8Qf5O.js", "../chunks/B4sOMMyz.js", "../chunks/CXzNecGC.js", "../chunks/D3T0Muvs.js", "../chunks/D8wI8_mB.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/BJHPbaua.js", "../chunks/432FHdwK.js", "../chunks/uVY_0qdX.js", "../chunks/CoeyY8yt.js", "../chunks/DPz9EFYX.js", "../chunks/BOS65ItD.js", "../chunks/DCD_TMQG.js", "../chunks/DeCAYBX1.js", "../chunks/Da1ixE0b.js", "../chunks/D5A-baCd.js", "../chunks/BqtbIxJi.js", "../chunks/B2V2QzOm.js", "../chunks/BMKM10RN.js", "../chunks/_CiFPrnu.js", "../chunks/DNo4UvGo.js", "../chunks/DLHsL_rw.js", "../chunks/DbMrs38z.js", "../chunks/DoLVhNAH.js", "../chunks/q1fG4XgW.js", "../chunks/5o8gBvss.js", "../chunks/CxBDKEME.js", "../chunks/DbCCTYbf.js", "../chunks/BKgAA1HO.js", "../chunks/BQCMWK1f.js", "../chunks/BNZMx8m2.js", "../chunks/CbmE1048.js", "../chunks/DRcBaKbB.js", "../chunks/BB7zQExG.js", "../chunks/Cr1D9vdE.js", "../chunks/BVr1ycFm.js", "../chunks/DuFluOlN.js", "../chunks/CXOwgfkr.js", "../chunks/Hg_R1pz2.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/D9EhiCk7.js", "../chunks/R3px7NU1.js", "../chunks/CxVHM0Z_.js", "../chunks/CvGZ0C4q.js", "../chunks/DW_c_uAH.js", "../chunks/DdiGr5QI.js", "../chunks/D2tGtYvL.js", "../chunks/a7QZC4SB.js", "../chunks/L73Dn9nm.js", "../chunks/pKOrQQBa.js", "../chunks/MIjkXV5b.js", "../chunks/CRgrjRaN.js", "../chunks/CUtBdivQ.js", "../chunks/B1n9O9Dq.js", "../chunks/GOxb7GvW.js", "../chunks/Cxs50cC3.js", "../chunks/Bsxtn1Lf.js", "../chunks/D91CMO-8.js", "../chunks/B8UK1oE5.js", "../chunks/ByqmFFjd.js", "../chunks/DxdGK6Xj.js", "../chunks/DGe4uJZp.js", "../chunks/5uOTE7tg.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/R1IK7w6o.js", "../chunks/DPq9H1d9.js", "../chunks/BYb7sqG1.js", "../chunks/Ur3lDrik.js", "../chunks/C3y1OAau.js", "../chunks/D84JU-7O.js", "../chunks/DcPyPYFN.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/BKOndGhA.js", "../chunks/DWIu3l5t.js", "../chunks/WdBlVlvo.js", "../chunks/C2-gEROu.js", "../chunks/DPz9EFYX.js", "../chunks/BOS65ItD.js", "../chunks/nNaVOJA3.js", "../chunks/AsBNBlxI.js", "../chunks/BEaqtvN_.js", "../chunks/DrHVxGsc.js", "../chunks/D5A-baCd.js", "../chunks/BqtbIxJi.js", "../chunks/DYn8Ex5R.js", "../chunks/t9ocxphu.js", "../chunks/D5t1pj5P.js", "../chunks/BhH4WSoo.js", "../chunks/BTrGgOcT.js", "../chunks/D9Dc1plv.js", "../chunks/q1fG4XgW.js", "../chunks/5o8gBvss.js", "../chunks/CxBDKEME.js", "../chunks/DbCCTYbf.js", "../chunks/BKgAA1HO.js", "../chunks/Dg7JIGVY.js", "../chunks/fyoYeeTe.js", "../chunks/B8Pq2bUq.js", "../chunks/D0Hheonu.js", "../chunks/B0n1P2Fw.js", "../chunks/D12wW7-C.js", "../chunks/CSO_gOg7.js", "../chunks/CPjc3MXU.js", "../chunks/CXOwgfkr.js", "../chunks/3RntUwyh.js"]))) => i.map(i => d[i]);
 import {
   $ as e,
   At as t,
@@ -54,10 +54,10 @@ import {
   C as z,
   S as B,
   y as V
-} from "../chunks/_cshHXJe.js";
+} from "../chunks/CxVHM0Z_.js";
 import {
   a as H
-} from "../chunks/CEk4sfrv.js";
+} from "../chunks/DdiGr5QI.js";
 import "../chunks/B8UK1oE5.js";
 import {
   i as U,
@@ -66,7 +66,7 @@ import {
 import "../chunks/CUtBdivQ.js";
 import {
   t as G
-} from "../chunks/DHsyxZSC.js";
+} from "../chunks/DW_c_uAH.js";
 import {
   t as ue
 } from "../chunks/ZVR0z-0V.js";
@@ -75,21 +75,21 @@ import {
   l as fe,
   s as pe,
   t as me
-} from "../chunks/QxcdD1_y.js";
+} from "../chunks/n8UXuaTD.js";
 import "../chunks/pKOrQQBa.js";
 import {
-  O as K,
-  c as he,
-  ft as q,
-  g as ge,
-  h as _e,
-  l as ve,
-  n as J,
-  ot as ye,
+  Ct as K,
+  N as he,
+  _t as q,
+  b as ge,
+  c as _e,
+  dt as ve,
+  l as J,
+  n as ye,
   t as be,
   u as xe,
-  vt as Se
-} from "../chunks/CZpmVqO8.js";
+  x as Se
+} from "../chunks/D2tGtYvL.js";
 import {
   i as Y,
   n as Ce,
@@ -99,14 +99,14 @@ import {
 import "../chunks/DPz9EFYX.js";
 import {
   t as we
-} from "../chunks/20jsddKP.js";
+} from "../chunks/GOxb7GvW.js";
 import {
   i as Te,
   t as Ee
-} from "../chunks/B95ES2Nu.js";
+} from "../chunks/B1n9O9Dq.js";
 import {
   t as De
-} from "../chunks/Nc2FKUNZ.js";
+} from "../chunks/K2d03gji.js";
 import {
   t as Oe
 } from "../chunks/ByqmFFjd.js";
@@ -1106,7 +1106,7 @@ function At({
     if (r || i || a || document.visibilityState !== `visible` || !navigator.onLine) return;
     let o = new AbortController;
     a = o;
-    let s = setTimeout(() => o.abort(), 10 * K.second);
+    let s = setTimeout(() => o.abort(), 10 * he.second);
     try {
       let a = await fetch(t, {
         cache: `no-store`,
@@ -1124,7 +1124,7 @@ function At({
     }
   }
   let s = de(o, {
-    interval: K.minute,
+    interval: he.minute,
     immediate: !0
   });
   return () => {
@@ -1151,9 +1151,9 @@ var Pt = _(`<span class="hidden"> </span> <!> <!> <!> <!> <!> <!>`, 1);
 function Ft(e, r) {
   ee(r, !0), j(jt), T(() => {
     var e;
-    let t = (e = J.data) == null ? void 0 : e.id;
+    let t = (e = ye.data) == null ? void 0 : e.id;
     return k(() => {
-      let e = he.start(t),
+      let e = _e.start(t),
         n = De.start(t);
       return () => {
         e == null || e(), n()
@@ -1165,7 +1165,7 @@ function Ft(e, r) {
       n = q.muted || W.sounds.playerNotification === 0;
     De.state === `on` && !De.busy && k(() => void De.syncPreferences(e, n, t))
   });
-  let c = Oe(() => ye.current !== null),
+  let c = Oe(() => ve.current !== null),
     l = Oe(() => fe.open);
   j(() => {
     let e = `frontend-update`,
@@ -1205,10 +1205,10 @@ function Ft(e, r) {
     be.init();
     let n = m(!1);
     T(() => {
-      D(n) || J.data && Ee() && (t(n, !0), H(async () => {
+      D(n) || ye.data && Ee() && (t(n, !0), H(async () => {
         let {
           TWAServices: e
-        } = await import(`../chunks/MGcbksr9.js`).then(e => e.i);
+        } = await import(`../chunks/D9EhiCk7.js`).then(e => e.i);
         return {
           TWAServices: e
         }
@@ -1220,16 +1220,16 @@ function Ft(e, r) {
     });
     let r = m(!1);
     T(() => {
-      !J.data || D(r) || (t(r, !0), we.recoverUnfinished().catch(Nt(`[ios-app] recover purchases:`)))
+      !ye.data || D(r) || (t(r, !0), we.recoverUnfinished().catch(Nt(`[ios-app] recover purchases:`)))
     });
     let i = m(!1);
     T(() => {
-      !J.data || D(i) || (t(i, !0), we.attestDevice().catch(Nt(`[ios-app] device attest:`)))
-    }), Se();
+      !ye.data || D(i) || (t(i, !0), we.attestDevice().catch(Nt(`[ios-app] device attest:`)))
+    }), K();
     let a = de(async () => {
-        await J.refresh()
+        await ye.refresh()
       }, {
-        interval: K.hour,
+        interval: he.hour,
         immediate: !0
       }),
       o = setInterval(() => {
@@ -1245,14 +1245,14 @@ function Ft(e, r) {
   }), T(() => {
     {
       let e = q.muted;
-      _e(), document.querySelectorAll(`audio`).forEach(t => {
+      ge(), document.querySelectorAll(`audio`).forEach(t => {
         t.muted = e
       });
-      for (let t of Object.values(ve).filter(e => e instanceof Audio)) t.muted = e;
+      for (let t of Object.values(J).filter(e => e instanceof Audio)) t.muted = e;
       localStorage.setItem(d, Number(e).toString())
     }
   }), T(() => {
-    ge()
+    Se()
   });
   let p = `haptics`;
   j(() => {
@@ -1282,7 +1282,7 @@ function Ft(e, r) {
     ne = e => {
       var t = x(),
         n = a(t);
-      f(n, () => H(() => import(`../chunks/D_x9mjsy.js`), __vite__mapDeps([17, 1, 5, 18, 12, 4, 9, 6, 7, 8, 10, 11, 19, 20, 21, 22, 23]), import.meta.url), null, (e, t) => {
+      f(n, () => H(() => import(`../chunks/D91CMO-8.js`), __vite__mapDeps([17, 1, 5, 18, 12, 4, 9, 6, 7, 8, 10, 11, 19, 20, 21, 22, 23]), import.meta.url), null, (e, t) => {
         var n = x(),
           r = a(n);
         L(r, () => D(t).default, (e, t) => {
@@ -1311,7 +1311,7 @@ function Ft(e, r) {
     ie = e => {
       var t = x(),
         n = a(t);
-      f(n, () => H(() => import(`../chunks/BaV12wMm.js`), __vite__mapDeps([24, 1, 5, 18, 4, 19, 25, 26, 27, 28, 2, 8, 29, 30, 12, 11, 20, 31]), import.meta.url), null, (e, t) => {
+      f(n, () => H(() => import(`../chunks/R1IK7w6o.js`), __vite__mapDeps([24, 1, 5, 18, 4, 19, 25, 26, 27, 28, 2, 8, 29, 30, 12, 11, 20, 31]), import.meta.url), null, (e, t) => {
         var n = x(),
           r = a(n);
         L(r, () => D(t).default, (e, t) => {
@@ -1333,7 +1333,7 @@ function Ft(e, r) {
     N = e => {
       var t = x(),
         n = a(t);
-      f(n, () => H(() => import(`../chunks/BJHPbaua.js`), __vite__mapDeps([32, 1, 2, 18, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 29, 30, 26, 27, 28, 20, 31, 33, 34, 35, 3, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 21, 50, 51, 22, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]), import.meta.url), null, (e, t) => {
+      f(n, () => H(() => import(`../chunks/BKOndGhA.js`), __vite__mapDeps([32, 1, 2, 18, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 29, 30, 20, 26, 27, 28, 31, 33, 34, 35, 3, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 21, 50, 51, 22, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]), import.meta.url), null, (e, t) => {
         var n = x(),
           r = a(n);
         L(r, () => D(t).default, (e, t) => {
@@ -1353,7 +1353,7 @@ function Ft(e, r) {
     };
   s(A, e => {
     ue.open && e(N)
-  }), I(() => u(_, `Version: 1792101809212`)), b(e, h), te()
+  }), I(() => u(_, `Version: 1792634088974`)), b(e, h), te()
 }
 export {
   Ft as component

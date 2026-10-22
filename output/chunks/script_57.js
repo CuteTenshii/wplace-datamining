@@ -1,8 +1,7 @@
-var e = [];
-
-function t() {
-  return e.length > 0
-}
+import {
+  u as e
+} from "./BStJiGNc.js";
+var t = [e];
 export {
-  t as n, e as t
+  t
 };

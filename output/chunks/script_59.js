@@ -1,49 +1,71 @@
 import {
-  $ as e,
-  Et as t,
-  G as n,
-  X as r,
-  Xt as i,
-  Yt as a,
-  Z as o,
-  o as s,
-  y as c
+  D as e,
+  Dt as t,
+  Et as n,
+  Ft as r,
+  G as i,
+  J as a,
+  O as o,
+  Q as s,
+  Tt as c,
+  X as l,
+  Xt as u,
+  Yt as d,
+  a as f,
+  lt as p,
+  rn as m,
+  yt as h
 } from "./R3px7NU1.js";
 import "./B8UK1oE5.js";
 import {
-  t as l
-} from "./B4sOMMyz.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`),
-  f = e(`<svg><path d="M7 19H5v-2h2v2Zm12 0h-2v-2h2v2ZM9 15v2H7v-2h2Zm8 2h-2v-2h2v2Zm-6-2H9v-2h2v2Zm4 0h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-2-2H9V9h2v2Zm4 0h-2V9h2v2ZM9 9H7V7h2v2Zm8 0h-2V7h2v2ZM7 7H5V5h2v2Zm12 0h-2V5h2v2Z"></path></svg>`);
+  t as g
+} from "./yWod3U1C.js";
+import {
+  i as _
+} from "./DptdTcS6.js";
+var v = s(`<span> </span>`),
+  y = s(`<span> </span> <!>`, 1);
 
-function p(e, p) {
-  i(p, !0);
-  let m = s(p, u);
-  var h = o(),
-    g = t(h),
-    _ = e => {
-      var t = d();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
+function b(s, b) {
+  u(b, !0);
+  let x = f(b, `showId`, 3, !0),
+    S = f(b, `class`, 3, ``),
+    C = r(() => {
+      var e;
+      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
+    }),
+    w = r(() => _(b.id ?? 0));
+  g(s, {
+    get userId() {
+      return b.id
     },
-    v = e => {
-      var t = f();
-      c(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(e, t)
-    };
-  n(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(e, h), a()
+    get class() {
+      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
+    },
+    children: (r, s) => {
+      var u = y(),
+        d = n(u),
+        f = c(d, !0);
+      m(d);
+      var g = t(d, 2),
+        _ = e => {
+          var t = v(),
+            n = c(t);
+          m(t), h(() => {
+            o(t, 1, `${p(w)??``} ${b.idClass??``??``}`), a(n, `#${b.id??``}`)
+          }), l(e, t)
+        };
+      i(g, e => {
+        x() && e(_)
+      }), h(() => {
+        o(d, 1, `inline-block ${(p(C)?p(w):``)??``}`), e(d, p(C)), a(f, b.name)
+      }), l(r, u)
+    },
+    $$slots: {
+      default: !0
+    }
+  }), d()
 }
 export {
-  p as t
+  b as t
 };

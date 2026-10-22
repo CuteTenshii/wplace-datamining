@@ -8,11 +8,11 @@ import {
 } from "./R3px7NU1.js";
 import {
   t as o
-} from "./DHsyxZSC.js";
+} from "./DW_c_uAH.js";
 import {
-  ft as s,
-  v as c
-} from "./CZpmVqO8.js";
+  C as s,
+  _t as c
+} from "./D2tGtYvL.js";
 var l = new WeakMap,
   u = new WeakMap,
   d = class {
@@ -47,7 +47,7 @@ var l = new WeakMap,
         }
         this.busy = !0;
         try {
-          let e = await c.getNotificationPushConfig(t);
+          let e = await s.getNotificationPushConfig(t);
           if (t.aborted) return;
           if (this.publicKey = e.publicKey, !this.publicKey) {
             this.state = `unavailable`;
@@ -61,7 +61,7 @@ var l = new WeakMap,
             r = await (n == null ? void 0 : n.pushManager.getSubscription());
           if (t.aborted) return;
           this.subscription = r ?? void 0;
-          let i = r ? await c.getNotificationPushStatus(r.endpoint, t) : {
+          let i = r ? await s.getNotificationPushStatus(r.endpoint, t) : {
             enabled: !1
           };
           if (t.aborted) return;
@@ -95,9 +95,9 @@ var l = new WeakMap,
             })), t.aborted)) return;
           this.subscription = i, this.needsFreshSubscription = !1;
           let a = o.device_notifications_body(),
-            l = s.muted,
+            l = c.muted,
             u = o.device_notifications_charges_full();
-          await c.subscribeNotificationPush(i.toJSON(), a, l, u, t), t.aborted || (this.lastPreferences = JSON.stringify([a, l, u]), this.state = `on`)
+          await s.subscribeNotificationPush(i.toJSON(), a, l, u, t), t.aborted || (this.lastPreferences = JSON.stringify([a, l, u]), this.state = `on`)
         } catch {
           t.aborted || (this.state = `error`)
         } finally {
@@ -111,7 +111,7 @@ var l = new WeakMap,
       if (!(!t || t.aborted || this.busy || !this.subscription)) {
         this.busy = !0;
         try {
-          if (await c.unsubscribeNotificationPush(this.subscription.endpoint, t), t.aborted) return;
+          if (await s.unsubscribeNotificationPush(this.subscription.endpoint, t), t.aborted) return;
           this.state = `off`
         } catch {
           t.aborted || (this.state = `error`)
@@ -127,7 +127,7 @@ var l = new WeakMap,
       if (!(!i || i.aborted || this.state !== `on` || this.busy || !this.subscription || this.lastPreferences === a)) {
         this.busy = !0;
         try {
-          let r = await c.updateNotificationPushPreferences(this.subscription.endpoint, e, t, n, i);
+          let r = await s.updateNotificationPushPreferences(this.subscription.endpoint, e, t, n, i);
           i.aborted || (this.lastPreferences = a, r.enabled || (this.state = `off`))
         } catch {
           i.aborted || (this.state = `error`)

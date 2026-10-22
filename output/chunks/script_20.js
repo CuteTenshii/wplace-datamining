@@ -71,8 +71,14 @@ function l(e, {
     clearInterval(o), c.abort()
   }
 }
-var u = void 0,
-  d = new Set;
+var u = void 0;
+typeof navigator < `u` && navigator.serviceWorker && navigator.serviceWorker.addEventListener(`controllerchange`, () => {
+  u && b({
+    type: `previewPixels`,
+    data: u
+  }).catch(e => console.warn(`[sw] message failed`, e))
+});
+var d = new Set;
 
 function f(e) {
   return d.add(e), () => d.delete(e)

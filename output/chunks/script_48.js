@@ -25,30 +25,30 @@ import {
 } from "./R3px7NU1.js";
 import {
   x as C
-} from "./_cshHXJe.js";
+} from "./CxVHM0Z_.js";
 import {
   n as w,
   t as T
-} from "./CEk4sfrv.js";
+} from "./DdiGr5QI.js";
 import {
   a as E,
   d as D,
   m as O,
   p as k
-} from "./CWZwztxy.js";
+} from "./Dgv4EgOB.js";
 import "./B8UK1oE5.js";
 import {
   t as A
-} from "./CXzNecGC.js";
+} from "./C3y1OAau.js";
 import {
   t as j
-} from "./B4sOMMyz.js";
+} from "./Ur3lDrik.js";
 import {
   t as M
-} from "./IAye6IeA.js";
+} from "./Bq2Qtipp.js";
 import {
   t as N
-} from "./DeCAYBX1.js";
+} from "./BEaqtvN_.js";
 var P = new Set([`$$slots`, `$$events`, `$$legacy`]),
   F = e(`<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>`),
   I = e(`<svg><path d="M2 22H0v-4h2v4Zm14 0h-2v-4h2v4Zm8 0h-2v-4h2v4ZM4 18H2v-2h2v2Zm10 0h-2v-2h2v2Zm8 0h-2v-2h2v2Zm-10-2H4v-2h8v2Zm8 0h-4v-2h4v2Zm-9-4H5v-2h6v2Zm8 0h-4v-2h4v2ZM5 10H3V4h2v6Zm8 0h-2V4h2v6Zm8 0h-2V4h2v6ZM11 4H5V2h6v2Zm8 0h-4V2h4v2Z"></path></svg>`);
@@ -80,52 +80,22 @@ function L(e, t) {
     j.standard ? e(s) : e(c, -1)
   }), u(e, a), f()
 }
-var R = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  z = e(`<svg><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M7 4V2.5M17 4V2.5M2.5 9h19"></path><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g></svg>`),
-  B = e(`<svg><path d="M19 22H5v-2h14v2ZM5 8h14V6h2v14h-2V10H5v10H3V6h2v2Zm12-4h2v2H5V4h2V2h2v2h6V2h2v2Z"></path></svg>`);
+var R = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  z = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
+  B = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`),
+  V = e(`<svg><path d="M20 20H4v-2h16v2Zm0-4H4v-2h16v2ZM4 14H2V6h2v8Zm18 0h-2V6h2v8Zm-2-8H4V4h16v2Z"></path></svg>`);
 
-function V(e, t) {
-  d(t, !0);
-  let r = _(t, R);
-  var a = p(),
-    o = n(a),
-    s = e => {
-      var t = z();
-      b(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        ...r
-      })), u(e, t)
-    },
-    c = e => {
-      var t = B();
-      b(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...r
-      })), u(e, t)
-    };
-  i(o, e => {
-    j.standard ? e(s) : e(c, -1)
-  }), u(e, a), f()
-}
-var H = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  U = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
-  W = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`),
-  G = e(`<svg><path d="M20 20H4v-2h16v2Zm0-4H4v-2h16v2ZM4 14H2V6h2v8Zm18 0h-2V6h2v8Zm-2-8H4V4h16v2Z"></path></svg>`);
-
-function K(e, t) {
+function H(e, t) {
   d(t, !0);
   let r = m(t, `filled`, 3, !1),
-    a = _(t, H);
+    a = _(t, R);
   var o = p(),
     s = n(o),
     c = e => {
       var t = p(),
         o = n(t),
         s = e => {
-          var t = U();
+          var t = z();
           b(t, () => ({
             xmlns: `http://www.w3.org/2000/svg`,
             viewBox: `0 -960 960 960`,
@@ -134,7 +104,7 @@ function K(e, t) {
           })), u(e, t)
         },
         c = e => {
-          var t = W();
+          var t = B();
           b(t, () => ({
             xmlns: `http://www.w3.org/2000/svg`,
             viewBox: `0 -960 960 960`,
@@ -147,7 +117,7 @@ function K(e, t) {
       }), u(e, t)
     },
     l = e => {
-      var t = G();
+      var t = V();
       b(t, () => ({
         xmlns: `http://www.w3.org/2000/svg`,
         viewBox: `0 0 24 24`,
@@ -160,7 +130,7 @@ function K(e, t) {
   }), u(e, o), f()
 }
 
-function q(e, t) {
+function U(e, t) {
   let n = k(e),
     r = (e, t) => ({
       page: e,
@@ -184,20 +154,50 @@ function q(e, t) {
   }
 }
 
-function J() {
-  return q(w(), T())
+function W() {
+  return U(w(), T())
 }
-async function Y(e) {
+async function G(e) {
   let {
     gameLocale: t
   } = O.find(t => t.locale === e);
-  return q(t, await E(t))
+  return U(t, await E(t))
 }
 
-function X(e, t) {
+function K(e, t) {
   let n = e.replace(/\/$/, ``);
   if (n === t) return `page`;
   if (t === `/patch-notes` && n.startsWith(`/patch-notes/`)) return `location`
+}
+var q = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  J = e(`<svg><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14z"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M7 4V2.5M17 4V2.5M2.5 9h19"></path><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g></svg>`),
+  Y = e(`<svg><path d="M19 22H5v-2h14v2ZM5 8h14V6h2v14h-2V10H5v10H3V6h2v2Zm12-4h2v2H5V4h2V2h2v2h6V2h2v2Z"></path></svg>`);
+
+function X(e, t) {
+  d(t, !0);
+  let r = _(t, q);
+  var a = p(),
+    o = n(a),
+    s = e => {
+      var t = J();
+      b(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        ...r
+      })), u(e, t)
+    },
+    c = e => {
+      var t = Y();
+      b(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...r
+      })), u(e, t)
+    };
+  i(o, e => {
+    j.standard ? e(s) : e(c, -1)
+  }), u(e, a), f()
 }
 var Z = c(`<a><!> <span class="min-w-0 wrap-anywhere"> </span></a>`),
   Q = c(`<nav></nav>`);
@@ -205,25 +205,25 @@ var Z = c(`<a><!> <span class="min-w-0 wrap-anywhere"> </span></a>`),
 function $(e, c) {
   d(c, !0);
   let _ = m(c, `appearance`, 3, `links`),
-    b = r(() => c.navigation ?? J());
+    b = r(() => c.navigation ?? W());
 
   function w(e) {
     switch (e) {
       case `/guides/overlays`:
-        return K;
+        return H;
       case `/guides/alliances`:
         return L;
       case `/about`:
         return N;
       case `/patch-notes`:
-        return V;
+        return X;
       default:
         return M
     }
   }
   var T = Q();
   a(T, 21, () => g(b).links, e => e.href, (e, a) => {
-    let c = r(() => X(A.url.pathname, C(g(a).href))),
+    let c = r(() => K(A.url.pathname, C(g(a).href))),
       d = r(() => w(g(a).page));
     var f = Z(),
       m = l(f),
@@ -250,5 +250,5 @@ function $(e, c) {
   }), u(e, T), f()
 }
 export {
-  V as a, K as i, Y as n, L as o, J as r, $ as t
+  L as a, H as i, G as n, W as r, $ as t
 };
