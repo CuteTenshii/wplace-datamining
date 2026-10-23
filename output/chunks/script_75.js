@@ -1,26 +1,26 @@
 import {
-  J as e,
-  O as t,
-  Q as n,
-  Tt as r,
+  Et as e,
+  J as t,
+  O as n,
+  Q as r,
   X as i,
   Xt as a,
-  Yt as o,
-  o as s,
-  rn as c,
+  Zt as o,
+  in as s,
+  o as c,
   yt as l
-} from "./R3px7NU1.js";
+} from "./DTpxYwnW.js";
 import "./B8UK1oE5.js";
 var u = new Set([`$$slots`, `$$events`, `$$legacy`, `count`]),
-  d = n(`<span> </span>`);
+  d = r(`<span> </span>`);
 
-function f(n, f) {
-  a(f, !0), s(f, u);
+function f(r, f) {
+  o(f, !0), c(f, u);
   var p = d(),
-    m = r(p, !0);
-  c(p), l(() => {
-    t(p, 1, `inline-flex size-4 items-center justify-center rounded-[var(--game-radius,9999px)] bg-red-500 font-semibold text-red-50 ${f.count<10?`text-xs`:`text-[10px]`} ${f.class??``}`), e(m, f.count < 10 ? f.count : `9+`)
-  }), i(n, p), o()
+    m = e(p, !0);
+  s(p), l(() => {
+    n(p, 1, `inline-flex size-4 items-center justify-center rounded-[var(--game-radius,9999px)] bg-red-500 font-semibold text-red-50 ${f.count<10?`text-xs`:`text-[10px]`} ${f.class??``}`), t(m, f.count < 10 ? f.count : `9+`)
+  }), i(r, p), a()
 }
 export {
   f as t

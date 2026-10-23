@@ -1,10 +1,10 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  lt as r,
-  zt as i
-} from "./R3px7NU1.js";
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
+  lt as i
+} from "./DTpxYwnW.js";
 
 function a(e) {
   return Math.floor(Math.random() * e)
@@ -108,19 +108,19 @@ var h = new WeakMap,
   g = new WeakMap,
   _ = new class {
     get idx() {
-      return r(t(h, this))
+      return i(t(h, this))
     }
-    set idx(n) {
-      e(t(h, this), n, !0)
+    set idx(e) {
+      r(t(h, this), e, !0)
     }
     get entries() {
-      return r(t(g, this))
+      return i(t(g, this))
     }
-    set entries(n) {
-      e(t(g, this), n)
+    set entries(e) {
+      r(t(g, this), e)
     }
     constructor() {
-      i(this, h, n(-1)), i(this, g, n([]))
+      e(this, h, n(-1)), e(this, g, n([]))
     }
     hasNext() {
       return this.idx < this.entries.length - 1

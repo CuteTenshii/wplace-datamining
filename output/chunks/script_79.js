@@ -1,16 +1,16 @@
 import {
-  an as e,
-  dn as t
-} from "./R3px7NU1.js";
+  fn as e,
+  on as t
+} from "./DTpxYwnW.js";
 import {
   t as n
-} from "./D092Q1-N.js";
+} from "./CfDPVNwc.js";
 import {
   n as r,
   o as i,
   r as a,
   s as o
-} from "./esfj0NfV.js";
+} from "./BMz1pOLW.js";
 import {
   s
 } from "./Bj-o04n3.js";
@@ -19,7 +19,7 @@ import {
 } from "./TwBIz_JE.js";
 import {
   h as l
-} from "./BrI1PQPA.js";
+} from "./Dnc6dSSS.js";
 import {
   t as u
 } from "./DAFNBzHi.js";
@@ -86,8 +86,8 @@ async function y(e, t, n = {}) {
   return _(async () => r.decode(await e.arrayBuffer()), t, r.delay)
 }
 var b = class {
-  constructor(t = 64, n = 33554432) {
-    if (e(this, `maxEntries`, void 0), e(this, `maxDecodedBytes`, void 0), e(this, `entries`, new Map), e(this, `decoded`, new Map), e(this, `decoding`, new Map), e(this, `decodedBytes`, 0), this.maxEntries = t, this.maxDecodedBytes = n, !Number.isSafeInteger(t) || t < 1) throw RangeError(`Progress tile caches require at least one entry.`);
+  constructor(e = 64, n = 33554432) {
+    if (t(this, `maxEntries`, void 0), t(this, `maxDecodedBytes`, void 0), t(this, `entries`, new Map), t(this, `decoded`, new Map), t(this, `decoding`, new Map), t(this, `decodedBytes`, 0), this.maxEntries = e, this.maxDecodedBytes = n, !Number.isSafeInteger(e) || e < 1) throw RangeError(`Progress tile caches require at least one entry.`);
     if (!Number.isSafeInteger(n) || n < 0) throw RangeError(`Progress tile caches require a nonnegative decoded byte limit.`)
   }
   load(e, t = {}, n = {}) {
@@ -168,7 +168,7 @@ async function C(e, t, n = {}, r = {}) {
 function w(e) {
   return p[Math.min(Math.max(0, Math.trunc(e)), p.length - 1)]
 }
-var T = t(n(), 1),
+var T = e(n(), 1),
   E = 1024,
   D = 1,
   O = 3,
@@ -358,14 +358,14 @@ ${a}
 }
 `,
   L = class {
-    constructor(t, n, r, i, a = s, o) {
-      e(this, `id`, void 0), e(this, `map`, void 0), e(this, `logicalTileZoom`, void 0), e(this, `beforeLayerId`, void 0), e(this, `textureBudgetBytes`, void 0), e(this, `onRepeatedRenderFailure`, void 0), e(this, `type`, `custom`), e(this, `renderingMode`, `2d`), e(this, `gl`, void 0), e(this, `program`, void 0), e(this, `quadBuffer`, void 0), e(this, `vertexArrayApi`, void 0), e(this, `vertexArray`, void 0), e(this, `unitPositionLocation`, -1), e(this, `uniforms`, void 0), e(this, `data`, void 0), e(this, `sourceTiles`, []), e(this, `textureCache`, void 0), e(this, `webgl2`, !1), e(this, `pixelModeDetailSupported`, !1), e(this, `origin`, [0, 0]), e(this, `translatedMatrix`, new Float32Array(16)), e(this, `uploadBuffer`, new Uint8Array(E * E * 4)), e(this, `destroyed`, !1), e(this, `contextLost`, !1), e(this, `consecutiveRenderFailures`, 0), e(this, `renderDisabled`, !1), e(this, `handleStyleLoad`, () => {
+    constructor(e, n, r, i, a = s, o) {
+      t(this, `id`, void 0), t(this, `map`, void 0), t(this, `logicalTileZoom`, void 0), t(this, `beforeLayerId`, void 0), t(this, `textureBudgetBytes`, void 0), t(this, `onRepeatedRenderFailure`, void 0), t(this, `type`, `custom`), t(this, `renderingMode`, `2d`), t(this, `gl`, void 0), t(this, `program`, void 0), t(this, `quadBuffer`, void 0), t(this, `vertexArrayApi`, void 0), t(this, `vertexArray`, void 0), t(this, `unitPositionLocation`, -1), t(this, `uniforms`, void 0), t(this, `data`, void 0), t(this, `sourceTiles`, []), t(this, `textureCache`, void 0), t(this, `webgl2`, !1), t(this, `pixelModeDetailSupported`, !1), t(this, `origin`, [0, 0]), t(this, `translatedMatrix`, new Float32Array(16)), t(this, `uploadBuffer`, new Uint8Array(E * E * 4)), t(this, `destroyed`, !1), t(this, `contextLost`, !1), t(this, `consecutiveRenderFailures`, 0), t(this, `renderDisabled`, !1), t(this, `handleStyleLoad`, () => {
         !this.destroyed && this.data && !this.map.getLayer(this.id) && this.map.addLayer(this, this.beforeLayerId && this.map.getLayer(this.beforeLayerId) ? this.beforeLayerId : void 0)
-      }), e(this, `handleContextLost`, () => {
+      }), t(this, `handleContextLost`, () => {
         this.destroyed || (this.contextLost = !0, this.discardGpuResources())
-      }), e(this, `handleContextRestored`, () => {
+      }), t(this, `handleContextRestored`, () => {
         this.destroyed || (this.contextLost = !1, this.map.getLayer(this.id) && this.gl && this.onAdd(this.map, this.gl))
-      }), this.id = t, this.map = n, this.logicalTileZoom = r, this.beforeLayerId = i, this.textureBudgetBytes = a, this.onRepeatedRenderFailure = o, this.map.on(`style.load`, this.handleStyleLoad), this.map.on(`webglcontextlost`, this.handleContextLost), this.map.on(`webglcontextrestored`, this.handleContextRestored)
+      }), this.id = e, this.map = n, this.logicalTileZoom = r, this.beforeLayerId = i, this.textureBudgetBytes = a, this.onRepeatedRenderFailure = o, this.map.on(`style.load`, this.handleStyleLoad), this.map.on(`webglcontextlost`, this.handleContextLost), this.map.on(`webglcontextrestored`, this.handleContextRestored)
     }
     setData(e) {
       var t, n, r, i;

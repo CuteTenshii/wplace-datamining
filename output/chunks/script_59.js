@@ -2,69 +2,69 @@ import {
   D as e,
   Dt as t,
   Et as n,
-  Ft as r,
-  G as i,
+  G as r,
+  It as i,
   J as a,
   O as o,
-  Q as s,
-  Tt as c,
+  Ot as s,
+  Q as c,
   X as l,
   Xt as u,
-  Yt as d,
+  Zt as d,
   a as f,
-  lt as p,
-  rn as m,
+  in as p,
+  lt as m,
   yt as h
-} from "./R3px7NU1.js";
+} from "./DTpxYwnW.js";
 import "./B8UK1oE5.js";
 import {
   t as g
-} from "./yWod3U1C.js";
+} from "./DIbImCwd.js";
 import {
   i as _
-} from "./DptdTcS6.js";
-var v = s(`<span> </span>`),
-  y = s(`<span> </span> <!>`, 1);
+} from "./R-03wDEh.js";
+var v = c(`<span> </span>`),
+  y = c(`<span> </span> <!>`, 1);
 
-function b(s, b) {
-  u(b, !0);
+function b(c, b) {
+  d(b, !0);
   let x = f(b, `showId`, 3, !0),
     S = f(b, `class`, 3, ``),
-    C = r(() => {
+    C = i(() => {
       var e;
       return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
     }),
-    w = r(() => _(b.id ?? 0));
-  g(s, {
+    w = i(() => _(b.id ?? 0));
+  g(c, {
     get userId() {
       return b.id
     },
     get class() {
       return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
     },
-    children: (r, s) => {
+    children: (i, c) => {
       var u = y(),
-        d = n(u),
-        f = c(d, !0);
-      m(d);
-      var g = t(d, 2),
+        d = t(u),
+        f = n(d, !0);
+      p(d);
+      var g = s(d, 2),
         _ = e => {
           var t = v(),
-            n = c(t);
-          m(t), h(() => {
-            o(t, 1, `${p(w)??``} ${b.idClass??``??``}`), a(n, `#${b.id??``}`)
+            r = n(t);
+          p(t), h(() => {
+            o(t, 1, `${m(w)??``} ${b.idClass??``??``}`), a(r, `#${b.id??``}`)
           }), l(e, t)
         };
-      i(g, e => {
+      r(g, e => {
         x() && e(_)
       }), h(() => {
-        o(d, 1, `inline-block ${(p(C)?p(w):``)??``}`), e(d, p(C)), a(f, b.name)
-      }), l(r, u)
+        o(d, 1, `inline-block ${(m(C)?m(w):``)??``}`), e(d, m(C)), a(f, b.name)
+      }), l(i, u)
     },
     $$slots: {
       default: !0
     }
-  }), d()
+  }), u()
 }
 export {
   b as t

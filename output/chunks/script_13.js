@@ -1,11 +1,11 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  Ot as r,
-  lt as i,
-  zt as a
-} from "./R3px7NU1.js";
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
+  kt as i,
+  lt as a
+} from "./DTpxYwnW.js";
 var o = [`none`, `protanopia`, `deuteranopia`, `tritanopia`],
   s = {
     protanopia: [.152286, 1.052583, -.204868, .114503, .786281, .099216, -.003882, -.048116, 1.051998],
@@ -50,81 +50,81 @@ var f = new WeakMap,
   x = new WeakMap,
   S = new class {
     get alerts() {
-      return i(t(f, this))
+      return a(t(f, this))
     }
-    set alerts(n) {
-      e(t(f, this), n, !0)
+    set alerts(e) {
+      r(t(f, this), e, !0)
     }
     get artOpacity() {
-      return i(t(p, this))
+      return a(t(p, this))
     }
-    set artOpacity(n) {
-      e(t(p, this), n, !0)
+    set artOpacity(e) {
+      r(t(p, this), e, !0)
     }
     get colorblindMode() {
-      return i(t(m, this))
+      return a(t(m, this))
     }
-    set colorblindMode(n) {
-      e(t(m, this), n, !0)
+    set colorblindMode(e) {
+      r(t(m, this), e, !0)
     }
     get colorblindStrength() {
-      return i(t(h, this))
+      return a(t(h, this))
     }
-    set colorblindStrength(n) {
-      e(t(h, this), n, !0)
+    set colorblindStrength(e) {
+      r(t(h, this), e, !0)
     }
     get oldUi() {
-      return i(t(g, this))
+      return a(t(g, this))
     }
-    set oldUi(n) {
-      e(t(g, this), n, !0)
+    set oldUi(e) {
+      r(t(g, this), e, !0)
     }
     get nativeCursor() {
-      return i(t(_, this))
+      return a(t(_, this))
     }
-    set nativeCursor(n) {
-      e(t(_, this), n, !0), document.documentElement.toggleAttribute(`data-native-cursor`, n)
+    set nativeCursor(e) {
+      r(t(_, this), e, !0), document.documentElement.toggleAttribute(`data-native-cursor`, e)
     }
     get showStoreWhilePainting() {
-      return i(t(v, this))
+      return a(t(v, this))
     }
-    set showStoreWhilePainting(n) {
-      e(t(v, this), n, !0)
+    set showStoreWhilePainting(e) {
+      r(t(v, this), e, !0)
     }
     get showHotspots() {
-      return i(t(y, this))
+      return a(t(y, this))
     }
-    set showHotspots(n) {
-      e(t(y, this), n, !0)
+    set showHotspots(e) {
+      r(t(y, this), e, !0)
     }
     get showAllianceHqPins() {
-      return i(t(b, this))
+      return a(t(b, this))
     }
-    set showAllianceHqPins(n) {
-      e(t(b, this), n, !0)
+    set showAllianceHqPins(e) {
+      r(t(b, this), e, !0)
     }
     get sounds() {
-      return i(t(x, this))
+      return a(t(x, this))
     }
-    set sounds(n) {
-      e(t(x, this), n, !0)
+    set sounds(e) {
+      r(t(x, this), e, !0)
     }
     constructor() {
-      a(this, f, n(r({
+      e(this, f, n(i({
         charges: !0,
         events: !0,
         updates: !0
-      }))), a(this, p, n(100)), a(this, m, n(`none`)), a(this, h, n(100)), a(this, g, n(!1)), a(this, _, n(!1)), a(this, v, n(!0)), a(this, y, n(!0)), a(this, b, n(!0)), a(this, x, n(r(Object.fromEntries(l.map(e => [e, 50]))))), this.nativeCursor = !1;
+      }))), e(this, p, n(100)), e(this, m, n(`none`)), e(this, h, n(100)), e(this, g, n(!1)), e(this, _, n(!1)), e(this, v, n(!0)), e(this, y, n(!0)), e(this, b, n(!0)), e(this, x, n(i(Object.fromEntries(l.map(e => [e, 50]))))), this.nativeCursor = !1;
       try {
-        var e;
-        let n = JSON.parse(localStorage.getItem(u) ?? `{}`);
-        if (!n || typeof n != `object`) return;
-        for (let e of [`charges`, `events`, `updates`]) {
-          var t;
-          typeof((t = n.alerts) == null ? void 0 : t[e]) == `boolean` && (this.alerts[e] = n.alerts[e])
+        var t;
+        let e = JSON.parse(localStorage.getItem(u) ?? `{}`);
+        if (!e || typeof e != `object`) return;
+        for (let t of [`charges`, `events`, `updates`]) {
+          var r;
+          typeof((r = e.alerts) == null ? void 0 : r[t]) == `boolean` && (this.alerts[t] = e.alerts[t])
         }
-        this.artOpacity = d(n.artOpacity, 100), o.includes(n.colorblindMode) && (this.colorblindMode = n.colorblindMode), this.colorblindStrength = d(n.colorblindStrength, 100), typeof n.oldUi == `boolean` && (this.oldUi = n.oldUi), typeof n.nativeCursor == `boolean` && (this.nativeCursor = n.nativeCursor), typeof n.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = n.showStoreWhilePainting), typeof n.showHotspots == `boolean` && (this.showHotspots = n.showHotspots), typeof n.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = n.showAllianceHqPins);
-        for (let t of l) this.sounds[t] = d((e = n.sounds) == null ? void 0 : e[t], 50)
+        this.artOpacity = d(e.artOpacity, 100), o.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = d(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = e.showStoreWhilePainting), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
+        for (let n of l) this.sounds[n] = d((t = e.sounds) == null ? void 0 : t[n], 50)
       } catch {}
     }
     save() {

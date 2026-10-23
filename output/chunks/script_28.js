@@ -1,35 +1,35 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  an as r,
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
   lt as i,
-  zt as a
-} from "./R3px7NU1.js";
+  on as a
+} from "./DTpxYwnW.js";
 import {
   t as o
-} from "./DW_c_uAH.js";
+} from "./CHSOkkRN.js";
 import {
   C as s,
-  _t as c
-} from "./D2tGtYvL.js";
+  vt as c
+} from "./Bt1-y6b9.js";
 var l = new WeakMap,
   u = new WeakMap,
   d = class {
     constructor() {
-      a(this, l, n(`loading`)), a(this, u, n(!1)), r(this, `controller`, void 0), r(this, `publicKey`, ``), r(this, `subscription`, void 0), r(this, `needsFreshSubscription`, !1), r(this, `lastPreferences`, ``)
+      e(this, l, n(`loading`)), e(this, u, n(!1)), a(this, `controller`, void 0), a(this, `publicKey`, ``), a(this, `subscription`, void 0), a(this, `needsFreshSubscription`, !1), a(this, `lastPreferences`, ``)
     }
     get state() {
       return i(t(l, this))
     }
-    set state(n) {
-      e(t(l, this), n, !0)
+    set state(e) {
+      r(t(l, this), e, !0)
     }
     get busy() {
       return i(t(u, this))
     }
-    set busy(n) {
-      e(t(u, this), n, !0)
+    set busy(e) {
+      r(t(u, this), e, !0)
     }
     start(e) {
       var t;

@@ -1,28 +1,28 @@
 import {
   Bt as e,
   D as t,
-  Dt as n,
-  Ft as r,
-  G as i,
-  It as a,
-  Lt as o,
-  O as s,
+  Et as n,
+  G as r,
+  It as i,
+  Lt as a,
+  O as o,
+  Ot as s,
   Q as c,
   Rt as l,
-  Tt as u,
-  V as d,
+  V as u,
+  Vt as d,
   X as f,
   Xt as p,
-  Yt as m,
-  an as h,
+  Zt as m,
+  in as h,
   k as g,
   lt as _,
   o as v,
-  rn as y,
+  on as y,
   x as b,
   yt as x,
   zt as S
-} from "./R3px7NU1.js";
+} from "./DTpxYwnW.js";
 import "./B8UK1oE5.js";
 import {
   t as C
@@ -42,15 +42,15 @@ function F(e = ``, t = j, n = M, r = P) {
   return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
 }(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
   constructor(...t) {
-    super(...t), e(this, k), S(this, O, !1)
+    super(...t), d(this, k), e(this, O, !1)
   }
   connectedCallback() {
-    l(k, this, I).call(this), o(O, this, !0)
+    S(k, this, I).call(this), l(O, this, !0)
   }
   attributeChangedCallback() {
-    a(O, this) && l(k, this, I).call(this)
+    a(O, this) && S(k, this, I).call(this)
   }
-}, h(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
+}, y(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
   _: {}
 }, E));
 
@@ -58,54 +58,54 @@ function I() {
   var e;
   let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
     n = t.join(`,`);
-  this.innerHTML = (e = l(E, E, D)._)[n] ?? (e[n] = F(...t))
+  this.innerHTML = (e = S(E, E, D)._)[n] ?? (e[n] = F(...t))
 }
 var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
   R = c(`<div></div>`);
 
 function z(e, t) {
-  p(t, !0), v(t, L);
-  let n = r(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
-  var i = R();
-  d(i, () => F(_(n), 95, 45), !0), y(i), x(() => s(i, 1, `bg-base-200 minidenticon size-full ${t.class??``??``}`, `svelte-15zr69j`)), f(e, i), m()
+  m(t, !0), v(t, L);
+  let n = i(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
+  var r = R();
+  u(r, () => F(_(n), 95, 45), !0), h(r), x(() => o(r, 1, `bg-base-200 minidenticon size-full ${t.class??``??``}`, `svelte-15zr69j`)), f(e, r), p()
 }
 var B = c(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
   V = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
   H = c(`<div><div><!></div> <!></div>`);
 
-function U(e, r) {
-  p(r, !0);
+function U(e, i) {
+  m(i, !0);
   var a = H(),
-    o = u(a);
-  t(o, `width: 67.76785714285714%`);
-  var c = u(o),
-    l = e => {
+    c = n(a);
+  t(c, `width: 67.76785714285714%`);
+  var l = n(c),
+    u = e => {
       z(e, {
         get userId() {
-          return r.userId
+          return i.userId
         },
         get seed() {
-          return r.avatarSeed
+          return i.avatarSeed
         }
       })
     },
     d = e => {
       var t = B();
-      x(() => b(t, `src`, r.pictureUrl)), f(e, t)
+      x(() => b(t, `src`, i.pictureUrl)), f(e, t)
     };
-  i(c, e => {
-    r.pictureUrl ? e(d, -1) : e(l)
-  }), y(o);
-  var h = n(o, 2),
-    _ = e => {
+  r(l, e => {
+    i.pictureUrl ? e(d, -1) : e(u)
+  }), h(c);
+  var _ = s(c, 2),
+    v = e => {
       var n = V();
-      t(n, `scale: 114.99999999999999%;`), x(() => b(n, `src`, r.frameUrl)), f(e, n)
+      t(n, `scale: 114.99999999999999%;`), x(() => b(n, `src`, i.frameUrl)), f(e, n)
     };
-  i(h, e => {
-    r.frameUrl && e(_)
-  }), y(a), x((e, t) => {
-    s(a, 1, e), s(o, 1, t)
-  }, [() => g(C(`relative isolate inline-grid size-10 place-items-center`, r.class)), () => g(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), f(e, a), m()
+  r(_, e => {
+    i.frameUrl && e(v)
+  }), h(a), x((e, t) => {
+    o(a, 1, e), o(c, 1, t)
+  }, [() => g(C(`relative isolate inline-grid size-10 place-items-center`, i.class)), () => g(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, i.avatarClass))]), f(e, a), p()
 }
 export {
   z as n, F as r, U as t

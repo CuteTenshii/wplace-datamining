@@ -1,17 +1,17 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  Ot as r,
-  an as i,
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
+  kt as i,
   lt as a,
-  zt as o
-} from "./R3px7NU1.js";
+  on as o
+} from "./DTpxYwnW.js";
 import {
-  U as s,
+  W as s,
   a as c,
   o as l
-} from "./D2tGtYvL.js";
+} from "./Bt1-y6b9.js";
 
 function u(e, t) {
   if (!(e === void 0 && !t.startsWith(`personal-hq:`))) {
@@ -215,26 +215,26 @@ var k = new WeakMap,
     get templates() {
       return a(t(k, this))
     }
-    set templates(n) {
-      e(t(k, this), n, !0)
+    set templates(e) {
+      r(t(k, this), e, !0)
     }
     get tagCatalog() {
       return a(t(A, this))
     }
-    set tagCatalog(n) {
-      e(t(A, this), n, !0)
+    set tagCatalog(e) {
+      r(t(A, this), e, !0)
     }
     get activeTemplateId() {
       return a(t(j, this))
     }
-    set activeTemplateId(n) {
-      e(t(j, this), n, !0)
+    set activeTemplateId(e) {
+      r(t(j, this), e, !0)
     }
     get placementSession() {
       return a(t(M, this))
     }
-    set placementSession(n) {
-      e(t(M, this), n, !0)
+    set placementSession(e) {
+      r(t(M, this), e, !0)
     }
     subscribeChange(e) {
       return this.changeListeners.add(e), () => this.changeListeners.delete(e)
@@ -247,7 +247,7 @@ var k = new WeakMap,
       }
     }
     constructor() {
-      o(this, k, n(r([]))), o(this, A, n(r([]))), o(this, j, n(null)), o(this, M, n(!1)), i(this, `suppressPersist`, !1), i(this, `persistTimeout`, null), i(this, `changeListeners`, new Set), i(this, `flushPersist`, () => {
+      e(this, k, n(i([]))), e(this, A, n(i([]))), e(this, j, n(null)), e(this, M, n(!1)), o(this, `suppressPersist`, !1), o(this, `persistTimeout`, null), o(this, `changeListeners`, new Set), o(this, `flushPersist`, () => {
         this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(f, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(p, JSON.stringify(this.tagCatalog)))
       });
       {

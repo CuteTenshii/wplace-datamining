@@ -1,26 +1,26 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  lt as r,
-  zt as i
-} from "./R3px7NU1.js";
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
+  lt as i
+} from "./DTpxYwnW.js";
 var a, o, s = `last_seen_patch_version`,
   c = new(a = new WeakMap, o = new WeakMap, class {
     get open() {
-      return r(t(a, this))
+      return i(t(a, this))
     }
-    set open(n) {
-      e(t(a, this), n, !0)
+    set open(e) {
+      r(t(a, this), e, !0)
     }
     get seenVersion() {
-      return r(t(o, this))
+      return i(t(o, this))
     }
-    set seenVersion(n) {
-      e(t(o, this), n, !0)
+    set seenVersion(e) {
+      r(t(o, this), e, !0)
     }
     constructor() {
-      i(this, a, n(!1)), i(this, o, n(``));
+      e(this, a, n(!1)), e(this, o, n(``));
       try {
         this.seenVersion = localStorage.getItem(s) ?? ``
       } catch {}

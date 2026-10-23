@@ -1,28 +1,28 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CoM4zB8E.js", "./R3px7NU1.js", "./B8UK1oE5.js", "./DW_c_uAH.js", "./DdiGr5QI.js", "./CRgrjRaN.js", "./CUtBdivQ.js", "./DPq9H1d9.js", "./DL7EOGHD.js", "./Ur3lDrik.js", "./C3y1OAau.js", "./CxVHM0Z_.js", "./L73Dn9nm.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./t6AP8FqP.js", "./DTpxYwnW.js", "./B8UK1oE5.js", "./CHSOkkRN.js", "./DZOcwyrE.js", "./8xdp7asl.js", "./DMvd0cI6.js", "./M0DRtVjM.js", "./CgrdF31S.js", "./u65G_XIT.js", "./DQUFIqGl.js", "./D8URFFzs.js", "./Dgsikd1Y.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
-  At as e,
-  Mt as t,
-  Ot as n,
-  Y as r,
-  at as i,
-  bt as a,
-  ft as o,
+  Nt as e,
+  Y as t,
+  at as n,
+  bt as r,
+  ft as i,
+  jt as a,
+  kt as o,
   lt as s,
   q as c
-} from "./R3px7NU1.js";
+} from "./DTpxYwnW.js";
 import {
   x as l
-} from "./CxVHM0Z_.js";
+} from "./D8URFFzs.js";
 import {
   a as u
-} from "./DdiGr5QI.js";
-import "./CUtBdivQ.js";
+} from "./DZOcwyrE.js";
+import "./DMvd0cI6.js";
 import {
   t as d
-} from "./DW_c_uAH.js";
+} from "./CHSOkkRN.js";
 import {
   n as f
-} from "./CRgrjRaN.js";
+} from "./8xdp7asl.js";
 var p = {
   settings: [`interface`, `accessibility`, `privacy`, `sounds`, `controls`, `notifications`],
   store: [`items`, `pictures`, `frames`, `fonts`, `styles`, `flags`],
@@ -221,7 +221,7 @@ function T(e, t, n) {
 }
 
 function E(e, t) {
-  return `[${e.replace(/([\\`*_[\]<>])/g,`\\$1`)}](${t})`}var D=n({request:null}),O=`
+  return `[${e.replace(/([\\`*_[\]<>])/g,`\\$1`)}](${t})`}var D=o({request:null}),O=`
   input: not(: disabled): not([type = "hidden"]), select: not(: disabled), textarea: not(: disabled), button: not(: disabled), summary, a[href], [tabindex] `;function k(e){for(let t=e;t;t=t.parentElement)t instanceof HTMLDetailsElement&&(t.open=!0)}function A(e){e instanceof HTMLDetailsElement&&(e=e.querySelector(`
   summary`)??e);let t=e.matches(O)?e:e.closest(`
   button, a[href], summary, label`)??e.querySelector(O)??e,n=t instanceof HTMLLabelElement?t.control??t:t,r=n.hasAttribute(`
@@ -236,19 +236,19 @@ function E(e, t) {
   tabindex`)===` - 1`&&n.removeAttribute(`
   tabindex`),document.removeEventListener(`
   pointerdown`,i),document.removeEventListener(`
-  keydown`,i)}}function j(r,i){let c=t(n(i));return a(()=>{r.dataset.gameLink=s(c);let e=D.request;if(!s(c)||(e==null?void 0:e.path)!==s(c))return;let t=!1,n;return o().then(async()=>{t||!r.isConnected||(k(r),await o(),!t&&!e.text&&(n=A(r)))}),()=>{t=!0,n==null||n()}}),{update:t=>{e(c,t,!0)}}}function M(p,m){let h=t(n(m));return a(()=>{let e=Array.isArray(s(h))?s(h)[0]:s(h);if(!e)return;let t,n=0,a=null,o;function m(e){n++,o==null||o(),o=void 0,t&&r(t),t=void 0,e&&a!=null&&a.isConnected&&a.focus({preventScroll:!0})}function g(r){if(r.defaultPrevented||!(r.target instanceof Element)||p instanceof HTMLDialogElement&&(!p.open||r.target.closest(`
-  dialog`)!==p))return!1;let s=w(p,e,r.target,window.getSelection());if(!s)return!1;r.preventDefault(),r.stopPropagation(),m(!1),a=document.activeElement instanceof HTMLElement?document.activeElement:null;let h=n,g=r.target.getBoundingClientRect(),_=r instanceof MouseEvent&&r.clientX?r.clientX:g.left,v=r instanceof MouseEvent&&r.clientY?r.clientY:g.bottom,y=T(s.link,window.location.href,l(` / `)),b=[`
+  keydown`,i)}}function j(t,n){let c=e(o(n));return r(()=>{t.dataset.gameLink=s(c);let e=D.request;if(!s(c)||(e==null?void 0:e.path)!==s(c))return;let n=!1,r;return i().then(async()=>{n||!t.isConnected||(k(t),await i(),!n&&!e.text&&(r=A(t)))}),()=>{n=!0,r==null||r()}}),{update:e=>{a(c,e,!0)}}}function M(p,m){let h=e(o(m));return r(()=>{let e=Array.isArray(s(h))?s(h)[0]:s(h);if(!e)return;let r,i=0,a=null,o;function m(e){i++,o==null||o(),o=void 0,r&&t(r),r=void 0,e&&a!=null&&a.isConnected&&a.focus({preventScroll:!0})}function g(t){if(t.defaultPrevented||!(t.target instanceof Element)||p instanceof HTMLDialogElement&&(!p.open||t.target.closest(`
+  dialog`)!==p))return!1;let s=w(p,e,t.target,window.getSelection());if(!s)return!1;t.preventDefault(),t.stopPropagation(),m(!1),a=document.activeElement instanceof HTMLElement?document.activeElement:null;let h=i,g=t.target.getBoundingClientRect(),_=t instanceof MouseEvent&&t.clientX?t.clientX:g.left,v=t instanceof MouseEvent&&t.clientY?t.clientY:g.bottom,y=T(s.link,window.location.href,l(` / `)),b=[`
   pointerdown`,`
   keydown`,`
   blur`,`
-  resize`].map(e=>i(window,e,()=>m(!1),{capture:!0}));return o=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / CoM4zB8E.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==n||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(o==null||o(),o=void 0,t=c(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===n&&m(e)}}}))}).catch(()=>{h===n&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
+  resize`].map(e=>n(window,e,()=>m(!1),{capture:!0}));return o=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / t6AP8FqP.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==i||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(o==null||o(),o=void 0,r=c(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===i&&m(e)}}}))}).catch(()=>{h===i&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
   ContextMenu`&&!(e.shiftKey&&e.key===`
   F10`)||g(e)&&e.stopPropagation()}let y=()=>m(!1);p.addEventListener(`
-  close`,y);let b=i(p,`
-  contextmenu`,_),x=i(p,`
+  close`,y);let b=n(p,`
+  contextmenu`,_),x=n(p,`
   keydown`,v);return()=>{m(!1),p.removeEventListener(`
-  close`,y),b(),x()}}),a(()=>{let e=D.request,t=Array.isArray(s(h))?s(h):[s(h)];if(!(e!=null&&e.text)||!t.includes(e.path.split(` / `)[0]))return;let{path:n,text:r,occurrence:i}=e,a=0,c,l=!1,u=new MutationObserver(d);function d(){!a&&!l&&(a=requestAnimationFrame(f))}function f(){if(a=0,l||!p.isConnected||y(p)||p instanceof HTMLDialogElement&&!p.open)return;let e=[...p.querySelectorAll(` [data - game - link] `)].find(e=>e.dataset.gameLink===n&&(!(p instanceof HTMLDialogElement)||e.closest(`
-  dialog`)===p));if(n.split(` / `).length>1&&!e)return;let t=S(e??p,r,i);t&&(k(t),u.disconnect(),o().then(()=>{!l&&t.isConnected&&(c=A(t))}))}return u.observe(p,{subtree:!0,childList:!0,characterData:!0,attributes:!0,attributeFilter:[`
+  close`,y),b(),x()}}),r(()=>{let e=D.request,t=Array.isArray(s(h))?s(h):[s(h)];if(!(e!=null&&e.text)||!t.includes(e.path.split(` / `)[0]))return;let{path:n,text:r,occurrence:a}=e,o=0,c,l=!1,u=new MutationObserver(d);function d(){!o&&!l&&(o=requestAnimationFrame(f))}function f(){if(o=0,l||!p.isConnected||y(p)||p instanceof HTMLDialogElement&&!p.open)return;let e=[...p.querySelectorAll(` [data - game - link] `)].find(e=>e.dataset.gameLink===n&&(!(p instanceof HTMLDialogElement)||e.closest(`
+  dialog`)===p));if(n.split(` / `).length>1&&!e)return;let t=S(e??p,r,a);t&&(k(t),u.disconnect(),i().then(()=>{!l&&t.isConnected&&(c=A(t))}))}return u.observe(p,{subtree:!0,childList:!0,characterData:!0,attributes:!0,attributeFilter:[`
   open`,`
   class `,`
   style`,`
@@ -258,4 +258,4 @@ function E(e, t) {
   title`,`
   data - tooltip`,`
   alt`,`
-  data - game - link`]}),d(),()=>{l=!0,u.disconnect(),cancelAnimationFrame(a),c==null||c()}}),{update:t=>{e(h,t,!0)}}}export{g as a,m as c,E as i,M as n,h as o,j as r,_ as s,D as t};
+  data - game - link`]}),d(),()=>{l=!0,u.disconnect(),cancelAnimationFrame(o),c==null||c()}}),{update:e=>{a(h,e,!0)}}}export{g as a,m as c,E as i,M as n,h as o,j as r,_ as s,D as t};

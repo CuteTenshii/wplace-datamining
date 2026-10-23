@@ -1,14 +1,14 @@
 import {
-  At as e,
-  It as t,
-  Mt as n,
-  an as r,
+  Bt as e,
+  Lt as t,
+  Nt as n,
+  jt as r,
   lt as i,
-  zt as a
-} from "./R3px7NU1.js";
+  on as a
+} from "./DTpxYwnW.js";
 import {
   t as o
-} from "./Bk7pXTla.js";
+} from "./B-n5nX7D.js";
 var s = `selected-color`,
   c = `template-build-highlight-selected-color`,
   l = `template-build-highlight-incorrect-pixels`,
@@ -35,70 +35,70 @@ var g = new WeakMap,
     get selectedColor() {
       return i(t(g, this))
     }
-    set selectedColor(n) {
-      e(t(g, this), n, !0)
+    set selectedColor(e) {
+      r(t(g, this), e, !0)
     }
     get showPaletteNumbers() {
       return i(t(_, this))
     }
-    set showPaletteNumbers(n) {
-      e(t(_, this), n, !0)
+    set showPaletteNumbers(e) {
+      r(t(_, this), e, !0)
     }
     get highlightSelectedColor() {
       return i(t(v, this))
     }
-    set highlightSelectedColor(n) {
-      e(t(v, this), n, !0)
+    set highlightSelectedColor(e) {
+      r(t(v, this), e, !0)
     }
     get highlightIncorrectPixels() {
       return i(t(y, this))
     }
-    set highlightIncorrectPixels(n) {
-      e(t(y, this), n, !0)
+    set highlightIncorrectPixels(e) {
+      r(t(y, this), e, !0)
     }
     get highlightUnpaintedPixels() {
       return i(t(b, this))
     }
-    set highlightUnpaintedPixels(n) {
-      e(t(b, this), n, !0)
+    set highlightUnpaintedPixels(e) {
+      r(t(b, this), e, !0)
     }
     get colorPaletteMode() {
       return i(t(x, this))
     }
-    set colorPaletteMode(n) {
-      e(t(x, this), n, !0)
+    set colorPaletteMode(e) {
+      r(t(x, this), e, !0)
     }
     get remainingColorsTemplateId() {
       return i(t(S, this))
     }
-    set remainingColorsTemplateId(n) {
-      e(t(S, this), n, !0)
+    set remainingColorsTemplateId(e) {
+      r(t(S, this), e, !0)
     }
     get remainingColorCounts() {
       return i(t(C, this))
     }
-    set remainingColorCounts(n) {
-      e(t(C, this), n)
+    set remainingColorCounts(e) {
+      r(t(C, this), e)
     }
     get remainingColorTotal() {
       return i(t(w, this))
     }
-    set remainingColorTotal(n) {
-      e(t(w, this), n, !0)
+    set remainingColorTotal(e) {
+      r(t(w, this), e, !0)
     }
     get remainingColorsLoading() {
       return i(t(T, this))
     }
-    set remainingColorsLoading(n) {
-      e(t(T, this), n, !0)
+    set remainingColorsLoading(e) {
+      r(t(T, this), e, !0)
     }
     constructor() {
-      r(this, `onColorReselect`, void 0), a(this, g, n(1)), a(this, _, n(o.local.get(f) !== `false`)), a(this, v, n(!1)), a(this, y, n(!1)), a(this, b, n(!1)), a(this, x, n(`all`)), a(this, S, n(null)), a(this, C, n([])), a(this, w, n(0)), a(this, T, n(!1));
-      let e = Number(localStorage.getItem(s));
-      Number.isInteger(e) && e >= 0 && (this.selectedColor = e), this.highlightSelectedColor = o.local.get(c) === `true`, this.highlightIncorrectPixels = localStorage.getItem(l) === `true`, this.highlightUnpaintedPixels = localStorage.getItem(u) === `true`;
-      let t = h(localStorage.getItem(p));
-      if (t) {
-        this.colorPaletteMode = t;
+      a(this, `onColorReselect`, void 0), e(this, g, n(1)), e(this, _, n(o.local.get(f) !== `false`)), e(this, v, n(!1)), e(this, y, n(!1)), e(this, b, n(!1)), e(this, x, n(`all`)), e(this, S, n(null)), e(this, C, n([])), e(this, w, n(0)), e(this, T, n(!1));
+      let t = Number(localStorage.getItem(s));
+      Number.isInteger(t) && t >= 0 && (this.selectedColor = t), this.highlightSelectedColor = o.local.get(c) === `true`, this.highlightIncorrectPixels = localStorage.getItem(l) === `true`, this.highlightUnpaintedPixels = localStorage.getItem(u) === `true`;
+      let r = h(localStorage.getItem(p));
+      if (r) {
+        this.colorPaletteMode = r;
         return
       }
       localStorage.getItem(d) === `true` && (this.colorPaletteMode = `unlocked`)

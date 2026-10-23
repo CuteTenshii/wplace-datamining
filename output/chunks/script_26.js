@@ -1,35 +1,35 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./D9EhiCk7.js", "./R3px7NU1.js", "./CxVHM0Z_.js", "./CvGZ0C4q.js", "./DW_c_uAH.js", "./DdiGr5QI.js", "./D2tGtYvL.js", "./a7QZC4SB.js", "./L73Dn9nm.js", "./pKOrQQBa.js", "./MIjkXV5b.js", "./CRgrjRaN.js", "./CUtBdivQ.js", "./Bsxtn1Lf.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BhjVcyBN.js", "./DTpxYwnW.js", "./D8URFFzs.js", "./CEITJOyG.js", "./CHSOkkRN.js", "./DZOcwyrE.js", "./Bt1-y6b9.js", "./a7QZC4SB.js", "./Dgsikd1Y.js", "./pKOrQQBa.js", "./MIjkXV5b.js", "./8xdp7asl.js", "./DMvd0cI6.js", "./MwomqS1_.js"]))) => i.map(i => d[i]);
 import {
   Gt as e,
-  Wt as t
-} from "./R3px7NU1.js";
-import "./CxVHM0Z_.js";
+  Kt as t
+} from "./DTpxYwnW.js";
+import "./D8URFFzs.js";
 import {
   a as n
-} from "./DdiGr5QI.js";
+} from "./DZOcwyrE.js";
 import {
   N as r,
-  _t as i
-} from "./D2tGtYvL.js";
+  vt as i
+} from "./Bt1-y6b9.js";
 import {
   t as a
-} from "./GOxb7GvW.js";
+} from "./DzpIyVsn.js";
 import {
   o
-} from "./Cxs50cC3.js";
-var s = e({
+} from "./De0pXVvq.js";
+var s = t({
   status: `unavailable`
 });
 async function c() {
-  let e = t(s);
-  if (e.status === `available`) {
+  let t = e(s);
+  if (t.status === `available`) {
     s.set({
       status: `prompting`
     });
     try {
-      return await e.event.prompt()
+      return await t.event.prompt()
     } finally {
-      t(s).status === `prompting` && s.set({
+      e(s).status === `prompting` && s.set({
         status: `unavailable`
       })
     }
@@ -66,7 +66,7 @@ function u() {
       } = await n(async () => {
         let {
           TWAServices: e
-        } = await import(`./D9EhiCk7.js`).then(e => e.i);
+        } = await import(`./BhjVcyBN.js`).then(e => e.i);
         return {
           TWAServices: e
         }
