@@ -2,10 +2,10 @@ import {
   B as e,
   N as t,
   V as n
-} from "./Bt1-y6b9.js";
+} from "./DqaL19d6.js";
 import {
   t as r
-} from "./_WTdu5Nd.js";
+} from "./BR6bFImc.js";
 var i = `# {{wplace_icon}} Seven Seals {{wplace_icon}}
 
 Seven spectral figures have appeared across the map, each guarding a seal. For seven days a new fragment of the day's seal opens **every hour** somewhere in the world: seven seals, 24 fragments each, 168 in total. Paint the official template pixel by pixel to purify them all before the event ends.

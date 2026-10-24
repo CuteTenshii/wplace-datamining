@@ -1,12 +1,12 @@
 const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./DU-zVGRm.js", "./DTpxYwnW.js", "./6r9qWP_f.js", "./70aKwwej.js", "./DoOyJkVW.js", "./BIxaOsK9.js", "./DuOA-i8P.js", "./D-usKNo6.js", "./DqE0yIud.js", "./H6--Tc2_.js", "./ZEvoGtgY.js", "./CiHsSbop.js", "./DWzIPaIf.js", "./BqZz00jV.js", "./DG6KLs-M.js", "./CR1QrnVu.js", "./DtKiCD_D.js", "./m1Sfr-zo.js", "./Cw79rSo9.js", "./BwRxgjky.js", "./D7v_I0ri.js", "./DtHdmI6R.js", "./BaR6o5D8.js", "./u2dWaJiO.js", "./DdMLwif4.js", "./DJjuVPn9.js", "./Bb-49bOU.js", "./BvTwCKxu.js", "./D9JVEVSF.js", "./CKsIFl_S.js", "./CwTV4WFe.js", "./BAtz-OJK.js", "./oVY-zy6_.js", "./Cs-1YOmG.js", "./kPYA-uyx.js", "./CxJjTt3p.js", "./Hp6tmNeS.js", "./B7WPWPEP.js", "./CR6ZTcTG.js", "./YgYvtgmN.js", "./BhdahRB5.js", "./BTC04yZu.js", "./DkX1XEx5.js", "./BWJcXwdI.js", "./Dxq2KM7t.js", "./BEphXt8u.js", "./Vp8hnsaN.js", "./BBqyakHz.js", "./DVltQAZk.js", "./DAH7uMgx.js", "./C6WXnDcQ.js", "./DADeRyCv.js", "./dnO4MDZz.js", "./LObgoWkQ.js", "./DZ7-a45P.js", "./LRLSDCKh.js"]))) => i.map(i => d[i]);
 import {
   a as e
-} from "./DZOcwyrE.js";
+} from "./BJSqxBh3.js";
 import {
   d as t,
   f as n,
   m as r
-} from "./dcRpFL24.js";
+} from "./oGethI4j.js";
 var i = `index, follow, max-image-preview:large`,
   a = `noindex`,
   o = [{
@@ -27,6 +27,8 @@ var i = `index, follow, max-image-preview:large`,
     path: `/terms/return`
   }, {
     path: `/terms/return/pt`
+  }, {
+    path: `/terms/payment-help`
   }],
   s = [...new Set(Object.keys(Object.assign({
     "../patch-notes/markdown/1.0.0 - Welcome to WPlace!.md": () => e(() => import(`./DU-zVGRm.js`).then(e => e.n), __vite__mapDeps([0, 1]), import.meta.url),
