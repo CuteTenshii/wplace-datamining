@@ -19,7 +19,7 @@ import {
 } from "./TwBIz_JE.js";
 import {
   h as l
-} from "./DSpkIKEY.js";
+} from "./DEXtJS0Y.js";
 import {
   t as u
 } from "./DAFNBzHi.js";
@@ -230,7 +230,7 @@ uniform float u_opacity;
 uniform float u_pixels_per_source;
 uniform float u_pixel_mode_resolution;
 uniform bool u_pixel_mode_detail_supported;
-uniform bool u_hide_coarse_pixels;
+uniform bool u_hide_pixels;
 uniform bool u_highlight_enabled;
 uniform vec4 u_highlight_color;
 uniform bool u_status_highlights_enabled;
@@ -266,8 +266,7 @@ ${j}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-  if (u_hide_coarse_pixels && mode != 0 && pixel_mode_detail_supported &&
-      pixels_per_source < max(1.0, pixel_mode_resolution)) {
+  if (u_hide_pixels) {
     discard;
   }
 ${a}
@@ -309,7 +308,7 @@ uniform float u_opacity;
 uniform float u_pixels_per_source;
 uniform float u_pixel_mode_resolution;
 uniform bool u_pixel_mode_detail_supported;
-uniform bool u_hide_coarse_pixels;
+uniform bool u_hide_pixels;
 uniform bool u_highlight_enabled;
 uniform vec4 u_highlight_color;
 uniform bool u_status_highlights_enabled;
@@ -346,8 +345,7 @@ ${M}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-  if (u_hide_coarse_pixels && mode != 0 && pixel_mode_detail_supported &&
-      pixels_per_source < max(1.0, pixel_mode_resolution)) {
+  if (u_hide_pixels) {
     discard;
   }
 ${a}
@@ -422,7 +420,7 @@ ${a}
         pixelsPerSource: t.getUniformLocation(this.program, `u_pixels_per_source`),
         pixelModeResolution: t.getUniformLocation(this.program, `u_pixel_mode_resolution`),
         pixelModeDetailSupported: t.getUniformLocation(this.program, `u_pixel_mode_detail_supported`),
-        hideCoarsePixels: t.getUniformLocation(this.program, `u_hide_coarse_pixels`),
+        hidePixels: t.getUniformLocation(this.program, `u_hide_pixels`),
         highlightEnabled: t.getUniformLocation(this.program, `u_highlight_enabled`),
         highlightColor: t.getUniformLocation(this.program, `u_highlight_color`),
         statusHighlightsEnabled: t.getUniformLocation(this.program, `u_status_highlights_enabled`)
@@ -452,7 +450,7 @@ ${a}
       let {
         worldSize: a
       } = this.map.transform, [o, s] = this.getRasterAlignmentOffset(a);
-      this.translateMatrix(t, this.origin[0] * a + o, this.origin[1] * a + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, a), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, H(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, i(n.mode, r)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.hideCoarsePixels, +!!n.hideCoarsePixels), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
+      this.translateMatrix(t, this.origin[0] * a + o, this.origin[1] * a + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, a), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, H(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, i(n.mode, r)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.hidePixels, +(n.pixelsMinZoom !== void 0 && this.map.getZoom() < n.pixelsMinZoom)), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
       let c = !!(n.statusHighlights && (n.statusHighlights.incorrect || n.statusHighlights.unpainted));
       e.uniform1i(this.uniforms.statusHighlightsEnabled, +!!c), n.highlightColor && e.uniform4f(this.uniforms.highlightColor, n.highlightColor.r / 255, n.highlightColor.g / 255, n.highlightColor.b / 255, n.highlightColor.a / 255), this.vertexArrayApi && this.vertexArray ? this.vertexArrayApi.bind(this.vertexArray) : this.bindQuadVertexAttributes(e);
       let l = this.getVisibleSourceTiles(a),
