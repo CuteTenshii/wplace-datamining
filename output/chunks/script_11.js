@@ -2,7 +2,7 @@ import "./DTpxYwnW.js";
 import {
   g as e,
   m as t
-} from "./DvbMVuCu.js";
+} from "./D1my-FCy.js";
 var n = {
   get data() {
     return e.data

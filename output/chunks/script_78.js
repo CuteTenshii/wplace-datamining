@@ -1,4 +1,4 @@
-import "./DvbMVuCu.js";
+import "./D1my-FCy.js";
 var e = {
   local: t(localStorage),
   session: t(sessionStorage)
