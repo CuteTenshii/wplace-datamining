@@ -1,4 +1,4 @@
-import "./D1my-FCy.js";
+import "./CllndLpb.js";
 var e = {
   local: t(localStorage),
   session: t(sessionStorage)

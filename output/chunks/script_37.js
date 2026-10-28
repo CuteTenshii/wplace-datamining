@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./ByKrthq4.js", "./DTpxYwnW.js", "./B8UK1oE5.js", "./D1DrqaMj.js", "./jACncttS.js", "./8xdp7asl.js", "./DMvd0cI6.js", "./M0DRtVjM.js", "./PAtCAVGv.js", "./BRG30FOD.js", "./Bvg8aLq_.js", "./D1my-FCy.js", "./Dgsikd1Y.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C5O6L7Aa.js", "./DTpxYwnW.js", "./B8UK1oE5.js", "./D1DrqaMj.js", "./jACncttS.js", "./8xdp7asl.js", "./DMvd0cI6.js", "./M0DRtVjM.js", "./BxMRQGbr.js", "./BMPGVY3G.js", "./2zWoLQam.js", "./CllndLpb.js", "./Dgsikd1Y.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Nt as e,
   Y as t,
@@ -12,7 +12,7 @@ import {
 } from "./DTpxYwnW.js";
 import {
   x as l
-} from "./D1my-FCy.js";
+} from "./CllndLpb.js";
 import {
   a as u
 } from "./jACncttS.js";
@@ -241,7 +241,7 @@ function E(e, t) {
   pointerdown`,`
   keydown`,`
   blur`,`
-  resize`].map(e=>n(window,e,()=>m(!1),{capture:!0}));return o=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / ByKrthq4.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==i||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(o==null||o(),o=void 0,r=c(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===i&&m(e)}}}))}).catch(()=>{h===i&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
+  resize`].map(e=>n(window,e,()=>m(!1),{capture:!0}));return o=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / C5O6L7Aa.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==i||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(o==null||o(),o=void 0,r=c(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===i&&m(e)}}}))}).catch(()=>{h===i&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
   ContextMenu`&&!(e.shiftKey&&e.key===`
   F10`)||g(e)&&e.stopPropagation()}let y=()=>m(!1);p.addEventListener(`
   close`,y);let b=n(p,`
