@@ -1,171 +1,136 @@
-var e, t = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
-  ignoreBOM: !0,
-  fatal: !0
-}) : {
-  decode: () => {
-    throw Error(`TextDecoder not available`)
-  }
-};
-typeof TextDecoder < `u` && t.decode();
-var n = null;
+import {
+  Ft as e,
+  Lt as t,
+  Vt as n,
+  Wt as r,
+  pt as i,
+  un as a
+} from "./DXDHrD2o.js";
+import {
+  t as o
+} from "./C9LeLpt8.js";
+var s = `selected-color`,
+  c = `template-build-highlight-selected-color`,
+  l = `template-build-highlight-incorrect-pixels`,
+  u = `template-build-highlight-unpainted-pixels`,
+  d = `template-build-use-only-unlocked-colors`,
+  f = `template-build-show-palette-numbers`,
+  p = `template-build-color-palette-mode`,
+  m = new Set([`all`, `free`, `template`, `unlocked`]);
 
-function r() {
-  return (n === null || n.byteLength === 0) && (n = new Uint8Array(e.memory.buffer)), n
+function h(e) {
+  return !e || !m.has(e) ? null : e
 }
-
-function i(e, n) {
-  return e >>>= 0, t.decode(r().subarray(e, e + n))
-}
-var a = null;
-
-function o() {
-  return (a === null || a.byteLength === 0) && (a = new Uint8ClampedArray(e.memory.buffer)), a
-}
-
-function s(e, t) {
-  return e >>>= 0, o().subarray(e / 1, e / 1 + t)
-}
-var c = Array(128).fill(void 0);
-c.push(void 0, null, !0, !1);
-var l = c.length;
-
-function u(e) {
-  l === c.length && c.push(c.length + 1);
-  let t = l;
-  return l = c[t], c[t] = e, t
-}
-var d = 0;
-
-function f(e, t) {
-  let n = t(e.length * 1, 1) >>> 0;
-  return r().set(e, n / 1), d = e.length, n
-}
-var p = null;
-
-function m() {
-  return (p === null || p.byteLength === 0) && (p = new Int32Array(e.memory.buffer)), p
-}
-
-function h(e, t) {
-  return e >>>= 0, r().subarray(e / 1, e / 1 + t)
-}
-
-function g(t, n, r) {
-  try {
-    let s = e.__wbindgen_add_to_stack_pointer(-16),
-      c = f(t, e.__wbindgen_malloc),
-      l = d;
-    e.encode(s, c, l, n, r);
-    var i = m()[s / 4 + 0],
-      a = m()[s / 4 + 1],
-      o = h(i, a).slice();
-    return e.__wbindgen_free(i, a * 1, 1), o
-  } finally {
-    e.__wbindgen_add_to_stack_pointer(16)
-  }
-}
-
-function _(e) {
-  return c[e]
-}
-
-function v(e) {
-  e < 132 || (c[e] = l, l = e)
-}
-
-function y(e) {
-  let t = _(e);
-  return v(e), t
-}
-
-function b(t) {
-  let n = f(t, e.__wbindgen_malloc),
-    r = d;
-  return y(e.decode(n, r))
-}
-async function x(e, t) {
-  if (typeof Response == `function` && e instanceof Response) {
-    if (typeof WebAssembly.instantiateStreaming == `function`) try {
-      return await WebAssembly.instantiateStreaming(e, t)
-    } catch (t) {
-      if (e.headers.get(`Content-Type`) != `application/wasm`) console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", t);
-      else throw t
+var g = new WeakMap,
+  _ = new WeakMap,
+  v = new WeakMap,
+  y = new WeakMap,
+  b = new WeakMap,
+  x = new WeakMap,
+  S = new WeakMap,
+  C = new WeakMap,
+  w = new WeakMap,
+  T = new WeakMap,
+  E = new class {
+    get selectedColor() {
+      return i(n(g, this))
     }
-    let n = await e.arrayBuffer();
-    return await WebAssembly.instantiate(n, t)
-  } {
-    let n = await WebAssembly.instantiate(e, t);
-    return n instanceof WebAssembly.Instance ? {
-      instance: n,
-      module: e
-    } : n
-  }
-}
-
-function S() {
-  let t = {};
-  return t.wbg = {}, t.wbg.__wbg_newwithownedu8clampedarrayandsh_91db5987993a08fb = function(t, n, r, i) {
-    var a = s(t, n).slice();
-    return e.__wbindgen_free(t, n * 1, 1), u(new ImageData(a, r >>> 0, i >>> 0))
-  }, t.wbg.__wbindgen_throw = function(e, t) {
-    throw Error(i(e, t))
-  }, t
-}
-
-function C(t, r) {
-  return e = t.exports, w.__wbindgen_wasm_module = r, p = null, n = null, a = null, e
-}
-async function w(t) {
-  if (e !== void 0) return e;
-  let n = S();
-  (typeof t == `string` || typeof Request == `function` && t instanceof Request || typeof URL == `function` && t instanceof URL) && (t = fetch(t));
-  let {
-    instance: r,
-    module: i
-  } = await x(await t, n);
-  return C(r, i)
-}
-var T = globalThis.ServiceWorkerGlobalScope !== void 0 && typeof self < `u` && globalThis.caches && globalThis.caches.default !== void 0,
-  E = typeof process == `object` && process.release && process.release.name === `node`;
-(T || E) && (globalThis.ImageData || (globalThis.ImageData = class {
-  constructor(e, t, n) {
-    this.data = e, this.width = t, this.height = n
-  }
-}), typeof self < `u` && self.location === void 0 && (self.location = {
-  href: ``
-}));
-var D;
-async function O(e) {
-  return D || (D = w(e)), D
-}
-async function k(e) {
-  await O();
-  let t = await b(new Uint8Array(e));
-  if (!t) throw Error(`Encoding error.`);
-  return t
-}
-var A;
-async function j(e) {
-  return A || (A = w(e)), A
-}
-async function M(e) {
-  await j();
-  let t = await g(e.data, e.width, e.height);
-  if (!t) throw Error(`Encoding error.`);
-  return t.buffer
-}
-var N = `` + new URL(`../assets/squoosh_png_bg.BsfxGNEB.wasm`, import.meta.url).href,
-  P;
-
-function F() {
-  return P || (P = O(N)), P
-}
-async function I(e) {
-  return await F(), k(e)
-}
-async function L(e) {
-  return await F(), M(e)
-}
+    set selectedColor(t) {
+      e(n(g, this), t, !0)
+    }
+    get showPaletteNumbers() {
+      return i(n(_, this))
+    }
+    set showPaletteNumbers(t) {
+      e(n(_, this), t, !0)
+    }
+    get highlightSelectedColor() {
+      return i(n(v, this))
+    }
+    set highlightSelectedColor(t) {
+      e(n(v, this), t, !0)
+    }
+    get highlightIncorrectPixels() {
+      return i(n(y, this))
+    }
+    set highlightIncorrectPixels(t) {
+      e(n(y, this), t, !0)
+    }
+    get highlightUnpaintedPixels() {
+      return i(n(b, this))
+    }
+    set highlightUnpaintedPixels(t) {
+      e(n(b, this), t, !0)
+    }
+    get colorPaletteMode() {
+      return i(n(x, this))
+    }
+    set colorPaletteMode(t) {
+      e(n(x, this), t, !0)
+    }
+    get remainingColorsTemplateId() {
+      return i(n(S, this))
+    }
+    set remainingColorsTemplateId(t) {
+      e(n(S, this), t, !0)
+    }
+    get remainingColorCounts() {
+      return i(n(C, this))
+    }
+    set remainingColorCounts(t) {
+      e(n(C, this), t)
+    }
+    get remainingColorTotal() {
+      return i(n(w, this))
+    }
+    set remainingColorTotal(t) {
+      e(n(w, this), t, !0)
+    }
+    get remainingColorsLoading() {
+      return i(n(T, this))
+    }
+    set remainingColorsLoading(t) {
+      e(n(T, this), t, !0)
+    }
+    constructor() {
+      a(this, `onColorReselect`, void 0), r(this, g, t(1)), r(this, _, t(o.local.get(f) !== `false`)), r(this, v, t(!1)), r(this, y, t(!1)), r(this, b, t(!1)), r(this, x, t(`all`)), r(this, S, t(null)), r(this, C, t([])), r(this, w, t(0)), r(this, T, t(!1));
+      let e = Number(localStorage.getItem(s));
+      Number.isInteger(e) && e >= 0 && (this.selectedColor = e), this.highlightSelectedColor = o.local.get(c) === `true`, this.highlightIncorrectPixels = localStorage.getItem(l) === `true`, this.highlightUnpaintedPixels = localStorage.getItem(u) === `true`;
+      let n = h(localStorage.getItem(p));
+      if (n) {
+        this.colorPaletteMode = n;
+        return
+      }
+      localStorage.getItem(d) === `true` && (this.colorPaletteMode = `unlocked`)
+    }
+    setShowPaletteNumbers(e) {
+      this.showPaletteNumbers = e, o.local.set(f, String(e))
+    }
+    setSelectedColor(e) {
+      this.selectedColor = e
+    }
+    setHighlightSelectedColor(e) {
+      this.highlightSelectedColor = e, o.local.set(c, String(e))
+    }
+    setHighlightIncorrectPixels(e) {
+      this.highlightIncorrectPixels = e, localStorage.setItem(l, e ? `true` : `false`)
+    }
+    setHighlightUnpaintedPixels(e) {
+      this.highlightUnpaintedPixels = e, localStorage.setItem(u, e ? `true` : `false`)
+    }
+    setColorPaletteMode(e) {
+      this.colorPaletteMode = e, localStorage.setItem(p, e), localStorage.removeItem(d)
+    }
+    setRemainingColors(e, t, n) {
+      let r = [];
+      for (let e of t) !Number.isInteger(e.colorIdx) || e.colorIdx < 0 || !Number.isSafeInteger(e.count) || e.count < 0 || (r[e.colorIdx] = e.count);
+      let i = r.reduce((e, t) => e + t, 0);
+      this.remainingColorsTemplateId = e, this.remainingColorCounts = r, this.remainingColorTotal = i, this.remainingColorsLoading = n
+    }
+    clearRemainingColors() {
+      this.remainingColorsTemplateId = null, this.remainingColorCounts = [], this.remainingColorTotal = 0, this.remainingColorsLoading = !1
+    }
+  };
 export {
-  L as n, I as t
+  E as t
 };

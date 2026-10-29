@@ -1,8 +1,13 @@
-import "./DTpxYwnW.js";
 import {
-  n as e
-} from "./pKOrQQBa.js";
-var t = t => new URL(t, e).toString();
+  Nt as e
+} from "./DXDHrD2o.js";
+var t = e({
+  shouldReload: !0,
+  openHeadquarters: !1,
+  hq: void 0,
+  hasHeadquarters: !1,
+  emblem: void 0
+});
 export {
   t
 };

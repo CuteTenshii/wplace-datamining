@@ -1,158 +1,481 @@
-function e(e, n, r, i, a) {
-  if (t(r, i, a), e.length !== r * i * 4 || n.length !== e.length) throw Error(`Overlay progress buffers must have matching positive dimensions.`)
-}
+import {
+  Bt as e,
+  Ft as t,
+  Lt as n,
+  Nt as r,
+  Vt as i,
+  Wt as a,
+  _t as o,
+  pt as s,
+  un as c
+} from "./DXDHrD2o.js";
+import {
+  c as l
+} from "./BaE5pl88.js";
+import {
+  B as u,
+  C as d,
+  N as f,
+  R as p,
+  V as m,
+  W as h,
+  vt as g
+} from "./BiTo61FT.js";
+import {
+  t as _
+} from "./LepJA_go.js";
+import {
+  i as v,
+  l as y,
+  n as b,
+  o as x
+} from "./B_BQ9-oj.js";
 
-function t(e, t, n) {
-  if (!Number.isSafeInteger(e) || !Number.isSafeInteger(t) || e <= 0 || t <= 0 || e * t > (2 ** 53 - 1) / 4) throw Error(`Overlay progress buffers must have matching positive dimensions.`);
-  if (!Number.isSafeInteger(n.originX) || !Number.isSafeInteger(n.originY) || !Number.isSafeInteger(n.tileSize) || n.tileSize <= 0 || n.tileSize > 65535 || !Number.isSafeInteger(n.originX + e - 1) || !Number.isSafeInteger(n.originY + t - 1)) throw Error(`Overlay progress geometry is invalid.`)
-}
-
-function n(e) {
-  if (e < -2147483648 || e > 2147483647) throw Error(`Overlay progress tile coordinates exceed the supported canvas range.`)
-}
-
-function r(e, t, n, r) {
-  let i = t + Math.floor(n / 4),
-    a = n % 4 * 2;
-  e[i] |= r << a
-}
-
-function* i(e, t, n, i, a = !0) {
-  if (!Number.isSafeInteger(n) || !Number.isSafeInteger(i) || n <= 0 || i <= 0 || e.length !== n * i * 4 || t.length !== e.length) throw Error(`Overlay tile buffers must have matching positive dimensions.`);
-  let o = new Uint32Array(4),
-    s = new Uint8Array(a ? Math.ceil(n * i / 4) : 0),
-    c = 0;
-  for (let l = 0; l < i; l += 1) {
-    for (let i = 0; i < n; i += 1) {
-      let n = c * 4,
-        i = 0;
-      e[n + 3] >= 16 && (o[0] += 1, t[n + 3] < 16 ? (i = 2, o[2] += 1) : e[n] === t[n] && e[n + 1] === t[n + 1] && e[n + 2] === t[n + 2] ? (i = 1, o[1] += 1) : (i = 3, o[3] += 1)), a && r(s, 0, c, i), c += 1
-    }
-    yield l
-  }
-  return {
-    counts: o,
-    statuses: s
-  }
-}
-
-function a(e, t, n) {
-  let r = t + Math.floor(n / 4),
-    i = n % 4 * 2;
-  return e[r] >> i & 3
-}
-
-function o(e, r, i) {
-  t(e, r, i);
-  let {
-    originX: a,
-    originY: o,
-    tileSize: s
-  } = i, c = Math.floor(a / s), l = Math.floor(o / s), u = Math.floor((a + e - 1) / s), d = Math.floor((o + r - 1) / s);
-  n(c), n(l), n(u), n(d);
-  let f = (u - c + 1) * (d - l + 1),
-    p = new Int32Array(f * 2),
-    m = new Uint16Array(f * 4),
-    h = new Uint32Array(f * 4),
-    g = new Uint32Array(f + 1),
-    _ = 0,
-    v = 0;
-  for (let t = l; t <= d; t++)
-    for (let n = c; n <= u; n++) {
-      let i = Math.max(a, n * s),
-        c = Math.max(o, t * s),
-        l = Math.min(a + e, (n + 1) * s),
-        u = Math.min(o + r, (t + 1) * s),
-        d = _ * 4,
-        f = l - i,
-        h = u - c;
-      p[_ * 2] = n, p[_ * 2 + 1] = t, m[d] = i - n * s, m[d + 1] = c - t * s, m[d + 2] = f, m[d + 3] = h, g[_] = v, v += Math.ceil(f * h / 4), _ += 1
-    }
-  return g[f] = v, {
-    total: 0,
-    completed: 0,
-    unpainted: 0,
-    mismatched: 0,
-    originX: a,
-    originY: o,
-    width: e,
-    height: r,
-    tileSize: s,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: new Uint8Array(v)
-  }
-}
-
-function* s(t, n, i, a, s, l) {
-  e(t, n, i, a, s);
-  let {
-    originX: u,
-    originY: d,
-    tileSize: f,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: _
-  } = o(i, a, s), v = h.length / 4, y = 0, b = 0, x = 0, S = 0, C = 0, w = c(l, v);
-  for (let e of w) {
-    y = e;
-    let a = y * 2,
-      o = y * 4,
-      s = y * 4,
-      c = p[a],
-      l = p[a + 1],
-      v = m[o],
-      w = m[o + 1],
-      T = m[o + 2],
-      E = m[o + 3],
-      D = c * f + v - u,
-      O = l * f + w - d,
-      k = 0;
-    for (let e = 0; e < E; e++) {
-      for (let a = 0; a < T; a++) {
-        let o = ((O + e) * i + D + a) * 4,
-          c = 0;
-        t[o + 3] >= 16 && (h[s + 0] += 1, b += 1, n[o + 3] < 16 ? (c = 2, h[s + 2] += 1, S += 1) : t[o] === n[o] && t[o + 1] === n[o + 1] && t[o + 2] === n[o + 2] ? (c = 1, h[s + 1] += 1, x += 1) : (c = 3, h[s + 3] += 1, C += 1)), r(_, g[y], k, c), k += 1
+function S(e, t) {
+  if (typeof EventSource > `u`) return () => {};
+  let n, r = !1,
+    i = 0,
+    a, o, s = () => document.visibilityState !== `hidden` && navigator.onLine,
+    c = () => {
+      n == null || n.close(), n = void 0, clearTimeout(o), clearTimeout(a), a = void 0
+    },
+    l = () => {
+      if (c(), r || !s()) return;
+      let e = Math.min(6e4, 2e3 * 2 ** Math.min(i++, 5));
+      a = setTimeout(() => {
+        a = void 0, d()
+      }, e * (.5 + Math.random() / 2))
+    },
+    u = () => {
+      clearTimeout(o), o = setTimeout(l, 55e3)
+    },
+    d = () => {
+      if (r || n || a !== void 0 || !s()) return;
+      let c = new EventSource(e, {
+        withCredentials: !0
+      });
+      n = c, o = setTimeout(l, 55e3), c.addEventListener(`heartbeat`, () => {
+        n === c && (i = 0, u())
+      }), c.addEventListener(`seals`, e => {
+        if (n !== c) return;
+        i = 0, u();
+        let r = C(e.data);
+        r ? t.onCopies(r) : t.onReset()
+      }), c.onerror = () => {
+        n === c && l()
       }
-      yield O + e
-    }
-  }
-  return {
-    total: b,
-    completed: x,
-    unpainted: S,
-    mismatched: C,
-    originX: u,
-    originY: d,
-    width: i,
-    height: a,
-    tileSize: f,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: _
+    },
+    f = () => {
+      if (!s()) {
+        c();
+        return
+      }
+      n || (d(), t.onReset())
+    };
+  return document.addEventListener(`visibilitychange`, f), window.addEventListener(`online`, f), window.addEventListener(`offline`, f), d(), () => {
+    r = !0, c(), document.removeEventListener(`visibilitychange`, f), window.removeEventListener(`online`, f), window.removeEventListener(`offline`, f)
   }
 }
 
-function c(e, t) {
-  if (!(e != null && e.length)) return Uint32Array.from({
-    length: t
-  }, (e, t) => t);
-  let n = new Uint8Array(t),
-    r = new Uint32Array(t),
-    i = 0;
-  for (let a of e) {
-    if (a >= t) throw Error(`Overlay progress tile index is out of bounds.`);
-    n[a] || (n[a] = 1, r[i++] = a)
+function C(e) {
+  try {
+    let t = JSON.parse(String(e));
+    if (t.reset === !0 || !Array.isArray(t.copies) || t.copies.length > 200) return null;
+    let n = [];
+    for (let e of t.copies) {
+      if (!Number.isSafeInteger(e == null ? void 0 : e.index) || e.index <= 0 || !Number.isSafeInteger(e.paintedPixels) || e.paintedPixels < 0 || e.completedAt !== null && typeof e.completedAt != `string`) return null;
+      n.push({
+        index: e.index,
+        paintedPixels: e.paintedPixels,
+        completedAt: e.completedAt
+      })
+    }
+    return n
+  } catch {
+    return null
   }
-  for (let e = 0; e < t; e += 1) n[e] || (r[i++] = e);
-  return r
+}
+var w = `seven-seals:opened`,
+  T = new WeakMap,
+  E = new WeakMap,
+  D = new WeakMap,
+  O = new WeakMap,
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new WeakMap,
+  M = new WeakMap,
+  N = new WeakMap,
+  P = new WeakMap,
+  F = new class {
+    get data() {
+      return s(i(T, this))
+    }
+    set data(e) {
+      t(i(T, this), e, !0)
+    }
+    get now() {
+      return s(i(E, this))
+    }
+    set now(e) {
+      t(i(E, this), e)
+    }
+    get viewCopy() {
+      return s(i(D, this))
+    }
+    set viewCopy(e) {
+      t(i(D, this), e)
+    }
+    get cardSeal() {
+      return s(i(O, this))
+    }
+    set cardSeal(e) {
+      t(i(O, this), e)
+    }
+    get opened() {
+      return s(i(k, this))
+    }
+    set opened(e) {
+      t(i(k, this), e, !0)
+    }
+    get badgeAwards() {
+      return s(i(A, this))
+    }
+    set badgeAwards(e) {
+      t(i(A, this), e, !0)
+    }
+    get openCount() {
+      return s(i(j, this))
+    }
+    set openCount(e) {
+      t(i(j, this), e)
+    }
+    get openCopies() {
+      return s(i(M, this))
+    }
+    set openCopies(e) {
+      t(i(M, this), e)
+    }
+    get statesByIndex() {
+      return s(i(N, this))
+    }
+    set statesByIndex(e) {
+      t(i(N, this), e)
+    }
+    get readyCount() {
+      return s(i(P, this))
+    }
+    set readyCount(e) {
+      t(i(P, this), e)
+    }
+    constructor() {
+      a(this, T, n(null)), a(this, E, e(() => Math.floor(g.now / f.second) * f.second)), a(this, D, n(null)), a(this, O, n(null)), a(this, k, n(!1)), a(this, A, n(r([]))), a(this, j, e(() => Math.min(b.length, Math.max(0, Math.floor((this.now - x) / v) + 1)))), a(this, M, e(() => b.slice(0, this.openCount))), a(this, N, e(() => {
+        var e;
+        let t = [];
+        for (let n of ((e = this.data) == null ? void 0 : e.copies) ?? []) t[n.index] = n;
+        return t
+      })), a(this, P, e(() => {
+        var e;
+        let t = (e = this.data) == null ? void 0 : e.me;
+        return t ? this.data.pass.tiers.filter(e => t.pixels >= e.pixels && !t.claimed.includes(`tier:${e.pixels}`)).length : 0
+      })), c(this, `watchers`, 0), c(this, `stopPolling`, void 0), c(this, `stopStream`, void 0), c(this, `inflight`, void 0);
+      try {
+        this.opened = localStorage.getItem(w) === `1`
+      } catch {}
+      this.now >= x && this.refresh()
+    }
+    markOpened() {
+      if (!this.opened) {
+        this.opened = !0;
+        try {
+          localStorage.setItem(w, `1`)
+        } catch {}
+      }
+    }
+    isOpen(e) {
+      return e.index <= this.openCount
+    }
+    copyState(e) {
+      return this.statesByIndex[e.index] ?? null
+    }
+    progress(e) {
+      let t = this.copyState(e);
+      return t ? t.paintedPixels / t.totalPixels : 0
+    }
+    watch() {
+      return o(() => void this.refresh()), this.watchers++ === 0 && (this.stopPolling = l(() => void this.refresh(), {
+        interval: f.minute
+      }), this.stopStream = S(`${d.url}/seven-seals/stream`, {
+        onCopies: e => this.applyLive(e),
+        onReset: () => void this.refresh()
+      })), () => {
+        if (--this.watchers === 0) {
+          var e, t;
+          (e = this.stopPolling) == null || e.call(this), (t = this.stopStream) == null || t.call(this)
+        }
+      }
+    }
+    applyLive(e) {
+      let t = this.data;
+      if (!t) {
+        this.refresh();
+        return
+      }
+      let n = {};
+      for (let t of e) n[t.index] = t;
+      let r = 0,
+        i = t.copies.map(e => {
+          let t = n[e.index];
+          return t ? (r++, {
+            ...e,
+            paintedPixels: t.paintedPixels,
+            completedAt: t.completedAt
+          }) : e
+        });
+      this.data = {
+        ...t,
+        copies: i
+      }, r < Object.keys(n).length && this.refresh()
+    }
+    recordFilled(e, t, n = !1, r = []) {
+      let i = this.data;
+      if (!i) {
+        this.refresh();
+        return
+      }
+      if (r.length && (this.badgeAwards = [...this.badgeAwards, ...r]), t > 0) {
+        let a = i.me && {
+            ...i.me,
+            pixels: i.me.pixels + t,
+            sealPixels: i.me.sealPixels.map((n, r) => r === e.seal.index - 1 ? n + t : n),
+            claimed: [...i.me.claimed, ...r.map(e => `badge:${e}`)]
+          },
+          o = i.copies.map(r => r.index === e.index ? {
+            ...r,
+            paintedPixels: Math.min(r.totalPixels, r.paintedPixels + t),
+            completedAt: r.completedAt ?? (n ? new Date().toISOString() : null)
+          } : r);
+        this.data = {
+          ...i,
+          copies: o,
+          me: a
+        }
+      }
+    }
+    async claim(e) {
+      var t;
+      if (!((t = this.data) != null && t.me)) return;
+      let {
+        me: n
+      } = await d.claimSevenSeals(e);
+      this.data && (this.data = {
+        ...this.data,
+        me: n
+      })
+    }
+    refresh() {
+      return this.inflight ?? (this.inflight = this.load().finally(() => {
+        this.inflight = void 0
+      }))
+    }
+    async load() {
+      try {
+        this.data = await d.getSevenSeals()
+      } catch {}
+      this.collectBadges()
+    }
+    async collectBadges() {
+      let e = this.data;
+      if (!(e != null && e.me)) return;
+      let t = e.me.sealPixels.map((t, n) => t >= e.pass.badgePixels ? n + 1 : 0).filter(t => t && !e.me.claimed.includes(`badge:${t}`));
+      for (let e of t) try {
+        await this.claim(`badge:${e}`), this.badgeAwards = [...this.badgeAwards, e]
+      } catch (e) {
+        console.error(`Seven Seals badge collection failed.`, e)
+      }
+    }
+  },
+  I = new Map(b.flatMap(e => y(e).map(([t, n]) => [`${t},${n}`, e]))),
+  L = new Map,
+  R = (e, t, n) => e << 16 | t << 8 | n,
+  z = new Map;
+h.colors.forEach((e, t) => {
+  let n = R(e.rgb[0], e.rgb[1], e.rgb[2]);
+  t > 0 && !z.has(n) && z.set(n, t)
+});
+
+function B(e) {
+  let t = L.get(e.index);
+  return t || (t = new Promise(t => {
+    let n = new Image;
+    n.onload = () => {
+      let e = document.createElement(`canvas`);
+      e.width = n.width, e.height = n.height;
+      let r = e.getContext(`2d`);
+      r == null || r.drawImage(n, 0, 0), t((r == null ? void 0 : r.getImageData(0, 0, n.width, n.height)) ?? null)
+    }, n.onerror = () => {
+      L.delete(e.index), t(null)
+    }, n.src = e.template.src
+  }), L.set(e.index, t)), t
+}
+
+function V(e) {
+  return I.get(`${e[0]},${e[1]}`)
+}
+
+function H(e, t, {
+  tile: n,
+  pixel: r
+}) {
+  let i = t.bounds,
+    a = n[0] * u + r[0] - i.x,
+    o = n[1] * u + r[1] - i.y;
+  if (a < 0 || o < 0 || a >= i.width || o >= i.height) return null;
+  let s = (o * e.width + a) * 4,
+    c = e.data;
+  return c[s + 3] === 0 ? null : z.get(R(c[s], c[s + 1], c[s + 2])) ?? null
+}
+
+function U(e) {
+  let t = V(e);
+  return t && t.opensAt <= Date.now() ? t : void 0
+}
+async function W(e) {
+  let t = U(e.tile);
+  if (!t || e.season !== p) return null;
+  let n = await B(t.seal);
+  return n && H(n, t, e)
+}
+async function G(e) {
+  let t = {
+      right: [],
+      wrong: [],
+      expected: []
+    },
+    n = new Map;
+  for (let t of e) {
+    let e = U(t.tile);
+    e && t.season === p && !n.has(e.seal) && n.set(e.seal, await B(e.seal))
+  }
+  for (let r of e) {
+    let e = U(r.tile);
+    if (!e || r.season !== p) continue;
+    let i = n.get(e.seal),
+      a = i && H(i, e, r);
+    if (a == null) continue;
+    let [o, s, c] = h.colors[a].rgb;
+    if (r.color.a !== 0 && r.color.r === o && r.color.g === s && r.color.b === c) {
+      t.right.push(r);
+      continue
+    }
+    t.wrong.push(r), t.expected.includes(a) || t.expected.push(a)
+  }
+  return t
+}
+var K = 8,
+  q = `rgba(167, 139, 250, 0.9)`;
+
+function J(e) {
+  let t = document.querySelector(`[data-seal-cell="${e}"]`) ?? document.querySelector(`[data-seal-pill="${e}"]`),
+    n = t == null ? void 0 : t.getBoundingClientRect();
+  return t && n && n.width > 0 ? {
+    element: t,
+    rect: n
+  } : null
+}
+
+function Y(e) {
+  e.animate([{
+    transform: `scale(1)`,
+    boxShadow: `0 0 0 0 ${q}`
+  }, {
+    transform: `scale(1.3)`,
+    boxShadow: `0 0 0 7px rgba(167, 139, 250, 0)`
+  }, {
+    transform: `scale(1)`,
+    boxShadow: `0 0 0 0 rgba(167, 139, 250, 0)`
+  }], {
+    duration: 380,
+    easing: `ease-out`
+  })
+}
+
+function X(e) {
+  let t = J(e);
+  if (!t || (Y(t.element), window.matchMedia(`(prefers-reduced-motion: reduce)`).matches)) return;
+  let n = t.rect.left + t.rect.width / 2,
+    r = t.rect.top + t.rect.height / 2,
+    i = [`#a78bfa`, `#c4b5fd`, `#fbbf24`, `#f5f3ff`];
+  for (let e = 0; e < 22; e++) {
+    let t = e / 22 * 2 * Math.PI + Math.random() * .4,
+      a = 50 + Math.random() * 70,
+      o = 4 + Math.random() * 5,
+      s = document.createElement(`div`);
+    s.style.cssText = `position:fixed;left:${n-o/2}px;top:${r-o/2}px;width:${o}px;height:${o}px;border-radius:2px;z-index:60;pointer-events:none;background:${i[e%i.length]};box-shadow:0 0 8px 2px ${q};`, document.body.append(s), s.animate([{
+      transform: `translate(0, 0) scale(1)`,
+      opacity: 1
+    }, {
+      transform: `translate(${Math.cos(t)*a}px, ${Math.sin(t)*a}px) scale(0)`,
+      opacity: 0
+    }], {
+      duration: 700 + Math.random() * 400,
+      easing: `cubic-bezier(0.2, 0.8, 0.3, 1)`,
+      fill: `both`
+    }).finished.finally(() => s.remove())
+  }
+}
+
+function Z(e, t) {
+  let n = new _(u),
+    r = e.getContainer().getBoundingClientRect(),
+    i = window.matchMedia(`(prefers-reduced-motion: reduce)`).matches,
+    a = Math.max(1, Math.floor(t.length / K));
+  t.filter((e, t) => t % a === 0).slice(0, K).forEach(({
+    tile: t,
+    pixel: a,
+    color: o
+  }, s) => {
+    let c = V(t),
+      l = c && J(c.index);
+    if (!l) return;
+    if (i) {
+      s === 0 && Y(l.element);
+      return
+    }
+    let [d, f] = n.pixelsToLatLon(t[0] * u + a[0] + .5, t[1] * u + a[1] + .5, m), p = e.project({
+      lat: d,
+      lng: f
+    }), h = l.rect.left + l.rect.width / 2 - (r.left + p.x), g = l.rect.top + l.rect.height / 2 - (r.top + p.y), _ = document.createElement(`div`), v = document.createElement(`div`);
+    _.style.cssText = `position:fixed;left:${r.left+p.x-5}px;top:${r.top+p.y-5}px;z-index:60;pointer-events:none;`, v.style.cssText = `width:10px;height:10px;border-radius:2px;background:rgb(${o.r},${o.g},${o.b});box-shadow:0 0 6px 2px ${q},0 0 16px 6px rgba(139,92,246,0.55);`, _.append(v), document.body.append(_);
+    let y = {
+      duration: 850,
+      delay: s * 70,
+      fill: `both`
+    };
+    _.animate([{
+      transform: `translateX(0)`
+    }, {
+      transform: `translateX(${h}px)`
+    }], {
+      ...y,
+      easing: `cubic-bezier(0.5, 0, 0.9, 0.6)`
+    }), v.animate([{
+      transform: `translateY(0) scale(1)`,
+      opacity: 1
+    }, {
+      transform: `translateY(${g*.6}px) scale(1.5)`,
+      opacity: 1,
+      offset: .55
+    }, {
+      transform: `translateY(${g}px) scale(0.5)`,
+      opacity: .4
+    }], {
+      ...y,
+      easing: `cubic-bezier(0.2, 0.7, 0.4, 1)`
+    }).finished.finally(() => {
+      _.remove(), Y(l.element)
+    })
+  })
 }
 export {
-  a as i, i as n, o as r, s as t
+  W as a, B as i, Z as n, V as o, G as r, F as s, X as t
 };

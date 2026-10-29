@@ -1,16 +1,36 @@
+import "./DXDHrD2o.js";
 import {
-  t as e
-} from "./2zWoLQam.js";
-import {
-  n as t
-} from "./Dgsikd1Y.js";
+  g as e,
+  m as t
+} from "./C0zwTQsw.js";
 var n = {
-  get standard() {
-    var n;
-    let r = (n = e.route) == null ? void 0 : n.id;
-    return t.oldUi || r === `/(game)/dashboard` || (r == null ? void 0 : r.startsWith(`/(game)/dashboard/`)) === !0
+  get data() {
+    return e.data
+  },
+  get error() {
+    return e.error
+  },
+  get form() {
+    return e.form
+  },
+  get params() {
+    return e.params
+  },
+  get route() {
+    return e.route
+  },
+  get state() {
+    return e.state
+  },
+  get status() {
+    return e.status
+  },
+  get url() {
+    return e.url
   }
 };
+t.updated.check;
+var r = n;
 export {
-  n as t
+  r as t
 };

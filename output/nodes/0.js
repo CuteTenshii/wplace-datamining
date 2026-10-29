@@ -1,65 +1,65 @@
 import {
-  B as e,
-  Dt as t,
-  G as n,
-  H as r,
-  It as i,
-  N as a,
-  Nt as o,
-  Ot as s,
-  Q as c,
-  V as l,
-  W as u,
-  X as d,
-  Xt as f,
-  Z as p,
-  Zt as m,
-  a as h,
-  bt as g,
-  dn as _,
-  ht as v,
-  jt as y,
-  kt as b,
-  lt as x,
-  r as S,
-  rn as C,
-  wt as w,
-  x as T,
+  Bt as e,
+  Ct as t,
+  Ft as n,
+  G as r,
+  J as i,
+  K as a,
+  L as o,
+  Lt as s,
+  Mt as c,
+  Nt as l,
+  Ot as u,
+  T as d,
+  W as f,
+  Y as p,
+  a as m,
+  en as h,
+  et as g,
+  hn as _,
+  jt as v,
+  nt as y,
+  pt as b,
+  r as x,
+  sn as S,
+  tn as C,
+  tt as w,
+  wt as T,
   yt as E
-} from "../chunks/DTpxYwnW.js";
+} from "../chunks/DXDHrD2o.js";
 import {
   n as D
-} from "../chunks/CllndLpb.js";
+} from "../chunks/C0zwTQsw.js";
 import {
   n as O
-} from "../chunks/jACncttS.js";
+} from "../chunks/D6rWhY4a.js";
 import {
   i as k,
   n as A,
   o as j,
   t as M
-} from "../chunks/DFOm6Hnr.js";
+} from "../chunks/Cqe7l6lA.js";
 import {
   t as N
-} from "../chunks/BJCuVZid.js";
+} from "../chunks/C-QaCN9v.js";
 import "../chunks/B8UK1oE5.js";
-import "../chunks/DLSMSySx.js";
+import "../chunks/NrE1x-Kk.js";
 import {
   t as P
-} from "../chunks/2zWoLQam.js";
+} from "../chunks/BPgnlkMP.js";
 import {
   t as F
-} from "../chunks/BMPGVY3G.js";
+} from "../chunks/BPzKxQPM.js";
 import {
   t as I
-} from "../chunks/BUyxRjvp.js";
+} from "../chunks/BH5PwBe6.js";
 import {
   r as L,
   t as R
-} from "../chunks/1037xkJQ.js";
+} from "../chunks/B1lQcRiR.js";
 import {
   t as z
-} from "../chunks/D1DrqaMj.js";
+} from "../chunks/BLUc1uLr.js";
 var B = _({
     load: () => V,
     prerender: () => !0
@@ -75,73 +75,73 @@ function H(e, t) {
   let n = e => e === `/(game)` || e.startsWith(`/(game)/`);
   return n(e) !== n(t)
 }
-var U = c(`<link rel="canonical"/>`),
-  W = c(`<link rel="alternate"/>`),
-  G = c(`<meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/>`, 1),
-  K = c(`<meta name="description"/> <meta itemprop="description"/> <!> <!> <meta property="og:site_name" content="Wplace"/> <meta property="og:title"/> <meta property="og:description"/> <meta property="og:url"/> <meta property="og:type"/> <meta property="og:image"/> <!> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"/> <meta name="twitter:description"/> <meta name="twitter:image"/> <!>`, 1),
-  q = c(`<meta name="robots"/> <!>`, 1);
+var U = y(`<link rel="canonical"/>`),
+  W = y(`<link rel="alternate"/>`),
+  G = y(`<meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/>`, 1),
+  K = y(`<meta name="description"/> <meta itemprop="description"/> <!> <!> <meta property="og:site_name" content="Wplace"/> <meta property="og:title"/> <meta property="og:description"/> <meta property="og:url"/> <meta property="og:type"/> <meta property="og:image"/> <!> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"/> <meta name="twitter:description"/> <meta name="twitter:image"/> <!>`, 1),
+  q = y(`<meta name="robots"/> <!>`, 1);
 
-function J(e, o) {
-  m(o, !0);
-  let c = h(o, `robots`, 3, R),
-    u = i(() => o.metadata ? A(o.metadata.canonicalPath) : null);
-  a(`ojxe63`, e => {
-    var i = q(),
-      a = t(i),
-      f = s(a, 2),
+function J(n, i) {
+  C(i, !0);
+  let s = m(i, `robots`, 3, R),
+    l = e(() => i.metadata ? A(i.metadata.canonicalPath) : null);
+  o(`ojxe63`, e => {
+    var n = q(),
+      o = v(n),
+      f = c(o, 2),
       m = e => {
-        var i = K(),
-          a = t(i),
-          c = s(a, 2),
-          f = s(c, 2),
+        var n = K(),
+          o = v(n),
+          s = c(o, 2),
+          f = c(s, 2),
           m = e => {
-            var t = U();
-            E(() => T(t, `href`, x(u))), d(e, t)
+            var n = U();
+            t(() => d(n, `href`, b(l))), g(e, n)
           };
-        n(f, e => {
-          o.metadata.noindex || e(m)
+        p(f, e => {
+          i.metadata.noindex || e(m)
         });
-        var h = s(f, 2);
-        r(h, 17, () => o.metadata.alternates ?? [], e => e.language, (e, t) => {
-          var n = W();
-          E(e => {
-            T(n, `hreflang`, x(t).language), T(n, `href`, e)
-          }, [() => A(x(t).path)]), d(e, n)
+        var h = c(f, 2);
+        a(h, 17, () => i.metadata.alternates ?? [], e => e.language, (e, n) => {
+          var r = W();
+          t(e => {
+            d(r, `hreflang`, b(n).language), d(r, `href`, e)
+          }, [() => A(b(n).path)]), g(e, r)
         });
-        var g = s(h, 4),
-          _ = s(g, 2),
-          y = s(_, 2),
-          b = s(y, 2),
-          S = s(b, 2),
-          D = s(S, 2),
+        var _ = c(h, 4),
+          y = c(_, 2),
+          x = c(y, 2),
+          C = c(x, 2),
+          T = c(C, 2),
+          D = c(T, 2),
           O = e => {
             var t = G();
-            C(2), d(e, t)
+            S(2), g(e, t)
           };
-        n(D, e => {
-          o.metadata.image || e(O)
+        p(D, e => {
+          i.metadata.image || e(O)
         });
-        var j = s(D, 4),
-          N = s(j, 2),
-          P = s(N, 2),
-          F = s(P, 2),
+        var j = c(D, 4),
+          N = c(j, 2),
+          P = c(N, 2),
+          F = c(P, 2),
           I = e => {
-            var n = p(),
-              r = t(n);
-            l(r, () => k(o.metadata.description)), d(e, n)
+            var t = w(),
+              n = v(t);
+            r(n, () => k(i.metadata.description)), g(e, t)
           };
-        n(F, e => {
-          o.metadata.canonicalPath === `/` && !o.metadata.noindex && e(I)
+        p(F, e => {
+          i.metadata.canonicalPath === `/` && !i.metadata.noindex && e(I)
+        }), t(() => {
+          d(o, `content`, i.metadata.description), d(s, `content`, i.metadata.description), d(_, `content`, i.metadata.title), d(y, `content`, i.metadata.description), d(x, `content`, b(l)), d(C, `content`, i.metadata.type ?? `website`), d(T, `content`, i.metadata.image ?? M), d(j, `content`, i.metadata.title), d(N, `content`, i.metadata.description), d(P, `content`, i.metadata.image ?? M)
         }), E(() => {
-          T(a, `content`, o.metadata.description), T(c, `content`, o.metadata.description), T(g, `content`, o.metadata.title), T(_, `content`, o.metadata.description), T(y, `content`, x(u)), T(b, `content`, o.metadata.type ?? `website`), T(S, `content`, o.metadata.image ?? M), T(j, `content`, o.metadata.title), T(N, `content`, o.metadata.description), T(P, `content`, o.metadata.image ?? M)
-        }), v(() => {
-          w.title = o.metadata.title ?? ``
-        }), d(e, i)
+          u.title = i.metadata.title ?? ``
+        }), g(e, n)
       };
-    n(f, e => {
-      o.metadata && e(m)
-    }), E(() => T(a, `content`, o.metadata && !o.metadata.noindex ? c() : R)), d(e, i)
-  }), f()
+    p(f, e => {
+      i.metadata && e(m)
+    }), t(() => d(o, `content`, i.metadata && !i.metadata.noindex ? s() : R)), g(e, n)
+  }), h()
 }
 
 function Y(e) {
@@ -163,42 +163,42 @@ function Y(e) {
     description: z.info_intro() + ` ` + z.info_invitation()
   }
 }
-var X = c(`<meta name="viewport"/>`);
+var X = y(`<meta name="viewport"/>`);
 
-function Z(e, t) {
-  m(t, !0);
-  let n = i(() => L(P.url, !0, P.status)),
-    r = i(() => Y(P.url.pathname)),
-    o = i(() => P.error ? null : P.data.seo ?? (x(r) ? {
-      ...x(r),
+function Z(n, r) {
+  C(r, !0);
+  let i = e(() => L(P.url, !0, P.status)),
+    a = e(() => Y(P.url.pathname)),
+    s = e(() => P.error ? null : P.data.seo ?? (b(a) ? {
+      ...b(a),
       canonicalPath: P.url.pathname
     } : null));
-  a(`7t0jhl`, e => {
-    var t = X();
-    E(e => T(t, `content`, e), [() => {
+  o(`7t0jhl`, e => {
+    var n = X();
+    t(e => d(n, `content`, e), [() => {
       var e;
       return (e = P.route.id) != null && e.startsWith(`/(public)`) ? `width=device-width, initial-scale=1, viewport-fit=cover` : `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover`
-    }]), d(e, t)
-  }), J(e, {
+    }]), g(e, n)
+  }), J(n, {
     get metadata() {
-      return x(o)
+      return b(s)
     },
     get robots() {
-      return x(n)
+      return b(i)
     }
-  }), f()
+  }), h()
 }
-var Q = c(`<!> <!>`, 1);
+var Q = y(`<!> <!>`, 1);
 
-function $(r, a) {
-  m(a, !0);
-  let c = o(b(`en`));
-  g(() => (document.documentElement.style.setProperty(`--pixel-font-density`, String(I.current || 1)), () => document.documentElement.style.removeProperty(`--pixel-font-density`))), S(() => {
-    y(c, O(), !0)
-  }), g(() => {
+function $(t, r) {
+  C(r, !0);
+  let a = s(l(`en`));
+  T(() => (document.documentElement.style.setProperty(`--pixel-font-density`, String(I.current || 1)), () => document.documentElement.style.removeProperty(`--pixel-font-density`))), x(() => {
+    n(a, O(), !0)
+  }), T(() => {
     var e;
     document.documentElement.lang = ((e = P.data.seo) == null ? void 0 : e.language) ?? N(O())
-  }), g(() => {
+  }), T(() => {
     var e;
     return document.documentElement.toggleAttribute(`data-standard-ui`, F.standard), document.documentElement.toggleAttribute(`data-game-ui`, ((e = P.route.id) == null ? void 0 : e.startsWith(`/(game)`)) === !0), () => {
       document.documentElement.removeAttribute(`data-standard-ui`), document.documentElement.removeAttribute(`data-game-ui`)
@@ -212,33 +212,33 @@ function $(r, a) {
   }) => {
     r || !t || !H(e == null ? void 0 : e.route.id, t.route.id) || (n === `popstate` ? window.location.replace(t.url.href) : (i(), window.location.assign(t.url.href)))
   });
-  var l = Q(),
-    h = t(l);
-  u(h, () => x(c), e => {
+  var o = Q(),
+    u = v(o);
+  i(u, () => b(a), e => {
     Z(e, {})
   });
-  var _ = s(h, 2),
-    v = n => {
-      var r = p(),
-        i = t(r);
-      u(i, () => x(c), n => {
-        var r = p(),
-          i = t(r);
-        e(i, () => a.children), d(n, r)
-      }), d(n, r)
+  var d = c(u, 2),
+    m = e => {
+      var t = w(),
+        n = v(t);
+      i(n, () => b(a), e => {
+        var t = w(),
+          n = v(t);
+        f(n, () => r.children), g(e, t)
+      }), g(e, t)
     },
-    C = i(() => {
+    _ = e(() => {
       var e;
       return (e = P.route.id) == null ? void 0 : e.startsWith(`/(public)`)
     }),
-    w = n => {
-      var r = p(),
-        i = t(r);
-      e(i, () => a.children), d(n, r)
+    y = e => {
+      var t = w(),
+        n = v(t);
+      f(n, () => r.children), g(e, t)
     };
-  n(_, e => {
-    x(C) ? e(v) : e(w, -1)
-  }), d(r, l), f()
+  p(d, e => {
+    b(_) ? e(m) : e(y, -1)
+  }), g(t, o), h()
 }
 export {
   $ as component, B as universal

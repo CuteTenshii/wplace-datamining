@@ -1,174 +1,163 @@
 import {
-  Bt as e,
+  Ft as e,
   Lt as t,
-  Nt as n,
-  jt as r,
-  lt as i,
-  on as a
-} from "./DTpxYwnW.js";
-import {
-  t as o
-} from "./D1DrqaMj.js";
-import {
-  C as s,
-  vt as c
-} from "./Ds81Tj2i.js";
-var l = new WeakMap,
-  u = new WeakMap,
-  d = class {
-    constructor() {
-      e(this, l, n(`loading`)), e(this, u, n(!1)), a(this, `controller`, void 0), a(this, `publicKey`, ``), a(this, `subscription`, void 0), a(this, `needsFreshSubscription`, !1), a(this, `lastPreferences`, ``)
-    }
-    get state() {
-      return i(t(l, this))
-    }
-    set state(e) {
-      r(t(l, this), e, !0)
-    }
-    get busy() {
-      return i(t(u, this))
-    }
-    set busy(e) {
-      r(t(u, this), e, !0)
-    }
-    start(e) {
-      var t;
-      (t = this.controller) == null || t.abort();
-      let n = new AbortController;
-      return this.controller = n, this.subscription = void 0, this.needsFreshSubscription = !1, this.publicKey = ``, this.lastPreferences = ``, this.busy = !1, this.state = `loading`, e !== void 0 && this.refresh(), () => n.abort()
-    }
-    async refresh() {
-      var e;
-      let t = (e = this.controller) == null ? void 0 : e.signal;
-      if (!(!t || t.aborted)) {
-        if (!window.isSecureContext || !(`Notification` in window) || !(`serviceWorker` in navigator) || !(`PushManager` in window)) {
-          this.state = `unsupported`;
-          return
-        }
-        this.busy = !0;
-        try {
-          let e = await s.getNotificationPushConfig(t);
-          if (t.aborted) return;
-          if (this.publicKey = e.publicKey, !this.publicKey) {
-            this.state = `unavailable`;
-            return
-          }
-          if (Notification.permission === `denied`) {
-            this.state = `blocked`;
-            return
-          }
-          let n = await navigator.serviceWorker.getRegistration(),
-            r = await (n == null ? void 0 : n.pushManager.getSubscription());
-          if (t.aborted) return;
-          this.subscription = r ?? void 0;
-          let i = r ? await s.getNotificationPushStatus(r.endpoint, t) : {
-            enabled: !1
-          };
-          if (t.aborted) return;
-          this.state = i.enabled && Notification.permission === `granted` ? `on` : `off`
-        } catch {
-          t.aborted || (this.state = `error`)
-        } finally {
-          t.aborted || (this.busy = !1)
-        }
+  Vt as n,
+  Wt as r,
+  pt as i
+} from "./DXDHrD2o.js";
+
+function a(e) {
+  return Math.floor(Math.random() * e)
+}
+var o = 14.5;
+async function s() {
+  let e = p();
+  if (e) return e;
+  try {
+    if ((await navigator.permissions.query({
+        name: `geolocation`
+      })).state === `granted`) {
+      let e = await new Promise((e, t) => navigator.geolocation.getCurrentPosition(t => e(t), e => t(e)));
+      return {
+        lat: e.coords.latitude,
+        lng: e.coords.longitude,
+        zoom: o
       }
     }
-    async enable() {
-      var e;
-      let t = (e = this.controller) == null ? void 0 : e.signal;
-      if (!(!t || t.aborted || this.busy || !this.publicKey)) {
-        this.state === `off` && (this.needsFreshSubscription = !0), this.busy = !0;
-        try {
-          let e = await Notification.requestPermission();
-          if (t.aborted) return;
-          if (e !== `granted`) {
-            this.state = e === `denied` ? `blocked` : `off`;
-            return
-          }
-          let n = await p(t);
-          if (t.aborted) return;
-          let r = Uint8Array.from(atob(this.publicKey.replace(/-/g, `+`).replace(/_/g, `/`)), e => e.charCodeAt(0)),
-            i = await n.pushManager.getSubscription();
-          if (t.aborted || (i && (this.needsFreshSubscription || !f(i.options.applicationServerKey, r)) && (await i.unsubscribe(), i = null), t.aborted) || (i ?? (i = await n.pushManager.subscribe({
-              userVisibleOnly: !0,
-              applicationServerKey: r
-            })), t.aborted)) return;
-          this.subscription = i, this.needsFreshSubscription = !1;
-          let a = o.device_notifications_body(),
-            l = c.muted,
-            u = o.device_notifications_charges_full();
-          await s.subscribeNotificationPush(i.toJSON(), a, l, u, t), t.aborted || (this.lastPreferences = JSON.stringify([a, l, u]), this.state = `on`)
-        } catch {
-          t.aborted || (this.state = `error`)
-        } finally {
-          t.aborted || (this.busy = !1)
-        }
-      }
+  } catch (e) {
+    console.error(e)
+  }
+  return {
+    ...l().pos,
+    zoom: o
+  }
+}
+
+function c() {
+  return {
+    ...l().pos,
+    zoom: o
+  }
+}
+
+function l() {
+  let e = Object.entries(u),
+    [t, n] = e[a(e.length)];
+  return {
+    city: t,
+    pos: n
+  }
+}
+var u = {
+    tokyo: {
+      lat: 35.677545560719665,
+      lng: 139.76394445809638
+    },
+    paris: {
+      lat: 48.8537151734952,
+      lng: 2.3484026030630787
+    },
+    newYork: {
+      lat: 40.71283173786517,
+      lng: -74.00599771376795
+    },
+    saoPaulo: {
+      lat: -23.550584064565356,
+      lng: -46.63339720713918
+    },
+    sydney: {
+      lat: -33.86943325619071,
+      lng: 151.2083447239608
     }
-    async disable() {
-      var e;
-      let t = (e = this.controller) == null ? void 0 : e.signal;
-      if (!(!t || t.aborted || this.busy || !this.subscription)) {
-        this.busy = !0;
-        try {
-          if (await s.unsubscribeNotificationPush(this.subscription.endpoint, t), t.aborted) return;
-          this.state = `off`
-        } catch {
-          t.aborted || (this.state = `error`)
-        } finally {
-          t.aborted || (this.busy = !1)
-        }
-      }
-    }
-    async syncPreferences(e, t, n) {
-      var r;
-      let i = (r = this.controller) == null ? void 0 : r.signal,
-        a = JSON.stringify([e, t, n]);
-      if (!(!i || i.aborted || this.state !== `on` || this.busy || !this.subscription || this.lastPreferences === a)) {
-        this.busy = !0;
-        try {
-          let r = await s.updateNotificationPushPreferences(this.subscription.endpoint, e, t, n, i);
-          i.aborted || (this.lastPreferences = a, r.enabled || (this.state = `off`))
-        } catch {
-          i.aborted || (this.state = `error`)
-        } finally {
-          i.aborted || (this.busy = !1)
-        }
-      }
-    }
-  };
+  },
+  d = `location`;
 
 function f(e, t) {
-  if (!e) return !1;
-  let n = new Uint8Array(e);
-  return n.length === t.length && n.every((e, n) => e === t[n])
+  localStorage.setItem(d, JSON.stringify({
+    ...e,
+    zoom: t
+  }))
 }
 
-function p(e) {
-  return new Promise((t, n) => {
-    let r = () => {
-        clearTimeout(a), e.removeEventListener(`abort`, i)
-      },
-      i = () => {
-        r(), n(e.reason)
-      },
-      a = setTimeout(() => {
-        r(), n(Error(`Service worker unavailable`))
-      }, 1e4);
-    if (e.addEventListener(`abort`, i, {
-        once: !0
-      }), e.aborted) {
-      i();
-      return
-    }
-    navigator.serviceWorker.ready.then(e => {
-      r(), t(e)
-    }, e => {
-      r(), n(e)
-    })
-  })
+function p() {
+  let e = localStorage.getItem(d);
+  if (!e) return;
+  let t;
+  try {
+    t = JSON.parse(e)
+  } catch {
+    return
+  }
+  if (!t || typeof t != `object`) return;
+  let {
+    lat: n,
+    lng: r,
+    zoom: i
+  } = t;
+  if (!(typeof n != `number` || typeof r != `number` || !m({
+      lat: n,
+      lng: r
+    }))) return {
+    lat: n,
+    lng: r,
+    zoom: typeof i == `number` && h(i) ? i : o
+  }
 }
-var m = new d;
+
+function m(e) {
+  return e.lat >= -90 && e.lat <= 90 && e.lng >= -180 && e.lng <= 180
+}
+
+function h(e) {
+  return Number.isFinite(e) && e >= 0 && e <= 24
+}
+var g = new WeakMap,
+  _ = new WeakMap,
+  v = new class {
+    get idx() {
+      return i(n(g, this))
+    }
+    set idx(t) {
+      e(n(g, this), t, !0)
+    }
+    get entries() {
+      return i(n(_, this))
+    }
+    set entries(t) {
+      e(n(_, this), t)
+    }
+    constructor() {
+      r(this, g, t(-1)), r(this, _, t([]))
+    }
+    hasNext() {
+      return this.idx < this.entries.length - 1
+    }
+    goToNext(e) {
+      let t = this.idx + 1,
+        n = this.entries[t];
+      n && (this.idx = t, e.flyTo({
+        center: n.pos,
+        zoom: n.zoom
+      }))
+    }
+    hasPrev() {
+      return this.idx > 0
+    }
+    goToPrev(e) {
+      let t = this.idx - 1,
+        n = this.entries[t];
+      n && (this.idx = t, e.flyTo({
+        center: n.pos,
+        zoom: n.zoom
+      }))
+    }
+    isEmpty() {
+      return this.entries.length === 0
+    }
+    push(e) {
+      this.idx += 1, this.entries = [...this.entries.slice(0, this.idx), e]
+    }
+  };
 export {
-  m as t
+  h as a, m as i, c as n, v as o, s as r, f as s, u as t
 };

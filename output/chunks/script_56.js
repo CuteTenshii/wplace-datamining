@@ -1,304 +1,312 @@
 import {
-  B as e,
-  N as t,
-  V as n
-} from "./Ds81Tj2i.js";
+  At as e,
+  Bt as t,
+  C as n,
+  Ct as r,
+  F as i,
+  Ft as a,
+  Lt as o,
+  M as s,
+  Mt as c,
+  N as l,
+  Q as u,
+  Y as d,
+  a as f,
+  cn as p,
+  en as m,
+  et as h,
+  f as g,
+  j as ee,
+  jt as _,
+  nt as v,
+  o as y,
+  pt as b,
+  tn as x,
+  wt as S,
+  x as te
+} from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
 import {
-  t as r
-} from "./DXt7w2co.js";
-var i = `# {{wplace_icon}} Seven Seals {{wplace_icon}}
+  t as ne
+} from "./BPzKxQPM.js";
+import {
+  t as C
+} from "./BH5PwBe6.js";
+import {
+  t as w
+} from "./BLUc1uLr.js";
+import {
+  D as T,
+  E,
+  P as re,
+  n as D,
+  vt as O
+} from "./BiTo61FT.js";
+import {
+  n as ie
+} from "./DZdCTbMb.js";
+import {
+  t as k
+} from "./CIoja5KM.js";
+import {
+  t as A
+} from "./CoZdtvw3.js";
+import {
+  r as j
+} from "./NwTlnbFM.js";
+import {
+  t as ae
+} from "./CcUhPTWI.js";
+var M = new Set([`$$slots`, `$$events`, `$$legacy`, `value`, `fontSize`, `color`, `weight`, `mono`, `width`]),
+  N = v(`<canvas></canvas>`);
 
-Seven spectral figures have appeared across the map, each guarding a seal. For seven days a new fragment of the day's seal opens **every hour** somewhere in the world: seven seals, 24 fragments each, 168 in total. Paint the official template pixel by pixel to purify them all before the event ends.
+function P(e, t) {
+  x(t, !0);
+  let r = f(t, `width`, 15, 0),
+    i = y(t, M),
+    s = o(0),
+    c = o(null);
+  S(() => {
+    if (!b(c)) return;
+    let e = b(c),
+      n = e.getContext(`2d`);
+    if (!n) return;
+    let i = t.value,
+      o = t.color ?? `#394e6a`,
+      l = getComputedStyle(e).getPropertyValue(t.mono ? `--font-geist-mono` : `--font-sans`),
+      u = C.current || 1,
+      d = `${t.weight??`normal`} ${t.fontSize}px ${l}`,
+      f = !0;
 
-## Event Details:
-
-- Open the Seven Seals panel to find the open fragments and jump to one
-- Turn on the official overlay and paint the missing pixels in the template's colors
-- Inside a seal only the right color is kept. Wrong colors are discarded, so progress never goes down
-- Every fragment stays open until the event ends
-- **First fragment opens:** <t:1792627200:F>
-- **Last fragment opens:** <t:1793228400:F>
-- **Event ends:** <t:1794441600:F>
-
-## Rewards
-
-- A **Seal Pass**: every pixel you keep on any seal moves you along a track of Droplets and three frames, the last one animated. Claim each step by hand.
-- A **badge per seal** for keeping 150 pixels on it, across any of its fragments
-- A **Hall of Fame** with the top painter of each seal, who wears the MVP frame once the seal is purified
-- A **final prize for the community** if all 168 fragments are completed in time
-
-Purify well, artists!
-`,
-  a = `# {{wplace_icon}} Seven Seals {{wplace_icon}}
-
-Sete figuras espectrais apareceram pelo mapa, cada uma guardando um selo. Durante sete dias, um novo fragmento do selo do dia abre **a cada hora** em algum lugar do mundo: sete selos, 24 fragmentos de cada, 168 no total. Pinte o template oficial pixel por pixel para purificar todos antes do fim do evento.
-
-## Detalhes do evento:
-
-- Abra o painel Seven Seals para achar os fragmentos abertos e ir até um deles
-- Ative o overlay oficial e pinte os pixels que faltam nas cores do template
-- Dentro de um selo só a cor certa fica. Cores erradas são descartadas, então o progresso nunca cai
-- Todo fragmento continua aberto até o fim do evento
-- **Primeiro fragmento abre:** <t:1792627200:F>
-- **Último fragmento abre:** <t:1793228400:F>
-- **Evento termina:** <t:1794441600:F>
-
-## Recompensas
-
-- Um **Passe dos Selos**: cada pixel que você mantém em qualquer selo avança uma trilha de Droplets e três molduras, a última animada. Resgate cada etapa manualmente.
-- Um **badge por selo** ao manter 150 pixels nele, somando qualquer um dos seus fragmentos
-- Um **Hall da Fama** com quem mais pintou em cada selo, que veste a moldura de MVP quando o selo é purificado
-- Um **prêmio final para a comunidade** se os 168 fragmentos forem concluídos a tempo
-
-Boa purificação, artistas!
-`,
-  o = [
-    [1284, 883],
-    [1466, 920],
-    [675, 1132],
-    [1643, 822],
-    [975, 951],
-    [1337, 885],
-    [1255, 696],
-    [1305, 626],
-    [1015, 955],
-    [1586, 947],
-    [1547, 885],
-    [441, 836],
-    [1050, 812],
-    [1586, 955],
-    [1263, 805],
-    [1807, 729],
-    [1167, 1022],
-    [681, 1191],
-    [762, 1104],
-    [1232, 1033],
-    [1236, 822],
-    [1695, 823],
-    [2018, 1262],
-    [1365, 804],
-    [1579, 1002],
-    [1190, 635],
-    [1105, 831],
-    [1663, 879],
-    [1243, 803],
-    [598, 719],
-    [439, 840],
-    [1485, 649],
-    [686, 1048],
-    [435, 843],
-    [1886, 1211],
-    [1690, 866],
-    [1321, 851],
-    [1252, 884],
-    [997, 990],
-    [1241, 807],
-    [608, 1073],
-    [1078, 815],
-    [605, 1030],
-    [1046, 816],
-    [1432, 821],
-    [1469, 950],
-    [389, 804],
-    [1479, 942],
-    [630, 986],
-    [495, 844],
-    [516, 726],
-    [1462, 860],
-    [1114, 1049],
-    [1411, 761],
-    [1452, 743],
-    [1207, 642],
-    [648, 1110],
-    [1100, 1070],
-    [628, 1002],
-    [1677, 772],
-    [1278, 623],
-    [1071, 955],
-    [1509, 865],
-    [1417, 819],
-    [532, 833],
-    [1405, 845],
-    [1211, 601],
-    [1186, 625],
-    [1205, 1019],
-    [1199, 1196],
-    [632, 990],
-    [1819, 1242],
-    [1607, 1038],
-    [1111, 622],
-    [1067, 604],
-    [670, 1189],
-    [928, 941],
-    [1130, 1221],
-    [1201, 637],
-    [1252, 799],
-    [427, 835],
-    [1690, 862],
-    [675, 976],
-    [1043, 984],
-    [1212, 935],
-    [636, 988],
-    [1194, 848],
-    [1062, 995],
-    [1182, 1185],
-    [1246, 974],
-    [1659, 1033],
-    [1291, 790],
-    [1209, 1181],
-    [568, 729],
-    [1117, 583],
-    [1715, 1042],
-    [1245, 1050],
-    [630, 1244],
-    [1214, 651],
-    [599, 1037],
-    [948, 969],
-    [776, 1091],
-    [720, 1135],
-    [1296, 1137],
-    [1754, 1017],
-    [1181, 1090],
-    [634, 995],
-    [1080, 999],
-    [1066, 812],
-    [936, 922],
-    [961, 985],
-    [1100, 626],
-    [1358, 619],
-    [1727, 773],
-    [1854, 1240],
-    [1157, 1058],
-    [1299, 865],
-    [1884, 1179],
-    [1690, 1219],
-    [1691, 995],
-    [1200, 1130],
-    [1165, 831],
-    [1613, 832],
-    [767, 1102],
-    [1448, 839],
-    [1183, 1110],
-    [1751, 755],
-    [1566, 895],
-    [1031, 815],
-    [1566, 931],
-    [1619, 884],
-    [1234, 900],
-    [1276, 1012],
-    [1289, 823],
-    [1592, 1019],
-    [1090, 828],
-    [1063, 970],
-    [1434, 892],
-    [443, 841],
-    [994, 824],
-    [1732, 768],
-    [998, 824],
-    [1108, 954],
-    [1241, 811],
-    [1317, 812],
-    [1603, 912],
-    [1215, 635],
-    [1279, 936],
-    [1245, 808],
-    [592, 720],
-    [1005, 818],
-    [1723, 775],
-    [1025, 990],
-    [1154, 829],
-    [1063, 599],
-    [1447, 911],
-    [362, 787],
-    [1321, 827],
-    [1681, 837],
-    [1038, 948],
-    [1434, 842],
-    [1650, 1028],
-    [684, 1169],
-    [1764, 750],
-    [1409, 881],
-    [1301, 839],
-    [1247, 1065],
-    [778, 1065]
-  ],
-  s = `seven-seals-2026`,
-  c = `Seven Seals`,
-  l = t.hour,
-  u = Date.UTC(2026, 9, 22, 0),
-  d = u + 21 * t.day,
-  f = [`I`, `II`, `III`, `IV`, `V`, `VI`, `VII`].map((t, n) => ({
-    index: n + 1,
-    numeral: t,
-    opensAt: u + n * 24 * l,
-    template: {
-      src: `/img/seven-seals/seal-${n+1}.png`,
-      width: e,
-      height: 2 * e
+    function p() {
+      if (!f || !n) return;
+      n.font = d, n.textBaseline = `alphabetic`;
+      let t = n.measureText(i),
+        c = Math.ceil(Math.max(0, t.actualBoundingBoxLeft) * u) / u,
+        l = Math.ceil(Math.max(0, t.actualBoundingBoxAscent) * u) / u,
+        p = Math.ceil((c + Math.max(t.width, t.actualBoundingBoxRight)) * u) / u,
+        m = Math.ceil((l + Math.max(0, t.actualBoundingBoxDescent)) * u) / u;
+      e.width = Math.max(1, Math.round(p * u)), e.height = Math.max(1, Math.round(m * u)), n.setTransform(u, 0, 0, u, 0, 0), n.font = d, n.textBaseline = `alphabetic`, n.fillStyle = o, n.fillText(i, c, l), r(p), a(s, m)
     }
-  })),
-  p = o.map(([t, n], r) => {
-    let i = f[Math.floor(r / 24)],
-      {
-        width: a,
-        height: o
-      } = i.template,
-      s = Math.ceil(a / e),
-      c = Math.ceil(o / e);
-    return {
-      index: r + 1,
-      number: r % 24 + 1,
-      seal: i,
-      opensAt: u + r * l,
-      area: {
-        minTile: {
-          x: t,
-          y: n
-        },
-        maxTile: {
-          x: t + s - 1,
-          y: n + c - 1
-        }
-      },
-      bounds: {
-        x: t * e + (s * e - a) / 2,
-        y: n * e + (c * e - o) / 2,
-        width: a,
-        height: o
+    return p(), document.fonts.load(d, i).then(p, () => {}), document.fonts.addEventListener(`loadingdone`, p), () => {
+      f = !1, document.fonts.removeEventListener(`loadingdone`, p)
+    }
+  });
+  var l = N();
+  n(l, () => ({
+    style: `width: ${r()??``}px; height: ${b(s)??``}px`,
+    ...i
+  })), g(l, e => a(c, e), () => b(c)), h(e, l), m()
+}
+var F = new Set([`$$slots`, `$$events`, `$$legacy`, `loading`, `charges`, `chargeMax`, `cooldownMs`, `showCooldown`, `maxWidth`, `compact`, `minimized`, `onclick`]),
+  I = v(`<span class="text-sm font-semibold tabular-nums opacity-90 sm:mt-px"> </span>`),
+  L = v(`<!> <div class="flex items-center gap-2 whitespace-nowrap"> <!></div>`, 1),
+  R = v(`<span class="paint-button-balance text-xl leading-none font-semibold svelte-naszew" aria-hidden="true">&infin;</span>`),
+  z = v(`<span><!></span>`),
+  B = v(`<span> </span>`),
+  V = v(`<span><!> <!></span>`),
+  H = v(`<!> <div><span> </span> <!></div>`, 1),
+  U = v(`<span class="loading loading-spinner center-absolute absolute"></span>`),
+  W = v(`<button><div><!></div> <!></button>`);
+
+function G(v, S) {
+  x(S, !0);
+  let C = f(S, `showCooldown`, 3, !0),
+    M = f(S, `compact`, 3, !1),
+    N = f(S, `minimized`, 3, !1),
+    G = y(S, F),
+    K = o(0),
+    q = o(void 0),
+    J = o(void 0),
+    Y = t(() => S.cooldownMs ?? D.cooldown),
+    oe = t(() => O.theme === `dark` ? `rgba(255, 255, 255, 0.3)` : `#394e6a33`),
+    X = t(() => {
+      let e = D.timeoutUntil;
+      if (!e || e.getTime() <= O.now) return;
+      let t = T(e, O.now);
+      return {
+        isBan: t,
+        countdown: t ? null : E(e, O.now)
       }
-    }
-  }),
-  m = f.map(e => p.filter(t => t.seal === e));
+    });
 
-function h(e) {
-  let {
-    minTile: t,
-    maxTile: n
-  } = e.area, r = [];
-  for (let e = t.y; e <= n.y; e++)
-    for (let i = t.x; i <= n.x; i++) r.push([i, e]);
-  return r
-}
-var g = new r(e);
-
-function _(e) {
-  let {
-    bounds: t
-  } = e, [r, i] = g.pixelsToLatLon(t.x + t.width / 2, t.y + t.height / 2, n);
-  return {
-    lat: r,
-    lng: i,
-    zoom: n - .3
+  function se({
+    days: e,
+    hours: t,
+    minutes: n
+  }) {
+    return e > 0 ? `${e}d ${t}h` : t > 0 ? `${t}h ${n}m` : `${n}m`
   }
+  j(() => [S.loading, S.maxWidth, M()], () => {
+    a(J, void 0), requestAnimationFrame(() => {
+      if (!b(q)) return;
+      let e = b(q).offsetWidth;
+      !M() && !S.loading && S.maxWidth !== void 0 && e + 20 > S.maxWidth ? a(J, 16 * (S.maxWidth / e) * .8) : a(J, void 0)
+    })
+  });
+  var Z = W(),
+    ce = e => {
+      var t;
+      ie(`heavy`), (t = S.onclick) == null || t.call(S, e)
+    };
+  n(Z, () => ({
+    ...G,
+    onclick: ce,
+    class: `btn btn-lg sm:btn-xl relative ${b(X)?b(X).isBan?`btn-error`:`btn-warning`:`btn-primary`} ${S.class??``}`,
+    style: `max-width: ${S.maxWidth?`${S.maxWidth}px`:`none`}
+	${b(J)?`;--paint-font-size: ${b(J)}px`:``}`,
+    [te]: {
+      compact: M(),
+      minimized: N(),
+      "pixel-ui": !ne.standard,
+      "w-max": M(),
+      scaled: b(J) !== void 0
+    }
+  }), void 0, void 0, void 0, `svelte-naszew`);
+  var Q = e(Z);
+  let $;
+  var le = e(Q),
+    ue = t => {
+      var n = L(),
+        i = _(n);
+      A(i, {
+        class: `size-6`
+      });
+      var a = c(i, 2),
+        o = e(a),
+        s = c(o),
+        l = t => {
+          var n = I(),
+            i = e(n, !0);
+          p(n), r(e => u(i, e), [() => se(b(X).countdown)]), h(t, n)
+        };
+      d(s, e => {
+        b(X).countdown && e(l)
+      }), p(a), r(e => u(o, `${e??``} `), [() => b(X).isBan ? w.banned() : w.timeout()]), h(t, n)
+    },
+    de = n => {
+      var o = H(),
+        f = _(o);
+      {
+        let e = t(() => M() ? `paint-button-brush size-6 shrink-0 max-sm:hidden` : `size-6`);
+        k(f, {
+          get class() {
+            return b(e)
+          }
+        })
+      }
+      var m = c(f, 2),
+        g = e(m),
+        v = e(g, !0);
+      p(g), i(g, () => ae(M() ? w.paint() : void 0));
+      var y = c(g, 2),
+        x = n => {
+          let i = t(() => S.chargeMax ?? D.data.charges.max),
+            o = t(() => S.chargeMax === void 0 && D.data.charges.infinite);
+          var l = V();
+          let f;
+          var m = e(l),
+            g = e => {
+              var t = R();
+              h(e, t)
+            },
+            _ = n => {
+              var o = z();
+              let c;
+              var l = e(o);
+              {
+                let e = t(() => M() ? `max-w-full object-contain` : void 0),
+                  n = t(() => b(J) ?? 16),
+                  r = t(() => `${Math.floor(S.charges)}/${b(i)}`),
+                  o = t(() => S.disabled ? b(oe) : `#ffffff`);
+                P(l, {
+                  get class() {
+                    return b(e)
+                  },
+                  weight: 600,
+                  get fontSize() {
+                    return b(n)
+                  },
+                  get value() {
+                    return b(r)
+                  },
+                  get color() {
+                    return b(o)
+                  },
+                  get width() {
+                    return b(K)
+                  },
+                  set width(e) {
+                    a(K, e, !0)
+                  }
+                })
+              }
+              p(o), r(e => {
+                c = s(o, 1, `paint-button-balance svelte-naszew`, null, c, {
+                  "min-w-0": M()
+                }), ee(o, `width: ${e??``}px`)
+              }, [() => (Math.floor(b(K) / 5) + 1) * 5]), h(n, o)
+            };
+          d(m, e => {
+            b(o) ? e(g) : e(_, -1)
+          });
+          var v = c(m, 2),
+            y = t => {
+              var n = B();
+              let i;
+              var a = e(n);
+              p(n), r(e => {
+                i = s(n, 1, `paint-button-cooldown min-w-7 text-xs svelte-naszew`, null, i, {
+                  "shrink-0": M()
+                }), u(a, `(${e??``})`)
+              }, [() => re(b(Y))]), h(t, n)
+            };
+          d(v, e => {
+            !b(o) && C() && S.charges < b(i) && b(Y) !== void 0 && e(y)
+          }), p(l), r(() => f = s(l, 1, `paint-button-charges flex items-center gap-1 sm:mt-px svelte-naszew`, null, f, {
+            "min-w-0": M(),
+            "max-w-full": M()
+          })), h(n, l)
+        };
+      d(y, e => {
+        S.charges !== void 0 && D.data && e(x)
+      }), p(m), r(e => {
+        s(m, 1, l(M() ? `paint-button-label flex min-w-0 items-center gap-2 whitespace-nowrap max-sm:flex-col max-sm:gap-0` : `flex items-center gap-2 whitespace-nowrap`), `svelte-naszew`), s(g, 1, l(M() ? `max-w-full truncate` : void 0), `svelte-naszew`), u(v, e)
+      }, [() => w.paint()]), h(n, o)
+    };
+  d(le, e => {
+    b(X) ? e(ue) : e(de, -1)
+  }), p(Q), g(Q, e => a(q, e), () => b(q));
+  var fe = c(Q, 2),
+    pe = e => {
+      var t = U();
+      h(e, t)
+    };
+  d(fe, e => {
+    S.loading && e(pe)
+  }), p(Z), r(() => $ = s(Q, 1, `paint-button-content flex items-center gap-1.5 svelte-naszew`, null, $, {
+    "min-w-0": M(),
+    "max-w-full": M()
+  })), h(v, Z), m()
 }
-var v = {
-  id: s,
-  titleEn: c,
-  titlePt: c,
-  textEn: i,
-  textPt: a,
-  location: _(p[0])
-};
+
+function K(e, t, n) {
+  return e < t ? t : e > n ? n : e
+}
+
+function q(e, t) {
+  let n = 10 ** t;
+  return Math.round(e * n) / n
+}
+
+function J(e) {
+  if (e < 1e3) return String(e);
+  let t = [`K`, `M`, `B`, `T`, `Q`],
+    n = 0,
+    r = e / 1e3;
+  for (; Math.round(r) >= 1e3 && n < t.length - 1;) r /= 1e3, n++;
+  return `${q(r,+(r<10))}${t[n]}`
+}
 export {
-  d as a, _ as c, l as i, h as l, p as n, u as o, m as r, c as s, f as t, v as u
+  P as a, G as i, J as n, q as r, K as t
 };

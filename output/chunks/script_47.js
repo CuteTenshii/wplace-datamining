@@ -1,108 +1,163 @@
 import {
-  H as e,
-  n as t
-} from "./Ds81Tj2i.js";
-import {
-  i as n,
-  r
-} from "./De0pXVvq.js";
-var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
-
-function a(e) {
-  if (e === null) return !1;
-  let t = e.trim().toLowerCase();
-  return t !== `0` && t !== `false`
-}
-
-function o(e) {
-  if (e === null || e.trim() === ``) return;
-  let t = Number(e);
-  return Number.isFinite(t) ? t : void 0
-}
-
-function s(t) {
-  let s = {
-      opaque: !0
+  At as e,
+  C as t,
+  Ct as n,
+  K as r,
+  T as i,
+  a,
+  cn as o,
+  en as s,
+  et as c,
+  o as l,
+  pt as u,
+  rt as d,
+  tn as f
+} from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
+var p = `#000000`,
+  m = `#ed1c24`,
+  h = `#600018`,
+  g = `#ffffff`,
+  _ = `#f9dd3b`,
+  v = `#ff7f27`,
+  y = `#f38da9`,
+  b = `#87ff5e`,
+  x = `#13e67b`,
+  S = {
+    rows: [`......aaaa......`, `....aabbbbaa....`, `...acbbbbbdda...`, `..acbbbdddddea..`, `..acbbbdddeeea..`, `.acbbddddeeeeea.`, `.aedbbbddeeeeea.`, `.aeddddbbeeeeea.`, `.aeeddbbcceeeea.`, `..aeeecccceeea..`, `..aeeeecccccea..`, `...aeeeecccca...`, `....aaeeccaa....`, `......aaaa......`],
+    palette: {
+      a: p,
+      b: `#4ad95b`,
+      c: `#45cc55`,
+      d: `#3172e7`,
+      e: `#1c61e7`
+    }
+  },
+  C = {
+    rows: [`..kkk...kkk..`, `.krrrk.krrrk.`, `krwrrrkrrrrrk`, `krrrrrrrrrrrk`, `krrrrrrrrrrrk`, `kdrrrrrrrrrdk`, `.kdrrrrrrrdk.`, `..kdrrrrrdk..`, `...kdrrrdk...`, `....kdrdk....`, `.....kdk.....`, `......k......`],
+    palette: {
+      k: p,
+      r: m,
+      d: h,
+      w: g
+    }
+  },
+  w = [{
+    art: {
+      rows: [`..kkkk..`, `.kyyyyk.`, `kykyykyk`, `kyyyyyyk`, `kykyykyk`, `kyykkyyk`, `.kyyyyk.`, `..kkkk..`],
+      palette: {
+        k: p,
+        y: _
+      }
     },
-    c = t.searchParams,
-    l = o(c.get(`lat`)),
-    u = o(c.get(`lng`));
-  l !== void 0 && u !== void 0 && r({
-    lat: l,
-    lng: u
-  }) && (s.pos = {
-    lat: l,
-    lng: u
-  });
-  let d = o(c.get(`zoom`));
-  d !== void 0 && n(d) && (s.zoom = d);
-  let f = o(c.get(`season`));
-  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
-  let p = c.get(`opaque`);
-  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
-  let m = c.get(`area`);
-  if (m) {
-    let e = m.split(`,`);
-    if (e.length === 4) {
-      let [t, n, r, i] = e.map(e => o(e));
-      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
-        south: t,
-        west: n,
-        north: r,
-        east: i
+    x: 7,
+    y: 6
+  }, {
+    art: {
+      rows: [`..kkkk..`, `.krrwrk.`, `krwrrrrk`, `krrrrwrk`, `kkkkkkkk`, `..kwwk..`, `..kwwk..`, `..kkkk..`],
+      palette: {
+        k: p,
+        r: m,
+        w: g
+      }
+    },
+    x: 9,
+    y: 35
+  }, {
+    art: {
+      rows: [`.kk.kk.`, `kwrkrrk`, `krrrrrk`, `.krrrk.`, `..krk..`, `...k...`],
+      palette: {
+        k: p,
+        r: m,
+        w: g
+      }
+    },
+    x: 33,
+    y: 33
+  }, {
+    art: {
+      rows: [`.p.p.`, `ppopp`, `.ppp.`, `..g..`, `gg.gg`, `.ggg.`, `..g..`],
+      palette: {
+        p: y,
+        o: v,
+        g: x
+      }
+    },
+    x: 33,
+    y: 9
+  }, {
+    art: {
+      rows: [`..l..`, `l.l..`, `l.l.l`, `lll.l`, `..lll`, `..l..`, `..l..`],
+      palette: {
+        l: b
+      }
+    },
+    x: 70,
+    y: 8
+  }];
+
+function T(e) {
+  let t = [];
+  return e.rows.forEach((n, r) => {
+    for (let i = 0; i < n.length; i++) {
+      let a = e.palette[n[i]];
+      a && t.push({
+        x: i,
+        y: r,
+        color: a
       })
     }
-  }
-  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
-  let h = c.get(`error`);
-  i.includes(h ?? ``) && (s.error = h);
-  let g = c.get(`domain`);
-  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
+  }), t
 }
 
-function c(e, t) {
-  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
+function E(e) {
+  return T(e).sort((e, t) => e.x + e.y - (t.x + t.y) || e.y - t.y)
 }
-var l;
-(function(e) {
-  async function n() {
-    if (!(i() || history.length < 3)) {
-      for (let e = 0; e < 50; e++) history.pushState({}, ``);
-      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
+
+function D(e) {
+  var t;
+  return ((t = e.rows[0]) == null ? void 0 : t.length) ?? 0
+}
+
+function O(e) {
+  return e.rows.length
+}
+var k = d(`<rect width="1" height="1"></rect>`),
+  A = d(`<g></g>`);
+
+function j(e, t) {
+  f(t, !0);
+  let l = a(t, `x`, 3, 0),
+    d = a(t, `y`, 3, 0),
+    p = a(t, `count`, 19, () => t.pixels.length);
+  var m = A();
+  r(m, 21, () => t.pixels.slice(0, p()), e => `${e.x}:${e.y}`, (e, t) => {
+    var r = k();
+    n(() => {
+      i(r, `x`, u(t).x), i(r, `y`, u(t).y), i(r, `fill`, u(t).color)
+    }), c(e, r)
+  }), o(m), n(() => i(m, `transform`, `translate(${l()??``} ${d()??``})`)), c(e, m), s()
+}
+var M = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  N = d(`<svg><!></svg>`);
+
+function P(n, r) {
+  f(r, !0);
+  let i = l(r, M),
+    a = T(S);
+  var u = N();
+  t(u, (e, t) => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 ${e??``} ${t??``}`,
+    "shape-rendering": `crispEdges`,
+    "aria-hidden": `true`,
+    ...i
+  }), [() => D(S), () => O(S)]), j(e(u), {
+    get pixels() {
+      return a
     }
-  }
-  e.reset = n;
-
-  function r() {
-    if (!(`navigation` in window)) return;
-    let e = window.navigation;
-    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
-    let t = e.entries();
-    return Array.isArray(t) ? t.length : void 0
-  }
-
-  function i() {
-    var e;
-    if (t != null && (e = t.data) != null && e.id) return !0;
-    try {
-      let e = r();
-      return e !== void 0 && e >= history.length
-    } catch {
-      return !1
-    }
-  }
-})(l || (l = {}));
-
-function u(e, t, n) {
-  return new Promise(r => {
-    var i;
-    let a = i => {
-      var o;
-      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
-    };
-    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
-  })
+  }), o(u), c(n, u), s()
 }
 export {
-  s as n, c as t
+  w as a, T as c, C as i, j as n, D as o, S as r, E as s, P as t
 };
