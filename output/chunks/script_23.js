@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./B6HDVYVT.js", "./DXDHrD2o.js", "./D6rWhY4a.js", "./pKOrQQBa.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./D6DY2sF0.js", "./DXDHrD2o.js", "./y3VQBYi1.js", "./pKOrQQBa.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -13,7 +13,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   a as u
-} from "./D6rWhY4a.js";
+} from "./y3VQBYi1.js";
 import {
   n as d,
   t as f
@@ -23,7 +23,7 @@ import {
 } from "./DwvdnolT.js";
 import {
   t as m
-} from "./BLUc1uLr.js";
+} from "./jBzjTnBz.js";
 import {
   n as ee,
   o as te,
@@ -3891,7 +3891,7 @@ var Rs = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && u(() => import(`./B6HDVYVT.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4]), import.meta.url), o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(m.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && u(() => import(`./D6DY2sF0.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4]), import.meta.url), o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(m.tor_blocked());
       if (o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(m.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {

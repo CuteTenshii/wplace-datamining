@@ -12,7 +12,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   C as u
-} from "./BiTo61FT.js";
+} from "./DseEmxUY.js";
 var d = `wplace_onboarding_done`,
   f = `wplace_onboarding_experiment`,
   p = 3e3,
