@@ -1,27 +1,30 @@
 import {
-  Ft as e,
-  Gt as t,
-  Ht as n,
-  Lt as r,
-  Nt as i,
-  Ut as a,
-  Vt as o,
-  Wt as s,
-  pt as c,
-  un as l
+  Bt as e,
+  Ft as t,
+  Gt as n,
+  Ht as r,
+  Lt as i,
+  Nt as a,
+  Ut as o,
+  Vt as s,
+  Wt as c,
+  pt as l,
+  un as u
 } from "./DXDHrD2o.js";
 import {
-  C as u
-} from "./DseEmxUY.js";
-var d = `wplace_onboarding_done`,
-  f = `wplace_onboarding_experiment`,
-  p = 3e3,
-  m = `onboarding_intro_v1`,
-  h = [`tour`, `video`],
-  g = `onboarding`,
-  _ = new Set([`signed_in`, `first_paint`]);
+  C as d
+} from "./QdnNA76n.js";
+var f = `wplace_onboarding_done`,
+  p = `wplace_onboarding_experiment`,
+  m = 3e3,
+  h = 3e3,
+  g = 3e3,
+  _ = `onboarding_intro_v2`,
+  v = [`tour`, `video`, `video_signin`, `tour_no_map_click`, `tour_auto_open`],
+  y = `onboarding`,
+  b = new Set([`signed_in`, `first_paint`]);
 
-function v(e) {
+function x(e) {
   try {
     return localStorage.getItem(e)
   } catch {
@@ -29,78 +32,92 @@ function v(e) {
   }
 }
 
-function y(e, t) {
+function S(e, t) {
   try {
     localStorage.setItem(e, t)
   } catch {}
 }
 
-function b(e) {
-  return h.includes(e)
+function C(e) {
+  return v.includes(e)
 }
 
-function x() {
-  let e = v(f);
+function w() {
+  let e = x(p);
   if (!e) return null;
   try {
     let t = JSON.parse(e);
-    return t.experiment !== `onboarding_intro_v1` || typeof t.visitorId != `string` || !b(t.variant) ? null : t
+    return t.experiment !== `onboarding_intro_v2` || typeof t.visitorId != `string` || !C(t.variant) ? null : t
   } catch {
     return null
   }
 }
 
-function S() {
-  let e = new URLSearchParams(location.search).get(g);
-  return b(e) ? e : null
+function T() {
+  let e = new URLSearchParams(location.search).get(y);
+  return C(e) ? e : null
 }
 
-function C() {
+function E() {
   if (typeof crypto.randomUUID == `function`) return crypto.randomUUID();
   let e = crypto.getRandomValues(new Uint8Array(16));
   e[6] = e[6] & 15 | 64, e[8] = e[8] & 63 | 128;
   let t = Array.from(e, e => e.toString(16).padStart(2, `0`)).join(``);
   return `${t.slice(0,8)}-${t.slice(8,12)}-${t.slice(12,16)}-${t.slice(16,20)}-${t.slice(20)}`
 }
-var w = new WeakMap,
-  T = new WeakMap,
-  E = new WeakMap,
-  D = new WeakMap,
+var D = new WeakMap,
   O = new WeakMap,
-  k = new WeakSet,
-  A = class {
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new WeakMap,
+  M = new WeakMap,
+  N = new WeakMap,
+  P = new WeakSet,
+  F = class {
     constructor() {
-      var e;
-      t(this, k), s(this, w, r(v(d) === `1`)), l(this, `autoOpened`, !1), s(this, T, x()), s(this, E, S()), s(this, D, !1), s(this, O, r(i(o(E, this) ?? ((e = o(T, this)) == null ? void 0 : e.variant) ?? `tour`)))
+      var t;
+      n(this, P), c(this, D, i(x(f) === `1`)), u(this, `autoOpened`, !1), c(this, O, w()), c(this, k, T()), c(this, A, !1), c(this, j, i(a(s(k, this) ?? ((t = s(O, this)) == null ? void 0 : t.variant) ?? `tour`))), c(this, M, e(() => this.variant !== `tour_no_map_click`)), c(this, N, e(() => this.variant === `tour_auto_open`))
     }
     get done() {
-      return c(o(w, this))
+      return l(s(D, this))
     }
-    set done(t) {
-      e(o(w, this), t, !0)
+    set done(e) {
+      t(s(D, this), e, !0)
     }
     get variant() {
-      return c(o(O, this))
+      return l(s(j, this))
     }
-    set variant(t) {
-      e(o(O, this), t, !0)
+    set variant(e) {
+      t(s(j, this), e, !0)
+    }
+    get opensOnMapClick() {
+      return l(s(M, this))
+    }
+    set opensOnMapClick(e) {
+      t(s(M, this), e)
+    }
+    get opensAfterIntroTrip() {
+      return l(s(N, this))
+    }
+    set opensAfterIntroTrip(e) {
+      t(s(N, this), e)
     }
     expose() {
-      if (!(o(D, this) || this.done)) {
-        if (n(D, this, !0), !o(T, this) && !o(E, this)) {
+      if (!(s(A, this) || this.done)) {
+        if (r(A, this, !0), !s(O, this) && !s(k, this)) {
           let e = crypto.getRandomValues(new Uint8Array(1))[0];
-          n(T, this, {
-            experiment: m,
-            visitorId: C(),
-            variant: h[e % h.length]
-          }), a(k, this, M).call(this), this.variant = o(T, this).variant
+          r(O, this, {
+            experiment: _,
+            visitorId: E(),
+            variant: v[e % v.length]
+          }), o(P, this, L).call(this), this.variant = s(O, this).variant
         }
         this.track(`exposed`)
       }
     }
     track(e, t) {
-      let n = o(T, this);
-      !n || o(E, this) || this.done && !_.has(e) || u.postOnboardingExperimentEvent({
+      let n = s(O, this);
+      !n || s(k, this) || this.done && !b.has(e) || d.postOnboardingExperimentEvent({
         experiment: n.experiment,
         visitorId: n.visitorId,
         variant: n.variant,
@@ -109,21 +126,21 @@ var w = new WeakMap,
       })
     }
     recordFirstPaint() {
-      a(k, this, j).call(this, `firstPaint`, `first_paint`)
+      o(P, this, I).call(this, `firstPaint`, `first_paint`)
     }
     complete() {
-      a(k, this, j).call(this, `signedIn`, `signed_in`), !this.done && (this.done = !0, y(d, `1`))
+      o(P, this, I).call(this, `signedIn`, `signed_in`), !this.done && (this.done = !0, S(f, `1`))
     }
   };
 
-function j(e, t) {
-  !o(T, this) || o(T, this)[e] || o(E, this) || (o(T, this)[e] = !0, a(k, this, M).call(this), this.track(t))
+function I(e, t) {
+  !s(O, this) || s(O, this)[e] || s(k, this) || (s(O, this)[e] = !0, o(P, this, L).call(this), this.track(t))
 }
 
-function M() {
-  o(T, this) && y(f, JSON.stringify(o(T, this)))
+function L() {
+  s(O, this) && S(p, JSON.stringify(s(O, this)))
 }
-var N = new A;
+var R = new F;
 export {
-  N as n, p as t
+  R as i, h as n, m as r, g as t
 };
