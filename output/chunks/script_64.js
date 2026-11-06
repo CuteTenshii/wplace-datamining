@@ -2,85 +2,168 @@ import {
   At as e,
   Bt as t,
   Ct as n,
-  G as r,
-  Gt as i,
-  Ht as a,
-  M as o,
-  Mt as s,
-  N as c,
-  T as l,
-  Ut as u,
-  Vt as d,
-  Wt as f,
-  Y as p,
-  cn as m,
-  en as h,
-  et as g,
-  j as _,
-  nt as v,
-  o as y,
-  pt as b,
-  tn as x,
-  un as S
+  Ft as r,
+  G as i,
+  Gt as a,
+  Ht as o,
+  Lt as s,
+  M as c,
+  Mt as l,
+  N as u,
+  T as d,
+  Ut as f,
+  Vt as p,
+  Wt as m,
+  Y as h,
+  a as g,
+  cn as _,
+  en as v,
+  et as y,
+  f as b,
+  j as x,
+  nt as S,
+  o as C,
+  pt as w,
+  tn as T,
+  un as E,
+  wt as D
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  t as C
+  t as O
 } from "./DxdGK6Xj.js";
-var w, T, E, D, O, k, A = 9,
-  j = 95,
-  M = 45,
-  N = 5;
+var k = S(`<canvas></canvas>`);
 
-function P(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, N) >>> 2
+function A(e, t) {
+  T(t, !0);
+  let i = g(t, `alt`, 3, ``),
+    a = g(t, `class`, 3, ``),
+    o = s(void 0),
+    l = s(void 0),
+    u = s({
+      width: 0,
+      height: 0
+    });
+  D(() => {
+    let e = new Image,
+      n = !1;
+    return e.src = t.src, e.decode().then(() => {
+      var i;
+      n || (r(l, e), (i = t.onload) == null || i.call(t))
+    }, () => {
+      var e;
+      n || (r(l, void 0), (e = t.onerror) == null || e.call(t))
+    }), () => {
+      n = !0
+    }
+  }), D(() => {
+    let e = w(o);
+    if (!e) return;
+    let t = () => {
+        let t = window.devicePixelRatio || 1;
+        r(u, {
+          width: Math.round(e.clientWidth * t),
+          height: Math.round(e.clientHeight * t)
+        })
+      },
+      n = new ResizeObserver(([e]) => {
+        var n;
+        let i = (n = e.devicePixelContentBoxSize) == null ? void 0 : n[0];
+        i ? r(u, {
+          width: i.inlineSize,
+          height: i.blockSize
+        }) : t()
+      });
+    try {
+      return n.observe(e, {
+        box: `device-pixel-content-box`
+      }), () => n.disconnect()
+    } catch {
+      return n.observe(e), window.addEventListener(`resize`, t), () => {
+        n.disconnect(), window.removeEventListener(`resize`, t)
+      }
+    }
+  });
+
+  function f(e, t) {
+    let {
+      width: n,
+      height: r
+    } = w(u);
+    if (e.width !== n && (e.width = n), e.height !== r && (e.height = r), !n || !r) return;
+    let i = e.getContext(`2d`);
+    if (!i || (i.clearRect(0, 0, n, r), !t)) return;
+    let a = Math.max(n / t.naturalWidth, r / t.naturalHeight),
+      o = t.naturalWidth * a,
+      s = t.naturalHeight * a;
+    i.imageSmoothingEnabled = !1, i.drawImage(t, (n - o) / 2, (r - s) / 2, o, s)
+  }
+  D(() => {
+    let e = w(o);
+    if (!e) return;
+    let t = w(l);
+    f(e, t);
+    let n = () => f(e, t);
+    return e.addEventListener(`contextrestored`, n), () => e.removeEventListener(`contextrestored`, n)
+  });
+  var p = k();
+  b(p, e => r(o, e), () => w(o)), n(() => {
+    c(p, 1, `block ${a()??``}`), d(p, `role`, i() ? `img` : void 0), d(p, `aria-label`, i() || void 0), d(p, `aria-hidden`, !i() || void 0)
+  }), y(e, p), v()
+}
+var j, M, N, P, F, I, L = 9,
+  R = 95,
+  z = 45,
+  B = 5;
+
+function V(e) {
+  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, B) >>> 2
 }
 
-function F(e = ``, t = j, n = M, r = P) {
+function H(e = ``, t = R, n = z, r = V) {
   let i = r(e),
-    a = i % A * (360 / A);
+    a = i % L * (360 / L);
   return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
+}(j = globalThis.customElements) != null && j.get(`minidenticon-svg`) || (M = globalThis.customElements) == null || M.define(`minidenticon-svg`, (F = new WeakMap, I = new WeakSet, N = class extends HTMLElement {
   constructor(...e) {
-    super(...e), i(this, k), f(this, O, !1)
+    super(...e), a(this, I), m(this, F, !1)
   }
   connectedCallback() {
-    u(k, this, I).call(this), a(O, this, !0)
+    f(I, this, U).call(this), o(F, this, !0)
   }
   attributeChangedCallback() {
-    d(O, this) && u(k, this, I).call(this)
+    p(F, this) && f(I, this, U).call(this)
   }
-}, S(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
+}, E(N, `observedAttributes`, [`username`, `saturation`, `lightness`]), P = {
   _: {}
-}, E));
+}, N));
 
-function I() {
+function U() {
   var e;
-  let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
+  let t = N.observedAttributes.map(e => this.getAttribute(e) || void 0),
     n = t.join(`,`);
-  this.innerHTML = (e = u(E, E, D)._)[n] ?? (e[n] = F(...t))
+  this.innerHTML = (e = f(N, N, P)._)[n] ?? (e[n] = H(...t))
 }
-var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
-  R = v(`<div></div>`);
+var W = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
+  G = S(`<div></div>`);
 
-function z(e, i) {
-  x(i, !0), y(i, L);
-  let a = t(() => i.seed && i.seed.length > 0 ? i.seed : i.userId.toString());
-  var s = R();
-  r(s, () => F(b(a), 95, 45), !0), m(s), n(() => o(s, 1, `bg-base-200 minidenticon size-full ${i.class??``??``}`, `svelte-15zr69j`)), g(e, s), h()
+function K(e, r) {
+  T(r, !0), C(r, W);
+  let a = t(() => r.seed && r.seed.length > 0 ? r.seed : r.userId.toString());
+  var o = G();
+  i(o, () => H(w(a), 95, 45), !0), _(o), n(() => c(o, 1, `bg-base-200 minidenticon size-full ${r.class??``??``}`, `svelte-15zr69j`)), y(e, o), v()
 }
-var B = v(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
-  V = v(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
-  H = v(`<div><div><!></div> <!></div>`);
+var q = S(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
+  J = S(`<div><div><!></div> <!></div>`);
 
-function U(t, r) {
-  x(r, !0);
-  var i = H(),
+function Y(t, r) {
+  T(r, !0);
+  var i = J(),
     a = e(i);
-  _(a, `width: 67.76785714285714%`);
-  var u = e(a),
-    d = e => {
-      z(e, {
+  x(a, `width: 67.76785714285714%`);
+  var o = e(a),
+    s = e => {
+      K(e, {
         get userId() {
           return r.userId
         },
@@ -90,23 +173,28 @@ function U(t, r) {
       })
     },
     f = e => {
-      var t = B();
-      n(() => l(t, `src`, r.pictureUrl)), g(e, t)
+      A(e, {
+        class: `bg-base-200 size-full`,
+        get src() {
+          return r.pictureUrl
+        },
+        alt: `User profile`
+      })
     };
-  p(u, e => {
-    r.pictureUrl ? e(f, -1) : e(d)
-  }), m(a);
-  var v = s(a, 2),
-    y = e => {
-      var t = V();
-      _(t, `scale: 114.99999999999999%;`), n(() => l(t, `src`, r.frameUrl)), g(e, t)
+  h(o, e => {
+    r.pictureUrl ? e(f, -1) : e(s)
+  }), _(a);
+  var p = l(a, 2),
+    m = e => {
+      var t = q();
+      x(t, `scale: 114.99999999999999%;`), n(() => d(t, `src`, r.frameUrl)), y(e, t)
     };
-  p(v, e => {
-    r.frameUrl && e(y)
-  }), m(i), n((e, t) => {
-    o(i, 1, e), o(a, 1, t)
-  }, [() => c(C(`relative isolate inline-grid size-10 place-items-center`, r.class)), () => c(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), g(t, i), h()
+  h(p, e => {
+    r.frameUrl && e(m)
+  }), _(i), n((e, t) => {
+    c(i, 1, e), c(a, 1, t)
+  }, [() => u(O(`relative isolate inline-grid size-10 place-items-center`, r.class)), () => u(O(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), y(t, i), v()
 }
 export {
-  z as n, F as r, U as t
+  A as i, K as n, H as r, Y as t
 };
