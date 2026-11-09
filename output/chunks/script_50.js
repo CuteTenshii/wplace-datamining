@@ -2,8 +2,8 @@ import {
   un as e
 } from "./DXDHrD2o.js";
 import {
-  W as t
-} from "./CZ4DazQD.js";
+  G as t
+} from "./CpU225cv.js";
 var n = 2 * Math.PI * 6378137 / 2,
   r = 85.0511287798066;
 

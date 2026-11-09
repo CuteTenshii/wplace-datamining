@@ -8,10 +8,10 @@ import {
   un as o
 } from "./DXDHrD2o.js";
 import {
-  W as s,
+  G as s,
   a as c,
   o as l
-} from "./CZ4DazQD.js";
+} from "./CpU225cv.js";
 
 function u(e, t) {
   if (!(e === void 0 && !t.startsWith(`personal-hq:`))) {

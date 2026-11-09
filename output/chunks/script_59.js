@@ -1,11 +1,11 @@
 import {
-  B as e,
-  N as t,
+  H as e,
+  P as t,
   V as n
-} from "./CZ4DazQD.js";
+} from "./CpU225cv.js";
 import {
   t as r
-} from "./D2ceH-l0.js";
+} from "./AiYUWylH.js";
 var i = `# {{wplace_icon}} Seven Seals {{wplace_icon}}
 
 Seven spectral figures have appeared across the map, each guarding a seal. For seven days a new fragment of the day's seal opens **every hour** somewhere in the world: seven seals, 24 fragments each, 168 in total. Paint the official template pixel by pixel to purify them all before the event ends.
@@ -227,24 +227,24 @@ Boa purificação, artistas!
   l = t.hour,
   u = Date.UTC(2026, 9, 22, 0),
   d = u + 21 * t.day,
-  f = [`I`, `II`, `III`, `IV`, `V`, `VI`, `VII`].map((t, n) => ({
-    index: n + 1,
-    numeral: t,
-    opensAt: u + n * 24 * l,
+  f = [`I`, `II`, `III`, `IV`, `V`, `VI`, `VII`].map((e, t) => ({
+    index: t + 1,
+    numeral: e,
+    opensAt: u + t * 24 * l,
     template: {
-      src: `/img/seven-seals/seal-${n+1}.png`,
-      width: e,
-      height: 2 * e
+      src: `/img/seven-seals/seal-${t+1}.png`,
+      width: n,
+      height: 2 * n
     }
   })),
-  p = o.map(([t, n], r) => {
+  p = o.map(([e, t], r) => {
     let i = f[Math.floor(r / 24)],
       {
         width: a,
         height: o
       } = i.template,
-      s = Math.ceil(a / e),
-      c = Math.ceil(o / e);
+      s = Math.ceil(a / n),
+      c = Math.ceil(o / n);
     return {
       index: r + 1,
       number: r % 24 + 1,
@@ -252,17 +252,17 @@ Boa purificação, artistas!
       opensAt: u + r * l,
       area: {
         minTile: {
-          x: t,
-          y: n
+          x: e,
+          y: t
         },
         maxTile: {
-          x: t + s - 1,
-          y: n + c - 1
+          x: e + s - 1,
+          y: t + c - 1
         }
       },
       bounds: {
-        x: t * e + (s * e - a) / 2,
-        y: n * e + (c * e - o) / 2,
+        x: e * n + (s * n - a) / 2,
+        y: t * n + (c * n - o) / 2,
         width: a,
         height: o
       }
@@ -279,16 +279,16 @@ function h(e) {
     for (let i = t.x; i <= n.x; i++) r.push([i, e]);
   return r
 }
-var g = new r(e);
+var g = new r(n);
 
-function _(e) {
+function _(t) {
   let {
-    bounds: t
-  } = e, [r, i] = g.pixelsToLatLon(t.x + t.width / 2, t.y + t.height / 2, n);
+    bounds: n
+  } = t, [r, i] = g.pixelsToLatLon(n.x + n.width / 2, n.y + n.height / 2, e);
   return {
     lat: r,
     lng: i,
-    zoom: n - .3
+    zoom: e - .3
   }
 }
 var v = {

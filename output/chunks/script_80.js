@@ -2,12 +2,12 @@ import {
   un as e
 } from "./DXDHrD2o.js";
 import {
-  W as t
-} from "./CZ4DazQD.js";
+  G as t
+} from "./CpU225cv.js";
 import {
   n,
   t as r
-} from "./D2ceH-l0.js";
+} from "./AiYUWylH.js";
 var i = [],
   a = new Set;
 
@@ -117,8 +117,9 @@ var f = class {
             i = t;
             for (let e of r.values()) e.setOpacity(i)
           }
+          n.triggerRepaint()
         };
-      n.on(`render`, s), n.on(`remove`, o), t()
+      n.on(`render`, s), n.on(`remove`, o), t(), n.triggerRepaint()
     }
     clearAndPlace(e, t) {
       this.clear(), this.place(e, t)
@@ -144,31 +145,46 @@ var f = class {
   },
   p = class {
     constructor(t) {
-      e(this, `input`, void 0), e(this, `canvas`, void 0), e(this, `maps`, new Set), this.input = t;
+      e(this, `input`, void 0), e(this, `canvas`, void 0), e(this, `context`, void 0), e(this, `pixel`, void 0), e(this, `maps`, new Set), e(this, `uploadQueued`, !1), this.input = t;
       let n = this.input.tileSize;
       this.canvas = document.createElement(`canvas`), this.canvas.width = n, this.canvas.height = n
+    }
+    getContext() {
+      return this.context === void 0 && (this.context = this.canvas.getContext(`2d`, {
+        willReadFrequently: !0
+      })), this.context
     }
     place(e, n, r) {
       var i;
       let a = ((i = t.colors) == null ? void 0 : i[r]) ?? t.colors[0],
-        o = this.canvas.getContext(`2d`);
+        o = this.getContext();
       if (o) {
-        let t = o.createImageData(1, 1),
-          [i, s, c] = a.rgb,
-          l = r === 0 ? 0 : 255;
-        t.data[0] = i, t.data[1] = s, t.data[2] = c, t.data[3] = l, o.putImageData(t, e, n)
+        this.pixel ?? (this.pixel = o.createImageData(1, 1));
+        let [t, i, s] = a.rgb;
+        this.pixel.data[0] = t, this.pixel.data[1] = i, this.pixel.data[2] = s, this.pixel.data[3] = r === 0 ? 0 : 255, o.putImageData(this.pixel, e, n), this.queueUpload()
       }
     }
     remove(e, t) {
-      let n = this.canvas.getContext(`2d`);
-      n && n.clearRect(e, t, 1, 1)
+      let n = this.getContext();
+      n && (n.clearRect(e, t, 1, 1), this.queueUpload())
+    }
+    queueUpload() {
+      this.uploadQueued || (this.uploadQueued = !0, queueMicrotask(() => {
+        this.uploadQueued = !1;
+        for (let n of this.maps) {
+          var e, t;
+          let r = n.getSource(this.input.id);
+          r == null || (e = r.play) == null || e.call(r), r == null || (t = r.pause) == null || t.call(r)
+        }
+      }))
     }
     addTo(e) {
       let t = this.input.id;
       if (e.getSource(t) || e.addSource(t, {
           type: `canvas`,
           canvas: this.canvas,
-          coordinates: this.input.coordinates
+          coordinates: this.input.coordinates,
+          animate: !1
         }), !e.getLayer(t)) {
         let n = d(e, this.input.beforeLayerId, this.input.fallbackBeforeLayerId);
         e.addLayer({

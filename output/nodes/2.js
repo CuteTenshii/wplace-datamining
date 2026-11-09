@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/XhDJdVzt.js", "../chunks/DXDHrD2o.js", "../chunks/DsdVYxWt.js", "../chunks/Dk-v2qx2.js", "../chunks/1pRHtbg3.js", "../chunks/D68SuX41.js", "../chunks/CZ4DazQD.js", "../chunks/a7QZC4SB.js", "../chunks/DwvdnolT.js", "../chunks/pKOrQQBa.js", "../chunks/MIjkXV5b.js", "../chunks/FnlLczIa.js", "../chunks/BrohplP5.js", "../chunks/Bwe2RWji.js", "../chunks/BdmWvKM5.js", "../chunks/BGL3fwXZ.js", "../chunks/NwTlnbFM.js", "../chunks/Cx841BBX.js", "../chunks/B8UK1oE5.js", "../chunks/BOqdYZcs.js", "../chunks/DxdGK6Xj.js", "../chunks/Bu9ydwhE.js", "../chunks/DbHdaTGc.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/C9Ve4EVa.js", "../chunks/CcUhPTWI.js", "../chunks/B6gZ7_27.js", "../chunks/B1wBptZa.js", "../chunks/DOJQjyUP.js", "../chunks/Dup9Aw8g.js", "../chunks/BIl74Os4.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/D-8JxcTo.js", "../chunks/Cjf-kAzw.js", "../chunks/fuqRs8io.js", "../chunks/BjDmGUJ_.js", "../chunks/BjgVV1ld.js", "../chunks/B2bNfFzl.js", "../chunks/BCZB1vbY.js", "../chunks/Gtzyt9Sx.js", "../chunks/BoP9eY8t.js", "../chunks/Bf8qjtRg.js", "../chunks/BpXYC6Wb.js", "../chunks/BFSvX0dZ.js", "../chunks/D5A-baCd.js", "../chunks/B6LaskuO.js", "../chunks/sXUn6dcG.js", "../chunks/Dh9EYgtQ.js", "../chunks/BNhwgsq7.js", "../chunks/DFbkCGhZ.js", "../chunks/DShzI1CQ.js", "../chunks/QRsMSFGC.js", "../chunks/CREFAnlH.js", "../chunks/CFAD_RXy.js", "../chunks/8bCGCnIY.js", "../chunks/CQ4zt4SN.js", "../chunks/ONvGhAH4.js", "../chunks/COHp7O70.js", "../chunks/OwAS1cxe.js", "../chunks/CVJ4mqTV.js", "../chunks/BPnsAYyW.js", "../chunks/D6834Vvf.js", "../chunks/B78eSaZ_.js", "../chunks/AeBerItl.js", "../chunks/5k1iubGh.js", "../chunks/DkzaNZEZ.js", "../chunks/LjGNl9ml.js", "../chunks/kfE00lvU.js", "../chunks/BUGE9Pvc.js", "../chunks/BN4eJD-S.js", "../chunks/CXOwgfkr.js", "../chunks/CGi4Xclo.js", "../chunks/lZ9YJRxp.js", "../chunks/BJsRre-A.js", "../chunks/B060jNjR.js", "../chunks/ec5hgaUH.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/Dqf4CDRQ.js", "../chunks/DXDHrD2o.js", "../chunks/MWFwERoA.js", "../chunks/85zvxr0E.js", "../chunks/B1ShvYww.js", "../chunks/DDhO7ley.js", "../chunks/CpU225cv.js", "../chunks/a7QZC4SB.js", "../chunks/DwvdnolT.js", "../chunks/pKOrQQBa.js", "../chunks/MIjkXV5b.js", "../chunks/FnlLczIa.js", "../chunks/BrohplP5.js", "../chunks/Ib2Ji5nd.js", "../chunks/BItM99zw.js", "../chunks/BGL3fwXZ.js", "../chunks/NwTlnbFM.js", "../chunks/KYL0EWUn.js", "../chunks/B8UK1oE5.js", "../chunks/BOqdYZcs.js", "../chunks/DxdGK6Xj.js", "../chunks/Bu9ydwhE.js", "../chunks/DbHdaTGc.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/DjBc-pY5.js", "../chunks/CcUhPTWI.js", "../chunks/DGSe-bPA.js", "../chunks/DE5pHaGU.js", "../chunks/EaANhATe.js", "../chunks/DEfuOLCn.js", "../chunks/L9TwDPRV.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/CaMp_cs0.js", "../chunks/CxwebB4T.js", "../chunks/Di0FqJDZ.js", "../chunks/BQCRMO9h.js", "../chunks/BjgVV1ld.js", "../chunks/BTKbNxyC.js", "../chunks/BCZB1vbY.js", "../chunks/CaBmLLXC.js", "../chunks/BCEt0nM3.js", "../chunks/D4QSrPjY.js", "../chunks/BWgFwfZP.js", "../chunks/HgBIF7X4.js", "../chunks/D5A-baCd.js", "../chunks/B6LaskuO.js", "../chunks/1ZMjWbu5.js", "../chunks/BZWx9CKV.js", "../chunks/DM9Bj03Y.js", "../chunks/BNW67niY.js", "../chunks/0ZK5MnA_.js", "../chunks/Cls7-X1j.js", "../chunks/psx4io-c.js", "../chunks/CBMsqAX8.js", "../chunks/Cdv1cDyS.js", "../chunks/8bCGCnIY.js", "../chunks/CQ4zt4SN.js", "../chunks/ONvGhAH4.js", "../chunks/COHp7O70.js", "../chunks/OwAS1cxe.js", "../chunks/DguDxi2T.js", "../chunks/D4B-UMCy.js", "../chunks/C3fwyQul.js", "../chunks/C_Nv8C2f.js", "../chunks/AeBerItl.js", "../chunks/BHi8YQky.js", "../chunks/CeaIvvG3.js", "../chunks/Dg_LRwSm.js", "../chunks/BIJkUKLA.js", "../chunks/DrJv5KwU.js", "../chunks/11nIBfOB.js", "../chunks/CXOwgfkr.js", "../chunks/XTh6kaZe.js", "../chunks/BBNHlm-E.js", "../chunks/5oK2Mrhb.js", "../chunks/W0qzDXd8.js"]))) => i.map(i => d[i]);
 import {
   $t as e,
   At as t,
@@ -54,10 +54,10 @@ import {
   C as L,
   S as R,
   y as z
-} from "../chunks/DsdVYxWt.js";
+} from "../chunks/MWFwERoA.js";
 import {
   a as B
-} from "../chunks/D68SuX41.js";
+} from "../chunks/DDhO7ley.js";
 import "../chunks/B8UK1oE5.js";
 import {
   i as V,
@@ -66,7 +66,7 @@ import {
 import "../chunks/BrohplP5.js";
 import {
   t as U
-} from "../chunks/1pRHtbg3.js";
+} from "../chunks/B1ShvYww.js";
 import {
   t as fe
 } from "../chunks/LFiCA4Q8.js";
@@ -78,18 +78,18 @@ import {
 } from "../chunks/BaE5pl88.js";
 import "../chunks/pKOrQQBa.js";
 import {
-  N as W,
-  b as _e,
-  c as ve,
-  ft as G,
+  P as W,
+  Tt as _e,
+  b as ve,
+  c as G,
   l as ye,
   n as K,
-  t as q,
-  u as be,
-  vt as J,
-  wt as xe,
-  x as Se
-} from "../chunks/CZ4DazQD.js";
+  pt as q,
+  t as be,
+  u as xe,
+  x as Se,
+  yt as J
+} from "../chunks/CpU225cv.js";
 import {
   i as Y,
   n as Ce,
@@ -99,14 +99,14 @@ import {
 import "../chunks/BjgVV1ld.js";
 import {
   t as we
-} from "../chunks/BdmWvKM5.js";
+} from "../chunks/BItM99zw.js";
 import {
   i as Te,
   t as Ee
-} from "../chunks/Bwe2RWji.js";
+} from "../chunks/Ib2Ji5nd.js";
 import {
   t as De
-} from "../chunks/C94wAgYo.js";
+} from "../chunks/BjjswOZv.js";
 import {
   t as Oe
 } from "../chunks/BOqdYZcs.js";
@@ -329,12 +329,12 @@ function ot(e, r) {
       ...r.classes
     })),
     be = n(() => r.toast.title),
-    J = n(() => r.toast.description),
-    xe = l(0),
+    xe = n(() => r.toast.description),
     Se = l(0),
+    J = l(0),
     Ce = n(() => Math.round(M(me) * We + M(ve)));
   I(() => {
-    M(be), M(J);
+    M(be), M(xe);
     let e;
     e = r.expanded || r.expandByDefault ? 1 : 1 - r.index * qe;
     let t = S(() => M(L));
@@ -361,18 +361,18 @@ function ot(e, r) {
   let we, Te = n(() => r.toast.promise && M(H) === `loading` || r.toast.duration === 1 / 0);
 
   function Ee() {
-    a(xe, new Date().getTime(), !0), we = setTimeout(() => {
+    a(Se, new Date().getTime(), !0), we = setTimeout(() => {
       var e, t;
       (e = (t = r.toast).onAutoClose) == null || e.call(t, r.toast), Z()
     }, P)
   }
 
   function De() {
-    if (M(Se) < M(xe)) {
-      let e = new Date().getTime() - M(xe);
+    if (M(J) < M(Se)) {
+      let e = new Date().getTime() - M(Se);
       P -= e
     }
-    a(Se, new Date().getTime(), !0)
+    a(J, new Date().getTime(), !0)
   }
   I(() => {
     r.toast.updated && (clearTimeout(we), P = M(ge), Ee())
@@ -1153,7 +1153,7 @@ function Ft(e, r) {
     var e;
     let t = (e = K.data) == null ? void 0 : e.id;
     return S(() => {
-      let e = ve.start(t),
+      let e = G.start(t),
         n = De.start(t);
       return () => {
         e == null || e(), n()
@@ -1165,7 +1165,7 @@ function Ft(e, r) {
       n = J.muted || H.sounds.playerNotification === 0;
     De.state === `on` && !De.busy && S(() => void De.syncPreferences(e, n, t))
   });
-  let o = Oe(() => G.current !== null),
+  let o = Oe(() => q.current !== null),
     s = Oe(() => me.open);
   N(() => {
     let e = `frontend-update`,
@@ -1202,13 +1202,13 @@ function Ft(e, r) {
       }
     } catch {}
     let e = Te();
-    q.init();
+    be.init();
     let t = l(!1);
     I(() => {
       M(t) || K.data && Ee() && (a(t, !0), B(async () => {
         let {
           TWAServices: e
-        } = await import(`../chunks/XhDJdVzt.js`).then(e => e.i);
+        } = await import(`../chunks/Dqf4CDRQ.js`).then(e => e.i);
         return {
           TWAServices: e
         }
@@ -1225,7 +1225,7 @@ function Ft(e, r) {
     let r = l(!1);
     I(() => {
       !K.data || M(r) || (a(r, !0), we.attestDevice().catch(Nt(`[ios-app] device attest:`)))
-    }), xe();
+    }), _e();
     let i = pe(async () => {
         await K.refresh()
       }, {
@@ -1236,16 +1236,16 @@ function Ft(e, r) {
         he().catch(e => console.warn(`[sw] message failed`, e))
       }, 5e3);
     return () => {
-      clearTimeout(o), e(), i(), q.cleanup()
+      clearTimeout(o), e(), i(), be.cleanup()
     }
-  }), N(be);
+  }), N(xe);
   let c = `muted`;
   N(() => {
     J.muted = localStorage.getItem(c) === `1`
   }), I(() => {
     {
       let e = J.muted;
-      _e(), document.querySelectorAll(`audio`).forEach(t => {
+      ve(), document.querySelectorAll(`audio`).forEach(t => {
         t.muted = e
       });
       for (let t of Object.values(ye).filter(e => e instanceof Audio)) t.muted = e;
@@ -1282,7 +1282,7 @@ function Ft(e, r) {
     C = e => {
       var t = F(),
         n = O(t);
-      b(n, () => B(() => import(`../chunks/Cx841BBX.js`), __vite__mapDeps([17, 1, 5, 18, 12, 4, 9, 6, 7, 8, 10, 11, 19, 20, 21, 22, 23]), import.meta.url), null, (e, t) => {
+      b(n, () => B(() => import(`../chunks/KYL0EWUn.js`), __vite__mapDeps([17, 1, 5, 18, 12, 4, 9, 6, 7, 8, 10, 11, 19, 20, 21, 22, 23]), import.meta.url), null, (e, t) => {
         var n = F(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1311,7 +1311,7 @@ function Ft(e, r) {
     E = e => {
       var t = F(),
         n = O(t);
-      b(n, () => B(() => import(`../chunks/C9Ve4EVa.js`), __vite__mapDeps([24, 1, 5, 18, 4, 19, 25, 26, 27, 28, 2, 8, 29, 30, 12, 11, 20, 31]), import.meta.url), null, (e, t) => {
+      b(n, () => B(() => import(`../chunks/DjBc-pY5.js`), __vite__mapDeps([24, 1, 5, 18, 4, 19, 25, 26, 27, 28, 2, 8, 29, 30, 12, 11, 20, 31]), import.meta.url), null, (e, t) => {
         var n = F(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1333,7 +1333,7 @@ function Ft(e, r) {
     A = e => {
       var t = F(),
         n = O(t);
-      b(n, () => B(() => import(`../chunks/D-8JxcTo.js`), __vite__mapDeps([32, 1, 2, 18, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 29, 30, 20, 26, 27, 28, 31, 33, 34, 35, 3, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 21, 54, 55, 22, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]), import.meta.url), null, (e, t) => {
+      b(n, () => B(() => import(`../chunks/CaMp_cs0.js`), __vite__mapDeps([32, 1, 2, 18, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 29, 30, 20, 26, 27, 28, 31, 33, 34, 35, 3, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 21, 55, 56, 22, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]), import.meta.url), null, (e, t) => {
         var n = F(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1353,7 +1353,7 @@ function Ft(e, r) {
     };
   x(D, e => {
     fe.open && e(A)
-  }), i(() => ee(te, `Version: 1794105902991`)), T(e, f), ie()
+  }), i(() => ee(te, `Version: 1794231883744`)), T(e, f), ie()
 }
 export {
   Ft as component
