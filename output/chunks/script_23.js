@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BItM99zw.js", "./DXDHrD2o.js", "./DDhO7ley.js", "./pKOrQQBa.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BkaJgggT.js", "./DXDHrD2o.js", "./fH5gp42m.js", "./pKOrQQBa.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -13,7 +13,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   a as u
-} from "./DDhO7ley.js";
+} from "./fH5gp42m.js";
 import {
   n as d,
   t as f
@@ -23,7 +23,7 @@ import {
 } from "./DwvdnolT.js";
 import {
   t as m
-} from "./B1ShvYww.js";
+} from "./BEz5nTux.js";
 import {
   n as ee,
   o as te,
@@ -3922,7 +3922,7 @@ var Ws = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && u(() => import(`./BItM99zw.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4]), import.meta.url), o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(m.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && u(() => import(`./BkaJgggT.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4]), import.meta.url), o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(m.tor_blocked());
       if (o.status === N.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(m.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -10472,7 +10472,7 @@ var Jl = new WeakMap,
       t(i(tu, this), e)
     }
     constructor() {
-      s(this, `channel`, new BroadcastChannel(`user-channel`)), a(this, Jl, n()), a(this, Yl, n(!0)), a(this, Xl, e(() => zl.count)), a(this, Zl, n(Date.now())), a(this, Ql, e(() => {
+      s(this, `channel`, new BroadcastChannel(`user-channel`)), a(this, Jl, n()), a(this, Yl, n(!0)), a(this, Xl, e(() => zl.count)), a(this, Zl, n(Date.now())), s(this, `batchedRefresh`, void 0), a(this, Ql, e(() => {
         if (!this.data) return;
         let e = this.data.charges;
         if (e.infinite) return 1 / 0;
@@ -10493,7 +10493,10 @@ var Jl = new WeakMap,
         t.type === `refresh` ? (this.data = t.data, this.lastFetch = Date.now()) : t.type === `logout` && (this.data = void 0)
       })
     }
-    async refresh() {
+    refresh() {
+      return this.batchedRefresh || (this.batchedRefresh = this.fetchIdentity(), queueMicrotask(() => this.batchedRefresh = void 0)), this.batchedRefresh
+    }
+    async fetchIdentity() {
       try {
         var e, t;
         return this.loading = !0, this.data = await z.me(), this.lastFetch = Date.now(), (e = this.channel) == null || e.postMessage(JSON.stringify({
