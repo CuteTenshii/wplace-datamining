@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./0rYdJN4h.js", "./DXDHrD2o.js", "./B8UK1oE5.js", "./BEz5nTux.js", "./fH5gp42m.js", "./FnlLczIa.js", "./BrohplP5.js", "./CcUhPTWI.js", "./DjL3wDsD.js", "./DiLeJDp6.js", "./SeEbCFxk.js", "./C59lNMSL.js", "./DwvdnolT.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./DIRX24wO.js", "./DXDHrD2o.js", "./B8UK1oE5.js", "./D3MyAuIN.js", "./DA35870Y.js", "./FnlLczIa.js", "./BrohplP5.js", "./CcUhPTWI.js", "./yjPuDznp.js", "./BXVZ_Mjl.js", "./KjTJwr9k.js", "./czEHeSSc.js", "./DwvdnolT.js", "./CXOwgfkr.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   $ as e,
   Ft as t,
@@ -12,14 +12,14 @@ import {
 } from "./DXDHrD2o.js";
 import {
   x as l
-} from "./C59lNMSL.js";
+} from "./czEHeSSc.js";
 import {
   a as u
-} from "./fH5gp42m.js";
+} from "./DA35870Y.js";
 import "./BrohplP5.js";
 import {
   t as d
-} from "./BEz5nTux.js";
+} from "./D3MyAuIN.js";
 import {
   n as f
 } from "./FnlLczIa.js";
@@ -241,7 +241,7 @@ function E(e, t) {
   pointerdown`,`
   keydown`,`
   blur`,`
-  resize`].map(e=>o(window,e,()=>m(!1),{capture:!0}));return c=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / 0 rYdJN4h.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==r||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(c==null||c(),c=void 0,n=i(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===r&&m(e)}}}))}).catch(()=>{h===r&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
+  resize`].map(e=>o(window,e,()=>m(!1),{capture:!0}));return c=()=>b.forEach(e=>e()),u(async()=>{let{default:e}=await import(`. / DIRX24wO.js`);return{default:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]),import.meta.url).then(({default:e})=>{h!==r||!p.isConnected||p instanceof HTMLDialogElement&&!p.open||(c==null||c(),c=void 0,n=i(e,{target:p,props:{x:_,y:v,url:y,label:s.label,onclose:e=>{h===r&&m(e)}}}))}).catch(()=>{h===r&&(m(!1),f.error(d.link_copy_failed()))}),!0}function _(e){e.shiftKey||g(e)}function v(e){e.key!==`
   ContextMenu`&&!(e.shiftKey&&e.key===`
   F10`)||g(e)&&e.stopPropagation()}let y=()=>m(!1);p.addEventListener(`
   close`,y);let b=o(p,`

@@ -11,7 +11,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   C as l
-} from "./DmNITvOg.js";
+} from "./B7wnxm1M.js";
 var u = `wplace_onboarding_done`,
   d = `wplace_onboarding_experiment`,
   f = 3e3,

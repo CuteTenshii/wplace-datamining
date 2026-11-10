@@ -13,7 +13,7 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as u
-} from "./DiLeJDp6.js";
+} from "./BXVZ_Mjl.js";
 import {
   u as d
 } from "./Bj-o04n3.js";
@@ -204,7 +204,7 @@ function A() {
   if (!(typeof Worker > `u`)) {
     if (S) return S;
     if (T.canAttempt()) try {
-      let e = new Worker(new URL(`` + new URL(`../workers/processing.worker-D3WVztpY.js`, import.meta.url).href, `` + import.meta.url), {
+      let e = new Worker(new URL(`` + new URL(`../workers/processing.worker-DOvfHMa_.js`, import.meta.url).href, `` + import.meta.url), {
         type: `module`
       });
       return e.onmessage = O, e.onerror = () => k(e), e.onmessageerror = () => k(e), S = e, e

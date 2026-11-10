@@ -1,7 +1,7 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C8T-m6q-.js", "./DXDHrD2o.js", "./DF03I5-x.js", "./C9fuSrRa.js", "./ByPCGfb_.js", "./DyblU0kC.js", "./DqUWPDze.js", "./BpgoRBcI.js", "./BB082uy_.js", "./BwXooAKc.js", "./j9LGPc4-.js", "./BHYzSWjN.js", "./Cql93TgI.js", "./DlG5EzC4.js", "./r7bU_1FO.js", "./jgKdJARC.js", "./CMvjTs6Y.js", "./BxTT-G_s.js", "./Ch5o5WW4.js", "./82fiVbZd.js", "./CKE_tCu2.js", "./hek_E4yR.js", "./B_voXB5i.js", "./CrNyoBlc.js", "./CZ2nkupL.js", "./DZ2KLHm1.js", "./9rhzW8Rk.js", "./Cuf3lwTG.js", "./CyTqST3-.js", "./CZ5Gv1Q4.js", "./CoA0GWht.js", "./Bje1NLaH.js", "./C7EiSYhE.js", "./BxFklnAj.js", "./hdUnCNqs.js", "./DQN-rfz_.js", "./DmVx-r04.js", "./R9EBekfu.js", "./Ckkf6moa.js", "./BaEqO8nD.js", "./vBL7Hp-1.js", "./wxpu9iD_.js", "./Cjagtjzp.js", "./DFbaDeM2.js", "./BUXP5qNy.js", "./C5aEo9kj.js", "./D33Eji-0.js", "./DeCKlqeF.js", "./BnpyLzzZ.js", "./BCs1hM3G.js", "./BZb4rLWf.js", "./Cz7vT1Lh.js", "./DJdyTEiL.js", "./CwijzmuL.js", "./B22x9wbk.js", "./B4bbcFj7.js", "./C3UlAi5x.js", "./1_Lt9-0h.js", "./Cy0DyeVK.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C8T-m6q-.js", "./DXDHrD2o.js", "./DF03I5-x.js", "./C9fuSrRa.js", "./ByPCGfb_.js", "./DyblU0kC.js", "./DqUWPDze.js", "./BpgoRBcI.js", "./BB082uy_.js", "./BwXooAKc.js", "./j9LGPc4-.js", "./BHYzSWjN.js", "./Cql93TgI.js", "./DlG5EzC4.js", "./r7bU_1FO.js", "./jgKdJARC.js", "./CMvjTs6Y.js", "./BxTT-G_s.js", "./Ch5o5WW4.js", "./82fiVbZd.js", "./CKE_tCu2.js", "./hek_E4yR.js", "./B_voXB5i.js", "./CrNyoBlc.js", "./CZ2nkupL.js", "./DZ2KLHm1.js", "./9rhzW8Rk.js", "./Cuf3lwTG.js", "./CyTqST3-.js", "./CZ5Gv1Q4.js", "./CoA0GWht.js", "./Bje1NLaH.js", "./C7EiSYhE.js", "./BxFklnAj.js", "./hdUnCNqs.js", "./DQN-rfz_.js", "./DmVx-r04.js", "./R9EBekfu.js", "./Ckkf6moa.js", "./BaEqO8nD.js", "./vBL7Hp-1.js", "./wxpu9iD_.js", "./Cjagtjzp.js", "./DFbaDeM2.js", "./BUXP5qNy.js", "./C5aEo9kj.js", "./D33Eji-0.js", "./DeCKlqeF.js", "./BnpyLzzZ.js", "./BCs1hM3G.js", "./Bf0o0GRU.js", "./BZb4rLWf.js", "./Cz7vT1Lh.js", "./DJdyTEiL.js", "./CwijzmuL.js", "./B22x9wbk.js", "./B4bbcFj7.js", "./C3UlAi5x.js", "./1_Lt9-0h.js", "./Cy0DyeVK.js"]))) => i.map(i => d[i]);
 import {
   a as e
-} from "./fH5gp42m.js";
+} from "./DA35870Y.js";
 import {
   a as t,
   c as n,
@@ -80,15 +80,16 @@ var i = `index, follow, max-image-preview:large`,
     "../patch-notes/markdown/1.7.1 - ⚙️ Favorite Customization & UI Polish.md": () => e(() => import(`./DeCKlqeF.js`).then(e => e.n), __vite__mapDeps([47, 1]), import.meta.url),
     "../patch-notes/markdown/1.7.10 - 🔖 Charges in the Browser Tab.md": () => e(() => import(`./BnpyLzzZ.js`).then(e => e.n), __vite__mapDeps([48, 1]), import.meta.url),
     "../patch-notes/markdown/1.7.11 - 🐞 Bug Fixes.md": () => e(() => import(`./BCs1hM3G.js`).then(e => e.n), __vite__mapDeps([49, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.2 - 🔨 Painting UI & Favorites Improvements.md": () => e(() => import(`./BZb4rLWf.js`).then(e => e.n), __vite__mapDeps([50, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.3 - 🛠️ Support Improvements & UI Refinements.md": () => e(() => import(`./Cz7vT1Lh.js`).then(e => e.n), __vite__mapDeps([51, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.4 - 📝 Support Message Formatting.md": () => e(() => import(`./DJdyTEiL.js`).then(e => e.n), __vite__mapDeps([52, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.4 - 🪛 Improved icons and General Fixes.md": () => e(() => import(`./CwijzmuL.js`).then(e => e.n), __vite__mapDeps([53, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.5 - 🏆 Leaderboard Filters & Alliance Activity Improvements.md": () => e(() => import(`./B22x9wbk.js`).then(e => e.n), __vite__mapDeps([54, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.6 - 🎨 Compact Paint Palette.md": () => e(() => import(`./B4bbcFj7.js`).then(e => e.n), __vite__mapDeps([55, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.7 - 🌐 UI and Accessibility Improvements.md": () => e(() => import(`./C3UlAi5x.js`).then(e => e.n), __vite__mapDeps([56, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.8 - 🧭 Welcome Tour.md": () => e(() => import(`./1_Lt9-0h.js`).then(e => e.n), __vite__mapDeps([57, 1]), import.meta.url),
-    "../patch-notes/markdown/1.7.9 - 🐞 Bug Fixes.md": () => e(() => import(`./Cy0DyeVK.js`).then(e => e.n), __vite__mapDeps([58, 1]), import.meta.url)
+    "../patch-notes/markdown/1.7.12 - 💳 Checkout Options.md": () => e(() => import(`./Bf0o0GRU.js`).then(e => e.n), __vite__mapDeps([50, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.2 - 🔨 Painting UI & Favorites Improvements.md": () => e(() => import(`./BZb4rLWf.js`).then(e => e.n), __vite__mapDeps([51, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.3 - 🛠️ Support Improvements & UI Refinements.md": () => e(() => import(`./Cz7vT1Lh.js`).then(e => e.n), __vite__mapDeps([52, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.4 - 📝 Support Message Formatting.md": () => e(() => import(`./DJdyTEiL.js`).then(e => e.n), __vite__mapDeps([53, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.4 - 🪛 Improved icons and General Fixes.md": () => e(() => import(`./CwijzmuL.js`).then(e => e.n), __vite__mapDeps([54, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.5 - 🏆 Leaderboard Filters & Alliance Activity Improvements.md": () => e(() => import(`./B22x9wbk.js`).then(e => e.n), __vite__mapDeps([55, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.6 - 🎨 Compact Paint Palette.md": () => e(() => import(`./B4bbcFj7.js`).then(e => e.n), __vite__mapDeps([56, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.7 - 🌐 UI and Accessibility Improvements.md": () => e(() => import(`./C3UlAi5x.js`).then(e => e.n), __vite__mapDeps([57, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.8 - 🧭 Welcome Tour.md": () => e(() => import(`./1_Lt9-0h.js`).then(e => e.n), __vite__mapDeps([58, 1]), import.meta.url),
+    "../patch-notes/markdown/1.7.9 - 🐞 Bug Fixes.md": () => e(() => import(`./Cy0DyeVK.js`).then(e => e.n), __vite__mapDeps([59, 1]), import.meta.url)
   })).map(e => e.split(`/`).at(-1).replace(/\.md$/, ``).split(`-`)[0].trim()))].sort((e, t) => e.localeCompare(t, `en`, {
     numeric: !0
   })),
