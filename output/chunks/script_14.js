@@ -113,18 +113,19 @@ var f = new WeakMap,
       i(this, f, t(n({
         charges: !0,
         events: !0,
-        updates: !0
+        updates: !0,
+        patchNotes: !0
       }))), i(this, p, t(100)), i(this, m, t(`none`)), i(this, h, t(100)), i(this, g, t(!1)), i(this, _, t(!1)), i(this, v, t(!0)), i(this, y, t(!0)), i(this, b, t(!0)), i(this, x, t(n(Object.fromEntries(l.map(e => [e, 50]))))), this.nativeCursor = !1;
       try {
-        var e;
+        var e, r;
         let t = JSON.parse(localStorage.getItem(u) ?? `{}`);
         if (!t || typeof t != `object`) return;
-        for (let e of [`charges`, `events`, `updates`]) {
-          var r;
-          typeof((r = t.alerts) == null ? void 0 : r[e]) == `boolean` && (this.alerts[e] = t.alerts[e])
+        for (let e of [`charges`, `events`, `updates`, `patchNotes`]) {
+          var a;
+          typeof((a = t.alerts) == null ? void 0 : a[e]) == `boolean` && (this.alerts[e] = t.alerts[e])
         }
-        this.artOpacity = d(t.artOpacity, 100), o.includes(t.colorblindMode) && (this.colorblindMode = t.colorblindMode), this.colorblindStrength = d(t.colorblindStrength, 100), typeof t.oldUi == `boolean` && (this.oldUi = t.oldUi), typeof t.nativeCursor == `boolean` && (this.nativeCursor = t.nativeCursor), typeof t.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = t.showStoreWhilePainting), typeof t.showHotspots == `boolean` && (this.showHotspots = t.showHotspots), typeof t.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = t.showAllianceHqPins);
-        for (let n of l) this.sounds[n] = d((e = t.sounds) == null ? void 0 : e[n], 50)
+        typeof((e = t.alerts) == null ? void 0 : e.patchNotes) != `boolean` && (this.alerts.patchNotes = this.alerts.updates), this.artOpacity = d(t.artOpacity, 100), o.includes(t.colorblindMode) && (this.colorblindMode = t.colorblindMode), this.colorblindStrength = d(t.colorblindStrength, 100), typeof t.oldUi == `boolean` && (this.oldUi = t.oldUi), typeof t.nativeCursor == `boolean` && (this.nativeCursor = t.nativeCursor), typeof t.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = t.showStoreWhilePainting), typeof t.showHotspots == `boolean` && (this.showHotspots = t.showHotspots), typeof t.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = t.showAllianceHqPins);
+        for (let e of l) this.sounds[e] = d((r = t.sounds) == null ? void 0 : r[e], 50)
       } catch {}
     }
     save() {

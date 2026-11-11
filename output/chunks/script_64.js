@@ -1,200 +1,122 @@
 import {
-  At as e,
-  Bt as t,
-  Ct as n,
-  Ft as r,
-  G as i,
-  Gt as a,
-  Ht as o,
-  Lt as s,
-  M as c,
-  Mt as l,
-  N as u,
-  T as d,
-  Ut as f,
-  Vt as p,
-  Wt as m,
-  Y as h,
-  a as g,
-  cn as _,
-  en as v,
-  et as y,
-  f as b,
-  j as x,
-  nt as S,
-  o as C,
-  pt as w,
-  tn as T,
-  un as E,
-  wt as D
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c,
+  un as l
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  t as O
-} from "./DxdGK6Xj.js";
-var k = S(`<canvas></canvas>`);
+  t as u
+} from "./DB2R_sa5.js";
+var d = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  f = o(`<svg><path d="M480-680q-33 0-56.5-23.5T400-760q0-33 23.5-56.5T480-840q33 0 56.5 23.5T560-760q0 33-23.5 56.5T480-680Zm-60 560v-480h120v480H420Z"></path></svg>`),
+  p = o(`<svg><path d="M10 2h4v4h-4V2ZM8 8h6v12h2v2H8v-2h2V10H8V8Z"></path></svg>`);
 
-function A(e, t) {
-  T(t, !0);
-  let i = g(t, `alt`, 3, ``),
-    a = g(t, `class`, 3, ``),
-    o = s(void 0),
-    l = s(void 0),
-    u = s({
-      width: 0,
-      height: 0
-    });
-  D(() => {
-    let e = new Image,
-      n = !1;
-    return e.src = t.src, e.decode().then(() => {
-      var i;
-      n || (r(l, e), (i = t.onload) == null || i.call(t))
-    }, () => {
-      var e;
-      n || (r(l, void 0), (e = t.onerror) == null || e.call(t))
-    }), () => {
-      n = !0
-    }
-  }), D(() => {
-    let e = w(o);
-    if (!e) return;
-    let t = () => {
-        let t = window.devicePixelRatio || 1;
-        r(u, {
-          width: Math.round(e.clientWidth * t),
-          height: Math.round(e.clientHeight * t)
-        })
-      },
-      n = new ResizeObserver(([e]) => {
-        var n;
-        let i = (n = e.devicePixelContentBoxSize) == null ? void 0 : n[0];
-        i ? r(u, {
-          width: i.inlineSize,
-          height: i.blockSize
-        }) : t()
-      });
-    try {
-      return n.observe(e, {
-        box: `device-pixel-content-box`
-      }), () => n.disconnect()
-    } catch {
-      return n.observe(e), window.addEventListener(`resize`, t), () => {
-        n.disconnect(), window.removeEventListener(`resize`, t)
-      }
-    }
-  });
-
-  function f(e, t) {
-    let {
-      width: n,
-      height: r
-    } = w(u);
-    if (e.width !== n && (e.width = n), e.height !== r && (e.height = r), !n || !r) return;
-    let i = e.getContext(`2d`);
-    if (!i || (i.clearRect(0, 0, n, r), !t)) return;
-    let a = Math.max(n / t.naturalWidth, r / t.naturalHeight),
-      o = t.naturalWidth * a,
-      s = t.naturalHeight * a;
-    i.imageSmoothingEnabled = !1, i.drawImage(t, (n - o) / 2, (r - s) / 2, o, s)
-  }
-  D(() => {
-    let e = w(o);
-    if (!e) return;
-    let t = w(l);
-    f(e, t);
-    let n = () => f(e, t);
-    return e.addEventListener(`contextrestored`, n), () => e.removeEventListener(`contextrestored`, n)
-  });
-  var p = k();
-  b(p, e => r(o, e), () => w(o)), n(() => {
-    c(p, 1, `block ${a()??``}`), d(p, `role`, i() ? `img` : void 0), d(p, `aria-label`, i() || void 0), d(p, `aria-hidden`, !i() || void 0)
-  }), y(e, p), v()
-}
-var j, M, N, P, F, I, L = 9,
-  R = 95,
-  z = 45,
-  B = 5;
-
-function V(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, B) >>> 2
-}
-
-function H(e = ``, t = R, n = z, r = V) {
-  let i = r(e),
-    a = i % L * (360 / L);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(j = globalThis.customElements) != null && j.get(`minidenticon-svg`) || (M = globalThis.customElements) == null || M.define(`minidenticon-svg`, (F = new WeakMap, I = new WeakSet, N = class extends HTMLElement {
-  constructor(...e) {
-    super(...e), a(this, I), m(this, F, !1)
-  }
-  connectedCallback() {
-    f(I, this, U).call(this), o(F, this, !0)
-  }
-  attributeChangedCallback() {
-    p(F, this) && f(I, this, U).call(this)
-  }
-}, E(N, `observedAttributes`, [`username`, `saturation`, `lightness`]), P = {
-  _: {}
-}, N));
-
-function U() {
-  var e;
-  let t = N.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    n = t.join(`,`);
-  this.innerHTML = (e = f(N, N, P)._)[n] ?? (e[n] = H(...t))
-}
-var W = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
-  G = S(`<div></div>`);
-
-function K(e, r) {
-  T(r, !0), C(r, W);
-  let a = t(() => r.seed && r.seed.length > 0 ? r.seed : r.userId.toString());
-  var o = G();
-  i(o, () => H(w(a), 95, 45), !0), _(o), n(() => c(o, 1, `bg-base-200 minidenticon size-full ${r.class??``??``}`, `svelte-15zr69j`)), y(e, o), v()
-}
-var q = S(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
-  J = S(`<div><div><!></div> <!></div>`);
-
-function Y(t, r) {
-  T(r, !0);
-  var i = J(),
-    a = e(i);
-  x(a, `width: 67.76785714285714%`);
-  var o = e(a),
-    s = e => {
-      K(e, {
-        get userId() {
-          return r.userId
-        },
-        get seed() {
-          return r.avatarSeed
-        }
-      })
+function m(o, l) {
+  s(l, !0);
+  let m = a(l, d);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
     },
-    f = e => {
-      A(e, {
-        class: `bg-base-200 size-full`,
-        get src() {
-          return r.pictureUrl
-        },
-        alt: `User profile`
-      })
+    v = t => {
+      var n = p();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        "fill-rule": `evenodd`,
+        ...m
+      })), r(t, n)
     };
-  h(o, e => {
-    r.pictureUrl ? e(f, -1) : e(s)
-  }), _(a);
-  var p = l(a, 2),
-    m = e => {
-      var t = q();
-      x(t, `scale: 114.99999999999999%;`), n(() => d(t, `src`, r.frameUrl)), y(e, t)
-    };
-  h(p, e => {
-    r.frameUrl && e(m)
-  }), _(i), n((e, t) => {
-    c(i, 1, e), c(a, 1, t)
-  }, [() => u(O(`relative isolate inline-grid size-10 place-items-center`, r.class)), () => u(O(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), y(t, i), v()
+  t(g, e => {
+    u.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
+var h = class {
+  constructor({
+    maxBytes: e,
+    maxEntries: t,
+    onEvict: n
+  }) {
+    if (l(this, `entries`, new Map), l(this, `maxBytes`, void 0), l(this, `maxEntries`, void 0), l(this, `onEvict`, void 0), l(this, `retainedBytes`, 0), !Number.isSafeInteger(e) || e < 0) throw RangeError(`ByteLruCache maxBytes must be a non-negative safe integer.`);
+    if (t !== void 0 && (!Number.isSafeInteger(t) || t < 0)) throw RangeError(`ByteLruCache maxEntries must be a non-negative safe integer.`);
+    this.maxEntries = t ?? 1 / 0, this.maxBytes = e, this.onEvict = n
+  }
+  get size() {
+    return this.entries.size
+  }
+  get byteSize() {
+    return this.retainedBytes
+  }
+  has(e) {
+    return this.entries.has(e)
+  }
+  peek(e) {
+    var t;
+    return (t = this.entries.get(e)) == null ? void 0 : t.value
+  }
+  get(e) {
+    let t = this.entries.get(e);
+    if (t) return this.entries.delete(e), this.entries.set(e, t), t.value
+  }
+  set(e, t, n) {
+    if (!Number.isSafeInteger(n) || n < 0) throw RangeError(`ByteLruCache entry bytes must be a non-negative safe integer.`);
+    if (n > this.maxBytes || this.maxEntries === 0) return !1;
+    let r = this.entries.get(e);
+    if (r) {
+      var i;
+      this.entries.delete(e), this.retainedBytes -= r.bytes, r.value !== t && ((i = this.onEvict) == null || i.call(this, e, r.value))
+    }
+    return this.entries.set(e, {
+      value: t,
+      bytes: n
+    }), this.retainedBytes += n, this.evictToBudget(), !0
+  }
+  delete(e) {
+    var t;
+    let n = this.entries.get(e);
+    return n ? (this.entries.delete(e), this.retainedBytes -= n.bytes, (t = this.onEvict) == null || t.call(this, e, n.value), !0) : !1
+  }
+  clear() {
+    if (!this.onEvict) {
+      this.entries.clear(), this.retainedBytes = 0;
+      return
+    }
+    for (let [e, t] of this.entries) this.onEvict(e, t.value);
+    this.entries.clear(), this.retainedBytes = 0
+  }
+  evictWhere(e) {
+    let t = 0;
+    for (let [r, i] of this.entries) {
+      var n;
+      e(r, i.value) && (this.entries.delete(r), this.retainedBytes -= i.bytes, (n = this.onEvict) == null || n.call(this, r, i.value), t += 1)
+    }
+    return t
+  }
+  evictToBudget() {
+    for (; this.retainedBytes > this.maxBytes || this.entries.size > this.maxEntries;) {
+      var e;
+      let t = this.entries.entries().next().value;
+      if (!t) return;
+      let [n, r] = t;
+      this.entries.delete(n), this.retainedBytes -= r.bytes, (e = this.onEvict) == null || e.call(this, n, r.value)
+    }
+  }
+};
 export {
-  A as i, K as n, H as r, Y as t
+  m as n, h as t
 };

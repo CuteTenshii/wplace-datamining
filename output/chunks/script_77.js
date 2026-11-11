@@ -1,49 +1,44 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
+  Gt as e,
+  Ht as t,
+  Ut as n,
+  Vt as r,
+  Wt as i,
+  un as a
 } from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-import {
-  t as l
-} from "./BXVZ_Mjl.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><rect x="0" y="0" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="6" y="0" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="0" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="0" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="0" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="6" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="0" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="6" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="0" y="18" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="6" y="18" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="18" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="18" width="4" height="4" rx="1" opacity="0.12"></rect></svg>`),
-  f = o(`<svg><path d="M14 20v-4h-4v4h4ZM4 14h4v-4H4v4Zm12 0h4v-4h-4v4Zm-6 0h4v-4h-4v4Zm0-10v4h4V4h-4Zm6 4h4V4h2v16h-2v-4h-4v4h4v2H4v-2h4v-4H4v4H2V4h2v4h4V4H4V2h16v2h-4v4Z"></path></svg>`);
+var o, s, c, l, u, d, f = 9,
+  p = 95,
+  m = 45,
+  h = 5;
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 22 22`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+function g(e) {
+  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, h) >>> 2
+}
+
+function _(e = ``, t = p, n = m, r = g) {
+  let i = r(e),
+    a = i % f * (360 / f);
+  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
+}(o = globalThis.customElements) != null && o.get(`minidenticon-svg`) || (s = globalThis.customElements) == null || s.define(`minidenticon-svg`, (u = new WeakMap, d = new WeakSet, c = class extends HTMLElement {
+  constructor(...t) {
+    super(...t), e(this, d), i(this, u, !1)
+  }
+  connectedCallback() {
+    n(d, this, v).call(this), t(u, this, !0)
+  }
+  attributeChangedCallback() {
+    r(u, this) && n(d, this, v).call(this)
+  }
+}, a(c, `observedAttributes`, [`username`, `saturation`, `lightness`]), l = {
+  _: {}
+}, c));
+
+function v() {
+  var e;
+  let t = c.observedAttributes.map(e => this.getAttribute(e) || void 0),
+    r = t.join(`,`);
+  this.innerHTML = (e = n(c, c, l)._)[r] ?? (e[r] = _(...t))
 }
 export {
-  p as t
+  _ as t
 };

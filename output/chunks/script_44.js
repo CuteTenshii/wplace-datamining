@@ -10,8 +10,8 @@ import {
   un as c
 } from "./DXDHrD2o.js";
 import {
-  C as l
-} from "./B7wnxm1M.js";
+  v as l
+} from "./BMMJuSVA.js";
 var u = `wplace_onboarding_done`,
   d = `wplace_onboarding_experiment`,
   f = 3e3,

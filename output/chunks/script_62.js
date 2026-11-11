@@ -1,71 +1,49 @@
 import {
-  At as e,
-  Bt as t,
-  Ct as n,
-  M as r,
-  Mt as i,
-  Q as a,
-  Y as o,
-  a as s,
-  cn as c,
-  en as l,
-  et as u,
-  j as d,
-  jt as f,
-  nt as p,
-  pt as m,
-  tn as h
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  t as g
-} from "./DoSVLhi3.js";
-import {
-  i as _
-} from "./D0_tUrMX.js";
-var v = p(`<span> </span>`),
-  y = p(`<span> </span> <!>`, 1);
+  t as l
+} from "./DB2R_sa5.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`),
+  f = o(`<svg><path d="M7 19H5v-2h2v2Zm12 0h-2v-2h2v2ZM9 15v2H7v-2h2Zm8 2h-2v-2h2v2Zm-6-2H9v-2h2v2Zm4 0h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-2-2H9V9h2v2Zm4 0h-2V9h2v2ZM9 9H7V7h2v2Zm8 0h-2V7h2v2ZM7 7H5V5h2v2Zm12 0h-2V5h2v2Z"></path></svg>`);
 
-function b(p, b) {
-  h(b, !0);
-  let x = s(b, `showId`, 3, !0),
-    S = s(b, `class`, 3, ``),
-    C = t(() => {
-      var e;
-      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
-    }),
-    w = t(() => _(b.id ?? 0));
-  g(p, {
-    get userId() {
-      return b.id
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
     },
-    get class() {
-      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
-    },
-    children: (t, s) => {
-      var l = y(),
-        p = f(l),
-        h = e(p, !0);
-      c(p);
-      var g = i(p, 2),
-        _ = t => {
-          var i = v(),
-            o = e(i);
-          c(i), n(() => {
-            r(i, 1, `${m(w)??``} ${b.idClass??``??``}`), a(o, `#${b.id??``}`)
-          }), u(t, i)
-        };
-      o(g, e => {
-        x() && e(_)
-      }), n(() => {
-        r(p, 1, `inline-block ${(m(C)?m(w):``)??``}`), d(p, m(C)), a(h, b.name)
-      }), u(t, l)
-    },
-    $$slots: {
-      default: !0
-    }
-  }), l()
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    };
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
 export {
-  b as t
+  p as t
 };
