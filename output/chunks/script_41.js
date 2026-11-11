@@ -1,4 +1,11 @@
-var e = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`;
+var e;
+(function(e) {
+  e.Heavy = `HEAVY`, e.Medium = `MEDIUM`, e.Light = `LIGHT`
+})(e || (e = {}));
+var t;
+(function(e) {
+  e.Success = `SUCCESS`, e.Warning = `WARNING`, e.Error = `ERROR`
+})(t || (t = {}));
 export {
-  e as t
+  t as n, e as t
 };

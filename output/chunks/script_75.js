@@ -1,61 +1,52 @@
-var e = 1048576,
-  t = {
-    profile: `constrained`,
-    cpuResourceCacheBytes: 192 * e,
-    workerSourceCacheBytes: 64 * e,
-    colorLookupCacheBytes: 8 * e,
-    colorLookupCacheEntries: 131072,
-    gpuTextureCacheBytes: 16 * e,
-    processingTimeSliceMs: 3
-  },
-  n = {
-    profile: `mobile`,
-    cpuResourceCacheBytes: 256 * e,
-    workerSourceCacheBytes: 96 * e,
-    colorLookupCacheBytes: 12 * e,
-    colorLookupCacheEntries: 196608,
-    gpuTextureCacheBytes: 32 * e,
-    processingTimeSliceMs: 5
-  },
-  r = {
-    profile: `desktop`,
-    cpuResourceCacheBytes: 320 * e,
-    workerSourceCacheBytes: 192 * e,
-    colorLookupCacheBytes: 24 * e,
-    colorLookupCacheEntries: 393216,
-    gpuTextureCacheBytes: 64 * e,
-    processingTimeSliceMs: 8
-  };
+import {
+  M as e,
+  P as t,
+  t as n
+} from "./-wTrak8V.js";
+var r = `button, a[href], input, select, textarea, label, summary, [contenteditable]:not([contenteditable="false"]), [role="button"], [role="link"], [role="menuitem"], [role="option"], [role="tab"], [role="slider"]`;
 
-function i(e) {
-  return typeof e == `number` && Number.isFinite(e) && e > 0 ? e : void 0
-}
+function i(i, a, o) {
+  let s = new Set,
+    c = new Set;
 
-function a({
-  deviceMemoryGiB: e,
-  hardwareConcurrency: a,
-  mobile: o = !1
-} = {}) {
-  let s = i(e),
-    c = i(a);
-  return s !== void 0 && s <= 2 || c !== void 0 && c <= 2 ? t : o || s !== void 0 && s <= 4 || c !== void 0 && c <= 4 ? n : r
-}
+  function l(e) {
+    let n = e.target;
+    return e.pointerType === `touch` || !t(e.button) || !(n instanceof Element) || n.closest(r) ? !1 : n.closest(`dialog`) === ((o == null ? void 0 : o.closest(`dialog`)) ?? null)
+  }
 
-function o(e) {
-  var t;
-  return e ? {
-    deviceMemoryGiB: e.deviceMemory,
-    hardwareConcurrency: e.hardwareConcurrency,
-    mobile: ((t = e.userAgentData) == null ? void 0 : t.mobile) === !0 || /Android|iPhone|iPad|iPod|IEMobile|Mobile|Opera Mini/i.test(e.userAgent ?? ``)
-  } : {}
+  function u(e) {
+    c.delete(e.button), l(e) && (s.add(e.button), n.isMouseButtonBound(e.button) && c.add(e.button), i(e))
+  }
+
+  function d(e) {
+    s.delete(e.button) && (a == null || a(e))
+  }
+  let f = e => u(e),
+    p = t => {
+      t.button <= 0 || (e(t, t.button) ? u(t) : d(t))
+    },
+    m = e => d(e),
+    h = () => s.clear(),
+    g = e => {
+      c.has(e.button) && e.preventDefault()
+    },
+    _ = [
+      [`pointerdown`, f],
+      [`pointermove`, p],
+      [`pointerup`, m],
+      [`pointercancel`, h],
+      [`blur`, h],
+      [`mousedown`, g],
+      [`pointerup`, g],
+      [`mouseup`, g],
+      [`auxclick`, g],
+      [`contextmenu`, g]
+    ];
+  for (let [e, t] of _) window.addEventListener(e, t, !0);
+  return () => {
+    for (let [e, t] of _) window.removeEventListener(e, t, !0)
+  }
 }
-var s = a(o(typeof navigator > `u` ? void 0 : navigator)),
-  c = s.cpuResourceCacheBytes,
-  l = s.workerSourceCacheBytes,
-  u = s.colorLookupCacheBytes,
-  d = s.colorLookupCacheEntries,
-  f = s.gpuTextureCacheBytes,
-  p = s.processingTimeSliceMs;
 export {
-  s as a, f as i, d as n, p as o, c as r, l as s, u as t
+  i as t
 };

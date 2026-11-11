@@ -1,49 +1,58 @@
-import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-import {
-  t as l
-} from "./DB2R_sa5.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>`),
-  f = o(`<svg><path d="M21 22h-2v-2h2v2Zm-8-1h-2v-2h2v2Zm6-1h-2v-2h2v2ZM9 18H7v-2h2v2Zm8 0h-2v-2h2v2Zm-4-4h2v2H9v-2h2v-2h2v2Zm-7 1H4v-2h2v2Zm14 0h-2v-2h2v2ZM9 10h2v2H8v1H6v-2h2v-1H7V8h2v2Zm9 3h-2v-2h2v2ZM3 12H1v-2h2v2Zm20 0h-2v-2h2v2Zm-7-1h-2V9h2v2ZM5 10H3V8h2v2Zm16 0h-2V8h2v2ZM7 8H5V6h2v2Zm12 0h-2V6h2v2ZM5 6H3V4h2v2Zm12 0H9V4h8v2ZM3 4H1V2h2v2Z"></path></svg>`);
+function e(e) {
+  let t, n = !1;
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+  function r(r) {
+    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
+      t = void 0;
+      return
+    }
+    let i = r.changedTouches[0];
+    t = {
+      id: i.identifier,
+      x: i.clientX,
+      y: i.clientY
+    }, r.cancelable && r.preventDefault()
+  }
+
+  function i(e) {
+    if (!t) return;
+    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
+  }
+
+  function a(n) {
+    if (!t) return;
+    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    if (!r) return;
+    let i = t;
+    t = void 0;
+    let a = e.getBoundingClientRect();
+    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
+  }
+
+  function o(e) {
+    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
+  }
+
+  function s(e) {
+    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
+  }
+
+  function c() {
+    t = void 0
+  }
+  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
+    passive: !1
+  }), e.addEventListener(`touchmove`, i, {
+    passive: !0
+  }), e.addEventListener(`touchend`, a, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, c), {
+    destroy() {
+      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
+    }
+  }
 }
 export {
-  p as t
+  e as t
 };

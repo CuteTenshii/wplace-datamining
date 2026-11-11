@@ -1,344 +1,174 @@
-var e;
-(function(e) {
-  e.Unimplemented = `UNIMPLEMENTED`, e.Unavailable = `UNAVAILABLE`
-})(e || (e = {}));
-var t = class extends Error {
-    constructor(e, t, n) {
-      super(e), this.message = e, this.code = t, this.data = n
-    }
-  },
-  n = e => {
-    var t, n;
-    return e != null && e.androidBridge ? `android` : (n = (t = e == null ? void 0 : e.webkit) == null ? void 0 : t.messageHandlers) != null && n.bridge ? `ios` : `web`
-  },
-  r = r => {
-    let i = r.CapacitorCustomPlatform || null,
-      a = r.Capacitor || {},
-      o = a.Plugins = a.Plugins || {},
-      s = () => i === null ? n(r) : i.name,
-      c = () => s() !== `web`,
-      l = e => {
-        let t = f.get(e);
-        return !!(t != null && t.platforms.has(s()) || u(e))
-      },
-      u = e => {
-        var t;
-        return (t = a.PluginHeaders) == null ? void 0 : t.find(t => t.name === e)
-      },
-      d = e => r.console.error(e),
-      f = new Map;
-    return a.convertFileSrc || (a.convertFileSrc = e => e), a.getPlatform = s, a.handleError = d, a.isNativePlatform = c, a.isPluginAvailable = l, a.registerPlugin = (n, r = {}) => {
-      let c = f.get(n);
-      if (c) return console.warn(`Capacitor plugin "${n}" already registered. Cannot register plugins twice.`), c.proxy;
-      let l = s(),
-        d = u(n),
-        p, m = async () => (!p && l in r ? p = p = typeof r[l] == `function` ? await r[l]() : r[l] : i !== null && !p && `web` in r && (p = p = typeof r.web == `function` ? await r.web() : r.web), p), h = (r, i) => {
-          var o, s;
-          if (d) {
-            let e = d == null ? void 0 : d.methods.find(e => i === e.name);
-            if (e) return e.rtype === `promise` ? e => a.nativePromise(n, i.toString(), e) : (e, t) => a.nativeCallback(n, i.toString(), e, t);
-            if (r) return (o = r[i]) == null ? void 0 : o.bind(r)
-          } else if (r) return (s = r[i]) == null ? void 0 : s.bind(r);
-          else throw new t(`"${n}" plugin is not implemented on ${l}`, e.Unimplemented)
-        }, g = r => {
-          let i, a = (...a) => {
-            let o = m().then(o => {
-              let s = h(o, r);
-              if (s) {
-                let e = s(...a);
-                return i = e == null ? void 0 : e.remove, e
-              }
-              throw new t(`"${n}.${r}()" is not implemented on ${l}`, e.Unimplemented)
-            });
-            return r === `addListener` && (o.remove = async () => i()), o
-          };
-          return a.toString = () => `${r.toString()}() { [capacitor code] }`, Object.defineProperty(a, "name", {
-            value: r,
-            writable: !1,
-            configurable: !1
-          }), a
-        }, _ = g(`addListener`), v = g(`removeListener`), y = (e, t) => {
-          let n = _({
-              eventName: e
-            }, t),
-            r = async () => {
-              let r = await n;
-              v({
-                eventName: e,
-                callbackId: r
-              }, t)
-            }, i = new Promise(e => n.then(() => e({
-              remove: r
-            })));
-          return i.remove = async () => {
-            console.warn(`Using addListener() without 'await' is deprecated.`), await r()
-          }, i
-        }, b = new Proxy({}, {
-          get(e, t) {
-            switch (t) {
-              case `$$typeof`:
-                return;
-              case `toJSON`:
-                return () => ({});
-              case `addListener`:
-                return d ? y : _;
-              case `removeListener`:
-                return v;
-              default:
-                return g(t)
-            }
-          }
-        });
-      return o[n] = b, f.set(n, {
-        name: n,
-        proxy: b,
-        platforms: new Set([...Object.keys(r), ...d ? [l] : []])
-      }), b
-    }, a.Exception = t, a.DEBUG = !!a.DEBUG, a.isLoggingEnabled = !!a.isLoggingEnabled, a
-  },
-  i = (e => e.Capacitor = r(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
-  a = i.registerPlugin,
-  o = class {
+import {
+  Ft as e,
+  Lt as t,
+  Vt as n,
+  Wt as r,
+  pt as i,
+  un as a
+} from "./DXDHrD2o.js";
+import {
+  t as o
+} from "./DtJdFIA8.js";
+import {
+  ht as s,
+  t as c
+} from "./Dm9i_L6H.js";
+var l = new WeakMap,
+  u = new WeakMap,
+  d = class {
     constructor() {
-      this.listeners = {}, this.retainedEventArguments = {}, this.windowListeners = {}
+      r(this, l, t(`loading`)), r(this, u, t(!1)), a(this, `controller`, void 0), a(this, `publicKey`, ``), a(this, `subscription`, void 0), a(this, `needsFreshSubscription`, !1), a(this, `lastPreferences`, ``)
     }
-    addListener(e, t) {
-      let n = !1;
-      this.listeners[e] || (this.listeners[e] = [], n = !0), this.listeners[e].push(t);
-      let r = this.windowListeners[e];
-      return r && !r.registered && this.addWindowListener(r), n && this.sendRetainedArgumentsForEvent(e), Promise.resolve({
-        remove: async () => this.removeListener(e, t)
-      })
+    get state() {
+      return i(n(l, this))
     }
-    async removeAllListeners() {
-      this.listeners = {};
-      for (let e in this.windowListeners) this.removeWindowListener(this.windowListeners[e]);
-      this.windowListeners = {}
+    set state(t) {
+      e(n(l, this), t, !0)
     }
-    notifyListeners(e, t, n) {
-      let r = this.listeners[e];
-      if (!r) {
-        if (n) {
-          let n = this.retainedEventArguments[e];
-          n || (n = []), n.push(t), this.retainedEventArguments[e] = n
-        }
-        return
-      }
-      r.forEach(e => e(t))
+    get busy() {
+      return i(n(u, this))
     }
-    hasListeners(e) {
+    set busy(t) {
+      e(n(u, this), t, !0)
+    }
+    start(e) {
       var t;
-      return !!((t = this.listeners[e]) != null && t.length)
+      (t = this.controller) == null || t.abort();
+      let n = new AbortController;
+      return this.controller = n, this.subscription = void 0, this.needsFreshSubscription = !1, this.publicKey = ``, this.lastPreferences = ``, this.busy = !1, this.state = `loading`, e !== void 0 && this.refresh(), () => n.abort()
     }
-    registerWindowListener(e, t) {
-      this.windowListeners[t] = {
-        registered: !1,
-        windowEventName: e,
-        pluginEventName: t,
-        handler: e => {
-          this.notifyListeners(t, e)
+    async refresh() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted)) {
+        if (!window.isSecureContext || !(`Notification` in window) || !(`serviceWorker` in navigator) || !(`PushManager` in window)) {
+          this.state = `unsupported`;
+          return
+        }
+        this.busy = !0;
+        try {
+          let e = await c.getNotificationPushConfig(t);
+          if (t.aborted) return;
+          if (this.publicKey = e.publicKey, !this.publicKey) {
+            this.state = `unavailable`;
+            return
+          }
+          if (Notification.permission === `denied`) {
+            this.state = `blocked`;
+            return
+          }
+          let n = await navigator.serviceWorker.getRegistration(),
+            r = await (n == null ? void 0 : n.pushManager.getSubscription());
+          if (t.aborted) return;
+          this.subscription = r ?? void 0;
+          let i = r ? await c.getNotificationPushStatus(r.endpoint, t) : {
+            enabled: !1
+          };
+          if (t.aborted) return;
+          this.state = i.enabled && Notification.permission === `granted` ? `on` : `off`
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
         }
       }
     }
-    unimplemented(t = `not implemented`) {
-      return new i.Exception(t, e.Unimplemented)
-    }
-    unavailable(t = `not available`) {
-      return new i.Exception(t, e.Unavailable)
-    }
-    async removeListener(e, t) {
-      let n = this.listeners[e];
-      if (!n) return;
-      let r = n.indexOf(t);
-      this.listeners[e].splice(r, 1), this.listeners[e].length || this.removeWindowListener(this.windowListeners[e])
-    }
-    addWindowListener(e) {
-      window.addEventListener(e.windowEventName, e.handler), e.registered = !0
-    }
-    removeWindowListener(e) {
-      e && (window.removeEventListener(e.windowEventName, e.handler), e.registered = !1)
-    }
-    sendRetainedArgumentsForEvent(e) {
-      let t = this.retainedEventArguments[e];
-      t && (delete this.retainedEventArguments[e], t.forEach(t => {
-        this.notifyListeners(e, t)
-      }))
-    }
-  },
-  s = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
-  c = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
-  l = class extends o {
-    async getCookies() {
-      let e = document.cookie,
-        t = {};
-      return e.split(`;`).forEach(e => {
-        if (e.length <= 0) return;
-        let [n, r] = e.replace(/=/, `CAP_COOKIE`).split(`CAP_COOKIE`);
-        n = c(n).trim(), r = c(r).trim(), t[n] = r
-      }), t
-    }
-    async setCookie(e) {
-      try {
-        let t = s(e.key),
-          n = s(e.value),
-          r = e.expires ? `; expires=${e.expires.replace(`expires=`,``)}` : ``,
-          i = (e.path || `/`).replace(`path=`, ``),
-          a = e.url != null && e.url.length > 0 ? `domain=${e.url}` : ``;
-        document.cookie = `${t}=${n||``}${r}; path=${i}; ${a};`
-      } catch (e) {
-        return Promise.reject(e)
+    async enable() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted || this.busy || !this.publicKey)) {
+        this.state === `off` && (this.needsFreshSubscription = !0), this.busy = !0;
+        try {
+          let e = await Notification.requestPermission();
+          if (t.aborted) return;
+          if (e !== `granted`) {
+            this.state = e === `denied` ? `blocked` : `off`;
+            return
+          }
+          let n = await p(t);
+          if (t.aborted) return;
+          let r = Uint8Array.from(atob(this.publicKey.replace(/-/g, `+`).replace(/_/g, `/`)), e => e.charCodeAt(0)),
+            i = await n.pushManager.getSubscription();
+          if (t.aborted || (i && (this.needsFreshSubscription || !f(i.options.applicationServerKey, r)) && (await i.unsubscribe(), i = null), t.aborted) || (i ?? (i = await n.pushManager.subscribe({
+              userVisibleOnly: !0,
+              applicationServerKey: r
+            })), t.aborted)) return;
+          this.subscription = i, this.needsFreshSubscription = !1;
+          let a = o.device_notifications_body(),
+            l = s.muted,
+            u = o.device_notifications_charges_full();
+          await c.subscribeNotificationPush(i.toJSON(), a, l, u, t), t.aborted || (this.lastPreferences = JSON.stringify([a, l, u]), this.state = `on`)
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
+        }
       }
     }
-    async deleteCookie(e) {
-      try {
-        document.cookie = `${e.key}=; Max-Age=0`
-      } catch (e) {
-        return Promise.reject(e)
+    async disable() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted || this.busy || !this.subscription)) {
+        this.busy = !0;
+        try {
+          if (await c.unsubscribeNotificationPush(this.subscription.endpoint, t), t.aborted) return;
+          this.state = `off`
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
+        }
       }
     }
-    async clearCookies() {
-      try {
-        let e = document.cookie.split(`;`) || [];
-        for (let t of e) document.cookie = t.replace(/^ +/, ``).replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`)
-      } catch (e) {
-        return Promise.reject(e)
-      }
-    }
-    async clearAllCookies() {
-      try {
-        await this.clearCookies()
-      } catch (e) {
-        return Promise.reject(e)
+    async syncPreferences(e, t, n) {
+      var r;
+      let i = (r = this.controller) == null ? void 0 : r.signal,
+        a = JSON.stringify([e, t, n]);
+      if (!(!i || i.aborted || this.state !== `on` || this.busy || !this.subscription || this.lastPreferences === a)) {
+        this.busy = !0;
+        try {
+          let r = await c.updateNotificationPushPreferences(this.subscription.endpoint, e, t, n, i);
+          i.aborted || (this.lastPreferences = a, r.enabled || (this.state = `off`))
+        } catch {
+          i.aborted || (this.state = `error`)
+        } finally {
+          i.aborted || (this.busy = !1)
+        }
       }
     }
   };
-a(`CapacitorCookies`, {
-  web: () => new l
-});
-var u = async e => new Promise((t, n) => {
-  let r = new FileReader;
-  r.onload = () => {
-    let e = r.result;
-    t(e.indexOf(`,`) >= 0 ? e.split(`,`)[1] : e)
-  }, r.onerror = e => n(e), r.readAsDataURL(e)
-}), d = (e = {}) => {
-  let t = Object.keys(e);
-  return Object.keys(e).map(e => e.toLocaleLowerCase()).reduce((n, r, i) => (n[r] = e[t[i]], n), {})
-}, f = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
-  let [r, i] = n, a, o;
-  return Array.isArray(i) ? (o = ``, i.forEach(e => {
-    a = t ? encodeURIComponent(e) : e, o += `${r}=${a}&`
-  }), o.slice(0, -1)) : (a = t ? encodeURIComponent(i) : i, o = `${r}=${a}`), `${e}&${o}`
-}, ``).substr(1) : null, p = (e, t = {}) => {
-  let n = Object.assign({
-      method: e.method || `GET`,
-      headers: e.headers
-    }, t),
-    r = d(e.headers)[`content-type`] || ``;
-  if (typeof e.data == `string`) n.body = e.data;
-  else if (r.includes(`application/x-www-form-urlencoded`)) {
-    let t = new URLSearchParams;
-    for (let [n, r] of Object.entries(e.data || {})) t.set(n, r);
-    n.body = t.toString()
-  } else if (r.includes(`multipart/form-data`) || e.data instanceof FormData) {
-    let t = new FormData;
-    if (e.data instanceof FormData) e.data.forEach((e, n) => {
-      t.append(n, e)
-    });
-    else
-      for (let n of Object.keys(e.data)) t.append(n, e.data[n]);
-    n.body = t;
-    let r = new Headers(n.headers);
-    r.delete(`content-type`), n.headers = r
-  } else(r.includes(`application/json`) || typeof e.data == `object`) && (n.body = JSON.stringify(e.data));
-  return n
-}, m = class extends o {
-  async request(e) {
-    let t = p(e, e.webFetchExtra),
-      n = f(e.params, e.shouldEncodeUrlParams),
-      r = n ? `${e.url}?${n}` : e.url,
-      i = await fetch(r, t),
-      a = i.headers.get(`content-type`) || ``,
-      {
-        responseType: o = `text`
-      } = i.ok ? e : {};
-    a.includes(`application/json`) && (o = `json`);
-    let s, c;
-    switch (o) {
-      case `arraybuffer`:
-      case `blob`:
-        c = await i.blob(), s = await u(c);
-        break;
-      case `json`:
-        s = await i.json();
-        break;
-      default:
-        s = await i.text()
+
+function f(e, t) {
+  if (!e) return !1;
+  let n = new Uint8Array(e);
+  return n.length === t.length && n.every((e, n) => e === t[n])
+}
+
+function p(e) {
+  return new Promise((t, n) => {
+    let r = () => {
+        clearTimeout(a), e.removeEventListener(`abort`, i)
+      },
+      i = () => {
+        r(), n(e.reason)
+      },
+      a = setTimeout(() => {
+        r(), n(Error(`Service worker unavailable`))
+      }, 1e4);
+    if (e.addEventListener(`abort`, i, {
+        once: !0
+      }), e.aborted) {
+      i();
+      return
     }
-    let l = {};
-    return i.headers.forEach((e, t) => {
-      l[t] = e
-    }), {
-      data: s,
-      headers: l,
-      status: i.status,
-      url: i.url
-    }
-  }
-  async get(e) {
-    return this.request(Object.assign(Object.assign({}, e), {
-      method: `GET`
-    }))
-  }
-  async post(e) {
-    return this.request(Object.assign(Object.assign({}, e), {
-      method: `POST`
-    }))
-  }
-  async put(e) {
-    return this.request(Object.assign(Object.assign({}, e), {
-      method: `PUT`
-    }))
-  }
-  async patch(e) {
-    return this.request(Object.assign(Object.assign({}, e), {
-      method: `PATCH`
-    }))
-  }
-  async delete(e) {
-    return this.request(Object.assign(Object.assign({}, e), {
-      method: `DELETE`
-    }))
-  }
-};
-a(`CapacitorHttp`, {
-  web: () => new m
-});
-var h;
-(function(e) {
-  e.Dark = `DARK`, e.Light = `LIGHT`, e.Default = `DEFAULT`
-})(h || (h = {}));
-var g;
-(function(e) {
-  e.StatusBar = `StatusBar`, e.NavigationBar = `NavigationBar`
-})(g || (g = {}));
-var _ = class extends o {
-  async setStyle() {
-    this.unavailable(`not available for web`)
-  }
-  async setAnimation() {
-    this.unavailable(`not available for web`)
-  }
-  async show() {
-    this.unavailable(`not available for web`)
-  }
-  async hide() {
-    this.unavailable(`not available for web`)
-  }
-};
-a(`SystemBars`, {
-  web: () => new _
-});
+    navigator.serviceWorker.ready.then(e => {
+      r(), t(e)
+    }, e => {
+      r(), n(e)
+    })
+  })
+}
+var m = new d;
 export {
-  o as n, a as r, i as t
+  m as t
 };

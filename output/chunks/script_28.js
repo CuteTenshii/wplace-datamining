@@ -1,163 +1,49 @@
 import {
-  Ft as e,
-  Lt as t,
-  Vt as n,
-  Wt as r,
-  pt as i
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
+import {
+  t as l
+} from "./ChYIJgv5.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>`),
+  f = o(`<svg><path d="M13 20H9V18H13V20ZM19 16H21V18H19V20H17V18H15V16H17V8H19V16ZM9 18H7V16H9V18ZM7 6H9V8H7V16H5V8H3V6H5V4H7V6ZM15 16H13V14H15V16ZM23 16H21V14H23V16ZM3 10H1V8H3V10ZM11 10H9V8H11V10ZM17 8H15V6H17V8ZM15 6H11V4H15V6Z"></path></svg>`);
 
-function a(e) {
-  return Math.floor(Math.random() * e)
-}
-var o = 14.5;
-async function s() {
-  let e = p();
-  if (e) return e;
-  try {
-    if ((await navigator.permissions.query({
-        name: `geolocation`
-      })).state === `granted`) {
-      let e = await new Promise((e, t) => navigator.geolocation.getCurrentPosition(t => e(t), e => t(e)));
-      return {
-        lat: e.coords.latitude,
-        lng: e.coords.longitude,
-        zoom: o
-      }
-    }
-  } catch (e) {
-    console.error(e)
-  }
-  return {
-    ...l().pos,
-    zoom: o
-  }
-}
-
-function c() {
-  return {
-    ...l().pos,
-    zoom: o
-  }
-}
-
-function l() {
-  let e = Object.entries(u),
-    [t, n] = e[a(e.length)];
-  return {
-    city: t,
-    pos: n
-  }
-}
-var u = {
-    tokyo: {
-      lat: 35.677545560719665,
-      lng: 139.76394445809638
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
     },
-    paris: {
-      lat: 48.8537151734952,
-      lng: 2.3484026030630787
-    },
-    newYork: {
-      lat: 40.71283173786517,
-      lng: -74.00599771376795
-    },
-    saoPaulo: {
-      lat: -23.550584064565356,
-      lng: -46.63339720713918
-    },
-    sydney: {
-      lat: -33.86943325619071,
-      lng: 151.2083447239608
-    }
-  },
-  d = `location`;
-
-function f(e, t) {
-  localStorage.setItem(d, JSON.stringify({
-    ...e,
-    zoom: t
-  }))
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    };
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
-
-function p() {
-  let e = localStorage.getItem(d);
-  if (!e) return;
-  let t;
-  try {
-    t = JSON.parse(e)
-  } catch {
-    return
-  }
-  if (!t || typeof t != `object`) return;
-  let {
-    lat: n,
-    lng: r,
-    zoom: i
-  } = t;
-  if (!(typeof n != `number` || typeof r != `number` || !m({
-      lat: n,
-      lng: r
-    }))) return {
-    lat: n,
-    lng: r,
-    zoom: typeof i == `number` && h(i) ? i : o
-  }
-}
-
-function m(e) {
-  return e.lat >= -90 && e.lat <= 90 && e.lng >= -180 && e.lng <= 180
-}
-
-function h(e) {
-  return Number.isFinite(e) && e >= 0 && e <= 24
-}
-var g = new WeakMap,
-  _ = new WeakMap,
-  v = new class {
-    get idx() {
-      return i(n(g, this))
-    }
-    set idx(t) {
-      e(n(g, this), t, !0)
-    }
-    get entries() {
-      return i(n(_, this))
-    }
-    set entries(t) {
-      e(n(_, this), t)
-    }
-    constructor() {
-      r(this, g, t(-1)), r(this, _, t([]))
-    }
-    hasNext() {
-      return this.idx < this.entries.length - 1
-    }
-    goToNext(e) {
-      let t = this.idx + 1,
-        n = this.entries[t];
-      n && (this.idx = t, e.flyTo({
-        center: n.pos,
-        zoom: n.zoom
-      }))
-    }
-    hasPrev() {
-      return this.idx > 0
-    }
-    goToPrev(e) {
-      let t = this.idx - 1,
-        n = this.entries[t];
-      n && (this.idx = t, e.flyTo({
-        center: n.pos,
-        zoom: n.zoom
-      }))
-    }
-    isEmpty() {
-      return this.entries.length === 0
-    }
-    push(e) {
-      this.idx += 1, this.entries = [...this.entries.slice(0, this.idx), e]
-    }
-  };
 export {
-  h as a, m as i, c as n, v as o, s as r, f as s, u as t
+  p as t
 };

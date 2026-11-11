@@ -1,108 +1,49 @@
 import {
-  R as e,
-  n as t
-} from "./BMMJuSVA.js";
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
+} from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
 import {
-  a as n,
-  i as r
-} from "./BGL3fwXZ.js";
-var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
+  t as l
+} from "./ChYIJgv5.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>`),
+  f = o(`<svg><path d="M7 2h10v2H7zM5 4h2v10H5zm12-2h2v12h-2z"></path><path d="M13 2h2v6h-2zM9 2h2v4H9zm-4 8h14v2H5zm2 4h10v2H7zm2 2h2v4H9zm4 0h2v4h-2zm-4 4h6v2H9z"></path></svg>`);
 
-function a(e) {
-  if (e === null) return !1;
-  let t = e.trim().toLowerCase();
-  return t !== `0` && t !== `false`
-}
-
-function o(e) {
-  if (e === null || e.trim() === ``) return;
-  let t = Number(e);
-  return Number.isFinite(t) ? t : void 0
-}
-
-function s(t) {
-  let s = {
-      opaque: !0
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
     },
-    c = t.searchParams,
-    l = o(c.get(`lat`)),
-    u = o(c.get(`lng`));
-  l !== void 0 && u !== void 0 && r({
-    lat: l,
-    lng: u
-  }) && (s.pos = {
-    lat: l,
-    lng: u
-  });
-  let d = o(c.get(`zoom`));
-  d !== void 0 && n(d) && (s.zoom = d);
-  let f = o(c.get(`season`));
-  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
-  let p = c.get(`opaque`);
-  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
-  let m = c.get(`area`);
-  if (m) {
-    let e = m.split(`,`);
-    if (e.length === 4) {
-      let [t, n, r, i] = e.map(e => o(e));
-      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
-        south: t,
-        west: n,
-        north: r,
-        east: i
-      })
-    }
-  }
-  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
-  let h = c.get(`error`);
-  i.includes(h ?? ``) && (s.error = h);
-  let g = c.get(`domain`);
-  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
-}
-
-function c(e, t) {
-  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
-}
-var l;
-(function(e) {
-  async function n() {
-    if (!(i() || history.length < 3)) {
-      for (let e = 0; e < 50; e++) history.pushState({}, ``);
-      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
-    }
-  }
-  e.reset = n;
-
-  function r() {
-    if (!(`navigation` in window)) return;
-    let e = window.navigation;
-    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
-    let t = e.entries();
-    return Array.isArray(t) ? t.length : void 0
-  }
-
-  function i() {
-    var e;
-    if (t != null && (e = t.data) != null && e.id) return !0;
-    try {
-      let e = r();
-      return e !== void 0 && e >= history.length
-    } catch {
-      return !1
-    }
-  }
-})(l || (l = {}));
-
-function u(e, t, n) {
-  return new Promise(r => {
-    var i;
-    let a = i => {
-      var o;
-      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
     };
-    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
-  })
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
 export {
-  s as n, c as t
+  p as t
 };
