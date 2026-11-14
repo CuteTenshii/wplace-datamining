@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Dm9i_L6H.js", "./DXDHrD2o.js", "./CyFWViRh.js", "./a7QZC4SB.js", "./DtJdFIA8.js", "./pKOrQQBa.js", "./FnlLczIa.js", "./BrohplP5.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./LPb4E7Sx.js", "./DXDHrD2o.js", "./CGo2LrSs.js", "./a7QZC4SB.js", "./C4a9oB_N.js", "./pKOrQQBa.js", "./FnlLczIa.js", "./BrohplP5.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Ft as e,
   Gt as t,
@@ -12,7 +12,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   a as l
-} from "./CyFWViRh.js";
+} from "./CGo2LrSs.js";
 var u = [`none`, `protanopia`, `deuteranopia`, `tritanopia`],
   d = {
     protanopia: [.152286, 1.052583, -.204868, .114503, .786281, .099216, -.003882, -.048116, 1.051998],
@@ -150,7 +150,7 @@ var v = new WeakMap,
         o(O, this) ?? n(O, this, (await l(async () => {
           let {
             api: e
-          } = await import(`./Dm9i_L6H.js`).then(e => e.n);
+          } = await import(`./LPb4E7Sx.js`).then(e => e.n);
           return {
             api: e
           }

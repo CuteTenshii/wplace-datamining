@@ -1,158 +1,49 @@
-function e(e, n, r, i, a) {
-  if (t(r, i, a), e.length !== r * i * 4 || n.length !== e.length) throw Error(`Overlay progress buffers must have matching positive dimensions.`)
-}
+import {
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
+} from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
+import {
+  t as l
+} from "./CNowd2ef.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"></path></svg>`),
+  f = o(`<svg><path d="M22 22h-2v-2h2v2Zm-6-2H8v-2h8v2Zm4 0h-2v-2h2v2ZM8 18H4v-2h4v2Zm10 0h-2v-2h2v2ZM4 16H2v-2h2v2Zm6-6h2v2h2v2h2v2h-6v-2H8V8h2v2Zm12 6h-2v-2h2v2ZM2 14H0v-4h2v4Zm22 0h-2v-4h2v4Zm-8-2h-2v-2h2v2ZM4 10H2V8h2v2Zm10 0h-2V8h2v2Zm8 0h-2V8h2v2ZM6 6h2v2H4V4h2v2Zm14 2h-4V6h4v2Zm-4-2h-6V4h6v2ZM4 4H2V2h2v2Z"></path></svg>`);
 
-function t(e, t, n) {
-  if (!Number.isSafeInteger(e) || !Number.isSafeInteger(t) || e <= 0 || t <= 0 || e * t > (2 ** 53 - 1) / 4) throw Error(`Overlay progress buffers must have matching positive dimensions.`);
-  if (!Number.isSafeInteger(n.originX) || !Number.isSafeInteger(n.originY) || !Number.isSafeInteger(n.tileSize) || n.tileSize <= 0 || n.tileSize > 65535 || !Number.isSafeInteger(n.originX + e - 1) || !Number.isSafeInteger(n.originY + t - 1)) throw Error(`Overlay progress geometry is invalid.`)
-}
-
-function n(e) {
-  if (e < -2147483648 || e > 2147483647) throw Error(`Overlay progress tile coordinates exceed the supported canvas range.`)
-}
-
-function r(e, t, n, r) {
-  let i = t + Math.floor(n / 4),
-    a = n % 4 * 2;
-  e[i] |= r << a
-}
-
-function* i(e, t, n, i, a = !0) {
-  if (!Number.isSafeInteger(n) || !Number.isSafeInteger(i) || n <= 0 || i <= 0 || e.length !== n * i * 4 || t.length !== e.length) throw Error(`Overlay tile buffers must have matching positive dimensions.`);
-  let o = new Uint32Array(4),
-    s = new Uint8Array(a ? Math.ceil(n * i / 4) : 0),
-    c = 0;
-  for (let l = 0; l < i; l += 1) {
-    for (let i = 0; i < n; i += 1) {
-      let n = c * 4,
-        i = 0;
-      e[n + 3] >= 16 && (o[0] += 1, t[n + 3] < 16 ? (i = 2, o[2] += 1) : e[n] === t[n] && e[n + 1] === t[n + 1] && e[n + 2] === t[n + 2] ? (i = 1, o[1] += 1) : (i = 3, o[3] += 1)), a && r(s, 0, c, i), c += 1
-    }
-    yield l
-  }
-  return {
-    counts: o,
-    statuses: s
-  }
-}
-
-function a(e, t, n) {
-  let r = t + Math.floor(n / 4),
-    i = n % 4 * 2;
-  return e[r] >> i & 3
-}
-
-function o(e, r, i) {
-  t(e, r, i);
-  let {
-    originX: a,
-    originY: o,
-    tileSize: s
-  } = i, c = Math.floor(a / s), l = Math.floor(o / s), u = Math.floor((a + e - 1) / s), d = Math.floor((o + r - 1) / s);
-  n(c), n(l), n(u), n(d);
-  let f = (u - c + 1) * (d - l + 1),
-    p = new Int32Array(f * 2),
-    m = new Uint16Array(f * 4),
-    h = new Uint32Array(f * 4),
-    g = new Uint32Array(f + 1),
-    _ = 0,
-    v = 0;
-  for (let t = l; t <= d; t++)
-    for (let n = c; n <= u; n++) {
-      let i = Math.max(a, n * s),
-        c = Math.max(o, t * s),
-        l = Math.min(a + e, (n + 1) * s),
-        u = Math.min(o + r, (t + 1) * s),
-        d = _ * 4,
-        f = l - i,
-        h = u - c;
-      p[_ * 2] = n, p[_ * 2 + 1] = t, m[d] = i - n * s, m[d + 1] = c - t * s, m[d + 2] = f, m[d + 3] = h, g[_] = v, v += Math.ceil(f * h / 4), _ += 1
-    }
-  return g[f] = v, {
-    total: 0,
-    completed: 0,
-    unpainted: 0,
-    mismatched: 0,
-    originX: a,
-    originY: o,
-    width: e,
-    height: r,
-    tileSize: s,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: new Uint8Array(v)
-  }
-}
-
-function* s(t, n, i, a, s, l) {
-  e(t, n, i, a, s);
-  let {
-    originX: u,
-    originY: d,
-    tileSize: f,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: _
-  } = o(i, a, s), v = h.length / 4, y = 0, b = 0, x = 0, S = 0, C = 0, w = c(l, v);
-  for (let e of w) {
-    y = e;
-    let a = y * 2,
-      o = y * 4,
-      s = y * 4,
-      c = p[a],
-      l = p[a + 1],
-      v = m[o],
-      w = m[o + 1],
-      T = m[o + 2],
-      E = m[o + 3],
-      D = c * f + v - u,
-      O = l * f + w - d,
-      k = 0;
-    for (let e = 0; e < E; e++) {
-      for (let a = 0; a < T; a++) {
-        let o = ((O + e) * i + D + a) * 4,
-          c = 0;
-        t[o + 3] >= 16 && (h[s + 0] += 1, b += 1, n[o + 3] < 16 ? (c = 2, h[s + 2] += 1, S += 1) : t[o] === n[o] && t[o + 1] === n[o + 1] && t[o + 2] === n[o + 2] ? (c = 1, h[s + 1] += 1, x += 1) : (c = 3, h[s + 3] += 1, C += 1)), r(_, g[y], k, c), k += 1
-      }
-      yield O + e
-    }
-  }
-  return {
-    total: b,
-    completed: x,
-    unpainted: S,
-    mismatched: C,
-    originX: u,
-    originY: d,
-    width: i,
-    height: a,
-    tileSize: f,
-    tileCoordinates: p,
-    tileBounds: m,
-    tileCounts: h,
-    tileStatusOffsets: g,
-    statuses: _
-  }
-}
-
-function c(e, t) {
-  if (!(e != null && e.length)) return Uint32Array.from({
-    length: t
-  }, (e, t) => t);
-  let n = new Uint8Array(t),
-    r = new Uint32Array(t),
-    i = 0;
-  for (let a of e) {
-    if (a >= t) throw Error(`Overlay progress tile index is out of bounds.`);
-    n[a] || (n[a] = 1, r[i++] = a)
-  }
-  for (let e = 0; e < t; e += 1) n[e] || (r[i++] = e);
-  return r
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    },
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    };
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
 export {
-  a as i, i as n, o as r, s as t
+  p as t
 };
