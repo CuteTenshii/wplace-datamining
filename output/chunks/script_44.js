@@ -1,116 +1,49 @@
 import {
-  Ft as e,
-  Gt as t,
-  Ht as n,
-  Lt as r,
-  Ut as i,
-  Vt as a,
-  Wt as o,
-  pt as s,
-  un as c
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
 import {
   t as l
-} from "./LPb4E7Sx.js";
-import {
-  t as u
-} from "./ADBDGy6Z.js";
-var d = `wplace_onboarding_done`,
-  f = `wplace_onboarding_experiment`,
-  p = 3e3,
-  m = 3e3,
-  h = 3e3,
-  g = `onboarding_intro_v3`,
-  _ = [`none`, `video_signin`, `tour_no_map_click`, `tour_auto_open`],
-  v = `onboarding`,
-  y = new Set([`signed_in`, `first_paint`]);
+} from "./s5C8vWt-.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"></path></svg>`),
+  f = o(`<svg><path d="M19 23H7v-2h12v2ZM7 21H5v-2h2v2Zm14 0h-2v-2h2v2ZM5 19H3v-2h2v2Zm18 0h-2v-8h2v8ZM3 17H1v-4h2v4Zm6 0H7v-2h2v2Zm-2-2H5v-2H3v-2h2V3h2v12Zm14-4h-2v1h-2V9h4v2ZM11 7h6v2h-2v2h-2V9h-2v2H9V3h2v4ZM9 3H7V1h2v2Z"></path></svg>`);
 
-function b(e) {
-  try {
-    return localStorage.getItem(e)
-  } catch {
-    return null
-  }
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    },
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    };
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
-
-function x(e, t) {
-  try {
-    localStorage.setItem(e, t)
-  } catch {}
-}
-
-function S(e) {
-  return _.includes(e)
-}
-
-function C() {
-  let e = b(f);
-  if (!e) return null;
-  try {
-    let t = JSON.parse(e);
-    return t.experiment !== `onboarding_intro_v3` || typeof t.visitorId != `string` || !S(t.variant) ? null : t
-  } catch {
-    return null
-  }
-}
-
-function w() {
-  let e = new URLSearchParams(location.search).get(v);
-  return S(e) ? e : null
-}
-
-function T() {
-  return _[crypto.getRandomValues(new Uint8Array(1))[0] % _.length]
-}
-var E = new WeakMap,
-  D = new WeakMap,
-  O = new WeakMap,
-  k = new WeakMap,
-  A = new WeakSet,
-  j = class {
-    constructor() {
-      var e;
-      t(this, A), o(this, E, r(b(d) === `1`)), c(this, `autoOpened`, !1), o(this, D, C()), o(this, O, w()), o(this, k, !1), c(this, `variant`, a(O, this) ?? ((e = a(D, this)) == null ? void 0 : e.variant) ?? (this.done ? null : T())), c(this, `introduces`, this.variant !== `none`), c(this, `opensOnMapClick`, this.introduces && this.variant !== `tour_no_map_click`), c(this, `opensAfterIntroTrip`, this.variant === `tour_auto_open`)
-    }
-    get done() {
-      return s(a(E, this))
-    }
-    set done(t) {
-      e(a(E, this), t, !0)
-    }
-    expose() {
-      a(k, this) || this.done || !this.variant || (n(k, this, !0), !a(D, this) && !a(O, this) && (n(D, this, {
-        experiment: g,
-        visitorId: u(),
-        variant: this.variant
-      }), i(A, this, N).call(this)), this.track(`exposed`))
-    }
-    track(e, t) {
-      let n = a(D, this);
-      !n || a(O, this) || this.done && !y.has(e) || l.postOnboardingExperimentEvent({
-        experiment: n.experiment,
-        visitorId: n.visitorId,
-        variant: n.variant,
-        event: e,
-        value: t === void 0 ? void 0 : Math.round(t)
-      })
-    }
-    recordFirstPaint() {
-      i(A, this, M).call(this, `firstPaint`, `first_paint`)
-    }
-    complete() {
-      i(A, this, M).call(this, `signedIn`, `signed_in`), !this.done && (this.done = !0, x(d, `1`))
-    }
-  };
-
-function M(e, t) {
-  !a(D, this) || a(D, this)[e] || a(O, this) || (a(D, this)[e] = !0, i(A, this, N).call(this), this.track(t))
-}
-
-function N() {
-  a(D, this) && x(f, JSON.stringify(a(D, this)))
-}
-var P = new j;
 export {
-  P as i, m as n, p as r, h as t
+  p as t
 };

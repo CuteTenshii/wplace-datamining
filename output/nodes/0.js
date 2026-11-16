@@ -29,73 +29,76 @@ import {
 } from "../chunks/DXDHrD2o.js";
 import {
   n as D
-} from "../chunks/BFcQMSYa.js";
+} from "../chunks/Bg3cjsrL.js";
 import {
   n as O
-} from "../chunks/CGo2LrSs.js";
+} from "../chunks/BlC9xWHv.js";
 import {
   i as k,
   n as A,
   o as j,
   t as M
-} from "../chunks/BEkbvboo.js";
+} from "../chunks/BY-VPSOk.js";
 import {
   t as N
-} from "../chunks/BrZZKNhm.js";
+} from "../chunks/ByCyLkuZ.js";
 import "../chunks/B8UK1oE5.js";
-import "../chunks/CP1bBjmV.js";
+import "../chunks/DxzUdNcO.js";
 import {
   t as P
-} from "../chunks/BHEhcxRM.js";
+} from "../chunks/DpgsHinl.js";
 import {
   t as F
-} from "../chunks/CNowd2ef.js";
+} from "../chunks/s5C8vWt-.js";
 import {
-  t as I
+  n as I
+} from "../chunks/DI0-dq1F.js";
+import {
+  t as L
 } from "../chunks/BH5PwBe6.js";
 import {
-  r as L,
-  t as R
-} from "../chunks/D4KaHu_y.js";
-import {
+  r as R,
   t as z
-} from "../chunks/C4a9oB_N.js";
-var B = _({
-    load: () => V,
+} from "../chunks/BOgbdF-4.js";
+import {
+  t as B
+} from "../chunks/DmHqBA5r.js";
+var V = _({
+    load: () => H,
     prerender: () => !0
   }),
-  V = async ({
+  H = async ({
     route: e
   }) => ({
     seo: await j(e.id)
   });
 
-function H(e, t) {
+function U(e, t) {
   if (!e || !t) return !1;
   let n = e => e === `/(game)` || e.startsWith(`/(game)/`);
   return n(e) !== n(t)
 }
-var U = y(`<link rel="canonical"/>`),
-  W = y(`<link rel="alternate"/>`),
-  G = y(`<meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/>`, 1),
-  K = y(`<meta name="description"/> <meta itemprop="description"/> <!> <!> <meta property="og:site_name" content="Wplace"/> <meta property="og:title"/> <meta property="og:description"/> <meta property="og:url"/> <meta property="og:type"/> <meta property="og:image"/> <!> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"/> <meta name="twitter:description"/> <meta name="twitter:image"/> <!>`, 1),
-  q = y(`<meta name="robots"/> <!>`, 1);
+var W = y(`<link rel="canonical"/>`),
+  G = y(`<link rel="alternate"/>`),
+  K = y(`<meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/>`, 1),
+  q = y(`<meta name="description"/> <meta itemprop="description"/> <!> <!> <meta property="og:site_name" content="Wplace"/> <meta property="og:title"/> <meta property="og:description"/> <meta property="og:url"/> <meta property="og:type"/> <meta property="og:image"/> <!> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title"/> <meta name="twitter:description"/> <meta name="twitter:image"/> <!>`, 1),
+  J = y(`<meta name="robots"/> <!>`, 1);
 
-function J(n, i) {
+function Y(n, i) {
   C(i, !0);
-  let s = m(i, `robots`, 3, R),
+  let s = m(i, `robots`, 3, z),
     l = e(() => i.metadata ? A(i.metadata.canonicalPath) : null);
   o(`ojxe63`, e => {
-    var n = q(),
+    var n = J(),
       o = v(n),
       f = c(o, 2),
       m = e => {
-        var n = K(),
+        var n = q(),
           o = v(n),
           s = c(o, 2),
           f = c(s, 2),
           m = e => {
-            var n = U();
+            var n = W();
             t(() => d(n, `href`, b(l))), g(e, n)
           };
         p(f, e => {
@@ -103,7 +106,7 @@ function J(n, i) {
         });
         var h = c(f, 2);
         a(h, 17, () => i.metadata.alternates ?? [], e => e.language, (e, n) => {
-          var r = W();
+          var r = G();
           t(e => {
             d(r, `hreflang`, b(n).language), d(r, `href`, e)
           }, [() => A(b(n).path)]), g(e, r)
@@ -115,7 +118,7 @@ function J(n, i) {
           T = c(C, 2),
           D = c(T, 2),
           O = e => {
-            var t = G();
+            var t = K();
             S(2), g(e, t)
           };
         p(D, e => {
@@ -140,46 +143,46 @@ function J(n, i) {
       };
     p(f, e => {
       i.metadata && e(m)
-    }), t(() => d(o, `content`, i.metadata && !i.metadata.noindex ? s() : R)), g(e, n)
+    }), t(() => d(o, `content`, i.metadata && !i.metadata.noindex ? s() : z)), g(e, n)
   }), h()
 }
 
-function Y(e) {
+function X(e) {
   if (e === `/patch-notes`) return {
-    title: `${z.patch_notes()} | Wplace`,
-    description: z.public_updates_intro()
+    title: `${B.patch_notes()} | Wplace`,
+    description: B.public_updates_intro()
   };
   if (/^\/patch-notes\/\d+\.\d+\.\d+$/.test(e)) {
     let t = e.split(`/`).at(-1);
     return {
-      title: `${z.patch_notes()} ${t} | Wplace`,
-      description: z.public_release_intro({
+      title: `${B.patch_notes()} ${t} | Wplace`,
+      description: B.public_release_intro({
         version: t
       })
     }
   }
   if (e === `/`) return {
-    title: `Wplace - ${z.paint_the_world()}`,
-    description: z.info_intro() + ` ` + z.info_invitation()
+    title: `Wplace - ${B.paint_the_world()}`,
+    description: B.info_intro() + ` ` + B.info_invitation()
   }
 }
-var X = y(`<meta name="viewport"/>`);
+var Z = y(`<meta name="viewport"/>`);
 
-function Z(n, r) {
+function Q(n, r) {
   C(r, !0);
-  let i = e(() => L(P.url, !0, P.status)),
-    a = e(() => Y(P.url.pathname)),
+  let i = e(() => R(P.url, !0, P.status)),
+    a = e(() => X(P.url.pathname)),
     s = e(() => P.error ? null : P.data.seo ?? (b(a) ? {
       ...b(a),
       canonicalPath: P.url.pathname
     } : null));
   o(`7t0jhl`, e => {
-    var n = X();
+    var n = Z();
     t(e => d(n, `content`, e), [() => {
       var e;
       return (e = P.route.id) != null && e.startsWith(`/(public)`) ? `width=device-width, initial-scale=1, viewport-fit=cover` : `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover`
     }]), g(e, n)
-  }), J(n, {
+  }), Y(n, {
     get metadata() {
       return b(s)
     },
@@ -188,12 +191,12 @@ function Z(n, r) {
     }
   }), h()
 }
-var Q = y(`<!> <!>`, 1);
+var $ = y(`<!> <!>`, 1);
 
-function $(t, r) {
-  C(r, !0);
+function ee(t, r) {
+  C(r, !0), I(new URL(location.href), document.referrer);
   let a = s(l(`en`));
-  T(() => (document.documentElement.style.setProperty(`--pixel-font-density`, String(I.current || 1)), () => document.documentElement.style.removeProperty(`--pixel-font-density`))), x(() => {
+  T(() => (document.documentElement.style.setProperty(`--pixel-font-density`, String(L.current || 1)), () => document.documentElement.style.removeProperty(`--pixel-font-density`))), x(() => {
     n(a, O(), !0)
   }), T(() => {
     var e;
@@ -210,12 +213,12 @@ function $(t, r) {
     willUnload: r,
     cancel: i
   }) => {
-    r || !t || !H(e == null ? void 0 : e.route.id, t.route.id) || (n === `popstate` ? window.location.replace(t.url.href) : (i(), window.location.assign(t.url.href)))
+    r || !t || !U(e == null ? void 0 : e.route.id, t.route.id) || (n === `popstate` ? window.location.replace(t.url.href) : (i(), window.location.assign(t.url.href)))
   });
-  var o = Q(),
+  var o = $(),
     u = v(o);
   i(u, () => b(a), e => {
-    Z(e, {})
+    Q(e, {})
   });
   var d = c(u, 2),
     m = e => {
@@ -241,5 +244,5 @@ function $(t, r) {
   }), g(t, o), h()
 }
 export {
-  $ as component, B as universal
+  ee as component, V as universal
 };

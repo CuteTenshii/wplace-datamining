@@ -1,49 +1,85 @@
-import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-import {
-  t as l
-} from "./CNowd2ef.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>`),
-  f = o(`<svg><path d="M14 22h-4v-2h4v2Zm-4-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-8-2H6v-2h2v2Zm10 0h-2v-2h2v2Zm-5-1h-2v-2h2v2Zm-7-1H4v-2h2v2Zm14 0h-2v-2h2v2ZM4 14H2v-4h2v4Zm18 0h-2v-4h2v4Zm-9-7v6h-2V7h2Zm-7 3H4V8h2v2Zm14 0h-2V8h2v2ZM8 8H6V6h2v2Zm10 0h-2V6h2v2Zm-8-2H8V4h2v2Zm6 0h-2V4h2v2Zm-2-2h-4V2h4v2Z"></path></svg>`);
+function e(e, t) {
+  if (t <= 0 || e < 0) return 0;
+  let n = t - 1;
+  return e > n ? n : e
+}
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+function t(t, n) {
+  let r = t.clientWidth || t.width || 1,
+    i = t.clientHeight || t.height || 1,
+    a = t.width / r,
+    o = t.height / i;
+  return [e(Math.floor(n.x * a), t.width), e(Math.floor(n.y * o), t.height)]
+}
+
+function n(e, t, n) {
+  return new Promise((r, i) => {
+    e.once(`render`, () => {
+      let a = e.getCanvas().toDataURL(),
+        o = document.createElement(`img`);
+      o.src = a, o.onload = () => {
+        let e = document.createElement(`canvas`);
+        e.width = o.width, e.height = o.height;
+        let a = e.getContext(`2d`);
+        if (a) {
+          a.drawImage(o, 0, 0);
+          let [e, i, s, c] = a.getImageData(t, n, 1, 1).data;
+          r([e, i, s, c])
+        } else i(Error(`Could not get 2d context from canvas`));
+        o.remove(), e.remove()
+      }
+    }), e.triggerRepaint()
+  })
+}
+
+function r(e, t) {
+  let n = e.getBounds(),
+    r = e.getCanvas(),
+    i = r.width || r.clientWidth || 1,
+    a = r.height || r.clientHeight || 1,
+    o = (t == null ? void 0 : t.maxWidth) ?? i,
+    s = (t == null ? void 0 : t.maxHeight) ?? a,
+    c = Math.min(1, o / i, s / a),
+    l = Math.max(1, Math.floor(i * c)),
+    u = Math.max(1, Math.floor(a * c));
+  return {
+    north: n.getNorth(),
+    south: n.getSouth(),
+    west: n.getWest(),
+    east: n.getEast(),
+    width: l,
+    height: u
+  }
+}
+
+function i(e, t) {
+  return new Promise((n, r) => {
+    e.once(`render`, () => {
+      let i = e.getCanvas(),
+        a = i;
+      if (t != null && t.maxWidth || t != null && t.maxHeight) {
+        let e = i.width,
+          n = i.height,
+          r = (t == null ? void 0 : t.maxWidth) ?? e,
+          o = (t == null ? void 0 : t.maxHeight) ?? n;
+        a = document.createElement(`canvas`);
+        let s = Math.min(r / e, o / n);
+        a.width = Math.floor(e * s), a.height = Math.floor(n * s);
+        let c = a.getContext(`2d`);
+        c && c.drawImage(i, 0, 0, a.width, a.height)
+      }
+      try {
+        a.toBlob(e => {
+          e && n(e)
+        }, (t == null ? void 0 : t.type) ?? `image/png`, (t == null ? void 0 : t.quality) ?? 1)
+      } catch (e) {
+        r(e)
+      } finally {
+        a !== i && a.remove()
+      }
+    })
+  })
 }
 export {
-  p as t
+  r as i, i as n, n as r, t
 };

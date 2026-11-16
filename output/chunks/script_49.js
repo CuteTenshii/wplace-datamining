@@ -1,435 +1,629 @@
 import {
-  Ft as e,
-  Lt as t,
-  Nt as n,
-  Vt as r,
-  Wt as i,
-  pt as a,
-  un as o
+  At as e,
+  Ct as t,
+  Ft as n,
+  Gt as r,
+  Ht as i,
+  Lt as a,
+  M as o,
+  Nt as s,
+  Q as c,
+  Ut as l,
+  Vt as u,
+  Wt as d,
+  _t as f,
+  a as p,
+  cn as m,
+  et as ee,
+  nt as te,
+  pt as h
 } from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
 import {
-  nt as s,
-  rt as c,
-  x as l
-} from "./LPb4E7Sx.js";
+  t as g
+} from "./DmHqBA5r.js";
+import {
+  P as ne,
+  t as _
+} from "./C-DBsccD.js";
+import {
+  d as v
+} from "./Dl4zXbqu.js";
+import {
+  d as re,
+  f as ie
+} from "./KqQgZxZo.js";
+var ae = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
+  oe = te(`<span aria-hidden="true"> </span>`);
 
-function u(e, t) {
-  if (!(e === void 0 && !t.startsWith(`personal-hq:`))) {
-    if (!m(e) || e.type !== `headquarters` || t !== `personal-hq:${e.userId}:${e.allianceId}:${e.overlayId}` || !Number.isSafeInteger(e.userId) || e.userId <= 0 || !Number.isSafeInteger(e.allianceId) || e.allianceId <= 0 || !Number.isSafeInteger(e.overlayId) || e.overlayId >= 0 || !Number.isSafeInteger(e.originX) || !Number.isSafeInteger(e.originY) || typeof e.imageRevision != `string` || !Number.isSafeInteger(e.revision) || ![`normal`, `center`, `diagonal`].includes(String(e.pixelMode))) throw Error(`Invalid overlay canvas.`);
-    return {
-      type: `headquarters`,
-      userId: e.userId,
-      allianceId: e.allianceId,
-      overlayId: e.overlayId,
-      originX: e.originX,
-      originY: e.originY,
-      imageRevision: e.imageRevision,
-      revision: e.revision,
-      pixelMode: e.pixelMode
-    }
-  }
+function se(n, r) {
+  let i = p(r, `class`, 3, ``);
+  var a = oe(),
+    s = e(a, !0);
+  m(a), t(() => {
+    o(a, 1, `ring-base-100 pointer-events-none inline-flex h-4 min-w-4 items-center justify-center rounded-[var(--game-radius,9999px)] bg-red-500 px-1 text-[10px] leading-none font-extrabold whitespace-nowrap text-white tabular-nums shadow-md ring-2 ${i()??``}`), c(s, r.label)
+  }), ee(n, a)
 }
-var d = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
-  f = `template-overlays`,
-  p = `overlay-tag-catalog`;
+var ce = 6e4;
+3 * ce;
+var le = 15e4,
+  ue = 15e3,
+  de = 5e3,
+  fe = 6e4,
+  y = 250,
+  b = 1e4,
+  pe = [`stripe`, `fastspring`],
+  me = [`everyone`, `new_customers`, `returning_customers`],
+  x = /^[A-Z]{3}$/,
+  he = /^[1-9]\d{0,9}$/,
+  ge = 2147483647;
 
-function m(e) {
-  return typeof e == `object` && !!e
+function _e(e) {
+  return e.iosShell ? `ios` : e.twa ? `android` : `web`
 }
+var ve = `fastspring`;
 
-function h(e) {
-  return typeof e == `number` && Number.isFinite(e)
-}
-
-function g(e) {
-  return e === `compuphase` || e === `ciede2000` ? e : `lab`
-}
-
-function _(e) {
-  if (e === `all` || e === `free` || e === `template` || e === `unlocked`) return e
-}
-
-function v(e) {
-  if (!Array.isArray(e)) return;
-  let t = new Uint8Array(l.colors.length),
-    n = [];
-  for (let r = 0; r < e.length; r++) {
-    let i = e[r];
-    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= l.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
-  }
-  return n.length > 0 ? n : void 0
+function S(e) {
+  return (e == null ? void 0 : e.toUpperCase()) === `BR` ? `BRL` : `USD`
 }
 
-function y(e) {
-  return e.normalize(`NFC`).toLowerCase()
+function C(e, t) {
+  return t.toUpperCase() === `BRL` ? e * 4 : e
 }
 
-function b(e) {
-  let t = 2166136261;
-  for (let n of y(e)) t ^= n.codePointAt(0) ?? 0, t = Math.imul(t, 16777619);
-  return d[(t >>> 0) % d.length]
+function w(e, t) {
+  let n = t.toUpperCase();
+  return n === `USD` ? `$${ie(e,n)}` : n === `BRL` ? `R$${ie(e,n).replace(`.`,`,`)}` : re(e, n)
 }
 
-function x(e, t) {
-  return typeof e == `number` && Number.isInteger(e) && e > 0 && e < l.colors.length ? e : b(t)
-}
-
-function S(e, t = []) {
-  let n = [],
-    r = (e, t) => {
-      if (typeof e != `string` || n.length >= 64) return;
-      let r = C(e);
-      !r || n.some(e => y(e.name) === y(r)) || n.push({
-        name: r,
-        colorIdx: x(t, r)
-      })
-    };
-  if (Array.isArray(e))
-    for (let t of e) m(t) && r(t.name, t.colorIdx);
-  for (let e of t) {
-    let t = e.tags ?? [];
-    for (let n = 0; n < t.length; n += 1) {
-      var i;
-      r(t[n], (i = e.tagColorIdxs) == null ? void 0 : i[n])
-    }
-  }
-  return n
-}
-
-function C(e) {
-  let t = e.normalize(`NFC`).trim().replace(/^(?:#\s*)+/, ``).replace(/\s+/g, `-`).slice(0, 24);
-  return /[\uD800-\uDBFF]$/.test(t) ? t.slice(0, -1) : t
-}
-
-function w(e) {
-  if (!Array.isArray(e)) return [];
-  let t = [];
-  for (let n of e) {
-    if (typeof n != `string`) continue;
-    let e = C(n);
-    if (!(!e || t.some(t => y(t) === y(e))) && (t.push(e), t.length === 8)) break
-  }
-  return t
-}
-
-function T(e, t) {
-  if (!Array.isArray(e)) return {
-    tags: [],
-    tagColorIdxs: []
-  };
-  let n = Array.isArray(t) ? t : [],
-    r = [],
-    i = [];
-  for (let t = 0; t < e.length; t += 1) {
-    let a = e[t];
-    if (typeof a != `string`) continue;
-    let o = C(a);
-    if (!(!o || r.some(e => y(e) === y(o))) && (r.push(o), i.push(x(n[t], o)), r.length === 8)) break
-  }
-  return {
-    tags: r,
-    tagColorIdxs: i
+function T(e, t, n) {
+  if (!Number.isSafeInteger(e) || e <= 0) return null;
+  let r = t.toUpperCase(),
+    i;
+  if (n.discountType === `percent`) {
+    let t = n.percentBps;
+    if (!E(t)) return null;
+    let r = e * t;
+    if (!Number.isSafeInteger(r)) return null;
+    let a = r % b;
+    i = (r - a) / b + +(a * 2 >= b)
+  } else if (n.discountType === `fixed`) {
+    var a;
+    let e = (a = n.fixedAmounts) == null ? void 0 : a[r];
+    if (typeof e != `number` || !Number.isSafeInteger(e) || e <= 0) return null;
+    i = e
+  } else return null;
+  let o = e - i;
+  return i <= 0 || o <= 0 ? null : {
+    currency: r,
+    originalMinor: e,
+    discountMinor: i,
+    finalMinor: o
   }
 }
 
 function E(e) {
-  if (!m(e)) return null;
-  let t = e.north,
-    n = e.south,
-    r = e.west,
-    i = e.east;
-  return !h(t) || !h(n) || !h(r) || !h(i) ? null : {
-    north: t,
-    south: n,
-    west: r,
-    east: i
-  }
+  return typeof e == `number` && Number.isInteger(e) && e > 0 && e <= 9e3
 }
 
-function D(e, t) {
-  if (!m(e)) return null;
-  let n = e.id,
-    r = e.name,
-    i = E(e.bounds),
-    a = e.originalWidth,
-    o = e.originalHeight,
-    s = e.opacity,
-    c = e.visible,
-    l = e.order;
-  if (typeof n != `string` || n.length === 0 || typeof r != `string` || !i || !h(a) || !h(o) || !h(s) || !h(l) || typeof c != `boolean`) return null;
-  let d = typeof e.locked == `boolean` && e.locked,
-    f = g(e.colorMetric),
-    p = typeof e.dithering == `boolean` && e.dithering,
-    y = e.useLegacyColors === !0,
-    b = _(e.colorPaletteMode),
-    x = v(e.templateColorIdxs),
-    {
-      tags: S,
-      tagColorIdxs: C
-    } = T(e.tags, e.tagColorIdxs),
-    w = typeof e.hasPlaced != `boolean` || e.hasPlaced,
-    D = h(e.updatedAt) ? e.updatedAt : t;
-  return {
-    id: n,
-    name: r,
-    bounds: i,
-    originalWidth: a,
-    originalHeight: o,
-    opacity: s,
-    visible: c,
-    locked: d,
-    colorMetric: f,
-    dithering: p,
-    useLegacyColors: y,
-    colorPaletteMode: b,
-    templateColorIdxs: x,
-    tags: S.length > 0 ? S : void 0,
-    tagColorIdxs: C.length > 0 ? C : void 0,
-    order: l,
-    hasPlaced: w,
-    updatedAt: D,
-    canvas: u(e.canvas, n)
-  }
+function D(e) {
+  return typeof e == `object` && !!e && !Array.isArray(e)
 }
 
-function O(e, t = Date.now()) {
-  let n = JSON.parse(e);
-  if (!Array.isArray(n)) return null;
-  let r = [];
-  for (let e = 0; e < n.length; e++) try {
-    let i = D(n[e], t);
-    i && r.push(i)
-  } catch {}
-  let i = JSON.stringify(r);
-  return {
-    templates: r,
-    serialized: i,
-    migrated: i !== e
-  }
+function O(e) {
+  return pe.includes(e)
 }
-var k = new WeakMap,
-  A = new WeakMap,
-  j = new WeakMap,
-  M = new WeakMap,
-  N = new class {
-    get templates() {
-      return a(r(k, this))
-    }
-    set templates(t) {
-      e(r(k, this), t, !0)
-    }
-    get tagCatalog() {
-      return a(r(A, this))
-    }
-    set tagCatalog(t) {
-      e(r(A, this), t, !0)
-    }
-    get activeTemplateId() {
-      return a(r(j, this))
-    }
-    set activeTemplateId(t) {
-      e(r(j, this), t, !0)
-    }
-    get placementSession() {
-      return a(r(M, this))
-    }
-    set placementSession(t) {
-      e(r(M, this), t, !0)
-    }
-    subscribeChange(e) {
-      return this.changeListeners.add(e), () => this.changeListeners.delete(e)
-    }
-    emitChange(e) {
-      for (let t of this.changeListeners) try {
-        t(e)
-      } catch (e) {
-        console.error(`Overlay change listener failed.`, e)
+
+function ye(e) {
+  return me.includes(e)
+}
+
+function k(e) {
+  return typeof e == `number` && Number.isSafeInteger(e) && e > 0
+}
+
+function be(e) {
+  return e == null ? null : typeof e == `number` && Number.isInteger(e) && e > 0 && e <= ge ? e : void 0
+}
+
+function xe(e) {
+  if (!Array.isArray(e)) return [];
+  let t = [];
+  for (let n of e) {
+    if (!D(n)) continue;
+    let {
+      currency: e,
+      amountMinor: r
+    } = n;
+    typeof e != `string` || !x.test(e) || k(r) && t.push({
+      currency: e,
+      amountMinor: r
+    })
+  }
+  return t
+}
+
+function Se(e) {
+  if (!D(e)) return null;
+  let t = {};
+  for (let [n, r] of Object.entries(e)) x.test(n) && k(r) && (t[n] = r);
+  return Object.keys(t).length ? t : null
+}
+
+function Ce(e) {
+  if (!D(e)) return null;
+  let {
+    id: t,
+    kind: n,
+    discountType: r,
+    percentBps: i,
+    fixedAmounts: a,
+    startsAt: o,
+    endsAt: s,
+    providers: c,
+    eligibility: l
+  } = e;
+  if (typeof t != `number` || !Number.isSafeInteger(t) || n !== `sale` || typeof o != `string` || typeof s != `string`) return null;
+  let u = Date.parse(o),
+    d = Date.parse(s);
+  if (!Number.isFinite(u) || !Number.isFinite(d) || d <= u) return null;
+  let f = Array.isArray(c) ? c.filter(O) : [];
+  if (!f.length || !ye(l)) return null;
+  let p = be(e.perUserLimit);
+  if (p === void 0) return null;
+  let m = {
+    id: t,
+    kind: n,
+    startsAt: o,
+    endsAt: s,
+    providers: f,
+    eligibility: l,
+    perUserLimit: p
+  };
+  if (r === `percent`) return E(i) ? {
+    ...m,
+    discountType: r,
+    percentBps: i,
+    fixedAmounts: null
+  } : null;
+  if (r === `fixed`) {
+    let e = Se(a);
+    return e ? {
+      ...m,
+      discountType: r,
+      percentBps: null,
+      fixedAmounts: e
+    } : null
+  }
+  return null
+}
+
+function we(e) {
+  if (!D(e) || !D(e.products)) return null;
+  let t = {};
+  for (let [n, r] of Object.entries(e.products)) {
+    if (!he.test(n) || !D(r)) continue;
+    let e = {};
+    if (D(r.prices))
+      for (let [t, n] of Object.entries(r.prices)) {
+        if (!O(t)) continue;
+        let r = xe(n);
+        r.length && (e[t] = r)
       }
+    t[n] = {
+      promotion: Ce(r.promotion),
+      prices: e
     }
-    constructor() {
-      i(this, k, t(n([]))), i(this, A, t(n([]))), i(this, j, t(null)), i(this, M, t(!1)), o(this, `suppressPersist`, !1), o(this, `persistTimeout`, null), o(this, `changeListeners`, new Set), o(this, `flushPersist`, () => {
-        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(f, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(p, JSON.stringify(this.tagCatalog)))
-      });
-      {
-        let e = localStorage.getItem(f);
-        if (e) try {
-          let t = O(e);
-          if (!t) {
-            localStorage.removeItem(f);
+  }
+  return {
+    revision: typeof e.revision == `string` ? e.revision : ``,
+    generatedAt: typeof e.generatedAt == `string` ? e.generatedAt : ``,
+    promotionsEnabled: e.promotionsEnabled === !0,
+    couponEntry: e.couponEntry === !0,
+    products: t
+  }
+}
+var Te = Object.entries(ne.products).flatMap(([e, t]) => {
+  if (t.priceCurrency !== `fiat` || !t.lookupKey) return [];
+  let n = t.items.map(e => e.name),
+    r = n.includes(`Prism`) ? `prism` : n.includes(`Droplet`) ? `droplets` : null;
+  return r ? [{
+    productId: Number(e),
+    priceCents: t.price ?? 0,
+    currency: r
+  }] : []
+});
+
+function Ee(e) {
+  let t = e && v.hidden(e);
+  if (!e || !t) return [];
+  let n = [`droplets`, `prism`].flatMap(t => v.products(e, t).filter(e => e.priceCurrency === `fiat`).map(e => ({
+    productId: e.id,
+    priceCents: e.price,
+    currency: t
+  })));
+  return [...Te.filter(e => !t.has(e.productId)), ...n]
+}
+
+function A(e) {
+  let t = e.filter(e => (e == null ? void 0 : e.kind) === `sale`);
+  if (!t.length) return null;
+  let n = Math.min(...t.map(e => e.endsAt)),
+    r = t.map(e => e.promotion.discountType === `percent` ? e.promotion.percentBps : null);
+  if (r.some(e => typeof e != `number`)) return {
+    kind: `generic`,
+    endsAt: n
+  };
+  let i = r,
+    a = Math.max(...i);
+  return {
+    kind: i.every(e => e === a) ? `percent` : `up_to`,
+    percentBps: a,
+    endsAt: n
+  }
+}
+
+function j(e, t) {
+  return new Intl.NumberFormat(t ?? N(), {
+    maximumFractionDigits: 2
+  }).format(e / 100)
+}
+
+function De(e) {
+  return e.promotion.discountType === `percent` && e.promotion.percentBps ? g.store_offer_badge_percent({
+    percent: j(e.promotion.percentBps)
+  }) : g.store_offer_badge_fixed({
+    amount: w(e.estimate.discountMinor, e.estimate.currency)
+  })
+}
+
+function Oe(e) {
+  switch (e) {
+    case `new_customers`:
+      return g.store_offer_new_customers_only();
+    case `returning_customers`:
+      return g.store_offer_returning_customers_only();
+    case `everyone`:
+      return null
+  }
+}
+
+function ke(e) {
+  return typeof e != `number` || !Number.isInteger(e) || e <= 0 ? null : g.store_offer_per_customer_limit({
+    count: new Intl.NumberFormat(N()).format(e)
+  })
+}
+
+function Ae(e) {
+  return e.kind === `generic` ? `%` : g.store_offer_badge_percent({
+    percent: j(e.percentBps)
+  })
+}
+
+function je(e) {
+  return e ? {
+    label: Ae(e),
+    title: M(e)
+  } : null
+}
+
+function M(e) {
+  if (e.kind === `generic`) return g.store_offer_notice_generic();
+  let t = j(e.percentBps);
+  return e.kind === `percent` ? g.store_offer_notice_percent({
+    percent: t
+  }) : g.store_offer_notice_up_to({
+    percent: t
+  })
+}
+
+function Me(e, t) {
+  let n = e - t;
+  if (!Number.isFinite(n) || n <= 0) return null;
+  let r = Math.ceil(n / 6e4);
+  if (r < 60) return g.store_offer_ends_in_minutes({
+    minutes: r
+  });
+  let i = Math.floor(r / 60);
+  return i < 24 ? g.store_offer_ends_in_hours({
+    hours: i,
+    minutes: r % 60
+  }) : g.store_offer_ends_in_days({
+    days: Math.floor(i / 24),
+    hours: i % 24
+  })
+}
+
+function Ne(e) {
+  return new Date(e).toISOString()
+}
+
+function N() {
+  return typeof navigator > `u` ? void 0 : navigator.language
+}
+var Pe = /^[A-Z0-9]{4,32}$/;
+
+function Fe(e) {
+  return e.toUpperCase().replace(/[\s_-]+/g, ``)
+}
+
+function Ie(e, t) {
+  let n = (Array.isArray(e.estimate) ? e.estimate : []).filter(e => D(e) && typeof e.currency == `string` && x.test(e.currency) && k(e.originalMinor) && k(e.discountedMinor) && e.discountedMinor <= e.originalMinor);
+  return n.find(e => e.currency === t.toUpperCase()) ?? n[0] ?? null
+}
+
+function Le(e, t) {
+  var n;
+  let r = e.promotion;
+  if ((r == null ? void 0 : r.discountType) === `percent` && E(r.percentBps)) return g.store_offer_badge_percent({
+    percent: j(r.percentBps)
+  });
+  let i = t.toUpperCase(),
+    a = (r == null ? void 0 : r.discountType) === `fixed` ? (n = r.fixedAmounts) == null ? void 0 : n[i] : void 0;
+  if (k(a)) return g.store_offer_badge_fixed({
+    amount: w(a, i)
+  });
+  let o = Ie(e, t);
+  return !o || o.discountedMinor >= o.originalMinor ? null : g.store_offer_badge_fixed({
+    amount: w(o.originalMinor - o.discountedMinor, o.currency)
+  })
+}
+
+function Re(e, t) {
+  return new Promise((n, r) => {
+    let i = setTimeout(() => r(Error(`Store offers request timed out`)), t);
+    e.then(e => {
+      clearTimeout(i), n(e)
+    }, e => {
+      clearTimeout(i), r(e)
+    })
+  })
+}
+
+function ze() {
+  return _.hasServerTimeEstimate() ? _.getEstimatedServerNowMs() : Date.now()
+}
+var P = new WeakMap,
+  F = new WeakMap,
+  I = new WeakMap,
+  L = new WeakMap,
+  R = new WeakMap,
+  z = new WeakMap,
+  B = new WeakMap,
+  V = new WeakMap,
+  H = new WeakMap,
+  U = new WeakMap,
+  W = new WeakMap,
+  G = new WeakMap,
+  K = new WeakMap,
+  q = new WeakSet,
+  J = new WeakMap,
+  Be = class {
+    get now() {
+      return h(u(P, this))
+    }
+    set now(e) {
+      n(u(P, this), e, !0)
+    }
+    constructor(e = {}) {
+      r(this, q), d(this, P, a(s(Date.now()))), d(this, F, a(null)), d(this, I, a(!1)), d(this, L, a(null)), d(this, R, []), d(this, z, !1), d(this, B, 0), d(this, V, null), d(this, H, -1 / 0), d(this, U, void 0), d(this, W, void 0), d(this, G, void 0), d(this, K, void 0), d(this, J, () => {
+        if (u(z, this)) {
+          if (l(q, this, X).call(this)) {
+            clearTimeout(u(U, this)), clearTimeout(u(W, this));
             return
           }
-          if (this.templates = t.templates, t.migrated) try {
-            localStorage.setItem(f, t.serialized)
-          } catch (e) {
-            console.error(`Failed to persist migrated overlay metadata.`, e)
-          }
-        } catch {
-          localStorage.removeItem(f)
+          l(q, this, Q).call(this), u(K, this).call(this) - u(H, this) >= l(q, this, Ke).call(this) ? this.refresh() : l(q, this, Z).call(this)
         }
-        let t = localStorage.getItem(p),
-          n = [];
-        if (t) try {
-          n = JSON.parse(t)
-        } catch {
-          localStorage.removeItem(p)
-        }
-        this.tagCatalog = S(n, this.templates), this.alignTemplateTagColors();
+      }), i(G, this, e.client), i(K, this, e.clock ?? ze)
+    }
+    get platform() {
+      return h(u(L, this))
+    }
+    get failed() {
+      return h(u(I, this))
+    }
+    get couponEntry() {
+      var e;
+      return ((e = l(q, this, He).call(this)) == null ? void 0 : e.couponEntry) === !0
+    }
+    watch(e, t = {}) {
+      return f(() => {
+        let n = {
+          platform: e,
+          background: t.background === !0
+        };
+        u(R, this).push(n), l(q, this, We).call(this, e);
+        let r = !0;
+        return () => f(() => {
+          if (!r) return;
+          r = !1;
+          let e = u(R, this).indexOf(n);
+          e >= 0 && u(R, this).splice(e, 1);
+          let t = u(R, this).at(-1);
+          t ? t.platform !== h(u(L, this)) && l(q, this, We).call(this, t.platform) : l(q, this, Ge).call(this)
+        })
+      })
+    }
+    refresh() {
+      let e = h(u(L, this));
+      if (!e) return Promise.resolve();
+      if (u(V, this)) return u(V, this);
+      let t = u(B, this),
+        r = u(G, this) ?? _;
+      i(H, this, u(K, this).call(this)), clearTimeout(u(U, this));
+      let a = (async () => {
+        let i = null;
         try {
-          localStorage.setItem(p, JSON.stringify(this.tagCatalog))
-        } catch (e) {
-          console.error(`Failed to persist the overlay tag catalog.`, e)
+          i = we(await Re(r.getStoreOffers(e), ue))
+        } catch {
+          i = null
         }
-        window.addEventListener(`pagehide`, this.flushPersist)
-      }
+        t === u(B, this) && (i ? (n(u(F, this), {
+          offers: i,
+          platform: e,
+          fetchedAt: u(K, this).call(this)
+        }), n(u(I, this), !1)) : n(u(I, this), !0))
+      })().finally(() => {
+        u(V, this) === a && i(V, this, null), !(t !== u(B, this) || !u(z, this)) && (l(q, this, Q).call(this), l(q, this, Z).call(this))
+      });
+      return i(V, this, a), a
     }
-    alignTemplateTagColors(e) {
-      let t = e ? [e] : this.templates;
-      for (let e of t) {
-        var n;
-        (n = e.tags) != null && n.length && (e.tagColorIdxs = e.tags.map(e => {
-          var t;
-          return ((t = this.tagCatalog.find(t => y(t.name) === y(e))) == null ? void 0 : t.colorIdx) ?? b(e)
-        }))
-      }
+    promotionFor(e, t) {
+      var n;
+      let r = (n = l(q, this, He).call(this)) == null || (n = n.products[String(e)]) == null ? void 0 : n.promotion;
+      if (!r || !r.providers.includes(t)) return null;
+      let i = Date.parse(r.startsAt),
+        a = Date.parse(r.endsAt);
+      return this.now >= i && this.now < a ? r : null
     }
-    ensureTemplateTags(e) {
-      let t = S(this.tagCatalog, [e]);
-      t.length !== this.tagCatalog.length && (this.tagCatalog = t), this.alignTemplateTagColors(e)
-    }
-    persist() {
-      this.suppressPersist || (this.persistTimeout !== null && window.clearTimeout(this.persistTimeout), this.persistTimeout = window.setTimeout(this.flushPersist, 120))
-    }
-    commitPendingChanges() {
-      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(f, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(p, JSON.stringify(this.tagCatalog))
-    }
-    replaceServerManaged(e) {
-      let t = this.templates.filter(e => e.serverManaged);
-      if (t.length === 0 && e.length === 0) return;
-      let n = new Set(e.map(e => e.id));
-      this.templates = [...this.templates.filter(e => !e.serverManaged), ...e], this.activeTemplateId && t.some(e => e.id === this.activeTemplateId) && !n.has(this.activeTemplateId) && (this.activeTemplateId = null)
-    }
-    add(e) {
-      this.ensureTemplateTags(e);
-      for (let e of this.templates) e.order++;
-      e.order = 0, h(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
-        kind: `add`,
-        id: e.id
-      })
-    }
-    remove(e) {
-      let t = this.templates.some(t => t.id === e);
-      this.templates = this.templates.filter(t => t.id !== e), this.activeTemplateId === e && (this.activeTemplateId = null), this.persist(), t && this.emitChange({
-        kind: `remove`,
-        id: e
-      })
-    }
-    update(e, t) {
-      let n = this.templates.findIndex(t => t.id === e);
-      if (n === -1) return;
-      let r = t.updatedAt === void 0 ? {
-        ...t,
-        updatedAt: Date.now()
-      } : t;
-      Object.assign(this.templates[n], r), (t.tags !== void 0 || t.tagColorIdxs !== void 0) && this.ensureTemplateTags(this.templates[n]), !this.templates[n].serverManaged && (this.persist(), this.emitChange({
-        kind: `update`,
-        id: e
+    saleSummary(e, t) {
+      let n = S(e);
+      return A(Ee(h(u(L, this))).filter(e => !t || e.currency === t).map(e => {
+        var t;
+        return (t = this.packPricing({
+          productId: e.productId,
+          provider: `fastspring`,
+          currency: n,
+          fallbackMinor: C(e.priceCents, n)
+        })) == null ? void 0 : t.offer
       }))
     }
-    createTag(e, t) {
-      let n = C(e);
-      return !n || this.tagCatalog.length >= 64 || this.tagCatalog.some(e => y(e.name) === y(n)) ? !1 : (this.tagCatalog = [...this.tagCatalog, {
-        name: n,
-        colorIdx: x(t, n)
-      }], this.persist(), !0)
+    verifiedPrices(e, t) {
+      var n;
+      return ((n = l(q, this, Ue).call(this)) == null || (n = n.products[String(e)]) == null || (n = n.prices) == null ? void 0 : n[t]) ?? []
     }
-    updateTag(e, t, n) {
-      let r = y(e),
-        i = this.tagCatalog.findIndex(e => y(e.name) === r),
-        a = C(t);
-      if (i === -1 || !a || this.tagCatalog.some((e, t) => t !== i && y(e.name) === y(a))) return !1;
-      let o = x(n, a),
-        s = Date.now();
-      for (let e of this.templates) {
-        var c;
-        e.serverManaged || !((c = e.tags) != null && c.some(e => y(e) === r)) || (e.tags = e.tags.map(e => y(e) === r ? a : e), e.tagColorIdxs = e.tags.map((t, n) => {
-          var r;
-          return y(t) === y(a) ? o : ((r = e.tagColorIdxs) == null ? void 0 : r[n]) ?? b(t)
-        }), e.updatedAt = s, this.emitChange({
-          kind: `update`,
-          id: e.id
-        }))
-      }
-      return this.tagCatalog[i] = {
-        name: a,
-        colorIdx: o
-      }, this.tagCatalog = [...this.tagCatalog], this.persist(), !0
+    verifiedPrice(e, t, n) {
+      let r = n.toUpperCase();
+      return this.verifiedPrices(e, t).find(e => e.currency === r) ?? null
     }
-    deleteTag(e) {
-      let t = y(e);
-      if (!this.tagCatalog.some(e => y(e.name) === t)) return !1;
-      this.tagCatalog = this.tagCatalog.filter(e => y(e.name) !== t);
-      let n = Date.now();
-      for (let e of this.templates) {
-        var r;
-        if (e.serverManaged || !((r = e.tags) != null && r.some(e => y(e) === t))) continue;
-        let i = e.tags.map((t, n) => {
-          var r;
-          return {
-            tag: t,
-            colorIdx: (r = e.tagColorIdxs) == null ? void 0 : r[n]
-          }
-        }).filter(e => y(e.tag) !== t);
-        e.tags = i.length > 0 ? i.map(e => e.tag) : void 0, e.tagColorIdxs = i.length > 0 ? i.map(e => e.colorIdx ?? b(e.tag)) : void 0, e.updatedAt = n, this.emitChange({
-          kind: `update`,
-          id: e.id
-        })
-      }
-      return this.persist(), !0
-    }
-    reorder(e, t) {
-      let n = this.sorted.filter(e => !e.serverManaged && !e.canvas);
-      if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
-      let [r] = n.splice(e, 1);
-      n.splice(t, 0, r);
-      for (let e = 0; e < n.length; e++) {
-        let t = this.templates.findIndex(t => t.id === n[e].id);
-        t !== -1 && (this.templates[t].order = e)
-      }
-      this.persist()
-    }
-    getById(e) {
-      return this.templates.find(t => t.id === e)
-    }
-    get sorted() {
-      return Array.isArray(this.templates) ? [...this.templates].sort((e, t) => e.order - t.order) : []
-    }
-  },
-  P;
-(function(e) {
-  async function t(e) {
-    return {
-      ...e,
-      image: {
-        dataUrl: await s(e.image.data),
-        width: e.image.width,
-        height: e.image.height
+    packPricing(e) {
+      if (h(u(L, this)) !== `web`) return null;
+      let t = this.verifiedPrice(e.productId, e.provider, e.currency),
+        n = t ? {
+          amountMinor: t.amountMinor,
+          currency: t.currency,
+          verified: !0
+        } : {
+          amountMinor: e.fallbackMinor,
+          currency: e.currency.toUpperCase(),
+          verified: !1
+        },
+        r = this.promotionFor(e.productId, e.provider),
+        i = r ? T(n.amountMinor, n.currency, r) : null,
+        a = r && i ? {
+          kind: `sale`,
+          promotion: r,
+          estimate: i,
+          verifiedPrice: n.verified,
+          endsAt: Date.parse(r.endsAt)
+        } : null,
+        o = l(q, this, Ve).call(this, e, n);
+      return {
+        price: n,
+        offer: o && (!a || o.estimate.discountMinor >= a.estimate.discountMinor) ? o : a,
+        sale: a
       }
     }
+  };
+
+function Ve(e, t) {
+  let n = e.coupon;
+  if (!n || !n.validation.productIds.includes(e.productId)) return null;
+  let {
+    promotion: r
+  } = n.validation, i = Date.parse(r.endsAt);
+  if (!Number.isFinite(i) || this.now >= i) return null;
+  let a = T(t.amountMinor, t.currency, r);
+  return a ? {
+    kind: `coupon`,
+    code: n.code,
+    promotion: r,
+    estimate: a,
+    verifiedPrice: t.verified,
+    endsAt: i
+  } : null
+}
+
+function Y() {
+  let e = h(u(F, this));
+  return h(u(L, this)) === `web` && (e == null ? void 0 : e.platform) === `web` ? e : null
+}
+
+function He() {
+  let e = l(q, this, Y).call(this);
+  return !e || h(u(I, this)) || !e.offers.promotionsEnabled ? null : this.now - e.fetchedAt <= 18e4 ? e.offers : null
+}
+
+function Ue() {
+  let e = l(q, this, Y).call(this);
+  return e && this.now - e.fetchedAt <= 6e5 ? e.offers : null
+}
+
+function We(e) {
+  if (u(z, this) || (i(z, this, !0), typeof document < `u` && document.addEventListener(`visibilitychange`, u(J, this))), v.load(e), l(q, this, Q).call(this), h(u(L, this)) !== e) {
+    var t;
+    n(u(L, this), e, !0), i(B, this, (t = u(B, this), t++, t)), i(V, this, null), this.refresh();
+    return
   }
-  e.toJson = t;
-  async function n(e, t) {
-    return {
-      ...e,
-      image: {
-        data: c(e.image.dataUrl),
-        width: e.image.width,
-        height: e.image.height
-      },
-      order: t
-    }
+  u(K, this).call(this) - u(H, this) >= de ? this.refresh() : l(q, this, Z).call(this)
+}
+
+function Ge() {
+  i(z, this, !1), clearTimeout(u(U, this)), clearTimeout(u(W, this)), typeof document < `u` && document.removeEventListener(`visibilitychange`, u(J, this))
+}
+
+function Ke() {
+  return u(R, this).some(e => !e.background) ? ce : le
+}
+
+function X() {
+  return typeof document < `u` && document.visibilityState === `hidden`
+}
+
+function Z() {
+  if (clearTimeout(u(U, this)), !u(z, this) || l(q, this, X).call(this) || u(V, this)) return;
+  let e = Math.max(0, u(H, this) + l(q, this, Ke).call(this) - u(K, this).call(this));
+  i(U, this, setTimeout(() => void this.refresh(), e))
+}
+
+function Q() {
+  this.now = u(K, this).call(this), clearTimeout(u(W, this)), !(!u(z, this) || l(q, this, X).call(this)) && i(W, this, setTimeout(() => l(q, this, Q).call(this), l(q, this, qe).call(this)))
+}
+
+function qe() {
+  var e;
+  let t = fe,
+    n = ((e = l(q, this, Y).call(this)) == null ? void 0 : e.offers.products) ?? {};
+  for (let e of Object.values(n)) {
+    let n = e.promotion;
+    if (n)
+      for (let e of [Date.parse(n.startsAt), Date.parse(n.endsAt)]) {
+        let n = e - this.now;
+        n > 0 && n + y < t && (t = n + y)
+      }
   }
-  e.fromJson = n
-})(P || (P = {}));
+  return Math.max(t, y)
+}
+var Je = new Be,
+  $ = new WeakMap,
+  Ye = new class {
+    constructor() {
+      d(this, $, a(null))
+    }
+    get(e) {
+      let t = h(u($, this));
+      return t && t.userId === e ? t.coupon : null
+    }
+    set(e, t) {
+      n(u($, this), {
+        userId: e,
+        coupon: t
+      })
+    }
+    clear() {
+      n(u($, this), null)
+    }
+  };
 export {
-  w as a, u as c, T as i, b as n, N as o, C as r, y as s, P as t
+  ae as S, Ye as _, C as a, A as b, j as c, De as d, Oe as f, M as g, je as h, Ie as i, Ne as l, _e as m, Pe as n, Me as o, ke as p, Le as r, w as s, ve as t, Fe as u, S as v, se as x, Je as y
 };

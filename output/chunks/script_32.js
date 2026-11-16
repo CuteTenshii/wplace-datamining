@@ -1,49 +1,174 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
+  Ft as e,
+  Lt as t,
+  Vt as n,
+  Wt as r,
+  pt as i,
+  un as a
 } from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
 import {
-  t as l
-} from "./CNowd2ef.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>`),
-  f = o(`<svg><path d="M13 20H9V18H13V20ZM19 16H21V18H19V20H17V18H15V16H17V8H19V16ZM9 18H7V16H9V18ZM7 6H9V8H7V16H5V8H3V6H5V4H7V6ZM15 16H13V14H15V16ZM23 16H21V14H23V16ZM3 10H1V8H3V10ZM11 10H9V8H11V10ZM17 8H15V6H17V8ZM15 6H11V4H15V6Z"></path></svg>`);
+  t as o
+} from "./DmHqBA5r.js";
+import {
+  Ft as s,
+  t as c
+} from "./C-DBsccD.js";
+var l = new WeakMap,
+  u = new WeakMap,
+  d = class {
+    constructor() {
+      r(this, l, t(`loading`)), r(this, u, t(!1)), a(this, `controller`, void 0), a(this, `publicKey`, ``), a(this, `subscription`, void 0), a(this, `needsFreshSubscription`, !1), a(this, `lastPreferences`, ``)
+    }
+    get state() {
+      return i(n(l, this))
+    }
+    set state(t) {
+      e(n(l, this), t, !0)
+    }
+    get busy() {
+      return i(n(u, this))
+    }
+    set busy(t) {
+      e(n(u, this), t, !0)
+    }
+    start(e) {
+      var t;
+      (t = this.controller) == null || t.abort();
+      let n = new AbortController;
+      return this.controller = n, this.subscription = void 0, this.needsFreshSubscription = !1, this.publicKey = ``, this.lastPreferences = ``, this.busy = !1, this.state = `loading`, e !== void 0 && this.refresh(), () => n.abort()
+    }
+    async refresh() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted)) {
+        if (!window.isSecureContext || !(`Notification` in window) || !(`serviceWorker` in navigator) || !(`PushManager` in window)) {
+          this.state = `unsupported`;
+          return
+        }
+        this.busy = !0;
+        try {
+          let e = await c.getNotificationPushConfig(t);
+          if (t.aborted) return;
+          if (this.publicKey = e.publicKey, !this.publicKey) {
+            this.state = `unavailable`;
+            return
+          }
+          if (Notification.permission === `denied`) {
+            this.state = `blocked`;
+            return
+          }
+          let n = await navigator.serviceWorker.getRegistration(),
+            r = await (n == null ? void 0 : n.pushManager.getSubscription());
+          if (t.aborted) return;
+          this.subscription = r ?? void 0;
+          let i = r ? await c.getNotificationPushStatus(r.endpoint, t) : {
+            enabled: !1
+          };
+          if (t.aborted) return;
+          this.state = i.enabled && Notification.permission === `granted` ? `on` : `off`
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
+        }
+      }
+    }
+    async enable() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted || this.busy || !this.publicKey)) {
+        this.state === `off` && (this.needsFreshSubscription = !0), this.busy = !0;
+        try {
+          let e = await Notification.requestPermission();
+          if (t.aborted) return;
+          if (e !== `granted`) {
+            this.state = e === `denied` ? `blocked` : `off`;
+            return
+          }
+          let n = await p(t);
+          if (t.aborted) return;
+          let r = Uint8Array.from(atob(this.publicKey.replace(/-/g, `+`).replace(/_/g, `/`)), e => e.charCodeAt(0)),
+            i = await n.pushManager.getSubscription();
+          if (t.aborted || (i && (this.needsFreshSubscription || !f(i.options.applicationServerKey, r)) && (await i.unsubscribe(), i = null), t.aborted) || (i ?? (i = await n.pushManager.subscribe({
+              userVisibleOnly: !0,
+              applicationServerKey: r
+            })), t.aborted)) return;
+          this.subscription = i, this.needsFreshSubscription = !1;
+          let a = o.device_notifications_body(),
+            l = s.muted,
+            u = o.device_notifications_charges_full();
+          await c.subscribeNotificationPush(i.toJSON(), a, l, u, t), t.aborted || (this.lastPreferences = JSON.stringify([a, l, u]), this.state = `on`)
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
+        }
+      }
+    }
+    async disable() {
+      var e;
+      let t = (e = this.controller) == null ? void 0 : e.signal;
+      if (!(!t || t.aborted || this.busy || !this.subscription)) {
+        this.busy = !0;
+        try {
+          if (await c.unsubscribeNotificationPush(this.subscription.endpoint, t), t.aborted) return;
+          this.state = `off`
+        } catch {
+          t.aborted || (this.state = `error`)
+        } finally {
+          t.aborted || (this.busy = !1)
+        }
+      }
+    }
+    async syncPreferences(e, t, n) {
+      var r;
+      let i = (r = this.controller) == null ? void 0 : r.signal,
+        a = JSON.stringify([e, t, n]);
+      if (!(!i || i.aborted || this.state !== `on` || this.busy || !this.subscription || this.lastPreferences === a)) {
+        this.busy = !0;
+        try {
+          let r = await c.updateNotificationPushPreferences(this.subscription.endpoint, e, t, n, i);
+          i.aborted || (this.lastPreferences = a, r.enabled || (this.state = `off`))
+        } catch {
+          i.aborted || (this.state = `error`)
+        } finally {
+          i.aborted || (this.busy = !1)
+        }
+      }
+    }
+  };
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+function f(e, t) {
+  if (!e) return !1;
+  let n = new Uint8Array(e);
+  return n.length === t.length && n.every((e, n) => e === t[n])
 }
+
+function p(e) {
+  return new Promise((t, n) => {
+    let r = () => {
+        clearTimeout(a), e.removeEventListener(`abort`, i)
+      },
+      i = () => {
+        r(), n(e.reason)
+      },
+      a = setTimeout(() => {
+        r(), n(Error(`Service worker unavailable`))
+      }, 1e4);
+    if (e.addEventListener(`abort`, i, {
+        once: !0
+      }), e.aborted) {
+      i();
+      return
+    }
+    navigator.serviceWorker.ready.then(e => {
+      r(), t(e)
+    }, e => {
+      r(), n(e)
+    })
+  })
+}
+var m = new d;
 export {
-  p as t
+  m as t
 };

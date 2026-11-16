@@ -1,44 +1,49 @@
 import {
-  Gt as e,
-  Ht as t,
-  Ut as n,
-  Vt as r,
-  Wt as i,
-  un as a
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
-var o, s, c, l, u, d, f = 9,
-  p = 95,
-  m = 45,
-  h = 5;
+import "./B8UK1oE5.js";
+import {
+  t as l
+} from "./s5C8vWt-.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>`),
+  f = o(`<svg><path d="M19 22H5v-2h14v2ZM5 20H3V10h2v10Zm16 0h-2V10h2v10ZM9 8h6V4h2v4h2v2H5V8h2V4h2v4Zm6-4H9V2h6v2Z"></path></svg>`);
 
-function g(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, h) >>> 2
-}
-
-function _(e = ``, t = p, n = m, r = g) {
-  let i = r(e),
-    a = i % f * (360 / f);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(o = globalThis.customElements) != null && o.get(`minidenticon-svg`) || (s = globalThis.customElements) == null || s.define(`minidenticon-svg`, (u = new WeakMap, d = new WeakSet, c = class extends HTMLElement {
-  constructor(...t) {
-    super(...t), e(this, d), i(this, u, !1)
-  }
-  connectedCallback() {
-    n(d, this, v).call(this), t(u, this, !0)
-  }
-  attributeChangedCallback() {
-    r(u, this) && n(d, this, v).call(this)
-  }
-}, a(c, `observedAttributes`, [`username`, `saturation`, `lightness`]), l = {
-  _: {}
-}, c));
-
-function v() {
-  var e;
-  let t = c.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    r = t.join(`,`);
-  this.innerHTML = (e = n(c, c, l)._)[r] ?? (e[r] = _(...t))
+function p(o, p) {
+  s(p, !0);
+  let m = a(p, u);
+  var h = c(),
+    g = i(h),
+    _ = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    },
+    v = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...m
+      })), r(t, n)
+    };
+  t(g, e => {
+    l.standard ? e(_) : e(v, -1)
+  }), r(o, h), n()
 }
 export {
-  _ as t
+  p as t
 };

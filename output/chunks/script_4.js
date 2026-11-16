@@ -50,75 +50,82 @@ var e = function(e, t) {
   },
   r = [`en`, `pt`, `ch`, `de`, `es`, `fr`, `it`, `jp`, `pl`, `ru`, `uk`, `vi`],
   i = Object.assign({
-    "../../../messages/ch.json": () => n(() => import(`./DBRjq5KK.js`), [], import.meta.url),
-    "../../../messages/de.json": () => n(() => import(`./DSns4AYf.js`), [], import.meta.url),
-    "../../../messages/en.json": () => n(() => import(`./CKwXpfJK.js`), [], import.meta.url),
-    "../../../messages/es.json": () => n(() => import(`./ZgC0gDuL.js`), [], import.meta.url),
-    "../../../messages/fr.json": () => n(() => import(`./BTMXEiIw.js`), [], import.meta.url),
-    "../../../messages/it.json": () => n(() => import(`./BshjBJ1t.js`), [], import.meta.url),
-    "../../../messages/jp.json": () => n(() => import(`./pgyCFo0K.js`), [], import.meta.url),
-    "../../../messages/pl.json": () => n(() => import(`./BjojEzdz.js`), [], import.meta.url),
-    "../../../messages/pt.json": () => n(() => import(`./C2YNYRJf.js`), [], import.meta.url),
-    "../../../messages/ru.json": () => n(() => import(`./D0ADCZ1a.js`), [], import.meta.url),
-    "../../../messages/uk.json": () => n(() => import(`./Bn8oDiOR.js`), [], import.meta.url),
-    "../../../messages/vi.json": () => n(() => import(`./ChfmU6HT.js`), [], import.meta.url)
+    "../../../messages/ch.json": () => n(() => import(`./DcnMRZKB.js`), [], import.meta.url),
+    "../../../messages/de.json": () => n(() => import(`./2XaogCru.js`), [], import.meta.url),
+    "../../../messages/en.json": () => n(() => import(`./B8PJ7G1q.js`), [], import.meta.url),
+    "../../../messages/es.json": () => n(() => import(`./DKJ2PMvE.js`), [], import.meta.url),
+    "../../../messages/fr.json": () => n(() => import(`./DnL5FNxn.js`), [], import.meta.url),
+    "../../../messages/it.json": () => n(() => import(`./Di1ZkzKs.js`), [], import.meta.url),
+    "../../../messages/jp.json": () => n(() => import(`./DNddrNC_.js`), [], import.meta.url),
+    "../../../messages/pl.json": () => n(() => import(`./jCCq9L0A.js`), [], import.meta.url),
+    "../../../messages/pt.json": () => n(() => import(`./dawrqyXC.js`), [], import.meta.url),
+    "../../../messages/ru.json": () => n(() => import(`./BUzzeW3J.js`), [], import.meta.url),
+    "../../../messages/uk.json": () => n(() => import(`./BfOUTxHV.js`), [], import.meta.url),
+    "../../../messages/vi.json": () => n(() => import(`./BeoBaXvi.js`), [], import.meta.url)
   }),
   a = new Map,
   o = `PARAGLIDE_LOCALE`,
   s = `en`,
-  c;
+  c, l;
 
-function l() {
+function u() {
   return s
 }
 
-function u(e) {
+function d(e) {
   return typeof e == `string` && r.includes(e)
 }
-async function d(e) {
+async function f(e) {
   let t = a.get(e);
   if (!t) {
     let n = i[`../../../messages/${e}.json`];
     if (!n) throw Error(`No message catalog is configured for locale "${e}"`);
-    t = n().then(t => g(e, t.default)), a.set(e, t)
+    t = n().then(t => v(e, t.default)), a.set(e, t)
   }
-  c = await t, s = e
+  let n = await t;
+  c = l ? {
+    ...n,
+    ...v(e, await l(e))
+  } : n, s = e
 }
-async function f() {
+async function p(e) {
+  l = e, await f(s)
+}
+async function m() {
   if (typeof window > `u`) {
-    await d(`en`);
+    await f(`en`);
     return
   }
-  await d(m() ?? h() ?? `en`)
+  await f(g() ?? _() ?? `en`)
 }
 
-function p() {
+function h() {
   if (!c) throw Error(`The message catalog was used before initializeLocale() completed`);
   return c
 }
 
-function m() {
+function g() {
   try {
     let e = localStorage.getItem(o);
-    return u(e) ? e : void 0
+    return d(e) ? e : void 0
   } catch {
     return
   }
 }
 
-function h() {
+function _() {
   for (let e of navigator.languages ?? []) {
     let t = e.toLowerCase();
-    if (u(t)) return t;
+    if (d(t)) return t;
     let n = t.split(`-`)[0];
-    if (u(n)) return n
+    if (d(n)) return n
   }
 }
 
-function g(e, t) {
+function v(e, t) {
   if (typeof t != `object` || !t || Array.isArray(t)) throw Error(`The message catalog for locale "${e}" is not an object`);
   return t
 }
 export {
-  n as a, o as i, l as n, f as r, p as t
+  o as a, p as i, u as n, n as o, m as r, h as t
 };

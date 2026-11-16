@@ -1,85 +1,58 @@
-function e(e, t) {
-  if (t <= 0 || e < 0) return 0;
-  let n = t - 1;
-  return e > n ? n : e
-}
+function e(e) {
+  let t, n = !1;
 
-function t(t, n) {
-  let r = t.clientWidth || t.width || 1,
-    i = t.clientHeight || t.height || 1,
-    a = t.width / r,
-    o = t.height / i;
-  return [e(Math.floor(n.x * a), t.width), e(Math.floor(n.y * o), t.height)]
-}
+  function r(r) {
+    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
+      t = void 0;
+      return
+    }
+    let i = r.changedTouches[0];
+    t = {
+      id: i.identifier,
+      x: i.clientX,
+      y: i.clientY
+    }, r.cancelable && r.preventDefault()
+  }
 
-function n(e, t, n) {
-  return new Promise((r, i) => {
-    e.once(`render`, () => {
-      let a = e.getCanvas().toDataURL(),
-        o = document.createElement(`img`);
-      o.src = a, o.onload = () => {
-        let e = document.createElement(`canvas`);
-        e.width = o.width, e.height = o.height;
-        let a = e.getContext(`2d`);
-        if (a) {
-          a.drawImage(o, 0, 0);
-          let [e, i, s, c] = a.getImageData(t, n, 1, 1).data;
-          r([e, i, s, c])
-        } else i(Error(`Could not get 2d context from canvas`));
-        o.remove(), e.remove()
-      }
-    }), e.triggerRepaint()
-  })
-}
+  function i(e) {
+    if (!t) return;
+    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
+  }
 
-function r(e, t) {
-  let n = e.getBounds(),
-    r = e.getCanvas(),
-    i = r.width || r.clientWidth || 1,
-    a = r.height || r.clientHeight || 1,
-    o = (t == null ? void 0 : t.maxWidth) ?? i,
-    s = (t == null ? void 0 : t.maxHeight) ?? a,
-    c = Math.min(1, o / i, s / a),
-    l = Math.max(1, Math.floor(i * c)),
-    u = Math.max(1, Math.floor(a * c));
-  return {
-    north: n.getNorth(),
-    south: n.getSouth(),
-    west: n.getWest(),
-    east: n.getEast(),
-    width: l,
-    height: u
+  function a(n) {
+    if (!t) return;
+    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    if (!r) return;
+    let i = t;
+    t = void 0;
+    let a = e.getBoundingClientRect();
+    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
+  }
+
+  function o(e) {
+    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
+  }
+
+  function s(e) {
+    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
+  }
+
+  function c() {
+    t = void 0
+  }
+  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
+    passive: !1
+  }), e.addEventListener(`touchmove`, i, {
+    passive: !0
+  }), e.addEventListener(`touchend`, a, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, c), {
+    destroy() {
+      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
+    }
   }
 }
-
-function i(e, t) {
-  return new Promise((n, r) => {
-    e.once(`render`, () => {
-      let i = e.getCanvas(),
-        a = i;
-      if (t != null && t.maxWidth || t != null && t.maxHeight) {
-        let e = i.width,
-          n = i.height,
-          r = (t == null ? void 0 : t.maxWidth) ?? e,
-          o = (t == null ? void 0 : t.maxHeight) ?? n;
-        a = document.createElement(`canvas`);
-        let s = Math.min(r / e, o / n);
-        a.width = Math.floor(e * s), a.height = Math.floor(n * s);
-        let c = a.getContext(`2d`);
-        c && c.drawImage(i, 0, 0, a.width, a.height)
-      }
-      try {
-        a.toBlob(e => {
-          e && n(e)
-        }, (t == null ? void 0 : t.type) ?? `image/png`, (t == null ? void 0 : t.quality) ?? 1)
-      } catch (e) {
-        r(e)
-      } finally {
-        a !== i && a.remove()
-      }
-    })
-  })
-}
 export {
-  r as i, i as n, n as r, t
+  e as t
 };

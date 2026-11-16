@@ -1,49 +1,108 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
+  M as e,
+  ht as t
+} from "./C-DBsccD.js";
 import {
-  t as l
-} from "./CNowd2ef.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"></path></svg>`),
-  f = o(`<svg><path d="M4 20h3v-2h4v4h2v-4h4v2h-2v4H9v-4H7v2H2v-5h2v3Zm18 2h-5v-2h3v-3h2v5ZM6 11H2v2h4v4H4v-2H0V9h4V7h2v4Zm14-2h4v6h-4v2h-2v-4h4v-2h-4V7h2v2Zm-6 7h-4v-2h4v2Zm-4-2H8v-4h2v4Zm6 0h-2v-4h2v4Zm-2-4h-4V8h4v2ZM7 4H4v3H2V2h5v2Zm8 0h2V2h5v5h-2V4h-3v2h-4V2h-2v4H7V4h2V0h6v4Z"></path></svg>`);
+  a as n,
+  i as r
+} from "./BGL3fwXZ.js";
+var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
+function a(e) {
+  if (e === null) return !1;
+  let t = e.trim().toLowerCase();
+  return t !== `0` && t !== `false`
+}
+
+function o(e) {
+  if (e === null || e.trim() === ``) return;
+  let t = Number(e);
+  return Number.isFinite(t) ? t : void 0
+}
+
+function s(t) {
+  let s = {
+      opaque: !0
     },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
+    c = t.searchParams,
+    l = o(c.get(`lat`)),
+    u = o(c.get(`lng`));
+  l !== void 0 && u !== void 0 && r({
+    lat: l,
+    lng: u
+  }) && (s.pos = {
+    lat: l,
+    lng: u
+  });
+  let d = o(c.get(`zoom`));
+  d !== void 0 && n(d) && (s.zoom = d);
+  let f = o(c.get(`season`));
+  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
+  let p = c.get(`opaque`);
+  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
+  let m = c.get(`area`);
+  if (m) {
+    let e = m.split(`,`);
+    if (e.length === 4) {
+      let [t, n, r, i] = e.map(e => o(e));
+      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
+        south: t,
+        west: n,
+        north: r,
+        east: i
+      })
+    }
+  }
+  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
+  let h = c.get(`error`);
+  i.includes(h ?? ``) && (s.error = h);
+  let g = c.get(`domain`);
+  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
+}
+
+function c(e, t) {
+  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
+}
+var l;
+(function(e) {
+  async function n() {
+    if (!(i() || history.length < 3)) {
+      for (let e = 0; e < 50; e++) history.pushState({}, ``);
+      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
+    }
+  }
+  e.reset = n;
+
+  function r() {
+    if (!(`navigation` in window)) return;
+    let e = window.navigation;
+    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
+    let t = e.entries();
+    return Array.isArray(t) ? t.length : void 0
+  }
+
+  function i() {
+    var e;
+    if (t != null && (e = t.data) != null && e.id) return !0;
+    try {
+      let e = r();
+      return e !== void 0 && e >= history.length
+    } catch {
+      return !1
+    }
+  }
+})(l || (l = {}));
+
+function u(e, t, n) {
+  return new Promise(r => {
+    var i;
+    let a = i => {
+      var o;
+      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
     };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
+  })
 }
 export {
-  p as t
+  s as n, c as t
 };

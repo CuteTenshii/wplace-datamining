@@ -1,110 +1,177 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Bqk87ckG.js", "./DXDHrD2o.js", "./BFcQMSYa.js", "./CP1bBjmV.js", "./C4a9oB_N.js", "./CGo2LrSs.js", "./LPb4E7Sx.js", "./a7QZC4SB.js", "./C-K5_lpI.js", "./pKOrQQBa.js", "./FnlLczIa.js", "./BrohplP5.js", "./MIjkXV5b.js", "./NwTlnbFM.js"]))) => i.map(i => d[i]);
 import {
-  Xt as e,
-  Yt as t
+  Ft as e,
+  Lt as t,
+  Vt as n,
+  Wt as r,
+  pt as i
 } from "./DXDHrD2o.js";
-import "./BFcQMSYa.js";
-import {
-  a as n
-} from "./CGo2LrSs.js";
-import {
-  X as r,
-  ht as i
-} from "./LPb4E7Sx.js";
-import {
-  t as a
-} from "./C6pEreZx.js";
-import {
-  s as o
-} from "./BGL3fwXZ.js";
-var s = e({
-  status: `unavailable`
-});
-async function c() {
-  let e = t(s);
-  if (e.status === `available`) {
-    s.set({
-      status: `prompting`
-    });
+var a, o, s = `last_seen_patch_version`,
+  c = new(a = new WeakMap, o = new WeakMap, class {
+    get open() {
+      return i(n(a, this))
+    }
+    set open(t) {
+      e(n(a, this), t, !0)
+    }
+    get seenVersion() {
+      return i(n(o, this))
+    }
+    set seenVersion(t) {
+      e(n(o, this), t, !0)
+    }
+    constructor() {
+      r(this, a, t(!1)), r(this, o, t(``));
+      try {
+        this.seenVersion = localStorage.getItem(s) ?? ``
+      } catch {}
+    }
+    show(e) {
+      this.open = !0, this.seenVersion = e;
+      try {
+        localStorage.setItem(s, e)
+      } catch {}
+    }
+  });
+
+function l(e, {
+  interval: t,
+  immediate: n = !1
+}) {
+  let r = n ? -1 / 0 : Date.now(),
+    i = () => typeof document > `u` || document.visibilityState === `visible`;
+  async function a() {
+    let t = r;
     try {
-      return await e.event.prompt()
-    } finally {
-      t(s).status === `prompting` && s.set({
-        status: `unavailable`
-      })
+      r = Date.now(), await e()
+    } catch (e) {
+      console.error(e), r = t
     }
   }
+  let o = setInterval(() => {
+    i() && a()
+  }, t);
+  n && a();
+  async function s() {
+    Date.now() - r >= t && await a()
+  }
+  let c = new AbortController;
+  return typeof document < `u` && (document.addEventListener(`visibilitychange`, () => s(), {
+    signal: c.signal
+  }), document.addEventListener(`resume`, () => s(), {
+    signal: c.signal
+  })), typeof window < `u` && (window.addEventListener(`pageshow`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`focus`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`online`, () => s(), {
+    signal: c.signal
+  }), window.addEventListener(`wplace:online`, () => s(), {
+    signal: c.signal
+  })), () => {
+    clearInterval(o), c.abort()
+  }
+}
+var u = void 0;
+typeof navigator < `u` && navigator.serviceWorker && navigator.serviceWorker.addEventListener(`controllerchange`, () => {
+  u && b({
+    type: `previewPixels`,
+    data: u
+  }).catch(e => console.warn(`[sw] message failed`, e))
+});
+var d = new Set;
+
+function f(e) {
+  return d.add(e), () => d.delete(e)
 }
 
-function l() {
-  return window.matchMedia(`(display-mode: standalone)`).matches || `standalone` in window.navigator && window.navigator.standalone === !0
+function p(e) {
+  return u = e, b({
+    type: `previewPixels`,
+    data: e
+  })
 }
 
-function u() {
-  let e = `last-unfocus`,
-    t = new AbortController,
-    c = window.pwaInstallPrompt;
-  if (window.pwaInstallPrompt = void 0, c && s.set({
-      status: `available`,
-      event: c
-    }), window.addEventListener(`beforeinstallprompt`, e => {
-      e.preventDefault(), window.pwaInstallPrompt === e && (window.pwaInstallPrompt = void 0), s.set({
-        status: `available`,
-        event: e
-      })
-    }, {
-      signal: t.signal
-    }), window.addEventListener(`appinstalled`, () => {
-      s.set({
-        status: `installed`
-      })
-    }, {
-      signal: t.signal
-    }), l() && queueMicrotask(async () => {
-      let {
-        TWAServices: e
-      } = await n(async () => {
-        let {
-          TWAServices: e
-        } = await import(`./Bqk87ckG.js`).then(e => e.i);
-        return {
-          TWAServices: e
-        }
-      }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]), import.meta.url);
-      await e.onInit(t)
-    }), l() || a.isIOSApp()) {
-    let n = () => {
-        let t = localStorage.getItem(e);
-        if (t) {
-          let e = parseInt(t, 10);
-          Date.now() - e > 5 * r.minute && window.location.reload()
+function m() {
+  return u = void 0, b({
+    type: `clearPixelPreview`
+  })
+}
+async function h(e) {
+  await b({
+    type: `paintPixels`,
+    data: e
+  });
+  for (let t of d) try {
+    t(e)
+  } catch (e) {
+    console.error(`Canvas paint listener failed.`, e)
+  }
+}
+
+function g() {
+  return b({
+    type: `refreshPixelArt`
+  })
+}
+async function _() {
+  u || await b({
+    type: `clearPixelPreview`
+  })
+}
+var v = 1e4,
+  y = 0;
+
+function b(e) {
+  let t = y++,
+    n = {
+      ...e,
+      id: t
+    };
+  return new Promise((e, r) => {
+    let i = navigator.serviceWorker;
+    if (!i) {
+      r(Error(`Service Workers are not supported/enabled in your browser. Some features might not work properly.`));
+      return
+    }
+    let a = !1,
+      o = e => {
+        var n;
+        ((n = e.data) == null ? void 0 : n.id) === t && c()
+      },
+      s = () => {
+        clearTimeout(u), i.removeEventListener(`message`, o)
+      },
+      c = () => {
+        a || (a = !0, s(), e())
+      },
+      l = e => {
+        a || (a = !0, s(), r(e))
+      },
+      u = setTimeout(() => l(Error(`Timed out waiting for service worker response`)), v);
+    i.addEventListener(`message`, o);
+    let d = e => {
+        try {
+          e.postMessage(n)
+        } catch (e) {
+          l(e instanceof Error ? e : Error(String(e)))
         }
       },
-      a = () => {
-        localStorage.setItem(e, Date.now().toString());
-        let t = i.map;
-        if (t) {
-          let e = t.getCenter(),
-            n = t.getZoom();
-          o(e, n)
-        }
-      };
-    document.addEventListener(`visibilitychange`, () => {
-      document.visibilityState === `visible` ? n() : a()
-    }, {
-      signal: t.signal
-    }), window.addEventListener(`pageshow`, n, {
-      signal: t.signal
-    }), window.addEventListener(`pagehide`, a, {
-      signal: t.signal
-    })
-  }
-  return () => {
-    t.abort(), s.set({
-      status: `unavailable`
-    })
-  }
+      f = i.controller;
+    f ? d(f) : i.ready.then(e => {
+      if (a) return;
+      let t = e.active;
+      t ? d(t) : l(Error(`Service worker registration not active`))
+    }, e => l(e instanceof Error ? e : Error(String(e))))
+  })
+}
+
+function x({
+  pixel: e,
+  season: t,
+  tile: n
+}) {
+  return `t=(${n[0]},${n[1]});p=(${e[0]},${e[1]});s=${t}`
 }
 export {
-  u as i, c as n, s as r, l as t
+  g as a, l as c, p as i, c as l, x as n, f as o, h as r, _ as s, m as t
 };

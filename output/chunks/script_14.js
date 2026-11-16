@@ -1,4 +1,3 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./LPb4E7Sx.js", "./DXDHrD2o.js", "./CGo2LrSs.js", "./a7QZC4SB.js", "./C4a9oB_N.js", "./pKOrQQBa.js", "./FnlLczIa.js", "./BrohplP5.js", "./MIjkXV5b.js"]))) => i.map(i => d[i]);
 import {
   Ft as e,
   Gt as t,
@@ -10,21 +9,18 @@ import {
   Wt as s,
   pt as c
 } from "./DXDHrD2o.js";
-import {
-  a as l
-} from "./CGo2LrSs.js";
-var u = [`none`, `protanopia`, `deuteranopia`, `tritanopia`],
-  d = {
+var l = [`none`, `protanopia`, `deuteranopia`, `tritanopia`],
+  u = {
     protanopia: [.152286, 1.052583, -.204868, .114503, .786281, .099216, -.003882, -.048116, 1.051998],
     deuteranopia: [.367322, .860646, -.227968, .280085, .672501, .047413, -.01182, .04294, .968881],
     tritanopia: [1.255528, -.076749, -.178779, -.078411, .930809, .147602, .004733, .691367, .3039]
   };
 
-function f(e, t) {
+function d(e, t) {
   let n = Number.isFinite(t) ? Math.min(100, Math.max(0, t)) / 100 : 0,
     r = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0];
   if (e === `none` || n === 0) return r;
-  let i = d[e],
+  let i = u[e],
     a = {
       protanopia: 0,
       deuteranopia: 1,
@@ -39,15 +35,16 @@ function f(e, t) {
       }
   return r
 }
-var p = [`plop`, `smallPlop`, `bigPlop`, `smallDropplet`, `droppletAndPlop`, `notification1`, `playerNotification`, `purchaseSuccess`, `purchaseFail`],
-  m = `wplace:settings:v1`,
-  h = [`charges`, `events`, `updates`, `patchNotes`, `dismissHint`],
-  g = 800;
+var f = [`plop`, `smallPlop`, `bigPlop`, `smallDropplet`, `droppletAndPlop`, `notification1`, `playerNotification`, `purchaseSuccess`, `purchaseFail`],
+  p = `wplace:settings:v1`,
+  m = [`charges`, `events`, `updates`, `patchNotes`, `dismissHint`],
+  h = 800;
 
-function _(e, t) {
+function g(e, t) {
   return typeof e == `number` && Number.isFinite(e) ? Math.round(Math.min(100, Math.max(0, e))) : t
 }
-var v = new WeakMap,
+var _ = new WeakMap,
+  v = new WeakMap,
   y = new WeakMap,
   b = new WeakMap,
   x = new WeakMap,
@@ -61,130 +58,122 @@ var v = new WeakMap,
   k = new WeakMap,
   A = new WeakMap,
   j = new WeakMap,
-  M = new WeakMap,
-  N = new WeakSet,
-  P = class {
+  M = new WeakSet,
+  N = class {
     get alerts() {
-      return c(o(v, this))
+      return c(o(_, this))
     }
     set alerts(t) {
-      e(o(v, this), t, !0)
+      e(o(_, this), t, !0)
     }
     get artOpacity() {
-      return c(o(y, this))
+      return c(o(v, this))
     }
     set artOpacity(t) {
-      e(o(y, this), t, !0)
+      e(o(v, this), t, !0)
     }
     get colorblindMode() {
-      return c(o(b, this))
+      return c(o(y, this))
     }
     set colorblindMode(t) {
-      e(o(b, this), t, !0)
+      e(o(y, this), t, !0)
     }
     get colorblindStrength() {
-      return c(o(x, this))
+      return c(o(b, this))
     }
     set colorblindStrength(t) {
-      e(o(x, this), t, !0)
+      e(o(b, this), t, !0)
     }
     get oldUi() {
-      return c(o(S, this))
+      return c(o(x, this))
     }
     set oldUi(t) {
-      e(o(S, this), t, !0)
+      e(o(x, this), t, !0)
     }
     get nativeCursor() {
-      return c(o(C, this))
+      return c(o(S, this))
     }
     set nativeCursor(t) {
-      e(o(C, this), t, !0), document.documentElement.toggleAttribute(`data-native-cursor`, t)
+      e(o(S, this), t, !0), document.documentElement.toggleAttribute(`data-native-cursor`, t)
     }
     get showStoreWhilePainting() {
-      return c(o(w, this))
+      return c(o(C, this))
     }
     set showStoreWhilePainting(t) {
-      e(o(w, this), t, !0)
+      e(o(C, this), t, !0)
     }
     get showHotspots() {
-      return c(o(T, this))
+      return c(o(w, this))
     }
     set showHotspots(t) {
-      e(o(T, this), t, !0)
+      e(o(w, this), t, !0)
     }
     get showAllianceHqPins() {
-      return c(o(E, this))
+      return c(o(T, this))
     }
     set showAllianceHqPins(t) {
-      e(o(E, this), t, !0)
+      e(o(T, this), t, !0)
     }
     get sounds() {
-      return c(o(D, this))
+      return c(o(E, this))
     }
     set sounds(t) {
-      e(o(D, this), t, !0)
+      e(o(E, this), t, !0)
     }
     constructor() {
-      t(this, N), s(this, v, r(i({
+      t(this, M), s(this, _, r(i({
         charges: !0,
         events: !0,
         updates: !0,
         patchNotes: !0,
         dismissHint: !0
-      }))), s(this, y, r(100)), s(this, b, r(`none`)), s(this, x, r(100)), s(this, S, r(!1)), s(this, C, r(!1)), s(this, w, r(!0)), s(this, T, r(!0)), s(this, E, r(!0)), s(this, D, r(i(Object.fromEntries(p.map(e => [e, 50]))))), s(this, O, void 0), s(this, k, null), s(this, A, !1), s(this, j, 0), s(this, M, void 0), this.nativeCursor = !1;
-      let e = a(N, this, F).call(this);
-      e && (a(N, this, I).call(this, e), n(A, this, e.dirty === !0))
+      }))), s(this, v, r(100)), s(this, y, r(`none`)), s(this, b, r(100)), s(this, x, r(!1)), s(this, S, r(!1)), s(this, C, r(!0)), s(this, w, r(!0)), s(this, T, r(!0)), s(this, E, r(i(Object.fromEntries(f.map(e => [e, 50]))))), s(this, D, void 0), s(this, O, null), s(this, k, !1), s(this, A, 0), s(this, j, void 0), this.nativeCursor = !1;
+      let e = a(M, this, P).call(this);
+      e && (a(M, this, F).call(this, e), n(k, this, e.dirty === !0))
     }
     save() {
       var e;
-      n(j, this, (e = o(j, this), e++, e)), n(A, this, !0);
-      let t = a(N, this, R).call(this);
-      return o(k, this) !== null && (clearTimeout(o(M, this)), n(M, this, setTimeout(() => void a(N, this, z).call(this), g))), t
+      n(A, this, (e = o(A, this), e++, e)), n(k, this, !0);
+      let t = a(M, this, L).call(this);
+      return o(O, this) !== null && (clearTimeout(o(j, this)), n(j, this, setTimeout(() => void a(M, this, R).call(this), h))), t
     }
-    async useAccount(e) {
-      if (clearTimeout(o(M, this)), n(k, this, e), e === null) return;
-      let t = a(N, this, F).call(this),
-        r = o(j, this),
-        i;
+    async useAccount(e, t) {
+      if (clearTimeout(o(j, this)), n(O, this, e), n(D, this, t), e === null) return;
+      let r = a(M, this, P).call(this),
+        i = o(A, this),
+        s;
       try {
-        o(O, this) ?? n(O, this, (await l(async () => {
-          let {
-            api: e
-          } = await import(`./LPb4E7Sx.js`).then(e => e.n);
-          return {
-            api: e
-          }
-        }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8]), import.meta.url)).api), i = (await o(O, this).getPlayerSettings()).settings
+        s = (await t.getPlayerSettings()).settings
       } catch {
         return
       }
-      o(k, this) === e && (o(j, this) !== r || (t == null ? void 0 : t.dirty) === !0 && t.userId === e ? n(A, this, !0) : i && typeof i == `object` ? (a(N, this, I).call(this, i), n(A, this, !1)) : n(A, this, t !== null), a(N, this, R).call(this), await a(N, this, z).call(this))
+      o(O, this) === e && (o(A, this) !== i || (r == null ? void 0 : r.dirty) === !0 && r.userId === e ? n(k, this, !0) : s && typeof s == `object` ? (a(M, this, F).call(this, s), n(k, this, !1)) : n(k, this, r !== null), a(M, this, L).call(this), await a(M, this, R).call(this))
     }
     start() {
-      window.addEventListener(`wplace:online`, () => void a(N, this, z).call(this)), window.addEventListener(`pagehide`, () => void a(N, this, z).call(this, !0))
+      window.addEventListener(`wplace:online`, () => void a(M, this, R).call(this)), window.addEventListener(`pagehide`, () => void a(M, this, R).call(this, !0))
     }
   };
 
-function F() {
+function P() {
   try {
-    let e = JSON.parse(localStorage.getItem(m) ?? `null`);
+    let e = JSON.parse(localStorage.getItem(p) ?? `null`);
     return e && typeof e == `object` ? e : null
   } catch {
     return null
   }
 }
 
-function I(e) {
+function F(e) {
   var t, n;
-  for (let t of h) {
+  for (let t of m) {
     var r;
     typeof((r = e.alerts) == null ? void 0 : r[t]) == `boolean` && (this.alerts[t] = e.alerts[t])
   }
-  typeof((t = e.alerts) == null ? void 0 : t.patchNotes) != `boolean` && (this.alerts.patchNotes = this.alerts.updates), this.artOpacity = _(e.artOpacity, 100), u.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = _(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = e.showStoreWhilePainting), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
-  for (let t of p) this.sounds[t] = _((n = e.sounds) == null ? void 0 : n[t], 50)
+  typeof((t = e.alerts) == null ? void 0 : t.patchNotes) != `boolean` && (this.alerts.patchNotes = this.alerts.updates), this.artOpacity = g(e.artOpacity, 100), l.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = g(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = e.showStoreWhilePainting), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
+  for (let t of f) this.sounds[t] = g((n = e.sounds) == null ? void 0 : n[t], 50)
 }
 
-function L() {
+function I() {
   return {
     alerts: {
       ...this.alerts
@@ -203,29 +192,29 @@ function L() {
   }
 }
 
-function R() {
+function L() {
   try {
-    return localStorage.setItem(m, JSON.stringify({
-      ...a(N, this, L).call(this),
-      userId: o(k, this),
-      dirty: o(A, this)
+    return localStorage.setItem(p, JSON.stringify({
+      ...a(M, this, I).call(this),
+      userId: o(O, this),
+      dirty: o(k, this)
     })), !0
   } catch {
     return !1
   }
 }
-async function z(e = !1) {
-  clearTimeout(o(M, this));
-  let t = o(k, this);
-  if (t === null || !o(A, this) || !o(O, this)) return;
-  let r = o(j, this);
+async function R(e = !1) {
+  clearTimeout(o(j, this));
+  let t = o(O, this);
+  if (t === null || !o(k, this) || !o(D, this)) return;
+  let r = o(A, this);
   try {
-    if (await o(O, this).savePlayerSettings(a(N, this, L).call(this), e), o(k, this) !== t || o(j, this) !== r) return;
-    n(A, this, !1), a(N, this, R).call(this)
+    if (await o(D, this).savePlayerSettings(a(M, this, I).call(this), e), o(O, this) !== t || o(A, this) !== r) return;
+    n(k, this, !1), a(M, this, L).call(this)
   } catch {}
 }
-var B = new P;
-B.start();
+var z = new N;
+z.start();
 export {
-  f as i, B as n, u as r, p as t
+  d as i, z as n, l as r, f as t
 };

@@ -1,49 +1,143 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
+  un as e
 } from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
 import {
-  t as l
-} from "./CNowd2ef.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`),
-  f = o(`<svg><path d="M5 21H3v-2h2v2Zm4 0H7v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2ZM5 17H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 9H3V7h2v2Zm16 0h-2V7h2v2ZM5 5H3V3h2v2Zm4 0H7V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Z"></path></svg>`);
+  P as t
+} from "./C-DBsccD.js";
+var n = 2 * Math.PI * 6378137 / 2,
+  r = 85.0511287798066;
 
-function p(o, p) {
-  s(p, !0);
-  let m = a(p, u);
-  var h = c(),
-    g = i(h),
-    _ = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    },
-    v = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...m
-      })), r(t, n)
-    };
-  t(g, e => {
-    l.standard ? e(_) : e(v, -1)
-  }), r(o, h), n()
+function i(e) {
+  return ((e + 180) % 360 + 360) % 360 - 180
+}
+
+function a(e, t) {
+  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
+}
+var o = class {
+  constructor(t = 256) {
+    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
+  }
+  latLonToMeters(e, t) {
+    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
+  }
+  metersToLatLon(e, t) {
+    let r = e / n * 180,
+      i = t / n * 180;
+    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
+  }
+  pixelsToMeters(e, t, r) {
+    let i = this.resolution(r);
+    return [e * i - n, n - t * i]
+  }
+  pixelsToLatLon(e, t, n) {
+    let [r, i] = this.pixelsToMeters(e, t, n);
+    return this.metersToLatLon(r, i)
+  }
+  latLonToPixels(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t);
+    return this.metersToPixels(r, i, n)
+  }
+  latLonToPixelsFloor(e, t, n) {
+    let [r, i] = this.latLonToPixels(e, t, n);
+    return [Math.floor(r), Math.floor(i)]
+  }
+  metersToPixels(e, t, r) {
+    let i = this.resolution(r);
+    return [(e + n) / i, (n - t) / i]
+  }
+  latLonToTile(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t);
+    return this.metersToTile(r, i, n)
+  }
+  metersToTile(e, t, n) {
+    let [r, i] = this.metersToPixels(e, t, n);
+    return this.pixelsToTile(r, i)
+  }
+  pixelsToTile(e, t) {
+    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
+  }
+  pixelsToTileLocal(e, t) {
+    return {
+      tile: this.pixelsToTile(e, t),
+      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
+    }
+  }
+  tileBounds(e, t, n) {
+    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
+    return {
+      min: [r, i],
+      max: [a, o]
+    }
+  }
+  tileBoundsLatLon(e, t, n) {
+    let r = this.tileBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(r.min[0], r.min[1]),
+      max: this.metersToLatLon(r.max[0], r.max[1])
+    }
+  }
+  resolution(e) {
+    return this.initialResolution / 2 ** e
+  }
+  latLonToTileAndPixel(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
+    return {
+      tile: [a, o],
+      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
+    }
+  }
+  pixelBounds(e, t, n) {
+    return {
+      min: this.pixelsToMeters(e, t, n),
+      max: this.pixelsToMeters(e + 1, t + 1, n)
+    }
+  }
+  pixelToBoundsLatLon(e, t, n) {
+    let r = this.pixelBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(r.min[0], r.min[1]),
+      max: this.metersToLatLon(r.max[0], r.max[1])
+    }
+  }
+  latLonToTileBoundsLatLon(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
+    return this.tileBoundsLatLon(a, o, n)
+  }
+  latLonToPixelBoundsLatLon(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
+    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
+  }
+  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
+    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
+    return {
+      region: [Math.floor(a / s), Math.floor(o / s)],
+      pixel: [a % s, o % s]
+    }
+  }
+};
+
+function s(e, t = !0) {
+  let {
+    min: n,
+    max: r
+  } = e;
+  return t ? [
+    [n[1], r[0]],
+    [r[1], r[0]],
+    [r[1], n[0]],
+    [n[1], n[0]]
+  ] : [
+    [n[0], r[1]],
+    [r[0], r[1]],
+    [r[0], n[1]],
+    [n[0], n[1]]
+  ]
+}
+
+function c(e) {
+  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
 }
 export {
-  p as t
+  i as a, a as i, s as n, c as r, o as t
 };
