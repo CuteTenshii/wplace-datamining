@@ -11,8 +11,8 @@ import {
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  t as l
-} from "./s5C8vWt-.js";
+  r as l
+} from "./DhsqUtVJ.js";
 var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
   d = o(`<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>`),
   f = o(`<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>`),
@@ -21,10 +21,11 @@ var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
 
 function h(o, h) {
   s(h, !0);
-  let g = a(h, u);
-  var _ = c(),
-    v = i(_),
-    y = n => {
+  let g = l(),
+    _ = a(h, u);
+  var v = c(),
+    y = i(v),
+    b = n => {
       var a = c(),
         o = i(a),
         s = t => {
@@ -33,7 +34,7 @@ function h(o, h) {
             xmlns: `http://www.w3.org/2000/svg`,
             viewBox: `0 -960 960 960`,
             fill: `currentColor`,
-            ...g
+            ..._
           })), r(t, n)
         },
         l = t => {
@@ -42,34 +43,34 @@ function h(o, h) {
             xmlns: `http://www.w3.org/2000/svg`,
             viewBox: `0 -960 960 960`,
             fill: `currentColor`,
-            ...g
+            ..._
           })), r(t, n)
         };
       t(o, e => {
         h.filled ? e(s) : e(l, -1)
       }), r(n, a)
     },
-    b = t => {
+    x = t => {
       var n = p();
       e(n, () => ({
         xmlns: `http://www.w3.org/2000/svg`,
         viewBox: `0 0 24 24`,
         fill: `currentColor`,
-        ...g
+        ..._
       })), r(t, n)
     },
-    x = t => {
+    S = t => {
       var n = m();
       e(n, () => ({
         xmlns: `http://www.w3.org/2000/svg`,
         viewBox: `0 0 24 24`,
         fill: `currentColor`,
-        ...g
+        ..._
       })), r(t, n)
     };
-  t(v, e => {
-    l.standard ? e(y) : h.filled ? e(b, 1) : e(x, -1)
-  }), r(o, _), n()
+  t(y, e => {
+    g.standard ? e(b) : h.filled ? e(x, 1) : e(S, -1)
+  }), r(o, v), n()
 }
 export {
   h as t

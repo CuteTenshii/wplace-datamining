@@ -1,16 +1,32 @@
 import {
-  t as e
-} from "./DpgsHinl.js";
+  Qt as e,
+  nn as t
+} from "./DXDHrD2o.js";
 import {
-  n as t
+  t as n
+} from "./D3MRRza0.js";
+import {
+  n as r
 } from "./yKNWaSNN.js";
-var n = {
-  get standard() {
-    var n;
-    let r = (n = e.route) == null ? void 0 : n.id;
-    return t.oldUi || r === `/(game)/dashboard` || (r == null ? void 0 : r.startsWith(`/(game)/dashboard/`)) === !0
-  }
-};
+var i = {
+    get standard() {
+      var e;
+      let t = (e = n.route) == null ? void 0 : e.id;
+      return r.oldUi || t === `/(game)/dashboard` || (t == null ? void 0 : t.startsWith(`/(game)/dashboard/`)) === !0
+    }
+  },
+  a = Symbol(`pixel-ui`),
+  o = {
+    standard: !1
+  };
+
+function s() {
+  t(a, !0)
+}
+
+function c() {
+  return e(a) ? o : i
+}
 export {
-  n as t
+  i as n, c as r, s as t
 };

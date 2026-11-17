@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Dl4zXbqu.js", "./DXDHrD2o.js", "./BlC9xWHv.js", "./pKOrQQBa.js", "./zM6kmv-H.js", "./DmHqBA5r.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./DCMpMYhH.js", "./DXDHrD2o.js", "./BwQ1XQ-e.js", "./pKOrQQBa.js", "./B0stYq86.js", "./DZ0pYYIQ.js", "./DprooLep.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -14,7 +14,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   o as d
-} from "./BlC9xWHv.js";
+} from "./BwQ1XQ-e.js";
 import {
   n as f,
   t as p
@@ -24,7 +24,7 @@ import {
 } from "./yKNWaSNN.js";
 import {
   t as h
-} from "./DmHqBA5r.js";
+} from "./DprooLep.js";
 import {
   n as ee,
   o as te,
@@ -5582,7 +5582,7 @@ var $l = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./Dl4zXbqu.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./DCMpMYhH.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
       if (o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(h.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -5885,8 +5885,14 @@ function iu(e) {
     }
   }
 }
+var au = {
+  droplets: 1e6,
+  prism: 1e3,
+  maxCharges: 1e3,
+  note: 500
+};
 
-function au(e) {
+function ou(e) {
   return class extends e {
     async getAdminB2BBusinesses(e = ``, t = 0) {
       let n = new URLSearchParams({
@@ -6028,6 +6034,49 @@ function au(e) {
           throw new J(h.user_not_found(), r.status);
         default:
           throw new J(h.user_cosmetics_action_failed(), r.status)
+      }
+    }
+    async getAdminUserGiftProducts(e) {
+      let t = await this.request(`/staff/dashboard/users/gifts/products?userId=${encodeURIComponent(e)}`, {
+        credentials: `include`
+      });
+      if (t.status !== K.OK) throw new J(h.user_gift_products_failed(), t.status);
+      return (await t.json()).products
+    }
+    async getAdminUserGifts(e) {
+      let t = await this.request(`/staff/dashboard/users/gifts?userId=${encodeURIComponent(e)}`, {
+        credentials: `include`
+      });
+      if (t.status !== K.OK) throw new J(h.user_gift_history_failed(), t.status);
+      return (await t.json()).gifts
+    }
+    async postAdminSendUserGift(e) {
+      var t;
+      let n = await this.request(`/staff/dashboard/users/gifts`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify(e)
+      });
+      if (n.status === K.OK) return (await n.json()).gift;
+      switch ((t = await n.json().catch(() => null)) == null ? void 0 : t.error) {
+        case `gift_recipient_unavailable`:
+          throw new J(h.user_gift_error_unavailable(), n.status);
+        case `gift_recipient_not_found`:
+          throw new J(h.user_not_found(), n.status);
+        case `all_owned`:
+          throw new J(h.user_gift_error_all_owned(), n.status);
+        case `product_unavailable`:
+          throw new J(h.user_gift_error_product_unavailable(), n.status);
+        case `invalid_amount`:
+          throw new J(h.user_gift_error_amount(), n.status);
+        case `empty_gift`:
+          throw new J(h.user_gift_error_empty(), n.status);
+        case `note_too_long`:
+          throw new J(h.user_gift_note_too_long({
+            max: au.note
+          }), n.status);
+        default:
+          throw new J(h.user_gift_send_failed(), n.status)
       }
     }
     async postAdminRenameUser(e, t) {
@@ -8000,7 +8049,7 @@ var Y = {
       code: `IC`,
       flag: `🇮🇨`
     }],
-    permissions: JSON.parse(`{"support":{"view":{"feedback":{"interface":"staff.support.view.feedback.interface","painting":"staff.support.view.feedback.painting","overlays":"staff.support.view.feedback.overlays","alliances":"staff.support.view.feedback.alliances","profile":"staff.support.view.feedback.profile","store":"staff.support.view.feedback.store","notifications":"staff.support.view.feedback.notifications","rules":"staff.support.view.feedback.rules","events":"staff.support.view.feedback.events","other":"staff.support.view.feedback.other","unsure":"staff.support.view.feedback.unsure"},"bug":{"interface":"staff.support.view.bug.interface","painting":"staff.support.view.bug.painting","overlays":"staff.support.view.bug.overlays","alliances":"staff.support.view.bug.alliances","profile":"staff.support.view.bug.profile","store":"staff.support.view.bug.store","notifications":"staff.support.view.bug.notifications","rules":"staff.support.view.bug.rules","events":"staff.support.view.bug.events","other":"staff.support.view.bug.other","unsure":"staff.support.view.bug.unsure"},"staff":{"game":"staff.support.view.staff.game","discord":"staff.support.view.staff.discord","reddit":"staff.support.view.staff.reddit","email":"staff.support.view.staff.email","support":"staff.support.view.staff.support","social":"staff.support.view.staff.social","other":"staff.support.view.staff.other","unsure":"staff.support.view.staff.unsure"},"general":{"account":"staff.support.view.general.account","purchases":"staff.support.view.general.purchases","rules":"staff.support.view.general.rules","doxxing":"staff.support.view.general.doxxing","harassment":"staff.support.view.general.harassment","privacy":"staff.support.view.general.privacy","legal":"staff.support.view.general.legal","copyright":"staff.support.view.general.copyright","security":"staff.support.view.general.security","general":"staff.support.view.general.general","other":"staff.support.view.general.other","appeal":"staff.support.view.general.appeal","dismissed_report":"staff.support.view.general.dismissed_report"}},"act":{"feedback":{"interface":"staff.support.act.feedback.interface","painting":"staff.support.act.feedback.painting","overlays":"staff.support.act.feedback.overlays","alliances":"staff.support.act.feedback.alliances","profile":"staff.support.act.feedback.profile","store":"staff.support.act.feedback.store","notifications":"staff.support.act.feedback.notifications","rules":"staff.support.act.feedback.rules","events":"staff.support.act.feedback.events","other":"staff.support.act.feedback.other","unsure":"staff.support.act.feedback.unsure"},"bug":{"interface":"staff.support.act.bug.interface","painting":"staff.support.act.bug.painting","overlays":"staff.support.act.bug.overlays","alliances":"staff.support.act.bug.alliances","profile":"staff.support.act.bug.profile","store":"staff.support.act.bug.store","notifications":"staff.support.act.bug.notifications","rules":"staff.support.act.bug.rules","events":"staff.support.act.bug.events","other":"staff.support.act.bug.other","unsure":"staff.support.act.bug.unsure"},"staff":{"game":"staff.support.act.staff.game","discord":"staff.support.act.staff.discord","reddit":"staff.support.act.staff.reddit","email":"staff.support.act.staff.email","support":"staff.support.act.staff.support","social":"staff.support.act.staff.social","other":"staff.support.act.staff.other","unsure":"staff.support.act.staff.unsure"},"general":{"account":"staff.support.act.general.account","purchases":"staff.support.act.general.purchases","rules":"staff.support.act.general.rules","doxxing":"staff.support.act.general.doxxing","harassment":"staff.support.act.general.harassment","privacy":"staff.support.act.general.privacy","legal":"staff.support.act.general.legal","copyright":"staff.support.act.general.copyright","security":"staff.support.act.general.security","general":"staff.support.act.general.general","other":"staff.support.act.general.other","appeal":"staff.support.act.general.appeal","dismissed_report":"staff.support.act.general.dismissed_report"}},"audit":"staff.support.audit","reward":"staff.support.reward","compensation":"staff.support.compensation","escalate":"staff.support.escalate","deescalate":"staff.support.deescalate","reopen":"staff.support.reopen","config":"staff.support.config","recover":"staff.support.recover","manage_levels":"staff.support.manage_levels","review_staff_reports":"staff.support.review_staff_reports","escalation":"staff.support.escalation"},"dashboard":{"summary":{"counters":{"tickets":"staff.dashboard.summary.counters.tickets","reports":"staff.dashboard.summary.counters.reports"},"events":{"status":"staff.dashboard.summary.events.status","start":"staff.dashboard.summary.events.start","stop":"staff.dashboard.summary.events.stop","anchors":"staff.dashboard.summary.events.anchors"},"users":{"ban":"staff.dashboard.summary.users.ban","timeout":"staff.dashboard.summary.users.timeout","unban":"staff.dashboard.summary.users.unban","incrementDroplets":"staff.dashboard.summary.users.increment_droplets","phoneVerification":"staff.dashboard.summary.users.phone_verification"},"reloadPunishmentCache":"staff.dashboard.summary.reload_punishment_cache"},"team":{"tickets":"staff.dashboard.team.tickets","reports":"staff.dashboard.team.reports"},"users":{"info":"staff.dashboard.users.info","rename":"staff.dashboard.users.rename","notesGet":"staff.dashboard.users.notes_get","notesSet":"staff.dashboard.users.notes_set","purchases":"staff.dashboard.users.purchases","ticketsHistory":"staff.dashboard.users.tickets_history","ticketsStats":"staff.dashboard.users.tickets_stats","appealsHistory":"staff.dashboard.users.appeals_history","timeout":"staff.dashboard.users.timeout","removeTimeout":"staff.dashboard.users.remove_timeout","ban":"staff.dashboard.users.ban","removeBan":"staff.dashboard.users.remove_ban","autoReviewBan":"staff.dashboard.users.auto_review_ban","personalInformation":"staff.dashboard.users.personal_information","editEmail":"staff.dashboard.users.edit_email","disconnect":"staff.dashboard.users.disconnect","setDroplets":"staff.dashboard.users.set_droplets","setPrism":"staff.dashboard.users.set_prism","cosmeticsSee":"staff.dashboard.users.cosmetics_see","cosmeticsGrant":"staff.dashboard.users.cosmetics_grant","cosmeticsRemove":"staff.dashboard.users.cosmetics_remove","cosmeticsRefund":"staff.dashboard.users.cosmetics_refund","phoneVerification":"staff.dashboard.users.phone_verification","removePicture":"staff.dashboard.users.remove_picture"},"businesses":{"see":"staff.dashboard.businesses.see","manage":"staff.dashboard.businesses.manage"},"permissions":{"get":"staff.dashboard.permissions.get","set":"staff.dashboard.permissions.set"},"alliances":{"search":"staff.dashboard.alliances.search","details":"staff.dashboard.alliances.details","members":"staff.dashboard.alliances.members","rename":"staff.dashboard.alliances.rename","description":"staff.dashboard.alliances.description","leader":"staff.dashboard.alliances.leader","banAll":"staff.dashboard.alliances.ban_all","role":"staff.dashboard.alliances.role","removeMember":"staff.dashboard.alliances.remove_member","restore":"staff.dashboard.alliances.restore","moderate":"staff.dashboard.alliances.moderate","punish":"staff.dashboard.alliances.punish"},"protections":{"view":"staff.dashboard.protections.view","manage":"staff.dashboard.protections.manage"},"auditLogs":{"see":"staff.dashboard.audit_logs.see","events":{"timeout":"staff.dashboard.audit_logs.events.timeout","ban":"staff.dashboard.audit_logs.events.ban","changeDroplets":"staff.dashboard.audit_logs.events.change_droplets","changePrism":"staff.dashboard.audit_logs.events.change_prism","removeTimeout":"staff.dashboard.audit_logs.events.remove_timeout","removeBan":"staff.dashboard.audit_logs.events.remove_ban","manualTimeout":"staff.dashboard.audit_logs.events.manual_timeout","manualBan":"staff.dashboard.audit_logs.events.manual_ban","manualChangeDroplets":"staff.dashboard.audit_logs.events.manual_change_droplets","manualRemoveBan":"staff.dashboard.audit_logs.events.manual_remove_ban","manualPhoneVerification":"staff.dashboard.audit_logs.events.manual_phone_verification","anticheatBan":"staff.dashboard.audit_logs.events.anticheat_ban","anticheatRemoveBan":"staff.dashboard.audit_logs.events.anticheat_remove_ban","deleteAllSessions":"staff.dashboard.audit_logs.events.delete_all_sessions","permissionsUpdate":"staff.dashboard.audit_logs.events.permissions_update","changeUsername":"staff.dashboard.audit_logs.events.change_username","banWave":"staff.dashboard.audit_logs.events.ban_wave","changeEmail":"staff.dashboard.audit_logs.events.change_email","acceptAppeal":"staff.dashboard.audit_logs.events.accept_appeal","denyAppeal":"staff.dashboard.audit_logs.events.deny_appeal","revertTicketRequest":"staff.dashboard.audit_logs.events.revert_ticket_request","revertTicketApprove":"staff.dashboard.audit_logs.events.revert_ticket_approve","revertTicketDeny":"staff.dashboard.audit_logs.events.revert_ticket_deny","removePicture":"staff.dashboard.audit_logs.events.remove_picture","rerollAvatar":"staff.dashboard.audit_logs.events.reroll_avatar","resolveTicket":"staff.dashboard.audit_logs.events.re_solve_ticket","reviewTicket":"staff.dashboard.audit_logs.events.review_ticket","autoReviewBanRemoveBan":"staff.dashboard.audit_logs.events.auto_review_ban_remove_ban","resolveAccountConflict":"staff.dashboard.audit_logs.events.resolve_account_conflict","allianceModeration":"staff.dashboard.audit_logs.events.alliance_moderation","userNoteCreated":"staff.dashboard.audit_logs.events.user_note_created","ticketAssigned":"staff.dashboard.audit_logs.events.ticket_assigned","ticketResolved":"staff.dashboard.audit_logs.events.ticket_resolved","appealAssigned":"staff.dashboard.audit_logs.events.appeal_assigned","playerDashboardShared":"staff.dashboard.audit_logs.events.player_dashboard_shared","playerDashboardUnshared":"staff.dashboard.audit_logs.events.player_dashboard_unshared","playerDashboardUpdated":"staff.dashboard.audit_logs.events.player_dashboard_updated","playerDashboardDeleted":"staff.dashboard.audit_logs.events.player_dashboard_deleted","punishmentAnalysisRun":"staff.dashboard.audit_logs.events.punishment_analysis_run","punishmentCacheReloadRequested":"staff.dashboard.audit_logs.events.punishment_cache_reload_requested","canvasPixelBatchQueued":"staff.dashboard.audit_logs.events.canvas_pixel_batch_queued","canvasAreaReversed":"staff.dashboard.audit_logs.events.canvas_area_reversed","pixelProtectionChanged":"staff.dashboard.audit_logs.events.pixel_protection_changed","canvasAutoPaintQueued":"staff.dashboard.audit_logs.events.canvas_auto_paint_queued","cosmeticCreated":"staff.dashboard.audit_logs.events.cosmetic_created","cosmeticUpdated":"staff.dashboard.audit_logs.events.cosmetic_updated","cosmeticDeleted":"staff.dashboard.audit_logs.events.cosmetic_deleted","badgeCreated":"staff.dashboard.audit_logs.events.badge_created","badgeUpdated":"staff.dashboard.audit_logs.events.badge_updated","badgeDeleted":"staff.dashboard.audit_logs.events.badge_deleted","storeImageUploaded":"staff.dashboard.audit_logs.events.store_image_uploaded","storeImageDeleted":"staff.dashboard.audit_logs.events.store_image_deleted","businessInfiniteChargesUpdated":"staff.dashboard.audit_logs.events.business_infinite_charges_updated","businessMembershipUpdated":"staff.dashboard.audit_logs.events.business_membership_updated","businessPaintRestrictionsUpdated":"staff.dashboard.audit_logs.events.business_paint_restrictions_updated","userCosmeticGranted":"staff.dashboard.audit_logs.events.user_cosmetic_granted","userCosmeticRemoved":"staff.dashboard.audit_logs.events.user_cosmetic_removed","userCosmeticRefunded":"staff.dashboard.audit_logs.events.user_cosmetic_refunded","userBadgeGranted":"staff.dashboard.audit_logs.events.user_badge_granted","userBadgeRemoved":"staff.dashboard.audit_logs.events.user_badge_removed","commerceSettingsUpdated":"staff.dashboard.audit_logs.events.commerce_settings_updated","commerceProductUpdated":"staff.dashboard.audit_logs.events.commerce_product_updated","commerceChangeCreated":"staff.dashboard.audit_logs.events.commerce_change_created","commerceChangeUpdated":"staff.dashboard.audit_logs.events.commerce_change_updated","commerceChangeSubmitted":"staff.dashboard.audit_logs.events.commerce_change_submitted","commerceChangeWithdrawn":"staff.dashboard.audit_logs.events.commerce_change_withdrawn","commerceChangeApproved":"staff.dashboard.audit_logs.events.commerce_change_approved","commerceChangeRejected":"staff.dashboard.audit_logs.events.commerce_change_rejected","commerceChangePublished":"staff.dashboard.audit_logs.events.commerce_change_published","commerceChangeCancelled":"staff.dashboard.audit_logs.events.commerce_change_cancelled","commerceOperationRetried":"staff.dashboard.audit_logs.events.commerce_operation_retried","commerceOperationResolved":"staff.dashboard.audit_logs.events.commerce_operation_resolved","commerceOperationCancelled":"staff.dashboard.audit_logs.events.commerce_operation_cancelled","commerceReconcileRequested":"staff.dashboard.audit_logs.events.commerce_reconcile_requested","commercePromotionCreated":"staff.dashboard.audit_logs.events.commerce_promotion_created","commercePromotionUpdated":"staff.dashboard.audit_logs.events.commerce_promotion_updated","commercePromotionCancelled":"staff.dashboard.audit_logs.events.commerce_promotion_cancelled","commerceCouponCodesCreated":"staff.dashboard.audit_logs.events.commerce_coupon_codes_created","commerceCouponCodeUpdated":"staff.dashboard.audit_logs.events.commerce_coupon_code_updated","commerceCouponCodesMoved":"staff.dashboard.audit_logs.events.commerce_coupon_codes_moved","commerceExportCreated":"staff.dashboard.audit_logs.events.commerce_export_created","commerceCustomerPiiViewed":"staff.dashboard.audit_logs.events.commerce_customer_pii_viewed","commerceRevenueExportCreated":"staff.dashboard.audit_logs.events.commerce_revenue_export_created","commerceRevenueTopSpendersViewed":"staff.dashboard.audit_logs.events.commerce_revenue_top_spenders_viewed","commerceRevenueTargetUpdated":"staff.dashboard.audit_logs.events.commerce_revenue_target_updated","commerceRevenueTargetDeleted":"staff.dashboard.audit_logs.events.commerce_revenue_target_deleted","commerceProductDraftCreated":"staff.dashboard.audit_logs.events.commerce_product_draft_created","commerceProductDraftUpdated":"staff.dashboard.audit_logs.events.commerce_product_draft_updated","commerceProductAppReviewMarked":"staff.dashboard.audit_logs.events.commerce_product_app_review_marked"}},"banAppeals":{"see":"staff.dashboard.ban_appeals.see"},"metrics":{"tickets":"staff.dashboard.metrics.tickets","onboarding":"staff.dashboard.metrics.onboarding","notices":"staff.dashboard.metrics.notices","players":"staff.dashboard.metrics.players","playersList":"staff.dashboard.metrics.players_list","playersDashboardsShare":"staff.dashboard.metrics.players_dashboards_share","revenue":"staff.dashboard.metrics.revenue"},"allTickets":{"see":"staff.dashboard.all_tickets.see","review":"staff.dashboard.all_tickets.review"},"storeManager":{"frames":"staff.dashboard.store_manager.frames","fonts":"staff.dashboard.store_manager.fonts","styles":"staff.dashboard.store_manager.styles","badges":"staff.dashboard.store_manager.badges"},"punishmentAnalysis":{"see":"staff.dashboard.punishment_analysis.see"},"anticheat":{"see":"staff.dashboard.anticheat.see","unban":"staff.dashboard.anticheat.unban","ban":"staff.dashboard.anticheat.ban"}},"tickets":{"assign":"staff.tickets.assign","closedToday":"staff.tickets.closed_today","openCount":"staff.tickets.open_count","translate":"staff.tickets.translate","setStatus":"staff.tickets.set_status","revert":"staff.tickets.revert","revertReview":"staff.tickets.revert_review","reSolve":"staff.tickets.re_solve"},"appeals":{"assign":"staff.appeals.assign","openCount":"staff.appeals.open_count","ticketsHistory":"staff.appeals.tickets_history","notes_get":"staff.appeals.notes_get","notes_set":"staff.appeals.notes_set","translate":"staff.appeals.translate","solve":"staff.appeals.solve"},"tools":{"selectArea":{"timeout":"staff.tools.select_area.timeout","ban":"staff.tools.select_area.ban","clear":"staff.tools.select_area.clear","info":"staff.tools.select_area.info","phoneVerification":"staff.tools.select_area.phone_verification","reverse":"staff.tools.select_area.reverse","timelapse":"staff.tools.select_area.timelapse"},"selectPixel":{"timeout":"staff.tools.select_pixel.timeout","ban":"staff.tools.select_pixel.ban","seeRole":"staff.tools.select_pixel.see_role","seePunishment":"staff.tools.select_pixel.see_punishment"},"autoPainter":{"paint":"staff.tools.auto_painter.paint","missing":"staff.tools.auto_painter.missing","incorrect":"staff.tools.auto_painter.incorrect","showOnLeaderboard":"staff.tools.auto_painter.show_on_leaderboard","transparent":"staff.tools.auto_painter.transparent","noCharges":"staff.tools.auto_painter.no_charges","asUser":"staff.tools.auto_painter.as_user","noSizeLimit":"staff.tools.auto_painter.no_size_limit"},"wayback":"staff.tools.wayback"},"ui":{"themeDarkMode":"staff.ui.theme.dark_mode","tooglePixelArt":"staff.ui.toggle_pixel_art"},"cosmetics":{"viewCosmetics":"staff.cosmetics.view_cosmetics","manageCosmetics":"staff.cosmetics.manage_cosmetics","assignCosmetics":"staff.cosmetics.assign_cosmetics"},"commerce":{"viewCatalog":"staff.commerce.view_catalog","viewFinancials":"staff.commerce.view_financials","viewPurchases":"staff.commerce.view_purchases","viewCustomerPii":"staff.commerce.view_customer_pii","viewSync":"staff.commerce.view_sync","viewAudit":"staff.commerce.view_audit","draftChanges":"staff.commerce.draft_changes","approveChanges":"staff.commerce.approve_changes","publishChanges":"staff.commerce.publish_changes","managePromotions":"staff.commerce.manage_promotions","manageCoupons":"staff.commerce.manage_coupons","retrySync":"staff.commerce.retry_sync","reconcile":"staff.commerce.reconcile","emergency":"staff.commerce.emergency","manageSettings":"staff.commerce.manage_settings","export":"staff.commerce.export","manageProducts":"staff.commerce.manage_products"}}`),
+    permissions: JSON.parse(`{"support":{"view":{"feedback":{"interface":"staff.support.view.feedback.interface","painting":"staff.support.view.feedback.painting","overlays":"staff.support.view.feedback.overlays","alliances":"staff.support.view.feedback.alliances","profile":"staff.support.view.feedback.profile","store":"staff.support.view.feedback.store","notifications":"staff.support.view.feedback.notifications","rules":"staff.support.view.feedback.rules","events":"staff.support.view.feedback.events","other":"staff.support.view.feedback.other","unsure":"staff.support.view.feedback.unsure"},"bug":{"interface":"staff.support.view.bug.interface","painting":"staff.support.view.bug.painting","overlays":"staff.support.view.bug.overlays","alliances":"staff.support.view.bug.alliances","profile":"staff.support.view.bug.profile","store":"staff.support.view.bug.store","notifications":"staff.support.view.bug.notifications","rules":"staff.support.view.bug.rules","events":"staff.support.view.bug.events","other":"staff.support.view.bug.other","unsure":"staff.support.view.bug.unsure"},"staff":{"game":"staff.support.view.staff.game","discord":"staff.support.view.staff.discord","reddit":"staff.support.view.staff.reddit","email":"staff.support.view.staff.email","support":"staff.support.view.staff.support","social":"staff.support.view.staff.social","other":"staff.support.view.staff.other","unsure":"staff.support.view.staff.unsure"},"general":{"account":"staff.support.view.general.account","purchases":"staff.support.view.general.purchases","rules":"staff.support.view.general.rules","doxxing":"staff.support.view.general.doxxing","harassment":"staff.support.view.general.harassment","privacy":"staff.support.view.general.privacy","legal":"staff.support.view.general.legal","copyright":"staff.support.view.general.copyright","security":"staff.support.view.general.security","general":"staff.support.view.general.general","other":"staff.support.view.general.other","appeal":"staff.support.view.general.appeal","dismissed_report":"staff.support.view.general.dismissed_report"}},"act":{"feedback":{"interface":"staff.support.act.feedback.interface","painting":"staff.support.act.feedback.painting","overlays":"staff.support.act.feedback.overlays","alliances":"staff.support.act.feedback.alliances","profile":"staff.support.act.feedback.profile","store":"staff.support.act.feedback.store","notifications":"staff.support.act.feedback.notifications","rules":"staff.support.act.feedback.rules","events":"staff.support.act.feedback.events","other":"staff.support.act.feedback.other","unsure":"staff.support.act.feedback.unsure"},"bug":{"interface":"staff.support.act.bug.interface","painting":"staff.support.act.bug.painting","overlays":"staff.support.act.bug.overlays","alliances":"staff.support.act.bug.alliances","profile":"staff.support.act.bug.profile","store":"staff.support.act.bug.store","notifications":"staff.support.act.bug.notifications","rules":"staff.support.act.bug.rules","events":"staff.support.act.bug.events","other":"staff.support.act.bug.other","unsure":"staff.support.act.bug.unsure"},"staff":{"game":"staff.support.act.staff.game","discord":"staff.support.act.staff.discord","reddit":"staff.support.act.staff.reddit","email":"staff.support.act.staff.email","support":"staff.support.act.staff.support","social":"staff.support.act.staff.social","other":"staff.support.act.staff.other","unsure":"staff.support.act.staff.unsure"},"general":{"account":"staff.support.act.general.account","purchases":"staff.support.act.general.purchases","rules":"staff.support.act.general.rules","doxxing":"staff.support.act.general.doxxing","harassment":"staff.support.act.general.harassment","privacy":"staff.support.act.general.privacy","legal":"staff.support.act.general.legal","copyright":"staff.support.act.general.copyright","security":"staff.support.act.general.security","general":"staff.support.act.general.general","other":"staff.support.act.general.other","appeal":"staff.support.act.general.appeal","dismissed_report":"staff.support.act.general.dismissed_report"}},"audit":"staff.support.audit","reward":"staff.support.reward","compensation":"staff.support.compensation","escalate":"staff.support.escalate","deescalate":"staff.support.deescalate","reopen":"staff.support.reopen","config":"staff.support.config","recover":"staff.support.recover","manage_levels":"staff.support.manage_levels","review_staff_reports":"staff.support.review_staff_reports","escalation":"staff.support.escalation"},"dashboard":{"summary":{"counters":{"tickets":"staff.dashboard.summary.counters.tickets","reports":"staff.dashboard.summary.counters.reports"},"events":{"status":"staff.dashboard.summary.events.status","start":"staff.dashboard.summary.events.start","stop":"staff.dashboard.summary.events.stop","anchors":"staff.dashboard.summary.events.anchors"},"users":{"ban":"staff.dashboard.summary.users.ban","timeout":"staff.dashboard.summary.users.timeout","unban":"staff.dashboard.summary.users.unban","incrementDroplets":"staff.dashboard.summary.users.increment_droplets","phoneVerification":"staff.dashboard.summary.users.phone_verification"},"reloadPunishmentCache":"staff.dashboard.summary.reload_punishment_cache"},"team":{"tickets":"staff.dashboard.team.tickets","reports":"staff.dashboard.team.reports"},"users":{"info":"staff.dashboard.users.info","rename":"staff.dashboard.users.rename","notesGet":"staff.dashboard.users.notes_get","notesSet":"staff.dashboard.users.notes_set","purchases":"staff.dashboard.users.purchases","ticketsHistory":"staff.dashboard.users.tickets_history","ticketsStats":"staff.dashboard.users.tickets_stats","appealsHistory":"staff.dashboard.users.appeals_history","timeout":"staff.dashboard.users.timeout","removeTimeout":"staff.dashboard.users.remove_timeout","ban":"staff.dashboard.users.ban","removeBan":"staff.dashboard.users.remove_ban","autoReviewBan":"staff.dashboard.users.auto_review_ban","personalInformation":"staff.dashboard.users.personal_information","editEmail":"staff.dashboard.users.edit_email","disconnect":"staff.dashboard.users.disconnect","setDroplets":"staff.dashboard.users.set_droplets","setPrism":"staff.dashboard.users.set_prism","cosmeticsSee":"staff.dashboard.users.cosmetics_see","cosmeticsGrant":"staff.dashboard.users.cosmetics_grant","cosmeticsRemove":"staff.dashboard.users.cosmetics_remove","cosmeticsRefund":"staff.dashboard.users.cosmetics_refund","sendGift":"staff.dashboard.users.send_gift","phoneVerification":"staff.dashboard.users.phone_verification","removePicture":"staff.dashboard.users.remove_picture"},"businesses":{"see":"staff.dashboard.businesses.see","manage":"staff.dashboard.businesses.manage"},"permissions":{"get":"staff.dashboard.permissions.get","set":"staff.dashboard.permissions.set"},"alliances":{"search":"staff.dashboard.alliances.search","details":"staff.dashboard.alliances.details","members":"staff.dashboard.alliances.members","rename":"staff.dashboard.alliances.rename","description":"staff.dashboard.alliances.description","leader":"staff.dashboard.alliances.leader","banAll":"staff.dashboard.alliances.ban_all","role":"staff.dashboard.alliances.role","removeMember":"staff.dashboard.alliances.remove_member","restore":"staff.dashboard.alliances.restore","moderate":"staff.dashboard.alliances.moderate","punish":"staff.dashboard.alliances.punish"},"protections":{"view":"staff.dashboard.protections.view","manage":"staff.dashboard.protections.manage"},"auditLogs":{"see":"staff.dashboard.audit_logs.see","events":{"timeout":"staff.dashboard.audit_logs.events.timeout","ban":"staff.dashboard.audit_logs.events.ban","changeDroplets":"staff.dashboard.audit_logs.events.change_droplets","changePrism":"staff.dashboard.audit_logs.events.change_prism","removeTimeout":"staff.dashboard.audit_logs.events.remove_timeout","removeBan":"staff.dashboard.audit_logs.events.remove_ban","manualTimeout":"staff.dashboard.audit_logs.events.manual_timeout","manualBan":"staff.dashboard.audit_logs.events.manual_ban","manualChangeDroplets":"staff.dashboard.audit_logs.events.manual_change_droplets","manualRemoveBan":"staff.dashboard.audit_logs.events.manual_remove_ban","manualPhoneVerification":"staff.dashboard.audit_logs.events.manual_phone_verification","anticheatBan":"staff.dashboard.audit_logs.events.anticheat_ban","anticheatRemoveBan":"staff.dashboard.audit_logs.events.anticheat_remove_ban","deleteAllSessions":"staff.dashboard.audit_logs.events.delete_all_sessions","permissionsUpdate":"staff.dashboard.audit_logs.events.permissions_update","changeUsername":"staff.dashboard.audit_logs.events.change_username","banWave":"staff.dashboard.audit_logs.events.ban_wave","changeEmail":"staff.dashboard.audit_logs.events.change_email","acceptAppeal":"staff.dashboard.audit_logs.events.accept_appeal","denyAppeal":"staff.dashboard.audit_logs.events.deny_appeal","revertTicketRequest":"staff.dashboard.audit_logs.events.revert_ticket_request","revertTicketApprove":"staff.dashboard.audit_logs.events.revert_ticket_approve","revertTicketDeny":"staff.dashboard.audit_logs.events.revert_ticket_deny","removePicture":"staff.dashboard.audit_logs.events.remove_picture","rerollAvatar":"staff.dashboard.audit_logs.events.reroll_avatar","resolveTicket":"staff.dashboard.audit_logs.events.re_solve_ticket","reviewTicket":"staff.dashboard.audit_logs.events.review_ticket","autoReviewBanRemoveBan":"staff.dashboard.audit_logs.events.auto_review_ban_remove_ban","resolveAccountConflict":"staff.dashboard.audit_logs.events.resolve_account_conflict","allianceModeration":"staff.dashboard.audit_logs.events.alliance_moderation","userNoteCreated":"staff.dashboard.audit_logs.events.user_note_created","ticketAssigned":"staff.dashboard.audit_logs.events.ticket_assigned","ticketResolved":"staff.dashboard.audit_logs.events.ticket_resolved","appealAssigned":"staff.dashboard.audit_logs.events.appeal_assigned","playerDashboardShared":"staff.dashboard.audit_logs.events.player_dashboard_shared","playerDashboardUnshared":"staff.dashboard.audit_logs.events.player_dashboard_unshared","playerDashboardUpdated":"staff.dashboard.audit_logs.events.player_dashboard_updated","playerDashboardDeleted":"staff.dashboard.audit_logs.events.player_dashboard_deleted","punishmentAnalysisRun":"staff.dashboard.audit_logs.events.punishment_analysis_run","punishmentCacheReloadRequested":"staff.dashboard.audit_logs.events.punishment_cache_reload_requested","canvasPixelBatchQueued":"staff.dashboard.audit_logs.events.canvas_pixel_batch_queued","canvasAreaReversed":"staff.dashboard.audit_logs.events.canvas_area_reversed","pixelProtectionChanged":"staff.dashboard.audit_logs.events.pixel_protection_changed","canvasAutoPaintQueued":"staff.dashboard.audit_logs.events.canvas_auto_paint_queued","cosmeticCreated":"staff.dashboard.audit_logs.events.cosmetic_created","cosmeticUpdated":"staff.dashboard.audit_logs.events.cosmetic_updated","cosmeticDeleted":"staff.dashboard.audit_logs.events.cosmetic_deleted","badgeCreated":"staff.dashboard.audit_logs.events.badge_created","badgeUpdated":"staff.dashboard.audit_logs.events.badge_updated","badgeDeleted":"staff.dashboard.audit_logs.events.badge_deleted","storeImageUploaded":"staff.dashboard.audit_logs.events.store_image_uploaded","storeImageDeleted":"staff.dashboard.audit_logs.events.store_image_deleted","businessInfiniteChargesUpdated":"staff.dashboard.audit_logs.events.business_infinite_charges_updated","businessMembershipUpdated":"staff.dashboard.audit_logs.events.business_membership_updated","businessPaintRestrictionsUpdated":"staff.dashboard.audit_logs.events.business_paint_restrictions_updated","userCosmeticGranted":"staff.dashboard.audit_logs.events.user_cosmetic_granted","userCosmeticRemoved":"staff.dashboard.audit_logs.events.user_cosmetic_removed","userCosmeticRefunded":"staff.dashboard.audit_logs.events.user_cosmetic_refunded","userBadgeGranted":"staff.dashboard.audit_logs.events.user_badge_granted","userBadgeRemoved":"staff.dashboard.audit_logs.events.user_badge_removed","userGiftSent":"staff.dashboard.audit_logs.events.user_gift_sent","commerceSettingsUpdated":"staff.dashboard.audit_logs.events.commerce_settings_updated","commerceProductUpdated":"staff.dashboard.audit_logs.events.commerce_product_updated","commerceChangeCreated":"staff.dashboard.audit_logs.events.commerce_change_created","commerceChangeUpdated":"staff.dashboard.audit_logs.events.commerce_change_updated","commerceChangeSubmitted":"staff.dashboard.audit_logs.events.commerce_change_submitted","commerceChangeWithdrawn":"staff.dashboard.audit_logs.events.commerce_change_withdrawn","commerceChangeApproved":"staff.dashboard.audit_logs.events.commerce_change_approved","commerceChangeRejected":"staff.dashboard.audit_logs.events.commerce_change_rejected","commerceChangePublished":"staff.dashboard.audit_logs.events.commerce_change_published","commerceChangeCancelled":"staff.dashboard.audit_logs.events.commerce_change_cancelled","commerceOperationRetried":"staff.dashboard.audit_logs.events.commerce_operation_retried","commerceOperationResolved":"staff.dashboard.audit_logs.events.commerce_operation_resolved","commerceOperationCancelled":"staff.dashboard.audit_logs.events.commerce_operation_cancelled","commerceReconcileRequested":"staff.dashboard.audit_logs.events.commerce_reconcile_requested","commercePromotionCreated":"staff.dashboard.audit_logs.events.commerce_promotion_created","commercePromotionUpdated":"staff.dashboard.audit_logs.events.commerce_promotion_updated","commercePromotionCancelled":"staff.dashboard.audit_logs.events.commerce_promotion_cancelled","commerceCouponCodesCreated":"staff.dashboard.audit_logs.events.commerce_coupon_codes_created","commerceCouponCodeUpdated":"staff.dashboard.audit_logs.events.commerce_coupon_code_updated","commerceCouponCodesMoved":"staff.dashboard.audit_logs.events.commerce_coupon_codes_moved","commerceExportCreated":"staff.dashboard.audit_logs.events.commerce_export_created","commerceCustomerPiiViewed":"staff.dashboard.audit_logs.events.commerce_customer_pii_viewed","commerceRevenueExportCreated":"staff.dashboard.audit_logs.events.commerce_revenue_export_created","commerceRevenueTopSpendersViewed":"staff.dashboard.audit_logs.events.commerce_revenue_top_spenders_viewed","commerceRevenueTargetUpdated":"staff.dashboard.audit_logs.events.commerce_revenue_target_updated","commerceRevenueTargetDeleted":"staff.dashboard.audit_logs.events.commerce_revenue_target_deleted","commerceProductDraftCreated":"staff.dashboard.audit_logs.events.commerce_product_draft_created","commerceProductDraftUpdated":"staff.dashboard.audit_logs.events.commerce_product_draft_updated","commerceProductAppReviewMarked":"staff.dashboard.audit_logs.events.commerce_product_app_review_marked"}},"banAppeals":{"see":"staff.dashboard.ban_appeals.see"},"metrics":{"tickets":"staff.dashboard.metrics.tickets","onboarding":"staff.dashboard.metrics.onboarding","notices":"staff.dashboard.metrics.notices","players":"staff.dashboard.metrics.players","playersList":"staff.dashboard.metrics.players_list","playersDashboardsShare":"staff.dashboard.metrics.players_dashboards_share","revenue":"staff.dashboard.metrics.revenue"},"allTickets":{"see":"staff.dashboard.all_tickets.see","review":"staff.dashboard.all_tickets.review"},"storeManager":{"frames":"staff.dashboard.store_manager.frames","fonts":"staff.dashboard.store_manager.fonts","styles":"staff.dashboard.store_manager.styles","badges":"staff.dashboard.store_manager.badges"},"punishmentAnalysis":{"see":"staff.dashboard.punishment_analysis.see"},"anticheat":{"see":"staff.dashboard.anticheat.see","unban":"staff.dashboard.anticheat.unban","ban":"staff.dashboard.anticheat.ban"}},"tickets":{"assign":"staff.tickets.assign","closedToday":"staff.tickets.closed_today","openCount":"staff.tickets.open_count","translate":"staff.tickets.translate","setStatus":"staff.tickets.set_status","revert":"staff.tickets.revert","revertReview":"staff.tickets.revert_review","reSolve":"staff.tickets.re_solve"},"appeals":{"assign":"staff.appeals.assign","openCount":"staff.appeals.open_count","ticketsHistory":"staff.appeals.tickets_history","notes_get":"staff.appeals.notes_get","notes_set":"staff.appeals.notes_set","translate":"staff.appeals.translate","solve":"staff.appeals.solve"},"tools":{"selectArea":{"timeout":"staff.tools.select_area.timeout","ban":"staff.tools.select_area.ban","clear":"staff.tools.select_area.clear","info":"staff.tools.select_area.info","phoneVerification":"staff.tools.select_area.phone_verification","reverse":"staff.tools.select_area.reverse","timelapse":"staff.tools.select_area.timelapse"},"selectPixel":{"timeout":"staff.tools.select_pixel.timeout","ban":"staff.tools.select_pixel.ban","seeRole":"staff.tools.select_pixel.see_role","seePunishment":"staff.tools.select_pixel.see_punishment"},"autoPainter":{"paint":"staff.tools.auto_painter.paint","missing":"staff.tools.auto_painter.missing","incorrect":"staff.tools.auto_painter.incorrect","showOnLeaderboard":"staff.tools.auto_painter.show_on_leaderboard","transparent":"staff.tools.auto_painter.transparent","noCharges":"staff.tools.auto_painter.no_charges","asUser":"staff.tools.auto_painter.as_user","noSizeLimit":"staff.tools.auto_painter.no_size_limit"},"wayback":"staff.tools.wayback"},"ui":{"themeDarkMode":"staff.ui.theme.dark_mode","tooglePixelArt":"staff.ui.toggle_pixel_art"},"cosmetics":{"viewCosmetics":"staff.cosmetics.view_cosmetics","manageCosmetics":"staff.cosmetics.manage_cosmetics","assignCosmetics":"staff.cosmetics.assign_cosmetics"},"commerce":{"viewCatalog":"staff.commerce.view_catalog","viewFinancials":"staff.commerce.view_financials","viewPurchases":"staff.commerce.view_purchases","viewCustomerPii":"staff.commerce.view_customer_pii","viewSync":"staff.commerce.view_sync","viewAudit":"staff.commerce.view_audit","draftChanges":"staff.commerce.draft_changes","approveChanges":"staff.commerce.approve_changes","publishChanges":"staff.commerce.publish_changes","managePromotions":"staff.commerce.manage_promotions","manageCoupons":"staff.commerce.manage_coupons","retrySync":"staff.commerce.retry_sync","reconcile":"staff.commerce.reconcile","emergency":"staff.commerce.emergency","manageSettings":"staff.commerce.manage_settings","export":"staff.commerce.export","manageProducts":"staff.commerce.manage_products"}}`),
     settings: {
       tools: {
         wayback: {
@@ -8042,30 +8091,30 @@ var Y = {
       memberPageSize: 50
     }
   },
-  ou = Y,
-  su = Y.seasons,
-  cu = Y.seasons.length - 1,
-  lu = Y.seasons[cu].zoom,
-  uu = Y.seasons[cu].tileSize,
-  du = Y.permissions,
-  fu = Y.settings,
-  pu = Y.platforms.android,
-  mu = pu.googlePlayBilling.price;
-
-function hu(e) {
-  return ou.countries[e - 1]
-}
+  su = Y,
+  cu = Y.seasons,
+  lu = Y.seasons.length - 1,
+  uu = Y.seasons[lu].zoom,
+  du = Y.seasons[lu].tileSize,
+  fu = Y.permissions,
+  pu = Y.settings,
+  mu = Y.platforms.android,
+  hu = mu.googlePlayBilling.price;
 
 function gu(e) {
-  return gu.map.get(e)
+  return su.countries[e - 1]
+}
+
+function _u(e) {
+  return _u.map.get(e)
 }(function(e) {
-  e.map = _u(e.sharedProducts = Object.entries(ou.products).map(([e, t]) => ({
+  e.map = vu(e.sharedProducts = Object.entries(su.products).map(([e, t]) => ({
     ...t,
     productId: e
   })).filter(e => `lookupKey` in e), e => e.lookupKey)
-})(gu || (gu = {}));
+})(_u || (_u = {}));
 
-function _u(e, t) {
+function vu(e, t) {
   let n = new Map;
   for (let r in e) {
     let i = Reflect.get(e, r),
@@ -8074,12 +8123,12 @@ function _u(e, t) {
   }
   return n
 }
-var vu = 5e3,
-  yu = 4,
+var yu = 5e3,
+  bu = 4,
   X = 64,
-  bu = 8;
+  xu = 8;
 
-function xu(e) {
+function Su(e) {
   let t = Array.isArray(e.locations) ? e.locations.map(t => ({
     ...t,
     opacity: t.opacity ?? e.opacity,
@@ -8099,12 +8148,12 @@ function xu(e) {
   }
 }
 
-function Su(e) {
+function Cu(e) {
   let t = e.maxX - e.minX + 1,
     n = e.maxY - e.minY + 1;
   if (t <= 0 || n <= 0) return [];
-  let r = Math.min(t, vu),
-    i = Math.max(1, Math.floor(vu / r)),
+  let r = Math.min(t, yu),
+    i = Math.max(1, Math.floor(yu / r)),
     a = [];
   for (let t = e.minY; t <= e.maxY; t += i)
     for (let n = e.minX; n <= e.maxX; n += r) a.push({
@@ -8116,7 +8165,7 @@ function Su(e) {
   return a
 }
 
-function Cu(e) {
+function wu(e) {
   let t = [],
     n = Math.floor(e.minX / X),
     r = Math.floor(e.maxX / X),
@@ -8132,12 +8181,12 @@ function Cu(e) {
   return t
 }
 
-function wu(e) {
+function Tu(e) {
   let t = (e == null ? void 0 : e.role) ?? (e == null ? void 0 : e.alliance_role);
   return t === `mod` || t === `admin` || t === `leader` ? t : `member`
 }
 
-function Tu(e) {
+function Eu(e) {
   return class extends e {
     async getAlliance() {
       let e = await this.request(`/alliance`, {
@@ -8234,7 +8283,7 @@ function Tu(e) {
         let e = await n.json();
         return {
           ...e,
-          templates: (e.templates ?? []).map(xu),
+          templates: (e.templates ?? []).map(Su),
           usedBytes: e.usedBytes ?? 0,
           byteLimit: e.byteLimit ?? 67108864,
           draftOptions: e.draftOptions ?? []
@@ -8250,7 +8299,7 @@ function Tu(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === K.CREATED || r.status === K.OK) return xu(await r.json());
+      if (r.status === K.CREATED || r.status === K.OK) return Su(await r.json());
       let i = await r.json().catch(() => ({}));
       throw i.error === `template_limit_reached` ? Error(h.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(h.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(h.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(h.alliance_template_upload_rate_limited()) : r.status === K.FORBIDDEN ? Error(h.you_are_not_allowed_to_do_this()) : Error(h.unexpected_server_error())
     }
@@ -8263,7 +8312,7 @@ function Tu(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === K.OK) return xu(await n.json());
+      if (n.status === K.OK) return Su(await n.json());
       throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(h.alliance_template_upload_rate_limited()) : n.status === K.FORBIDDEN ? Error(h.you_are_not_allowed_to_do_this()) : Error(h.unexpected_server_error())
     }
     async patchAllianceTemplatePlacement(e, t) {
@@ -8287,7 +8336,7 @@ function Tu(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === K.OK) return xu(await r.json());
+      if (r.status === K.OK) return Su(await r.json());
       let i = await r.json().catch(() => ({}));
       throw i.error === `template_image_changed` ? Error(h.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(h.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(h.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(h.alliance_template_upload_rate_limited()) : r.status === K.FORBIDDEN ? Error(h.you_are_not_allowed_to_do_this()) : Error(h.unexpected_server_error())
     }
@@ -9001,7 +9050,7 @@ function Tu(e) {
     }
     async getAllianceHqWaybackEvents(e, t) {
       let n = new URLSearchParams;
-      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? fu.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
+      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? pu.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/events?${n.toString()}`, {
         credentials: `include`
       });
@@ -9010,12 +9059,12 @@ function Tu(e) {
       return r.json()
     }
     async getAdminAllianceHqArea(e, t) {
-      let n = Su(t);
+      let n = Cu(t);
       if (n.length === 0) throw Error(h.unexpected_server_error());
       let r = await this.getAdminAllianceHqAreaChunk(e, n[0]),
         i = [...r.pixels];
-      for (let t = 1; t < n.length; t += yu) {
-        let a = await Promise.all(n.slice(t, t + yu).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
+      for (let t = 1; t < n.length; t += bu) {
+        let a = await Promise.all(n.slice(t, t + bu).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
         for (let e of a) i.push(...e.pixels)
       }
       return {
@@ -9026,11 +9075,11 @@ function Tu(e) {
     }
     async getAdminAllianceHqSelectArea(e, t, n) {
       var r;
-      let i = Cu(t),
+      let i = wu(t),
         a = Array(i.length),
         o = 0,
         s = Array.from({
-          length: Math.min(bu, i.length)
+          length: Math.min(xu, i.length)
         }, async () => {
           for (; o < i.length;) {
             let t = o;
@@ -9100,8 +9149,8 @@ function Tu(e) {
     async reverseAdminAllianceHqPixels(e, t, n, r = !1) {
       let i = 0,
         a = 0;
-      for (let o = 0; o < t.length; o += vu) {
-        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + vu), n, r);
+      for (let o = 0; o < t.length; o += yu) {
+        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + yu), n, r);
         i += s.reversed, a = s.eventHwm
       }
       return {
@@ -9177,7 +9226,7 @@ function Tu(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: wu(e),
+          role: Tu(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         }))
@@ -9213,7 +9262,7 @@ function Tu(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: wu(e),
+          role: Tu(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         })),
@@ -9426,9 +9475,9 @@ function Tu(e) {
     }
   }
 }
-var Eu = [`None`, `PoW`, `Turnstile`, `hCaptcha`, `OTP`];
+var Du = [`None`, `PoW`, `Turnstile`, `hCaptcha`, `OTP`];
 
-function Du(e) {
+function Ou(e) {
   return class extends e {
     async getUserAnticheat(e) {
       let t = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(e)}`, {
@@ -9540,7 +9589,7 @@ function Du(e) {
   }
 }
 
-function Ou(e) {
+function ku(e) {
   return class extends e {
     async autoReviewBan(e) {
       let t = await this.request(`/staff/dashboard/users/auto-review-ban`, {
@@ -9640,7 +9689,7 @@ function Ou(e) {
   }
 }
 
-function ku(e) {
+function Au(e) {
   return class extends e {
     async getDeviceAttestChallenge() {
       let e = await this.request(`/device/attest/challenge`, {
@@ -9747,11 +9796,11 @@ function ku(e) {
   }
 }
 
-function Au(e) {
+function ju(e) {
   if (!(e === void 0 || !Number.isFinite(e))) return Math.min(100, Math.max(1, Math.trunc(e)))
 }
 
-function ju(e) {
+function Mu(e) {
   var t;
   if (!e) return null;
   let n = null,
@@ -9769,11 +9818,11 @@ function ju(e) {
   let a = (n == null || (t = n.split(/[\\/]/).pop()) == null ? void 0 : t.trim()) ?? ``;
   return a && a !== `.` && a !== `..` ? a : null
 }
-async function Mu(e) {
+async function Nu(e) {
   let t = await e.json().catch(() => ({}));
-  return new Nu(typeof t.message == `string` && t.message ? t.message : e.statusText, e.status, typeof t.error == `string` ? t.error : `unknown`, Array.isArray(t.fields) ? t.fields : [])
+  return new Pu(typeof t.message == `string` && t.message ? t.message : e.statusText, e.status, typeof t.error == `string` ? t.error : `unknown`, Array.isArray(t.fields) ? t.fields : [])
 }
-var Nu = class extends J {
+var Pu = class extends J {
   constructor(e, t, n, r = []) {
     super(e, t), c(this, `code`, void 0), c(this, `fields`, void 0), this.code = n, this.fields = r
   }
@@ -9797,11 +9846,11 @@ function Q(e) {
   return n ? `?${n}` : ``
 }
 
-function Pu() {
+function Fu() {
   return crypto.randomUUID()
 }
 
-function Fu(e) {
+function Iu(e) {
   return class extends e {
     async commerceRequest(e, t) {
       let n = await this.request(e, {
@@ -9810,7 +9859,7 @@ function Fu(e) {
       });
       if (!n.ok) {
         let e = await n.json().catch(() => ({}));
-        throw new Nu(typeof e.message == `string` && e.message ? e.message : n.statusText, n.status, typeof e.error == `string` ? e.error : `unknown`, Array.isArray(e.fields) ? e.fields : [])
+        throw new Pu(typeof e.message == `string` && e.message ? e.message : n.statusText, n.status, typeof e.error == `string` ? e.error : `unknown`, Array.isArray(e.fields) ? e.fields : [])
       }
       return n.json()
     }
@@ -9997,18 +10046,18 @@ function Fu(e) {
       let t = await this.request(`/staff/commerce/analytics/export${Q({...e})}`, {
         throwOnStatus: !1
       });
-      if (!t.ok) throw await Mu(t);
+      if (!t.ok) throw await Nu(t);
       let n = t.headers.get(`X-Commerce-Export-Rows`),
         r = t.headers.get(`X-Commerce-Export-Truncated`);
       return {
         blob: await t.blob(),
-        filename: ju(t.headers.get(`Content-Disposition`)),
+        filename: Mu(t.headers.get(`Content-Disposition`)),
         rows: n !== null && /^\d+$/.test(n) ? Number(n) : null,
         truncated: r === `true` || r !== `false` && null
       }
     }
     listCommerceTransactions(e = {}) {
-      return this.commerceRequest(`/staff/commerce/purchases${Q({...e,limit:Au(e.limit)})}`)
+      return this.commerceRequest(`/staff/commerce/purchases${Q({...e,limit:ju(e.limit)})}`)
     }
     getCommerceTransaction(e) {
       return this.commerceRequest(`/staff/commerce/purchases/${e}`)
@@ -10019,7 +10068,7 @@ function Fu(e) {
         limit: n,
         ...r
       } = e;
-      return this.commerceRequest(`/staff/commerce/history${Q({...r,limit:Au(n),type:t==null?void 0:t.join(`,`)})}`)
+      return this.commerceRequest(`/staff/commerce/history${Q({...r,limit:ju(n),type:t==null?void 0:t.join(`,`)})}`)
     }
     async getStoreOffers(e) {
       let t = await this.request(`/store/offers${Q({platform:e})}`, {
@@ -10047,11 +10096,11 @@ function Fu(e) {
     }
   }
 }
-async function Iu(e) {
-  return new J(Lu(await e.json().catch(() => null)), e.status)
+async function Lu(e) {
+  return new J(Ru(await e.json().catch(() => null)), e.status)
 }
 
-function Lu(e) {
+function Ru(e) {
   switch (e == null ? void 0 : e.error) {
     case `cosmetic_tag_exists`:
       return h.store_mgr_tag_exists();
@@ -10070,7 +10119,7 @@ function Lu(e) {
   }
 }
 
-function Ru(e) {
+function zu(e) {
   return class extends e {
     async getUserFrames() {
       let e = await this.request(`/me/frames`, {
@@ -10160,7 +10209,7 @@ function Ru(e) {
         credentials: `include`,
         body: t
       });
-      if (n.status !== K.OK) throw await Iu(n);
+      if (n.status !== K.OK) throw await Lu(n);
       return n.json()
     }
     async postCreateFont(e) {
@@ -10169,7 +10218,7 @@ function Ru(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw await Iu(t);
+      if (t.status !== K.OK) throw await Lu(t);
       return t.json()
     }
     async postCreateStyle(e) {
@@ -10178,7 +10227,7 @@ function Ru(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw await Iu(t);
+      if (t.status !== K.OK) throw await Lu(t);
       return t.json()
     }
     async getAdminCosmetics(e) {
@@ -10200,7 +10249,7 @@ function Ru(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw await Iu(n);
+      if (n.status !== K.OK) throw await Lu(n);
       return n.json()
     }
     async deleteAdminCosmetic(e) {
@@ -10208,7 +10257,7 @@ function Ru(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw await Iu(t)
+      if (t.status !== K.OK) throw await Lu(t)
     }
     async getAdminBadges(e) {
       let t = new URLSearchParams;
@@ -10278,13 +10327,13 @@ function Ru(e) {
     }
   }
 }
-var zu = [`all_owned`, `purchase_limit_reached`, `product_unavailable`];
+var Bu = [`all_owned`, `purchase_limit_reached`, `product_unavailable`];
 
-function Bu(e) {
-  return zu.includes(e)
+function Vu(e) {
+  return Bu.includes(e)
 }
 
-function Vu(e, t = `bundles`) {
+function Hu(e, t = `bundles`) {
   let n = t !== `bundles`;
   switch (e) {
     case `all_owned`:
@@ -10295,24 +10344,24 @@ function Vu(e, t = `bundles`) {
       return n ? h.store_pack_refusal_unavailable() : h.store_bundle_refusal_unavailable()
   }
 }
-var Hu = class extends Error {
+var Uu = class extends Error {
     constructor(e) {
-      super(Vu(e)), c(this, `code`, void 0), this.code = e, this.name = `CatalogRefusalError`
+      super(Hu(e)), c(this, `code`, void 0), this.code = e, this.name = `CatalogRefusalError`
     }
   },
-  Uu = class extends Error {
+  Wu = class extends Error {
     constructor(e) {
       super(h.store_bundle_price_changed()), c(this, `price`, void 0), this.price = e, this.name = `CatalogPriceChangedError`
     }
   };
-async function Wu(e) {
+async function Gu(e) {
   if (e.status !== K.CONFLICT) return null;
   let t = await e.clone().json().catch(() => null),
     n = t && typeof t == `object` ? t.code : void 0;
-  return Bu(n) ? new Hu(n) : null
+  return Vu(n) ? new Uu(n) : null
 }
 
-function Gu(e) {
+function Ku(e) {
   return class extends e {
     async getStoreCatalog(e) {
       let t = await this.request(`/store/catalog?platform=${e}`, {
@@ -10347,20 +10396,20 @@ function Gu(e) {
       }
       if (n.status === K.CONFLICT) {
         let e = await n.json().catch(() => null);
-        if ((e == null ? void 0 : e.code) === `price_changed` && Number.isSafeInteger(e.price) && e.price > 0) throw new Uu(e.price);
-        if (Bu(e == null ? void 0 : e.code)) throw new Hu(e.code)
+        if ((e == null ? void 0 : e.code) === `price_changed` && Number.isSafeInteger(e.price) && e.price > 0) throw new Wu(e.price);
+        if (Vu(e == null ? void 0 : e.code)) throw new Uu(e.code)
       }
-      throw n.status === K.FORBIDDEN ? Error(h.store_bundle_not_enough_currency()) : n.status === K.NOT_FOUND ? new Hu(`product_unavailable`) : n.status === K.UNAUTHORIZED ? Error(h.you_are_not_logged_in()) : n.status === K.TOO_MANY_REQUESTS ? Error(h.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server()) : Error(h.unexpected_server_error())
+      throw n.status === K.FORBIDDEN ? Error(h.store_bundle_not_enough_currency()) : n.status === K.NOT_FOUND ? new Uu(`product_unavailable`) : n.status === K.UNAUTHORIZED ? Error(h.you_are_not_logged_in()) : n.status === K.TOO_MANY_REQUESTS ? Error(h.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server()) : Error(h.unexpected_server_error())
     }
   }
 }
-var Ku = [`gift_self`, `gift_recipient_not_found`, `gift_recipient_unavailable`];
-
-function qu(e) {
-  return Ku.includes(e)
-}
+var qu = [`gift_self`, `gift_recipient_not_found`, `gift_recipient_unavailable`];
 
 function Ju(e) {
+  return qu.includes(e)
+}
+
+function Yu(e) {
   switch (e) {
     case `gift_self`:
       return h.store_gift_recipient_self();
@@ -10376,26 +10425,26 @@ function Ju(e) {
       return h.store_bundle_refusal_unavailable()
   }
 }
-var Yu = class extends Error {
+var Xu = class extends Error {
   constructor(e) {
-    super(Ju(e)), c(this, `code`, void 0), this.code = e, this.name = `GiftRefusalError`
+    super(Yu(e)), c(this, `code`, void 0), this.code = e, this.name = `GiftRefusalError`
   }
 };
-async function Xu(e) {
+async function Zu(e) {
   if (e.status !== K.CONFLICT) return null;
   let t = await e.clone().json().catch(() => null),
     n = t && typeof t == `object` ? t.code : void 0;
-  return qu(n) || Bu(n) ? new Yu(n) : null
+  return Ju(n) || Vu(n) ? new Xu(n) : null
 }
 
-function Zu(e) {
+function Qu(e) {
   let t = e.trim().replace(/^#/, ``);
   if (!/^\d{1,10}$/.test(t)) return null;
   let n = Number(t);
   return n > 0 && n <= 2147483647 ? n : null
 }
 
-function Qu(e) {
+function $u(e) {
   return class extends e {
     async getGiftRecipient(e, t) {
       let n = await this.request(`/store/gift-recipient/${e}`, {
@@ -10403,16 +10452,16 @@ function Qu(e) {
           throwOnStatus: !1,
           signal: t
         }),
-        r = await Xu(n);
+        r = await Zu(n);
       if (r) throw r;
       if (n.status !== K.OK) throw Error(h.unexpected_server_error());
       return await n.json()
     }
   }
 }
-var $u = 30 * R.minute;
+var ed = 30 * R.minute;
 
-function ed(e) {
+function td(e) {
   return class extends e {
     constructor(...e) {
       super(...e), c(this, `lastHotspotRequestAt`, 0)
@@ -10464,7 +10513,7 @@ function ed(e) {
       throw Error(h.leaderboard_disabled_temporarily())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < $u || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
+      Date.now() - this.lastHotspotRequestAt < ed || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
         credentials: `include`,
         keepalive: !0,
         throwOnStatus: !1
@@ -10486,7 +10535,7 @@ function ed(e) {
   }
 }
 
-function td(e) {
+function nd(e) {
   return class extends e {
     async postCaptchaSession(e, t = `include`) {
       let n = await this.request(`/anticheat/captcha/session`, {
@@ -10554,7 +10603,7 @@ function td(e) {
     }
   }
 }
-var nd = {
+var rd = {
     griefing: h.griefing(),
     "multi-accounting": h.multi_accounting(),
     "hate-speech": h.hate_speech(),
@@ -10563,7 +10612,7 @@ var nd = {
     "inappropriate-content": h.inappropriate_content(),
     other: h.breaking_the_rules()
   },
-  rd = {
+  id = {
     doxxing: h.doxxing_description(),
     "hate-speech": h.hate_speech_description(),
     griefing: h.griefing_description(),
@@ -10572,7 +10621,7 @@ var nd = {
     "inappropriate-content": h.inappropriate_content_description(),
     other: h.breaking_the_rules_description()
   },
-  id = {
+  ad = {
     doxxing: `text-red-600`,
     "hate-speech": `text-red-400`,
     "inappropriate-content": `text-amber-500`,
@@ -10581,7 +10630,7 @@ var nd = {
     griefing: `text-amber-200`,
     other: `text-cyan-600`
   },
-  ad = {
+  od = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -10590,7 +10639,7 @@ var nd = {
     other: 5,
     griefing: 6
   },
-  od = {
+  sd = {
     griefing: `topic-2`,
     "inappropriate-content": `topic-1`,
     bot: `topic-3`,
@@ -10599,21 +10648,21 @@ var nd = {
     doxxing: `topic-1`,
     other: ``
   },
-  sd = 365 * R.day;
+  cd = 365 * R.day;
 
-function cd(e) {
+function ld(e) {
   if (!e) return null;
   let t = (e instanceof Date ? e : new Date(e)).getTime();
   return Number.isFinite(t) ? t : null
 }
 
-function ld(e, t = Date.now()) {
-  let n = cd(e);
-  return n !== null && n - t >= sd
+function ud(e, t = Date.now()) {
+  let n = ld(e);
+  return n !== null && n - t >= cd
 }
 
-function ud(e, t = Date.now()) {
-  let n = cd(e);
+function dd(e, t = Date.now()) {
+  let n = ld(e);
   if (n === null || n <= t) return {
     days: 0,
     hours: 0,
@@ -10626,7 +10675,7 @@ function ud(e, t = Date.now()) {
     minutes: r % 60
   }
 }
-var dd = [{
+var fd = [{
   key: `email`,
   example: `email:carlos*`
 }, {
@@ -10655,7 +10704,7 @@ var dd = [{
   example: `stripe:cus_ABC123`
 }];
 
-function fd(e, t) {
+function pd(e, t) {
   let n = t ?? ``;
   switch (e) {
     case `search_empty`:
@@ -10669,7 +10718,7 @@ function fd(e, t) {
     case `search_unknown_filter`:
       return h.user_search_error_unknown_filter({
         filter: n,
-        filters: dd.map(e => e.key).join(`, `)
+        filters: fd.map(e => e.key).join(`, `)
       });
     case `search_invalid_value`:
       return h.user_search_error_invalid_value({
@@ -10692,7 +10741,7 @@ function fd(e, t) {
   }
 }
 
-function pd(e) {
+function md(e) {
   return class extends e {
     async getModeratorTickets() {
       let e = await this.request(`/staff/tickets/get`, {
@@ -10701,7 +10750,7 @@ function pd(e) {
       });
       if (e.status !== K.OK) throw new J(h.unexpected_server_error(), e.status);
       let t = await e.json();
-      for (let e of t.tickets) e.reports.sort((e, t) => ad[e.reason] - ad[t.reason]);
+      for (let e of t.tickets) e.reports.sort((e, t) => od[e.reason] - od[t.reason]);
       return t
     }
     async countMyTicketsClosedToday() {
@@ -10922,7 +10971,7 @@ function pd(e) {
       });
       if (t.status === K.BAD_REQUEST || t.status === K.UNPROCESSABLE_ENTITY) {
         let e = await t.json().catch(() => null);
-        throw new J(fd(e == null ? void 0 : e.error, e == null ? void 0 : e.field), t.status)
+        throw new J(pd(e == null ? void 0 : e.error, e == null ? void 0 : e.field), t.status)
       }
       if (t.status !== K.OK) throw new J(h.unexpected_server_error(), t.status);
       return t.json()
@@ -11214,7 +11263,7 @@ function pd(e) {
   }
 }
 
-function md(e) {
+function hd(e) {
   return class extends e {
     async notificationJSON(e, t = {}) {
       var n, r;
@@ -11401,13 +11450,13 @@ function md(e) {
     }
   }
 }
-var hd = [`coupon_invalid`, `coupon_expired`, `coupon_exhausted`, `coupon_not_eligible`, `coupon_not_applicable`, `promotions_unavailable`];
-
-function gd(e) {
-  return hd.includes(e)
-}
+var gd = [`coupon_invalid`, `coupon_expired`, `coupon_exhausted`, `coupon_not_eligible`, `coupon_not_applicable`, `promotions_unavailable`];
 
 function _d(e) {
+  return gd.includes(e)
+}
+
+function vd(e) {
   switch (e) {
     case `coupon_invalid`:
       return h.store_coupon_error_invalid();
@@ -11425,22 +11474,22 @@ function _d(e) {
       return h.store_coupon_error_rate_limited()
   }
 }
-var vd = class extends Error {
+var yd = class extends Error {
   constructor(e, t) {
-    super(_d(e)), c(this, `code`, void 0), c(this, `couponCode`, void 0), this.code = e, this.couponCode = t, this.name = `CouponError`
+    super(vd(e)), c(this, `code`, void 0), c(this, `couponCode`, void 0), this.code = e, this.couponCode = t, this.name = `CouponError`
   }
 };
 
-function yd(e) {
+function bd(e) {
   return typeof e == `object` && !!e && !Array.isArray(e)
 }
 
-function bd(e) {
+function xd(e) {
   return e === `stripe` || e === `fastspring`
 }
 
-function xd(e) {
-  if (!yd(e)) return null;
+function Sd(e) {
+  if (!bd(e)) return null;
   let {
     id: t,
     name: n,
@@ -11454,7 +11503,7 @@ function xd(e) {
   } = e;
   if (typeof t != `number` || !Number.isSafeInteger(t) || r !== `sale` && r !== `coupon` || i !== `percent` && i !== `fixed`) return null;
   let u = {};
-  if (yd(o))
+  if (bd(o))
     for (let [e, t] of Object.entries(o)) /^[A-Z]{3}$/.test(e) && Number.isSafeInteger(t) && t > 0 && (u[e] = t);
   return {
     id: t,
@@ -11465,20 +11514,20 @@ function xd(e) {
     fixedAmounts: Object.keys(u).length ? u : null,
     startsAt: typeof s == `string` ? s : ``,
     endsAt: typeof c == `string` ? c : ``,
-    providers: Array.isArray(l) ? l.filter(bd) : [],
+    providers: Array.isArray(l) ? l.filter(xd) : [],
     couponApplied: e.couponApplied === !0,
     couponSuperseded: e.couponSuperseded === !0
   }
 }
-async function Sd(e, t) {
+async function Cd(e, t) {
   let n = e.status === K.TOO_MANY_REQUESTS && !!t;
   if (e.status !== K.BAD_REQUEST && !n) return null;
   let r = await e.json().catch(() => null),
-    i = yd(r) ? r.error : null;
-  return n ? i === `rate_limited` ? new vd(`rate_limited`, t) : null : gd(i) ? new vd(i, t) : null
+    i = bd(r) ? r.error : null;
+  return n ? i === `rate_limited` ? new yd(`rate_limited`, t) : null : _d(i) ? new yd(i, t) : null
 }
 
-function Cd(e) {
+function wd(e) {
   return e ? {
     checkout_id: e.checkoutId,
     ...e.visitorId ? {
@@ -11488,23 +11537,23 @@ function Cd(e) {
   } : {}
 }
 
-function wd(e) {
-  return yd(e) ? {
+function Td(e) {
+  return bd(e) ? {
     ...e,
-    promotion: xd(e.promotion)
+    promotion: Sd(e.promotion)
   } : e
 }
-var Td = [`open`, `complete`, `expired`],
-  Ed = [`droplets`, `prism`];
+var Ed = [`open`, `complete`, `expired`],
+  Dd = [`droplets`, `prism`];
 
-function Dd(e) {
-  return Ed.map(t => ({
+function Od(e) {
+  return Dd.map(t => ({
     currency: t,
     amount: e.reduce((e, n) => e + (n.currency === t ? n.amount : 0), 0)
   })).filter(e => e.amount > 0)
 }
 
-function Od(e) {
+function kd(e) {
   return class extends e {
     async driveStatus() {
       let e = await this.request(`/drive/status`, {
@@ -11552,20 +11601,20 @@ function Od(e) {
             ...r ? {
               gift_recipient_id: r
             } : {},
-            ...Cd(n)
+            ...wd(n)
           })
         }),
-        a = await Sd(i, t);
+        a = await Cd(i, t);
       if (a) throw a;
-      let o = r ? await Xu(i) : null;
+      let o = r ? await Zu(i) : null;
       if (o) throw o;
-      let s = await Wu(i);
+      let s = await Gu(i);
       if (s) throw s;
       if (i.status === K.TOO_MANY_REQUESTS) throw new q(h.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
       if (i.status === K.UNAUTHORIZED) throw Error(h.you_are_not_logged_in());
       if (i.status === K.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(h.account_suspended_message());
       if (i.status !== K.OK) throw i.status >= 500 || i.status === K.REQUEST_TIMEOUT ? new Gl(h.payment_checkout_failed()) : Error(h.payment_checkout_failed());
-      let c = wd(await i.json()),
+      let c = Td(await i.json()),
         {
           expiresInMs: l
         } = c;
@@ -11592,7 +11641,7 @@ function Od(e) {
       let {
         status: n
       } = await t.json();
-      return Td.includes(n) ? n : null
+      return Ed.includes(n) ? n : null
     }
     async createFastspringSession(e, t = !1, n, r, i) {
       let a = await this.request(`/payment/fastspring/session`, {
@@ -11608,14 +11657,14 @@ function Od(e) {
             ...i ? {
               gift_recipient_id: i
             } : {},
-            ...Cd(r)
+            ...wd(r)
           })
         }),
-        o = await Sd(a, n);
+        o = await Cd(a, n);
       if (o) throw o;
-      let s = i ? await Xu(a) : null;
+      let s = i ? await Zu(a) : null;
       if (s) throw s;
-      let c = await Wu(a);
+      let c = await Gu(a);
       if (c) throw c;
       if (a.status === K.TOO_MANY_REQUESTS) throw new q(h.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
       if (a.status === K.UNAUTHORIZED) throw Error(h.you_are_not_logged_in());
@@ -11626,7 +11675,7 @@ function Od(e) {
         }
         throw a.status >= 500 || a.status === K.REQUEST_TIMEOUT ? new Gl(h.payment_checkout_failed()) : Error(h.payment_checkout_failed())
       }
-      return wd(await a.json())
+      return Td(await a.json())
     }
     async refreshFastspringOrder(e) {
       let t = await this.request(`/payment/fastspring/refresh-order/${e}`, {
@@ -11728,7 +11777,7 @@ function Od(e) {
   }
 }
 
-function kd(e, t) {
+function Ad(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r),
@@ -11738,7 +11787,7 @@ function kd(e, t) {
   return n
 }
 
-function Ad(e, t) {
+function jd(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r);
@@ -11747,10 +11796,10 @@ function Ad(e, t) {
   return n
 }
 
-function jd(e) {
+function Md(e) {
   return class extends e {
     async paint(e) {
-      let t = kd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let t = Ad(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         n = {
           season: e[0].season,
           tiles: Object.values(t).map(e => ({
@@ -11910,7 +11959,7 @@ function jd(e) {
       return a.json()
     }
     async sendPaintRequests(e, t, n, r) {
-      let i = kd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let i = Ad(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         a = (await Promise.all(Object.values(i).map(async e => {
           let [r, i] = e[0].tile, a = e[0].season, o = {
             colors: e.map(e => e.colorIdx),
@@ -11950,8 +11999,8 @@ function jd(e) {
       }
     }
     async adminAutoPainterPaint(e, t, n, r = {}) {
-      let i = Md(e),
-        a = await Nd(i),
+      let i = Nd(e),
+        a = await Pd(i),
         o = new FormData;
       o.append(`fingerprint`, t), o.append(`season`, i.season.toString()), o.append(`px0`, i.offsetX.toString()), o.append(`py0`, i.offsetY.toString()), o.append(`width`, i.width.toString()), o.append(`height`, i.height.toString()), o.append(`pixels`, e.length.toString()), o.append(`bitmap`, a, `auto-painter.png`), o.append(`userId`, n.toString()), o.append(`missing`, String(r.missing ?? !1)), o.append(`incorrect`, String(r.incorrect ?? !1)), o.append(`showOnLeaderboard`, String(r.showOnLeaderboard ?? !1));
       let s = await this.request(`/staff/tools/auto-painter/paint`, {
@@ -12019,13 +12068,13 @@ function jd(e) {
   }
 }
 
-function Md(e) {
+function Nd(e) {
   var t;
   if (!e.length) throw Error(`Auto painter request does not contain any pixels.`);
   let n = e[0].season;
   for (let t of e)
     if (t.season !== n) throw Error(`Auto painter requests cannot mix seasons.`);
-  let r = (t = ou.seasons) == null ? void 0 : t[n];
+  let r = (t = su.seasons) == null ? void 0 : t[n];
   if (!r) throw Error(`Invalid season selected for auto painter request.`);
   let i = r.tileSize,
     a = 1 / 0,
@@ -12052,7 +12101,7 @@ function Md(e) {
     }
     of l) {
     var p;
-    let r = (p = ou.colors) == null ? void 0 : p[n];
+    let r = (p = su.colors) == null ? void 0 : p[n];
     if (!r) throw Error(`Unknown palette color index: ${n}`);
     let i = e - a,
       s = ((t - o) * u + i) * 4,
@@ -12068,8 +12117,8 @@ function Md(e) {
     season: n
   }
 }
-async function Nd(e) {
-  let t = Pd(e.width, e.height),
+async function Pd(e) {
+  let t = Fd(e.width, e.height),
     n = t.getContext(`2d`);
   if (!n) throw Error(`Canvas API is not available to encode auto painter bitmap.`);
   let r = n.createImageData(e.width, e.height);
@@ -12086,7 +12135,7 @@ async function Nd(e) {
   })
 }
 
-function Pd(e, t) {
+function Fd(e, t) {
   if (typeof OffscreenCanvas < `u`) return new OffscreenCanvas(e, t);
   if (typeof document < `u`) {
     let n = document.createElement(`canvas`);
@@ -12094,8 +12143,8 @@ function Pd(e, t) {
   }
   throw Error(`Canvas API is not available in the current environment.`)
 }
-var Fd = `/staff/dashboard/metrics/players`;
-async function Id(e) {
+var Id = `/staff/dashboard/metrics/players`;
+async function Ld(e) {
   let t = await e.json().catch(() => null);
   switch (t == null ? void 0 : t.error) {
     case `range_too_long`:
@@ -12118,66 +12167,66 @@ async function Id(e) {
   return new J(h.unexpected_server_error(), e.status)
 }
 
-function Ld(e) {
+function Rd(e) {
   return class extends e {
     async getPlayerMetricsOptions() {
-      let e = await this.request(`${Fd}/options`, {
+      let e = await this.request(`${Id}/options`, {
         method: `GET`
       });
-      if (e.status !== K.OK) throw await Id(e);
+      if (e.status !== K.OK) throw await Ld(e);
       return e.json()
     }
     async queryPlayerMetrics(e, t) {
-      let n = await this.request(`${Fd}/query`, {
+      let n = await this.request(`${Id}/query`, {
         method: `POST`,
         body: JSON.stringify(e),
         signal: t
       });
-      if (n.status !== K.OK) throw await Id(n);
+      if (n.status !== K.OK) throw await Ld(n);
       return n.json()
     }
     async getPlayerDashboards() {
-      let e = await this.request(`${Fd}/dashboards`, {
+      let e = await this.request(`${Id}/dashboards`, {
         method: `GET`
       });
-      if (e.status !== K.OK) throw await Id(e);
+      if (e.status !== K.OK) throw await Ld(e);
       return e.json()
     }
     async createPlayerDashboard(e) {
-      let t = await this.request(`${Fd}/dashboards`, {
+      let t = await this.request(`${Id}/dashboards`, {
         method: `POST`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.CREATED) throw await Id(t);
+      if (t.status !== K.CREATED) throw await Ld(t);
       return t.json()
     }
     async updatePlayerDashboard(e, t) {
-      let n = await this.request(`${Fd}/dashboards/${e}`, {
+      let n = await this.request(`${Id}/dashboards/${e}`, {
         method: `PUT`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw await Id(n);
+      if (n.status !== K.OK) throw await Ld(n);
       return n.json()
     }
     async deletePlayerDashboard(e) {
-      let t = await this.request(`${Fd}/dashboards/${e}`, {
+      let t = await this.request(`${Id}/dashboards/${e}`, {
         method: `DELETE`
       });
-      if (t.status !== K.NO_CONTENT) throw await Id(t)
+      if (t.status !== K.NO_CONTENT) throw await Ld(t)
     }
     async setPlayerDashboardDefault(e) {
-      let t = await this.request(`${Fd}/dashboards/default`, {
+      let t = await this.request(`${Id}/dashboards/default`, {
         method: `PUT`,
         body: JSON.stringify({
           key: e
         })
       });
-      if (t.status !== K.NO_CONTENT) throw await Id(t)
+      if (t.status !== K.NO_CONTENT) throw await Ld(t)
     }
   }
 }
 
-function Rd(e) {
+function zd(e) {
   return class extends e {
     async protectionRequest(e, t) {
       let n = await this.request(`/staff/dashboard/protections${e}`, t);
@@ -12209,12 +12258,12 @@ function Rd(e) {
     }
   }
 }
-var zd = `/staff/dashboard/metrics/revenue`,
-  Bd = [`onboardingArm`, `loginMethod`, `alliance`, `device`, `os`, `browser`],
-  Vd = [`lt5`, `5_20`, `20_50`, `50_100`, `100_500`, `500_1000`, `gte1000`],
-  Hd = [`today`, `1d`, `5d`, `30d`, `90d`, `180d`, `365d`];
+var Bd = `/staff/dashboard/metrics/revenue`,
+  Vd = [`onboardingArm`, `loginMethod`, `alliance`, `device`, `os`, `browser`],
+  Hd = [`lt5`, `5_20`, `20_50`, `50_100`, `100_500`, `500_1000`, `gte1000`],
+  Ud = [`today`, `1d`, `5d`, `30d`, `90d`, `180d`, `365d`];
 
-function Ud(e, t = {}) {
+function Wd(e, t = {}) {
   let n = new URLSearchParams({
       start: e.start,
       end: e.end,
@@ -12233,7 +12282,7 @@ function Ud(e, t = {}) {
   return n.toString()
 }
 
-function Wd(e, t) {
+function Gd(e, t) {
   switch (e) {
     case `range_too_long`:
       return h.player_metrics_error_range_too_long();
@@ -12281,50 +12330,50 @@ function Wd(e, t) {
   }
   return t === K.SERVICE_UNAVAILABLE ? h.revenue_error_unavailable() : h.unexpected_server_error()
 }
-var Gd = class extends J {
+var Kd = class extends J {
   constructor(e, t, n) {
     super(e, t), c(this, `code`, void 0), this.code = n
   }
 };
-async function Kd(e) {
+async function qd(e) {
   let t = await e.json().catch(() => null),
     n = typeof(t == null ? void 0 : t.error) == `string` ? t.error : ``,
     r = Number(e.headers.get(`Retry-After`));
-  return new Gd(n === `rate_limited` && Number.isFinite(r) && r > 0 ? h.revenue_export_rate_limited_wait({
+  return new Kd(n === `rate_limited` && Number.isFinite(r) && r > 0 ? h.revenue_export_rate_limited_wait({
     seconds: Math.ceil(r)
-  }) : Wd(n, e.status), e.status, n)
+  }) : Gd(n, e.status), e.status, n)
 }
 
-function qd(e) {
+function Jd(e) {
   return class extends e {
     async revenueGet(e, t = ``, n) {
-      let r = await this.request(`${zd}${e}${t?`?${t}`:``}`, {
+      let r = await this.request(`${Bd}${e}${t?`?${t}`:``}`, {
         method: `GET`,
         signal: n,
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Kd(r);
+      if (r.status !== K.OK) throw await qd(r);
       return r.json()
     }
     getRevenueOptions() {
       return this.revenueGet(`/options`)
     }
     getRevenueOverview(e, t) {
-      return this.revenueGet(`/overview`, Ud(e), t)
+      return this.revenueGet(`/overview`, Wd(e), t)
     }
     getRevenueCustomers(e, t, n) {
       let r = {
         cohorts: t.cohorts
       };
-      return t.experiment && (r.experiment = t.experiment), this.revenueGet(`/customers`, Ud(e, r), n)
+      return t.experiment && (r.experiment = t.experiment), this.revenueGet(`/customers`, Wd(e, r), n)
     }
     getRevenueTopSpenders(e, t, n) {
-      return this.revenueGet(`/customers/top-spenders`, Ud(e, {
+      return this.revenueGet(`/customers/top-spenders`, Wd(e, {
         limit: t
       }), n)
     }
     getRevenueProductsGeo(e, t) {
-      return this.revenueGet(`/products-geo`, Ud(e), t)
+      return this.revenueGet(`/products-geo`, Wd(e), t)
     }
     getRevenueFxLive(e) {
       return this.revenueGet(`/fx/live`, ``, e)
@@ -12334,13 +12383,13 @@ function qd(e) {
       return this.revenueGet(`/fx/history`, n.toString(), t)
     }
     getRevenuePromotions(e, t) {
-      return this.revenueGet(`/promotions`, Ud(e), t)
+      return this.revenueGet(`/promotions`, Wd(e), t)
     }
     getRevenueEconomy(e, t) {
-      return this.revenueGet(`/economy`, Ud(e), t)
+      return this.revenueGet(`/economy`, Wd(e), t)
     }
     getRevenueQuality(e, t) {
-      return this.revenueGet(`/quality`, Ud(e), t)
+      return this.revenueGet(`/quality`, Wd(e), t)
     }
     getRevenueTargets(e, t) {
       return this.revenueGet(`/targets`, `year=${e}`, t)
@@ -12351,7 +12400,7 @@ function qd(e) {
         note: t.note
       };
       t.lockVersion != null && (n.lockVersion = t.lockVersion);
-      let r = await this.request(`${zd}/targets/${encodeURIComponent(e)}`, {
+      let r = await this.request(`${Bd}/targets/${encodeURIComponent(e)}`, {
         method: `PUT`,
         headers: {
           "Content-Type": `application/json`,
@@ -12360,40 +12409,40 @@ function qd(e) {
         body: JSON.stringify(n),
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Kd(r)
+      if (r.status !== K.OK) throw await qd(r)
     }
     async deleteRevenueTarget(e, t) {
-      let n = await this.request(`${zd}/targets/${encodeURIComponent(e)}?lockVersion=${t}`, {
+      let n = await this.request(`${Bd}/targets/${encodeURIComponent(e)}?lockVersion=${t}`, {
         method: `DELETE`,
         headers: {
           "Idempotency-Key": crypto.randomUUID()
         },
         throwOnStatus: !1
       });
-      if (n.status !== K.OK) throw await Kd(n)
+      if (n.status !== K.OK) throw await qd(n)
     }
     async downloadRevenueExport(e, t, n = {}) {
-      let r = await this.request(`${zd}/export?${Ud(e,{...n,section:t})}`, {
+      let r = await this.request(`${Bd}/export?${Wd(e,{...n,section:t})}`, {
         method: `GET`,
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Kd(r);
+      if (r.status !== K.OK) throw await qd(r);
       let i = r.headers.get(`X-Revenue-Export-Rows`);
       return {
         blob: await r.blob(),
-        filename: ju(r.headers.get(`Content-Disposition`)),
+        filename: Mu(r.headers.get(`Content-Disposition`)),
         rows: i !== null && /^\d+$/.test(i) ? Number(i) : null
       }
     }
   }
 }
 
-function Jd(e) {
+function Yd(e) {
   return class extends e {
     validWaybackInput(e) {
       let t = Number.isFinite(e.timestamp) && Number.isInteger(e.timestamp) && e.timestamp >= 0 && e.timestamp <= this.getEstimatedServerNowMs(),
-        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < su.length,
-        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= fu.tools.wayback.limit,
+        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < cu.length,
+        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= pu.tools.wayback.limit,
         i = Number.isFinite(e.tileX) && Number.isFinite(e.tileY) && Number.isInteger(e.tileX) && Number.isInteger(e.tileY) && e.tileX >= 0 && e.tileY >= 0,
         a = e.cursorTs !== void 0,
         o = e.cursorUserId !== void 0,
@@ -12424,7 +12473,7 @@ function Jd(e) {
     }
   }
 }
-var $ = new class extends Fu(Rd(iu(au(Tu(Du(Ou(ku(Ru(ed(td(pd(md(Od(jd(Ld(qd(Gu(Qu(Jd(nu)))))))))))))))))))) {}(ee);
+var $ = new class extends Iu(zd(iu(ou(Eu(Ou(ku(Au(zu(td(nd(md(hd(kd(Md(Rd(Jd(Ku($u(Yd(nu)))))))))))))))))))) {}(ee);
 typeof window < `u` && u(() => {
   let e = $.online;
   l(() => {
@@ -12433,5 +12482,5 @@ typeof window < `u` && u(() => {
   })
 });
 export {
-  Bl as $, uu as A, Ms as At, Zl as B, _t as Bt, Vu as C, Ks as Ct, pu as D, hs as Dt, Eu as E, us as Et, du as F, M as Ft, Yl as G, ql as H, oe as Ht, gu as I, Fo as It, q as J, Wl as K, hu as L, xt as Lt, su as M, gs as Mt, fu as N, Es as Nt, cu as O, ws as Ot, ou as P, xs as Pt, Vl as Q, J as R, bt as Rt, Hu as S, Gs as St, Pu as T, Rs as Tt, Kl as U, ce as Ut, Xl as V, gt as Vt, Jl as W, le as Wt, Ll as X, K as Y, Rl as Z, nd as _, ic as _t, Gd as a, G as at, Zu as b, Us as bt, Dd as c, dl as ct, dd as d, W as dt, zl as et, ud as f, R as ft, rd as g, rc as gt, id as h, L as ht, Vd as i, sl as it, lu as j, js as jt, mu as k, Cs as kt, _d as l, pl as lt, od as m, gc as mt, Hd as n, xl as nt, Ad as o, ml as ot, ld as p, hc as pt, Gl as q, Bd as r, bl as rt, vd as s, fl as st, $ as t, yl as tt, gd as u, rl as ut, ad as v, I as vt, Nu as w, Vs as wt, Uu as x, Ws as xt, Yu as y, qs as yt, ru as z, yt as zt
+  Vl as $, du as A, Cs as At, ru as B, yt as Bt, Hu as C, Gs as Ct, mu as D, us as Dt, Du as E, Rs as Et, fu as F, xs as Ft, Jl as G, le as Gt, Xl as H, gt as Ht, _u as I, M as It, Gl as J, Yl as K, gu as L, Fo as Lt, cu as M, js as Mt, pu as N, gs as Nt, lu as O, hs as Ot, su as P, Es as Pt, Rl as Q, au as R, xt as Rt, Uu as S, Ws as St, Fu as T, Vs as Tt, ql as U, oe as Ut, Zl as V, _t as Vt, Kl as W, ce as Wt, K as X, q as Y, Ll as Z, rd as _, rc as _t, Kd as a, sl as at, Qu as b, qs as bt, Od as c, fl as ct, fd as d, rl as dt, Bl as et, dd as f, W as ft, id as g, L as gt, ad as h, gc as ht, Hd as i, bl as it, uu as j, Ms as jt, hu as k, ws as kt, vd as l, dl as lt, sd as m, hc as mt, Ud as n, yl as nt, jd as o, G as ot, ud as p, R as pt, Wl as q, Vd as r, xl as rt, yd as s, ml as st, $ as t, zl as tt, _d as u, pl as ut, od as v, ic as vt, Pu as w, Ks as wt, Wu as x, Us as xt, Xu as y, I as yt, J as z, bt as zt
 };
