@@ -2,7 +2,7 @@ import {
   N as e,
   j as t,
   t as n
-} from "./BSiwaKi-.js";
+} from "./DBwwE2v6.js";
 var r = `button, a[href], input, select, textarea, label, summary, [contenteditable]:not([contenteditable="false"]), [role="button"], [role="link"], [role="menuitem"], [role="option"], [role="tab"], [role="slider"]`;
 
 function i(i, a, o) {
