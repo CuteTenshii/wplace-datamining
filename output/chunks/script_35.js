@@ -25,26 +25,26 @@ import {
 import "./B8UK1oE5.js";
 import {
   r as y
-} from "./ByyFWrxW.js";
+} from "./DLZHKRQt.js";
 import {
   t as b
-} from "./BwlJHClZ.js";
+} from "./Hth4yPu_.js";
 import {
   gt as x,
   t as re
-} from "./Bx5qbGTA.js";
+} from "./BVLD6FI9.js";
 import {
   t as S
-} from "./DOhN3kt3.js";
+} from "./Db-k8Vlz.js";
 import {
   n as ie
-} from "./ki4lqFQx.js";
+} from "./PujKr_SN.js";
 import {
   t as ae
-} from "./Drzia24l.js";
+} from "./CJJSlX6j.js";
 import {
   t as oe
-} from "./Iobs_Miu.js";
+} from "./DTpwpw4I.js";
 var se = [`Mod`, `Alt`, `Shift`],
   ce = new Set([`Space`, `Enter`, `Tab`, `Escape`, `Backspace`, `Delete`, `Insert`, `Home`, `End`, `PageUp`, `PageDown`, `ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight`, `ContextMenu`, ...Array.from({
     length: 24
@@ -1247,7 +1247,7 @@ var Ut = 800,
       }), window.addEventListener(`wplace:online`, () => void o(Y, this, $).call(this)), window.addEventListener(`pagehide`, () => void o(Y, this, $).call(this, !0)), ne(() => {
         let t = e(() => {
           var e;
-          return x.loading ? void 0 : ((e = x.data) == null ? void 0 : e.id) ?? null
+          return ((e = x.data) == null ? void 0 : e.id) ?? (x.loading ? void 0 : null)
         });
         te(() => {
           let e = h(t);

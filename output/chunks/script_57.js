@@ -1,38 +1,4 @@
 function e(e, t) {
-  if (t <= 0 || e < 0) return 0;
-  let n = t - 1;
-  return e > n ? n : e
-}
-
-function t(t, n) {
-  let r = t.clientWidth || t.width || 1,
-    i = t.clientHeight || t.height || 1,
-    a = t.width / r,
-    o = t.height / i;
-  return [e(Math.floor(n.x * a), t.width), e(Math.floor(n.y * o), t.height)]
-}
-
-function n(e, t, n) {
-  return new Promise((r, i) => {
-    e.once(`render`, () => {
-      let a = e.getCanvas().toDataURL(),
-        o = document.createElement(`img`);
-      o.src = a, o.onload = () => {
-        let e = document.createElement(`canvas`);
-        e.width = o.width, e.height = o.height;
-        let a = e.getContext(`2d`);
-        if (a) {
-          a.drawImage(o, 0, 0);
-          let [e, i, s, c] = a.getImageData(t, n, 1, 1).data;
-          r([e, i, s, c])
-        } else i(Error(`Could not get 2d context from canvas`));
-        o.remove(), e.remove()
-      }
-    }), e.triggerRepaint()
-  })
-}
-
-function r(e, t) {
   let n = e.getBounds(),
     r = e.getCanvas(),
     i = r.width || r.clientWidth || 1,
@@ -52,7 +18,7 @@ function r(e, t) {
   }
 }
 
-function i(e, t) {
+function t(e, t) {
   return new Promise((n, r) => {
     e.once(`render`, () => {
       let i = e.getCanvas(),
@@ -81,5 +47,5 @@ function i(e, t) {
   })
 }
 export {
-  r as i, i as n, n as r, t
+  e as n, t
 };

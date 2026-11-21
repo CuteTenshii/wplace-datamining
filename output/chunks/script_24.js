@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./CiG2sj81.js", "./DXDHrD2o.js", "./p48y03k_.js", "./pKOrQQBa.js", "./Ckw7SQBH.js", "./DZ8axt2R.js", "./BwlJHClZ.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./iHNqJMS5.js", "./DXDHrD2o.js", "./B9mVy3Q1.js", "./pKOrQQBa.js", "./BAqPOpYL.js", "./C1VL13By.js", "./Hth4yPu_.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -14,7 +14,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   o as d
-} from "./p48y03k_.js";
+} from "./B9mVy3Q1.js";
 import {
   n as f,
   t as p
@@ -24,7 +24,7 @@ import {
 } from "./yKNWaSNN.js";
 import {
   t as h
-} from "./BwlJHClZ.js";
+} from "./Hth4yPu_.js";
 import {
   n as ee,
   o as te,
@@ -5582,7 +5582,7 @@ var $l = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./CiG2sj81.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./iHNqJMS5.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(h.tor_blocked());
       if (o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(h.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -10472,6 +10472,18 @@ function td(e) {
       let i = await this.request(`/leaderboard/player/${e}${r.size?`?${r}`:``}`);
       if (i.status !== K.OK) throw Error(h.leaderboard_disabled_temporarily());
       return i.json()
+    }
+    async leaderboardPlayerRank(e, t = 0, n = 0) {
+      let r = new URLSearchParams;
+      t && r.set(`country`, String(t)), n && r.set(`region`, String(n));
+      let i = await this.request(`/leaderboard/player/${e}/me${r.size?`?${r}`:``}`);
+      if (i.status !== K.OK) throw Error(h.leaderboard_disabled_temporarily());
+      return i.json()
+    }
+    async leaderboardAllianceRank(e) {
+      let t = await this.request(`/leaderboard/alliance/${e}/me`);
+      if (t.status !== K.OK) throw Error(h.leaderboard_disabled_temporarily());
+      return t.json()
     }
     async leaderboardPlayerRegions(e, t = ``, n = 0, r) {
       let i = new URLSearchParams({

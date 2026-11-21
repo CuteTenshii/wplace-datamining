@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/CI3dlBOI.js", "../chunks/DXDHrD2o.js", "../chunks/gElyL89X.js", "../chunks/jKWTp3qA.js", "../chunks/BwlJHClZ.js", "../chunks/p48y03k_.js", "../chunks/Bx5qbGTA.js", "../chunks/a7QZC4SB.js", "../chunks/yKNWaSNN.js", "../chunks/pKOrQQBa.js", "../chunks/DzedHffB.js", "../chunks/BrohplP5.js", "../chunks/Ckw7SQBH.js", "../chunks/DZ8axt2R.js", "../chunks/DCEagYC0.js", "../chunks/DU6Easms.js", "../chunks/CiG2sj81.js", "../chunks/BGL3fwXZ.js", "../chunks/DTBU_va1.js", "../chunks/B8UK1oE5.js", "../chunks/BOqdYZcs.js", "../chunks/DxdGK6Xj.js", "../chunks/DHBCvdtj.js", "../chunks/CuIJJdUZ.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/PFczW1j3.js", "../chunks/BTMvC80c.js", "../chunks/ByyFWrxW.js", "../chunks/M8gzaHeb.js", "../chunks/BJSZ8Ikf.js", "../chunks/C2nNonLP.js", "../chunks/BrOSfNjC.js", "../chunks/CHPfQGum.js", "../chunks/NkRs5mto.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/1FkSg5pz.js", "../chunks/J0hKXqwB.js", "../chunks/BwNIqcY0.js", "../chunks/DlqI6VYz.js", "../chunks/CPcA6CJI.js", "../chunks/CCJU0WQ3.js", "../chunks/BhUsoFtJ.js", "../chunks/BjgVV1ld.js", "../chunks/DOhN3kt3.js", "../chunks/CaBGHA8s.js", "../chunks/BCZB1vbY.js", "../chunks/GXmJ6gXb.js", "../chunks/BHROafUi.js", "../chunks/P2yp-r8p.js", "../chunks/yAdlebf0.js", "../chunks/CJaJwTW2.js", "../chunks/B52gRq83.js", "../chunks/D5A-baCd.js", "../chunks/B6LaskuO.js", "../chunks/C_7V_-RG.js", "../chunks/Ll0UAgJ4.js", "../chunks/BOoAjJhi.js", "../chunks/ClNwHWIm.js", "../chunks/C-9lMTyd.js", "../chunks/DPhmSjhZ.js", "../chunks/Cmx3qWcb.js", "../chunks/Bnnv6XCb.js", "../chunks/C4bfzAks.js", "../chunks/Bn37Kfo3.js", "../chunks/Lfn3ZaJA.js", "../chunks/CEqPIUA-.js", "../chunks/CweD_RgE.js", "../chunks/ULdVeH2F.js", "../chunks/NDEuWOaC.js", "../chunks/BcA_3M3_.js", "../chunks/DAipiNXr.js", "../chunks/lQXUNcYj.js", "../chunks/BF1_BbhL.js", "../chunks/CJTQUrvN.js", "../chunks/C-KLj7zM.js", "../chunks/AeBerItl.js", "../chunks/BRMBVF9P.js", "../chunks/DXNCE7ab.js", "../chunks/DKtnii2Y.js", "../chunks/bAv6cxdS.js", "../chunks/BOgUHA6J.js", "../chunks/B9Qg44of.js", "../chunks/DR9WvnLs.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/B5TT-HqU.js", "../chunks/DXDHrD2o.js", "../chunks/CqEWaMhX.js", "../chunks/fHtxvjfP.js", "../chunks/Hth4yPu_.js", "../chunks/B9mVy3Q1.js", "../chunks/BVLD6FI9.js", "../chunks/a7QZC4SB.js", "../chunks/yKNWaSNN.js", "../chunks/pKOrQQBa.js", "../chunks/DzedHffB.js", "../chunks/BrohplP5.js", "../chunks/BAqPOpYL.js", "../chunks/C1VL13By.js", "../chunks/DCEagYC0.js", "../chunks/DKYqsSh1.js", "../chunks/iHNqJMS5.js", "../chunks/BGL3fwXZ.js", "../chunks/CZG1NK-K.js", "../chunks/B8UK1oE5.js", "../chunks/BOqdYZcs.js", "../chunks/DxdGK6Xj.js", "../chunks/DHBCvdtj.js", "../chunks/CuIJJdUZ.js", "../assets/ChallengeDialog.ZVAQIJPp.css", "../chunks/DKiwIBh9.js", "../chunks/6s6DlD2g.js", "../chunks/DLZHKRQt.js", "../chunks/B-6EIxAw.js", "../chunks/BJSZ8Ikf.js", "../chunks/BCyZ-aDh.js", "../chunks/o3Y5hVWO.js", "../chunks/CHPfQGum.js", "../chunks/NkRs5mto.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/BvDlICy1.js", "../chunks/CgwPspcM.js", "../chunks/DlqWsjVJ.js", "../chunks/Ch3rZW4W.js", "../chunks/lOo0GfwV.js", "../chunks/BdJVNtwy.js", "../chunks/DPY9s8JT.js", "../chunks/BjgVV1ld.js", "../chunks/Db-k8Vlz.js", "../chunks/CaBGHA8s.js", "../chunks/BCZB1vbY.js", "../chunks/ocnDMgCZ.js", "../chunks/CO_HLPS2.js", "../chunks/D0LXgyWi.js", "../chunks/Du3ewO3O.js", "../chunks/DDnDdHv3.js", "../chunks/FgQa8l6P.js", "../chunks/D5A-baCd.js", "../chunks/B6LaskuO.js", "../chunks/CDXzWx9j.js", "../chunks/DZu8A42u.js", "../chunks/tG4QlrEa.js", "../chunks/BYAadXtj.js", "../chunks/B-F8hwG8.js", "../chunks/Ix5hDm-u.js", "../chunks/B6U3xTCo.js", "../chunks/BKCb8clK.js", "../chunks/CTNtvp0D.js", "../chunks/Bn37Kfo3.js", "../chunks/Lfn3ZaJA.js", "../chunks/CEqPIUA-.js", "../chunks/CweD_RgE.js", "../chunks/ULdVeH2F.js", "../chunks/CGf_kSKr.js", "../chunks/Dn3WHc7J.js", "../chunks/C9klyUqQ.js", "../chunks/C-odiGnX.js", "../chunks/C3qKhdLn.js", "../chunks/txIbFkX0.js", "../chunks/BBOIz34t.js", "../chunks/AeBerItl.js", "../chunks/caUzBAnX.js", "../chunks/CXWzFe7x.js", "../chunks/CVqIzSOC.js", "../chunks/wsNhejty.js", "../chunks/Bc1XCaDz.js", "../chunks/mpgB8jfE.js", "../chunks/Dx-qvLQb.js"]))) => i.map(i => d[i]);
 import {
   $t as e,
   At as t,
@@ -54,14 +54,14 @@ import {
   C as R,
   S as z,
   y as B
-} from "../chunks/gElyL89X.js";
+} from "../chunks/CqEWaMhX.js";
 import {
   o as V
-} from "../chunks/p48y03k_.js";
+} from "../chunks/B9mVy3Q1.js";
 import "../chunks/B8UK1oE5.js";
 import {
   t as H
-} from "../chunks/M8gzaHeb.js";
+} from "../chunks/B-6EIxAw.js";
 import {
   i as U,
   n as W
@@ -69,7 +69,7 @@ import {
 import "../chunks/BrohplP5.js";
 import {
   t as G
-} from "../chunks/BwlJHClZ.js";
+} from "../chunks/Hth4yPu_.js";
 import {
   t as de
 } from "../chunks/LFiCA4Q8.js";
@@ -97,26 +97,26 @@ import {
   t as Ce,
   vt as we,
   yt as Q
-} from "../chunks/Bx5qbGTA.js";
+} from "../chunks/BVLD6FI9.js";
 import "../chunks/DzedHffB.js";
 import "../chunks/BjgVV1ld.js";
 import {
   t as Te
-} from "../chunks/J0hKXqwB.js";
+} from "../chunks/CgwPspcM.js";
 import {
   t as Ee
-} from "../chunks/CiG2sj81.js";
+} from "../chunks/iHNqJMS5.js";
 import {
   a as De,
   n as Oe,
   o as ke
-} from "../chunks/DU6Easms.js";
+} from "../chunks/DKYqsSh1.js";
 import {
   r as Ae
-} from "../chunks/DXhGQFFA.js";
+} from "../chunks/DD9JPVoT.js";
 import {
   t as je
-} from "../chunks/Be_giY7D.js";
+} from "../chunks/DS73krSd.js";
 import {
   t as $
 } from "../chunks/BOqdYZcs.js";
@@ -1189,7 +1189,7 @@ function Bt(e, r) {
   });
   let s = n(() => {
     var e;
-    return X.loading ? void 0 : ((e = X.data) == null ? void 0 : e.id) ?? null
+    return ((e = X.data) == null ? void 0 : e.id) ?? (X.loading ? void 0 : null)
   });
   L(() => {
     let e = M(s);
@@ -1206,7 +1206,7 @@ function Bt(e, r) {
       t = !1,
       n = Ft({
         version: B,
-        playerVersion: `8d227d539f7232b58d7636e`,
+        playerVersion: `de60c612dded13195c84fe1`,
         versionUrl: `${z||R}/_app/version.json`,
         isStaff: () => {
           var e;
@@ -1253,7 +1253,7 @@ function Bt(e, r) {
       M(t) || X.data && Oe() && (a(t, !0), V(async () => {
         let {
           TWAServices: e
-        } = await import(`../chunks/CI3dlBOI.js`).then(e => e.i);
+        } = await import(`../chunks/B5TT-HqU.js`).then(e => e.i);
         return {
           TWAServices: e
         }
@@ -1327,7 +1327,7 @@ function Bt(e, r) {
     E = e => {
       var t = I(),
         n = O(t);
-      b(n, () => V(() => import(`../chunks/DTBU_va1.js`), __vite__mapDeps([18, 1, 5, 19, 11, 4, 9, 6, 7, 8, 10, 20, 21, 22, 23, 24]), import.meta.url), null, (e, t) => {
+      b(n, () => V(() => import(`../chunks/CZG1NK-K.js`), __vite__mapDeps([18, 1, 5, 19, 11, 4, 9, 6, 7, 8, 10, 20, 21, 22, 23, 24]), import.meta.url), null, (e, t) => {
         var n = I(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1356,7 +1356,7 @@ function Bt(e, r) {
     oe = e => {
       var t = I(),
         n = O(t);
-      b(n, () => V(() => import(`../chunks/PFczW1j3.js`), __vite__mapDeps([25, 1, 5, 19, 4, 20, 26, 27, 28, 2, 8, 29, 30, 21, 31, 11, 6, 7, 9, 10, 32, 33, 34]), import.meta.url), null, (e, t) => {
+      b(n, () => V(() => import(`../chunks/DKiwIBh9.js`), __vite__mapDeps([25, 1, 5, 19, 4, 20, 26, 27, 28, 2, 8, 29, 30, 21, 31, 11, 6, 7, 9, 10, 32, 33, 34]), import.meta.url), null, (e, t) => {
         var n = I(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1378,7 +1378,7 @@ function Bt(e, r) {
     se = e => {
       var t = I(),
         n = O(t);
-      b(n, () => V(() => import(`../chunks/1FkSg5pz.js`), __vite__mapDeps([35, 1, 2, 19, 4, 5, 36, 8, 6, 7, 9, 10, 11, 30, 26, 27, 28, 29, 21, 31, 32, 33, 34, 37]), import.meta.url), null, (e, t) => {
+      b(n, () => V(() => import(`../chunks/BvDlICy1.js`), __vite__mapDeps([35, 1, 2, 19, 4, 5, 36, 8, 6, 7, 9, 10, 11, 30, 26, 27, 28, 29, 21, 31, 32, 33, 34, 37]), import.meta.url), null, (e, t) => {
         var n = I(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1393,7 +1393,7 @@ function Bt(e, r) {
     P = e => {
       var t = I(),
         n = O(t);
-      b(n, () => V(() => import(`../chunks/DlqI6VYz.js`), __vite__mapDeps([38, 1, 2, 19, 4, 5, 6, 7, 8, 9, 10, 11, 29, 30, 26, 27, 28, 21, 31, 32, 33, 34, 39, 40, 41, 3, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 22, 63, 64, 23, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82]), import.meta.url), null, (e, t) => {
+      b(n, () => V(() => import(`../chunks/Ch3rZW4W.js`), __vite__mapDeps([38, 1, 2, 19, 4, 5, 6, 7, 8, 9, 10, 11, 29, 30, 26, 27, 28, 21, 31, 32, 33, 34, 39, 40, 41, 3, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 22, 63, 64, 23, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82]), import.meta.url), null, (e, t) => {
         var n = I(),
           r = O(n);
         g(r, () => M(t).default, (e, t) => {
@@ -1413,7 +1413,7 @@ function Bt(e, r) {
     };
   x(ce, e => {
     de.open && e(P)
-  }), i(() => ee(_, `Version: 1795214286576`)), T(e, m), ie()
+  }), i(() => ee(_, `Version: 1795294989692`)), T(e, m), ie()
 }
 export {
   Bt as component

@@ -16,59 +16,60 @@ import {
   en as m,
   et as h,
   f as g,
-  j as _,
-  jt as v,
-  nt as y,
-  o as b,
-  pt as x,
-  tn as S,
+  j as ee,
+  jt as _,
+  nt as v,
+  o as y,
+  pt as b,
+  tn as x,
+  tt as S,
   wt as C,
-  x as ee
+  x as te
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  r as te
-} from "./ByyFWrxW.js";
+  r as ne
+} from "./DLZHKRQt.js";
 import {
   t as w
 } from "./BH5PwBe6.js";
 import {
   t as T
-} from "./BwlJHClZ.js";
+} from "./Hth4yPu_.js";
 import {
   It as E,
-  f as ne,
+  f as re,
   gt as D,
-  mt as re,
-  p as ie
-} from "./Bx5qbGTA.js";
+  mt as ie,
+  p as ae
+} from "./BVLD6FI9.js";
 import {
-  r as ae
+  r as oe
 } from "./DCEagYC0.js";
 import {
-  n as O
-} from "./BWFgi1eB.js";
+  n as se
+} from "./iKJoyZfV.js";
+import {
+  t as O
+} from "./D4SU47yX.js";
 import {
   t as k
-} from "./D2t9U5xM.js";
+} from "./BFm32qXE.js";
 import {
   t as A
-} from "./Bfz5GYaM.js";
-import {
-  t as j
 } from "./BJSZ8Ikf.js";
-var M = new Set([`$$slots`, `$$events`, `$$legacy`, `value`, `fontSize`, `color`, `weight`, `mono`, `width`]),
-  N = y(`<canvas></canvas>`);
+var j = new Set([`$$slots`, `$$events`, `$$legacy`, `value`, `fontSize`, `color`, `weight`, `mono`, `width`]),
+  M = v(`<canvas></canvas>`);
 
-function P(e, t) {
-  S(t, !0);
+function N(e, t) {
+  x(t, !0);
   let r = f(t, `width`, 15, 0),
-    i = b(t, M),
+    i = y(t, j),
     s = o(0),
     c = o(null);
   C(() => {
-    if (!x(c)) return;
-    let e = x(c),
+    if (!b(c)) return;
+    let e = b(c),
       n = e.getContext(`2d`);
     if (!n) return;
     let i = t.value,
@@ -92,222 +93,243 @@ function P(e, t) {
       f = !1, document.fonts.removeEventListener(`loadingdone`, p)
     }
   });
-  var l = N();
+  var l = M();
   n(l, () => ({
-    style: `width: ${r()??``}px; height: ${x(s)??``}px`,
+    style: `width: ${r()??``}px; height: ${b(s)??``}px`,
     ...i
-  })), g(l, e => a(c, e), () => x(c)), h(e, l), m()
+  })), g(l, e => a(c, e), () => b(c)), h(e, l), m()
 }
-var oe = new Set([`$$slots`, `$$events`, `$$legacy`, `loading`, `charges`, `chargeMax`, `cooldownMs`, `showCooldown`, `maxWidth`, `compact`, `minimized`, `onclick`]),
-  F = y(`<span class="text-sm font-semibold tabular-nums opacity-90 sm:mt-px"> </span>`),
-  I = y(`<!> <div class="flex items-center gap-2 whitespace-nowrap"> <!></div>`, 1),
-  L = y(`<span class="paint-button-balance text-xl leading-none font-semibold svelte-naszew" aria-hidden="true">&infin;</span>`),
-  R = y(`<span><!></span>`),
-  z = y(`<span> </span>`),
-  B = y(`<span><!> <!></span>`),
-  V = y(`<!> <div><span> </span> <!></div>`, 1),
-  H = y(`<span class="loading loading-spinner center-absolute absolute"></span>`),
-  U = y(`<button><div><!></div> <!></button>`);
+var P = new Set([`$$slots`, `$$events`, `$$legacy`, `loading`, `charges`, `chargeMax`, `cooldownMs`, `showCooldown`, `maxWidth`, `compact`, `minimized`, `iconOnly`, `onclick`]),
+  ce = v(`<span class="text-sm font-semibold tabular-nums opacity-90 sm:mt-px"> </span>`),
+  le = v(`<!> <div class="flex items-center gap-2 whitespace-nowrap"> <!></div>`, 1),
+  ue = v(`<span class="paint-button-balance text-xl leading-none font-semibold svelte-naszew" aria-hidden="true">&infin;</span>`),
+  F = v(`<span><!></span>`),
+  I = v(`<span> </span>`),
+  L = v(`<span><!> <!></span>`),
+  R = v(`<!> <div><span> </span> <!></div>`, 1),
+  z = v(`<span class="loading loading-spinner center-absolute absolute"></span>`),
+  B = v(`<button><div><!></div> <!></button>`);
 
-function W(y, C) {
-  S(C, !0);
-  let w = te(),
-    M = f(C, `showCooldown`, 3, !0),
-    N = f(C, `compact`, 3, !1),
-    W = f(C, `minimized`, 3, !1),
-    G = b(C, oe),
-    K = o(0),
-    q = o(void 0),
-    J = o(void 0),
-    Y = t(() => C.cooldownMs ?? D.cooldown),
-    se = t(() => E.theme === `dark` ? `rgba(255, 255, 255, 0.3)` : `#394e6a33`),
-    X = t(() => {
+function V(v, C) {
+  x(C, !0);
+  let w = ne(),
+    j = f(C, `showCooldown`, 3, !0),
+    M = f(C, `compact`, 3, !1),
+    V = f(C, `minimized`, 3, !1),
+    H = f(C, `iconOnly`, 3, !1),
+    U = y(C, P),
+    W = o(0),
+    G = o(void 0),
+    K = o(void 0),
+    q = t(() => C.cooldownMs ?? D.cooldown),
+    de = t(() => E.theme === `dark` ? `rgba(255, 255, 255, 0.3)` : `#394e6a33`),
+    J = t(() => {
       let e = D.timeoutUntil;
       if (!e || e.getTime() <= E.now) return;
-      let t = ie(e, E.now);
+      let t = ae(e, E.now);
       return {
         isBan: t,
-        countdown: t ? null : ne(e, E.now)
+        countdown: t ? null : re(e, E.now)
       }
     });
 
-  function ce({
+  function fe({
     days: e,
     hours: t,
     minutes: n
   }) {
     return e > 0 ? `${e}d ${t}h` : t > 0 ? `${t}h ${n}m` : `${n}m`
   }
-  ae(() => [C.loading, C.maxWidth, N()], () => {
-    a(J, void 0), requestAnimationFrame(() => {
-      if (!x(q)) return;
-      let e = x(q).offsetWidth;
-      !N() && !C.loading && C.maxWidth !== void 0 && e + 20 > C.maxWidth ? a(J, 16 * (C.maxWidth / e) * .8) : a(J, void 0)
+  let Y = t(() => H() ? b(J) ? b(J).isBan ? T.banned() : T.timeout() : T.paint() : void 0);
+  oe(() => [C.loading, C.maxWidth, M()], () => {
+    a(K, void 0), requestAnimationFrame(() => {
+      if (!b(G)) return;
+      let e = b(G).offsetWidth;
+      !M() && !C.loading && C.maxWidth !== void 0 && e + 20 > C.maxWidth ? a(K, 16 * (C.maxWidth / e) * .8) : a(K, void 0)
     })
   });
-  var Z = U(),
-    le = e => {
+  var X = B(),
+    Z = e => {
       var t;
-      O(`heavy`), (t = C.onclick) == null || t.call(C, e)
+      se(`heavy`), (t = C.onclick) == null || t.call(C, e)
     };
-  n(Z, () => ({
-    ...G,
-    onclick: le,
-    class: `btn btn-lg sm:btn-xl relative ${x(X)?x(X).isBan?`btn-error`:`btn-warning`:`btn-primary`} ${C.class??``}`,
+  n(X, () => ({
+    ...U,
+    "aria-label": b(Y) ?? U[`aria-label`],
+    onclick: Z,
+    class: `btn btn-lg sm:btn-xl relative ${b(J)?b(J).isBan?`btn-error`:`btn-warning`:`btn-primary`} ${C.class??``}`,
     style: `max-width: ${C.maxWidth?`${C.maxWidth}px`:`none`}
-	${x(J)?`;--paint-font-size: ${x(J)}px`:``}`,
-    [ee]: {
-      compact: N(),
-      minimized: W(),
+	${b(K)?`;--paint-font-size: ${b(K)}px`:``}`,
+    [te]: {
+      compact: M(),
+      minimized: V(),
+      "icon-only": H(),
       "pixel-ui": !w.standard,
-      "w-max": N(),
-      scaled: x(J) !== void 0
+      "w-max": M(),
+      scaled: b(K) !== void 0
     }
   }), void 0, void 0, void 0, `svelte-naszew`);
-  var Q = e(Z);
+  var Q = e(X);
   let $;
-  var ue = e(Q),
-    de = t => {
-      var n = I(),
-        i = v(n);
-      A(i, {
+  var pe = e(Q),
+    me = e => {
+      var t = S(),
+        n = _(t),
+        r = e => {
+          k(e, {
+            class: `size-4.5`
+          })
+        },
+        i = e => {
+          O(e, {
+            class: `size-4.5`
+          })
+        };
+      d(n, e => {
+        b(J) ? e(r) : e(i, -1)
+      }), h(e, t)
+    },
+    he = t => {
+      var n = le(),
+        i = _(n);
+      k(i, {
         class: `size-6`
       });
       var a = c(i, 2),
         o = e(a),
         s = c(o),
         l = t => {
-          var n = F(),
+          var n = ce(),
             i = e(n, !0);
-          p(n), r(e => u(i, e), [() => ce(x(X).countdown)]), h(t, n)
+          p(n), r(e => u(i, e), [() => fe(b(J).countdown)]), h(t, n)
         };
       d(s, e => {
-        x(X).countdown && e(l)
-      }), p(a), r(e => u(o, `${e??``} `), [() => x(X).isBan ? T.banned() : T.timeout()]), h(t, n)
+        b(J).countdown && e(l)
+      }), p(a), r(e => u(o, `${e??``} `), [() => b(J).isBan ? T.banned() : T.timeout()]), h(t, n)
     },
-    fe = n => {
-      var o = V(),
-        f = v(o);
+    ge = n => {
+      var o = R(),
+        f = _(o);
       {
-        let e = t(() => N() ? `paint-button-brush size-6 shrink-0 max-sm:hidden` : `size-6`);
-        k(f, {
+        let e = t(() => M() ? `paint-button-brush size-6 shrink-0 max-sm:hidden` : `size-6`);
+        O(f, {
           get class() {
-            return x(e)
+            return b(e)
           }
         })
       }
       var m = c(f, 2),
         g = e(m),
-        y = e(g, !0);
-      p(g), i(g, () => j(N() ? T.paint() : void 0));
-      var b = c(g, 2),
-        S = n => {
+        v = e(g, !0);
+      p(g), i(g, () => A(M() ? T.paint() : void 0));
+      var y = c(g, 2),
+        x = n => {
           let i = t(() => C.chargeMax ?? D.data.charges.max),
             o = t(() => C.chargeMax === void 0 && D.data.charges.infinite);
-          var l = B();
+          var l = L();
           let f;
           var m = e(l),
             g = e => {
-              var t = L();
+              var t = ue();
               h(e, t)
             },
-            v = n => {
-              var o = R();
+            _ = n => {
+              var o = F();
               let c;
               var l = e(o);
               {
-                let e = t(() => N() ? `max-w-full object-contain` : void 0),
-                  n = t(() => x(J) ?? 16),
-                  r = t(() => `${Math.floor(C.charges)}/${x(i)}`),
-                  o = t(() => C.disabled ? x(se) : `#ffffff`);
-                P(l, {
+                let e = t(() => M() ? `max-w-full object-contain` : void 0),
+                  n = t(() => b(K) ?? 16),
+                  r = t(() => `${Math.floor(C.charges)}/${b(i)}`),
+                  o = t(() => C.disabled ? b(de) : `#ffffff`);
+                N(l, {
                   get class() {
-                    return x(e)
+                    return b(e)
                   },
                   weight: 600,
                   get fontSize() {
-                    return x(n)
+                    return b(n)
                   },
                   get value() {
-                    return x(r)
+                    return b(r)
                   },
                   get color() {
-                    return x(o)
+                    return b(o)
                   },
                   get width() {
-                    return x(K)
+                    return b(W)
                   },
                   set width(e) {
-                    a(K, e, !0)
+                    a(W, e, !0)
                   }
                 })
               }
               p(o), r(e => {
                 c = s(o, 1, `paint-button-balance svelte-naszew`, null, c, {
-                  "min-w-0": N()
-                }), _(o, `width: ${e??``}px`)
-              }, [() => (Math.floor(x(K) / 5) + 1) * 5]), h(n, o)
+                  "min-w-0": M()
+                }), ee(o, `width: ${e??``}px`)
+              }, [() => (Math.floor(b(W) / 5) + 1) * 5]), h(n, o)
             };
           d(m, e => {
-            x(o) ? e(g) : e(v, -1)
+            b(o) ? e(g) : e(_, -1)
           });
-          var y = c(m, 2),
-            b = t => {
-              var n = z();
+          var v = c(m, 2),
+            y = t => {
+              var n = I();
               let i;
               var a = e(n);
               p(n), r(e => {
                 i = s(n, 1, `paint-button-cooldown min-w-7 text-xs svelte-naszew`, null, i, {
-                  "shrink-0": N()
+                  "shrink-0": M()
                 }), u(a, `(${e??``})`)
-              }, [() => re(x(Y))]), h(t, n)
+              }, [() => ie(b(q))]), h(t, n)
             };
-          d(y, e => {
-            !x(o) && M() && C.charges < x(i) && x(Y) !== void 0 && e(b)
+          d(v, e => {
+            !b(o) && j() && C.charges < b(i) && b(q) !== void 0 && e(y)
           }), p(l), r(() => f = s(l, 1, `paint-button-charges flex items-center gap-1 sm:mt-px svelte-naszew`, null, f, {
-            "min-w-0": N(),
-            "max-w-full": N()
+            "min-w-0": M(),
+            "max-w-full": M()
           })), h(n, l)
         };
-      d(b, e => {
-        C.charges !== void 0 && D.data && e(S)
+      d(y, e => {
+        C.charges !== void 0 && D.data && e(x)
       }), p(m), r(e => {
-        s(m, 1, l(N() ? `paint-button-label flex min-w-0 items-center gap-2 whitespace-nowrap max-sm:flex-col max-sm:gap-0` : `flex items-center gap-2 whitespace-nowrap`), `svelte-naszew`), s(g, 1, l(N() ? `max-w-full truncate` : void 0), `svelte-naszew`), u(y, e)
+        s(m, 1, l(M() ? `paint-button-label flex min-w-0 items-center gap-2 whitespace-nowrap max-sm:flex-col max-sm:gap-0` : `flex items-center gap-2 whitespace-nowrap`), `svelte-naszew`), s(g, 1, l(M() ? `max-w-full truncate` : void 0), `svelte-naszew`), u(v, e)
       }, [() => T.paint()]), h(n, o)
     };
-  d(ue, e => {
-    x(X) ? e(de) : e(fe, -1)
-  }), p(Q), g(Q, e => a(q, e), () => x(q));
-  var pe = c(Q, 2),
-    me = e => {
-      var t = H();
+  d(pe, e => {
+    H() ? e(me) : b(J) ? e(he, 1) : e(ge, -1)
+  }), p(Q), g(Q, e => a(G, e), () => b(G));
+  var _e = c(Q, 2),
+    ve = e => {
+      var t = z();
       h(e, t)
     };
-  d(pe, e => {
-    C.loading && e(me)
-  }), p(Z), r(() => $ = s(Q, 1, `paint-button-content flex items-center gap-1.5 svelte-naszew`, null, $, {
-    "min-w-0": N(),
-    "max-w-full": N()
-  })), h(y, Z), m()
+  d(_e, e => {
+    C.loading && e(ve)
+  }), p(X), i(X, () => A(b(Y))), r(() => $ = s(Q, 1, `paint-button-content flex items-center gap-1.5 svelte-naszew`, null, $, {
+    "min-w-0": M(),
+    "max-w-full": M()
+  })), h(v, X), m()
 }
 
-function G(e, t, n) {
+function H(e, t, n) {
   return e < t ? t : e > n ? n : e
 }
 
-function K(e, t) {
+function U(e, t) {
   let n = 10 ** t;
   return Math.round(e * n) / n
 }
 
-function q(e) {
+function W(e) {
   if (e < 1e3) return String(e);
   let t = [`K`, `M`, `B`, `T`, `Q`],
     n = 0,
     r = e / 1e3;
   for (; Math.round(r) >= 1e3 && n < t.length - 1;) r /= 1e3, n++;
-  return `${K(r,+(r<10))}${t[n]}`
+  return `${U(r,+(r<10))}${t[n]}`
 }
 export {
-  P as a, W as i, q as n, K as r, G as t
+  N as a, V as i, W as n, U as r, H as t
 };
