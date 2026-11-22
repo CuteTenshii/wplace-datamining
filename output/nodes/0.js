@@ -29,7 +29,7 @@ import {
 } from "../chunks/DXDHrD2o.js";
 import {
   n as D
-} from "../chunks/CqEWaMhX.js";
+} from "../chunks/Crx-o5JX.js";
 import {
   n as O
 } from "../chunks/B9mVy3Q1.js";
@@ -42,24 +42,24 @@ import {
 import {
   t as N
 } from "../chunks/DPY9s8JT.js";
+import {
+  n as P
+} from "../chunks/DJf9i38S.js";
 import "../chunks/B8UK1oE5.js";
-import "../chunks/fHtxvjfP.js";
+import "../chunks/CsWPrMTu.js";
 import {
-  t as P
-} from "../chunks/B-6EIxAw.js";
-import {
-  n as F
-} from "../chunks/DLZHKRQt.js";
+  t as F
+} from "../chunks/BUhuPrKN.js";
 import {
   n as I
-} from "../chunks/DI0-dq1F.js";
+} from "../chunks/C5EuYbjj.js";
 import {
   t as L
 } from "../chunks/BH5PwBe6.js";
 import {
   r as R,
   t as z
-} from "../chunks/0tOcf4dx.js";
+} from "../chunks/DS3CBOKG.js";
 import {
   t as B
 } from "../chunks/Hth4yPu_.js";
@@ -170,17 +170,17 @@ var Z = y(`<meta name="viewport"/>`);
 
 function Q(n, r) {
   C(r, !0);
-  let i = e(() => R(P.url, !0, P.status)),
-    a = e(() => X(P.url.pathname)),
-    s = e(() => P.error ? null : P.data.seo ?? (b(a) ? {
+  let i = e(() => R(F.url, !0, F.status)),
+    a = e(() => X(F.url.pathname)),
+    s = e(() => F.error ? null : F.data.seo ?? (b(a) ? {
       ...b(a),
-      canonicalPath: P.url.pathname
+      canonicalPath: F.url.pathname
     } : null));
   o(`7t0jhl`, e => {
     var n = Z();
     t(e => d(n, `content`, e), [() => {
       var e;
-      return (e = P.route.id) != null && e.startsWith(`/(public)`) ? `width=device-width, initial-scale=1, viewport-fit=cover` : `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover`
+      return (e = F.route.id) != null && e.startsWith(`/(public)`) ? `width=device-width, initial-scale=1, viewport-fit=cover` : `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content, viewport-fit=cover`
     }]), g(e, n)
   }), Y(n, {
     get metadata() {
@@ -194,16 +194,16 @@ function Q(n, r) {
 var $ = y(`<!> <!>`, 1);
 
 function ee(t, r) {
-  C(r, !0), I(new URL(location.href), document.referrer);
+  C(r, !0), P(new URL(location.href), document.referrer);
   let a = s(l(`en`));
   T(() => (document.documentElement.style.setProperty(`--pixel-font-density`, String(L.current || 1)), () => document.documentElement.style.removeProperty(`--pixel-font-density`))), x(() => {
     n(a, O(), !0)
   }), T(() => {
     var e;
-    document.documentElement.lang = ((e = P.data.seo) == null ? void 0 : e.language) ?? N(O())
+    document.documentElement.lang = ((e = F.data.seo) == null ? void 0 : e.language) ?? N(O())
   }), T(() => {
     var e;
-    return document.documentElement.toggleAttribute(`data-standard-ui`, F.standard), document.documentElement.toggleAttribute(`data-game-ui`, ((e = P.route.id) == null ? void 0 : e.startsWith(`/(game)`)) === !0), () => {
+    return document.documentElement.toggleAttribute(`data-standard-ui`, I.standard), document.documentElement.toggleAttribute(`data-game-ui`, ((e = F.route.id) == null ? void 0 : e.startsWith(`/(game)`)) === !0), () => {
       document.documentElement.removeAttribute(`data-standard-ui`), document.documentElement.removeAttribute(`data-game-ui`)
     }
   }), D(({
@@ -232,7 +232,7 @@ function ee(t, r) {
     },
     _ = e(() => {
       var e;
-      return (e = P.route.id) == null ? void 0 : e.startsWith(`/(public)`)
+      return (e = F.route.id) == null ? void 0 : e.startsWith(`/(public)`)
     }),
     y = e => {
       var t = w(),

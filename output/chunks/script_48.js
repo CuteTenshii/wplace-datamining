@@ -1,58 +1,60 @@
-function e(e) {
-  let t, n = !1;
+import {
+  Ft as e,
+  Lt as t,
+  Nt as n,
+  gt as r,
+  pt as i,
+  wt as a
+} from "./DXDHrD2o.js";
+var o = n({
+    request: null
+  }),
+  s = `input:not(:disabled):not([type="hidden"]), select:not(:disabled), textarea:not(:disabled), button:not(:disabled), summary, a[href], [tabindex]`;
 
-  function r(r) {
-    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
-      t = void 0;
-      return
+function c(e) {
+  for (let t = e; t; t = t.parentElement) t instanceof HTMLDetailsElement && (t.open = !0)
+}
+
+function l(e) {
+  e instanceof HTMLDetailsElement && (e = e.querySelector(`summary`) ?? e);
+  let t = e.matches(s) ? e : e.closest(`button, a[href], summary, label`) ?? e.querySelector(s) ?? e,
+    n = t instanceof HTMLLabelElement ? t.control ?? t : t,
+    r = n.hasAttribute(`tabindex`);
+  !r && !n.matches(s) && (n.tabIndex = -1), n.focus({
+    preventScroll: !0
+  }), e.scrollIntoView({
+    block: `center`,
+    behavior: `instant`
+  }), e.setAttribute(`data-game-link-highlight`, ``);
+  let i = () => e.removeAttribute(`data-game-link-highlight`);
+  return document.addEventListener(`pointerdown`, i, {
+    once: !0
+  }), document.addEventListener(`keydown`, i, {
+    once: !0
+  }), () => {
+    i(), !r && n.getAttribute(`tabindex`) === `-1` && n.removeAttribute(`tabindex`), document.removeEventListener(`pointerdown`, i), document.removeEventListener(`keydown`, i)
+  }
+}
+
+function u(s, u) {
+  let d = t(n(u));
+  return a(() => {
+    s.dataset.gameLink = i(d);
+    let e = o.request;
+    if (!i(d) || (e == null ? void 0 : e.path) !== i(d)) return;
+    let t = !1,
+      n;
+    return r().then(async () => {
+      t || !s.isConnected || (c(s), await r(), !t && !e.text && (n = l(s)))
+    }), () => {
+      t = !0, n == null || n()
     }
-    let i = r.changedTouches[0];
-    t = {
-      id: i.identifier,
-      x: i.clientX,
-      y: i.clientY
-    }, r.cancelable && r.preventDefault()
-  }
-
-  function i(e) {
-    if (!t) return;
-    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
-    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
-  }
-
-  function a(n) {
-    if (!t) return;
-    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
-    if (!r) return;
-    let i = t;
-    t = void 0;
-    let a = e.getBoundingClientRect();
-    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
-  }
-
-  function o(e) {
-    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
-  }
-
-  function s(e) {
-    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
-  }
-
-  function c() {
-    t = void 0
-  }
-  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
-    passive: !1
-  }), e.addEventListener(`touchmove`, i, {
-    passive: !0
-  }), e.addEventListener(`touchend`, a, {
-    passive: !1
-  }), e.addEventListener(`touchcancel`, c), {
-    destroy() {
-      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
+  }), {
+    update: t => {
+      e(d, t, !0)
     }
   }
 }
 export {
-  e as t
+  c as i, o as n, u as r, l as t
 };

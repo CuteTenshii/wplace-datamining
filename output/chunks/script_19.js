@@ -1,21 +1,19 @@
 import {
-  t as e
-} from "./B9mVy3Q1.js";
-var t = /\{([A-Za-z_$][\w$]*)\}/g,
-  n = new Map,
-  r = new Proxy(Object.create(null), {
-    get(e, t) {
-      if (typeof t != `string`) return;
-      let r = n.get(t);
-      return r || (r = (e = {}) => i(t, e), n.set(t, r)), r
+  Ht as e,
+  Kt as t,
+  Vt as n,
+  Wt as r
+} from "./DXDHrD2o.js";
+var i = new WeakMap,
+  a = new WeakMap,
+  o = class {
+    constructor(n, o) {
+      r(this, i, void 0), r(this, a, void 0), e(i, this, n), e(a, this, t(o))
     }
-  });
-
-function i(n, r) {
-  let i = e()[n];
-  if (typeof i != `string`) throw Error(`Unknown message "${n}"`);
-  return i.replace(t, (e, t) => String(r[t]))
-}
+    get current() {
+      return n(a, this).call(this), n(i, this).call(this)
+    }
+  };
 export {
-  r as t
+  o as t
 };

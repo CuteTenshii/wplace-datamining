@@ -1,163 +1,121 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Dy2DBiuU.js", "./DXDHrD2o.js", "./Crx-o5JX.js", "./CsWPrMTu.js", "./Hth4yPu_.js", "./B9mVy3Q1.js", "./dH1BBgWZ.js", "./a7QZC4SB.js", "./pKOrQQBa.js", "./DkJJMwhh.js", "./DJf9i38S.js", "./yKNWaSNN.js", "./DzedHffB.js", "./BrohplP5.js", "./BU6EG1ae.js", "./C1VL13By.js", "./DCEagYC0.js"]))) => i.map(i => d[i]);
 import {
-  Ft as e,
-  Lt as t,
-  Vt as n,
-  Wt as r,
-  pt as i
+  Xt as e,
+  Yt as t
 } from "./DXDHrD2o.js";
-
-function a(e) {
-  return Math.floor(Math.random() * e)
-}
-var o = 14.5;
-async function s() {
-  let e = p();
-  if (e) return e;
-  try {
-    if ((await navigator.permissions.query({
-        name: `geolocation`
-      })).state === `granted`) {
-      let e = await new Promise((e, t) => navigator.geolocation.getCurrentPosition(t => e(t), e => t(e)));
-      return {
-        lat: e.coords.latitude,
-        lng: e.coords.longitude,
-        zoom: o
-      }
+import "./Crx-o5JX.js";
+import {
+  o as n
+} from "./B9mVy3Q1.js";
+import {
+  It as r,
+  pt as i
+} from "./dH1BBgWZ.js";
+import {
+  t as a
+} from "./B72gxVHw.js";
+import {
+  s as o
+} from "./BGL3fwXZ.js";
+import {
+  t as s
+} from "./DCEagYC0.js";
+var c = e({
+  status: `unavailable`
+});
+async function l() {
+  let e = t(c);
+  if (e.status === `available`) {
+    c.set({
+      status: `prompting`
+    });
+    try {
+      return await e.event.prompt()
+    } finally {
+      t(c).status === `prompting` && c.set({
+        status: `unavailable`
+      })
     }
-  } catch (e) {
-    console.error(e)
-  }
-  return {
-    ...l().pos,
-    zoom: o
   }
 }
 
-function c() {
-  return {
-    ...l().pos,
-    zoom: o
-  }
+function u() {
+  return window.matchMedia(`(display-mode: standalone)`).matches || `standalone` in window.navigator && window.navigator.standalone === !0
 }
+var d = new s(`twa:force_twa`, void 0, {
+  syncTabs: !1,
+  storage: `session`
+});
 
-function l() {
-  let e = Object.entries(u),
-    [t, n] = e[a(e.length)];
-  return {
-    city: t,
-    pos: n
-  }
-}
-var u = {
-    tokyo: {
-      lat: 35.677545560719665,
-      lng: 139.76394445809638
-    },
-    paris: {
-      lat: 48.8537151734952,
-      lng: 2.3484026030630787
-    },
-    newYork: {
-      lat: 40.71283173786517,
-      lng: -74.00599771376795
-    },
-    saoPaulo: {
-      lat: -23.550584064565356,
-      lng: -46.63339720713918
-    },
-    sydney: {
-      lat: -33.86943325619071,
-      lng: 151.2083447239608
-    }
-  },
-  d = `location`;
-
-function f(e, t) {
-  localStorage.setItem(d, JSON.stringify({
-    ...e,
-    zoom: t
-  }))
+function f() {
+  return a.isIOSApp() ? `ios` : !u() || d.current === !1 ? `web` : d.current || document.referrer.startsWith(`android-app://`) ? `android` : `web`
 }
 
 function p() {
-  let e = localStorage.getItem(d);
-  if (!e) return;
-  let t;
-  try {
-    t = JSON.parse(e)
-  } catch {
-    return
+  let e = `last-unfocus`,
+    t = new AbortController,
+    s = window.pwaInstallPrompt;
+  if (window.pwaInstallPrompt = void 0, s && c.set({
+      status: `available`,
+      event: s
+    }), window.addEventListener(`beforeinstallprompt`, e => {
+      e.preventDefault(), window.pwaInstallPrompt === e && (window.pwaInstallPrompt = void 0), c.set({
+        status: `available`,
+        event: e
+      })
+    }, {
+      signal: t.signal
+    }), window.addEventListener(`appinstalled`, () => {
+      c.set({
+        status: `installed`
+      })
+    }, {
+      signal: t.signal
+    }), u() && queueMicrotask(async () => {
+      let {
+        TWAServices: e
+      } = await n(async () => {
+        let {
+          TWAServices: e
+        } = await import(`./Dy2DBiuU.js`).then(e => e.i);
+        return {
+          TWAServices: e
+        }
+      }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]), import.meta.url);
+      await e.onInit(t)
+    }), u() || a.isIOSApp()) {
+    let n = () => {
+        let t = localStorage.getItem(e);
+        if (t) {
+          let e = parseInt(t, 10);
+          Date.now() - e > 5 * i.minute && window.location.reload()
+        }
+      },
+      a = () => {
+        localStorage.setItem(e, Date.now().toString());
+        let t = r.map;
+        if (t) {
+          let e = t.getCenter(),
+            n = t.getZoom();
+          o(e, n)
+        }
+      };
+    document.addEventListener(`visibilitychange`, () => {
+      document.visibilityState === `visible` ? n() : a()
+    }, {
+      signal: t.signal
+    }), window.addEventListener(`pageshow`, n, {
+      signal: t.signal
+    }), window.addEventListener(`pagehide`, a, {
+      signal: t.signal
+    })
   }
-  if (!t || typeof t != `object`) return;
-  let {
-    lat: n,
-    lng: r,
-    zoom: i
-  } = t;
-  if (!(typeof n != `number` || typeof r != `number` || !m({
-      lat: n,
-      lng: r
-    }))) return {
-    lat: n,
-    lng: r,
-    zoom: typeof i == `number` && h(i) ? i : o
+  return () => {
+    t.abort(), c.set({
+      status: `unavailable`
+    })
   }
 }
-
-function m(e) {
-  return e.lat >= -90 && e.lat <= 90 && e.lng >= -180 && e.lng <= 180
-}
-
-function h(e) {
-  return Number.isFinite(e) && e >= 0 && e <= 24
-}
-var g = new WeakMap,
-  _ = new WeakMap,
-  v = new class {
-    get idx() {
-      return i(n(g, this))
-    }
-    set idx(t) {
-      e(n(g, this), t, !0)
-    }
-    get entries() {
-      return i(n(_, this))
-    }
-    set entries(t) {
-      e(n(_, this), t)
-    }
-    constructor() {
-      r(this, g, t(-1)), r(this, _, t([]))
-    }
-    hasNext() {
-      return this.idx < this.entries.length - 1
-    }
-    goToNext(e) {
-      let t = this.idx + 1,
-        n = this.entries[t];
-      n && (this.idx = t, e.flyTo({
-        center: n.pos,
-        zoom: n.zoom
-      }))
-    }
-    hasPrev() {
-      return this.idx > 0
-    }
-    goToPrev(e) {
-      let t = this.idx - 1,
-        n = this.entries[t];
-      n && (this.idx = t, e.flyTo({
-        center: n.pos,
-        zoom: n.zoom
-      }))
-    }
-    isEmpty() {
-      return this.entries.length === 0
-    }
-    push(e) {
-      this.idx += 1, this.entries = [...this.entries.slice(0, this.idx), e]
-    }
-  };
 export {
-  h as a, m as i, c as n, v as o, s as r, f as s, u as t
+  f as a, c as i, u as n, p as o, l as r, d as t
 };

@@ -1,13 +1,4 @@
-import {
-  Nt as e
-} from "./DXDHrD2o.js";
-var t = e({
-  shouldReload: !0,
-  openHeadquarters: !1,
-  hq: void 0,
-  hasHeadquarters: !1,
-  emblem: void 0
-});
+var e = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`;
 export {
-  t
+  e as t
 };

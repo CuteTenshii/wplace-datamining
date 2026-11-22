@@ -1,81 +1,77 @@
-var e = {
-  settings: [`interface`, `accessibility`, `privacy`, `sounds`, `controls`, `notifications`],
-  store: [`items`, `pictures`, `frames`, `fonts`, `styles`, `flags`, `bundles`],
-  profile: [`social`, `photo`, `frame`, `style`, `flag`, `badges`],
-  info: [`how-to-play`, `rules`, `socials`],
-  search: [],
-  favorites: [],
-  leaderboard: [`regions`, `countries`, `players`, `alliances`],
-  alliances: [`settings`, `store`, `activity`, `members`, `requests`, `templates`, `headquarters`, `invites`],
-  "alliance-gallery": [],
-  overlays: [],
-  notifications: [],
-  "payment-history": [],
-  droplets: [],
-  prism: [],
-  events: [],
-  login: []
-};
+import {
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
+} from "./DXDHrD2o.js";
+import "./B8UK1oE5.js";
+import {
+  r as l
+} from "./C5EuYbjj.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  d = o(`<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>`),
+  f = o(`<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>`),
+  p = o(`<svg><path d="M13 3h2v4h8v4h-2v2h-2v3h2v6h-5v-2h-2v-2h-4v2H8v2H3v-6h2v-3H3v-2H1V7h8V3h2V1h2v2Z"></path></svg>`),
+  m = o(`<svg><path d="M5 20h3v2H3v-6h2v4Zm16 2h-5v-2h3v-4h2v6Zm-11-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-2-2h-4v-2h4v2Zm-7-2H5v-3h2v3Zm12 0h-2v-3h2v3ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM9 9H3v2H1V7h8v2Zm14 2h-2V9h-6V7h8v4ZM11 7H9V3h2v4Zm4 0h-2V3h2v4Zm-2-4h-2V1h2v2Z"></path></svg>`);
 
-function t(t) {
-  var n;
-  let r = t.replace(/^#/, ``),
-    i = r.indexOf(`?`),
-    a = i < 0 ? r : r.slice(0, i),
-    o = new URLSearchParams(i < 0 ? `` : r.slice(i + 1));
-  if ([...o.keys()].some(e => ![`text`, `occurrence`, `period`, `country`, `region`].includes(e)) || [`text`, `occurrence`, `period`, `country`, `region`].some(e => o.getAll(e).length > 1)) return null;
-  let s = (n = o.get(`text`)) == null ? void 0 : n.trim(),
-    c = o.get(`occurrence`);
-  if (c !== null && (!s || !/^[1-9][0-9]{0,3}$/.test(c)) || o.has(`text`) && (!s || s.length > 500 || [...s].some(e => e.charCodeAt(0) < 32 || e === `�`))) return null;
-  let l;
-  try {
-    l = decodeURIComponent(a)
-  } catch {
-    return null
-  }
-  let u = l.split(`/`);
-  if (u.length > 3 || u.some(e => !/^[a-zA-Z0-9_-]+$/.test(e))) return null;
-  let [d, f, p] = u;
-  if (!Object.prototype.hasOwnProperty.call(e, d)) return null;
-  let m = e[d];
-  if (f && !m.includes(f)) return null;
-  let h = o.get(`period`),
-    g = o.get(`country`),
-    _ = o.get(`region`);
-  return h !== null && (d !== `leaderboard` || ![`today`, `week`, `month`, `all-time`].includes(h)) || g !== null && (d !== `leaderboard` || ![`regions`, `players`].includes(f) || !/^[1-9][0-9]{0,2}$/.test(g)) || _ !== null && (d !== `leaderboard` || f !== `players` || !g || !/^[1-9][0-9]{0,9}$/.test(_) || Number(_) > 2147483647) ? null : {
-    panel: d,
-    section: f,
-    target: p,
-    ...h ? {
-      period: h
-    } : {},
-    ...g ? {
-      country: Number(g)
-    } : {},
-    ..._ ? {
-      region: Number(_)
-    } : {},
-    ...s ? {
-      text: s
-    } : {},
-    ...c ? {
-      occurrence: Number(c)
-    } : {}
-  }
-}
-
-function n(e) {
-  return [e.panel, e.section, e.target].filter(Boolean).join(`/`)
-}
-
-function r(e) {
-  let t = new URLSearchParams;
-  return e.period && t.set(`period`, e.period), e.country && t.set(`country`, String(e.country)), e.region && t.set(`region`, String(e.region)), e.text && (t.set(`text`, e.text), e.occurrence && t.set(`occurrence`, String(e.occurrence))), `#${n(e)}${t.size?`?${t}`:``}`
-}
-
-function i(e) {
-  return e.panel === `alliances` ? !!e.section : e.panel === `settings` ? e.section === `privacy` || e.section === `notifications` && !!e.target && ![`charges`, `events`, `updates`, `patch-notes`, `dismiss-hint`].includes(e.target) : [`profile`, `store`, `notifications`, `payment-history`].includes(e.panel)
+function h(o, h) {
+  s(h, !0);
+  let g = l(),
+    _ = a(h, u);
+  var v = c(),
+    y = i(v),
+    b = n => {
+      var a = c(),
+        o = i(a),
+        s = t => {
+          var n = d();
+          e(n, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ..._
+          })), r(t, n)
+        },
+        l = t => {
+          var n = f();
+          e(n, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ..._
+          })), r(t, n)
+        };
+      t(o, e => {
+        h.filled ? e(s) : e(l, -1)
+      }), r(n, a)
+    },
+    x = t => {
+      var n = p();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ..._
+      })), r(t, n)
+    },
+    S = t => {
+      var n = m();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ..._
+      })), r(t, n)
+    };
+  t(y, e => {
+    g.standard ? e(b) : h.filled ? e(x, 1) : e(S, -1)
+  }), r(o, v), n()
 }
 export {
-  t as i, n, i as r, r as t
+  h as t
 };

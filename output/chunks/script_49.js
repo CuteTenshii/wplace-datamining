@@ -1,25 +1,58 @@
-import {
-  At as e,
-  Ct as t,
-  M as n,
-  Q as r,
-  a as i,
-  cn as a,
-  et as o,
-  nt as s
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-var c = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
-  l = s(`<span aria-hidden="true"> </span>`);
+function e(e) {
+  let t, n = !1;
 
-function u(s, c) {
-  let u = i(c, `class`, 3, ``);
-  var d = l(),
-    f = e(d, !0);
-  a(d), t(() => {
-    n(d, 1, `ring-base-100 pointer-events-none inline-flex h-4 min-w-4 items-center justify-center rounded-[var(--game-radius,9999px)] bg-red-500 px-1 text-[10px] leading-none font-extrabold whitespace-nowrap text-white tabular-nums shadow-md ring-2 ${u()??``}`), r(f, c.label)
-  }), o(s, d)
+  function r(r) {
+    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
+      t = void 0;
+      return
+    }
+    let i = r.changedTouches[0];
+    t = {
+      id: i.identifier,
+      x: i.clientX,
+      y: i.clientY
+    }, r.cancelable && r.preventDefault()
+  }
+
+  function i(e) {
+    if (!t) return;
+    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
+  }
+
+  function a(n) {
+    if (!t) return;
+    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    if (!r) return;
+    let i = t;
+    t = void 0;
+    let a = e.getBoundingClientRect();
+    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
+  }
+
+  function o(e) {
+    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
+  }
+
+  function s(e) {
+    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
+  }
+
+  function c() {
+    t = void 0
+  }
+  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
+    passive: !1
+  }), e.addEventListener(`touchmove`, i, {
+    passive: !0
+  }), e.addEventListener(`touchend`, a, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, c), {
+    destroy() {
+      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
+    }
+  }
 }
 export {
-  c as n, u as t
+  e as t
 };

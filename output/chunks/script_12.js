@@ -1,36 +1,4 @@
-import "./DXDHrD2o.js";
-import {
-  g as e,
-  m as t
-} from "./CqEWaMhX.js";
-var n = {
-  get data() {
-    return e.data
-  },
-  get error() {
-    return e.error
-  },
-  get form() {
-    return e.form
-  },
-  get params() {
-    return e.params
-  },
-  get route() {
-    return e.route
-  },
-  get state() {
-    return e.state
-  },
-  get status() {
-    return e.status
-  },
-  get url() {
-    return e.url
-  }
-};
-t.updated.check;
-var r = n;
-export {
-  r as t
-};
+if (typeof window < `u`) {
+  var e, t;
+  ((e = (t = window).__svelte ?? (t.__svelte = {})).v ?? (e.v = new Set)).add(`5`)
+}
