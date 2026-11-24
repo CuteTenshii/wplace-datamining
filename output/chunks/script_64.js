@@ -1,77 +1,108 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
+  M as e,
+  gt as t
+} from "./Da5oV748.js";
 import {
-  r as l
-} from "./C5EuYbjj.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  d = o(`<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>`),
-  f = o(`<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>`),
-  p = o(`<svg><path d="M18 4H20V6H22V18H20V20H18V22H6V20H4V18H2V6H4V4H6V2H18V4ZM11 18H13V16H11V18ZM11 15H13V13H15V11H11V15ZM15 11H17V8H15V11ZM7 10H9V8H7V10ZM9 8H15V6H9V8Z"></path></svg>`),
-  m = o(`<svg><path d="M18 22H6V20H18V22ZM6 20H4V18H6V20ZM20 20H18V18H20V20ZM4 18H2V6H4V18ZM13 18H11V16H13V18ZM22 18H20V6H22V18ZM15 13H13V15H11V11H15V13ZM17 11H15V8H17V11ZM9 10H7V8H9V10ZM15 8H9V6H15V8ZM6 6H4V4H6V6ZM20 6H18V4H20V6ZM18 4H6V2H18V4Z"></path></svg>`);
+  a as n,
+  i as r
+} from "./BGL3fwXZ.js";
+var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
 
-function h(o, h) {
-  s(h, !0);
-  let g = l(),
-    _ = a(h, u);
-  var v = c(),
-    y = i(v),
-    b = n => {
-      var a = c(),
-        o = i(a),
-        s = t => {
-          var n = d();
-          e(n, () => ({
-            xmlns: `http://www.w3.org/2000/svg`,
-            viewBox: `0 -960 960 960`,
-            fill: `currentColor`,
-            ..._
-          })), r(t, n)
-        },
-        l = t => {
-          var n = f();
-          e(n, () => ({
-            xmlns: `http://www.w3.org/2000/svg`,
-            viewBox: `0 -960 960 960`,
-            fill: `currentColor`,
-            ..._
-          })), r(t, n)
-        };
-      t(o, e => {
-        h.filled ? e(s) : e(l, -1)
-      }), r(n, a)
+function a(e) {
+  if (e === null) return !1;
+  let t = e.trim().toLowerCase();
+  return t !== `0` && t !== `false`
+}
+
+function o(e) {
+  if (e === null || e.trim() === ``) return;
+  let t = Number(e);
+  return Number.isFinite(t) ? t : void 0
+}
+
+function s(t) {
+  let s = {
+      opaque: !0
     },
-    x = t => {
-      var n = p();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ..._
-      })), r(t, n)
-    },
-    S = t => {
-      var n = m();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ..._
-      })), r(t, n)
+    c = t.searchParams,
+    l = o(c.get(`lat`)),
+    u = o(c.get(`lng`));
+  l !== void 0 && u !== void 0 && r({
+    lat: l,
+    lng: u
+  }) && (s.pos = {
+    lat: l,
+    lng: u
+  });
+  let d = o(c.get(`zoom`));
+  d !== void 0 && n(d) && (s.zoom = d);
+  let f = o(c.get(`season`));
+  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
+  let p = c.get(`opaque`);
+  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
+  let m = c.get(`area`);
+  if (m) {
+    let e = m.split(`,`);
+    if (e.length === 4) {
+      let [t, n, r, i] = e.map(e => o(e));
+      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
+        south: t,
+        west: n,
+        north: r,
+        east: i
+      })
+    }
+  }
+  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
+  let h = c.get(`error`);
+  i.includes(h ?? ``) && (s.error = h);
+  let g = c.get(`domain`);
+  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
+}
+
+function c(e, t) {
+  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
+}
+var l;
+(function(e) {
+  async function n() {
+    if (!(i() || history.length < 3)) {
+      for (let e = 0; e < 50; e++) history.pushState({}, ``);
+      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
+    }
+  }
+  e.reset = n;
+
+  function r() {
+    if (!(`navigation` in window)) return;
+    let e = window.navigation;
+    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
+    let t = e.entries();
+    return Array.isArray(t) ? t.length : void 0
+  }
+
+  function i() {
+    var e;
+    if (t != null && (e = t.data) != null && e.id) return !0;
+    try {
+      let e = r();
+      return e !== void 0 && e >= history.length
+    } catch {
+      return !1
+    }
+  }
+})(l || (l = {}));
+
+function u(e, t, n) {
+  return new Promise(r => {
+    var i;
+    let a = i => {
+      var o;
+      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
     };
-  t(y, e => {
-    g.standard ? e(b) : h.filled ? e(x, 1) : e(S, -1)
-  }), r(o, v), n()
+    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
+  })
 }
 export {
-  h as t
+  s as n, c as t
 };

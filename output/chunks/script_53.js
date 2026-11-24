@@ -1,8 +1,4 @@
-import "./DXDHrD2o.js";
-import {
-  n as e
-} from "./pKOrQQBa.js";
-var t = t => new URL(t, e).toString();
+var e = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`;
 export {
-  t
+  e as t
 };

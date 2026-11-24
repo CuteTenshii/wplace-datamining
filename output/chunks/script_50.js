@@ -1,25 +1,60 @@
 import {
-  At as e,
-  Ct as t,
-  M as n,
-  Q as r,
-  a as i,
-  cn as a,
-  et as o,
-  nt as s
+  Ft as e,
+  Lt as t,
+  Nt as n,
+  gt as r,
+  pt as i,
+  wt as a
 } from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-var c = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
-  l = s(`<span aria-hidden="true"> </span>`);
+var o = n({
+    request: null
+  }),
+  s = `input:not(:disabled):not([type="hidden"]), select:not(:disabled), textarea:not(:disabled), button:not(:disabled), summary, a[href], [tabindex]`;
 
-function u(s, c) {
-  let u = i(c, `class`, 3, ``);
-  var d = l(),
-    f = e(d, !0);
-  a(d), t(() => {
-    n(d, 1, `ring-base-100 pointer-events-none inline-flex h-4 min-w-4 items-center justify-center rounded-[var(--game-radius,9999px)] bg-red-500 px-1 text-[10px] leading-none font-extrabold whitespace-nowrap text-white tabular-nums shadow-md ring-2 ${u()??``}`), r(f, c.label)
-  }), o(s, d)
+function c(e) {
+  for (let t = e; t; t = t.parentElement) t instanceof HTMLDetailsElement && (t.open = !0)
+}
+
+function l(e) {
+  e instanceof HTMLDetailsElement && (e = e.querySelector(`summary`) ?? e);
+  let t = e.matches(s) ? e : e.closest(`button, a[href], summary, label`) ?? e.querySelector(s) ?? e,
+    n = t instanceof HTMLLabelElement ? t.control ?? t : t,
+    r = n.hasAttribute(`tabindex`);
+  !r && !n.matches(s) && (n.tabIndex = -1), n.focus({
+    preventScroll: !0
+  }), e.scrollIntoView({
+    block: `center`,
+    behavior: `instant`
+  }), e.setAttribute(`data-game-link-highlight`, ``);
+  let i = () => e.removeAttribute(`data-game-link-highlight`);
+  return document.addEventListener(`pointerdown`, i, {
+    once: !0
+  }), document.addEventListener(`keydown`, i, {
+    once: !0
+  }), () => {
+    i(), !r && n.getAttribute(`tabindex`) === `-1` && n.removeAttribute(`tabindex`), document.removeEventListener(`pointerdown`, i), document.removeEventListener(`keydown`, i)
+  }
+}
+
+function u(s, u) {
+  let d = t(n(u));
+  return a(() => {
+    s.dataset.gameLink = i(d);
+    let e = o.request;
+    if (!i(d) || (e == null ? void 0 : e.path) !== i(d)) return;
+    let t = !1,
+      n;
+    return r().then(async () => {
+      t || !s.isConnected || (c(s), await r(), !t && !e.text && (n = l(s)))
+    }), () => {
+      t = !0, n == null || n()
+    }
+  }), {
+    update: t => {
+      e(d, t, !0)
+    }
+  }
 }
 export {
-  c as n, u as t
+  c as i, o as n, u as r, l as t
 };

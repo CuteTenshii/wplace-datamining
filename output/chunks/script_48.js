@@ -1,60 +1,77 @@
 import {
-  Ft as e,
-  Lt as t,
-  Nt as n,
-  gt as r,
-  pt as i,
-  wt as a
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
-var o = n({
-    request: null
-  }),
-  s = `input:not(:disabled):not([type="hidden"]), select:not(:disabled), textarea:not(:disabled), button:not(:disabled), summary, a[href], [tabindex]`;
+import "./B8UK1oE5.js";
+import {
+  r as l
+} from "./DH337OF5.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  d = o(`<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>`),
+  f = o(`<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>`),
+  p = o(`<svg><path d="M13 3h2v4h8v4h-2v2h-2v3h2v6h-5v-2h-2v-2h-4v2H8v2H3v-6h2v-3H3v-2H1V7h8V3h2V1h2v2Z"></path></svg>`),
+  m = o(`<svg><path d="M5 20h3v2H3v-6h2v4Zm16 2h-5v-2h3v-4h2v6Zm-11-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-2-2h-4v-2h4v2Zm-7-2H5v-3h2v3Zm12 0h-2v-3h2v3ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM9 9H3v2H1V7h8v2Zm14 2h-2V9h-6V7h8v4ZM11 7H9V3h2v4Zm4 0h-2V3h2v4Zm-2-4h-2V1h2v2Z"></path></svg>`);
 
-function c(e) {
-  for (let t = e; t; t = t.parentElement) t instanceof HTMLDetailsElement && (t.open = !0)
-}
-
-function l(e) {
-  e instanceof HTMLDetailsElement && (e = e.querySelector(`summary`) ?? e);
-  let t = e.matches(s) ? e : e.closest(`button, a[href], summary, label`) ?? e.querySelector(s) ?? e,
-    n = t instanceof HTMLLabelElement ? t.control ?? t : t,
-    r = n.hasAttribute(`tabindex`);
-  !r && !n.matches(s) && (n.tabIndex = -1), n.focus({
-    preventScroll: !0
-  }), e.scrollIntoView({
-    block: `center`,
-    behavior: `instant`
-  }), e.setAttribute(`data-game-link-highlight`, ``);
-  let i = () => e.removeAttribute(`data-game-link-highlight`);
-  return document.addEventListener(`pointerdown`, i, {
-    once: !0
-  }), document.addEventListener(`keydown`, i, {
-    once: !0
-  }), () => {
-    i(), !r && n.getAttribute(`tabindex`) === `-1` && n.removeAttribute(`tabindex`), document.removeEventListener(`pointerdown`, i), document.removeEventListener(`keydown`, i)
-  }
-}
-
-function u(s, u) {
-  let d = t(n(u));
-  return a(() => {
-    s.dataset.gameLink = i(d);
-    let e = o.request;
-    if (!i(d) || (e == null ? void 0 : e.path) !== i(d)) return;
-    let t = !1,
-      n;
-    return r().then(async () => {
-      t || !s.isConnected || (c(s), await r(), !t && !e.text && (n = l(s)))
-    }), () => {
-      t = !0, n == null || n()
-    }
-  }), {
-    update: t => {
-      e(d, t, !0)
-    }
-  }
+function h(o, h) {
+  s(h, !0);
+  let g = l(),
+    _ = a(h, u);
+  var v = c(),
+    y = i(v),
+    b = n => {
+      var a = c(),
+        o = i(a),
+        s = t => {
+          var n = d();
+          e(n, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ..._
+          })), r(t, n)
+        },
+        l = t => {
+          var n = f();
+          e(n, () => ({
+            xmlns: `http://www.w3.org/2000/svg`,
+            viewBox: `0 -960 960 960`,
+            fill: `currentColor`,
+            ..._
+          })), r(t, n)
+        };
+      t(o, e => {
+        h.filled ? e(s) : e(l, -1)
+      }), r(n, a)
+    },
+    x = t => {
+      var n = p();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ..._
+      })), r(t, n)
+    },
+    S = t => {
+      var n = m();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ..._
+      })), r(t, n)
+    };
+  t(y, e => {
+    g.standard ? e(b) : h.filled ? e(x, 1) : e(S, -1)
+  }), r(o, v), n()
 }
 export {
-  c as i, o as n, u as r, l as t
+  h as t
 };

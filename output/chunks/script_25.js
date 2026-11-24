@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./B72gxVHw.js", "./DXDHrD2o.js", "./B9mVy3Q1.js", "./pKOrQQBa.js", "./BU6EG1ae.js", "./C1VL13By.js", "./Hth4yPu_.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./H53cuncY.js", "./DXDHrD2o.js", "./-hW-CI3U.js", "./pKOrQQBa.js", "./CGxYlcmk.js", "./XxdRMlIL.js", "./DhNqkAMe.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -14,7 +14,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   o as d
-} from "./B9mVy3Q1.js";
+} from "./-hW-CI3U.js";
 import {
   n as f,
   t as p
@@ -26,13 +26,13 @@ import {
 } from "./pKOrQQBa.js";
 import {
   r as ne
-} from "./DkJJMwhh.js";
+} from "./bNb1_EDE.js";
 import {
   n as h
-} from "./yKNWaSNN.js";
+} from "./BOiCmQqh.js";
 import {
   t as g
-} from "./Hth4yPu_.js";
+} from "./DhNqkAMe.js";
 import {
   i as re,
   r as ie
@@ -5594,7 +5594,7 @@ var eu = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./B72gxVHw.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./H53cuncY.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
       if (o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(g.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -10074,6 +10074,9 @@ function Lu(e) {
     getCommerceTransaction(e) {
       return this.commerceRequest(`/staff/commerce/purchases/${e}`)
     }
+    getCommerceUnpaidPayment(e) {
+      return this.commerceRequest(`/staff/commerce/purchases/unpaid/${e}`)
+    }
     getCommerceHistory(e = {}) {
       let {
         types: t,
@@ -11098,22 +11101,28 @@ function hd(e) {
       if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
       let n = await t.json();
       return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(e => {
-        let t = e.is_dollar ?? e.isDollar ?? e.currency ?? e.Currency ?? 0,
-          n;
-        if (typeof t == `string`) {
-          let e = t.toLowerCase();
-          n = e === `usd` || e === `dollar` || e === `true`
-        } else n = typeof t == `number` ? t !== 0 : !!t;
-        let r = typeof e.createdAt == `string` ? e.createdAt : e.CreatedAt ? new Date(e.CreatedAt).toISOString() : ``,
-          i = e.product_variant ?? e.productVariant,
-          a = i == null || i === `` ? null : Number(i);
+        var t, n;
+        let r = e.is_dollar ?? e.isDollar ?? e.currency ?? e.Currency ?? 0,
+          i;
+        if (typeof r == `string`) {
+          let e = r.toLowerCase();
+          i = e === `usd` || e === `dollar` || e === `true`
+        } else i = typeof r == `number` ? r !== 0 : !!r;
+        let a = typeof e.createdAt == `string` ? e.createdAt : e.CreatedAt ? new Date(e.CreatedAt).toISOString() : ``,
+          o = e.product_variant ?? e.productVariant,
+          s = o == null || o === `` ? null : Number(o);
         return {
           product_name: String(e.productName ?? e.product_name ?? ``),
           amount: Number(e.amount ?? 0),
           price: Number(e.price ?? 0),
-          is_dollar: n,
-          created_at: r,
-          product_variant: Number.isInteger(a) ? a : null
+          is_dollar: i,
+          created_at: a,
+          product_variant: Number.isInteger(s) ? s : null,
+          gift: (((t = e.gift) == null ? void 0 : t.direction) === `sent` || ((n = e.gift) == null ? void 0 : n.direction) === `received`) && Number.isInteger(e.gift.userId) ? {
+            direction: e.gift.direction,
+            user_id: e.gift.userId,
+            user_name: String(e.gift.userName ?? ``)
+          } : null
         }
       })
     }
@@ -12061,6 +12070,26 @@ function Nd(e) {
         }))
       }
       return o.json()
+    }
+    async getOverlayParticipants(e, t, n) {
+      let r = new URLSearchParams({
+          x: String(t.x),
+          y: String(t.y),
+          width: String(t.width),
+          height: String(t.height)
+        }),
+        i = await this.request(`/s${e}/overlay/participants?${r.toString()}`, {
+          method: `POST`,
+          body: n,
+          headers: {
+            "Content-Type": `application/octet-stream`
+          },
+          credentials: `include`
+        });
+      if (i.status === K.UNAUTHORIZED) throw new J(g.overlay_participants_login_required(), i.status);
+      if (i.status === K.CONTENT_TOO_LARGE) throw new J(g.overlay_participants_too_large(), i.status);
+      if (i.status !== K.OK) throw new J(g.unexpected_server_error(), i.status);
+      return i.json()
     }
     async getPixelAreaInfo({
       season: e,

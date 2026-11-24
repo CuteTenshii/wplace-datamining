@@ -37,7 +37,7 @@ function d(e, t) {
 }
 var f = [`plop`, `smallPlop`, `bigPlop`, `smallDropplet`, `droppletAndPlop`, `notification1`, `playerNotification`, `purchaseSuccess`, `purchaseFail`],
   p = `wplace:settings:v1`,
-  m = [`charges`, `events`, `updates`, `patchNotes`, `dismissHint`],
+  m = [`charges`, `flagRefund`, `events`, `updates`, `patchNotes`, `dismissHint`],
   h = 800;
 
 function g(e, t) {
@@ -58,8 +58,9 @@ var _ = new WeakMap,
   k = new WeakMap,
   A = new WeakMap,
   j = new WeakMap,
-  M = new WeakSet,
-  N = class {
+  M = new WeakMap,
+  N = new WeakSet,
+  P = class {
     get alerts() {
       return c(o(_, this))
     }
@@ -114,47 +115,54 @@ var _ = new WeakMap,
     set showAllianceHqPins(t) {
       e(o(T, this), t, !0)
     }
-    get sounds() {
+    get dashboardPrivacy() {
       return c(o(E, this))
     }
-    set sounds(t) {
+    set dashboardPrivacy(t) {
       e(o(E, this), t, !0)
     }
+    get sounds() {
+      return c(o(D, this))
+    }
+    set sounds(t) {
+      e(o(D, this), t, !0)
+    }
     constructor() {
-      t(this, M), s(this, _, r(i({
+      t(this, N), s(this, _, r(i({
         charges: !0,
+        flagRefund: !0,
         events: !0,
         updates: !0,
         patchNotes: !0,
         dismissHint: !0
-      }))), s(this, v, r(100)), s(this, y, r(`none`)), s(this, b, r(100)), s(this, x, r(!1)), s(this, S, r(!1)), s(this, C, r(!0)), s(this, w, r(!0)), s(this, T, r(!0)), s(this, E, r(i(Object.fromEntries(f.map(e => [e, 50]))))), s(this, D, void 0), s(this, O, null), s(this, k, !1), s(this, A, 0), s(this, j, void 0), this.nativeCursor = !1;
-      let e = a(M, this, P).call(this);
-      e && (a(M, this, F).call(this, e), n(k, this, e.dirty === !0))
+      }))), s(this, v, r(100)), s(this, y, r(`none`)), s(this, b, r(100)), s(this, x, r(!1)), s(this, S, r(!1)), s(this, C, r(!0)), s(this, w, r(!0)), s(this, T, r(!0)), s(this, E, r(!1)), s(this, D, r(i(Object.fromEntries(f.map(e => [e, 50]))))), s(this, O, void 0), s(this, k, null), s(this, A, !1), s(this, j, 0), s(this, M, void 0), this.nativeCursor = !1;
+      let e = a(N, this, F).call(this);
+      e && (a(N, this, I).call(this, e), n(A, this, e.dirty === !0))
     }
     save() {
       var e;
-      n(A, this, (e = o(A, this), e++, e)), n(k, this, !0);
-      let t = a(M, this, L).call(this);
-      return o(O, this) !== null && (clearTimeout(o(j, this)), n(j, this, setTimeout(() => void a(M, this, R).call(this), h))), t
+      n(j, this, (e = o(j, this), e++, e)), n(A, this, !0);
+      let t = a(N, this, R).call(this);
+      return o(k, this) !== null && (clearTimeout(o(M, this)), n(M, this, setTimeout(() => void a(N, this, z).call(this), h))), t
     }
     async useAccount(e, t) {
-      if (clearTimeout(o(j, this)), n(O, this, e), n(D, this, t), e === null) return;
-      let r = a(M, this, P).call(this),
-        i = o(A, this),
+      if (clearTimeout(o(M, this)), n(k, this, e), n(O, this, t), e === null) return;
+      let r = a(N, this, F).call(this),
+        i = o(j, this),
         s;
       try {
         s = (await t.getPlayerSettings()).settings
       } catch {
         return
       }
-      o(O, this) === e && (o(A, this) !== i || (r == null ? void 0 : r.dirty) === !0 && r.userId === e ? n(k, this, !0) : s && typeof s == `object` ? (a(M, this, F).call(this, s), n(k, this, !1)) : n(k, this, r !== null), a(M, this, L).call(this), await a(M, this, R).call(this))
+      o(k, this) === e && (o(j, this) !== i || (r == null ? void 0 : r.dirty) === !0 && r.userId === e ? n(A, this, !0) : s && typeof s == `object` ? (a(N, this, I).call(this, s), n(A, this, !1)) : n(A, this, r !== null), a(N, this, R).call(this), await a(N, this, z).call(this))
     }
     start() {
-      window.addEventListener(`wplace:online`, () => void a(M, this, R).call(this)), window.addEventListener(`pagehide`, () => void a(M, this, R).call(this, !0))
+      window.addEventListener(`wplace:online`, () => void a(N, this, z).call(this)), window.addEventListener(`pagehide`, () => void a(N, this, z).call(this, !0))
     }
   };
 
-function P() {
+function F() {
   try {
     let e = JSON.parse(localStorage.getItem(p) ?? `null`);
     return e && typeof e == `object` ? e : null
@@ -163,17 +171,17 @@ function P() {
   }
 }
 
-function F(e) {
+function I(e) {
   var t, n;
   for (let t of m) {
     var r;
     typeof((r = e.alerts) == null ? void 0 : r[t]) == `boolean` && (this.alerts[t] = e.alerts[t])
   }
-  typeof((t = e.alerts) == null ? void 0 : t.patchNotes) != `boolean` && (this.alerts.patchNotes = this.alerts.updates), this.artOpacity = g(e.artOpacity, 100), l.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = g(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = e.showStoreWhilePainting), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
+  typeof((t = e.alerts) == null ? void 0 : t.patchNotes) != `boolean` && (this.alerts.patchNotes = this.alerts.updates), this.artOpacity = g(e.artOpacity, 100), l.includes(e.colorblindMode) && (this.colorblindMode = e.colorblindMode), this.colorblindStrength = g(e.colorblindStrength, 100), typeof e.oldUi == `boolean` && (this.oldUi = e.oldUi), typeof e.nativeCursor == `boolean` && (this.nativeCursor = e.nativeCursor), typeof e.showStoreWhilePainting == `boolean` && (this.showStoreWhilePainting = e.showStoreWhilePainting), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins), typeof e.dashboardPrivacy == `boolean` && (this.dashboardPrivacy = e.dashboardPrivacy);
   for (let t of f) this.sounds[t] = g((n = e.sounds) == null ? void 0 : n[t], 50)
 }
 
-function I() {
+function L() {
   return {
     alerts: {
       ...this.alerts
@@ -186,35 +194,36 @@ function I() {
     showStoreWhilePainting: this.showStoreWhilePainting,
     showHotspots: this.showHotspots,
     showAllianceHqPins: this.showAllianceHqPins,
+    dashboardPrivacy: this.dashboardPrivacy,
     sounds: {
       ...this.sounds
     }
   }
 }
 
-function L() {
+function R() {
   try {
     return localStorage.setItem(p, JSON.stringify({
-      ...a(M, this, I).call(this),
-      userId: o(O, this),
-      dirty: o(k, this)
+      ...a(N, this, L).call(this),
+      userId: o(k, this),
+      dirty: o(A, this)
     })), !0
   } catch {
     return !1
   }
 }
-async function R(e = !1) {
-  clearTimeout(o(j, this));
-  let t = o(O, this);
-  if (t === null || !o(k, this) || !o(D, this)) return;
-  let r = o(A, this);
+async function z(e = !1) {
+  clearTimeout(o(M, this));
+  let t = o(k, this);
+  if (t === null || !o(A, this) || !o(O, this)) return;
+  let r = o(j, this);
   try {
-    if (await o(D, this).savePlayerSettings(a(M, this, I).call(this), e), o(O, this) !== t || o(A, this) !== r) return;
-    n(k, this, !1), a(M, this, L).call(this)
+    if (await o(O, this).savePlayerSettings(a(N, this, L).call(this), e), o(k, this) !== t || o(j, this) !== r) return;
+    n(A, this, !1), a(N, this, R).call(this)
   } catch {}
 }
-var z = new N;
-z.start();
+var B = new P;
+B.start();
 export {
-  d as i, z as n, l as r, f as t
+  d as i, B as n, l as r, f as t
 };
