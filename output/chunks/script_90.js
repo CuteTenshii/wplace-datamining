@@ -1,52 +1,44 @@
 import {
-  N as e,
-  j as t,
-  t as n
-} from "./DQT4G0Ew.js";
-var r = `button, a[href], input, select, textarea, label, summary, [contenteditable]:not([contenteditable="false"]), [role="button"], [role="link"], [role="menuitem"], [role="option"], [role="tab"], [role="slider"]`;
+  Gt as e,
+  Ht as t,
+  Ut as n,
+  Vt as r,
+  Wt as i,
+  un as a
+} from "./DXDHrD2o.js";
+var o, s, c, l, u, d, f = 9,
+  p = 95,
+  m = 45,
+  h = 5;
 
-function i(i, a, o) {
-  let s = new Set,
-    c = new Set;
+function g(e) {
+  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, h) >>> 2
+}
 
-  function l(t) {
-    let n = t.target;
-    return t.pointerType === `touch` || !e(t.button) || !(n instanceof Element) || n.closest(r) ? !1 : n.closest(`dialog`) === ((o == null ? void 0 : o.closest(`dialog`)) ?? null)
+function _(e = ``, t = p, n = m, r = g) {
+  let i = r(e),
+    a = i % f * (360 / f);
+  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
+}(o = globalThis.customElements) != null && o.get(`minidenticon-svg`) || (s = globalThis.customElements) == null || s.define(`minidenticon-svg`, (u = new WeakMap, d = new WeakSet, c = class extends HTMLElement {
+  constructor(...t) {
+    super(...t), e(this, d), i(this, u, !1)
   }
+  connectedCallback() {
+    n(d, this, v).call(this), t(u, this, !0)
+  }
+  attributeChangedCallback() {
+    r(u, this) && n(d, this, v).call(this)
+  }
+}, a(c, `observedAttributes`, [`username`, `saturation`, `lightness`]), l = {
+  _: {}
+}, c));
 
-  function u(e) {
-    c.delete(e.button), l(e) && (s.add(e.button), n.isMouseButtonBound(e.button) && c.add(e.button), i(e))
-  }
-
-  function d(e) {
-    s.delete(e.button) && (a == null || a(e))
-  }
-  let f = e => u(e),
-    p = e => {
-      e.button <= 0 || (t(e, e.button) ? u(e) : d(e))
-    },
-    m = e => d(e),
-    h = () => s.clear(),
-    g = e => {
-      c.has(e.button) && e.preventDefault()
-    },
-    _ = [
-      [`pointerdown`, f],
-      [`pointermove`, p],
-      [`pointerup`, m],
-      [`pointercancel`, h],
-      [`blur`, h],
-      [`mousedown`, g],
-      [`pointerup`, g],
-      [`mouseup`, g],
-      [`auxclick`, g],
-      [`contextmenu`, g]
-    ];
-  for (let [e, t] of _) window.addEventListener(e, t, !0);
-  return () => {
-    for (let [e, t] of _) window.removeEventListener(e, t, !0)
-  }
+function v() {
+  var e;
+  let t = c.observedAttributes.map(e => this.getAttribute(e) || void 0),
+    r = t.join(`,`);
+  this.innerHTML = (e = n(c, c, l)._)[r] ?? (e[r] = _(...t))
 }
 export {
-  i as t
+  _ as t
 };

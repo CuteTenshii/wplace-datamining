@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./8mflh3Qz.js", "./DXDHrD2o.js", "./-hW-CI3U.js", "./pKOrQQBa.js", "./CePVVsPm.js", "./XxdRMlIL.js", "./DhNqkAMe.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./2JPk1pOh.js", "./DXDHrD2o.js", "./C700c0sh.js", "./pKOrQQBa.js", "./DLjVt9Xl.js", "./BDSAKmyU.js", "./BjfSTdKe.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -14,7 +14,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   o as d
-} from "./-hW-CI3U.js";
+} from "./C700c0sh.js";
 import {
   n as f,
   t as p
@@ -26,13 +26,13 @@ import {
 } from "./pKOrQQBa.js";
 import {
   r as ne
-} from "./CasWHfpe.js";
+} from "./mJPBZGd3.js";
 import {
   n as h
 } from "./BOiCmQqh.js";
 import {
   t as g
-} from "./DhNqkAMe.js";
+} from "./BjfSTdKe.js";
 import {
   i as re,
   r as ie
@@ -5594,7 +5594,7 @@ var eu = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./8mflh3Qz.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./2JPk1pOh.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
       if (o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(g.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
@@ -9380,6 +9380,16 @@ function Du(e) {
       });
       if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
       return n.json()
+    }
+    async getAdminAllianceHistory(e, t = {}) {
+      let n = new URLSearchParams;
+      t.before && n.set(`before`, String(t.before)), t.limit && n.set(`limit`, String(t.limit)), t.category && n.set(`category`, t.category), t.source && n.set(`source`, t.source), t.userId && n.set(`userId`, String(t.userId)), t.includePaint && n.set(`includePaint`, `true`);
+      let r = await this.request(`/staff/dashboard/alliances/${e}/history?${n.toString()}`, {
+        method: `GET`,
+        credentials: `include`
+      });
+      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      return r.json()
     }
     async hideAdminAllianceRevision(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/revisions/hide`, {
