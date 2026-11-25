@@ -1,9 +1,9 @@
 import {
   t as e
-} from "./BjfSTdKe.js";
+} from "./B5-oMW_L.js";
 import {
   t
-} from "./CGfxXBSU.js";
+} from "./B35vpI3h.js";
 var n = [{
     key: `dashboard`,
     href: `/dashboard/home`,
@@ -49,6 +49,11 @@ var n = [{
     href: `/dashboard/permissions`,
     label: () => e.permissions(),
     permissions: t.dashboard.permissions
+  }, {
+    key: `view-logs`,
+    href: `/dashboard/view-logs`,
+    label: () => e.view_logs_title(),
+    permissions: t.dashboard.viewLogs
   }, {
     key: `alliances`,
     href: `/dashboard/alliances`,
@@ -158,7 +163,7 @@ var o = [{
 }, {
   key: `admin`,
   label: () => e.admin(),
-  pages: a(`permissions`, `audit-logs`)
+  pages: a(`permissions`, `audit-logs`, `view-logs`)
 }];
 
 function s(e, t) {

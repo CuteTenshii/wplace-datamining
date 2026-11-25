@@ -10,7 +10,7 @@ import {
 } from "./BOiCmQqh.js";
 import {
   t as o
-} from "./BGd5Vphg.js";
+} from "./BcgqpPa1.js";
 var s, c, l = {
     update: `updates`,
     patch_notes: `patchNotes`

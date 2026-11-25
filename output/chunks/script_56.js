@@ -14,8 +14,8 @@ import {
 } from "./DJf9i38S.js";
 import {
   t as u
-} from "./BGd5Vphg.js";
-import "./CdjMERTI.js";
+} from "./BcgqpPa1.js";
+import "./CL-xWYa0.js";
 var d = `wplace_onboarding_done`,
   f = `wplace_onboarding_experiment`,
   p = 3e3,

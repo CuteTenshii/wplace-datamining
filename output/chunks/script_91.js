@@ -1,17 +1,17 @@
 import {
-  N as e,
-  j as t,
+  A as e,
+  M as t,
   t as n
-} from "./DJmThBi3.js";
+} from "./qrNh1a0A.js";
 var r = `button, a[href], input, select, textarea, label, summary, [contenteditable]:not([contenteditable="false"]), [role="button"], [role="link"], [role="menuitem"], [role="option"], [role="tab"], [role="slider"]`;
 
 function i(i, a, o) {
   let s = new Set,
     c = new Set;
 
-  function l(t) {
-    let n = t.target;
-    return t.pointerType === `touch` || !e(t.button) || !(n instanceof Element) || n.closest(r) ? !1 : n.closest(`dialog`) === ((o == null ? void 0 : o.closest(`dialog`)) ?? null)
+  function l(e) {
+    let n = e.target;
+    return e.pointerType === `touch` || !t(e.button) || !(n instanceof Element) || n.closest(r) ? !1 : n.closest(`dialog`) === ((o == null ? void 0 : o.closest(`dialog`)) ?? null)
   }
 
   function u(e) {
@@ -22,8 +22,8 @@ function i(i, a, o) {
     s.delete(e.button) && (a == null || a(e))
   }
   let f = e => u(e),
-    p = e => {
-      e.button <= 0 || (t(e, e.button) ? u(e) : d(e))
+    p = t => {
+      t.button <= 0 || (e(t, t.button) ? u(t) : d(t))
     },
     m = e => d(e),
     h = () => s.clear(),

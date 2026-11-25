@@ -9,13 +9,15 @@ import {
 } from "./DXDHrD2o.js";
 import {
   Ct as s,
-  P as c,
-  wt as l
-} from "./BGd5Vphg.js";
+  Gt as c,
+  Kt as l,
+  P as u,
+  wt as d
+} from "./BcgqpPa1.js";
 
-function u(e, t) {
+function f(e, t) {
   if (!(e === void 0 && !t.startsWith(`personal-hq:`))) {
-    if (!m(e) || e.type !== `headquarters` || t !== `personal-hq:${e.userId}:${e.allianceId}:${e.overlayId}` || !Number.isSafeInteger(e.userId) || e.userId <= 0 || !Number.isSafeInteger(e.allianceId) || e.allianceId <= 0 || !Number.isSafeInteger(e.overlayId) || e.overlayId >= 0 || !Number.isSafeInteger(e.originX) || !Number.isSafeInteger(e.originY) || typeof e.imageRevision != `string` || !Number.isSafeInteger(e.revision) || ![`normal`, `center`, `diagonal`].includes(String(e.pixelMode))) throw Error(`Invalid overlay canvas.`);
+    if (!g(e) || e.type !== `headquarters` || t !== `personal-hq:${e.userId}:${e.allianceId}:${e.overlayId}` || !Number.isSafeInteger(e.userId) || e.userId <= 0 || !Number.isSafeInteger(e.allianceId) || e.allianceId <= 0 || !Number.isSafeInteger(e.overlayId) || e.overlayId >= 0 || !Number.isSafeInteger(e.originX) || !Number.isSafeInteger(e.originY) || typeof e.imageRevision != `string` || !Number.isSafeInteger(e.revision) || ![`normal`, `center`, `diagonal`].includes(String(e.pixelMode))) throw Error(`Invalid overlay canvas.`);
     return {
       type: `headquarters`,
       userId: e.userId,
@@ -29,63 +31,63 @@ function u(e, t) {
     }
   }
 }
-var d = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
-  f = `template-overlays`,
-  p = `overlay-tag-catalog`;
+var p = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
+  m = c,
+  h = l;
 
-function m(e) {
+function g(e) {
   return typeof e == `object` && !!e
 }
 
-function h(e) {
+function _(e) {
   return typeof e == `number` && Number.isFinite(e)
 }
 
-function g(e) {
+function v(e) {
   return e === `compuphase` || e === `ciede2000` ? e : `lab`
 }
 
-function _(e) {
+function y(e) {
   if (e === `all` || e === `free` || e === `template` || e === `unlocked`) return e
 }
 
-function v(e) {
+function b(e) {
   if (!Array.isArray(e)) return;
-  let t = new Uint8Array(c.colors.length),
+  let t = new Uint8Array(u.colors.length),
     n = [];
   for (let r = 0; r < e.length; r++) {
     let i = e[r];
-    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= c.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
+    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= u.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
   }
   return n.length > 0 ? n : void 0
 }
 
-function y(e) {
+function x(e) {
   return e.normalize(`NFC`).toLowerCase()
 }
 
-function b(e) {
+function S(e) {
   let t = 2166136261;
-  for (let n of y(e)) t ^= n.codePointAt(0) ?? 0, t = Math.imul(t, 16777619);
-  return d[(t >>> 0) % d.length]
+  for (let n of x(e)) t ^= n.codePointAt(0) ?? 0, t = Math.imul(t, 16777619);
+  return p[(t >>> 0) % p.length]
 }
 
-function x(e, t) {
-  return typeof e == `number` && Number.isInteger(e) && e > 0 && e < c.colors.length ? e : b(t)
+function C(e, t) {
+  return typeof e == `number` && Number.isInteger(e) && e > 0 && e < u.colors.length ? e : S(t)
 }
 
-function S(e, t = []) {
+function w(e, t = []) {
   let n = [],
     r = (e, t) => {
       if (typeof e != `string` || n.length >= 64) return;
-      let r = C(e);
-      !r || n.some(e => y(e.name) === y(r)) || n.push({
+      let r = T(e);
+      !r || n.some(e => x(e.name) === x(r)) || n.push({
         name: r,
-        colorIdx: x(t, r)
+        colorIdx: C(t, r)
       })
     };
   if (Array.isArray(e))
-    for (let t of e) m(t) && r(t.name, t.colorIdx);
+    for (let t of e) g(t) && r(t.name, t.colorIdx);
   for (let e of t) {
     let t = e.tags ?? [];
     for (let n = 0; n < t.length; n += 1) {
@@ -96,23 +98,23 @@ function S(e, t = []) {
   return n
 }
 
-function C(e) {
+function T(e) {
   let t = e.normalize(`NFC`).trim().replace(/^(?:#\s*)+/, ``).replace(/\s+/g, `-`).slice(0, 24);
   return /[\uD800-\uDBFF]$/.test(t) ? t.slice(0, -1) : t
 }
 
-function w(e) {
+function E(e) {
   if (!Array.isArray(e)) return [];
   let t = [];
   for (let n of e) {
     if (typeof n != `string`) continue;
-    let e = C(n);
-    if (!(!e || t.some(t => y(t) === y(e))) && (t.push(e), t.length === 8)) break
+    let e = T(n);
+    if (!(!e || t.some(t => x(t) === x(e))) && (t.push(e), t.length === 8)) break
   }
   return t
 }
 
-function T(e, t) {
+function D(e, t) {
   if (!Array.isArray(e)) return {
     tags: [],
     tagColorIdxs: []
@@ -123,8 +125,8 @@ function T(e, t) {
   for (let t = 0; t < e.length; t += 1) {
     let a = e[t];
     if (typeof a != `string`) continue;
-    let o = C(a);
-    if (!(!o || r.some(e => y(e) === y(o))) && (r.push(o), i.push(x(n[t], o)), r.length === 8)) break
+    let o = T(a);
+    if (!(!o || r.some(e => x(e) === x(o))) && (r.push(o), i.push(C(n[t], o)), r.length === 8)) break
   }
   return {
     tags: r,
@@ -132,13 +134,13 @@ function T(e, t) {
   }
 }
 
-function E(e) {
-  if (!m(e)) return null;
+function O(e) {
+  if (!g(e)) return null;
   let t = e.north,
     n = e.south,
     r = e.west,
     i = e.east;
-  return !h(t) || !h(n) || !h(r) || !h(i) ? null : {
+  return !_(t) || !_(n) || !_(r) || !_(i) ? null : {
     north: t,
     south: n,
     west: r,
@@ -146,29 +148,29 @@ function E(e) {
   }
 }
 
-function D(e, t) {
-  if (!m(e)) return null;
+function k(e, t) {
+  if (!g(e)) return null;
   let n = e.id,
     r = e.name,
-    i = E(e.bounds),
+    i = O(e.bounds),
     a = e.originalWidth,
     o = e.originalHeight,
     s = e.opacity,
     c = e.visible,
     l = e.order;
-  if (typeof n != `string` || n.length === 0 || typeof r != `string` || !i || !h(a) || !h(o) || !h(s) || !h(l) || typeof c != `boolean`) return null;
-  let d = typeof e.locked == `boolean` && e.locked,
-    f = g(e.colorMetric),
+  if (typeof n != `string` || n.length === 0 || typeof r != `string` || !i || !_(a) || !_(o) || !_(s) || !_(l) || typeof c != `boolean`) return null;
+  let u = typeof e.locked == `boolean` && e.locked,
+    d = v(e.colorMetric),
     p = typeof e.dithering == `boolean` && e.dithering,
-    y = e.useLegacyColors === !0,
-    b = _(e.colorPaletteMode),
-    x = v(e.templateColorIdxs),
+    m = e.useLegacyColors === !0,
+    h = y(e.colorPaletteMode),
+    x = b(e.templateColorIdxs),
     {
       tags: S,
       tagColorIdxs: C
-    } = T(e.tags, e.tagColorIdxs),
+    } = D(e.tags, e.tagColorIdxs),
     w = typeof e.hasPlaced != `boolean` || e.hasPlaced,
-    D = h(e.updatedAt) ? e.updatedAt : t;
+    T = _(e.updatedAt) ? e.updatedAt : t;
   return {
     id: n,
     name: r,
@@ -177,27 +179,27 @@ function D(e, t) {
     originalHeight: o,
     opacity: s,
     visible: c,
-    locked: d,
-    colorMetric: f,
+    locked: u,
+    colorMetric: d,
     dithering: p,
-    useLegacyColors: y,
-    colorPaletteMode: b,
+    useLegacyColors: m,
+    colorPaletteMode: h,
     templateColorIdxs: x,
     tags: S.length > 0 ? S : void 0,
     tagColorIdxs: C.length > 0 ? C : void 0,
     order: l,
     hasPlaced: w,
-    updatedAt: D,
-    canvas: u(e.canvas, n)
+    updatedAt: T,
+    canvas: f(e.canvas, n)
   }
 }
 
-function O(e, t = Date.now()) {
+function A(e, t = Date.now()) {
   let n = JSON.parse(e);
   if (!Array.isArray(n)) return null;
   let r = [];
   for (let e = 0; e < n.length; e++) try {
-    let i = D(n[e], t);
+    let i = k(n[e], t);
     i && r.push(i)
   } catch {}
   let i = JSON.stringify(r);
@@ -207,34 +209,34 @@ function O(e, t = Date.now()) {
     migrated: i !== e
   }
 }
-var k = new WeakMap,
-  A = new WeakMap,
-  j = new WeakMap,
+var j = new WeakMap,
   M = new WeakMap,
-  N = new class {
+  N = new WeakMap,
+  P = new WeakMap,
+  F = new class {
     get templates() {
-      return a(r(k, this))
-    }
-    set templates(t) {
-      e(r(k, this), t, !0)
-    }
-    get tagCatalog() {
-      return a(r(A, this))
-    }
-    set tagCatalog(t) {
-      e(r(A, this), t, !0)
-    }
-    get activeTemplateId() {
       return a(r(j, this))
     }
-    set activeTemplateId(t) {
+    set templates(t) {
       e(r(j, this), t, !0)
     }
-    get placementSession() {
+    get tagCatalog() {
       return a(r(M, this))
     }
-    set placementSession(t) {
+    set tagCatalog(t) {
       e(r(M, this), t, !0)
+    }
+    get activeTemplateId() {
+      return a(r(N, this))
+    }
+    set activeTemplateId(t) {
+      e(r(N, this), t, !0)
+    }
+    get placementSession() {
+      return a(r(P, this))
+    }
+    set placementSession(t) {
+      e(r(P, this), t, !0)
     }
     subscribeChange(e) {
       return this.changeListeners.add(e), () => this.changeListeners.delete(e)
@@ -247,35 +249,35 @@ var k = new WeakMap,
       }
     }
     constructor() {
-      i(this, k, t(n([]))), i(this, A, t(n([]))), i(this, j, t(null)), i(this, M, t(!1)), o(this, `suppressPersist`, !1), o(this, `persistTimeout`, null), o(this, `changeListeners`, new Set), o(this, `flushPersist`, () => {
-        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(f, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(p, JSON.stringify(this.tagCatalog)))
+      i(this, j, t(n([]))), i(this, M, t(n([]))), i(this, N, t(null)), i(this, P, t(!1)), o(this, `suppressPersist`, !1), o(this, `persistTimeout`, null), o(this, `changeListeners`, new Set), o(this, `flushPersist`, () => {
+        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(m, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(h, JSON.stringify(this.tagCatalog)))
       });
       {
-        let e = localStorage.getItem(f);
+        let e = localStorage.getItem(m);
         if (e) try {
-          let t = O(e);
+          let t = A(e);
           if (!t) {
-            localStorage.removeItem(f);
+            localStorage.removeItem(m);
             return
           }
           if (this.templates = t.templates, t.migrated) try {
-            localStorage.setItem(f, t.serialized)
+            localStorage.setItem(m, t.serialized)
           } catch (e) {
             console.error(`Failed to persist migrated overlay metadata.`, e)
           }
         } catch {
-          localStorage.removeItem(f)
+          localStorage.removeItem(m)
         }
-        let t = localStorage.getItem(p),
+        let t = localStorage.getItem(h),
           n = [];
         if (t) try {
           n = JSON.parse(t)
         } catch {
-          localStorage.removeItem(p)
+          localStorage.removeItem(h)
         }
-        this.tagCatalog = S(n, this.templates), this.alignTemplateTagColors();
+        this.tagCatalog = w(n, this.templates), this.alignTemplateTagColors();
         try {
-          localStorage.setItem(p, JSON.stringify(this.tagCatalog))
+          localStorage.setItem(h, JSON.stringify(this.tagCatalog))
         } catch (e) {
           console.error(`Failed to persist the overlay tag catalog.`, e)
         }
@@ -288,19 +290,19 @@ var k = new WeakMap,
         var n;
         (n = e.tags) != null && n.length && (e.tagColorIdxs = e.tags.map(e => {
           var t;
-          return ((t = this.tagCatalog.find(t => y(t.name) === y(e))) == null ? void 0 : t.colorIdx) ?? b(e)
+          return ((t = this.tagCatalog.find(t => x(t.name) === x(e))) == null ? void 0 : t.colorIdx) ?? S(e)
         }))
       }
     }
     ensureTemplateTags(e) {
-      let t = S(this.tagCatalog, [e]);
+      let t = w(this.tagCatalog, [e]);
       t.length !== this.tagCatalog.length && (this.tagCatalog = t), this.alignTemplateTagColors(e)
     }
     persist() {
       this.suppressPersist || (this.persistTimeout !== null && window.clearTimeout(this.persistTimeout), this.persistTimeout = window.setTimeout(this.flushPersist, 120))
     }
     commitPendingChanges() {
-      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(f, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(p, JSON.stringify(this.tagCatalog))
+      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(m, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(h, JSON.stringify(this.tagCatalog))
     }
     replaceServerManaged(e) {
       let t = this.templates.filter(e => e.serverManaged);
@@ -311,7 +313,7 @@ var k = new WeakMap,
     add(e) {
       this.ensureTemplateTags(e);
       for (let e of this.templates) e.order++;
-      e.order = 0, h(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
+      e.order = 0, _(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
         kind: `add`,
         id: e.id
       })
@@ -336,24 +338,24 @@ var k = new WeakMap,
       }))
     }
     createTag(e, t) {
-      let n = C(e);
-      return !n || this.tagCatalog.length >= 64 || this.tagCatalog.some(e => y(e.name) === y(n)) ? !1 : (this.tagCatalog = [...this.tagCatalog, {
+      let n = T(e);
+      return !n || this.tagCatalog.length >= 64 || this.tagCatalog.some(e => x(e.name) === x(n)) ? !1 : (this.tagCatalog = [...this.tagCatalog, {
         name: n,
-        colorIdx: x(t, n)
+        colorIdx: C(t, n)
       }], this.persist(), !0)
     }
     updateTag(e, t, n) {
-      let r = y(e),
-        i = this.tagCatalog.findIndex(e => y(e.name) === r),
-        a = C(t);
-      if (i === -1 || !a || this.tagCatalog.some((e, t) => t !== i && y(e.name) === y(a))) return !1;
-      let o = x(n, a),
+      let r = x(e),
+        i = this.tagCatalog.findIndex(e => x(e.name) === r),
+        a = T(t);
+      if (i === -1 || !a || this.tagCatalog.some((e, t) => t !== i && x(e.name) === x(a))) return !1;
+      let o = C(n, a),
         s = Date.now();
       for (let e of this.templates) {
         var c;
-        e.serverManaged || !((c = e.tags) != null && c.some(e => y(e) === r)) || (e.tags = e.tags.map(e => y(e) === r ? a : e), e.tagColorIdxs = e.tags.map((t, n) => {
+        e.serverManaged || !((c = e.tags) != null && c.some(e => x(e) === r)) || (e.tags = e.tags.map(e => x(e) === r ? a : e), e.tagColorIdxs = e.tags.map((t, n) => {
           var r;
-          return y(t) === y(a) ? o : ((r = e.tagColorIdxs) == null ? void 0 : r[n]) ?? b(t)
+          return x(t) === x(a) ? o : ((r = e.tagColorIdxs) == null ? void 0 : r[n]) ?? S(t)
         }), e.updatedAt = s, this.emitChange({
           kind: `update`,
           id: e.id
@@ -365,21 +367,21 @@ var k = new WeakMap,
       }, this.tagCatalog = [...this.tagCatalog], this.persist(), !0
     }
     deleteTag(e) {
-      let t = y(e);
-      if (!this.tagCatalog.some(e => y(e.name) === t)) return !1;
-      this.tagCatalog = this.tagCatalog.filter(e => y(e.name) !== t);
+      let t = x(e);
+      if (!this.tagCatalog.some(e => x(e.name) === t)) return !1;
+      this.tagCatalog = this.tagCatalog.filter(e => x(e.name) !== t);
       let n = Date.now();
       for (let e of this.templates) {
         var r;
-        if (e.serverManaged || !((r = e.tags) != null && r.some(e => y(e) === t))) continue;
+        if (e.serverManaged || !((r = e.tags) != null && r.some(e => x(e) === t))) continue;
         let i = e.tags.map((t, n) => {
           var r;
           return {
             tag: t,
             colorIdx: (r = e.tagColorIdxs) == null ? void 0 : r[n]
           }
-        }).filter(e => y(e.tag) !== t);
-        e.tags = i.length > 0 ? i.map(e => e.tag) : void 0, e.tagColorIdxs = i.length > 0 ? i.map(e => e.colorIdx ?? b(e.tag)) : void 0, e.updatedAt = n, this.emitChange({
+        }).filter(e => x(e.tag) !== t);
+        e.tags = i.length > 0 ? i.map(e => e.tag) : void 0, e.tagColorIdxs = i.length > 0 ? i.map(e => e.colorIdx ?? S(e.tag)) : void 0, e.updatedAt = n, this.emitChange({
           kind: `update`,
           id: e.id
         })
@@ -404,7 +406,7 @@ var k = new WeakMap,
       return Array.isArray(this.templates) ? [...this.templates].sort((e, t) => e.order - t.order) : []
     }
   },
-  P;
+  I;
 (function(e) {
   async function t(e) {
     return {
@@ -421,7 +423,7 @@ var k = new WeakMap,
     return {
       ...e,
       image: {
-        data: l(e.image.dataUrl),
+        data: d(e.image.dataUrl),
         width: e.image.width,
         height: e.image.height
       },
@@ -429,7 +431,7 @@ var k = new WeakMap,
     }
   }
   e.fromJson = n
-})(P || (P = {}));
+})(I || (I = {}));
 export {
-  w as a, u as c, T as i, b as n, N as o, C as r, y as s, P as t
+  E as a, f as c, D as i, S as n, F as o, T as r, x as s, I as t
 };

@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./2JPk1pOh.js", "./DXDHrD2o.js", "./C700c0sh.js", "./pKOrQQBa.js", "./DLjVt9Xl.js", "./BDSAKmyU.js", "./BjfSTdKe.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./DXRBWQe8.js", "./DXDHrD2o.js", "./Chgt2Qzm.js", "./pKOrQQBa.js", "./Ui-vQpLj.js", "./D7_pdS6t.js", "./B5-oMW_L.js"]))) => i.map(i => d[i]);
 import {
   Bt as e,
   Ft as t,
@@ -14,7 +14,7 @@ import {
 } from "./DXDHrD2o.js";
 import {
   o as d
-} from "./C700c0sh.js";
+} from "./Chgt2Qzm.js";
 import {
   n as f,
   t as p
@@ -26,13 +26,13 @@ import {
 } from "./pKOrQQBa.js";
 import {
   r as ne
-} from "./mJPBZGd3.js";
+} from "./oudcyVv4.js";
 import {
   n as h
 } from "./BOiCmQqh.js";
 import {
   t as g
-} from "./BjfSTdKe.js";
+} from "./B5-oMW_L.js";
 import {
   i as re,
   r as ie
@@ -69,7 +69,20 @@ function de(e) {
   let t = se;
   return e && Math.abs(e.maxFavoriteLocations) === 1 / 0 && (t |= oe.TamperedProfileLimits), t
 }
-var fe = `2.0.0`,
+var fe = `template-overlays`,
+  pe = `overlay-tag-catalog`,
+  me = `overlay-pixel-mode`,
+  he = `overlay-persistent-storage-status`,
+  ge = `alliance-asset-editor:brush-size`,
+  _e = `wplace-templates`,
+  ve = `ui_layout_v3`,
+  ye = `nav.cursor`,
+  be = `_pf_uid`,
+  xe = new Set([fe, pe, me, he, ge, ve]),
+  Se = new Set([ye]),
+  Ce = new Set([be]),
+  we = new Set([_e]),
+  Te = `2.0.0`,
   _ = {
     Awesomium: `awesomium`,
     Cef: `cef`,
@@ -96,7 +109,7 @@ var fe = `2.0.0`,
     }
   };
 
-function pe(e, t) {
+function Ee(e, t) {
   let n = {},
     r = {
       bot: !1
@@ -117,7 +130,7 @@ function pe(e, t) {
   }
   return [n, r]
 }
-async function me(e) {
+async function De(e) {
   let t = {},
     n = Object.keys(e);
   return await Promise.all(n.map(async n => {
@@ -139,7 +152,7 @@ async function me(e) {
   })), t
 }
 
-function he({
+function Oe({
   appVersion: e
 }) {
   if (e.state !== 0) return !1;
@@ -148,7 +161,7 @@ function he({
   if (/slimerjs/i.test(e.value)) return _.SlimerJS
 }
 
-function ge(e, t) {
+function ke(e, t) {
   return e.indexOf(t) !== -1
 }
 
@@ -156,71 +169,71 @@ function y(e, t) {
   return e.indexOf(t) !== -1
 }
 
-function _e(e, t) {
+function Ae(e, t) {
   if (`find` in e) return e.find(t);
   for (let n = 0; n < e.length; n++)
     if (t(e[n], n, e)) return e[n]
 }
 
-function ve(e) {
+function je(e) {
   return Object.getOwnPropertyNames(e)
 }
 
-function ye(e, ...t) {
+function Me(e, ...t) {
   for (let n of t)
     if (typeof n == `string`) {
-      if (ge(e, n)) return !0
-    } else if (_e(e, e => n.test(e)) != null) return !0;
+      if (ke(e, n)) return !0
+    } else if (Ae(e, e => n.test(e)) != null) return !0;
   return !1
 }
 
-function be(e) {
+function Ne(e) {
   return e.reduce((e, t) => e + +!!t, 0)
 }
 
-function xe({
+function Pe({
   documentElementKeys: e
 }) {
   if (e.state !== 0) return !1;
-  if (ye(e.value, `selenium`, `webdriver`, `driver`)) return _.Selenium
+  if (Me(e.value, `selenium`, `webdriver`, `driver`)) return _.Selenium
 }
 
-function Se({
+function Fe({
   errorTrace: e
 }) {
   if (e.state !== 0) return !1;
   if (/PhantomJS/i.test(e.value)) return _.PhantomJS
 }
 
-function Ce({
+function Ie({
   evalLength: e,
   browserKind: t,
   browserEngineKind: n
 }) {
   if (e.state !== 0 || t.state !== 0 || n.state !== 0) return;
   let r = e.value;
-  return n.value === `unknown` ? !1 : r === 37 && !ge([`webkit`, `gecko`], n.value) || r === 39 && !ge([`internet_explorer`], t.value) || r === 33 && !ge([`chromium`], n.value)
+  return n.value === `unknown` ? !1 : r === 37 && !ke([`webkit`, `gecko`], n.value) || r === 39 && !ke([`internet_explorer`], t.value) || r === 33 && !ke([`chromium`], n.value)
 }
 
-function we({
+function Le({
   functionBind: e
 }) {
   if (e.state === -2) return _.PhantomJS
 }
 
-function Te({
+function Re({
   languages: e
 }) {
   if (e.state === 0 && e.value.length === 0) return _.HeadlessChrome
 }
 
-function Ee({
+function ze({
   mimeTypesConsistent: e
 }) {
   if (e.state === 0 && !e.value) return _.Unknown
 }
 
-function De({
+function Be({
   notificationPermissions: e,
   browserKind: t
 }) {
@@ -228,13 +241,13 @@ function De({
   if (e.state === 0 && e.value) return _.HeadlessChrome
 }
 
-function Oe({
+function Ve({
   pluginsArray: e
 }) {
   if (e.state === 0 && !e.value) return _.HeadlessChrome
 }
 
-function ke({
+function He({
   pluginsLength: e,
   android: t,
   browserKind: n,
@@ -243,7 +256,7 @@ function ke({
   if (e.state === 0 && t.state === 0 && n.state === 0 && r.state === 0 && !(n.value !== `chrome` || t.value || r.value !== `chromium`) && e.value === 0) return _.HeadlessChrome
 }
 
-function Ae({
+function Ue({
   process: e
 }) {
   var t;
@@ -251,7 +264,7 @@ function Ae({
   if (e.value.type === `renderer` || ((t = e.value.versions) == null ? void 0 : t.electron) != null) return _.Electron
 }
 
-function je({
+function We({
   productSub: e,
   browserKind: t
 }) {
@@ -259,7 +272,7 @@ function je({
   if ((t.value === `chrome` || t.value === `safari` || t.value === `opera` || t.value === `wechat`) && e.value !== `20030107`) return _.Unknown
 }
 
-function Me({
+function Ge({
   userAgent: e
 }) {
   if (e.state !== 0) return !1;
@@ -269,13 +282,13 @@ function Me({
   if (/slimerjs/i.test(e.value)) return _.SlimerJS
 }
 
-function Ne({
+function Ke({
   webDriver: e
 }) {
   if (e.state === 0 && e.value) return _.HeadlessChrome
 }
 
-function Pe({
+function qe({
   webGL: e
 }) {
   if (e.state === 0) {
@@ -287,14 +300,14 @@ function Pe({
   }
 }
 
-function Fe({
+function Je({
   windowExternal: e
 }) {
   if (e.state !== 0) return !1;
   if (/Sequentum/i.test(e.value)) return _.Sequentum
 }
 
-function Ie({
+function Ye({
   windowSize: e,
   documentFocus: t
 }) {
@@ -306,7 +319,7 @@ function Ie({
   if (t.value && n === 0 && r === 0) return _.HeadlessChrome
 }
 
-function Le({
+function Xe({
   distinctiveProps: e
 }) {
   if (e.state !== 0) return !1;
@@ -315,34 +328,34 @@ function Le({
   for (n in t)
     if (t[n]) return n
 }
-var Re = {
-  detectAppVersion: he,
-  detectDocumentAttributes: xe,
-  detectErrorTrace: Se,
-  detectEvalLengthInconsistency: Ce,
-  detectFunctionBind: we,
-  detectLanguagesLengthInconsistency: Te,
-  detectNotificationPermissions: De,
-  detectPluginsArray: Oe,
-  detectPluginsLengthInconsistency: ke,
-  detectProcess: Ae,
-  detectUserAgent: Me,
-  detectWebDriver: Ne,
-  detectWebGL: Pe,
-  detectWindowExternal: Fe,
-  detectWindowSize: Ie,
-  detectMimeTypesConsistent: Ee,
-  detectProductSub: je,
-  detectDistinctiveProperties: Le
+var Ze = {
+  detectAppVersion: Oe,
+  detectDocumentAttributes: Pe,
+  detectErrorTrace: Fe,
+  detectEvalLengthInconsistency: Ie,
+  detectFunctionBind: Le,
+  detectLanguagesLengthInconsistency: Re,
+  detectNotificationPermissions: Be,
+  detectPluginsArray: Ve,
+  detectPluginsLengthInconsistency: He,
+  detectProcess: Ue,
+  detectUserAgent: Ge,
+  detectWebDriver: Ke,
+  detectWebGL: qe,
+  detectWindowExternal: Je,
+  detectWindowSize: Ye,
+  detectMimeTypesConsistent: ze,
+  detectProductSub: We,
+  detectDistinctiveProperties: Xe
 };
 
-function ze() {
+function Qe() {
   let e = navigator.appVersion;
   if (e == null) throw new v(-1, `navigator.appVersion is undefined`);
   return e
 }
 
-function Be() {
+function $e() {
   if (document.documentElement === void 0) throw new v(-1, `document.documentElement is undefined`);
   let {
     documentElement: e
@@ -351,7 +364,7 @@ function Be() {
   return e.getAttributeNames()
 }
 
-function Ve() {
+function et() {
   try {
     null[0]()
   } catch (e) {
@@ -360,52 +373,52 @@ function Ve() {
   throw new v(-3, `errorTrace signal unexpected behaviour`)
 }
 
-function He() {
+function tt() {
   return eval.toString().length
 }
 
-function Ue() {
+function nt() {
   if (Function.prototype.bind === void 0) throw new v(-2, `Function.prototype.bind is undefined`);
   return Function.prototype.bind.toString()
 }
 
-function We() {
+function rt() {
   var e;
   let t = window,
     n = navigator;
-  return be([`webkitPersistentStorage` in n, `webkitTemporaryStorage` in n, n.vendor.indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in t, `BatteryManager` in t, `webkitMediaStream` in t, `webkitSpeechGrammar` in t]) >= 5 ? `chromium` : be([`ApplePayError` in t, `CSSPrimitiveValue` in t, `Counter` in t, n.vendor.indexOf(`Apple`) === 0, `getStorageUpdates` in n, `WebKitMediaKeys` in t]) >= 4 ? `webkit` : be([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4 ? `gecko` : `unknown`
+  return Ne([`webkitPersistentStorage` in n, `webkitTemporaryStorage` in n, n.vendor.indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in t, `BatteryManager` in t, `webkitMediaStream` in t, `webkitSpeechGrammar` in t]) >= 5 ? `chromium` : Ne([`ApplePayError` in t, `CSSPrimitiveValue` in t, `Counter` in t, n.vendor.indexOf(`Apple`) === 0, `getStorageUpdates` in n, `WebKitMediaKeys` in t]) >= 4 ? `webkit` : Ne([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4 ? `gecko` : `unknown`
 }
 
-function Ge() {
+function it() {
   var e;
   let t = (e = navigator.userAgent) == null ? void 0 : e.toLowerCase();
   return y(t, `edg/`) ? `edge` : y(t, `trident`) || y(t, `msie`) ? `internet_explorer` : y(t, `wechat`) ? `wechat` : y(t, `firefox`) ? `firefox` : y(t, `opera`) || y(t, `opr`) ? `opera` : y(t, `chrome`) ? `chrome` : y(t, `safari`) ? `safari` : `unknown`
 }
 
-function Ke() {
-  let e = We(),
+function at() {
+  let e = rt(),
     t = e === `chromium`,
     n = e === `gecko`,
     r = window,
     i = navigator,
     a = `connection`;
-  return t ? be([!(`SharedWorker` in r), i[a] && `ontypechange` in i[a], !(`sinkId` in new Audio)]) >= 2 : n ? be([`onorientationchange` in r, `orientation` in r, /android/i.test(i.appVersion)]) >= 2 : !1
+  return t ? Ne([!(`SharedWorker` in r), i[a] && `ontypechange` in i[a], !(`sinkId` in new Audio)]) >= 2 : n ? Ne([`onorientationchange` in r, `orientation` in r, /android/i.test(i.appVersion)]) >= 2 : !1
 }
 
-function qe() {
+function ot() {
   return document.hasFocus !== void 0 && document.hasFocus()
 }
 
-function Je() {
+function st() {
   let e = window;
-  return be([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
+  return Ne([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
 }
 
-function Ye() {
+function ct() {
   let e = navigator,
     t = [],
     n = e.language || e.userLanguage || e.browserLanguage || e.systemLanguage;
-  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) We() === `chromium` && Je() || t.push(e.languages);
+  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) rt() === `chromium` && st() || t.push(e.languages);
   else if (typeof e.languages == `string`) {
     let n = e.languages;
     n && t.push(n.split(`,`))
@@ -413,7 +426,7 @@ function Ye() {
   return t
 }
 
-function Xe() {
+function lt() {
   if (navigator.mimeTypes === void 0) throw new v(-1, `navigator.mimeTypes is undefined`);
   let {
     mimeTypes: e
@@ -421,7 +434,7 @@ function Xe() {
   for (let n = 0; n < e.length; n++) t && (t = Object.getPrototypeOf(e[n]) === MimeType.prototype);
   return t
 }
-async function Ze() {
+async function ut() {
   if (window.Notification === void 0) throw new v(-1, `window.Notification is undefined`);
   if (navigator.permissions === void 0) throw new v(-1, `navigator.permissions is undefined`);
   let {
@@ -438,19 +451,19 @@ async function Ze() {
   }
 }
 
-function Qe() {
+function dt() {
   if (navigator.plugins === void 0) throw new v(-1, `navigator.plugins is undefined`);
   if (window.PluginArray === void 0) throw new v(-1, `window.PluginArray is undefined`);
   return navigator.plugins instanceof PluginArray
 }
 
-function $e() {
+function ft() {
   if (navigator.plugins === void 0) throw new v(-1, `navigator.plugins is undefined`);
   if (navigator.plugins.length === void 0) throw new v(-3, `navigator.plugins.length is undefined`);
   return navigator.plugins.length
 }
 
-function et() {
+function pt() {
   let {
     process: e
   } = window, t = `window.process is`;
@@ -459,7 +472,7 @@ function et() {
   return e
 }
 
-function tt() {
+function mt() {
   let {
     productSub: e
   } = navigator;
@@ -467,22 +480,22 @@ function tt() {
   return e
 }
 
-function nt() {
+function ht() {
   if (navigator.connection === void 0) throw new v(-1, `navigator.connection is undefined`);
   if (navigator.connection.rtt === void 0) throw new v(-1, `navigator.connection.rtt is undefined`);
   return navigator.connection.rtt
 }
 
-function rt() {
+function gt() {
   return navigator.userAgent
 }
 
-function it() {
+function _t() {
   if (navigator.webdriver == null) throw new v(-1, `navigator.webdriver is undefined`);
   return navigator.webdriver
 }
 
-function at() {
+function vt() {
   let e = document.createElement(`canvas`);
   if (typeof e.getContext != `function`) throw new v(-2, `HTMLCanvasElement.getContext is not a function`);
   let t = e.getContext(`webgl`);
@@ -494,7 +507,7 @@ function at() {
   }
 }
 
-function ot() {
+function yt() {
   if (window.external === void 0) throw new v(-1, `window.external is undefined`);
   let {
     external: e
@@ -503,7 +516,7 @@ function ot() {
   return e.toString()
 }
 
-function st() {
+function bt() {
   return {
     outerWidth: window.outerWidth,
     outerHeight: window.outerHeight,
@@ -512,7 +525,7 @@ function st() {
   }
 }
 
-function ct() {
+function xt() {
   let e = {
       [_.Awesomium]: {
         window: [`awesomium`]
@@ -560,44 +573,44 @@ function ct() {
       }
     },
     t, n = {},
-    r = ve(window),
+    r = je(window),
     i = [];
-  for (t in window.document !== void 0 && (i = ve(window.document)), e) {
+  for (t in window.document !== void 0 && (i = je(window.document)), e) {
     let a = e[t];
     if (a !== void 0) {
-      let e = a.window !== void 0 && ye(r, ...a.window),
-        o = a.document === void 0 || !i.length ? !1 : ye(i, ...a.document);
+      let e = a.window !== void 0 && Me(r, ...a.window),
+        o = a.document === void 0 || !i.length ? !1 : Me(i, ...a.document);
       n[t] = e || o
     }
   }
   return n
 }
-var lt = {
-    android: Ke,
-    browserKind: Ge,
-    browserEngineKind: We,
-    documentFocus: qe,
-    userAgent: rt,
-    appVersion: ze,
-    rtt: nt,
-    windowSize: st,
-    pluginsLength: $e,
-    pluginsArray: Qe,
-    errorTrace: Ve,
-    productSub: tt,
-    windowExternal: ot,
-    mimeTypesConsistent: Xe,
-    evalLength: He,
-    webGL: at,
-    webDriver: it,
-    languages: Ye,
-    notificationPermissions: Ze,
-    documentElementKeys: Be,
-    functionBind: Ue,
-    process: et,
-    distinctiveProps: ct
+var St = {
+    android: at,
+    browserKind: it,
+    browserEngineKind: rt,
+    documentFocus: ot,
+    userAgent: gt,
+    appVersion: Qe,
+    rtt: ht,
+    windowSize: bt,
+    pluginsLength: ft,
+    pluginsArray: dt,
+    errorTrace: et,
+    productSub: mt,
+    windowExternal: yt,
+    mimeTypesConsistent: lt,
+    evalLength: tt,
+    webGL: vt,
+    webDriver: _t,
+    languages: ct,
+    notificationPermissions: ut,
+    documentElementKeys: $e,
+    functionBind: nt,
+    process: pt,
+    distinctiveProps: xt
   },
-  ut = class {
+  Ct = class {
     constructor() {
       this.components = void 0, this.detections = void 0
     }
@@ -609,36 +622,36 @@ var lt = {
     }
     detect() {
       if (this.components === void 0) throw Error(`BotDetector.detect can't be called before BotDetector.collect`);
-      let [e, t] = pe(this.components, Re);
+      let [e, t] = Ee(this.components, Ze);
       return this.detections = e, t
     }
     async collect() {
-      return this.components = await me(lt), this.components
+      return this.components = await De(St), this.components
     }
   };
 
-function dt() {
+function wt() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     let e = new XMLHttpRequest;
-    e.open(`get`, `https://m1.openfpcdn.io/botd/v${fe}/npm-monitoring`, !0), e.send()
+    e.open(`get`, `https://m1.openfpcdn.io/botd/v${Te}/npm-monitoring`, !0), e.send()
   } catch (e) {
     console.error(e)
   }
 }
-async function ft({
+async function Tt({
   monitoring: e = !0
 } = {}) {
-  e && dt();
-  let t = new ut;
+  e && wt();
+  let t = new Ct;
   return await t.collect(), t
 }
-var pt = null;
-async function mt() {
-  return await ht() ? {
+var Et = null;
+async function Dt() {
+  return await Ot() ? {
     bot: !1
-  } : (await gt()).detect()
+  } : (await kt()).detect()
 }
-async function ht() {
+async function Ot() {
   var e;
   let t = navigator;
   if (!((e = t.brave) != null && e.isBrave) || !/Android|iPhone|iPad|iPod|Mobile/i.test(t.userAgent)) return !1;
@@ -649,42 +662,42 @@ async function ht() {
   }
 }
 
-function gt() {
-  return pt || (pt = ft({
+function kt() {
+  return Et || (Et = Tt({
     monitoring: !1
-  })), pt
+  })), Et
 }
-_t.listeners = [], _t.createListener = e => () => {
+At.listeners = [], At.createListener = e => () => {
   let t = e(),
     n = {};
   for (let e in t) n[e] = t[e]();
   Object.assign(window, n)
-}, _t.init = () => _t.listeners.forEach(e => e());
+}, At.init = () => At.listeners.forEach(e => e());
 
-function _t(e) {}
-var vt = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
+function At(e) {}
+var jt = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
 
-function yt() {
-  return !bt() && vt.test(navigator.userAgent)
+function Mt() {
+  return !Nt() && jt.test(navigator.userAgent)
 }
 
-function bt() {
+function Nt() {
   var e, t;
   return !!((e = window.Capacitor) != null && (t = e.isNativePlatform) != null && t.call(e))
 }
 
-function xt(e = void 0) {
+function Pt(e = void 0) {
   let t = (e == null ? void 0 : e.userAgent) ?? navigator.userAgent,
     n = (e == null ? void 0 : e.vendor) ?? navigator.vendor;
   return `brave` in navigator ? `Brave` : /\bEdg(?:e|A|iOS)?\//.test(t) ? `Edge` : /\bOPR\/|\bOpera\//.test(t) ? `Opera` : /\bVivaldi\//.test(t) ? `Vivaldi` : /\bYaBrowser\//.test(t) ? `Yandex` : /\bSamsungBrowser\//.test(t) ? `Samsung Internet` : /\bUCBrowser\/|\bUCWEB\//.test(t) ? `UC Browser` : /\bDuckDuckGo\/|\bDdg\//.test(t) ? `DuckDuckGo` : getComputedStyle(document.documentElement).getPropertyValue(`--arc-palette-title`) ? `Arc` : /Firefox\/|FxiOS\//.test(t) ? `Firefox` : /Chrome\/|CriOS\//.test(t) && /google/i.test(n) ? `Chrome` : /Safari\//.test(t) && /apple/i.test(n) ? `Safari` : `Unknown`
 }
-var St = void 0;
+var Ft = void 0;
 
-function Ct() {
-  return St || (St = wt()), St
+function It() {
+  return Ft || (Ft = Lt()), Ft
 }
 
-function wt() {
+function Lt() {
   let e = 0,
     t = [].constructor;
   try {
@@ -703,7 +716,7 @@ function wt() {
       return `Unknown`
   }
 }
-async function Tt() {
+async function Rt() {
   let e;
   try {
     e = document.createElement(`canvas`);
@@ -711,8 +724,8 @@ async function Tt() {
       willReadFrequently: !1
     });
     if (!t) throw Error(`canvas context blocked`);
-    let n = Dt.replace(/!important/gm, ``);
-    Ot({
+    let n = Bt.replace(/!important/gm, ``);
+    Vt({
       canvas: e,
       context: t,
       area: {
@@ -732,14 +745,14 @@ async function Tt() {
     console.error(e);
     return
   } finally {
-    Et(e)
+    zt(e)
   }
 }
 
-function Et(e) {
+function zt(e) {
   e && (e.width = 0, e.height = 0, e.remove())
 }
-var Dt = `
+var Bt = `
 	'Segoe Fluent Icons',
 	'Ink Free',
 	'Bahnschrift',
@@ -790,7 +803,7 @@ var Dt = `
 	'Noto Color Emoji',
 	sans-serif !important
 `,
-  Ot = ({
+  Vt = ({
     canvas: e,
     context: t,
     strokeText: n = !1,
@@ -863,20 +876,20 @@ var Dt = `
       } = n;
       e.beginPath(), e.ellipse(d(r(), t, i), d(r(), t, a), d(r(), t, Math.floor(i / 2)), d(r(), t, Math.floor(a / 2)), d(r(), t, 2 * Math.PI, !0), d(r(), t, 2 * Math.PI, !0), d(r(), t, 2 * Math.PI, !0)), e.stroke()
     }, g = [ee, te, ne];
-    Ct() !== `WebKit` && g.push(h), n && g.push(m), [...Array(a)].forEach(e => {
+    It() !== `WebKit` && g.push(h), n && g.push(m), [...Array(a)].forEach(e => {
       f(t, c, i, p, u), t.shadowBlur = d(u(), c, o, !0), t.shadowColor = p[d(u(), c, p.length)];
       let n = g[d(u(), c, g.length)];
       n(t, c, i, u), t.fill()
     })
   },
-  kt = {
+  Ht = {
     7: [`Cambria Math`, `Lucida Console`],
     8: [`Aldhabi`, `Gadugi`, `Myanmar Text`, `Nirmala UI`],
     "8.1": [`Leelawadee UI`, `Javanese Text`, `Segoe UI Emoji`],
     10: [`HoloLens MDL2 Assets`, `Segoe MDL2 Assets`, `Bahnschrift`, `Ink Free`],
     11: [`Segoe Fluent Icons`]
   },
-  At = {
+  Ut = {
     "10.9": [`Helvetica Neue`, `Geneva`],
     "10.10": [`Kohinoor Devanagari Medium`, `Luminari`],
     "10.11": [`PingFang HK Light`],
@@ -886,37 +899,37 @@ var Dt = `
     12: [`Noto Sans Gunjala Gondi Regular`, `Noto Sans Masaram Gondi Regular`, `Noto Serif Yezidi Regular`],
     13: [`Apple SD Gothic Neo ExtraBold`, `STIX Two Math Regular`, `STIX Two Text Regular`, `Noto Sans Canadian Aboriginal Regular`]
   },
-  jt = {
+  Wt = {
     "Microsoft Outlook": [`MS Outlook`],
     "Adobe Acrobat": [`ZWAdobeF`],
     LibreOffice: [`Amiri`, `KACSTOffice`, `Liberation Mono`, `Source Code Pro`],
     OpenOffice: [`DejaVu Sans`, `Gentium Book Basic`, `OpenSymbol`]
   },
-  Mt = Object.keys(At).map(e => At[e]).flat(),
-  Nt = Object.keys(kt).map(e => kt[e]).flat(),
-  Pt = Object.keys(jt).map(e => jt[e]).flat(),
-  Ft = [`Arimo`, `Chilanka`, `Cousine`, `Jomolhari`, `MONO`, `Noto Color Emoji`, `Ubuntu`],
-  It = [`Dancing Script`, `Droid Sans Mono`, `Roboto`],
-  Lt = [...Mt, ...Nt, ...Ft, ...It, ...Pt].sort();
-async function Rt() {
+  Gt = Object.keys(Ut).map(e => Ut[e]).flat(),
+  Kt = Object.keys(Ht).map(e => Ht[e]).flat(),
+  qt = Object.keys(Wt).map(e => Wt[e]).flat(),
+  Jt = [`Arimo`, `Chilanka`, `Cousine`, `Jomolhari`, `MONO`, `Noto Color Emoji`, `Ubuntu`],
+  Yt = [`Dancing Script`, `Droid Sans Mono`, `Roboto`],
+  Xt = [...Gt, ...Kt, ...Jt, ...Yt, ...qt].sort();
+async function Zt() {
   return await (async e => {
     try {
       let t = [];
-      document.fonts.check(`0px "${zt()}"`) || (t = e.reduce((e, t) => (document.fonts.check(`0px "${t}"`) && e.push(t), e), []));
+      document.fonts.check(`0px "${Qt()}"`) || (t = e.reduce((e, t) => (document.fonts.check(`0px "${t}"`) && e.push(t), e), []));
       let n = e.map(e => new FontFace(e, `local("${e}")`)),
         r = (await Promise.allSettled(n.map(e => e.load()))).reduce((e, t) => (t.status == `fulfilled` && e.push(t.value.family), e), []);
       return [...new Set([...t, ...r])].sort()
     } catch {
       return []
     }
-  })(Lt)
+  })(Xt)
 }
 
-function zt() {
+function Qt() {
   return String.fromCharCode(Math.random() * 26 + 97) + Math.random().toString(36).slice(-7)
 }
-var Bt = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.STENCIL_WRITEMASK.STENCIL_BACK_VALUE_MASK.STENCIL_BACK_WRITEMASK.MAX_TEXTURE_SIZE.MAX_VIEWPORT_DIMS.SUBPIXEL_BITS.MAX_VERTEX_ATTRIBS.MAX_VERTEX_UNIFORM_VECTORS.MAX_VARYING_VECTORS.MAX_COMBINED_TEXTURE_IMAGE_UNITS.MAX_VERTEX_TEXTURE_IMAGE_UNITS.MAX_TEXTURE_IMAGE_UNITS.MAX_FRAGMENT_UNIFORM_VECTORS.SHADING_LANGUAGE_VERSION.VENDOR.RENDERER.VERSION.MAX_CUBE_MAP_TEXTURE_SIZE.MAX_RENDERBUFFER_SIZE.MAX_3D_TEXTURE_SIZE.MAX_ELEMENTS_VERTICES.MAX_ELEMENTS_INDICES.MAX_TEXTURE_LOD_BIAS.MAX_DRAW_BUFFERS.MAX_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_UNIFORM_COMPONENTS.MAX_ARRAY_TEXTURE_LAYERS.MAX_PROGRAM_TEXEL_OFFSET.MAX_VARYING_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS.MAX_COLOR_ATTACHMENTS.MAX_SAMPLES.MAX_VERTEX_UNIFORM_BLOCKS.MAX_FRAGMENT_UNIFORM_BLOCKS.MAX_COMBINED_UNIFORM_BLOCKS.MAX_UNIFORM_BUFFER_BINDINGS.MAX_UNIFORM_BLOCK_SIZE.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_OUTPUT_COMPONENTS.MAX_FRAGMENT_INPUT_COMPONENTS.MAX_SERVER_WAIT_TIMEOUT.MAX_ELEMENT_INDEX.MAX_CLIENT_WAIT_TIMEOUT_WEBGL`.split(`.`).sort(),
-  Vt = {
+var $t = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.STENCIL_WRITEMASK.STENCIL_BACK_VALUE_MASK.STENCIL_BACK_WRITEMASK.MAX_TEXTURE_SIZE.MAX_VIEWPORT_DIMS.SUBPIXEL_BITS.MAX_VERTEX_ATTRIBS.MAX_VERTEX_UNIFORM_VECTORS.MAX_VARYING_VECTORS.MAX_COMBINED_TEXTURE_IMAGE_UNITS.MAX_VERTEX_TEXTURE_IMAGE_UNITS.MAX_TEXTURE_IMAGE_UNITS.MAX_FRAGMENT_UNIFORM_VECTORS.SHADING_LANGUAGE_VERSION.VENDOR.RENDERER.VERSION.MAX_CUBE_MAP_TEXTURE_SIZE.MAX_RENDERBUFFER_SIZE.MAX_3D_TEXTURE_SIZE.MAX_ELEMENTS_VERTICES.MAX_ELEMENTS_INDICES.MAX_TEXTURE_LOD_BIAS.MAX_DRAW_BUFFERS.MAX_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_UNIFORM_COMPONENTS.MAX_ARRAY_TEXTURE_LAYERS.MAX_PROGRAM_TEXEL_OFFSET.MAX_VARYING_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS.MAX_COLOR_ATTACHMENTS.MAX_SAMPLES.MAX_VERTEX_UNIFORM_BLOCKS.MAX_FRAGMENT_UNIFORM_BLOCKS.MAX_COMBINED_UNIFORM_BLOCKS.MAX_UNIFORM_BUFFER_BINDINGS.MAX_UNIFORM_BLOCK_SIZE.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_OUTPUT_COMPONENTS.MAX_FRAGMENT_INPUT_COMPONENTS.MAX_SERVER_WAIT_TIMEOUT.MAX_ELEMENT_INDEX.MAX_CLIENT_WAIT_TIMEOUT_WEBGL`.split(`.`).sort(),
+  en = {
     EXT_clip_control: [`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `LOWER_LEFT_EXT`, `UPPER_LEFT_EXT`, `NEGATIVE_ONE_TO_ONE_EXT`, `ZERO_TO_ONE_EXT`],
     EXT_color_buffer_half_float: [`RGB16F_EXT`, `RGBA16F_EXT`, `FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT`, `UNSIGNED_NORMALIZED_EXT`],
     EXT_depth_clamp: [`DEPTH_CLAMP_EXT`],
@@ -941,15 +954,15 @@ var Bt = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.S
     ANGLE_instanced_arrays: [`VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE`],
     EXT_blend_minmax: [`MIN_EXT`, `MAX_EXT`]
   },
-  Ht = new Set([`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `DEPTH_CLAMP_EXT`, `GPU_DISJOINT_EXT`, `POLYGON_OFFSET_CLAMP_EXT`, `MAX_TEXTURE_MAX_ANISOTROPY_EXT`, `FRAGMENT_SHADER_DERIVATIVE_HINT_OES`, `VERTEX_ARRAY_BINDING_OES`, `MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL`, `UNMASKED_RENDERER_WEBGL`, `UNMASKED_VENDOR_WEBGL`, `MAX_COLOR_ATTACHMENTS_WEBGL`, `MAX_DRAW_BUFFERS_WEBGL`]);
-async function Ut() {
+  tn = new Set([`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `DEPTH_CLAMP_EXT`, `GPU_DISJOINT_EXT`, `POLYGON_OFFSET_CLAMP_EXT`, `MAX_TEXTURE_MAX_ANISOTROPY_EXT`, `FRAGMENT_SHADER_DERIVATIVE_HINT_OES`, `VERTEX_ARRAY_BINDING_OES`, `MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL`, `UNMASKED_RENDERER_WEBGL`, `UNMASKED_VENDOR_WEBGL`, `MAX_COLOR_ATTACHMENTS_WEBGL`, `MAX_DRAW_BUFFERS_WEBGL`]);
+async function nn() {
   let e, t, n, r;
   try {
     let i = window,
       a = i.document;
     `OffscreenCanvas` in window ? (e = new i.OffscreenCanvas(256, 256), t = new i.OffscreenCanvas(256, 256)) : (e = a.createElement(`canvas`), t = a.createElement(`canvas`));
-    let o = Gt(e, `webgl`),
-      s = Gt(t, `webgl2`);
+    let o = an(e, `webgl`),
+      s = an(t, `webgl2`);
     if (n = o, r = s, !o) return;
     let c = (e, t) => {
         if (e) return {
@@ -972,7 +985,7 @@ async function Ut() {
         let t = {};
         if (!e) return t;
         let n = e;
-        for (let r of Bt) {
+        for (let r of $t) {
           let i = n[r];
           if (i === void 0) continue;
           let a = e.getParameter(i);
@@ -988,13 +1001,13 @@ async function Ut() {
       f = e => {
         if (!e) return [];
         let t = [];
-        for (let [n, r] of Object.entries(Vt)) {
+        for (let [n, r] of Object.entries(en)) {
           let i = b(() => e.getExtension(n));
           if (i)
             for (let n of r) {
               let r = i[n];
               if (typeof r != `number`) continue;
-              if (!Ht.has(n)) {
+              if (!tn.has(n)) {
                 t.push(`${n}=${r}`);
                 continue
               }
@@ -1037,7 +1050,7 @@ async function Ut() {
     console.log(e);
     return
   } finally {
-    Wt(e, n), Wt(t, r)
+    rn(e, n), rn(t, r)
   }
 }
 
@@ -1049,7 +1062,7 @@ function b(e) {
   }
 }
 
-function Wt(e, t) {
+function rn(e, t) {
   if (e) {
     try {
       var n;
@@ -1059,7 +1072,7 @@ function Wt(e, t) {
   }
 }
 
-function Gt(e, t) {
+function an(e, t) {
   try {
     if (t == `webgl2`) {
       let t = e.getContext(`webgl2`);
@@ -1072,39 +1085,39 @@ function Gt(e, t) {
     return
   }
 }
-var Kt = `client_timeout`,
-  qt = `network_connection`,
-  Jt = `network_abort`,
-  Yt = `csp_block`,
-  Xt = `invalid_endpoint`,
-  Zt = `handle_agent_data`,
-  Qt = `script_load_fail`,
-  $t = `bad_response_format`,
-  en = `api_key_missing`,
-  tn = `api_key_invalid`,
-  nn = `cache_misconfigured`,
-  rn = `endpoints_misconfigured`,
-  an = `wrong_worker_option`,
-  on = `worker_initialization_failed`,
-  sn = `sandboxed_iframe`,
-  cn = `bundle_not_defined`,
+var on = `client_timeout`,
+  sn = `network_connection`,
+  cn = `network_abort`,
+  ln = `csp_block`,
+  un = `invalid_endpoint`,
+  dn = `handle_agent_data`,
+  fn = `script_load_fail`,
+  pn = `bad_response_format`,
+  mn = `api_key_missing`,
+  hn = `api_key_invalid`,
+  gn = `cache_misconfigured`,
+  _n = `endpoints_misconfigured`,
+  vn = `wrong_worker_option`,
+  yn = `worker_initialization_failed`,
+  bn = `sandboxed_iframe`,
+  xn = `bundle_not_defined`,
   x = {
-    [Kt]: `Client timeout`,
-    [qt]: `Network connection error`,
-    [Jt]: `Network request aborted`,
-    [Yt]: `Blocked by CSP`,
-    [Xt]: `The provided endpoint in "endpoints" parameter is not a valid URL`,
-    [Zt]: `Handle on demand agent data error`,
-    [Qt]: `Failed to load the JS script of the agent`,
-    [cn]: `9319`,
-    [$t]: `Can't parse the backend response. Make sure the proper endpoints are used.`,
-    [en]: "The `apiKey` option is not provided",
-    [tn]: "The `apiKey` option is not a string",
-    [nn]: "The `cache` option is misconfigured",
-    [rn]: "The `endpoints` option is misconfigured",
-    [an]: "Wrong `worker` option, it should be a Worker instance",
-    [on]: `Web Worker initialization failed`,
-    [sn]: `Running inside sandboxed iframes is not supported`
+    [on]: `Client timeout`,
+    [sn]: `Network connection error`,
+    [cn]: `Network request aborted`,
+    [ln]: `Blocked by CSP`,
+    [un]: `The provided endpoint in "endpoints" parameter is not a valid URL`,
+    [dn]: `Handle on demand agent data error`,
+    [fn]: `Failed to load the JS script of the agent`,
+    [xn]: `9319`,
+    [pn]: `Can't parse the backend response. Make sure the proper endpoints are used.`,
+    [mn]: "The `apiKey` option is not provided",
+    [hn]: "The `apiKey` option is not a string",
+    [gn]: "The `cache` option is misconfigured",
+    [_n]: "The `endpoints` option is misconfigured",
+    [vn]: "Wrong `worker` option, it should be a Worker instance",
+    [yn]: `Web Worker initialization failed`,
+    [bn]: `Running inside sandboxed iframes is not supported`
   },
   S = class extends Error {
     constructor(e, t) {
@@ -1112,7 +1125,7 @@ var Kt = `client_timeout`,
     }
   };
 
-function ln(e) {
+function Sn(e) {
   let t = function(e) {
       let t = atob(e),
         n = t.length,
@@ -1126,11 +1139,11 @@ function ln(e) {
       let r = () => {
           throw Error(`Invalid data`)
         },
-        i = yn(e);
+        i = Mn(e);
       i.length < t.length + 2 && r();
-      for (let e = 0; e < t.length; ++e) br(i[1 + e], i[0]) !== t[e] && r();
+      for (let e = 0; e < t.length; ++e) Nr(i[1 + e], i[0]) !== t[e] && r();
       let a = 1 + t.length,
-        o = br(i[a], i[0]);
+        o = Nr(i[a], i[0]);
       i.length < a + 1 + o + n && r();
       let s = a + 1 + o,
         c = s + n,
@@ -1138,7 +1151,7 @@ function ln(e) {
         u = new Uint8Array(l);
       for (let e = 0; e < u.length; ++e) u[e] = i[c + e] ^ i[s + e % n];
       return l
-    }(t, _r, vr)
+    }(t, Ar, jr)
   } catch {}
   try {
     return function(e) {
@@ -1146,45 +1159,45 @@ function ln(e) {
           len: 0,
           arr: new Uint8Array(128)
         },
-        n = yn(e),
+        n = Mn(e),
         r = 0,
-        i = () => (l(), n[r] === Vn ? a() : un(n[r]) ? o() : u(or) ? (r += or.length, null) : u(sr) ? (r += sr.length, !0) : u(cr) ? (r += cr.length, !1) : n[r] === nr ? s() : n[r] === ir ? c() : d()),
+        i = () => (l(), n[r] === er ? a() : Cn(n[r]) ? o() : u(yr) ? (r += yr.length, null) : u(br) ? (r += br.length, !0) : u(xr) ? (r += xr.length, !1) : n[r] === hr ? s() : n[r] === _r ? c() : d()),
         a = () => {
-          for (t.len = 0; r++, n[r] !== Vn;) {
-            if (n[r] === Jn) {
-              if (r++, n[r] === Zn) {
-                let e = parseInt(Tn(n.subarray(r + 1, r + 5)), 16);
-                yr(t, xn(String.fromCharCode(e))), r += 4;
+          for (t.len = 0; r++, n[r] !== er;) {
+            if (n[r] === sr) {
+              if (r++, n[r] === ur) {
+                let e = parseInt(Rn(n.subarray(r + 1, r + 5)), 16);
+                Mr(t, Pn(String.fromCharCode(e))), r += 4;
                 continue
               }
-              let e = ur[n[r]];
+              let e = Cr[n[r]];
               if (e) {
-                _n(t, e);
+                An(t, e);
                 continue
               }
               return d()
             }
             if (n[r] === void 0) return d();
-            _n(t, n[r])
+            An(t, n[r])
           }
-          return r++, Tn(function(e) {
+          return r++, Rn(function(e) {
             return e.arr.subarray(0, e.len)
           }(t))
         },
         o = () => {
           let e = r;
-          for (; n[r] === tr || n[r] === Xn || n[r] === Qn || n[r] === $n || un(n[r]);) r++;
-          return Number(Tn(n.subarray(e, r)))
+          for (; n[r] === mr || n[r] === lr || n[r] === dr || n[r] === fr || Cn(n[r]);) r++;
+          return Number(Rn(n.subarray(e, r)))
         },
         s = () => {
           let e = [];
           for (r++;;) {
-            if (l(), n[r] === rr) {
+            if (l(), n[r] === gr) {
               r++;
               break
             }
             if (e.length) {
-              if (n[r] !== Hn) return d();
+              if (n[r] !== tr) return d();
               r++
             }
             e.push(i())
@@ -1195,17 +1208,17 @@ function ln(e) {
           let e = {},
             t = !0;
           for (r++;;) {
-            if (l(), n[r] === ar) {
+            if (l(), n[r] === vr) {
               r++;
               break
             }
             if (!t) {
-              if (n[r] !== Hn) return d();
+              if (n[r] !== tr) return d();
               r++, l()
             }
-            if (n[r] !== Vn) return d();
+            if (n[r] !== er) return d();
             let o = a();
-            if (l(), n[r] !== Un) return d();
+            if (l(), n[r] !== nr) return d();
             r++, Object.defineProperty(e, o, {
               value: i(),
               configurable: !0,
@@ -1216,7 +1229,7 @@ function ln(e) {
           return e
         },
         l = () => {
-          for (; n[r] === Wn || n[r] === qn || n[r] === Kn || n[r] === Gn;) r++
+          for (; n[r] === rr || n[r] === or || n[r] === ar || n[r] === ir;) r++
         },
         u = e => {
           for (let t = 0; t < e.length; t++)
@@ -1233,11 +1246,11 @@ function ln(e) {
   return null
 }
 
-function un(e) {
-  return e >= Yn && e < Yn + 10 || e === er
+function Cn(e) {
+  return e >= cr && e < cr + 10 || e === pr
 }
 
-function dn(e, t) {
+function wn(e, t) {
   if (e.length === 0) return Promise.reject(TypeError(`The list of script URL patterns is empty`));
   let n = [],
     r = function(e, t, n, r, i = {}) {
@@ -1282,7 +1295,7 @@ function dn(e, t) {
       }, e => l.aborted = {
         resolve: !1,
         error: e
-      }), fr(u, a, t, n, d, l, c)], Promise.race(p.filter(e => !!e))).then(() => l);
+      }), Tr(u, a, t, n, d, l, c)], Promise.race(p.filter(e => !!e))).then(() => l);
       var p;
       return {
         then: f.then.bind(f),
@@ -1308,7 +1321,7 @@ function dn(e, t) {
       }
     }, e => ({
       result: e
-    }), jn, {
+    }), Wn, {
       maxAttemptCount: 5,
       backoffBase: 100,
       backoffCap: 3e3
@@ -1324,17 +1337,17 @@ function dn(e, t) {
   })
 }
 
-function fn(e) {
+function Tn(e) {
   return {
-    __type__: Sn,
+    __type__: Fn,
     value: e
   }
 }
 
-function pn(e) {
+function En(e) {
   return function(e) {
-    let t = yn(e);
-    mn = mn || function() {
+    let t = Mn(e);
+    Dn = Dn || function() {
       let e, t = new Uint32Array(256);
       for (let n = 0; n < 256; n++) {
         e = n;
@@ -1344,13 +1357,13 @@ function pn(e) {
       return t
     }();
     let n = -1;
-    for (let e = 0; e < t.length; e++) n = n >>> 8 ^ mn[255 & (n ^ t[e])];
+    for (let e = 0; e < t.length; e++) n = n >>> 8 ^ Dn[255 & (n ^ t[e])];
     return (-1 ^ n) >>> 0
-  }(xn(e))
+  }(Pn(e))
 }
-var mn;
+var Dn;
 
-function hn(e, t) {
+function On(e, t) {
   return new Promise(n => function(e, t, ...n) {
     let r = Date.now() + t,
       i = 0,
@@ -1363,27 +1376,27 @@ function hn(e, t) {
   }(n, e, t))
 }
 
-function gn(e) {
+function kn(e) {
   return typeof e == `object` && !!e && `name` in e && e.name === `FingerprintError` && `code` in e
 }
 
-function _n(e, t) {
-  pr(e, e.len + 1), e.arr[e.len++] = t
+function An(e, t) {
+  Er(e, e.len + 1), e.arr[e.len++] = t
 }
-var vn = Array.isArray;
+var jn = Array.isArray;
 
-function yn(e) {
+function Mn(e) {
   return e instanceof ArrayBuffer ? new Uint8Array(e) : new Uint8Array(e.buffer, e.byteOffset, e.byteLength)
 }
 
-function bn({
+function Nn({
   level: e,
   message: t
 }) {
   e === `error` ? console.error(t) : e === `warning` ? console.warn(t) : console.log(t)
 }
 
-function xn(e) {
+function Pn(e) {
   let t = new Uint8Array(e.length);
   for (let n = 0; n < e.length; n++) {
     let r = e.charCodeAt(n);
@@ -1392,23 +1405,23 @@ function xn(e) {
   }
   return t
 }
-var Sn = `withoutDefault`,
-  Cn = `_vid_`;
+var Fn = `withoutDefault`,
+  In = `_vid_`;
 
-function wn(e) {
+function Ln(e) {
   return e instanceof Error && e.name === `TypeError`
 }
 
-function Tn(e) {
+function Rn(e) {
   if (typeof TextDecoder == `function`) {
     let t = new TextDecoder().decode(e);
     if (t) return t
   }
-  let t = yn(e);
+  let t = Mn(e);
   return decodeURIComponent(escape(String.fromCharCode.apply(null, t)))
 }
 
-function En(e = Mn) {
+function zn(e = Gn) {
   return function(t) {
     let n, r, {
         picked: i,
@@ -1425,19 +1438,19 @@ function En(e = Mn) {
       {
         apiKey: o
       } = i;
-    if (!o) throw new S(x[en], en);
-    if (typeof o != `string`) throw new S(x[tn], tn);
+    if (!o) throw new S(x[mn], mn);
+    if (typeof o != `string`) throw new S(x[hn], hn);
     let s = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }(c = t, l = `endpoints`) ? c[l] : void 0;
     var c, l;
     let u = function(e, t, n) {
         let r = e.prepareScriptEndpoints(t, `https://fpnpmcdn.net/`);
-        if (r === null) throw new S(x[rn], rn);
+        if (r === null) throw new S(x[_n], _n);
         return r.map(e => function(e, t) {
           let n = new URL(e, window.location.href),
             r = n.pathname;
-          return n.pathname = `${r}${r.endsWith(`/`)?``:`/`}v4/${encodeURIComponent(t)}`, n.search = `?ci=jsl/${encodeURIComponent(An)}`, n.href
+          return n.pathname = `${r}${r.endsWith(`/`)?``:`/`}v4/${encodeURIComponent(t)}`, n.search = `?ci=jsl/${encodeURIComponent(Un)}`, n.href
         }(e, n))
       }(e, s, o),
       [f, p] = function() {
@@ -1454,25 +1467,25 @@ function En(e = Mn) {
       }(),
       m = async function() {
         try {
-          let [t, r] = await dn(u, t => function(e, t) {
+          let [t, r] = await wn(u, t => function(e, t) {
             return e.withCspViolationWatch(t, async () => {
               if (function(e) {
                   if (URL.prototype) try {
                     return new URL(e, location.href), !1
                   } catch (e) {
-                    if (wn(e)) return !0;
+                    if (Ln(e)) return !0;
                     throw e
                   }
-                }(t)) throw new S(x[Xt], Xt);
+                }(t)) throw new S(x[un], un);
               try {
                 return await d(() => import(t), [], import.meta.url)
               } catch {
-                throw new S(x[Qt], Qt)
+                throw new S(x[fn], fn)
               }
             }, () => {
-              throw new S(x[Yt], Yt)
+              throw new S(x[ln], ln)
             }).then(e => {
-              if (typeof(e == null ? void 0 : e.start) != `function`) throw new S(x[cn], cn);
+              if (typeof(e == null ? void 0 : e.start) != `function`) throw new S(x[xn], xn);
               return e
             })
           }(e, t)), i = await t.start({
@@ -1485,7 +1498,7 @@ function En(e = Mn) {
           return n = i, i
         } catch (e) {
           throw r = function(e) {
-            return e instanceof S && e.code === cn ? new S(x[Qt], Qt) : e
+            return e instanceof S && e.code === xn ? new S(x[fn], fn) : e
           }(e), r
         } finally {
           p()
@@ -1506,8 +1519,8 @@ function En(e = Mn) {
   }
 }
 
-function Dn(e, t, n, r) {
-  Pn(() => {
+function Bn(e, t, n, r) {
+  qn(() => {
     let i = `${e}=${t}`,
       a = `expires=${new Date(Date.now()+24*n*60*60*1e3).toUTCString()}`,
       o = r ? `domain=${r}` : ``;
@@ -1515,16 +1528,16 @@ function Dn(e, t, n, r) {
   }, void 0)
 }
 
-function On(e, t) {
+function Vn(e, t) {
   try {
     return new window.URL(e, window.location.href)
   } catch (n) {
-    if (wn(n)) return console.warn(`Ignoring an invalid '${t}' value: "${e}"`), null;
+    if (Ln(n)) return console.warn(`Ignoring an invalid '${t}' value: "${e}"`), null;
     throw n
   }
 }
 
-function kn(e) {
+function Hn(e) {
   let t = location.hostname,
     n = function() {
       var e;
@@ -1540,17 +1553,17 @@ function kn(e) {
     if (!n || !/^([^.]{1,3}\.)*[^.]+\.?$/.test(r) || r === t) return e(r)
   }) || e()
 }
-var An = `4.1.1`;
+var Un = `4.1.1`;
 
-function jn(e, t, n) {
+function Wn(e, t, n) {
   let r = n instanceof S ? n.code : null;
-  return r === Yt || r === Xt ? {
+  return r === ln || r === un ? {
     action: `exclude`,
     delay: 0
-  } : r === cn ? {
+  } : r === xn ? {
     action: `exclude`,
     delay: `backoff`
-  } : r === Qt ? {
+  } : r === fn ? {
     action: `postpone`,
     delay: Date.now() - e.getTime() < 50 ? 0 : `backoff`
   } : {
@@ -1558,28 +1571,28 @@ function jn(e, t, n) {
     delay: `backoff`
   }
 }
-var Mn = {
+var Gn = {
     prepareScriptEndpoints: function(e, t) {
-      return e === void 0 ? [t] : Bn(e) ? function(e, t) {
+      return e === void 0 ? [t] : $n(e) ? function(e, t) {
         let n, r = !1;
-        zn(e) ? (r = !0, n = Fn(e.value)) : n = Fn(e);
+        Qn(e) ? (r = !0, n = Jn(e.value)) : n = Jn(e);
         let i = [];
         for (let e of n) {
-          let t = On(e, `endpoints`);
-          t && i.push(dr(t))
+          let t = Vn(e, `endpoints`);
+          t && i.push(wr(t))
         }
         return r || i.push(t), i
       }(e, t) : function(e) {
         if (!e || typeof e != `object`) return !1;
         let t = e;
-        return typeof t.__type__ == `string` && pn(t.__type__) === 694409711 && (t.script === void 0 || Bn(t.script)) && (t.helper === void 0 || Bn(t.helper)) && (t.ingress === void 0 || Bn(t.ingress))
+        return typeof t.__type__ == `string` && En(t.__type__) === 694409711 && (t.script === void 0 || $n(t.script)) && (t.helper === void 0 || $n(t.helper)) && (t.ingress === void 0 || $n(t.ingress))
       }(e) ? function(e, t, n) {
         if (e === void 0) return [t];
         let r, i = !1;
-        zn(e) ? (i = !0, r = Fn(e.value)) : r = Fn(e);
+        Qn(e) ? (i = !0, r = Jn(e.value)) : r = Jn(e);
         let a = [];
         for (let e of r) {
-          let t = On(e, n);
+          let t = Vn(e, n);
           t && a.push(t.href)
         }
         return i || a.push(t), a
@@ -1606,59 +1619,59 @@ var Mn = {
       }))
     }
   },
-  Nn = En();
+  Kn = zn();
 
-function Pn(e, t) {
+function qn(e, t) {
   try {
     document.cookie
   } catch (e) {
     if (function(e) {
         if (!(e instanceof DOMException)) return !1;
         let t = e.message;
-        return In.test(t) || Ln.test(t) || Rn.test(t)
+        return Yn.test(t) || Xn.test(t) || Zn.test(t)
       }(e)) return t;
     throw e
   }
   return e()
 }
 
-function Fn(e) {
-  return vn(e) ? e : [e]
+function Jn(e) {
+  return jn(e) ? e : [e]
 }
-var In = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
-  Ln = /The operation is insecure/,
-  Rn = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
+var Yn = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
+  Xn = /The operation is insecure/,
+  Zn = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
 
-function zn(e) {
-  return !!e && e.__type__ === Sn
+function Qn(e) {
+  return !!e && e.__type__ === Fn
 }
 
-function Bn(e) {
-  return zn(e) ? hr(e.value) : hr(e)
+function $n(e) {
+  return Qn(e) ? Or(e.value) : Or(e)
 }
-var Vn = 34,
-  Hn = 44,
-  Un = 58,
-  Wn = 32,
-  Gn = 9,
-  Kn = 13,
-  qn = 10,
-  Jn = 92,
-  Yn = 48,
-  Xn = 101,
-  Zn = 117,
-  Qn = 69,
-  $n = 43,
-  er = 45,
-  tr = 46,
-  nr = 91,
-  rr = 93,
-  ir = 123,
-  ar = 125,
-  or = new Uint8Array([110, Zn, 108, 108]),
-  sr = new Uint8Array([116, 114, Zn, Xn]),
-  cr = new Uint8Array([102, 97, 108, 115, Xn]),
-  lr = {
+var er = 34,
+  tr = 44,
+  nr = 58,
+  rr = 32,
+  ir = 9,
+  ar = 13,
+  or = 10,
+  sr = 92,
+  cr = 48,
+  lr = 101,
+  ur = 117,
+  dr = 69,
+  fr = 43,
+  pr = 45,
+  mr = 46,
+  hr = 91,
+  gr = 93,
+  _r = 123,
+  vr = 125,
+  yr = new Uint8Array([110, ur, 108, 108]),
+  br = new Uint8Array([116, 114, ur, lr]),
+  xr = new Uint8Array([102, 97, 108, 115, lr]),
+  Sr = {
     '"': `"`,
     "\\": `\\`,
     "\b": `b`,
@@ -1667,23 +1680,23 @@ var Vn = 34,
     "\r": `r`,
     "	": `t`
   },
-  ur = (() => {
+  Cr = (() => {
     let e = new Uint8Array(128);
-    for (let [t, n] of Object.entries(lr)) e[n.charCodeAt(0)] = t.charCodeAt(0);
+    for (let [t, n] of Object.entries(Sr)) e[n.charCodeAt(0)] = t.charCodeAt(0);
     return e
   })();
 
-function dr(e) {
+function wr(e) {
   return `${e.origin}${e.pathname.endsWith(`/`)?e.pathname:`${e.pathname}/`}web/`
 }
-async function fr(e, t, n, r, i, a, o) {
+async function Tr(e, t, n, r, i, a, o) {
   if (e === void 0) return;
   let s = e;
   for (let e = 0; e < t; ++e) {
     let t = new Date,
       c, l;
     try {
-      c = await gr(() => n(s, e, o), o)
+      c = await kr(() => n(s, e, o), o)
     } catch (e) {
       l = e, a.failedAttempts.push({
         level: 0,
@@ -1705,18 +1718,18 @@ async function fr(e, t, n, r, i, a, o) {
     }
     let u = i(t, c, l);
     if (!u) break;
-    await gr(hn(u[1]), o), s = u[0]
+    await kr(On(u[1]), o), s = u[0]
   }
 }
 
-function pr(e, t) {
+function Er(e, t) {
   if (e.arr.length < t) {
     let n = new Uint8Array(Math.max(2 * e.arr.length, t));
     n.set(e.arr), e.arr = n
   }
 }
 
-function mr(e, t, ...n) {
+function Dr(e, t, ...n) {
   e && async function(e, t) {
     try {
       return await e()
@@ -1729,50 +1742,50 @@ function mr(e, t, ...n) {
   })
 }
 
-function hr(e) {
+function Or(e) {
   return typeof e == `string` || Array.isArray(e) && e.every(e => typeof e == `string`)
 }
 
-function gr(e, t) {
+function kr(e, t) {
   return new Promise((n, r) => {
     let i = !1;
-    t == null || t.then(() => i = !0, () => i = !0), (typeof e == `function` ? gr(Promise.resolve(), t).then(e) : e).then(e => {
+    t == null || t.then(() => i = !0, () => i = !0), (typeof e == `function` ? kr(Promise.resolve(), t).then(e) : e).then(e => {
       i || n(e)
     }, e => {
       i || r(e)
     })
   })
 }
-var _r = [3, 13],
-  vr = 9;
+var Ar = [3, 13],
+  jr = 9;
 
-function yr(e, t) {
-  pr(e, e.len + t.length), e.arr.set(t, e.len), e.len += t.length
+function Mr(e, t) {
+  Er(e, e.len + t.length), e.arr.set(t, e.len), e.len += t.length
 }
 
-function br(e, t) {
+function Nr(e, t) {
   return (e - t + 256) % 256
 }
-var xr = {
-    start: Nn,
+var Pr = {
+    start: Kn,
     handleAgentData: function(e, t = {}) {
       let {
-        storageKeyPrefix: n = Cn,
+        storageKeyPrefix: n = In,
         do: r
       } = t;
       try {
-        let t = ln(e);
-        t === null ? mr(r, () => ({
+        let t = Sn(e);
+        t === null ? Dr(r, () => ({
           e: 25,
           result: {
             error: Error(`Failed to decode response`)
           }
-        })) : (t.visitorToken && (s = t.visitorToken, i = c = `${n}t`, a = s, o = 365, kn(e => {
+        })) : (t.visitorToken && (s = t.visitorToken, i = c = `${n}t`, a = s, o = 365, Hn(e => {
           (function(e, t) {
-            Dn(e, ``, -1, t)
+            Bn(e, ``, -1, t)
           })(i, e)
-        }), o < 0 || kn(e => (Dn(i, a, o, e), function(e) {
-          return Pn(() => {
+        }), o < 0 || Hn(e => (Bn(i, a, o, e), function(e) {
+          return qn(() => {
             let t = `${e}=`;
             for (let e of document.cookie.split(`;`)) {
               let n = 0;
@@ -1785,85 +1798,85 @@ var xr = {
           try {
             (n = localStorage == null ? void 0 : localStorage.setItem) == null || n.call(localStorage, e, t)
           } catch {}
-        }(c, s)), t.notifications.forEach(bn), mr(r, () => ({
+        }(c, s)), t.notifications.forEach(Nn), Dr(r, () => ({
           e: 25,
           result: {
             response: t
           }
         })))
       } catch (e) {
-        throw mr(r, () => ({
+        throw Dr(r, () => ({
           e: 25,
           result: {
             error: e instanceof Error ? e : Error(String(e))
           }
-        })), new S(x[Zt], Zt)
+        })), new S(x[dn], dn)
       }
       var i, a, o, s, c
     },
-    isFingerprintError: gn,
-    withoutDefault: fn
+    isFingerprintError: kn,
+    withoutDefault: Tn
   },
-  Sr = `5.2.0`;
+  Fr = `5.2.0`;
 
-function Cr(e, t) {
+function Ir(e, t) {
   return new Promise(n => setTimeout(n, e, t))
 }
 
-function wr() {
+function Lr() {
   return new Promise(e => {
     let t = new MessageChannel;
     t.port1.onmessage = () => e(), t.port2.postMessage(null)
   })
 }
 
-function Tr(e, t = 1 / 0) {
+function Rr(e, t = 1 / 0) {
   let {
     requestIdleCallback: n
   } = window;
   return n ? new Promise(e => n.call(window, () => e(), {
     timeout: t
-  })) : Cr(Math.min(e, t))
+  })) : Ir(Math.min(e, t))
 }
 
-function Er(e) {
+function zr(e) {
   return !!e && typeof e.then == `function`
 }
 
-function Dr(e, t) {
+function Br(e, t) {
   try {
     let n = e();
-    Er(n) ? n.then(e => t(!0, e), e => t(!1, e)) : t(!0, n)
+    zr(n) ? n.then(e => t(!0, e), e => t(!1, e)) : t(!0, n)
   } catch (e) {
     t(!1, e)
   }
 }
-async function Or(e, t, n = 16) {
+async function Vr(e, t, n = 16) {
   let r = Array(e.length),
     i = Date.now();
   for (let a = 0; a < e.length; ++a) {
     r[a] = t(e[a], a);
     let o = Date.now();
-    o >= i + n && (i = o, await wr())
+    o >= i + n && (i = o, await Lr())
   }
   return r
 }
 
-function kr(e) {
+function Hr(e) {
   return e.then(void 0, () => void 0), e
 }
 
-function Ar(e, t) {
+function Ur(e, t) {
   for (let n = 0, r = e.length; n < r; ++n)
     if (e[n] === t) return !0;
   return !1
 }
 
-function jr(e, t) {
-  return !Ar(e, t)
+function Wr(e, t) {
+  return !Ur(e, t)
 }
 
-function Mr(e) {
+function Gr(e) {
   return parseInt(e)
 }
 
@@ -1879,7 +1892,7 @@ function T(e) {
   return e.reduce((e, t) => e + +!!t, 0)
 }
 
-function Nr(e, t = 1) {
+function Kr(e, t = 1) {
   if (Math.abs(t) >= 1) return Math.round(e / t) * t;
   {
     let n = 1 / t;
@@ -1887,7 +1900,7 @@ function Nr(e, t = 1) {
   }
 }
 
-function Pr(e) {
+function qr(e) {
   let t = `Unexpected syntax '${e}'`,
     n = /^\s*([a-z-]*)(.*)$/i.exec(e),
     r = n[1] || void 0,
@@ -1920,7 +1933,7 @@ function Pr(e) {
   return [r, i]
 }
 
-function Fr(e) {
+function Jr(e) {
   let t = new Uint8Array(e.length);
   for (let n = 0; n < e.length; n++) {
     let r = e.charCodeAt(n);
@@ -1962,7 +1975,7 @@ function D(e, t) {
   p += a * l, f += p >>> 16, p &= 65535, f += i * l, d += f >>> 16, f &= 65535, f += a * c, d += f >>> 16, f &= 65535, d += r * l, u += d >>> 16, d &= 65535, d += i * c, u += d >>> 16, d &= 65535, d += a * s, u += d >>> 16, d &= 65535, u += n * l + r * c + i * s + a * o, u &= 65535, e[0] = u << 16 | d, e[1] = f << 16 | p
 }
 
-function Ir(e, t) {
+function Yr(e, t) {
   let n = e[0];
   t %= 64, t === 32 ? (e[0] = e[1], e[1] = n) : t < 32 ? (e[0] = n << t | e[1] >>> 32 - t, e[1] = e[1] << t | n >>> 32 - t) : (t -= 32, e[0] = e[1] << t | n >>> 32 - t, e[1] = n << t | e[1] >>> 32 - t)
 }
@@ -1974,21 +1987,21 @@ function O(e, t) {
 function k(e, t) {
   e[0] ^= t[0], e[1] ^= t[1]
 }
-var Lr = [4283543511, 3981806797],
-  Rr = [3301882366, 444984403];
+var Xr = [4283543511, 3981806797],
+  Zr = [3301882366, 444984403];
 
-function zr(e) {
+function Qr(e) {
   let t = [0, e[0] >>> 1];
-  k(e, t), D(e, Lr), t[1] = e[0] >>> 1, k(e, t), D(e, Rr), t[1] = e[0] >>> 1, k(e, t)
+  k(e, t), D(e, Xr), t[1] = e[0] >>> 1, k(e, t), D(e, Zr), t[1] = e[0] >>> 1, k(e, t)
 }
-var Br = [2277735313, 289559509],
-  Vr = [1291169091, 658871167],
-  Hr = [0, 5],
-  Ur = [0, 1390208809],
-  Wr = [0, 944331445];
+var $r = [2277735313, 289559509],
+  ei = [1291169091, 658871167],
+  ti = [0, 5],
+  ni = [0, 1390208809],
+  ri = [0, 944331445];
 
-function Gr(e, t) {
-  let n = Fr(e);
+function ii(e, t) {
+  let n = Jr(e);
   t = t || 0;
   let r = [0, n.length],
     i = r[1] % 16,
@@ -1998,7 +2011,7 @@ function Gr(e, t) {
     c = [0, 0],
     l = [0, 0],
     u;
-  for (u = 0; u < a; u += 16) c[0] = n[u + 4] | n[u + 5] << 8 | n[u + 6] << 16 | n[u + 7] << 24, c[1] = n[u] | n[u + 1] << 8 | n[u + 2] << 16 | n[u + 3] << 24, l[0] = n[u + 12] | n[u + 13] << 8 | n[u + 14] << 16 | n[u + 15] << 24, l[1] = n[u + 8] | n[u + 9] << 8 | n[u + 10] << 16 | n[u + 11] << 24, D(c, Br), Ir(c, 31), D(c, Vr), k(o, c), Ir(o, 27), E(o, s), D(o, Hr), E(o, Ur), D(l, Vr), Ir(l, 33), D(l, Br), k(s, l), Ir(s, 31), E(s, o), D(s, Hr), E(s, Wr);
+  for (u = 0; u < a; u += 16) c[0] = n[u + 4] | n[u + 5] << 8 | n[u + 6] << 16 | n[u + 7] << 24, c[1] = n[u] | n[u + 1] << 8 | n[u + 2] << 16 | n[u + 3] << 24, l[0] = n[u + 12] | n[u + 13] << 8 | n[u + 14] << 16 | n[u + 15] << 24, l[1] = n[u + 8] | n[u + 9] << 8 | n[u + 10] << 16 | n[u + 11] << 24, D(c, $r), Yr(c, 31), D(c, ei), k(o, c), Yr(o, 27), E(o, s), D(o, ti), E(o, ni), D(l, ei), Yr(l, 33), D(l, $r), k(s, l), Yr(s, 31), E(s, o), D(s, ti), E(s, ri);
   c[0] = 0, c[1] = 0, l[0] = 0, l[1] = 0;
   let d = [0, 0];
   switch (i) {
@@ -2015,7 +2028,7 @@ function Gr(e, t) {
     case 10:
       d[1] = n[u + 9], O(d, 8), k(l, d);
     case 9:
-      d[1] = n[u + 8], k(l, d), D(l, Vr), Ir(l, 33), D(l, Br), k(s, l);
+      d[1] = n[u + 8], k(l, d), D(l, ei), Yr(l, 33), D(l, $r), k(s, l);
     case 8:
       d[1] = n[u + 7], O(d, 56), k(c, d);
     case 7:
@@ -2031,12 +2044,12 @@ function Gr(e, t) {
     case 2:
       d[1] = n[u + 1], O(d, 8), k(c, d);
     case 1:
-      d[1] = n[u], k(c, d), D(c, Br), Ir(c, 31), D(c, Vr), k(o, c)
+      d[1] = n[u], k(c, d), D(c, $r), Yr(c, 31), D(c, ei), k(o, c)
   }
-  return k(o, r), k(s, r), E(o, s), E(s, o), zr(o), zr(s), E(o, s), E(s, o), (`00000000` + (o[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (o[1] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[1] >>> 0).toString(16)).slice(-8)
+  return k(o, r), k(s, r), E(o, s), E(s, o), Qr(o), Qr(s), E(o, s), E(s, o), (`00000000` + (o[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (o[1] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[1] >>> 0).toString(16)).slice(-8)
 }
 
-function Kr(e) {
+function ai(e) {
   var t;
   return {
     name: e.name,
@@ -2047,31 +2060,31 @@ function Kr(e) {
   }
 }
 
-function qr(e) {
+function oi(e) {
   return /^function\s.*?\{\s*\[native code]\s*}$/.test(String(e))
 }
 
-function Jr(e) {
+function si(e) {
   return typeof e != `function`
 }
 
-function Yr(e, t) {
-  let n = kr(new Promise(n => {
+function ci(e, t) {
+  let n = Hr(new Promise(n => {
     let r = Date.now();
-    Dr(e.bind(null, t), (...e) => {
+    Br(e.bind(null, t), (...e) => {
       let t = Date.now() - r;
       if (!e[0]) return n(() => ({
         error: e[1],
         duration: t
       }));
       let i = e[1];
-      if (Jr(i)) return n(() => ({
+      if (si(i)) return n(() => ({
         value: i,
         duration: t
       }));
       n(() => new Promise(e => {
         let n = Date.now();
-        Dr(i, (...r) => {
+        Br(i, (...r) => {
           let i = t + Date.now() - n;
           if (!r[0]) return e({
             error: r[1],
@@ -2090,11 +2103,11 @@ function Yr(e, t) {
   }
 }
 
-function Xr(e, t, n, r) {
-  let i = Object.keys(e).filter(e => jr(n, e)),
-    a = kr(Or(i, n => Yr(e[n], t), r));
+function li(e, t, n, r) {
+  let i = Object.keys(e).filter(e => Wr(n, e)),
+    a = Hr(Vr(i, n => ci(e[n], t), r));
   return async function() {
-    let e = await Or(await a, e => kr(e()), r),
+    let e = await Vr(await a, e => Hr(e()), r),
       t = await Promise.all(e),
       n = {};
     for (let e = 0; e < i.length; ++e) n[i[e]] = t[e];
@@ -2102,19 +2115,19 @@ function Xr(e, t, n, r) {
   }
 }
 
-function Zr() {
+function ui() {
   let e = window,
     t = navigator;
   return T([`MSCSSMatrix` in e, `msSetImmediate` in e, `msIndexedDB` in e, `msMaxTouchPoints` in t, `msPointerEnabled` in t]) >= 4
 }
 
-function Qr() {
+function di() {
   let e = window,
     t = navigator;
-  return T([`msWriteProfilerMark` in e, `MSStream` in e, `msLaunchUri` in t, `msSaveBlob` in t]) >= 3 && !Zr()
+  return T([`msWriteProfilerMark` in e, `MSStream` in e, `msLaunchUri` in t, `msSaveBlob` in t]) >= 3 && !ui()
 }
 
-function $r() {
+function fi() {
   let e = window,
     t = navigator;
   return T([`webkitPersistentStorage` in t, `webkitTemporaryStorage` in t, (t.vendor || ``).indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in e, `BatteryManager` in e, `webkitMediaStream` in e, `webkitSpeechGrammar` in e]) >= 5
@@ -2126,7 +2139,7 @@ function A() {
   return T([`ApplePayError` in e, `CSSPrimitiveValue` in e, `Counter` in e, t.vendor.indexOf(`Apple`) === 0, `RGBColor` in e, `WebKitMediaKeys` in e]) >= 4
 }
 
-function ei() {
+function pi() {
   let e = window,
     {
       HTMLElement: t,
@@ -2135,18 +2148,18 @@ function ei() {
   return T([`safari` in e, !(`ongestureend` in e), !(`TouchEvent` in e), !(`orientation` in e), t && !(`autocapitalize` in t.prototype), n && `pointerLockElement` in n.prototype]) >= 4
 }
 
-function ti() {
+function mi() {
   let e = window;
-  return qr(e.print) && String(e.browser) === `[object WebPageNamespace]`
+  return oi(e.print) && String(e.browser) === `[object WebPageNamespace]`
 }
 
-function ni() {
+function hi() {
   var e;
   let t = window;
   return T([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4
 }
 
-function ri() {
+function gi() {
   let e = window,
     t = navigator,
     {
@@ -2155,19 +2168,19 @@ function ri() {
   return T([`userActivation` in t, n.supports(`color`, `light-dark(#000, #fff)`), n.supports(`height`, `1lh`), `globalPrivacyControl` in t]) >= 3
 }
 
-function ii() {
+function _i() {
   let {
     CSS: e
   } = window;
   return T([e.supports(`selector(::details-content)`), e.supports(`selector(::before::marker)`), e.supports(`selector(::after::marker)`), !(`locale` in CompositionEvent.prototype)]) >= 3
 }
 
-function ai() {
+function vi() {
   let e = window;
   return T([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
 }
 
-function oi() {
+function yi() {
   let e = window,
     {
       URLPattern: t
@@ -2175,7 +2188,7 @@ function oi() {
   return T([`union` in Set.prototype, `Iterator` in e, t && `hasRegExpGroups` in t.prototype, `RGB8` in WebGLRenderingContext.prototype]) >= 3
 }
 
-function si() {
+function bi() {
   let e = window,
     t = document,
     {
@@ -2186,12 +2199,12 @@ function si() {
   return T([r && `try` in r, `caretPositionFromPoint` in t, i && `onerror` in i.prototype, n.supports(`ruby-align`, `space-around`)]) >= 3
 }
 
-function ci() {
+function xi() {
   let e = window;
   return T([`DOMRectList` in e, `RTCPeerConnectionIceEvent` in e, `SVGGeometryElement` in e, `ontransitioncancel` in e]) >= 3
 }
 
-function li() {
+function Si() {
   let e = window,
     t = navigator,
     {
@@ -2201,33 +2214,33 @@ function li() {
   return T([!(`getStorageUpdates` in t), r && `popover` in r.prototype, `CSSCounterStyleRule` in e, n.supports(`font-size-adjust: ex-height 0.5`), n.supports(`text-transform: full-width`)]) >= 4
 }
 
-function ui() {
+function Ci() {
   if (navigator.platform === `iPad`) return !0;
   let e = screen,
     t = e.width / e.height;
   return T([`MediaSource` in window, !!Element.prototype.webkitRequestFullscreen, t > .65 && t < 1.53]) >= 2
 }
 
-function di() {
+function wi() {
   let e = document;
   return e.fullscreenElement || e.msFullscreenElement || e.mozFullScreenElement || e.webkitFullscreenElement || null
 }
 
-function fi() {
+function Ti() {
   let e = document;
   return (e.exitFullscreen || e.msExitFullscreen || e.mozCancelFullScreen || e.webkitExitFullscreen).call(e)
 }
 
-function pi() {
-  let e = $r(),
-    t = ni(),
+function Ei() {
+  let e = fi(),
+    t = hi(),
     n = window,
     r = navigator,
     i = `connection`;
   return e ? T([!(`SharedWorker` in n), r[i] && `ontypechange` in r[i], !(`sinkId` in new Audio)]) >= 2 : t ? T([`onorientationchange` in n, `orientation` in n, /android/i.test(r.appVersion)]) >= 2 : !1
 }
 
-function mi() {
+function Di() {
   let e = navigator,
     t = window,
     n = Audio.prototype,
@@ -2237,36 +2250,36 @@ function mi() {
   return T([`srLatency` in n, `srChannelCount` in n, `devicePosture` in e, r && `segments` in r, `getTextInformation` in Image.prototype]) >= 3
 }
 
-function hi() {
-  return vi() ? -4 : gi()
+function Oi() {
+  return ji() ? -4 : ki()
 }
 
-function gi() {
+function ki() {
   let e = window,
     t = e.OfflineAudioContext || e.webkitOfflineAudioContext;
   if (!t) return -2;
-  if (_i()) return -1;
+  if (Ai()) return -1;
   let n = new t(1, 5e3, 44100),
     r = n.createOscillator();
   r.type = `triangle`, r.frequency.value = 1e4;
   let i = n.createDynamicsCompressor();
   i.threshold.value = -50, i.knee.value = 40, i.ratio.value = 12, i.attack.value = 0, i.release.value = .25, r.connect(i), i.connect(n.destination), r.start(0);
-  let [a, o] = yi(n), s = kr(a.then(e => bi(e.getChannelData(0).subarray(4500)), e => {
+  let [a, o] = Mi(n), s = Hr(a.then(e => Ni(e.getChannelData(0).subarray(4500)), e => {
     if (e.name === `timeout` || e.name === `suspended`) return -3;
     throw e
   }));
   return () => (o(), s)
 }
 
-function _i() {
-  return A() && !ei() && !ci()
+function Ai() {
+  return A() && !pi() && !xi()
 }
 
-function vi() {
-  return A() && li() && ti() || $r() && mi() && oi()
+function ji() {
+  return A() && Si() && mi() || fi() && Di() && yi()
 }
 
-function yi(e) {
+function Mi(e) {
   let t = () => void 0;
   return [new Promise((n, r) => {
     let i = !1,
@@ -2274,17 +2287,17 @@ function yi(e) {
       o = 0;
     e.oncomplete = e => n(e.renderedBuffer);
     let s = () => {
-        setTimeout(() => r(xi(`timeout`)), Math.min(500, o + 5e3 - Date.now()))
+        setTimeout(() => r(Pi(`timeout`)), Math.min(500, o + 5e3 - Date.now()))
       },
       c = () => {
         try {
           let t = e.startRendering();
-          switch (Er(t) && kr(t), e.state) {
+          switch (zr(t) && Hr(t), e.state) {
             case `running`:
               o = Date.now(), i && s();
               break;
             case `suspended`:
-              document.hidden || a++, i && a >= 3 ? r(xi(`suspended`)) : setTimeout(c, 500)
+              document.hidden || a++, i && a >= 3 ? r(Pi(`suspended`)) : setTimeout(c, 500)
           }
         } catch (e) {
           r(e)
@@ -2296,20 +2309,20 @@ function yi(e) {
   }), t]
 }
 
-function bi(e) {
+function Ni(e) {
   let t = 0;
   for (let n = 0; n < e.length; ++n) t += Math.abs(e[n]);
   return t
 }
 
-function xi(e) {
+function Pi(e) {
   let t = Error(e);
   return t.name = e, t
 }
-async function Si(e, t, n = 50) {
+async function Fi(e, t, n = 50) {
   var r, i, a;
   let o = document;
-  for (; !o.body;) await Cr(n);
+  for (; !o.body;) await Ir(n);
   let s = o.createElement(`iframe`);
   try {
     for (await new Promise((e, n) => {
@@ -2329,23 +2342,23 @@ async function Si(e, t, n = 50) {
           r || (((t = (e = s.contentWindow) == null ? void 0 : e.document) == null ? void 0 : t.readyState) === `complete` ? i() : setTimeout(c, 10))
         };
         c()
-      }); !((i = (r = s.contentWindow) == null ? void 0 : r.document) != null && i.body);) await Cr(n);
+      }); !((i = (r = s.contentWindow) == null ? void 0 : r.document) != null && i.body);) await Ir(n);
     return await e(s, s.contentWindow)
   } finally {
     (a = s.parentNode) == null || a.removeChild(s)
   }
 }
 
-function Ci(e) {
-  let [t, n] = Pr(e), r = document.createElement(t ?? `div`);
+function Ii(e) {
+  let [t, n] = qr(e), r = document.createElement(t ?? `div`);
   for (let e of Object.keys(n)) {
     let t = n[e].join(` `);
-    e === `style` ? wi(r.style, t) : r.setAttribute(e, t)
+    e === `style` ? Li(r.style, t) : r.setAttribute(e, t)
   }
   return r
 }
 
-function wi(e, t) {
+function Li(e, t) {
   for (let n of t.split(`;`)) {
     let t = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(n);
     if (t) {
@@ -2355,7 +2368,7 @@ function wi(e, t) {
   }
 }
 
-function Ti() {
+function Ri() {
   let e = window;
   for (;;) {
     let t = e.parent;
@@ -2369,17 +2382,17 @@ function Ti() {
     e = t
   }
 }
-var Ei = `mmMwWLliI0O&1`,
-  Di = `48px`,
-  Oi = [`monospace`, `sans-serif`, `serif`],
-  ki = `sans-serif-thin.ARNO PRO.Agency FB.Arabic Typesetting.Arial Unicode MS.AvantGarde Bk BT.BankGothic Md BT.Batang.Bitstream Vera Sans Mono.Calibri.Century.Century Gothic.Clarendon.EUROSTILE.Franklin Gothic.Futura Bk BT.Futura Md BT.GOTHAM.Gill Sans.HELV.Haettenschweiler.Helvetica Neue.Humanst521 BT.Leelawadee.Letter Gothic.Levenim MT.Lucida Bright.Lucida Sans.Menlo.MS Mincho.MS Outlook.MS Reference Specialty.MS UI Gothic.MT Extra.MYRIAD PRO.Marlett.Meiryo UI.Microsoft Uighur.Minion Pro.Monotype Corsiva.PMingLiU.Pristina.SCRIPTINA.Segoe UI Light.Serifa.SimHei.Small Fonts.Staccato222 BT.TRAJAN PRO.Univers CE 55 Medium.Vrinda.ZWAdobeF`.split(`.`);
+var zi = `mmMwWLliI0O&1`,
+  Bi = `48px`,
+  Vi = [`monospace`, `sans-serif`, `serif`],
+  Hi = `sans-serif-thin.ARNO PRO.Agency FB.Arabic Typesetting.Arial Unicode MS.AvantGarde Bk BT.BankGothic Md BT.Batang.Bitstream Vera Sans Mono.Calibri.Century.Century Gothic.Clarendon.EUROSTILE.Franklin Gothic.Futura Bk BT.Futura Md BT.GOTHAM.Gill Sans.HELV.Haettenschweiler.Helvetica Neue.Humanst521 BT.Leelawadee.Letter Gothic.Levenim MT.Lucida Bright.Lucida Sans.Menlo.MS Mincho.MS Outlook.MS Reference Specialty.MS UI Gothic.MT Extra.MYRIAD PRO.Marlett.Meiryo UI.Microsoft Uighur.Minion Pro.Monotype Corsiva.PMingLiU.Pristina.SCRIPTINA.Segoe UI Light.Serifa.SimHei.Small Fonts.Staccato222 BT.TRAJAN PRO.Univers CE 55 Medium.Vrinda.ZWAdobeF`.split(`.`);
 
-function Ai() {
-  return Si(async (e, {
+function Ui() {
+  return Fi(async (e, {
     document: t
   }) => {
     let n = t.body;
-    n.style.fontSize = Di;
+    n.style.fontSize = Bi;
     let r = t.createElement(`div`);
     r.style.setProperty(`visibility`, `hidden`, `important`);
     let i = {},
@@ -2389,25 +2402,25 @@ function Ai() {
           {
             style: i
           } = n;
-        return i.position = `absolute`, i.top = `0`, i.left = `0`, i.fontFamily = e, n.textContent = Ei, r.appendChild(n), n
+        return i.position = `absolute`, i.top = `0`, i.left = `0`, i.fontFamily = e, n.textContent = zi, r.appendChild(n), n
       },
       s = (e, t) => o(`'${e}',${t}`),
-      c = () => Oi.map(o),
+      c = () => Vi.map(o),
       l = () => {
         let e = {};
-        for (let t of ki) e[t] = Oi.map(e => s(t, e));
+        for (let t of Hi) e[t] = Vi.map(e => s(t, e));
         return e
       },
-      u = e => Oi.some((t, n) => e[n].offsetWidth !== i[t] || e[n].offsetHeight !== a[t]),
+      u = e => Vi.some((t, n) => e[n].offsetWidth !== i[t] || e[n].offsetHeight !== a[t]),
       d = c(),
       f = l();
     n.appendChild(r);
-    for (let e = 0; e < Oi.length; e++) i[Oi[e]] = d[e].offsetWidth, a[Oi[e]] = d[e].offsetHeight;
-    return ki.filter(e => u(f[e]))
+    for (let e = 0; e < Vi.length; e++) i[Vi[e]] = d[e].offsetWidth, a[Vi[e]] = d[e].offsetHeight;
+    return Hi.filter(e => u(f[e]))
   })
 }
 
-function ji() {
+function Wi() {
   let e = navigator.plugins;
   if (!e) return;
   let t = [];
@@ -2431,46 +2444,46 @@ function ji() {
   return t
 }
 
-function Mi() {
-  return Ni(Vi())
+function Gi() {
+  return Ki(ea())
 }
 
-function Ni(e) {
+function Ki(e) {
   let t = !1,
-    n, r, [i, a] = Pi();
-  return Fi(i, a) ? (t = Ii(a), e ? n = r = `skipped` : [n, r] = Li(i, a)) : n = r = `unsupported`, {
+    n, r, [i, a] = qi();
+  return Ji(i, a) ? (t = Yi(a), e ? n = r = `skipped` : [n, r] = Xi(i, a)) : n = r = `unsupported`, {
     winding: t,
     geometry: n,
     text: r
   }
 }
 
-function Pi() {
+function qi() {
   let e = document.createElement(`canvas`);
   return e.width = 1, e.height = 1, [e, e.getContext(`2d`)]
 }
 
-function Fi(e, t) {
+function Ji(e, t) {
   return !!(t && e.toDataURL)
 }
 
-function Ii(e) {
+function Yi(e) {
   return e.rect(0, 0, 10, 10), e.rect(2, 2, 6, 6), !e.isPointInPath(5, 5, `evenodd`)
 }
 
-function Li(e, t) {
-  Ri(e, t);
-  let n = Bi(e);
-  return n === Bi(e) ? (zi(e, t), [Bi(e), n]) : [`unstable`, `unstable`]
+function Xi(e, t) {
+  Zi(e, t);
+  let n = $i(e);
+  return n === $i(e) ? (Qi(e, t), [$i(e), n]) : [`unstable`, `unstable`]
 }
 
-function Ri(e, t) {
+function Zi(e, t) {
   e.width = 240, e.height = 60, t.textBaseline = `alphabetic`, t.fillStyle = `#f60`, t.fillRect(100, 1, 62, 20), t.fillStyle = `#069`, t.font = `11pt "Times New Roman"`;
   let n = `Cwm fjordbank gly ${String.fromCharCode(55357,56835)}`;
   t.fillText(n, 2, 15), t.fillStyle = `rgba(102, 204, 0, 0.2)`, t.font = `18pt Arial`, t.fillText(n, 4, 45)
 }
 
-function zi(e, t) {
+function Qi(e, t) {
   e.width = 122, e.height = 110, t.globalCompositeOperation = `multiply`;
   for (let [e, n, r] of [
       [`#f2f`, 40, 40],
@@ -2480,21 +2493,21 @@ function zi(e, t) {
   t.fillStyle = `#f9c`, t.arc(60, 60, 60, 0, Math.PI * 2, !0), t.arc(60, 60, 20, 0, Math.PI * 2, !0), t.fill(`evenodd`)
 }
 
-function Bi(e) {
+function $i(e) {
   return e.toDataURL()
 }
 
-function Vi() {
-  let e = A() && li() && ti(),
-    t = ni() && ri();
+function ea() {
+  let e = A() && Si() && mi(),
+    t = hi() && gi();
   return e || t
 }
 
-function Hi() {
+function ta() {
   let e = navigator,
     t = 0,
     n;
-  e.maxTouchPoints === void 0 ? e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints) : t = Mr(e.maxTouchPoints);
+  e.maxTouchPoints === void 0 ? e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints) : t = Gr(e.maxTouchPoints);
   try {
     document.createEvent(`TouchEvent`), n = !0
   } catch {
@@ -2508,15 +2521,15 @@ function Hi() {
   }
 }
 
-function Ui() {
+function na() {
   return navigator.oscpu
 }
 
-function Wi() {
+function ra() {
   let e = navigator,
     t = [],
     n = e.language || e.userLanguage || e.browserLanguage || e.systemLanguage;
-  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) $r() && ai() || t.push(e.languages);
+  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) fi() && vi() || t.push(e.languages);
   else if (typeof e.languages == `string`) {
     let n = e.languages;
     n && t.push(n.split(`,`))
@@ -2524,97 +2537,97 @@ function Wi() {
   return t
 }
 
-function Gi() {
+function ia() {
   return window.screen.colorDepth
 }
 
-function Ki() {
+function aa() {
   return w(C(navigator.deviceMemory), void 0)
 }
 
-function qi() {
-  if (!(A() && li() && ti())) return Ji()
+function oa() {
+  if (!(A() && Si() && mi())) return sa()
 }
 
-function Ji() {
+function sa() {
   let e = screen,
-    t = e => w(Mr(e), null),
+    t = e => w(Gr(e), null),
     n = [t(e.width), t(e.height)];
   return n.sort().reverse(), n
 }
-var Yi = 2500,
-  Xi = 10,
-  Zi, Qi;
+var ca = 2500,
+  la = 10,
+  ua, da;
 
-function $i() {
-  if (Qi !== void 0) return;
+function fa() {
+  if (da !== void 0) return;
   let e = () => {
-    let t = na();
-    ra(t) ? Qi = setTimeout(e, Yi) : (Zi = t, Qi = void 0)
+    let t = ha();
+    ga(t) ? da = setTimeout(e, ca) : (ua = t, da = void 0)
   };
   e()
 }
 
-function ea() {
-  return $i(), async () => {
-    let e = na();
-    if (ra(e)) {
-      if (Zi) return [...Zi];
-      di() && (await fi(), e = na())
+function pa() {
+  return fa(), async () => {
+    let e = ha();
+    if (ga(e)) {
+      if (ua) return [...ua];
+      wi() && (await Ti(), e = ha())
     }
-    return ra(e) || (Zi = e), e
+    return ga(e) || (ua = e), e
   }
 }
 
-function ta() {
-  let e = A() && li() && ti(),
-    t = ni() && ii();
+function ma() {
+  let e = A() && Si() && mi(),
+    t = hi() && _i();
   if (e || t) return () => Promise.resolve(void 0);
-  let n = ea();
+  let n = pa();
   return async () => {
     let e = await n(),
-      t = e => e === null ? null : Nr(e, Xi);
+      t = e => e === null ? null : Kr(e, la);
     return [t(e[0]), t(e[1]), t(e[2]), t(e[3])]
   }
 }
 
-function na() {
+function ha() {
   let e = screen;
   return [w(C(e.availTop), null), w(C(e.width) - C(e.availWidth) - w(C(e.availLeft), 0), null), w(C(e.height) - C(e.availHeight) - w(C(e.availTop), 0), null), w(C(e.availLeft), null)]
 }
 
-function ra(e) {
+function ga(e) {
   for (let t = 0; t < 4; ++t)
     if (e[t]) return !1;
   return !0
 }
 
-function ia() {
-  let e = aa();
-  return e !== void 0 && ni() && ii() ? e >= 8 ? 8 : 4 : e
+function _a() {
+  let e = va();
+  return e !== void 0 && hi() && _i() ? e >= 8 ? 8 : 4 : e
 }
 
-function aa() {
-  return w(Mr(navigator.hardwareConcurrency), void 0)
+function va() {
+  return w(Gr(navigator.hardwareConcurrency), void 0)
 }
 
-function oa() {
+function ya() {
   var e;
   let t = (e = window.Intl) == null ? void 0 : e.DateTimeFormat;
   if (t) {
     let e = new t().resolvedOptions().timeZone;
     if (e) return e
   }
-  let n = -sa();
+  let n = -ba();
   return `UTC${n>=0?`+`:``}${n}`
 }
 
-function sa() {
+function ba() {
   let e = new Date().getFullYear();
   return Math.max(C(new Date(e, 0, 1).getTimezoneOffset()), C(new Date(e, 6, 1).getTimezoneOffset()))
 }
 
-function ca() {
+function xa() {
   try {
     return !!window.sessionStorage
   } catch {
@@ -2622,7 +2635,7 @@ function ca() {
   }
 }
 
-function la() {
+function Sa() {
   try {
     return !!window.localStorage
   } catch {
@@ -2630,34 +2643,34 @@ function la() {
   }
 }
 
-function ua() {
-  if (!(Zr() || Qr())) try {
+function Ca() {
+  if (!(ui() || di())) try {
     return !!window.indexedDB
   } catch {
     return !0
   }
 }
 
-function da() {
+function wa() {
   return !!window.openDatabase
 }
 
-function fa() {
+function Ta() {
   return navigator.cpuClass
 }
 
-function pa() {
+function Ea() {
   let {
     platform: e
   } = navigator;
-  return e === `MacIntel` && A() && !ei() ? ui() ? `iPad` : `iPhone` : e
+  return e === `MacIntel` && A() && !pi() ? Ci() ? `iPad` : `iPhone` : e
 }
 
-function ma() {
+function Da() {
   return navigator.vendor || ``
 }
 
-function ha() {
+function Oa() {
   let e = [];
   for (let t of [`chrome`, `safari`, `__crWeb`, `__gCrWeb`, `yandex`, `__yb`, `__ybro`, `__firefox__`, `__edgeTrackingPreventionStatistics`, `webkit`, `oprt`, `samsungAr`, `ucweb`, `UCShellJava`, `puffinDevice`]) {
     let n = window[t];
@@ -2666,7 +2679,7 @@ function ha() {
   return e.sort()
 }
 
-function ga() {
+function ka() {
   let e = document;
   try {
     e.cookie = `cookietest=1; SameSite=Strict;`;
@@ -2677,7 +2690,7 @@ function ga() {
   }
 }
 
-function _a() {
+function Aa() {
   let e = atob;
   return {
     abpIndo: [`#Iklan-Melayang`, `#Kolom-Iklan-728`, `#SidebarIklan-wrapper`, `[title="ALIENBOLA" i]`, e(`I0JveC1CYW5uZXItYWRz`)],
@@ -2727,14 +2740,14 @@ function _a() {
     webAnnoyancesUltralist: [`#mod-social-share-2`, `#social-tools`, e(`LmN0cGwtZnVsbGJhbm5lcg==`), `.zergnet-recommend`, `.yt.btn-link.btn-md.btn`]
   }
 }
-async function va({
+async function ja({
   debug: e
 } = {}) {
-  if (!ya()) return;
-  let t = _a(),
+  if (!Ma()) return;
+  let t = Aa(),
     n = Object.keys(t),
-    r = await ba([].concat(...n.map(e => t[e])));
-  e && Sa(t, r);
+    r = await Na([].concat(...n.map(e => t[e])));
+  e && Fa(t, r);
   let i = n.filter(e => {
     let n = t[e];
     return T(n.map(e => r[e])) > n.length * .6
@@ -2742,23 +2755,23 @@ async function va({
   return i.sort(), i
 }
 
-function ya() {
-  return A() || pi()
+function Ma() {
+  return A() || Ei()
 }
-async function ba(e) {
+async function Na(e) {
   var t;
   let n = document,
     r = n.createElement(`div`),
     i = Array(e.length),
     a = {};
-  xa(r);
+  Pa(r);
   for (let t = 0; t < e.length; ++t) {
-    let a = Ci(e[t]);
+    let a = Ii(e[t]);
     a.tagName === `DIALOG` && a.show();
     let o = n.createElement(`div`);
-    xa(o), o.appendChild(a), r.appendChild(o), i[t] = a
+    Pa(o), o.appendChild(a), r.appendChild(o), i[t] = a
   }
-  for (; !n.body;) await Cr(50);
+  for (; !n.body;) await Ir(50);
   n.body.appendChild(r);
   try {
     for (let t = 0; t < e.length; ++t) i[t].offsetParent || (a[e[t]] = !0)
@@ -2768,11 +2781,11 @@ async function ba(e) {
   return a
 }
 
-function xa(e) {
+function Pa(e) {
   e.style.setProperty(`visibility`, `hidden`, `important`), e.style.setProperty(`display`, `block`, `important`)
 }
 
-function Sa(e, t) {
+function Fa(e, t) {
   let n = "DOM blockers debug:\n```";
   for (let r of Object.keys(e)) {
     n += `\n${r}:`;
@@ -2781,79 +2794,79 @@ function Sa(e, t) {
   console.log(`${n}\n\`\`\``)
 }
 
-function Ca() {
+function Ia() {
   for (let e of [`rec2020`, `p3`, `srgb`])
     if (matchMedia(`(color-gamut: ${e})`).matches) return e
 }
 
-function wa() {
-  if (Ta(`inverted`)) return !0;
-  if (Ta(`none`)) return !1
+function La() {
+  if (Ra(`inverted`)) return !0;
+  if (Ra(`none`)) return !1
 }
 
-function Ta(e) {
+function Ra(e) {
   return matchMedia(`(inverted-colors: ${e})`).matches
 }
 
-function Ea() {
-  if (Da(`active`)) return !0;
-  if (Da(`none`)) return !1
+function za() {
+  if (Ba(`active`)) return !0;
+  if (Ba(`none`)) return !1
 }
 
-function Da(e) {
+function Ba(e) {
   return matchMedia(`(forced-colors: ${e})`).matches
 }
-var Oa = 100;
+var Va = 100;
 
-function ka() {
+function Ha() {
   if (matchMedia(`(min-monochrome: 0)`).matches) {
-    for (let e = 0; e <= Oa; ++e)
+    for (let e = 0; e <= Va; ++e)
       if (matchMedia(`(max-monochrome: ${e})`).matches) return e;
     throw Error(`Too high value`)
   }
 }
 
-function Aa() {
-  if (ja(`no-preference`)) return 0;
-  if (ja(`high`) || ja(`more`)) return 1;
-  if (ja(`low`) || ja(`less`)) return -1;
-  if (ja(`forced`)) return 10
+function Ua() {
+  if (Wa(`no-preference`)) return 0;
+  if (Wa(`high`) || Wa(`more`)) return 1;
+  if (Wa(`low`) || Wa(`less`)) return -1;
+  if (Wa(`forced`)) return 10
 }
 
-function ja(e) {
+function Wa(e) {
   return matchMedia(`(prefers-contrast: ${e})`).matches
 }
 
-function Ma() {
-  if (Na(`reduce`)) return !0;
-  if (Na(`no-preference`)) return !1
+function Ga() {
+  if (Ka(`reduce`)) return !0;
+  if (Ka(`no-preference`)) return !1
 }
 
-function Na(e) {
+function Ka(e) {
   return matchMedia(`(prefers-reduced-motion: ${e})`).matches
 }
 
-function Pa() {
-  if (Fa(`reduce`)) return !0;
-  if (Fa(`no-preference`)) return !1
+function qa() {
+  if (Ja(`reduce`)) return !0;
+  if (Ja(`no-preference`)) return !1
 }
 
-function Fa(e) {
+function Ja(e) {
   return matchMedia(`(prefers-reduced-transparency: ${e})`).matches
 }
 
-function Ia() {
-  if (La(`high`)) return !0;
-  if (La(`standard`)) return !1
+function Ya() {
+  if (Xa(`high`)) return !0;
+  if (Xa(`standard`)) return !1
 }
 
-function La(e) {
+function Xa(e) {
   return matchMedia(`(dynamic-range: ${e})`).matches
 }
 var j = Math,
   M = () => 0;
 
-function Ra() {
+function Za() {
   let e = j.acos || M,
     t = j.acosh || M,
     n = j.asin || M,
@@ -2896,8 +2909,8 @@ function Ra() {
     powPI: (e => j.pow(j.PI, e))(-100)
   }
 }
-var za = `mmMwWLliI0fiflO&1`,
-  Ba = {
+var Qa = `mmMwWLliI0fiflO&1`,
+  $a = {
     default: [],
     apple: [{
       font: `-apple-system-body`
@@ -2919,12 +2932,12 @@ var za = `mmMwWLliI0fiflO&1`,
     }]
   };
 
-function Va() {
-  return Ua((e, t, n) => {
+function eo() {
+  return no((e, t, n) => {
     let r = {},
       i = {};
-    for (let n of Object.keys(Ba)) {
-      let [i = {}, a = za] = Ba[n], o = e.createElement(`span`);
+    for (let n of Object.keys($a)) {
+      let [i = {}, a = Qa] = $a[n], o = e.createElement(`span`);
       o.textContent = a, o.style.whiteSpace = `nowrap`;
       for (let e of Object.keys(i)) {
         let t = i[e];
@@ -2932,82 +2945,82 @@ function Va() {
       }
       r[n] = o, t.append(e.createElement(`br`), o)
     }
-    let a = $r() && si();
-    for (let e of Object.keys(Ba)) {
+    let a = fi() && bi();
+    for (let e of Object.keys($a)) {
       let t = r[e].getBoundingClientRect().width;
-      i[e] = a ? Ha(t * n.devicePixelRatio) : t
+      i[e] = a ? to(t * n.devicePixelRatio) : t
     }
     return i
   })
 }
 
-function Ha(e) {
-  let t = 10 ** (pi() ? 0 : 3);
+function to(e) {
+  let t = 10 ** (Ei() ? 0 : 3);
   return Math.floor(e * t) / t
 }
 
-function Ua(e, t = 4e3) {
-  return Si((n, r) => {
+function no(e, t = 4e3) {
+  return Fi((n, r) => {
     let i = r.document,
       a = i.body,
       o = a.style;
-    o.width = `${t}px`, o.webkitTextSizeAdjust = o.textSizeAdjust = `none`, $r() ? a.style.zoom = `${1/r.devicePixelRatio}` : A() && (a.style.zoom = `reset`);
+    o.width = `${t}px`, o.webkitTextSizeAdjust = o.textSizeAdjust = `none`, fi() ? a.style.zoom = `${1/r.devicePixelRatio}` : A() && (a.style.zoom = `reset`);
     let s = i.createElement(`div`);
     return s.textContent = [...Array(t / 20 << 0)].map(() => `word`).join(` `), a.appendChild(s), e(i, a, r)
   }, `<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">`)
 }
 
-function Wa() {
+function ro() {
   return navigator.pdfViewerEnabled
 }
 
-function Ga() {
+function io() {
   let e = new Float32Array(1),
     t = new Uint8Array(e.buffer);
   return e[0] = 1 / 0, e[0] -= e[0], t[3]
 }
 
-function Ka() {
+function ao() {
   let {
     ApplePaySession: e
   } = window;
   if (typeof(e == null ? void 0 : e.canMakePayments) != `function`) return -1;
-  if (qa()) return -3;
+  if (oo()) return -3;
   try {
     return +!!e.canMakePayments()
   } catch (e) {
-    return Ja(e)
+    return so(e)
   }
 }
-var qa = Ti;
+var oo = Ri;
 
-function Ja(e) {
+function so(e) {
   if (e instanceof Error && e.name === `InvalidAccessError` && /\bfrom\b.*\binsecure\b/i.test(e.message)) return -2;
   throw e
 }
 
-function Ya() {
+function co() {
   let e = document.createElement(`a`),
     t = e.attributionSourceId ?? e.attributionsourceid;
   return t === void 0 ? void 0 : String(t)
 }
-var Xa = -1,
-  Za = -2,
-  Qa = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
-  $a = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
-  eo = [`FRAGMENT_SHADER`, `VERTEX_SHADER`],
-  to = [`LOW_FLOAT`, `MEDIUM_FLOAT`, `HIGH_FLOAT`, `LOW_INT`, `MEDIUM_INT`, `HIGH_INT`],
-  no = `WEBGL_debug_renderer_info`,
-  ro = `WEBGL_polygon_mode`;
+var lo = -1,
+  uo = -2,
+  fo = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
+  po = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
+  mo = [`FRAGMENT_SHADER`, `VERTEX_SHADER`],
+  ho = [`LOW_FLOAT`, `MEDIUM_FLOAT`, `HIGH_FLOAT`, `LOW_INT`, `MEDIUM_INT`, `HIGH_INT`],
+  go = `WEBGL_debug_renderer_info`,
+  _o = `WEBGL_polygon_mode`;
 
-function io({
+function vo({
   cache: e
 }) {
   var t, n, r, i, a, o;
-  let s = oo(e);
-  if (!s) return Xa;
-  if (!po(s)) return Za;
-  let c = uo() ? null : s.getExtension(no);
+  let s = bo(e);
+  if (!s) return lo;
+  if (!Eo(s)) return uo;
+  let c = wo() ? null : s.getExtension(go);
   return {
     version: ((t = s.getParameter(s.VERSION)) == null ? void 0 : t.toString()) || ``,
     vendor: ((n = s.getParameter(s.VENDOR)) == null ? void 0 : n.toString()) || ``,
@@ -3018,12 +3031,12 @@ function io({
   }
 }
 
-function ao({
+function yo({
   cache: e
 }) {
-  let t = oo(e);
-  if (!t) return Xa;
-  if (!po(t)) return Za;
+  let t = bo(e);
+  if (!t) return lo;
+  if (!Eo(t)) return uo;
   let n = t.getSupportedExtensions(),
     r = t.getContextAttributes(),
     i = [],
@@ -3033,27 +3046,27 @@ function ao({
     c = [];
   if (r)
     for (let e of Object.keys(r)) a.push(`${e}=${r[e]}`);
-  let l = co(t);
+  let l = So(t);
   for (let e of l) {
     let n = t[e];
-    o.push(`${e}=${n}${Qa.has(n)?`=${t.getParameter(n)}`:``}`)
+    o.push(`${e}=${n}${fo.has(n)?`=${t.getParameter(n)}`:``}`)
   }
   if (n)
     for (let e of n) {
-      if (e === no && uo() || e === ro && fo()) continue;
+      if (e === go && wo() || e === _o && To()) continue;
       let n = t.getExtension(e);
       if (!n) {
         i.push(e);
         continue
       }
-      for (let e of co(n)) {
+      for (let e of So(n)) {
         let r = n[e];
-        s.push(`${e}=${r}${$a.has(r)?`=${t.getParameter(r)}`:``}`)
+        s.push(`${e}=${r}${po.has(r)?`=${t.getParameter(r)}`:``}`)
       }
     }
-  for (let e of eo)
-    for (let n of to) {
-      let r = so(t, e, n);
+  for (let e of mo)
+    for (let n of ho) {
+      let r = xo(t, e, n);
       c.push(`${e}.${n}=${r.join(`,`)}`)
     }
   return s.sort(), o.sort(), {
@@ -3066,7 +3079,7 @@ function ao({
   }
 }
 
-function oo(e) {
+function bo(e) {
   if (e.webgl) return e.webgl.context;
   let t = document.createElement(`canvas`),
     n;
@@ -3082,39 +3095,39 @@ function oo(e) {
   }, n
 }
 
-function so(e, t, n) {
+function xo(e, t, n) {
   let r = e.getShaderPrecisionFormat(e[t], e[n]);
   return r ? [r.rangeMin, r.rangeMax, r.precision] : []
 }
 
-function co(e) {
-  return Object.keys(e.__proto__).filter(lo)
+function So(e) {
+  return Object.keys(e.__proto__).filter(Co)
 }
 
-function lo(e) {
+function Co(e) {
   return typeof e == `string` && !e.match(/[^A-Z0-9_x]/)
 }
 
-function uo() {
-  return ni()
+function wo() {
+  return hi()
 }
 
-function fo() {
-  return $r() || A()
+function To() {
+  return fi() || A()
 }
 
-function po(e) {
+function Eo(e) {
   return typeof e.getParameter == `function`
 }
 
-function mo() {
-  if (!(pi() || A())) return -2;
+function Do() {
+  if (!(Ei() || A())) return -2;
   if (!window.AudioContext) return -1;
   let e = new AudioContext().baseLatency;
   return e == null ? -1 : isFinite(e) ? e : -3
 }
 
-function ho() {
+function Oo() {
   if (!window.Intl) return -1;
   let e = window.Intl.DateTimeFormat;
   if (!e) return -2;
@@ -3122,15 +3135,15 @@ function ho() {
   return !t && t !== `` ? -3 : t
 }
 
-function go(e) {
+function ko(e) {
   return /not/i.test(e)
 }
-async function _o() {
+async function Ao() {
   let e = navigator.userAgentData;
   if (!e) return;
   let t = e.brands.filter(({
       brand: e
-    }) => !go(e)).map(({
+    }) => !ko(e)).map(({
       brand: e
     }) => e),
     n = {
@@ -3147,77 +3160,77 @@ async function _o() {
   }
   return n
 }
-var vo = {
-  userAgentData: _o,
-  fonts: Ai,
-  domBlockers: va,
-  fontPreferences: Va,
-  audio: hi,
-  screenFrame: ta,
-  canvas: Mi,
-  osCpu: Ui,
-  languages: Wi,
-  colorDepth: Gi,
-  deviceMemory: Ki,
-  screenResolution: qi,
-  hardwareConcurrency: ia,
-  timezone: oa,
-  sessionStorage: ca,
-  localStorage: la,
-  indexedDB: ua,
-  openDatabase: da,
-  cpuClass: fa,
-  platform: pa,
-  plugins: ji,
-  touchSupport: Hi,
-  vendor: ma,
-  vendorFlavors: ha,
-  cookiesEnabled: ga,
-  colorGamut: Ca,
-  invertedColors: wa,
-  forcedColors: Ea,
-  monochrome: ka,
-  contrast: Aa,
-  reducedMotion: Ma,
-  reducedTransparency: Pa,
-  hdr: Ia,
-  math: Ra,
-  pdfViewerEnabled: Wa,
-  architecture: Ga,
-  applePay: Ka,
-  privateClickMeasurement: Ya,
-  audioBaseLatency: mo,
-  dateTimeLocale: ho,
-  webGlBasics: io,
-  webGlExtensions: ao
+var jo = {
+  userAgentData: Ao,
+  fonts: Ui,
+  domBlockers: ja,
+  fontPreferences: eo,
+  audio: Oi,
+  screenFrame: ma,
+  canvas: Gi,
+  osCpu: na,
+  languages: ra,
+  colorDepth: ia,
+  deviceMemory: aa,
+  screenResolution: oa,
+  hardwareConcurrency: _a,
+  timezone: ya,
+  sessionStorage: xa,
+  localStorage: Sa,
+  indexedDB: Ca,
+  openDatabase: wa,
+  cpuClass: Ta,
+  platform: Ea,
+  plugins: Wi,
+  touchSupport: ta,
+  vendor: Da,
+  vendorFlavors: Oa,
+  cookiesEnabled: ka,
+  colorGamut: Ia,
+  invertedColors: La,
+  forcedColors: za,
+  monochrome: Ha,
+  contrast: Ua,
+  reducedMotion: Ga,
+  reducedTransparency: qa,
+  hdr: Ya,
+  math: Za,
+  pdfViewerEnabled: ro,
+  architecture: io,
+  applePay: ao,
+  privateClickMeasurement: co,
+  audioBaseLatency: Do,
+  dateTimeLocale: Oo,
+  webGlBasics: vo,
+  webGlExtensions: yo
 };
 
-function yo(e) {
-  return Xr(vo, e, [])
+function Mo(e) {
+  return li(jo, e, [])
 }
-var bo = `$ if upgrade to Pro: https://fingerprint.com/github/?utm_source=oss&utm_medium=referral&utm_campaign=confidence_score`;
+var No = `$ if upgrade to Pro: https://fingerprint.com/github/?utm_source=oss&utm_medium=referral&utm_campaign=confidence_score`;
 
-function xo(e) {
-  let t = So(e),
-    n = Co(t);
+function Po(e) {
+  let t = Fo(e),
+    n = Io(t);
   return {
     score: t,
-    comment: bo.replace(/\$/g, `${n}`)
+    comment: No.replace(/\$/g, `${n}`)
   }
 }
 
-function So(e) {
-  if (pi()) return .4;
-  if (A()) return ei() && !(li() && ti()) ? .5 : .3;
+function Fo(e) {
+  if (Ei()) return .4;
+  if (A()) return pi() && !(Si() && mi()) ? .5 : .3;
   let t = `value` in e.platform ? e.platform.value : ``;
   return /^Win/.test(t) ? .6 : /^Mac/.test(t) ? .5 : .7
 }
 
-function Co(e) {
-  return Nr(.99 + .01 * e, 1e-4)
+function Io(e) {
+  return Kr(.99 + .01 * e, 1e-4)
 }
 
-function wo(e) {
+function Lo(e) {
   let t = ``;
   for (let n of Object.keys(e).sort()) {
     let r = e[n],
@@ -3227,40 +3240,40 @@ function wo(e) {
   return t
 }
 
-function To(e) {
-  return JSON.stringify(e, (e, t) => t instanceof Error ? Kr(t) : t, 2)
+function Ro(e) {
+  return JSON.stringify(e, (e, t) => t instanceof Error ? ai(t) : t, 2)
 }
 
-function Eo(e) {
-  return Gr(wo(e))
+function zo(e) {
+  return ii(Lo(e))
 }
 
-function Do(e) {
+function Bo(e) {
   let t;
   return {
     get visitorId() {
-      return t === void 0 && (t = Eo(this.components)), t
+      return t === void 0 && (t = zo(this.components)), t
     },
     set visitorId(e) {
       t = e
     },
-    confidence: xo(e),
+    confidence: Po(e),
     components: e,
-    version: Sr
+    version: Fr
   }
 }
 
-function Oo(e = 50) {
-  return Tr(e, e * 2)
+function Vo(e = 50) {
+  return Rr(e, e * 2)
 }
 
-function ko(e, t) {
+function Ho(e, t) {
   let n = Date.now();
   return {
     async get(r) {
       let i = Date.now(),
         a = await e(),
-        o = Do(a);
+        o = Bo(a);
       return (t || r != null && r.debug) && console.log(`Copy the text below to get the debug data:
 
 \`\`\`
@@ -3268,47 +3281,47 @@ version: ${o.version}
 userAgent: ${navigator.userAgent}
 timeBetweenLoadAndGet: ${i-n}
 visitorId: ${o.visitorId}
-components: ${To(a)}
+components: ${Ro(a)}
 \`\`\``), o
     }
   }
 }
 
-function Ao() {
+function Uo() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     let e = new XMLHttpRequest;
-    e.open(`get`, `https://m1.openfpcdn.io/fingerprintjs/v${Sr}/npm-monitoring`, !0), e.send()
+    e.open(`get`, `https://m1.openfpcdn.io/fingerprintjs/v${Fr}/npm-monitoring`, !0), e.send()
   } catch (e) {
     console.error(e)
   }
 }
-async function jo(e = {}) {
+async function Wo(e = {}) {
   let {
     delayFallback: t,
     debug: n,
     monitoring: r = !0
   } = e;
-  return r && Ao(), await Oo(t), ko(yo({
+  return r && Uo(), await Vo(t), Ho(Mo({
     cache: {},
     debug: n
   }), n)
 }
-var Mo = {
-    load: jo,
-    hashComponents: Eo,
-    componentsToDebugString: To
+var Go = {
+    load: Wo,
+    hashComponents: zo,
+    componentsToDebugString: Ro
   },
-  No = null;
-async function Po() {
-  return No || (No = Mo.load()), No
+  Ko = null;
+async function qo() {
+  return Ko || (Ko = Go.load()), Ko
 }
-async function Fo() {
-  return Io().then(e => e.visitorId)
+async function Jo() {
+  return Yo().then(e => e.visitorId)
 }
-async function Io() {
-  let e = await (await Po()).get(),
+async function Yo() {
+  let e = await (await qo()).get(),
     t = e.components,
-    n = xt(),
+    n = Pt(),
     r = navigator.userAgent.toLowerCase(),
     i = r.includes(`iphone`),
     a = r.includes(`macintosh`),
@@ -3356,11 +3369,11 @@ async function Io() {
       ...t
     }), n === `Safari` && (t = {
       canvas2d: {
-        value: await Tt(),
+        value: await Rt(),
         duration: 0
       },
       canvasWebgl: {
-        value: await Ut(),
+        value: await nn(),
         duration: 0
       },
       ...t
@@ -3369,19 +3382,19 @@ async function Io() {
     t = {
       ...t,
       fonts: {
-        value: [(c = t.fonts) == null ? void 0 : c.value, await Rt()],
+        value: [(c = t.fonts) == null ? void 0 : c.value, await Zt()],
         duration: t.fonts.duration
       }
     }
   }
   s && (t = {
     canvas2d: {
-      value: await Tt(),
+      value: await Rt(),
       duration: 0
     },
     ...t
   });
-  let l = Mo.hashComponents(t),
+  let l = Go.hashComponents(t),
     u = l.length,
     d = u >> 2 | 2;
   return {
@@ -3390,176 +3403,176 @@ async function Io() {
   }
 }
 
-function Lo() {
-  return xr.start({
+function Xo() {
+  return Pr.start({
     apiKey: ee,
     endpoints: [`https://wplace.live/7eskSe93usV8ENxB/?region=eu`],
     region: `eu`
   })
 }
-var Ro = new WeakMap,
-  zo = new WeakMap,
-  Bo = new WeakMap,
-  Vo = new WeakMap,
-  Ho = new WeakMap,
-  Uo = new WeakMap,
-  Wo = new WeakMap,
-  Go = new WeakMap,
-  Ko = new WeakMap,
-  qo = new WeakMap,
-  Jo = new WeakMap,
-  Yo = new WeakMap,
-  Xo = new WeakMap,
-  Zo = new WeakMap,
+var Zo = new WeakMap,
   Qo = new WeakMap,
   $o = new WeakMap,
   es = new WeakMap,
+  ts = new WeakMap,
+  ns = new WeakMap,
+  rs = new WeakMap,
+  is = new WeakMap,
+  as = new WeakMap,
+  os = new WeakMap,
+  ss = new WeakMap,
+  cs = new WeakMap,
+  ls = new WeakMap,
+  us = new WeakMap,
+  ds = new WeakMap,
+  fs = new WeakMap,
+  ps = new WeakMap,
   N = new class {
     get playerSettingsOpen() {
-      return s(i(Ro, this))
-    }
-    set playerSettingsOpen(e) {
-      t(i(Ro, this), e, !0)
-    }
-    get playerSettingsTab() {
-      return s(i(zo, this))
-    }
-    set playerSettingsTab(e) {
-      t(i(zo, this), e, !0)
-    }
-    get dropletsDialogOpen() {
-      return s(i(Bo, this))
-    }
-    set dropletsDialogOpen(e) {
-      t(i(Bo, this), e, !0)
-    }
-    get prismDialogOpen() {
-      return s(i(Vo, this))
-    }
-    set prismDialogOpen(e) {
-      t(i(Vo, this), e, !0)
-    }
-    get accountConflictDialogOpen() {
-      return s(i(Ho, this))
-    }
-    set accountConflictDialogOpen(e) {
-      t(i(Ho, this), e, !0)
-    }
-    get pendingHistoryDialogOpen() {
-      return s(i(Uo, this))
-    }
-    set pendingHistoryDialogOpen(e) {
-      t(i(Uo, this), e, !0)
-    }
-    get paymentHistoryDialogOpen() {
-      return s(i(Wo, this))
-    }
-    set paymentHistoryDialogOpen(e) {
-      t(i(Wo, this), e, !0)
-    }
-    get storeDialogOpen() {
-      return s(i(Go, this))
-    }
-    set storeDialogOpen(e) {
-      t(i(Go, this), e, !0)
-    }
-    get storeTabIndex() {
-      return s(i(Ko, this))
-    }
-    set storeTabIndex(e) {
-      t(i(Ko, this), e, !0)
-    }
-    get muted() {
-      return s(i(qo, this))
-    }
-    set muted(e) {
-      t(i(qo, this), e, !0)
-    }
-    get haptics() {
-      return s(i(Jo, this))
-    }
-    set haptics(e) {
-      t(i(Jo, this), e, !0)
-    }
-    get language() {
-      return s(i(Yo, this))
-    }
-    set language(e) {
-      t(i(Yo, this), e, !0)
-    }
-    get map() {
-      return s(i(Xo, this))
-    }
-    set map(e) {
-      t(i(Xo, this), e)
-    }
-    get automatedClicks() {
       return s(i(Zo, this))
     }
-    set automatedClicks(e) {
+    set playerSettingsOpen(e) {
       t(i(Zo, this), e, !0)
     }
-    get theme() {
+    get playerSettingsTab() {
       return s(i(Qo, this))
     }
-    set theme(e) {
-      t(i(Qo, this), e, !0), p(e)
+    set playerSettingsTab(e) {
+      t(i(Qo, this), e, !0)
     }
-    get now() {
+    get dropletsDialogOpen() {
       return s(i($o, this))
     }
+    set dropletsDialogOpen(e) {
+      t(i($o, this), e, !0)
+    }
+    get prismDialogOpen() {
+      return s(i(es, this))
+    }
+    set prismDialogOpen(e) {
+      t(i(es, this), e, !0)
+    }
+    get accountConflictDialogOpen() {
+      return s(i(ts, this))
+    }
+    set accountConflictDialogOpen(e) {
+      t(i(ts, this), e, !0)
+    }
+    get pendingHistoryDialogOpen() {
+      return s(i(ns, this))
+    }
+    set pendingHistoryDialogOpen(e) {
+      t(i(ns, this), e, !0)
+    }
+    get paymentHistoryDialogOpen() {
+      return s(i(rs, this))
+    }
+    set paymentHistoryDialogOpen(e) {
+      t(i(rs, this), e, !0)
+    }
+    get storeDialogOpen() {
+      return s(i(is, this))
+    }
+    set storeDialogOpen(e) {
+      t(i(is, this), e, !0)
+    }
+    get storeTabIndex() {
+      return s(i(as, this))
+    }
+    set storeTabIndex(e) {
+      t(i(as, this), e, !0)
+    }
+    get muted() {
+      return s(i(os, this))
+    }
+    set muted(e) {
+      t(i(os, this), e, !0)
+    }
+    get haptics() {
+      return s(i(ss, this))
+    }
+    set haptics(e) {
+      t(i(ss, this), e, !0)
+    }
+    get language() {
+      return s(i(cs, this))
+    }
+    set language(e) {
+      t(i(cs, this), e, !0)
+    }
+    get map() {
+      return s(i(ls, this))
+    }
+    set map(e) {
+      t(i(ls, this), e)
+    }
+    get automatedClicks() {
+      return s(i(us, this))
+    }
+    set automatedClicks(e) {
+      t(i(us, this), e, !0)
+    }
+    get theme() {
+      return s(i(ds, this))
+    }
+    set theme(e) {
+      t(i(ds, this), e, !0), p(e)
+    }
+    get now() {
+      return s(i(fs, this))
+    }
     get captcha() {
-      return ns ? s(i(es, this)) : {
+      return hs ? s(i(ps, this)) : {
         token: `turnstile-disabled`,
         time: Date.now()
       }
     }
     set captcha(e) {
-      t(i(es, this), e, !0)
+      t(i(ps, this), e, !0)
     }
     constructor() {
-      a(this, Ro, n(!1)), a(this, zo, n(`interface`)), a(this, Bo, n(!1)), a(this, Vo, n(!1)), a(this, Ho, n(!1)), a(this, Uo, n(!1)), a(this, Wo, n(!1)), a(this, Go, n(!1)), a(this, Ko, n(0)), a(this, qo, n(!1)), a(this, Jo, n(!0)), a(this, Yo, n(r(ts()))), a(this, Xo, n(null)), a(this, Zo, n(!1)), a(this, Qo, n(`custom-winter`)), a(this, $o, n(r(Date.now()))), a(this, es, n(void 0)), setInterval(() => {
-        t(i($o, this), Date.now(), !0)
+      a(this, Zo, n(!1)), a(this, Qo, n(`interface`)), a(this, $o, n(!1)), a(this, es, n(!1)), a(this, ts, n(!1)), a(this, ns, n(!1)), a(this, rs, n(!1)), a(this, is, n(!1)), a(this, as, n(0)), a(this, os, n(!1)), a(this, ss, n(!0)), a(this, cs, n(r(ms()))), a(this, ls, n(null)), a(this, us, n(!1)), a(this, ds, n(`custom-winter`)), a(this, fs, n(r(Date.now()))), a(this, ps, n(void 0)), setInterval(() => {
+        t(i(fs, this), Date.now(), !0)
       }, 500), this.theme = f()
     }
   };
 
-function ts() {
+function ms() {
   if (navigator.languages && navigator.languages.length > 0) {
     let e = navigator.languages.find(e => e.length === 2);
     if (e) return e
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || `en`).substring(0, 2)
 }
-var ns = te.toLowerCase() !== `false`,
-  rs = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
-  is = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  as = `` + new URL(`../assets/notification.CPyrWqU1.mp3`, import.meta.url).href,
-  os = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sUZOGP8AAAf4cAAAgAAA/w4AABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  ss = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
-  cs = `data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
-  ls = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq`,
-  us = Es(),
-  P, ds, F, fs = !1,
-  ps, ms;
+var hs = te.toLowerCase() !== `false`,
+  gs = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  _s = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  vs = `` + new URL(`../assets/notification.CPyrWqU1.mp3`, import.meta.url).href,
+  ys = `data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sUZOGP8AAAf4cAAAgAAA/w4AABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  bs = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  xs = `data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  Ss = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq`,
+  Cs = Rs(),
+  P, ws, F, Ts = !1,
+  Es, Ds;
 
-function hs() {
+function Os() {
   if (typeof AudioContext > `u`) return () => {};
   let e = () => {
       try {
         P ?? (P = new AudioContext);
         let e = P;
-        if (e.state !== `running` && e.resume().catch(() => {}), !ds) {
+        if (e.state !== `running` && e.resume().catch(() => {}), !ws) {
           let t = new AbortController;
-          ms = t;
+          Ds = t;
           let n = setTimeout(() => t.abort(), 1e4);
-          ds = fetch(os, {
+          ws = fetch(ys, {
             signal: t.signal
           }).then(async t => {
             if (!t.ok) throw Error(`Notification audio unavailable`);
             return e.decodeAudioData(await t.arrayBuffer())
           }).catch(() => {
-            P === e && (ds = void 0)
+            P === e && (ws = void 0)
           }).finally(() => clearTimeout(n))
         }
       } catch {}
@@ -3571,69 +3584,69 @@ function hs() {
   });
   return () => {
     for (let n of t) document.removeEventListener(n, e, !0);
-    ms == null || ms.abort(), F == null || F.stop(), F = void 0, ps = void 0, P == null || P.close().catch(() => {}), P = void 0, ds = void 0
+    Ds == null || Ds.abort(), F == null || F.stop(), F = void 0, Es = void 0, P == null || P.close().catch(() => {}), P = void 0, ws = void 0
   }
 }
 
-function gs() {
+function ks() {
   (N.muted || h.sounds.playerNotification === 0) && (F == null || F.stop())
 }
-async function _s() {
+async function As() {
   if (N.muted || h.sounds.playerNotification === 0) return;
   let e = P;
-  if ((e == null ? void 0 : e.state) === `running` && ds) {
-    if (F || fs) return;
-    fs = !0;
+  if ((e == null ? void 0 : e.state) === `running` && ws) {
+    if (F || Ts) return;
+    Ts = !0;
     let t;
     try {
-      let n = await Promise.race([ds, new Promise(e => {
+      let n = await Promise.race([ws, new Promise(e => {
         t = setTimeout(() => e(void 0), 1e3)
       })]);
       if (!n || N.muted || h.sounds.playerNotification === 0 || P !== e || e.state !== `running`) return;
       let r = e.createBufferSource(),
         i = e.createGain();
-      i.gain.value = us.playerNotification.volume, r.buffer = n, r.connect(i).connect(e.destination), r.onended = () => {
-        r.disconnect(), i.disconnect(), F === r && (F = void 0, ps = void 0)
-      }, r.start(), F = r, ps = i
+      i.gain.value = Cs.playerNotification.volume, r.buffer = n, r.connect(i).connect(e.destination), r.onended = () => {
+        r.disconnect(), i.disconnect(), F === r && (F = void 0, Es = void 0)
+      }, r.start(), F = r, Es = i
     } catch {} finally {
-      clearTimeout(t), fs = !1
+      clearTimeout(t), Ts = !1
     }
     return
   }
-  let t = us.playerNotification;
+  let t = Cs.playerNotification;
   if (t.paused) try {
     t.currentTime = 0, await t.play()
   } catch {}
 }
-var vs, ys = new ie;
-async function bs() {
-  vs ?? (vs = new AudioContext);
-  let e = vs;
+var js, Ms = new ie;
+async function Ns() {
+  js ?? (js = new AudioContext);
+  let e = js;
   return e.state !== `running` && await Promise.race([e.resume().catch(() => {}), new Promise(e => setTimeout(e, 150))]), e.state === `running` ? e : void 0
 }
 
-function xs() {
-  bs()
+function Ps() {
+  Ns()
 }
 
-function Ss(e, t, n, r = !1) {
+function Fs(e, t, n, r = !1) {
   let i = new GainNode(e, {
     gain: t * h.sounds[n] / 50
   });
-  ys.set(i, {
+  Ms.set(i, {
     id: n,
     base: t
-  }), r && As.add(i);
+  }), r && Hs.add(i);
   let a = new BiquadFilterNode(e, {
     type: `lowpass`,
     frequency: 5e3
   });
   return i.connect(a).connect(e.destination), setTimeout(() => {
-    ys.delete(i), As.delete(i), i.disconnect(), a.disconnect()
+    Ms.delete(i), Hs.delete(i), i.disconnect(), a.disconnect()
   }, 1500), i
 }
 
-function Cs(e, t, n, r, i, a, o) {
+function I(e, t, n, r, i, a, o) {
   let s = new OscillatorNode(e, {
     type: `triangle`,
     frequency: n
@@ -3642,118 +3655,118 @@ function Cs(e, t, n, r, i, a, o) {
   let c = new GainNode(e);
   c.gain.setValueAtTime(0, r), c.gain.linearRampToValueAtTime(a, r + .008), c.gain.exponentialRampToValueAtTime(.001, r + i), s.connect(c).connect(t), s.start(r), s.stop(r + i + .05)
 }
-async function ws(e) {
+async function Is(e) {
   if (N.muted) return !0;
-  let t = await bs();
-  if (!t || e !== void 0 && e !== js) return !1;
+  let t = await Ns();
+  if (!t || e !== void 0 && e !== Us) return !1;
   if (N.muted || h.sounds.purchaseSuccess === 0) return !0;
-  let n = Ss(t, .25, `purchaseSuccess`, e !== void 0),
+  let n = Fs(t, .25, `purchaseSuccess`, e !== void 0),
     r = t.currentTime + .03;
-  return Cs(t, n, 523.25, r, .12, .5), Cs(t, n, 659.25, r + .085, .12, .55), Cs(t, n, 783.99, r + .17, .12, .6), Cs(t, n, 1046.5, r + .255, .55, .7), Cs(t, n, 1318.51, r + .255, .55, .25), Cs(t, n, 2093, r + .33, .4, .1), !0
+  return I(t, n, 523.25, r, .12, .5), I(t, n, 659.25, r + .085, .12, .55), I(t, n, 783.99, r + .17, .12, .6), I(t, n, 1046.5, r + .255, .55, .7), I(t, n, 1318.51, r + .255, .55, .25), I(t, n, 2093, r + .33, .4, .1), !0
 }
-async function Ts(e) {
+async function Ls(e) {
   if (N.muted) return !0;
-  let t = await bs();
-  if (!t || e !== void 0 && e !== js) return !1;
+  let t = await Ns();
+  if (!t || e !== void 0 && e !== Us) return !1;
   if (N.muted || h.sounds.purchaseFail === 0) return !0;
-  let n = Ss(t, .22, `purchaseFail`, e !== void 0),
+  let n = Fs(t, .22, `purchaseFail`, e !== void 0),
     r = t.currentTime + .03;
-  return Cs(t, n, 329.63, r, .16, .55), Cs(t, n, 261.63, r + .15, .5, .6, 233.08), !0
+  return I(t, n, 329.63, r, .16, .55), I(t, n, 261.63, r + .15, .5, .6, 233.08), !0
 }
 
-function Es() {
+function Rs() {
   let e = {
-    plop: new Audio(ss),
-    smallPlop: new Audio(ls),
-    bigPlop: new Audio(rs),
-    smallDropplet: new Audio(cs),
-    droppletAndPlop: new Audio(is),
-    notification1: new Audio(as),
-    playerNotification: new Audio(os)
+    plop: new Audio(bs),
+    smallPlop: new Audio(Ss),
+    bigPlop: new Audio(gs),
+    smallDropplet: new Audio(xs),
+    droppletAndPlop: new Audio(_s),
+    notification1: new Audio(vs),
+    playerNotification: new Audio(ys)
   };
   for (let [t, n] of Object.entries(e)) n.preload = `auto`, n.volume = .3 * h.sounds[t] / 50;
   return e
 }
 
-function Ds() {
-  N.muted && Ms(), Os && ks && (Os.volume = .3 * h.sounds[ks] / 50);
-  for (let [e, t] of Object.entries(us)) t.volume = .3 * h.sounds[e] / 50;
-  ps && (ps.gain.value = us.playerNotification.volume);
+function zs() {
+  N.muted && Ws(), Bs && Vs && (Bs.volume = .3 * h.sounds[Vs] / 50);
+  for (let [e, t] of Object.entries(Cs)) t.volume = .3 * h.sounds[e] / 50;
+  Es && (Es.gain.value = Cs.playerNotification.volume);
   for (let [e, {
       id: t,
       base: n
-    }] of ys) e.gain.value = N.muted ? 0 : n * h.sounds[t] / 50;
-  gs()
+    }] of Ms) e.gain.value = N.muted ? 0 : n * h.sounds[t] / 50;
+  ks()
 }
-var Os, ks, As = new re,
-  js = 0;
+var Bs, Vs, Hs = new re,
+  Us = 0;
 
-function Ms() {
-  js++, Os == null || Os.pause(), Os = void 0, ks = void 0;
-  for (let e of As) e.disconnect(), ys.delete(e);
-  As.clear()
+function Ws() {
+  Us++, Bs == null || Bs.pause(), Bs = void 0, Vs = void 0;
+  for (let e of Hs) e.disconnect(), Ms.delete(e);
+  Hs.clear()
 }
-async function Ns(e) {
-  Ms();
-  let t = js;
+async function Gs(e) {
+  Ws();
+  let t = Us;
   if (N.muted || h.sounds[e] === 0) return !1;
   try {
     if (e === `purchaseSuccess` || e === `purchaseFail`) {
-      let n = await (e === `purchaseSuccess` ? ws(t) : Ts(t));
-      return t === js && n
+      let n = await (e === `purchaseSuccess` ? Is(t) : Ls(t));
+      return t === Us && n
     }
-    let n = new Audio(us[e].src);
-    n.volume = .3 * h.sounds[e] / 50, Os = n, ks = e;
+    let n = new Audio(Cs[e].src);
+    n.volume = .3 * h.sounds[e] / 50, Bs = n, Vs = e;
     let r;
     try {
       return await Promise.race([n.play(), new Promise((e, t) => {
         r = setTimeout(() => t(Error(`Sound preview timed out`)), 5e3)
-      })]), t === js
+      })]), t === Us
     } finally {
       clearTimeout(r)
     }
   } catch {
-    return t === js && Ms(), !1
+    return t === Us && Ws(), !1
   }
 }
-var Ps = new WeakMap,
-  Fs = new WeakMap,
-  Is = new WeakMap,
-  Ls = new WeakMap,
-  Rs = new WeakMap,
-  zs = new class {
+var Ks = new WeakMap,
+  qs = new WeakMap,
+  Js = new WeakMap,
+  Ys = new WeakMap,
+  Xs = new WeakMap,
+  Zs = new class {
     get count() {
-      return s(i(Ps, this))
+      return s(i(Ks, this))
     }
     set count(e) {
-      t(i(Ps, this), e, !0)
+      t(i(Ks, this), e, !0)
     }
     get items() {
-      return s(i(Fs, this))
+      return s(i(qs, this))
     }
     set items(e) {
-      t(i(Fs, this), e, !0)
+      t(i(qs, this), e, !0)
     }
     get nextCursor() {
-      return s(i(Is, this))
+      return s(i(Js, this))
     }
     set nextCursor(e) {
-      t(i(Is, this), e, !0)
+      t(i(Js, this), e, !0)
     }
     get loading() {
-      return s(i(Ls, this))
+      return s(i(Ys, this))
     }
     set loading(e) {
-      t(i(Ls, this), e, !0)
+      t(i(Ys, this), e, !0)
     }
     get markingAll() {
-      return s(i(Rs, this))
+      return s(i(Xs, this))
     }
     set markingAll(e) {
-      t(i(Rs, this), e, !0)
+      t(i(Xs, this), e, !0)
     }
     constructor(e) {
-      c(this, `apiClient`, void 0), a(this, Ps, n()), a(this, Fs, n()), a(this, Is, n()), a(this, Ls, n(!1)), a(this, Rs, n(!1)), c(this, `open`, !1), c(this, `controller`, void 0), c(this, `running`, !1), c(this, `pending`, !1), c(this, `append`, !1), c(this, `markAll`, !1), c(this, `retry`, void 0), c(this, `onError`, void 0), c(this, `errorReported`, !1), c(this, `fullRefresh`, !0), c(this, `changedIDs`, new re), c(this, `failures`, 0), this.apiClient = e
+      c(this, `apiClient`, void 0), a(this, Ks, n()), a(this, qs, n()), a(this, Js, n()), a(this, Ys, n(!1)), a(this, Xs, n(!1)), c(this, `open`, !1), c(this, `controller`, void 0), c(this, `running`, !1), c(this, `pending`, !1), c(this, `append`, !1), c(this, `markAll`, !1), c(this, `retry`, void 0), c(this, `onError`, void 0), c(this, `errorReported`, !1), c(this, `fullRefresh`, !0), c(this, `changedIDs`, new re), c(this, `failures`, 0), this.apiClient = e
     }
     get client() {
       return this.apiClient ?? $
@@ -3797,7 +3810,7 @@ var Ps = new WeakMap,
                 r = this.changedIDs.size > 100
               }
             } catch {}
-            this.refresh(r), i && navigator.onLine && _s()
+            this.refresh(r), i && navigator.onLine && As()
           }), e.onerror = () => {
             n === e && u()
           }
@@ -3900,33 +3913,33 @@ var Ps = new WeakMap,
     }
   };
 
-function Bs(e, t) {
+function Qs(e, t) {
   if (!(e != null && e.length)) return !1;
   for (let n of e)
     if (n === t) return !0;
   return !1
 }
 
-function Vs(e, t) {
+function $s(e, t) {
   for (let n of t)
-    if (Bs(e, n)) return !0;
+    if (Qs(e, n)) return !0;
   return !1
 }
 
-function Hs(e) {
+function ec(e) {
   let t = atob(e),
     n = new Uint8Array(t.length);
   for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e);
   return n
 }
 
-function Us(e) {
+function tc(e) {
   if (typeof Buffer < `u`) return Buffer.from(e).toString(`base64`);
   let t = ``;
   for (let n = 0; n < e.length; n++) t += String.fromCharCode(e[n]);
   return btoa(t)
 }
-var Ws = class {
+var nc = class {
   constructor(e) {
     c(this, `bytes`, void 0), this.bytes = e ?? new Uint8Array
   }
@@ -3950,7 +3963,7 @@ var Ws = class {
   }
 };
 
-function Gs(e) {
+function rc(e) {
   return new Promise((t, n) => {
     let r = new FileReader;
     r.onload = () => {
@@ -3964,10 +3977,10 @@ function Gs(e) {
   })
 }
 
-function Ks(e) {
+function ic(e) {
   if (typeof FileReader > `u`) {
     let t = e.type || `application/octet-stream`;
-    return e.arrayBuffer().then(e => `data:${t};base64,${Us(new Uint8Array(e))}`)
+    return e.arrayBuffer().then(e => `data:${t};base64,${tc(new Uint8Array(e))}`)
   }
   return new Promise((t, n) => {
     let r = new FileReader;
@@ -3982,7 +3995,7 @@ function Ks(e) {
   })
 }
 
-function qs(e) {
+function ac(e) {
   if (!e.startsWith(`data:`)) throw Error(`Could not parse data URL`);
   let t = e.indexOf(`,`);
   if (t === -1) throw Error(`Could not parse data URL`);
@@ -3991,7 +4004,7 @@ function qs(e) {
     i = n.indexOf(`;base64`),
     a = (i === -1 ? n : n.slice(0, i)) || `text/plain`;
   if (i !== -1) {
-    let e = Hs(r),
+    let e = ec(r),
       t = new Uint8Array(e.byteLength);
     return t.set(e), new Blob([t], {
       type: a
@@ -4002,21 +4015,21 @@ function qs(e) {
   })
 }
 
-function Js(...e) {
+function oc(...e) {
   return e.filter(Boolean).join(` `)
 }
-var Ys = typeof document < `u`,
-  Xs = 0,
-  Zs = new WeakMap,
-  Qs = new WeakMap,
-  $s = new WeakMap,
-  ec = class {
+var sc = typeof document < `u`,
+  cc = 0,
+  lc = new WeakMap,
+  uc = new WeakMap,
+  dc = new WeakMap,
+  fc = class {
     constructor() {
-      a(this, Zs, n(r([]))), a(this, Qs, n(r([]))), a(this, $s, e => {
+      a(this, lc, n(r([]))), a(this, uc, n(r([]))), a(this, dc, e => {
         let t = this.toasts.findIndex(t => t.id === e);
         return t === -1 ? null : t
       }), c(this, `addToast`, e => {
-        Ys && this.toasts.unshift(e)
+        sc && this.toasts.unshift(e)
       }), c(this, `updateToast`, ({
         id: e,
         data: t,
@@ -4038,7 +4051,7 @@ var Ys = typeof document < `u`,
         let {
           message: n,
           ...r
-        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : Xs++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
+        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : cc++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
         return o(() => {
           this.toasts.find(e => e.id === i) ? this.updateToast({
             id: i,
@@ -4072,7 +4085,7 @@ var Ys = typeof document < `u`,
           this.toasts = [];
           return
         }
-        let t = i($s, this).call(this, e);
+        let t = i(dc, this).call(this, e);
         if (t !== null) return this.toasts.splice(t, 1), e
       }), c(this, `message`, (e, t) => this.create({
         ...t,
@@ -4112,7 +4125,7 @@ var Ys = typeof document < `u`,
         return r.then(e => {
           if (typeof e == `object` && e && `ok` in e && typeof e.ok == `boolean` && !e.ok) {
             i = !1;
-            let t = tc(e);
+            let t = pc(e);
             this.create({
               id: n,
               type: `error`,
@@ -4142,7 +4155,7 @@ var Ys = typeof document < `u`,
           i && (this.dismiss(n), n = void 0), (e = t.finally) == null || e.call(t)
         }), n
       }), c(this, `custom`, (e, t) => {
-        let n = (t == null ? void 0 : t.id) || Xs++;
+        let n = (t == null ? void 0 : t.id) || cc++;
         return this.create({
           component: e,
           id: n,
@@ -4151,7 +4164,7 @@ var Ys = typeof document < `u`,
       }), c(this, `removeHeight`, e => {
         this.heights = this.heights.filter(t => t.toastId !== e)
       }), c(this, `setHeight`, e => {
-        let t = i($s, this).call(this, e.toastId);
+        let t = i(dc, this).call(this, e.toastId);
         if (t === null) {
           this.heights.push(e);
           return
@@ -4162,122 +4175,122 @@ var Ys = typeof document < `u`,
       })
     }
     get toasts() {
-      return s(i(Zs, this))
+      return s(i(lc, this))
     }
     set toasts(e) {
-      t(i(Zs, this), e, !0)
+      t(i(lc, this), e, !0)
     }
     get heights() {
-      return s(i(Qs, this))
+      return s(i(uc, this))
     }
     set heights(e) {
-      t(i(Qs, this), e, !0)
+      t(i(uc, this), e, !0)
     }
   };
 
-function tc(e) {
+function pc(e) {
   return e && typeof e == `object` && `status` in e ? `HTTP error! Status: ${e.status}` : `Error! ${e}`
 }
-var I = new ec;
+var L = new fc;
 
-function nc(e, t) {
-  return I.create({
+function mc(e, t) {
+  return L.create({
     message: e,
     ...t
   })
 }
-var rc = new WeakMap,
-  ic = class {
+var hc = new WeakMap,
+  gc = class {
     constructor() {
-      a(this, rc, e(() => I.toasts.filter(e => !e.dismiss)))
+      a(this, hc, e(() => L.toasts.filter(e => !e.dismiss)))
     }
     get toasts() {
-      return s(i(rc, this))
-    }
-  },
-  ac = Object.assign(nc, {
-    success: I.success,
-    info: I.info,
-    warning: I.warning,
-    error: I.error,
-    custom: I.custom,
-    message: I.message,
-    promise: I.promise,
-    dismiss: I.dismiss,
-    loading: I.loading,
-    getActiveToasts: () => I.toasts.filter(e => !e.dismiss)
-  }),
-  oc = 1e3,
-  sc = 3e4,
-  cc = new WeakMap,
-  lc = new WeakMap,
-  uc = new WeakMap,
-  dc = new WeakMap,
-  fc = new WeakMap,
-  pc = new WeakMap,
-  mc = new WeakMap,
-  hc = new WeakMap,
-  L = new class {
-    get data() {
-      return s(i(cc, this))
-    }
-    set data(e) {
-      t(i(cc, this), e, !0)
-    }
-    get loading() {
-      return s(i(lc, this))
-    }
-    set loading(e) {
-      t(i(lc, this), e, !0)
-    }
-    get notificationCount() {
-      return s(i(uc, this))
-    }
-    set notificationCount(e) {
-      t(i(uc, this), e)
-    }
-    get lastFetch() {
-      return s(i(dc, this))
-    }
-    set lastFetch(e) {
-      t(i(dc, this), e)
-    }
-    get charges() {
-      return s(i(fc, this))
-    }
-    set charges(e) {
-      t(i(fc, this), e)
-    }
-    get cooldown() {
-      return s(i(pc, this))
-    }
-    set cooldown(e) {
-      t(i(pc, this), e)
-    }
-    get flagsBitmap() {
-      return s(i(mc, this))
-    }
-    set flagsBitmap(e) {
-      t(i(mc, this), e)
-    }
-    get timeoutUntil() {
       return s(i(hc, this))
     }
+  },
+  _c = Object.assign(mc, {
+    success: L.success,
+    info: L.info,
+    warning: L.warning,
+    error: L.error,
+    custom: L.custom,
+    message: L.message,
+    promise: L.promise,
+    dismiss: L.dismiss,
+    loading: L.loading,
+    getActiveToasts: () => L.toasts.filter(e => !e.dismiss)
+  }),
+  vc = 1e3,
+  yc = 3e4,
+  bc = new WeakMap,
+  xc = new WeakMap,
+  Sc = new WeakMap,
+  Cc = new WeakMap,
+  wc = new WeakMap,
+  Tc = new WeakMap,
+  Ec = new WeakMap,
+  Dc = new WeakMap,
+  R = new class {
+    get data() {
+      return s(i(bc, this))
+    }
+    set data(e) {
+      t(i(bc, this), e, !0)
+    }
+    get loading() {
+      return s(i(xc, this))
+    }
+    set loading(e) {
+      t(i(xc, this), e, !0)
+    }
+    get notificationCount() {
+      return s(i(Sc, this))
+    }
+    set notificationCount(e) {
+      t(i(Sc, this), e)
+    }
+    get lastFetch() {
+      return s(i(Cc, this))
+    }
+    set lastFetch(e) {
+      t(i(Cc, this), e)
+    }
+    get charges() {
+      return s(i(wc, this))
+    }
+    set charges(e) {
+      t(i(wc, this), e)
+    }
+    get cooldown() {
+      return s(i(Tc, this))
+    }
+    set cooldown(e) {
+      t(i(Tc, this), e)
+    }
+    get flagsBitmap() {
+      return s(i(Ec, this))
+    }
+    set flagsBitmap(e) {
+      t(i(Ec, this), e)
+    }
+    get timeoutUntil() {
+      return s(i(Dc, this))
+    }
     set timeoutUntil(e) {
-      t(i(hc, this), e)
+      t(i(Dc, this), e)
     }
     constructor() {
-      c(this, `channel`, new BroadcastChannel(`user-channel`)), a(this, cc, n()), a(this, lc, n(!0)), a(this, uc, e(() => zs.count)), a(this, dc, n(Date.now())), c(this, `batchedRefresh`, void 0), c(this, `resolved`, !1), c(this, `retryAttempt`, 0), c(this, `retryTimer`, void 0), a(this, fc, e(() => {
+      c(this, `channel`, new BroadcastChannel(`user-channel`)), a(this, bc, n()), a(this, xc, n(!0)), a(this, Sc, e(() => Zs.count)), a(this, Cc, n(Date.now())), c(this, `batchedRefresh`, void 0), c(this, `resolved`, !1), c(this, `retryAttempt`, 0), c(this, `retryTimer`, void 0), a(this, wc, e(() => {
         if (!this.data) return;
         let e = this.data.charges;
         if (e.infinite) return 1 / 0;
         if (e.count > e.max) return e.count;
         let t = e.count + Math.max((N.now - this.lastFetch) / e.cooldownMs, 0);
         return Math.min(e.max, t)
-      })), a(this, pc, e(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), a(this, mc, e(() => {
+      })), a(this, Tc, e(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), a(this, Ec, e(() => {
         var e;
-        return new Ws(Hs(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
-      })), a(this, hc, e(() => {
+        return new nc(ec(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
+      })), a(this, Dc, e(() => {
         var e;
         if (!((e = this.data) != null && e.timeoutUntil)) return;
         let t = new Date(this.data.timeoutUntil),
@@ -4303,9 +4316,9 @@ var rc = new WeakMap,
         return this.loading = !0, this.data = await $.me(), this.lastFetch = Date.now(), this.markResolved(), (e = this.channel) == null || e.postMessage(JSON.stringify({
           type: `refresh`,
           data: this.data
-        })), (t = this.data) != null && t.id && W.setUserId(this.data.id), !0
+        })), (t = this.data) != null && t.id && G.setUserId(this.data.id), !0
       } catch (e) {
-        return console.error(e), this.retryAttempt === 0 && ac.warning(g.no_internet_access(), {
+        return console.error(e), this.retryAttempt === 0 && _c.warning(g.no_internet_access(), {
           duration: 1e4
         }), this.resolved || this.scheduleRetry(), !1
       } finally {
@@ -4317,7 +4330,7 @@ var rc = new WeakMap,
     }
     scheduleRetry() {
       if (this.retryTimer) return;
-      let e = Math.min(sc, oc * 2 ** this.retryAttempt);
+      let e = Math.min(yc, vc * 2 ** this.retryAttempt);
       this.retryAttempt++, this.retryTimer = setTimeout(() => {
         this.retryTimer = void 0, this.refresh()
       }, e)
@@ -4334,14 +4347,14 @@ var rc = new WeakMap,
     }
     hasPermission(e) {
       var t;
-      return Bs((t = this.data) == null ? void 0 : t.permissions, e)
+      return Qs((t = this.data) == null ? void 0 : t.permissions, e)
     }
     hasAnyPermission(e) {
       var t;
-      return Vs((t = this.data) == null ? void 0 : t.permissions, e)
+      return $s((t = this.data) == null ? void 0 : t.permissions, e)
     }
   },
-  R = {
+  z = {
     day: 864e5,
     hour: 36e5,
     minute: 6e4,
@@ -4349,44 +4362,44 @@ var rc = new WeakMap,
     millisecond: 1
   };
 
-function gc(e) {
-  let t = Math.floor(e / R.hour);
-  e -= t * R.hour;
-  let n = Math.floor(e / R.minute);
-  e -= n * R.minute;
-  let r = Math.floor(e / R.second).toString().padStart(2, `0`);
+function Oc(e) {
+  let t = Math.floor(e / z.hour);
+  e -= t * z.hour;
+  let n = Math.floor(e / z.minute);
+  e -= n * z.minute;
+  let r = Math.floor(e / z.second).toString().padStart(2, `0`);
   return t > 0 ? `${t}:${n.toString().padStart(2,`0`)}:${r}` : `${n}:${r}`
 }
 
-function _c(e) {
+function kc(e) {
   return `${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,`0`)}-${String(e.getDate()).padStart(2,`0`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}:${String(e.getSeconds()).padStart(2,`0`)}`
 }
-var z, B = Array(128).fill(void 0);
-B.push(void 0, null, !0, !1);
-
-function V(e) {
-  return B[e]
-}
-var vc = B.length;
+var B, V = Array(128).fill(void 0);
+V.push(void 0, null, !0, !1);
 
 function H(e) {
-  vc === B.length && B.push(B.length + 1);
-  let t = vc;
-  return vc = B[t], B[t] = e, t
+  return V[e]
+}
+var Ac = V.length;
+
+function U(e) {
+  Ac === V.length && V.push(V.length + 1);
+  let t = Ac;
+  return Ac = V[t], V[t] = e, t
 }
 
-function U(e, t) {
+function W(e, t) {
   try {
     return e.apply(this, t)
   } catch (e) {
-    z.__wbindgen_export_0(H(e))
+    B.__wbindgen_export_0(U(e))
   }
 }
 
-function yc(e) {
+function jc(e) {
   return e == null
 }
-var bc = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
+var Mc = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -4394,63 +4407,63 @@ var bc = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
     throw Error(`TextDecoder not available`)
   }
 };
-typeof TextDecoder < `u` && bc.decode();
-var xc = null;
+typeof TextDecoder < `u` && Mc.decode();
+var Nc = null;
 
-function Sc() {
-  return (xc === null || xc.byteLength === 0) && (xc = new Uint8Array(z.memory.buffer)), xc
+function Pc() {
+  return (Nc === null || Nc.byteLength === 0) && (Nc = new Uint8Array(B.memory.buffer)), Nc
 }
 
-function Cc(e, t) {
-  return e >>>= 0, bc.decode(Sc().subarray(e, e + t))
+function Fc(e, t) {
+  return e >>>= 0, Mc.decode(Pc().subarray(e, e + t))
 }
 
-function wc(e) {
-  e < 132 || (B[e] = vc, vc = e)
+function Ic(e) {
+  e < 132 || (V[e] = Ac, Ac = e)
 }
 
-function Tc(e) {
-  let t = V(e);
-  return wc(e), t
+function Lc(e) {
+  let t = H(e);
+  return Ic(e), t
 }
-var Ec = null;
+var Rc = null;
 
-function Dc() {
-  return (Ec === null || Ec.buffer.detached === !0 || Ec.buffer.detached === void 0 && Ec.buffer !== z.memory.buffer) && (Ec = new DataView(z.memory.buffer)), Ec
-}
-
-function Oc(e) {
-  z.set_automated_clicks(e)
+function zc() {
+  return (Rc === null || Rc.buffer.detached === !0 || Rc.buffer.detached === void 0 && Rc.buffer !== B.memory.buffer) && (Rc = new DataView(B.memory.buffer)), Rc
 }
 
-function kc(e) {
-  z.set_integrity_flags(e)
+function Bc(e) {
+  B.set_automated_clicks(e)
 }
-var Ac = 0,
-  jc = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
+
+function Vc(e) {
+  B.set_integrity_flags(e)
+}
+var Hc = 0,
+  Uc = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
     encode: () => {
       throw Error(`TextEncoder not available`)
     }
   },
-  Mc = typeof jc.encodeInto == `function` ? function(e, t) {
-    return jc.encodeInto(e, t)
+  Wc = typeof Uc.encodeInto == `function` ? function(e, t) {
+    return Uc.encodeInto(e, t)
   } : function(e, t) {
-    let n = jc.encode(e);
+    let n = Uc.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
     }
   };
 
-function Nc(e, t, n) {
+function Gc(e, t, n) {
   if (n === void 0) {
-    let n = jc.encode(e),
+    let n = Uc.encode(e),
       r = t(n.length, 1) >>> 0;
-    return Sc().subarray(r, r + n.length).set(n), Ac = n.length, r
+    return Pc().subarray(r, r + n.length).set(n), Hc = n.length, r
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    a = Sc(),
+    a = Pc(),
     o = 0;
   for (; o < r; o++) {
     let t = e.charCodeAt(o);
@@ -4459,64 +4472,64 @@ function Nc(e, t, n) {
   }
   if (o !== r) {
     o !== 0 && (e = e.slice(o)), i = n(i, r, r = o + e.length * 3, 1) >>> 0;
-    let t = Sc().subarray(i + o, i + r),
-      a = Mc(e, t);
+    let t = Pc().subarray(i + o, i + r),
+      a = Wc(e, t);
     o += a.written, i = n(i, r, o, 1) >>> 0
   }
-  return Ac = o, i
+  return Hc = o, i
 }
 
-function Pc(e) {
-  let t = Nc(e, z.__wbindgen_export_1, z.__wbindgen_export_2),
-    n = Ac;
-  z.set_detected_bot(t, n)
+function Kc(e) {
+  let t = Gc(e, B.__wbindgen_export_1, B.__wbindgen_export_2),
+    n = Hc;
+  B.set_detected_bot(t, n)
 }
 
-function Fc(e) {
-  let t = Nc(e, z.__wbindgen_export_1, z.__wbindgen_export_2),
-    n = Ac;
-  z.set_fingerprint(t, n)
+function qc(e) {
+  let t = Gc(e, B.__wbindgen_export_1, B.__wbindgen_export_2),
+    n = Hc;
+  B.set_fingerprint(t, n)
 }
 
-function Ic(e) {
+function Jc(e) {
   let t, n;
   try {
-    let a = z.__wbindgen_add_to_stack_pointer(-16),
-      o = Nc(e, z.__wbindgen_export_1, z.__wbindgen_export_2),
-      s = Ac;
-    z.get_pawtected_endpoint_payload(a, o, s);
-    var r = Dc().getInt32(a + 0, !0),
-      i = Dc().getInt32(a + 4, !0);
-    return t = r, n = i, Cc(r, i)
+    let a = B.__wbindgen_add_to_stack_pointer(-16),
+      o = Gc(e, B.__wbindgen_export_1, B.__wbindgen_export_2),
+      s = Hc;
+    B.get_pawtected_endpoint_payload(a, o, s);
+    var r = zc().getInt32(a + 0, !0),
+      i = zc().getInt32(a + 4, !0);
+    return t = r, n = i, Fc(r, i)
   } finally {
-    z.__wbindgen_add_to_stack_pointer(16), z.__wbindgen_export_3(t, n, 1)
+    B.__wbindgen_add_to_stack_pointer(16), B.__wbindgen_export_3(t, n, 1)
   }
 }
 
-function Lc(e) {
-  z.set_cf_likely_automated(e)
+function Yc(e) {
+  B.set_cf_likely_automated(e)
 }
 
-function Rc(e) {
-  let t = Nc(e, z.__wbindgen_export_1, z.__wbindgen_export_2),
-    n = Ac;
-  z.request_url(t, n)
+function Xc(e) {
+  let t = Gc(e, B.__wbindgen_export_1, B.__wbindgen_export_2),
+    n = Hc;
+  B.request_url(t, n)
 }
 
-function zc(e) {
-  z.set_user_id(e)
+function Zc(e) {
+  B.set_user_id(e)
 }
 
-function Bc(e) {
-  let t = Nc(e, z.__wbindgen_export_1, z.__wbindgen_export_2),
-    n = Ac;
-  z.set_discord_id(t, n)
+function Qc(e) {
+  let t = Gc(e, B.__wbindgen_export_1, B.__wbindgen_export_2),
+    n = Hc;
+  B.set_discord_id(t, n)
 }
 
-function Vc(e) {
-  z.set_automated_browser(e)
+function $c(e) {
+  B.set_automated_browser(e)
 }
-async function Hc(e, t) {
+async function el(e, t) {
   if (typeof Response == `function` && e instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == `function`) try {
       return await WebAssembly.instantiateStreaming(e, t)
@@ -4535,50 +4548,50 @@ async function Hc(e, t) {
   }
 }
 
-function Uc() {
+function tl() {
   let e = {};
   return e.wbg = {}, e.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
-    let t = V(e).buffer;
-    return H(t)
+    let t = H(e).buffer;
+    return U(t)
   }, e.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return U(function(e, t) {
-      return H(V(e).call(V(t)))
+    return W(function(e, t) {
+      return U(H(e).call(H(t)))
     }, arguments)
   }, e.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return U(function(e, t, n) {
-      return H(V(e).call(V(t), V(n)))
+    return W(function(e, t, n) {
+      return U(H(e).call(H(t), H(n)))
     }, arguments)
   }, e.wbg.__wbg_crypto_574e78ad8b13b65f = function(e) {
-    let t = V(e).crypto;
-    return H(t)
+    let t = H(e).crypto;
+    return U(t)
   }, e.wbg.__wbg_document_d249400bd7bd996d = function(e) {
-    let t = V(e).document;
-    return yc(t) ? 0 : H(t)
+    let t = H(e).document;
+    return jc(t) ? 0 : U(t)
   }, e.wbg.__wbg_getOwnPropertyDescriptor_5e8ddf002549cc1f = function() {
-    return U(function(e, t) {
-      return H(Reflect.getOwnPropertyDescriptor(V(e), V(t)))
+    return W(function(e, t) {
+      return U(Reflect.getOwnPropertyDescriptor(H(e), H(t)))
     }, arguments)
   }, e.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return U(function(e, t) {
-      V(e).getRandomValues(V(t))
+    return W(function(e, t) {
+      H(e).getRandomValues(H(t))
     }, arguments)
   }, e.wbg.__wbg_get_67b2ba62fc30de12 = function() {
-    return U(function(e, t) {
-      return H(Reflect.get(V(e), V(t)))
+    return W(function(e, t) {
+      return U(Reflect.get(H(e), H(t)))
     }, arguments)
   }, e.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
-    return U(function(e) {
-      return V(e).hasFocus()
+    return W(function(e) {
+      return H(e).hasFocus()
     }, arguments)
   }, e.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
-    return U(function(e) {
-      let t = V(e).innerWidth;
-      return H(t)
+    return W(function(e) {
+      let t = H(e).innerWidth;
+      return U(t)
     }, arguments)
   }, e.wbg.__wbg_instanceof_Object_7f2dcef8f78644a4 = function(e) {
     let t;
     try {
-      t = V(e) instanceof Object
+      t = H(e) instanceof Object
     } catch {
       t = !1
     }
@@ -4586,116 +4599,116 @@ function Uc() {
   }, e.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(e) {
     let t;
     try {
-      t = V(e) instanceof Window
+      t = H(e) instanceof Window
     } catch {
       t = !1
     }
     return t
   }, e.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(e) {
-    let t = V(e).msCrypto;
-    return H(t)
+    let t = H(e).msCrypto;
+    return U(t)
   }, e.wbg.__wbg_navigator_1577371c070c8947 = function(e) {
-    let t = V(e).navigator;
-    return H(t)
+    let t = H(e).navigator;
+    return U(t)
   }, e.wbg.__wbg_new_a12002a7f91c75be = function(e) {
-    return H(new Uint8Array(V(e)))
+    return U(new Uint8Array(H(e)))
   }, e.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return H(Function(Cc(e, t)))
+    return U(Function(Fc(e, t)))
   }, e.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, n) {
-    return H(new Uint8Array(V(e), t >>> 0, n >>> 0))
+    return U(new Uint8Array(H(e), t >>> 0, n >>> 0))
   }, e.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
-    return H(new Uint8Array(e >>> 0))
+    return U(new Uint8Array(e >>> 0))
   }, e.wbg.__wbg_node_905d3e251edff8a2 = function(e) {
-    let t = V(e).node;
-    return H(t)
+    let t = H(e).node;
+    return U(t)
   }, e.wbg.__wbg_now_807e54c39636c349 = function() {
     return Date.now()
   }, e.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(e) {
-    let t = V(e).process;
-    return H(t)
+    let t = H(e).process;
+    return U(t)
   }, e.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return U(function(e, t) {
-      V(e).randomFillSync(Tc(t))
+    return W(function(e, t) {
+      H(e).randomFillSync(Lc(t))
     }, arguments)
   }, e.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return U(function() {
+    return W(function() {
       let e = module.require;
-      return H(e)
+      return U(e)
     }, arguments)
   }, e.wbg.__wbg_set_65595bdd868b3009 = function(e, t, n) {
-    V(e).set(V(t), n >>> 0)
+    H(e).set(H(t), n >>> 0)
   }, e.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     let e = typeof global > `u` ? null : global;
-    return yc(e) ? 0 : H(e)
+    return jc(e) ? 0 : U(e)
   }, e.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     let e = typeof globalThis > `u` ? null : globalThis;
-    return yc(e) ? 0 : H(e)
+    return jc(e) ? 0 : U(e)
   }, e.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     let e = typeof self > `u` ? null : self;
-    return yc(e) ? 0 : H(e)
+    return jc(e) ? 0 : U(e)
   }, e.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     let e = typeof window > `u` ? null : window;
-    return yc(e) ? 0 : H(e)
+    return jc(e) ? 0 : U(e)
   }, e.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(e, t, n) {
-    return H(V(e).subarray(t >>> 0, n >>> 0))
+    return U(H(e).subarray(t >>> 0, n >>> 0))
   }, e.wbg.__wbg_versions_c01dfd4722a88165 = function(e) {
-    let t = V(e).versions;
-    return H(t)
+    let t = H(e).versions;
+    return U(t)
   }, e.wbg.__wbindgen_boolean_get = function(e) {
-    let t = V(e);
+    let t = H(e);
     return typeof t == `boolean` ? +!!t : 2
   }, e.wbg.__wbindgen_is_function = function(e) {
-    return typeof V(e) == `function`
+    return typeof H(e) == `function`
   }, e.wbg.__wbindgen_is_null = function(e) {
-    return V(e) === null
+    return H(e) === null
   }, e.wbg.__wbindgen_is_object = function(e) {
-    let t = V(e);
+    let t = H(e);
     return typeof t == `object` && !!t
   }, e.wbg.__wbindgen_is_string = function(e) {
-    return typeof V(e) == `string`
+    return typeof H(e) == `string`
   }, e.wbg.__wbindgen_is_undefined = function(e) {
-    return V(e) === void 0
+    return H(e) === void 0
   }, e.wbg.__wbindgen_memory = function() {
-    let e = z.memory;
-    return H(e)
+    let e = B.memory;
+    return U(e)
   }, e.wbg.__wbindgen_number_get = function(e, t) {
-    let n = V(t),
+    let n = H(t),
       r = typeof n == `number` ? n : void 0;
-    Dc().setFloat64(e + 8, yc(r) ? 0 : r, !0), Dc().setInt32(e + 0, !yc(r), !0)
+    zc().setFloat64(e + 8, jc(r) ? 0 : r, !0), zc().setInt32(e + 0, !jc(r), !0)
   }, e.wbg.__wbindgen_object_clone_ref = function(e) {
-    return H(V(e))
+    return U(H(e))
   }, e.wbg.__wbindgen_object_drop_ref = function(e) {
-    Tc(e)
+    Lc(e)
   }, e.wbg.__wbindgen_string_new = function(e, t) {
-    return H(Cc(e, t))
+    return U(Fc(e, t))
   }, e.wbg.__wbindgen_throw = function(e, t) {
-    throw Error(Cc(e, t))
+    throw Error(Fc(e, t))
   }, e
 }
 
-function Wc(e, t) {
-  return z = e.exports, Gc.__wbindgen_wasm_module = t, Ec = null, xc = null, z
+function nl(e, t) {
+  return B = e.exports, rl.__wbindgen_wasm_module = t, Rc = null, Nc = null, B
 }
-async function Gc(e) {
-  if (z !== void 0) return z;
+async function rl(e) {
+  if (B !== void 0) return B;
   e !== void 0 && (Object.getPrototypeOf(e) === Object.prototype ? {
     module_or_path: e
   } = e : console.warn(`using deprecated parameters for the initialization function; pass a single object instead`)), e === void 0 && (e = new URL(`pawtect_wasm_bg.wasm`, `` + import.meta.url));
-  let t = Uc();
+  let t = tl();
   (typeof e == `string` || typeof Request == `function` && e instanceof Request || typeof URL == `function` && e instanceof URL) && (e = fetch(e));
   let {
     instance: n,
     module: r
-  } = await Hc(await e, t);
-  return Wc(n, r)
+  } = await el(await e, t);
+  return nl(n, r)
 }
-var Kc = class {
+var il = class {
   constructor() {
-    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new Jc, new Yc, new Xc, new Zc]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
+    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new ol, new sl, new cl, new ll]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!L.data || this.storagesEmpty) && !localStorage.getItem(Jc.KEY)) {
+      if (!(!R.data || this.storagesEmpty) && !localStorage.getItem(ol.KEY)) {
         for (let e of this.storages) {
           let t = e.get();
           if (t) {
@@ -4711,7 +4724,7 @@ var Kc = class {
     clearInterval(this.interval), this.interval = void 0
   }
   isMultiAccounting(e) {
-    let t = R.day;
+    let t = z.day;
     for (let n of this.storages) {
       let r = n.get();
       if (r && !(r.timestamp + t < Date.now()) && r.userId !== e) return !0
@@ -4727,12 +4740,12 @@ var Kc = class {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       try {
         var e;
-        await Gc(ae), (e = L.data) != null && e.id && zc(L.data.id);
+        await rl(ae), (e = R.data) != null && e.id && Zc(R.data.id);
         let t = fetch;
         return Object.assign(window, {
-          fetch: qc((e, n) => {
+          fetch: al((e, n) => {
             let r = null;
-            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Rc(r), t.call(window, e, n)
+            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Xc(r), t.call(window, e, n)
           })
         }), !0
       } catch (e) {
@@ -4741,10 +4754,10 @@ var Kc = class {
     })()), this.pawtectLoaded
   }
   async setUserId(e) {
-    await this.loadPawtect(), zc(e)
+    await this.loadPawtect(), Zc(e)
   }
   async setCfLikelyAutomated(e) {
-    await this.loadPawtect(), Lc(e)
+    await this.loadPawtect(), Yc(e)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -4760,17 +4773,17 @@ var Kc = class {
   async getPawtectedEndpointPayload(e) {
     if (!await this.loadPawtect()) throw Error(g.wasm_error());
     let t = navigator.webdriver,
-      [n, r] = await Promise.all([Fo(), mt().catch(e => (console.error(e), {
+      [n, r] = await Promise.all([Jo(), Dt().catch(e => (console.error(e), {
         bot: !1
       }))]);
-    return zc(L.data.id), Bc(L.data.discordId ?? ``), Fc(n), Vc(t), Oc(N.automatedClicks), kc(de(L.data)), r.bot && Pc(r.botKind ?? `unknown`), Ic(e)
+    return Zc(R.data.id), Qc(R.data.discordId ?? ``), qc(n), $c(t), Bc(N.automatedClicks), Vc(de(R.data)), r.bot && Kc(r.botKind ?? `unknown`), Jc(e)
   }
 };
 
-function qc(e) {
+function al(e) {
   return e.bind().bind()
 }
-var Jc = class e {
+var ol = class e {
   static codec(e) {
     let t = new TextEncoder().encode(this.XOR_KEY),
       n = new Uint8Array(e.length);
@@ -4794,8 +4807,8 @@ var Jc = class e {
     localStorage.setItem(e.KEY, btoa(String.fromCharCode(...r)))
   }
 };
-c(Jc, `KEY`, `ui_layout_v3`), c(Jc, `XOR_KEY`, `wplace-prefs`);
-var Yc = class e {
+c(ol, `KEY`, ve), c(ol, `XOR_KEY`, `wplace-prefs`);
+var sl = class e {
   get() {
     try {
       let t = sessionStorage.getItem(e.KEY);
@@ -4820,8 +4833,8 @@ var Yc = class e {
     sessionStorage.setItem(e.KEY, r)
   }
 };
-c(Yc, `KEY`, `nav.cursor`), c(Yc, `SHIFT`, 13);
-var Xc = class e {
+c(sl, `KEY`, ye), c(sl, `SHIFT`, 13);
+var cl = class e {
   get() {
     let t = document.cookie.match(RegExp(`(?:^|; )` + e.KEY + `=([^;]*)`));
     if (t) try {
@@ -4839,8 +4852,8 @@ var Xc = class e {
     document.cookie = `${e.KEY}=${encodeURIComponent(n)};path=/;max-age=${e.MAX_AGE};SameSite=Lax`
   }
 };
-c(Xc, `KEY`, `_pf_uid`), c(Xc, `MAX_AGE`, 31536e3);
-var Zc = class {
+c(cl, `KEY`, be), c(cl, `MAX_AGE`, 31536e3);
+var ll = class {
     constructor() {
       c(this, `packed`, void 0)
     }
@@ -4854,8 +4867,8 @@ var Zc = class {
       this.packed = BigInt(e.timestamp) << 32n | BigInt(e.userId) & 4294967295n
     }
   },
-  W = new Kc,
-  Qc = `
+  G = new il,
+  ul = `
 self.onmessage = function(e) {
   const { prefix, difficulty } = e.data;
 
@@ -4896,14 +4909,14 @@ self.onmessage = function(e) {
   solve().catch(err => self.postMessage({ error: err.message }));
 };
 `;
-async function $c() {
+async function dl() {
   try {
     let e = await fetch(`${m}/anticheat/pow/challenge`, {
       credentials: `include`
     });
     if (!e.ok) return null;
     let t = await e.json(),
-      n = await el(t.prefix, t.difficulty);
+      n = await fl(t.prefix, t.difficulty);
     return n ? {
       ...t,
       nonce: n
@@ -4912,9 +4925,9 @@ async function $c() {
     return null
   }
 }
-async function el(e, t) {
+async function fl(e, t) {
   return new Promise(n => {
-    let r = new Blob([Qc], {
+    let r = new Blob([ul], {
         type: `application/javascript`
       }),
       i = URL.createObjectURL(r),
@@ -4932,41 +4945,41 @@ async function el(e, t) {
     })
   })
 }
-var tl = 3,
-  nl = new WeakMap,
-  rl = new WeakMap,
-  G = new class {
+var pl = 3,
+  ml = new WeakMap,
+  hl = new WeakMap,
+  K = new class {
     constructor() {
-      a(this, nl, n(null)), a(this, rl, n(0))
+      a(this, ml, n(null)), a(this, hl, n(0))
     }
     get current() {
-      return s(i(nl, this))
+      return s(i(ml, this))
     }
     set current(e) {
-      t(i(nl, this), e, !0)
+      t(i(ml, this), e, !0)
     }
     get errorCount() {
-      return s(i(rl, this))
+      return s(i(hl, this))
     }
     set errorCount(e) {
-      t(i(rl, this), e, !0)
+      t(i(hl, this), e, !0)
     }
   };
-async function il(e) {
-  if (e === 1) return al();
+async function gl(e) {
+  if (e === 1) return _l();
   if (e === 2) {
-    let e = await cl();
-    return e ? ol(`turnstile`, e) : !1
+    let e = await bl();
+    return e ? vl(`turnstile`, e) : !1
   }
   if (e === 3) {
-    let e = await ll();
-    return e ? ol(`hcaptcha`, e) : !1
+    let e = await xl();
+    return e ? vl(`hcaptcha`, e) : !1
   }
-  return e === 4 && dl()
+  return e === 4 && Cl()
 }
-async function al() {
-  for (let e = 0; e < tl; e++) try {
-    let e = await $c();
+async function _l() {
+  for (let e = 0; e < pl; e++) try {
+    let e = await dl();
     if (!e) continue;
     return await $.verifyChallenge({
       type: `pow`,
@@ -4976,7 +4989,7 @@ async function al() {
   } catch {}
   return !1
 }
-async function ol(e, t) {
+async function vl(e, t) {
   try {
     let n = await $.postCaptchaSession({
       provider: e,
@@ -4990,81 +5003,81 @@ async function ol(e, t) {
     return !1
   }
 }
-var sl = {};
+var yl = {};
 
-function cl() {
-  return ul(2)
+function bl() {
+  return Sl(2)
 }
 
-function ll() {
-  return ul(3)
+function xl() {
+  return Sl(3)
 }
 
-function ul(e) {
-  let t = sl[e];
+function Sl(e) {
+  let t = yl[e];
   if (t) return t;
   let n = new Promise(t => {
-    G.errorCount = 0, G.current = {
+    K.errorCount = 0, K.current = {
       tier: e,
       resolve: n => {
-        delete sl[e], t(n)
+        delete yl[e], t(n)
       }
     }
   });
-  return sl[e] = n, n
+  return yl[e] = n, n
 }
 
-function dl() {
-  let e = sl[4];
+function Cl() {
+  let e = yl[4];
   if (e) return e;
   let t = new Promise(e => {
-    G.errorCount = 0, G.current = {
+    K.errorCount = 0, K.current = {
       tier: 4,
       resolve: t => {
-        delete sl[4], e(t)
+        delete yl[4], e(t)
       }
     }
   });
-  return sl[4] = t, t
+  return yl[4] = t, t
 }
 
-function fl(e) {
-  let t = G.current;
-  !t || t.tier === 4 || (t.resolve(e), G.current = null)
+function wl(e) {
+  let t = K.current;
+  !t || t.tier === 4 || (t.resolve(e), K.current = null)
 }
 
-function pl() {
-  let e = G.current;
-  !e || e.tier === 4 || (G.errorCount += 1, G.errorCount >= tl && (e.resolve(void 0), G.current = null))
+function Tl() {
+  let e = K.current;
+  !e || e.tier === 4 || (K.errorCount += 1, K.errorCount >= pl && (e.resolve(void 0), K.current = null))
 }
 
-function ml() {
-  let e = G.current;
-  !e || e.tier !== 4 || (e.resolve(!0), G.current = null)
+function El() {
+  let e = K.current;
+  !e || e.tier !== 4 || (e.resolve(!0), K.current = null)
 }
 
-function hl() {
-  let e = G.current;
-  e && (e.tier === 4 ? e.resolve(!1) : e.resolve(void 0), G.current = null)
+function Dl() {
+  let e = K.current;
+  e && (e.tier === 4 ? e.resolve(!1) : e.resolve(void 0), K.current = null)
 }
-var gl;
+var Ol;
 (function(e) {
   e.Unimplemented = `UNIMPLEMENTED`, e.Unavailable = `UNAVAILABLE`
-})(gl || (gl = {}));
-var _l = class extends Error {
+})(Ol || (Ol = {}));
+var kl = class extends Error {
     constructor(e, t, n) {
       super(e), this.message = e, this.code = t, this.data = n
     }
   },
-  vl = e => {
+  Al = e => {
     var t, n;
     return e != null && e.androidBridge ? `android` : (n = (t = e == null ? void 0 : e.webkit) == null ? void 0 : t.messageHandlers) != null && n.bridge ? `ios` : `web`
   },
-  yl = e => {
+  jl = e => {
     let t = e.CapacitorCustomPlatform || null,
       n = e.Capacitor || {},
       r = n.Plugins = n.Plugins || {},
-      i = () => t === null ? vl(e) : t.name,
+      i = () => t === null ? Al(e) : t.name,
       a = () => i() !== `web`,
       o = e => {
         let t = l.get(e);
@@ -5088,7 +5101,7 @@ var _l = class extends Error {
             if (a) return a.rtype === `promise` ? t => n.nativePromise(e, r.toString(), t) : (t, i) => n.nativeCallback(e, r.toString(), t, i);
             if (t) return (i = t[r]) == null ? void 0 : i.bind(t)
           } else if (t) return (a = t[r]) == null ? void 0 : a.bind(t);
-          else throw new _l(`"${e}" plugin is not implemented on ${c}`, gl.Unimplemented)
+          else throw new kl(`"${e}" plugin is not implemented on ${c}`, Ol.Unimplemented)
         }, m = t => {
           let n, r = (...r) => {
             let i = f().then(i => {
@@ -5097,7 +5110,7 @@ var _l = class extends Error {
                 let e = a(...r);
                 return n = e == null ? void 0 : e.remove, e
               }
-              throw new _l(`"${e}.${t}()" is not implemented on ${c}`, gl.Unimplemented)
+              throw new kl(`"${e}.${t}()" is not implemented on ${c}`, Ol.Unimplemented)
             });
             return t === `addListener` && (i.remove = async () => n()), i
           };
@@ -5143,11 +5156,11 @@ var _l = class extends Error {
         proxy: h,
         platforms: new Set([...Object.keys(a), ...u ? [c] : []])
       }), h
-    }, n.Exception = _l, n.DEBUG = !!n.DEBUG, n.isLoggingEnabled = !!n.isLoggingEnabled, n
+    }, n.Exception = kl, n.DEBUG = !!n.DEBUG, n.isLoggingEnabled = !!n.isLoggingEnabled, n
   },
-  bl = (e => e.Capacitor = yl(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
-  xl = bl.registerPlugin,
-  Sl = class {
+  Ml = (e => e.Capacitor = jl(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
+  Nl = Ml.registerPlugin,
+  Pl = class {
     constructor() {
       this.listeners = {}, this.retainedEventArguments = {}, this.windowListeners = {}
     }
@@ -5190,10 +5203,10 @@ var _l = class extends Error {
       }
     }
     unimplemented(e = `not implemented`) {
-      return new bl.Exception(e, gl.Unimplemented)
+      return new Ml.Exception(e, Ol.Unimplemented)
     }
     unavailable(e = `not available`) {
-      return new bl.Exception(e, gl.Unavailable)
+      return new Ml.Exception(e, Ol.Unavailable)
     }
     async removeListener(e, t) {
       let n = this.listeners[e];
@@ -5214,22 +5227,22 @@ var _l = class extends Error {
       }))
     }
   },
-  Cl = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
-  wl = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
-  Tl = class extends Sl {
+  Fl = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
+  Il = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
+  Ll = class extends Pl {
     async getCookies() {
       let e = document.cookie,
         t = {};
       return e.split(`;`).forEach(e => {
         if (e.length <= 0) return;
         let [n, r] = e.replace(/=/, `CAP_COOKIE`).split(`CAP_COOKIE`);
-        n = wl(n).trim(), r = wl(r).trim(), t[n] = r
+        n = Il(n).trim(), r = Il(r).trim(), t[n] = r
       }), t
     }
     async setCookie(e) {
       try {
-        let t = Cl(e.key),
-          n = Cl(e.value),
+        let t = Fl(e.key),
+          n = Fl(e.value),
           r = e.expires ? `; expires=${e.expires.replace(`expires=`,``)}` : ``,
           i = (e.path || `/`).replace(`path=`, ``),
           a = e.url != null && e.url.length > 0 ? `domain=${e.url}` : ``;
@@ -5261,29 +5274,29 @@ var _l = class extends Error {
       }
     }
   };
-xl(`CapacitorCookies`, {
-  web: () => new Tl
+Nl(`CapacitorCookies`, {
+  web: () => new Ll
 });
-var El = async e => new Promise((t, n) => {
+var Rl = async e => new Promise((t, n) => {
   let r = new FileReader;
   r.onload = () => {
     let e = r.result;
     t(e.indexOf(`,`) >= 0 ? e.split(`,`)[1] : e)
   }, r.onerror = e => n(e), r.readAsDataURL(e)
-}), Dl = (e = {}) => {
+}), zl = (e = {}) => {
   let t = Object.keys(e);
   return Object.keys(e).map(e => e.toLocaleLowerCase()).reduce((n, r, i) => (n[r] = e[t[i]], n), {})
-}, Ol = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
+}, Bl = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
   let [r, i] = n, a, o;
   return Array.isArray(i) ? (o = ``, i.forEach(e => {
     a = t ? encodeURIComponent(e) : e, o += `${r}=${a}&`
   }), o.slice(0, -1)) : (a = t ? encodeURIComponent(i) : i, o = `${r}=${a}`), `${e}&${o}`
-}, ``).substr(1) : null, kl = (e, t = {}) => {
+}, ``).substr(1) : null, Vl = (e, t = {}) => {
   let n = Object.assign({
       method: e.method || `GET`,
       headers: e.headers
     }, t),
-    r = Dl(e.headers)[`content-type`] || ``;
+    r = zl(e.headers)[`content-type`] || ``;
   if (typeof e.data == `string`) n.body = e.data;
   else if (r.includes(`application/x-www-form-urlencoded`)) {
     let t = new URLSearchParams;
@@ -5301,10 +5314,10 @@ var El = async e => new Promise((t, n) => {
     r.delete(`content-type`), n.headers = r
   } else(r.includes(`application/json`) || typeof e.data == `object`) && (n.body = JSON.stringify(e.data));
   return n
-}, Al = class extends Sl {
+}, Hl = class extends Pl {
   async request(e) {
-    let t = kl(e, e.webFetchExtra),
-      n = Ol(e.params, e.shouldEncodeUrlParams),
+    let t = Vl(e, e.webFetchExtra),
+      n = Bl(e.params, e.shouldEncodeUrlParams),
       r = n ? `${e.url}?${n}` : e.url,
       i = await fetch(r, t),
       a = i.headers.get(`content-type`) || ``,
@@ -5316,7 +5329,7 @@ var El = async e => new Promise((t, n) => {
     switch (o) {
       case `arraybuffer`:
       case `blob`:
-        c = await i.blob(), s = await El(c);
+        c = await i.blob(), s = await Rl(c);
         break;
       case `json`:
         s = await i.json();
@@ -5360,18 +5373,18 @@ var El = async e => new Promise((t, n) => {
     }))
   }
 };
-xl(`CapacitorHttp`, {
-  web: () => new Al
+Nl(`CapacitorHttp`, {
+  web: () => new Hl
 });
-var jl;
+var Ul;
 (function(e) {
   e.Dark = `DARK`, e.Light = `LIGHT`, e.Default = `DEFAULT`
-})(jl || (jl = {}));
-var Ml;
+})(Ul || (Ul = {}));
+var Wl;
 (function(e) {
   e.StatusBar = `StatusBar`, e.NavigationBar = `NavigationBar`
-})(Ml || (Ml = {}));
-var Nl = class extends Sl {
+})(Wl || (Wl = {}));
+var Gl = class extends Pl {
   async setStyle() {
     this.unavailable(`not available for web`)
   }
@@ -5385,45 +5398,45 @@ var Nl = class extends Sl {
     this.unavailable(`not available for web`)
   }
 };
-xl(`SystemBars`, {
-  web: () => new Nl
+Nl(`SystemBars`, {
+  web: () => new Gl
 });
-var Pl = xl(`DeviceAttest`);
+var Kl = Nl(`DeviceAttest`);
 
-function Fl() {
-  return bl.isNativePlatform() && bl.isPluginAvailable(`DeviceAttest`)
+function ql() {
+  return Ml.isNativePlatform() && Ml.isPluginAvailable(`DeviceAttest`)
 }
-async function Il(e) {
+async function Jl(e) {
   let t = await crypto.subtle.digest(`SHA-256`, new TextEncoder().encode(e));
   return [...new Uint8Array(t)].map(e => e.toString(16).padStart(2, `0`)).join(``)
 }
-async function Ll(e, t, n) {
-  return `${e.toUpperCase()} ${t} ${await Il(n)}`
+async function Yl(e, t, n) {
+  return `${e.toUpperCase()} ${t} ${await Jl(n)}`
 }
-async function Rl(e) {
-  return Pl.attest({
+async function Xl(e) {
+  return Kl.attest({
     challenge: e
   })
 }
-async function zl(e) {
-  return Pl.commitKey({
+async function Zl(e) {
+  return Kl.commitKey({
     keyId: e
   })
 }
-async function Bl(e) {
-  if (Fl()) return Pl.assert({
+async function Ql(e) {
+  if (ql()) return Kl.assert({
     clientData: e
   }).catch(e => {
     if ((e == null ? void 0 : e.code) !== `NO_KEY`) throw e
   })
 }
-async function Vl() {
-  if (Fl()) return Pl.deviceToken().then(({
+async function $l() {
+  if (ql()) return Kl.deviceToken().then(({
     token: e
   }) => e).catch(() => void 0)
 }
-async function Hl() {
-  return Fl() ? Pl.isSupported().catch(() => ({
+async function eu() {
+  return ql() ? Kl.isSupported().catch(() => ({
     supported: !1,
     hasKey: !1
   })) : {
@@ -5431,11 +5444,11 @@ async function Hl() {
     hasKey: !1
   }
 }
-var Ul = new Set([`/paint`, `/payment/appstore/account-token`, `/payment/appstore/verify`]);
-async function Wl(e, t, n) {
-  if (!Ul.has(t) || !Fl() || n != null && typeof n != `string`) return;
-  let r = await Ll(e, t, n ?? ``),
-    i = () => Pl.assert({
+var tu = new Set([`/paint`, `/payment/appstore/account-token`, `/payment/appstore/verify`]);
+async function nu(e, t, n) {
+  if (!tu.has(t) || !ql() || n != null && typeof n != `string`) return;
+  let r = await Yl(e, t, n ?? ``),
+    i = () => Kl.assert({
       clientData: r
     });
   try {
@@ -5454,13 +5467,13 @@ async function Wl(e, t, n) {
     return
   }
 }
-var K = function(e) {
+var q = function(e) {
     return e[e.CONTINUE = 100] = `CONTINUE`, e[e.SWITCHING_PROTOCOLS = 101] = `SWITCHING_PROTOCOLS`, e[e.PROCESSING = 102] = `PROCESSING`, e[e.EARLY_HINTS = 103] = `EARLY_HINTS`, e[e.OK = 200] = `OK`, e[e.CREATED = 201] = `CREATED`, e[e.ACCEPTED = 202] = `ACCEPTED`, e[e.NON_AUTHORITATIVE_INFORMATION = 203] = `NON_AUTHORITATIVE_INFORMATION`, e[e.NO_CONTENT = 204] = `NO_CONTENT`, e[e.RESET_CONTENT = 205] = `RESET_CONTENT`, e[e.PARTIAL_CONTENT = 206] = `PARTIAL_CONTENT`, e[e.MULTI_STATUS = 207] = `MULTI_STATUS`, e[e.ALREADY_REPORTED = 208] = `ALREADY_REPORTED`, e[e.IM_USED = 226] = `IM_USED`, e[e.MULTIPLE_CHOICES = 300] = `MULTIPLE_CHOICES`, e[e.MOVED_PERMANENTLY = 301] = `MOVED_PERMANENTLY`, e[e.MOVED_TEMPORARILY = 302] = `MOVED_TEMPORARILY`, e[e.FOUND = 302] = `FOUND`, e[e.SEE_OTHER = 303] = `SEE_OTHER`, e[e.NOT_MODIFIED = 304] = `NOT_MODIFIED`, e[e.USE_PROXY = 305] = `USE_PROXY`, e[e.SWITCH_PROXY = 306] = `SWITCH_PROXY`, e[e.TEMPORARY_REDIRECT = 307] = `TEMPORARY_REDIRECT`, e[e.PERMANENT_REDIRECT = 308] = `PERMANENT_REDIRECT`, e[e.BAD_REQUEST = 400] = `BAD_REQUEST`, e[e.UNAUTHORIZED = 401] = `UNAUTHORIZED`, e[e.PAYMENT_REQUIRED = 402] = `PAYMENT_REQUIRED`, e[e.FORBIDDEN = 403] = `FORBIDDEN`, e[e.NOT_FOUND = 404] = `NOT_FOUND`, e[e.METHOD_NOT_ALLOWED = 405] = `METHOD_NOT_ALLOWED`, e[e.NOT_ACCEPTABLE = 406] = `NOT_ACCEPTABLE`, e[e.PROXY_AUTHENTICATION_REQUIRED = 407] = `PROXY_AUTHENTICATION_REQUIRED`, e[e.REQUEST_TIMEOUT = 408] = `REQUEST_TIMEOUT`, e[e.CONFLICT = 409] = `CONFLICT`, e[e.GONE = 410] = `GONE`, e[e.LENGTH_REQUIRED = 411] = `LENGTH_REQUIRED`, e[e.PRECONDITION_FAILED = 412] = `PRECONDITION_FAILED`, e[e.REQUEST_TOO_LONG = 413] = `REQUEST_TOO_LONG`, e[e.CONTENT_TOO_LARGE = 413] = `CONTENT_TOO_LARGE`, e[e.REQUEST_URI_TOO_LONG = 414] = `REQUEST_URI_TOO_LONG`, e[e.URI_TOO_LONG = 414] = `URI_TOO_LONG`, e[e.UNSUPPORTED_MEDIA_TYPE = 415] = `UNSUPPORTED_MEDIA_TYPE`, e[e.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = `REQUESTED_RANGE_NOT_SATISFIABLE`, e[e.RANGE_NOT_SATISFIABLE = 416] = `RANGE_NOT_SATISFIABLE`, e[e.EXPECTATION_FAILED = 417] = `EXPECTATION_FAILED`, e[e.IM_A_TEAPOT = 418] = `IM_A_TEAPOT`, e[e.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = `INSUFFICIENT_SPACE_ON_RESOURCE`, e[e.MISDIRECTED_REQUEST = 421] = `MISDIRECTED_REQUEST`, e[e.UNPROCESSABLE_ENTITY = 422] = `UNPROCESSABLE_ENTITY`, e[e.UNPROCESSABLE_CONTENT = 422] = `UNPROCESSABLE_CONTENT`, e[e.LOCKED = 423] = `LOCKED`, e[e.FAILED_DEPENDENCY = 424] = `FAILED_DEPENDENCY`, e[e.TOO_EARLY = 425] = `TOO_EARLY`, e[e.UPGRADE_REQUIRED = 426] = `UPGRADE_REQUIRED`, e[e.PRECONDITION_REQUIRED = 428] = `PRECONDITION_REQUIRED`, e[e.TOO_MANY_REQUESTS = 429] = `TOO_MANY_REQUESTS`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = `REQUEST_HEADER_FIELDS_TOO_LARGE`, e[e.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = `UNAVAILABLE_FOR_LEGAL_REASONS`, e[e.INTERNAL_SERVER_ERROR = 500] = `INTERNAL_SERVER_ERROR`, e[e.NOT_IMPLEMENTED = 501] = `NOT_IMPLEMENTED`, e[e.BAD_GATEWAY = 502] = `BAD_GATEWAY`, e[e.SERVICE_UNAVAILABLE = 503] = `SERVICE_UNAVAILABLE`, e[e.GATEWAY_TIMEOUT = 504] = `GATEWAY_TIMEOUT`, e[e.HTTP_VERSION_NOT_SUPPORTED = 505] = `HTTP_VERSION_NOT_SUPPORTED`, e[e.VARIANT_ALSO_NEGOTIATES = 506] = `VARIANT_ALSO_NEGOTIATES`, e[e.INSUFFICIENT_STORAGE = 507] = `INSUFFICIENT_STORAGE`, e[e.LOOP_DETECTED = 508] = `LOOP_DETECTED`, e[e.NOT_EXTENDED = 510] = `NOT_EXTENDED`, e[e.NETWORK_AUTHENTICATION_REQUIRED = 511] = `NETWORK_AUTHENTICATION_REQUIRED`, e[e.AWS_ELB_000 = 0] = `AWS_ELB_000`, e[e.THIS_IS_FINE = 218] = `THIS_IS_FINE`, e[e.PAGE_EXPIRED = 419] = `PAGE_EXPIRED`, e[e.METHOD_FAILURE = 420] = `METHOD_FAILURE`, e[e.ENHANCE_YOUR_CALM = 420] = `ENHANCE_YOUR_CALM`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = `REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY`, e[e.SHOPIFY_SECURITY_REJECTION = 430] = `SHOPIFY_SECURITY_REJECTION`, e[e.LOGIN_TIME_OUT = 440] = `LOGIN_TIME_OUT`, e[e.NO_RESPONSE = 444] = `NO_RESPONSE`, e[e.RETRY_WITH = 449] = `RETRY_WITH`, e[e.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = `BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS`, e[e.REDIRECT_IIS = 451] = `REDIRECT_IIS`, e[e.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = `CLIENT_CLOSED_CONNECTION_AWS_ELB`, e[e.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = `X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB`, e[e.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = `INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB`, e[e.REQUEST_HEADER_TOO_LARGE = 494] = `REQUEST_HEADER_TOO_LARGE`, e[e.SSL_CERTIFICATE_ERROR = 495] = `SSL_CERTIFICATE_ERROR`, e[e.SSL_CERTIFICATE_REQUIRED = 496] = `SSL_CERTIFICATE_REQUIRED`, e[e.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = `HTTP_REQUEST_SENT_TO_HTTPS_PORT`, e[e.INVALID_TOKEN = 498] = `INVALID_TOKEN`, e[e.CLIENT_CLOSED_REQUEST = 499] = `CLIENT_CLOSED_REQUEST`, e[e.TOKEN_REQUIRED = 499] = `TOKEN_REQUIRED`, e[e.BANDWIDTH_LIMIT_EXCEEDED = 509] = `BANDWIDTH_LIMIT_EXCEEDED`, e[e.RESOURCE_LIMIT_IS_REACHED = 508] = `RESOURCE_LIMIT_IS_REACHED`, e[e.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = `WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR`, e[e.WEB_SERVER_IS_DOWN = 521] = `WEB_SERVER_IS_DOWN`, e[e.CONNECTION_TIMED_OUT = 522] = `CONNECTION_TIMED_OUT`, e[e.ORIGIN_IS_UNREACHABLE = 523] = `ORIGIN_IS_UNREACHABLE`, e[e.A_TIMEOUT_OCCURRED = 524] = `A_TIMEOUT_OCCURRED`, e[e.SSL_HANDSHAKE_FAILED = 525] = `SSL_HANDSHAKE_FAILED`, e[e.INVALID_SSL_CERTIFICATE = 526] = `INVALID_SSL_CERTIFICATE`, e[e.RAILGUN_ERROR = 527] = `RAILGUN_ERROR`, e[e.SITE_IS_OVERLOADED = 529] = `SITE_IS_OVERLOADED`, e[e.ORIGIN_UNAVAILABLE = 530] = `ORIGIN_UNAVAILABLE`, e[e.ORIGIN_DNS_ERROR = 530] = `ORIGIN_DNS_ERROR`, e[e.SITE_IS_FROZEN = 530] = `SITE_IS_FROZEN`, e[e.TEMPORARILY_DISABLED = 540] = `TEMPORARILY_DISABLED`, e[e.UNAUTHORIZED_AWS_ELB = 561] = `UNAUTHORIZED_AWS_ELB`, e[e.NETWORK_READ_TIMEOUT_ERROR = 598] = `NETWORK_READ_TIMEOUT_ERROR`, e[e.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = `NETWORK_CONNECT_TIMEOUT_ERROR`, e[e.UNEXPECTED_TOKEN = 783] = `UNEXPECTED_TOKEN`, e[e.REQUEST_DENIED = 999] = `REQUEST_DENIED`, e
   }({}),
-  q = class extends Error {},
-  Gl = class extends Error {},
-  Kl = class extends Error {},
-  ql = {
+  J = class extends Error {},
+  ru = class extends Error {},
+  iu = class extends Error {},
+  au = {
     maintenance: () => g.protection_message_maintenance(),
     restoration: () => g.protection_message_restoration(),
     event: () => g.protection_message_event(),
@@ -5475,57 +5488,57 @@ var K = function(e) {
     temporary: () => g.protection_message_temporary()
   };
 
-function Jl(e) {
-  return Object.prototype.hasOwnProperty.call(ql, e) ? ql[e]() : ql.temporary()
+function ou(e) {
+  return Object.prototype.hasOwnProperty.call(au, e) ? au[e]() : au.temporary()
 }
 
-function Yl(e, t) {
+function su(e, t) {
   return t >= Date.parse(e.endsAt) ? `ended` : e.paused ? `paused` : t < Date.parse(e.startsAt) ? `scheduled` : `active`
 }
-var Xl = {
+var cu = {
   scheduled: () => g.protection_scheduled(),
   active: () => g.protection_active(),
   paused: () => g.protection_paused(),
   ended: () => g.protection_ended()
 };
 
-function Zl(e) {
+function lu(e) {
   if (!e.trim()) return [];
   let t = e.trim().split(/[\s,;]+/);
   return t.length > 1e3 || t.some(e => !/^[1-9]\d*$/.test(e) || Number(e) > 2147483647) ? null : [...new Set(t.map(Number))].sort((e, t) => e - t)
 }
 
-function Ql(e) {
+function uu(e) {
   let t = new Date(e);
   return new Date(t.getTime() - t.getTimezoneOffset() * 6e4).toISOString().slice(0, 16)
 }
 
-function $l(e, t) {
+function du(e, t) {
   return (t == null ? void 0 : t.aborted) === !0 || typeof DOMException < `u` && e instanceof DOMException && e.name === `AbortError`
 }
-var eu = 6e3,
-  tu = new WeakMap,
-  nu = new WeakMap,
-  ru = class {
+var fu = 6e3,
+  pu = new WeakMap,
+  mu = new WeakMap,
+  hu = class {
     get online() {
-      return s(i(tu, this))
+      return s(i(pu, this))
     }
     set online(e) {
-      t(i(tu, this), e, !0)
+      t(i(pu, this), e, !0)
     }
     get serverTimeOffsetMs() {
-      return s(i(nu, this))
+      return s(i(mu, this))
     }
     set serverTimeOffsetMs(e) {
-      t(i(nu, this), e, !0)
+      t(i(mu, this), e, !0)
     }
     constructor(e) {
-      c(this, `url`, void 0), a(this, tu, n(!0)), c(this, `probe`, null), a(this, nu, n(null)), this.url = e
+      c(this, `url`, void 0), a(this, pu, n(!0)), c(this, `probe`, null), a(this, mu, n(null)), this.url = e
     }
     checkConnection() {
       if (this.probe) return this.probe;
       let e = new AbortController,
-        t = setTimeout(() => e.abort(), eu);
+        t = setTimeout(() => e.abort(), fu);
       return this.probe = fetch(`${this.url}/health`, {
         cache: `no-store`,
         signal: e.signal
@@ -5558,7 +5571,7 @@ var eu = 6e3,
           body: JSON.stringify({
             sealedResults: e.base64()
           })
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async guardedFetch(e, t) {
       try {
@@ -5570,7 +5583,7 @@ var eu = 6e3,
           traceId: n.headers.get(`x-trace-id`) ?? void 0
         }), ue(n), this.online = !0, this.updateServerTimeEstimate(n), n
       } catch (n) {
-        throw $l(n, t == null ? void 0 : t.signal) ? n : (console.error(`Fetch error:`, n), ne({
+        throw du(n, t == null ? void 0 : t.signal) ? n : (console.error(`Fetch error:`, n), ne({
           method: (t == null ? void 0 : t.method) ?? `GET`,
           path: e,
           status: 0
@@ -5585,7 +5598,7 @@ var eu = 6e3,
       };
       let i = e.split(`?`)[0],
         a = async () => {
-          let e = await Wl(t.method ?? `GET`, i, t.body);
+          let e = await nu(t.method ?? `GET`, i, t.body);
           if (!e) return t;
           let n = new Headers(t.headers);
           for (let [t, r] of Object.entries(e)) n.set(t, r);
@@ -5594,61 +5607,61 @@ var eu = 6e3,
             headers: n
           }
         }, o = await this.guardedFetch(e, await a());
-      if (o.headers.get(`x-device-reattest`) && d(() => import(`./2JPk1pOh.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
-      if (o.status === K.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(g.request_integrity_blocked());
+      if (o.headers.get(`x-device-reattest`) && d(() => import(`./DXRBWQe8.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6]), import.meta.url), o.status === q.FORBIDDEN && o.headers.get(`x-block-reason`) === `tor`) throw Error(g.tor_blocked());
+      if (o.status === q.FORBIDDEN && o.headers.get(`x-block-reason`) === `integrity`) throw Error(g.request_integrity_blocked());
       let s = ((n = o.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (o.status === 403 && s) {
-        if (W.setCfLikelyAutomated(!0), !await cl()) throw Error(g.challenge_verification_not_completed());
+        if (G.setCfLikelyAutomated(!0), !await bl()) throw Error(g.challenge_verification_not_completed());
         o = await this.guardedFetch(e, await a())
       }
       if ((t == null ? void 0 : t.throwOnStatus) ?? !0) {
-        if (o.status === K.TOO_MANY_REQUESTS) throw new q(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
-        if (o.status === K.REQUEST_TIMEOUT) throw Error(g.request_timeout());
-        if (o.status === K.SERVICE_UNAVAILABLE) throw Error(g.service_unavailable())
+        if (o.status === q.TOO_MANY_REQUESTS) throw new J(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
+        if (o.status === q.REQUEST_TIMEOUT) throw Error(g.request_timeout());
+        if (o.status === q.SERVICE_UNAVAILABLE) throw Error(g.service_unavailable())
       }
-      if (o.status === K.FORBIDDEN && (r = o.headers.get(`content-type`)) != null && r.includes(`application/json`)) {
+      if (o.status === q.FORBIDDEN && (r = o.headers.get(`content-type`)) != null && r.includes(`application/json`)) {
         let e = await o.clone().json().catch(() => null);
-        if ((e == null ? void 0 : e.error) === `pixel-protected`) throw Error(Jl(e.messageKey))
+        if ((e == null ? void 0 : e.error) === `pixel-protected`) throw Error(ou(e.messageKey))
       }
       return o
     }
   },
-  J = class extends Error {
+  Y = class extends Error {
     constructor(e, t) {
       super(e), c(this, `message`, void 0), c(this, `status`, void 0), this.message = e, this.status = t
     }
   },
-  iu = class extends Error {};
+  gu = class extends Error {};
 
-function au(e) {
+function _u(e) {
   return class extends e {
     async me() {
       let e = await this.request(`/me`, {
         credentials: `include`,
         throwOnStatus: !1
       });
-      if (e.status === K.OK) return await e.json();
-      if (e.status !== K.UNAUTHORIZED) throw new J(g.unexpected_server_error(), e.status)
+      if (e.status === q.OK) return await e.json();
+      if (e.status !== q.UNAUTHORIZED) throw new Y(g.unexpected_server_error(), e.status)
     }
     async meEmail() {
       let e = await this.request(`/me/email`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return (await e.json()).email
+      if (e.status === q.OK) return (await e.json()).email
     }
     async logout() {
       let e = await this.request(`/auth/logout`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(await e.text());
+      if (e.status !== q.OK) throw Error(await e.text());
       return await e.json()
     }
     async getOtpCooldown() {
       let e = await this.request(`/anticheat/otp/cooldown`, {
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (e.status !== q.OK) throw Error(g.unexpected_server_error());
       return await e.json()
     }
     async sendOtp(e) {
@@ -5663,16 +5676,16 @@ function au(e) {
         }),
         throwOnStatus: !1
       });
-      if (t.status === K.BAD_REQUEST) throw Error(g.invalid_phone_number());
-      if (t.status === K.CONFLICT) throw Error(g.phone_already_used());
-      if (t.status === K.FORBIDDEN) throw Error(g.not_allowed_to_verify());
-      if (t.status === K.TOO_MANY_REQUESTS) throw Error(g.too_many_attempts());
-      if (t.status === K.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.phone_region_not_supported());
-      if (t.status === K.LOCKED) throw Error(g.unsubscribed_from_sms());
-      if (t.status === K.UNPROCESSABLE_ENTITY) throw Error(g.phone_not_supported());
-      if (t.status === K.NOT_ACCEPTABLE) throw Error(g.vpn_not_allowed());
-      if (t.status === K.PRECONDITION_FAILED) throw Error(g.country_mismatch());
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status === q.BAD_REQUEST) throw Error(g.invalid_phone_number());
+      if (t.status === q.CONFLICT) throw Error(g.phone_already_used());
+      if (t.status === q.FORBIDDEN) throw Error(g.not_allowed_to_verify());
+      if (t.status === q.TOO_MANY_REQUESTS) throw Error(g.too_many_attempts());
+      if (t.status === q.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.phone_region_not_supported());
+      if (t.status === q.LOCKED) throw Error(g.unsubscribed_from_sms());
+      if (t.status === q.UNPROCESSABLE_ENTITY) throw Error(g.phone_not_supported());
+      if (t.status === q.NOT_ACCEPTABLE) throw Error(g.vpn_not_allowed());
+      if (t.status === q.PRECONDITION_FAILED) throw Error(g.country_mismatch());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return await t.json()
     }
     async verifyChallenge(e) {
@@ -5699,17 +5712,17 @@ function au(e) {
         credentials: `include`,
         body: JSON.stringify(t),
         headers: {
-          "x-fp": await Fo()
+          "x-fp": await Jo()
         }
       });
       if (e.type === `otp`) {
-        if (n.status === K.GONE) throw Error(g.expired_code());
-        if (n.status === K.BAD_REQUEST) throw Error(g.invalid_code());
-        if (n.status === K.TOO_MANY_REQUESTS) throw Error(g.too_many_attempts());
-        if (n.status === K.CONFLICT) throw Error(g.phone_linked_to_active_account());
-        if (n.status !== K.OK) throw Error(g.unexpected_server_error())
-      } else if (n.status === K.BAD_REQUEST) throw Error(g.invalid_challenge_response());
-      else if (n.status !== K.OK) throw Error(g.unexpected_server_error())
+        if (n.status === q.GONE) throw Error(g.expired_code());
+        if (n.status === q.BAD_REQUEST) throw Error(g.invalid_code());
+        if (n.status === q.TOO_MANY_REQUESTS) throw Error(g.too_many_attempts());
+        if (n.status === q.CONFLICT) throw Error(g.phone_linked_to_active_account());
+        if (n.status !== q.OK) throw Error(g.unexpected_server_error())
+      } else if (n.status === q.BAD_REQUEST) throw Error(g.invalid_challenge_response());
+      else if (n.status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async updateMe(e) {
       let t = await this.request(`/me/update`, {
@@ -5717,7 +5730,7 @@ function au(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === K.BAD_REQUEST) {
+      if (t.status === q.BAD_REQUEST) {
         let e = await t.json(),
           n = (e == null ? void 0 : e.error) ?? ``;
         if (n === `invalid_name`) throw Error(g.invalid_name());
@@ -5730,7 +5743,7 @@ function au(e) {
         }
         throw Error(e == null ? void 0 : e.error)
       }
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async deleteMe(e) {
       let t = await this.request(`/me`, {
@@ -5740,8 +5753,8 @@ function au(e) {
           confirmText: e
         })
       });
-      if (t.status === K.BAD_REQUEST) throw Error(g.typed_username_does_not_match());
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error())
+      if (t.status === q.BAD_REQUEST) throw Error(g.typed_username_does_not_match());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async favoriteLocation(e, t = 15) {
       let n = await this.request(`/favorite-location`, {
@@ -5753,8 +5766,8 @@ function au(e) {
         }),
         credentials: `include`
       });
-      if (n.status === K.FORBIDDEN) throw Error(g.operation_not_allowed_maybe_you_have_too_many_favorite_locations());
-      if (n.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (n.status === q.FORBIDDEN) throw Error(g.operation_not_allowed_maybe_you_have_too_many_favorite_locations());
+      if (n.status !== q.OK) throw Error(g.unexpected_server_error());
       return n.json()
     }
     async deleteFavoriteLocation(e) {
@@ -5764,7 +5777,7 @@ function au(e) {
             id: e
           }),
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async updateFavoriteLocation(e, t) {
       let n = await this.request(`/favorite-location/update`, {
@@ -5778,9 +5791,9 @@ function au(e) {
         }),
         credentials: `include`
       });
-      if (n.status === K.BAD_REQUEST) throw Error(g.favorite_invalid_details());
-      if (n.status === K.NOT_FOUND) throw Error(g.favorite_not_found());
-      if (n.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (n.status === q.BAD_REQUEST) throw Error(g.favorite_invalid_details());
+      if (n.status === q.NOT_FOUND) throw Error(g.favorite_not_found());
+      if (n.status !== q.OK) throw Error(g.unexpected_server_error());
       return n.json()
     }
     async organizeFavorites(e) {
@@ -5789,14 +5802,14 @@ function au(e) {
         body: JSON.stringify(e),
         credentials: `include`
       });
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return t.json()
     }
     async getMyProfilePictures() {
       let e = await this.request(`/me/profile-pictures`, {
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (e.status !== q.OK) throw Error(g.unexpected_server_error());
       return e.json()
     }
     async changeProfilePicture(e) {
@@ -5806,35 +5819,35 @@ function au(e) {
           body: JSON.stringify({
             pictureId: e
           })
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async unlinkDiscord() {
       let e = await this.request(`/discord/unlink`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== K.NO_CONTENT) throw new J(g.unexpected_server_error(), e.status)
+      if (e.status !== q.NO_CONTENT) throw new Y(g.unexpected_server_error(), e.status)
     }
     async deleteSessions() {
       let e = await this.request(`/me/sessions`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status)
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status)
     }
     async deleteAllUserSessions(e) {
       let t = await this.request(`/staff/dashboard/users/${e}/sessions`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getMySuspensionDetails() {
       let e = await this.request(`/me/suspension`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let t = await e.json();
       return !(t != null && t.active) || !Array.isArray(t == null ? void 0 : t.punishments) ? null : {
         punishments: t.punishments.map(e => ({
@@ -5855,7 +5868,7 @@ function au(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.paintedToday) ?? 0
     }
@@ -5863,7 +5876,7 @@ function au(e) {
       let e = await this.request(`/me/account-conflict`, {
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return await e.json()
     }
     async resolveAccountConflict(e) {
@@ -5875,36 +5888,36 @@ function au(e) {
         })
       });
       switch (t.status) {
-        case K.OK:
+        case q.OK:
           return (await t.json()).keptUserId;
-        case K.CONFLICT:
+        case q.CONFLICT:
           throw (await t.json()).error === `conflict_blocked` ? Error(g.duplicate_account_blocked()) : Error(g.duplicate_account_already_resolved());
         default:
-          throw new J(g.unexpected_server_error(), t.status)
+          throw new Y(g.unexpected_server_error(), t.status)
       }
     }
     async markRulesAsRead() {
       return (await this.request(`/me/rules/read`, {
         method: `POST`,
         credentials: `include`
-      })).status === K.OK
+      })).status === q.OK
     }
     async markStoreSeen() {
       return (await this.request(`/me/store/seen`, {
         method: `POST`,
         credentials: `include`
-      })).status === K.OK
+      })).status === q.OK
     }
   }
 }
-var ou = {
+var vu = {
   droplets: 1e6,
   prism: 1e3,
   maxCharges: 1e3,
   note: 500
 };
 
-function su(e) {
+function yu(e) {
   return class extends e {
     async getAdminB2BBusinesses(e = ``, t = 0) {
       let n = new URLSearchParams({
@@ -5914,15 +5927,15 @@ function su(e) {
         r = await this.request(`/staff/dashboard/businesses?${n.toString()}`, {
           credentials: `include`
         });
-      if (r.status !== K.OK) throw new J(g.b2b_load_failed(), r.status);
+      if (r.status !== q.OK) throw new Y(g.b2b_load_failed(), r.status);
       return r.json()
     }
     async getAdminB2BBusiness(e) {
       let t = await this.request(`/staff/dashboard/businesses/${e}`, {
         credentials: `include`
       });
-      if (t.status === K.NOT_FOUND) throw new J(g.b2b_business_not_found(), t.status);
-      if (t.status !== K.OK) throw new J(g.b2b_load_business_failed(), t.status);
+      if (t.status === q.NOT_FOUND) throw new Y(g.b2b_business_not_found(), t.status);
+      if (t.status !== q.OK) throw new Y(g.b2b_load_business_failed(), t.status);
       return t.json()
     }
     async convertAdminB2BBusiness(e) {
@@ -5930,12 +5943,12 @@ function su(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status === K.CONFLICT || t.status === K.BAD_REQUEST) {
+      if (t.status === q.CONFLICT || t.status === q.BAD_REQUEST) {
         let e = await t.json().catch(() => null);
-        if ((e == null ? void 0 : e.error) === `business_account_is_employee`) throw new J(g.b2b_error_business_is_employee(), t.status)
+        if ((e == null ? void 0 : e.error) === `business_account_is_employee`) throw new Y(g.b2b_error_business_is_employee(), t.status)
       }
-      if (t.status === K.NOT_FOUND) throw new J(g.b2b_user_not_found(), t.status);
-      if (t.status !== K.NO_CONTENT) throw new J(g.b2b_convert_failed(), t.status)
+      if (t.status === q.NOT_FOUND) throw new Y(g.b2b_user_not_found(), t.status);
+      if (t.status !== q.NO_CONTENT) throw new Y(g.b2b_convert_failed(), t.status)
     }
     async setAdminB2BInfiniteCharges(e, t) {
       let n = await this.request(`/staff/dashboard/businesses/${e}/charges`, {
@@ -5945,7 +5958,7 @@ function su(e) {
           infinite: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.b2b_update_charges_failed(), n.status);
+      if (n.status !== q.OK) throw new Y(g.b2b_update_charges_failed(), n.status);
       return (await n.json()).infinite
     }
     async setAdminB2BPaintRestrictions(e, t) {
@@ -5954,7 +5967,7 @@ function su(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw new J(g.b2b_update_paint_restrictions_failed(), n.status);
+      if (n.status !== q.OK) throw new Y(g.b2b_update_paint_restrictions_failed(), n.status);
       return n.json()
     }
     async assignAdminB2BEmployee(e, t) {
@@ -5965,7 +5978,7 @@ function su(e) {
           employeeUserId: t
         })
       });
-      if (n.status === K.CONFLICT || n.status === K.BAD_REQUEST) {
+      if (n.status === q.CONFLICT || n.status === q.BAD_REQUEST) {
         var r;
         let e = await n.json().catch(() => null),
           t = {
@@ -5973,18 +5986,18 @@ function su(e) {
             employee_account_is_business: g.b2b_error_employee_is_business,
             business_cannot_be_its_own_employee: g.b2b_error_same_account
           };
-        throw new J(((r = t[(e == null ? void 0 : e.error) ?? ``]) == null ? void 0 : r.call(t)) ?? g.b2b_assign_failed(), n.status)
+        throw new Y(((r = t[(e == null ? void 0 : e.error) ?? ``]) == null ? void 0 : r.call(t)) ?? g.b2b_assign_failed(), n.status)
       }
-      if (n.status === K.NOT_FOUND) throw new J(g.b2b_user_not_found(), n.status);
-      if (n.status !== K.NO_CONTENT) throw new J(g.b2b_assign_failed(), n.status)
+      if (n.status === q.NOT_FOUND) throw new Y(g.b2b_user_not_found(), n.status);
+      if (n.status !== q.NO_CONTENT) throw new Y(g.b2b_assign_failed(), n.status)
     }
     async removeAdminB2BEmployee(e, t) {
       let n = await this.request(`/staff/dashboard/businesses/${e}/employees/${t}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (n.status === K.CONFLICT) throw new J(g.b2b_employee_not_assigned(), n.status);
-      if (n.status !== K.NO_CONTENT) throw new J(g.b2b_remove_failed(), n.status)
+      if (n.status === q.CONFLICT) throw new Y(g.b2b_employee_not_assigned(), n.status);
+      if (n.status !== q.NO_CONTENT) throw new Y(g.b2b_remove_failed(), n.status)
     }
     async health() {
       return (await this.request(`/health`)).json()
@@ -5998,7 +6011,7 @@ function su(e) {
           delta: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return (await n.json()).droplets
     }
     async postAdjustUserPrism(e, t) {
@@ -6010,21 +6023,21 @@ function su(e) {
           delta: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return (await n.json()).prism
     }
     async getAdminUserCosmetics(e) {
       let t = await this.request(`/staff/dashboard/users/cosmetics?userId=${encodeURIComponent(e)}`, {
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.user_cosmetics_load_failed(), t.status);
+      if (t.status !== q.OK) throw new Y(g.user_cosmetics_load_failed(), t.status);
       return t.json()
     }
     async getAdminUserCosmeticCatalog() {
       let e = await this.request(`/staff/dashboard/users/cosmetics/catalog`, {
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.user_cosmetics_catalog_failed(), e.status);
+      if (e.status !== q.OK) throw new Y(g.user_cosmetics_catalog_failed(), e.status);
       return e.json()
     }
     async postAdminUserCosmeticAction(e, t) {
@@ -6034,32 +6047,32 @@ function su(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (r.status === K.OK) return r.json();
+      if (r.status === q.OK) return r.json();
       switch ((n = await r.json().catch(() => null)) == null ? void 0 : n.error) {
         case `already_owned`:
-          throw new J(g.user_cosmetics_already_owned(), r.status);
+          throw new Y(g.user_cosmetics_already_owned(), r.status);
         case `not_owned`:
-          throw new J(g.user_cosmetics_not_owned(), r.status);
+          throw new Y(g.user_cosmetics_not_owned(), r.status);
         case `not_refundable`:
-          throw new J(g.user_cosmetics_not_refundable(), r.status);
+          throw new Y(g.user_cosmetics_not_refundable(), r.status);
         case `user_not_found`:
-          throw new J(g.user_not_found(), r.status);
+          throw new Y(g.user_not_found(), r.status);
         default:
-          throw new J(g.user_cosmetics_action_failed(), r.status)
+          throw new Y(g.user_cosmetics_action_failed(), r.status)
       }
     }
     async getAdminUserGiftProducts(e) {
       let t = await this.request(`/staff/dashboard/users/gifts/products?userId=${encodeURIComponent(e)}`, {
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.user_gift_products_failed(), t.status);
+      if (t.status !== q.OK) throw new Y(g.user_gift_products_failed(), t.status);
       return (await t.json()).products
     }
     async getAdminUserGifts(e) {
       let t = await this.request(`/staff/dashboard/users/gifts?userId=${encodeURIComponent(e)}`, {
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.user_gift_history_failed(), t.status);
+      if (t.status !== q.OK) throw new Y(g.user_gift_history_failed(), t.status);
       return (await t.json()).gifts
     }
     async postAdminSendUserGift(e) {
@@ -6069,26 +6082,26 @@ function su(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (n.status === K.OK) return (await n.json()).gift;
+      if (n.status === q.OK) return (await n.json()).gift;
       switch ((t = await n.json().catch(() => null)) == null ? void 0 : t.error) {
         case `gift_recipient_unavailable`:
-          throw new J(g.user_gift_error_unavailable(), n.status);
+          throw new Y(g.user_gift_error_unavailable(), n.status);
         case `gift_recipient_not_found`:
-          throw new J(g.user_not_found(), n.status);
+          throw new Y(g.user_not_found(), n.status);
         case `all_owned`:
-          throw new J(g.user_gift_error_all_owned(), n.status);
+          throw new Y(g.user_gift_error_all_owned(), n.status);
         case `product_unavailable`:
-          throw new J(g.user_gift_error_product_unavailable(), n.status);
+          throw new Y(g.user_gift_error_product_unavailable(), n.status);
         case `invalid_amount`:
-          throw new J(g.user_gift_error_amount(), n.status);
+          throw new Y(g.user_gift_error_amount(), n.status);
         case `empty_gift`:
-          throw new J(g.user_gift_error_empty(), n.status);
+          throw new Y(g.user_gift_error_empty(), n.status);
         case `note_too_long`:
-          throw new J(g.user_gift_note_too_long({
-            max: ou.note
+          throw new Y(g.user_gift_note_too_long({
+            max: vu.note
           }), n.status);
         default:
-          throw new J(g.user_gift_send_failed(), n.status)
+          throw new Y(g.user_gift_send_failed(), n.status)
       }
     }
     async postAdminRenameUser(e, t) {
@@ -6100,12 +6113,12 @@ function su(e) {
           newName: t
         })
       });
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `invalid_name` ? new J(g.invalid_name(), K.BAD_REQUEST) : new J(typeof t == `string` && t ? t : g.unexpected_server_error(), K.BAD_REQUEST)
+        throw t === `invalid_name` ? new Y(g.invalid_name(), q.BAD_REQUEST) : new Y(typeof t == `string` && t ? t : g.unexpected_server_error(), q.BAD_REQUEST)
       }
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async postAdminChangeUserEmail(e, t) {
       let n = await this.request(`/staff/dashboard/users/email`, {
@@ -6116,29 +6129,29 @@ function su(e) {
           email: t
         })
       });
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `email_required` || t === `invalid_email` ? new J(g.enter_valid_email_address(), K.BAD_REQUEST) : new J(typeof t == `string` && t ? t : g.unexpected_server_error(), K.BAD_REQUEST)
+        throw t === `email_required` || t === `invalid_email` ? new Y(g.enter_valid_email_address(), q.BAD_REQUEST) : new Y(typeof t == `string` && t ? t : g.unexpected_server_error(), q.BAD_REQUEST)
       }
-      if (n.status === K.CONFLICT) {
+      if (n.status === q.CONFLICT) {
         let e = await n.json();
         if (((e == null ? void 0 : e.error) ?? ``) === `email_already_in_use`) {
-          let t = new J(typeof(e == null ? void 0 : e.userId) == `number` ? g.email_already_in_use_by_user({
+          let t = new Y(typeof(e == null ? void 0 : e.userId) == `number` ? g.email_already_in_use_by_user({
             userId: e.userId
-          }) : g.email_already_in_use(), K.CONFLICT);
+          }) : g.email_already_in_use(), q.CONFLICT);
           throw typeof(e == null ? void 0 : e.userId) == `number` && (t.userId = e.userId), t
         }
-        throw new J(g.unexpected_server_error(), K.CONFLICT)
+        throw new Y(g.unexpected_server_error(), q.CONFLICT)
       }
-      if (n.status === K.NOT_FOUND) throw new J(`User not found.`, K.NOT_FOUND);
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status === q.NOT_FOUND) throw new Y(`User not found.`, q.NOT_FOUND);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async getAdminUserProfilePictures(e) {
       let t = await this.request(`/staff/dashboard/users/profile-pictures?userId=${e}`, {
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async postAdminRemoveUserPicture(e) {
@@ -6149,7 +6162,7 @@ function su(e) {
           pictureId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async postAdminRerollUserAvatar(e) {
       let t = await this.request(`/staff/dashboard/users/reroll-avatar`, {
@@ -6159,7 +6172,7 @@ function su(e) {
           userId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async banUsers(e, t, n) {
@@ -6172,7 +6185,7 @@ function su(e) {
           notes: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async timeoutUsers(e, t, n) {
       let r = await this.request(`/staff/dashboard/summary/users/timeout`, {
@@ -6184,7 +6197,7 @@ function su(e) {
           notes: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async incrementUsersDroplets(e, t, n) {
       let r = await this.request(`/staff/dashboard/summary/users/increment-droplet`, {
@@ -6196,15 +6209,15 @@ function su(e) {
           notes: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async reloadPunishmentCache() {
       let e = await this.request(`/staff/dashboard/summary/reload-punishment-cache`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status === K.CONFLICT) throw new J(g.punishment_cache_reload_already_running(), e.status);
-      if (e.status !== K.OK && e.status !== K.ACCEPTED) throw new J(g.unexpected_server_error(), e.status)
+      if (e.status === q.CONFLICT) throw new Y(g.punishment_cache_reload_already_running(), e.status);
+      if (e.status !== q.OK && e.status !== q.ACCEPTED) throw new Y(g.unexpected_server_error(), e.status)
     }
     async postUnbanUsers(e, t) {
       let n = await this.request(`/staff/dashboard/summary/users/unban`, {
@@ -6215,7 +6228,7 @@ function su(e) {
           notes: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async postAnticheatUnbanUsers(e, t) {
       let n = await this.request(`/staff/dashboard/anticheat/unban`, {
@@ -6226,7 +6239,7 @@ function su(e) {
           notes: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async postAnticheatBanUsers(e, t, n) {
       let r = await this.request(`/staff/dashboard/anticheat/ban`, {
@@ -6238,7 +6251,7 @@ function su(e) {
           reason: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async postBulkPhoneVerification(e, t) {
       let n = await this.request(`/staff/dashboard/summary/users/phone-verification`, {
@@ -6249,7 +6262,7 @@ function su(e) {
           notes: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return await n.json()
     }
     async getAuditLogs(e) {
@@ -6259,7 +6272,7 @@ function su(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json();
       return (Array.isArray(r) ? r : []).map(e => {
         let t = e && typeof e == `object` ? e : {};
@@ -6292,7 +6305,7 @@ function su(e) {
           method: `POST`,
           credentials: `include`,
           body: JSON.stringify(e)
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async postSelectAreaPhoneVerification(e, t = ``) {
       let n = await this.request(`/staff/tools/select-area/phone-verification`, {
@@ -6303,7 +6316,7 @@ function su(e) {
           notes: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return await n.json()
     }
     async postDashboardUserPhoneVerification(e, t = ``) {
@@ -6315,7 +6328,7 @@ function su(e) {
           notes: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return await n.json()
     }
     async postReportUserName(e) {
@@ -6326,7 +6339,7 @@ function su(e) {
           userId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.report_failed(), t.status);
+      if (t.status !== q.OK) throw new Y(g.report_failed(), t.status);
       let n = await t.json();
       if (n.reason === `target_cooldown`) throw Error(g.profile_report_cooldown());
       if (n.success !== !0 || n.reason) throw Error(g.report_failed())
@@ -6337,8 +6350,8 @@ function su(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === 409) throw new J(g.profile_report_content_changed(), t.status);
-      if (t.status !== K.OK) throw new J(g.report_failed(), t.status);
+      if (t.status === 409) throw new Y(g.profile_report_content_changed(), t.status);
+      if (t.status !== q.OK) throw new Y(g.report_failed(), t.status);
       let n = await t.json();
       switch (n.reason) {
         case `target_cooldown`:
@@ -6361,8 +6374,8 @@ function su(e) {
           reportId: t
         })
       });
-      if (n.status === 409) throw new J(g.profile_report_content_changed(), n.status);
-      if (n.status !== K.OK) throw new J(g.failed_to_remove_profile_picture(), n.status);
+      if (n.status === 409) throw new Y(g.profile_report_content_changed(), n.status);
+      if (n.status !== q.OK) throw new Y(g.failed_to_remove_profile_picture(), n.status);
       return n.json()
     }
     async resetReportedUserName(e, t) {
@@ -6374,8 +6387,8 @@ function su(e) {
           reportId: t
         })
       });
-      if (n.status === 409) throw new J(g.profile_report_content_changed(), n.status);
-      if (n.status !== K.OK) throw new J(g.failed_to_change_username(), n.status);
+      if (n.status === 409) throw new Y(g.profile_report_content_changed(), n.status);
+      if (n.status !== q.OK) throw new Y(g.failed_to_change_username(), n.status);
       return n.json()
     }
     async postReportAllianceName(e) {
@@ -6386,12 +6399,12 @@ function su(e) {
           allianceId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
   }
 }
-var Y = {
+var X = {
     seasons: [{
       tileSize: 1e3,
       zoom: 11
@@ -8061,7 +8074,7 @@ var Y = {
       code: `IC`,
       flag: `🇮🇨`
     }],
-    permissions: JSON.parse(`{"support":{"view":{"feedback":{"interface":"staff.support.view.feedback.interface","painting":"staff.support.view.feedback.painting","overlays":"staff.support.view.feedback.overlays","alliances":"staff.support.view.feedback.alliances","profile":"staff.support.view.feedback.profile","store":"staff.support.view.feedback.store","notifications":"staff.support.view.feedback.notifications","rules":"staff.support.view.feedback.rules","events":"staff.support.view.feedback.events","other":"staff.support.view.feedback.other","unsure":"staff.support.view.feedback.unsure"},"bug":{"interface":"staff.support.view.bug.interface","painting":"staff.support.view.bug.painting","overlays":"staff.support.view.bug.overlays","alliances":"staff.support.view.bug.alliances","profile":"staff.support.view.bug.profile","store":"staff.support.view.bug.store","notifications":"staff.support.view.bug.notifications","rules":"staff.support.view.bug.rules","events":"staff.support.view.bug.events","other":"staff.support.view.bug.other","unsure":"staff.support.view.bug.unsure"},"staff":{"game":"staff.support.view.staff.game","discord":"staff.support.view.staff.discord","reddit":"staff.support.view.staff.reddit","email":"staff.support.view.staff.email","support":"staff.support.view.staff.support","social":"staff.support.view.staff.social","other":"staff.support.view.staff.other","unsure":"staff.support.view.staff.unsure"},"general":{"account":"staff.support.view.general.account","purchases":"staff.support.view.general.purchases","rules":"staff.support.view.general.rules","doxxing":"staff.support.view.general.doxxing","harassment":"staff.support.view.general.harassment","privacy":"staff.support.view.general.privacy","legal":"staff.support.view.general.legal","copyright":"staff.support.view.general.copyright","security":"staff.support.view.general.security","general":"staff.support.view.general.general","other":"staff.support.view.general.other","appeal":"staff.support.view.general.appeal","dismissed_report":"staff.support.view.general.dismissed_report"}},"act":{"feedback":{"interface":"staff.support.act.feedback.interface","painting":"staff.support.act.feedback.painting","overlays":"staff.support.act.feedback.overlays","alliances":"staff.support.act.feedback.alliances","profile":"staff.support.act.feedback.profile","store":"staff.support.act.feedback.store","notifications":"staff.support.act.feedback.notifications","rules":"staff.support.act.feedback.rules","events":"staff.support.act.feedback.events","other":"staff.support.act.feedback.other","unsure":"staff.support.act.feedback.unsure"},"bug":{"interface":"staff.support.act.bug.interface","painting":"staff.support.act.bug.painting","overlays":"staff.support.act.bug.overlays","alliances":"staff.support.act.bug.alliances","profile":"staff.support.act.bug.profile","store":"staff.support.act.bug.store","notifications":"staff.support.act.bug.notifications","rules":"staff.support.act.bug.rules","events":"staff.support.act.bug.events","other":"staff.support.act.bug.other","unsure":"staff.support.act.bug.unsure"},"staff":{"game":"staff.support.act.staff.game","discord":"staff.support.act.staff.discord","reddit":"staff.support.act.staff.reddit","email":"staff.support.act.staff.email","support":"staff.support.act.staff.support","social":"staff.support.act.staff.social","other":"staff.support.act.staff.other","unsure":"staff.support.act.staff.unsure"},"general":{"account":"staff.support.act.general.account","purchases":"staff.support.act.general.purchases","rules":"staff.support.act.general.rules","doxxing":"staff.support.act.general.doxxing","harassment":"staff.support.act.general.harassment","privacy":"staff.support.act.general.privacy","legal":"staff.support.act.general.legal","copyright":"staff.support.act.general.copyright","security":"staff.support.act.general.security","general":"staff.support.act.general.general","other":"staff.support.act.general.other","appeal":"staff.support.act.general.appeal","dismissed_report":"staff.support.act.general.dismissed_report"}},"audit":"staff.support.audit","reward":"staff.support.reward","compensation":"staff.support.compensation","escalate":"staff.support.escalate","deescalate":"staff.support.deescalate","reopen":"staff.support.reopen","config":"staff.support.config","recover":"staff.support.recover","manage_levels":"staff.support.manage_levels","review_staff_reports":"staff.support.review_staff_reports","escalation":"staff.support.escalation"},"dashboard":{"summary":{"counters":{"tickets":"staff.dashboard.summary.counters.tickets","reports":"staff.dashboard.summary.counters.reports"},"events":{"status":"staff.dashboard.summary.events.status","start":"staff.dashboard.summary.events.start","stop":"staff.dashboard.summary.events.stop","anchors":"staff.dashboard.summary.events.anchors"},"users":{"ban":"staff.dashboard.summary.users.ban","timeout":"staff.dashboard.summary.users.timeout","unban":"staff.dashboard.summary.users.unban","incrementDroplets":"staff.dashboard.summary.users.increment_droplets","phoneVerification":"staff.dashboard.summary.users.phone_verification"},"reloadPunishmentCache":"staff.dashboard.summary.reload_punishment_cache"},"team":{"tickets":"staff.dashboard.team.tickets","reports":"staff.dashboard.team.reports"},"users":{"info":"staff.dashboard.users.info","rename":"staff.dashboard.users.rename","notesGet":"staff.dashboard.users.notes_get","notesSet":"staff.dashboard.users.notes_set","purchases":"staff.dashboard.users.purchases","ticketsHistory":"staff.dashboard.users.tickets_history","ticketsStats":"staff.dashboard.users.tickets_stats","appealsHistory":"staff.dashboard.users.appeals_history","timeout":"staff.dashboard.users.timeout","removeTimeout":"staff.dashboard.users.remove_timeout","ban":"staff.dashboard.users.ban","removeBan":"staff.dashboard.users.remove_ban","autoReviewBan":"staff.dashboard.users.auto_review_ban","personalInformation":"staff.dashboard.users.personal_information","editEmail":"staff.dashboard.users.edit_email","disconnect":"staff.dashboard.users.disconnect","setDroplets":"staff.dashboard.users.set_droplets","setPrism":"staff.dashboard.users.set_prism","cosmeticsSee":"staff.dashboard.users.cosmetics_see","cosmeticsGrant":"staff.dashboard.users.cosmetics_grant","cosmeticsRemove":"staff.dashboard.users.cosmetics_remove","cosmeticsRefund":"staff.dashboard.users.cosmetics_refund","sendGift":"staff.dashboard.users.send_gift","phoneVerification":"staff.dashboard.users.phone_verification","removePicture":"staff.dashboard.users.remove_picture"},"businesses":{"see":"staff.dashboard.businesses.see","manage":"staff.dashboard.businesses.manage"},"permissions":{"get":"staff.dashboard.permissions.get","set":"staff.dashboard.permissions.set"},"alliances":{"search":"staff.dashboard.alliances.search","details":"staff.dashboard.alliances.details","members":"staff.dashboard.alliances.members","rename":"staff.dashboard.alliances.rename","description":"staff.dashboard.alliances.description","leader":"staff.dashboard.alliances.leader","banAll":"staff.dashboard.alliances.ban_all","role":"staff.dashboard.alliances.role","removeMember":"staff.dashboard.alliances.remove_member","restore":"staff.dashboard.alliances.restore","moderate":"staff.dashboard.alliances.moderate","punish":"staff.dashboard.alliances.punish"},"protections":{"view":"staff.dashboard.protections.view","manage":"staff.dashboard.protections.manage"},"auditLogs":{"see":"staff.dashboard.audit_logs.see","events":{"timeout":"staff.dashboard.audit_logs.events.timeout","ban":"staff.dashboard.audit_logs.events.ban","changeDroplets":"staff.dashboard.audit_logs.events.change_droplets","changePrism":"staff.dashboard.audit_logs.events.change_prism","removeTimeout":"staff.dashboard.audit_logs.events.remove_timeout","removeBan":"staff.dashboard.audit_logs.events.remove_ban","manualTimeout":"staff.dashboard.audit_logs.events.manual_timeout","manualBan":"staff.dashboard.audit_logs.events.manual_ban","manualChangeDroplets":"staff.dashboard.audit_logs.events.manual_change_droplets","manualRemoveBan":"staff.dashboard.audit_logs.events.manual_remove_ban","manualPhoneVerification":"staff.dashboard.audit_logs.events.manual_phone_verification","anticheatBan":"staff.dashboard.audit_logs.events.anticheat_ban","anticheatRemoveBan":"staff.dashboard.audit_logs.events.anticheat_remove_ban","deleteAllSessions":"staff.dashboard.audit_logs.events.delete_all_sessions","permissionsUpdate":"staff.dashboard.audit_logs.events.permissions_update","changeUsername":"staff.dashboard.audit_logs.events.change_username","banWave":"staff.dashboard.audit_logs.events.ban_wave","changeEmail":"staff.dashboard.audit_logs.events.change_email","acceptAppeal":"staff.dashboard.audit_logs.events.accept_appeal","denyAppeal":"staff.dashboard.audit_logs.events.deny_appeal","revertTicketRequest":"staff.dashboard.audit_logs.events.revert_ticket_request","revertTicketApprove":"staff.dashboard.audit_logs.events.revert_ticket_approve","revertTicketDeny":"staff.dashboard.audit_logs.events.revert_ticket_deny","removePicture":"staff.dashboard.audit_logs.events.remove_picture","rerollAvatar":"staff.dashboard.audit_logs.events.reroll_avatar","resolveTicket":"staff.dashboard.audit_logs.events.re_solve_ticket","reviewTicket":"staff.dashboard.audit_logs.events.review_ticket","autoReviewBanRemoveBan":"staff.dashboard.audit_logs.events.auto_review_ban_remove_ban","resolveAccountConflict":"staff.dashboard.audit_logs.events.resolve_account_conflict","allianceModeration":"staff.dashboard.audit_logs.events.alliance_moderation","userNoteCreated":"staff.dashboard.audit_logs.events.user_note_created","ticketAssigned":"staff.dashboard.audit_logs.events.ticket_assigned","ticketResolved":"staff.dashboard.audit_logs.events.ticket_resolved","appealAssigned":"staff.dashboard.audit_logs.events.appeal_assigned","playerDashboardShared":"staff.dashboard.audit_logs.events.player_dashboard_shared","playerDashboardUnshared":"staff.dashboard.audit_logs.events.player_dashboard_unshared","playerDashboardUpdated":"staff.dashboard.audit_logs.events.player_dashboard_updated","playerDashboardDeleted":"staff.dashboard.audit_logs.events.player_dashboard_deleted","punishmentAnalysisRun":"staff.dashboard.audit_logs.events.punishment_analysis_run","punishmentCacheReloadRequested":"staff.dashboard.audit_logs.events.punishment_cache_reload_requested","canvasPixelBatchQueued":"staff.dashboard.audit_logs.events.canvas_pixel_batch_queued","canvasAreaReversed":"staff.dashboard.audit_logs.events.canvas_area_reversed","pixelProtectionChanged":"staff.dashboard.audit_logs.events.pixel_protection_changed","canvasAutoPaintQueued":"staff.dashboard.audit_logs.events.canvas_auto_paint_queued","cosmeticCreated":"staff.dashboard.audit_logs.events.cosmetic_created","cosmeticUpdated":"staff.dashboard.audit_logs.events.cosmetic_updated","cosmeticDeleted":"staff.dashboard.audit_logs.events.cosmetic_deleted","badgeCreated":"staff.dashboard.audit_logs.events.badge_created","badgeUpdated":"staff.dashboard.audit_logs.events.badge_updated","badgeDeleted":"staff.dashboard.audit_logs.events.badge_deleted","storeImageUploaded":"staff.dashboard.audit_logs.events.store_image_uploaded","storeImageDeleted":"staff.dashboard.audit_logs.events.store_image_deleted","businessInfiniteChargesUpdated":"staff.dashboard.audit_logs.events.business_infinite_charges_updated","businessMembershipUpdated":"staff.dashboard.audit_logs.events.business_membership_updated","businessPaintRestrictionsUpdated":"staff.dashboard.audit_logs.events.business_paint_restrictions_updated","userCosmeticGranted":"staff.dashboard.audit_logs.events.user_cosmetic_granted","userCosmeticRemoved":"staff.dashboard.audit_logs.events.user_cosmetic_removed","userCosmeticRefunded":"staff.dashboard.audit_logs.events.user_cosmetic_refunded","userBadgeGranted":"staff.dashboard.audit_logs.events.user_badge_granted","userBadgeRemoved":"staff.dashboard.audit_logs.events.user_badge_removed","userGiftSent":"staff.dashboard.audit_logs.events.user_gift_sent","commerceSettingsUpdated":"staff.dashboard.audit_logs.events.commerce_settings_updated","commerceProductUpdated":"staff.dashboard.audit_logs.events.commerce_product_updated","commerceChangeCreated":"staff.dashboard.audit_logs.events.commerce_change_created","commerceChangeUpdated":"staff.dashboard.audit_logs.events.commerce_change_updated","commerceChangeSubmitted":"staff.dashboard.audit_logs.events.commerce_change_submitted","commerceChangeWithdrawn":"staff.dashboard.audit_logs.events.commerce_change_withdrawn","commerceChangeApproved":"staff.dashboard.audit_logs.events.commerce_change_approved","commerceChangeRejected":"staff.dashboard.audit_logs.events.commerce_change_rejected","commerceChangePublished":"staff.dashboard.audit_logs.events.commerce_change_published","commerceChangeCancelled":"staff.dashboard.audit_logs.events.commerce_change_cancelled","commerceOperationRetried":"staff.dashboard.audit_logs.events.commerce_operation_retried","commerceOperationResolved":"staff.dashboard.audit_logs.events.commerce_operation_resolved","commerceOperationCancelled":"staff.dashboard.audit_logs.events.commerce_operation_cancelled","commerceReconcileRequested":"staff.dashboard.audit_logs.events.commerce_reconcile_requested","commercePromotionCreated":"staff.dashboard.audit_logs.events.commerce_promotion_created","commercePromotionUpdated":"staff.dashboard.audit_logs.events.commerce_promotion_updated","commercePromotionCancelled":"staff.dashboard.audit_logs.events.commerce_promotion_cancelled","commerceCouponCodesCreated":"staff.dashboard.audit_logs.events.commerce_coupon_codes_created","commerceCouponCodeUpdated":"staff.dashboard.audit_logs.events.commerce_coupon_code_updated","commerceCouponCodesMoved":"staff.dashboard.audit_logs.events.commerce_coupon_codes_moved","commerceExportCreated":"staff.dashboard.audit_logs.events.commerce_export_created","commerceCustomerPiiViewed":"staff.dashboard.audit_logs.events.commerce_customer_pii_viewed","commerceRevenueExportCreated":"staff.dashboard.audit_logs.events.commerce_revenue_export_created","commerceRevenueTopSpendersViewed":"staff.dashboard.audit_logs.events.commerce_revenue_top_spenders_viewed","commerceRevenueTargetUpdated":"staff.dashboard.audit_logs.events.commerce_revenue_target_updated","commerceRevenueTargetDeleted":"staff.dashboard.audit_logs.events.commerce_revenue_target_deleted","commerceProductDraftCreated":"staff.dashboard.audit_logs.events.commerce_product_draft_created","commerceProductDraftUpdated":"staff.dashboard.audit_logs.events.commerce_product_draft_updated","commerceProductAppReviewMarked":"staff.dashboard.audit_logs.events.commerce_product_app_review_marked"}},"banAppeals":{"see":"staff.dashboard.ban_appeals.see"},"metrics":{"tickets":"staff.dashboard.metrics.tickets","onboarding":"staff.dashboard.metrics.onboarding","notices":"staff.dashboard.metrics.notices","players":"staff.dashboard.metrics.players","playersList":"staff.dashboard.metrics.players_list","playersDashboardsShare":"staff.dashboard.metrics.players_dashboards_share","revenue":"staff.dashboard.metrics.revenue"},"allTickets":{"see":"staff.dashboard.all_tickets.see","review":"staff.dashboard.all_tickets.review"},"storeManager":{"frames":"staff.dashboard.store_manager.frames","fonts":"staff.dashboard.store_manager.fonts","styles":"staff.dashboard.store_manager.styles","badges":"staff.dashboard.store_manager.badges"},"punishmentAnalysis":{"see":"staff.dashboard.punishment_analysis.see"},"anticheat":{"see":"staff.dashboard.anticheat.see","unban":"staff.dashboard.anticheat.unban","ban":"staff.dashboard.anticheat.ban"}},"tickets":{"assign":"staff.tickets.assign","closedToday":"staff.tickets.closed_today","openCount":"staff.tickets.open_count","translate":"staff.tickets.translate","setStatus":"staff.tickets.set_status","revert":"staff.tickets.revert","revertReview":"staff.tickets.revert_review","reSolve":"staff.tickets.re_solve"},"appeals":{"assign":"staff.appeals.assign","openCount":"staff.appeals.open_count","ticketsHistory":"staff.appeals.tickets_history","notes_get":"staff.appeals.notes_get","notes_set":"staff.appeals.notes_set","translate":"staff.appeals.translate","solve":"staff.appeals.solve"},"tools":{"selectArea":{"timeout":"staff.tools.select_area.timeout","ban":"staff.tools.select_area.ban","clear":"staff.tools.select_area.clear","info":"staff.tools.select_area.info","phoneVerification":"staff.tools.select_area.phone_verification","reverse":"staff.tools.select_area.reverse","timelapse":"staff.tools.select_area.timelapse"},"selectPixel":{"timeout":"staff.tools.select_pixel.timeout","ban":"staff.tools.select_pixel.ban","seeRole":"staff.tools.select_pixel.see_role","seePunishment":"staff.tools.select_pixel.see_punishment"},"autoPainter":{"paint":"staff.tools.auto_painter.paint","missing":"staff.tools.auto_painter.missing","incorrect":"staff.tools.auto_painter.incorrect","showOnLeaderboard":"staff.tools.auto_painter.show_on_leaderboard","transparent":"staff.tools.auto_painter.transparent","noCharges":"staff.tools.auto_painter.no_charges","asUser":"staff.tools.auto_painter.as_user","noSizeLimit":"staff.tools.auto_painter.no_size_limit"},"wayback":"staff.tools.wayback"},"ui":{"themeDarkMode":"staff.ui.theme.dark_mode","tooglePixelArt":"staff.ui.toggle_pixel_art"},"cosmetics":{"viewCosmetics":"staff.cosmetics.view_cosmetics","manageCosmetics":"staff.cosmetics.manage_cosmetics","assignCosmetics":"staff.cosmetics.assign_cosmetics"},"commerce":{"viewCatalog":"staff.commerce.view_catalog","viewFinancials":"staff.commerce.view_financials","viewPurchases":"staff.commerce.view_purchases","viewCustomerPii":"staff.commerce.view_customer_pii","viewSync":"staff.commerce.view_sync","viewAudit":"staff.commerce.view_audit","draftChanges":"staff.commerce.draft_changes","approveChanges":"staff.commerce.approve_changes","publishChanges":"staff.commerce.publish_changes","managePromotions":"staff.commerce.manage_promotions","manageCoupons":"staff.commerce.manage_coupons","retrySync":"staff.commerce.retry_sync","reconcile":"staff.commerce.reconcile","emergency":"staff.commerce.emergency","manageSettings":"staff.commerce.manage_settings","export":"staff.commerce.export","manageProducts":"staff.commerce.manage_products"}}`),
+    permissions: JSON.parse(`{"support":{"view":{"feedback":{"interface":"staff.support.view.feedback.interface","painting":"staff.support.view.feedback.painting","overlays":"staff.support.view.feedback.overlays","alliances":"staff.support.view.feedback.alliances","profile":"staff.support.view.feedback.profile","store":"staff.support.view.feedback.store","notifications":"staff.support.view.feedback.notifications","rules":"staff.support.view.feedback.rules","events":"staff.support.view.feedback.events","other":"staff.support.view.feedback.other","unsure":"staff.support.view.feedback.unsure"},"bug":{"interface":"staff.support.view.bug.interface","painting":"staff.support.view.bug.painting","overlays":"staff.support.view.bug.overlays","alliances":"staff.support.view.bug.alliances","profile":"staff.support.view.bug.profile","store":"staff.support.view.bug.store","notifications":"staff.support.view.bug.notifications","rules":"staff.support.view.bug.rules","events":"staff.support.view.bug.events","other":"staff.support.view.bug.other","unsure":"staff.support.view.bug.unsure"},"staff":{"game":"staff.support.view.staff.game","discord":"staff.support.view.staff.discord","reddit":"staff.support.view.staff.reddit","email":"staff.support.view.staff.email","support":"staff.support.view.staff.support","social":"staff.support.view.staff.social","other":"staff.support.view.staff.other","unsure":"staff.support.view.staff.unsure"},"general":{"account":"staff.support.view.general.account","purchases":"staff.support.view.general.purchases","rules":"staff.support.view.general.rules","doxxing":"staff.support.view.general.doxxing","harassment":"staff.support.view.general.harassment","privacy":"staff.support.view.general.privacy","legal":"staff.support.view.general.legal","copyright":"staff.support.view.general.copyright","security":"staff.support.view.general.security","general":"staff.support.view.general.general","other":"staff.support.view.general.other","appeal":"staff.support.view.general.appeal","dismissed_report":"staff.support.view.general.dismissed_report"}},"act":{"feedback":{"interface":"staff.support.act.feedback.interface","painting":"staff.support.act.feedback.painting","overlays":"staff.support.act.feedback.overlays","alliances":"staff.support.act.feedback.alliances","profile":"staff.support.act.feedback.profile","store":"staff.support.act.feedback.store","notifications":"staff.support.act.feedback.notifications","rules":"staff.support.act.feedback.rules","events":"staff.support.act.feedback.events","other":"staff.support.act.feedback.other","unsure":"staff.support.act.feedback.unsure"},"bug":{"interface":"staff.support.act.bug.interface","painting":"staff.support.act.bug.painting","overlays":"staff.support.act.bug.overlays","alliances":"staff.support.act.bug.alliances","profile":"staff.support.act.bug.profile","store":"staff.support.act.bug.store","notifications":"staff.support.act.bug.notifications","rules":"staff.support.act.bug.rules","events":"staff.support.act.bug.events","other":"staff.support.act.bug.other","unsure":"staff.support.act.bug.unsure"},"staff":{"game":"staff.support.act.staff.game","discord":"staff.support.act.staff.discord","reddit":"staff.support.act.staff.reddit","email":"staff.support.act.staff.email","support":"staff.support.act.staff.support","social":"staff.support.act.staff.social","other":"staff.support.act.staff.other","unsure":"staff.support.act.staff.unsure"},"general":{"account":"staff.support.act.general.account","purchases":"staff.support.act.general.purchases","rules":"staff.support.act.general.rules","doxxing":"staff.support.act.general.doxxing","harassment":"staff.support.act.general.harassment","privacy":"staff.support.act.general.privacy","legal":"staff.support.act.general.legal","copyright":"staff.support.act.general.copyright","security":"staff.support.act.general.security","general":"staff.support.act.general.general","other":"staff.support.act.general.other","appeal":"staff.support.act.general.appeal","dismissed_report":"staff.support.act.general.dismissed_report"}},"audit":"staff.support.audit","reward":"staff.support.reward","compensation":"staff.support.compensation","escalate":"staff.support.escalate","deescalate":"staff.support.deescalate","reopen":"staff.support.reopen","config":"staff.support.config","recover":"staff.support.recover","manage_levels":"staff.support.manage_levels","review_staff_reports":"staff.support.review_staff_reports","escalation":"staff.support.escalation"},"dashboard":{"summary":{"counters":{"tickets":"staff.dashboard.summary.counters.tickets","reports":"staff.dashboard.summary.counters.reports"},"events":{"status":"staff.dashboard.summary.events.status","start":"staff.dashboard.summary.events.start","stop":"staff.dashboard.summary.events.stop","anchors":"staff.dashboard.summary.events.anchors"},"users":{"ban":"staff.dashboard.summary.users.ban","timeout":"staff.dashboard.summary.users.timeout","unban":"staff.dashboard.summary.users.unban","incrementDroplets":"staff.dashboard.summary.users.increment_droplets","phoneVerification":"staff.dashboard.summary.users.phone_verification"},"reloadPunishmentCache":"staff.dashboard.summary.reload_punishment_cache"},"team":{"tickets":"staff.dashboard.team.tickets","reports":"staff.dashboard.team.reports"},"users":{"info":"staff.dashboard.users.info","rename":"staff.dashboard.users.rename","notesGet":"staff.dashboard.users.notes_get","notesSet":"staff.dashboard.users.notes_set","purchases":"staff.dashboard.users.purchases","ticketsHistory":"staff.dashboard.users.tickets_history","ticketsStats":"staff.dashboard.users.tickets_stats","appealsHistory":"staff.dashboard.users.appeals_history","timeout":"staff.dashboard.users.timeout","removeTimeout":"staff.dashboard.users.remove_timeout","ban":"staff.dashboard.users.ban","removeBan":"staff.dashboard.users.remove_ban","autoReviewBan":"staff.dashboard.users.auto_review_ban","personalInformation":"staff.dashboard.users.personal_information","editEmail":"staff.dashboard.users.edit_email","disconnect":"staff.dashboard.users.disconnect","setDroplets":"staff.dashboard.users.set_droplets","setPrism":"staff.dashboard.users.set_prism","cosmeticsSee":"staff.dashboard.users.cosmetics_see","cosmeticsGrant":"staff.dashboard.users.cosmetics_grant","cosmeticsRemove":"staff.dashboard.users.cosmetics_remove","cosmeticsRefund":"staff.dashboard.users.cosmetics_refund","sendGift":"staff.dashboard.users.send_gift","phoneVerification":"staff.dashboard.users.phone_verification","removePicture":"staff.dashboard.users.remove_picture"},"businesses":{"see":"staff.dashboard.businesses.see","manage":"staff.dashboard.businesses.manage"},"permissions":{"get":"staff.dashboard.permissions.get","set":"staff.dashboard.permissions.set"},"alliances":{"search":"staff.dashboard.alliances.search","details":"staff.dashboard.alliances.details","members":"staff.dashboard.alliances.members","rename":"staff.dashboard.alliances.rename","description":"staff.dashboard.alliances.description","leader":"staff.dashboard.alliances.leader","banAll":"staff.dashboard.alliances.ban_all","role":"staff.dashboard.alliances.role","removeMember":"staff.dashboard.alliances.remove_member","restore":"staff.dashboard.alliances.restore","moderate":"staff.dashboard.alliances.moderate","punish":"staff.dashboard.alliances.punish"},"protections":{"view":"staff.dashboard.protections.view","manage":"staff.dashboard.protections.manage"},"auditLogs":{"see":"staff.dashboard.audit_logs.see","events":{"timeout":"staff.dashboard.audit_logs.events.timeout","ban":"staff.dashboard.audit_logs.events.ban","changeDroplets":"staff.dashboard.audit_logs.events.change_droplets","changePrism":"staff.dashboard.audit_logs.events.change_prism","removeTimeout":"staff.dashboard.audit_logs.events.remove_timeout","removeBan":"staff.dashboard.audit_logs.events.remove_ban","manualTimeout":"staff.dashboard.audit_logs.events.manual_timeout","manualBan":"staff.dashboard.audit_logs.events.manual_ban","manualChangeDroplets":"staff.dashboard.audit_logs.events.manual_change_droplets","manualRemoveBan":"staff.dashboard.audit_logs.events.manual_remove_ban","manualPhoneVerification":"staff.dashboard.audit_logs.events.manual_phone_verification","anticheatBan":"staff.dashboard.audit_logs.events.anticheat_ban","anticheatRemoveBan":"staff.dashboard.audit_logs.events.anticheat_remove_ban","deleteAllSessions":"staff.dashboard.audit_logs.events.delete_all_sessions","permissionsUpdate":"staff.dashboard.audit_logs.events.permissions_update","changeUsername":"staff.dashboard.audit_logs.events.change_username","banWave":"staff.dashboard.audit_logs.events.ban_wave","changeEmail":"staff.dashboard.audit_logs.events.change_email","acceptAppeal":"staff.dashboard.audit_logs.events.accept_appeal","denyAppeal":"staff.dashboard.audit_logs.events.deny_appeal","revertTicketRequest":"staff.dashboard.audit_logs.events.revert_ticket_request","revertTicketApprove":"staff.dashboard.audit_logs.events.revert_ticket_approve","revertTicketDeny":"staff.dashboard.audit_logs.events.revert_ticket_deny","removePicture":"staff.dashboard.audit_logs.events.remove_picture","rerollAvatar":"staff.dashboard.audit_logs.events.reroll_avatar","resolveTicket":"staff.dashboard.audit_logs.events.re_solve_ticket","reviewTicket":"staff.dashboard.audit_logs.events.review_ticket","autoReviewBanRemoveBan":"staff.dashboard.audit_logs.events.auto_review_ban_remove_ban","resolveAccountConflict":"staff.dashboard.audit_logs.events.resolve_account_conflict","allianceModeration":"staff.dashboard.audit_logs.events.alliance_moderation","userNoteCreated":"staff.dashboard.audit_logs.events.user_note_created","ticketAssigned":"staff.dashboard.audit_logs.events.ticket_assigned","ticketResolved":"staff.dashboard.audit_logs.events.ticket_resolved","appealAssigned":"staff.dashboard.audit_logs.events.appeal_assigned","playerDashboardShared":"staff.dashboard.audit_logs.events.player_dashboard_shared","playerDashboardUnshared":"staff.dashboard.audit_logs.events.player_dashboard_unshared","playerDashboardUpdated":"staff.dashboard.audit_logs.events.player_dashboard_updated","playerDashboardDeleted":"staff.dashboard.audit_logs.events.player_dashboard_deleted","punishmentAnalysisRun":"staff.dashboard.audit_logs.events.punishment_analysis_run","viewLogTraceRun":"staff.dashboard.audit_logs.events.view_log_trace_run","securityLockout":"staff.dashboard.audit_logs.events.security_lockout","punishmentCacheReloadRequested":"staff.dashboard.audit_logs.events.punishment_cache_reload_requested","canvasPixelBatchQueued":"staff.dashboard.audit_logs.events.canvas_pixel_batch_queued","canvasAreaReversed":"staff.dashboard.audit_logs.events.canvas_area_reversed","pixelProtectionChanged":"staff.dashboard.audit_logs.events.pixel_protection_changed","canvasAutoPaintQueued":"staff.dashboard.audit_logs.events.canvas_auto_paint_queued","cosmeticCreated":"staff.dashboard.audit_logs.events.cosmetic_created","cosmeticUpdated":"staff.dashboard.audit_logs.events.cosmetic_updated","cosmeticDeleted":"staff.dashboard.audit_logs.events.cosmetic_deleted","badgeCreated":"staff.dashboard.audit_logs.events.badge_created","badgeUpdated":"staff.dashboard.audit_logs.events.badge_updated","badgeDeleted":"staff.dashboard.audit_logs.events.badge_deleted","storeImageUploaded":"staff.dashboard.audit_logs.events.store_image_uploaded","storeImageDeleted":"staff.dashboard.audit_logs.events.store_image_deleted","businessInfiniteChargesUpdated":"staff.dashboard.audit_logs.events.business_infinite_charges_updated","businessMembershipUpdated":"staff.dashboard.audit_logs.events.business_membership_updated","businessPaintRestrictionsUpdated":"staff.dashboard.audit_logs.events.business_paint_restrictions_updated","userCosmeticGranted":"staff.dashboard.audit_logs.events.user_cosmetic_granted","userCosmeticRemoved":"staff.dashboard.audit_logs.events.user_cosmetic_removed","userCosmeticRefunded":"staff.dashboard.audit_logs.events.user_cosmetic_refunded","userBadgeGranted":"staff.dashboard.audit_logs.events.user_badge_granted","userBadgeRemoved":"staff.dashboard.audit_logs.events.user_badge_removed","userGiftSent":"staff.dashboard.audit_logs.events.user_gift_sent","commerceSettingsUpdated":"staff.dashboard.audit_logs.events.commerce_settings_updated","commerceProductUpdated":"staff.dashboard.audit_logs.events.commerce_product_updated","commerceChangeCreated":"staff.dashboard.audit_logs.events.commerce_change_created","commerceChangeUpdated":"staff.dashboard.audit_logs.events.commerce_change_updated","commerceChangeSubmitted":"staff.dashboard.audit_logs.events.commerce_change_submitted","commerceChangeWithdrawn":"staff.dashboard.audit_logs.events.commerce_change_withdrawn","commerceChangeApproved":"staff.dashboard.audit_logs.events.commerce_change_approved","commerceChangeRejected":"staff.dashboard.audit_logs.events.commerce_change_rejected","commerceChangePublished":"staff.dashboard.audit_logs.events.commerce_change_published","commerceChangeCancelled":"staff.dashboard.audit_logs.events.commerce_change_cancelled","commerceOperationRetried":"staff.dashboard.audit_logs.events.commerce_operation_retried","commerceOperationResolved":"staff.dashboard.audit_logs.events.commerce_operation_resolved","commerceOperationCancelled":"staff.dashboard.audit_logs.events.commerce_operation_cancelled","commerceReconcileRequested":"staff.dashboard.audit_logs.events.commerce_reconcile_requested","commercePromotionCreated":"staff.dashboard.audit_logs.events.commerce_promotion_created","commercePromotionUpdated":"staff.dashboard.audit_logs.events.commerce_promotion_updated","commercePromotionCancelled":"staff.dashboard.audit_logs.events.commerce_promotion_cancelled","commerceCouponCodesCreated":"staff.dashboard.audit_logs.events.commerce_coupon_codes_created","commerceCouponCodeUpdated":"staff.dashboard.audit_logs.events.commerce_coupon_code_updated","commerceCouponCodesMoved":"staff.dashboard.audit_logs.events.commerce_coupon_codes_moved","commerceExportCreated":"staff.dashboard.audit_logs.events.commerce_export_created","commerceCustomerPiiViewed":"staff.dashboard.audit_logs.events.commerce_customer_pii_viewed","commerceRevenueExportCreated":"staff.dashboard.audit_logs.events.commerce_revenue_export_created","commerceRevenueTopSpendersViewed":"staff.dashboard.audit_logs.events.commerce_revenue_top_spenders_viewed","commerceRevenueTargetUpdated":"staff.dashboard.audit_logs.events.commerce_revenue_target_updated","commerceRevenueTargetDeleted":"staff.dashboard.audit_logs.events.commerce_revenue_target_deleted","commerceProductDraftCreated":"staff.dashboard.audit_logs.events.commerce_product_draft_created","commerceProductDraftUpdated":"staff.dashboard.audit_logs.events.commerce_product_draft_updated","commerceProductAppReviewMarked":"staff.dashboard.audit_logs.events.commerce_product_app_review_marked"}},"banAppeals":{"see":"staff.dashboard.ban_appeals.see"},"metrics":{"tickets":"staff.dashboard.metrics.tickets","onboarding":"staff.dashboard.metrics.onboarding","notices":"staff.dashboard.metrics.notices","players":"staff.dashboard.metrics.players","playersList":"staff.dashboard.metrics.players_list","playersDashboardsShare":"staff.dashboard.metrics.players_dashboards_share","revenue":"staff.dashboard.metrics.revenue"},"allTickets":{"see":"staff.dashboard.all_tickets.see","review":"staff.dashboard.all_tickets.review"},"storeManager":{"frames":"staff.dashboard.store_manager.frames","fonts":"staff.dashboard.store_manager.fonts","styles":"staff.dashboard.store_manager.styles","badges":"staff.dashboard.store_manager.badges"},"punishmentAnalysis":{"see":"staff.dashboard.punishment_analysis.see"},"viewLogs":{"see":"staff.dashboard.view_logs.see"},"anticheat":{"see":"staff.dashboard.anticheat.see","unban":"staff.dashboard.anticheat.unban","ban":"staff.dashboard.anticheat.ban"}},"tickets":{"assign":"staff.tickets.assign","closedToday":"staff.tickets.closed_today","openCount":"staff.tickets.open_count","translate":"staff.tickets.translate","setStatus":"staff.tickets.set_status","revert":"staff.tickets.revert","revertReview":"staff.tickets.revert_review","reSolve":"staff.tickets.re_solve"},"appeals":{"assign":"staff.appeals.assign","openCount":"staff.appeals.open_count","ticketsHistory":"staff.appeals.tickets_history","notes_get":"staff.appeals.notes_get","notes_set":"staff.appeals.notes_set","translate":"staff.appeals.translate","solve":"staff.appeals.solve"},"tools":{"selectArea":{"timeout":"staff.tools.select_area.timeout","ban":"staff.tools.select_area.ban","clear":"staff.tools.select_area.clear","info":"staff.tools.select_area.info","phoneVerification":"staff.tools.select_area.phone_verification","reverse":"staff.tools.select_area.reverse","timelapse":"staff.tools.select_area.timelapse"},"selectPixel":{"timeout":"staff.tools.select_pixel.timeout","ban":"staff.tools.select_pixel.ban","seeRole":"staff.tools.select_pixel.see_role","seePunishment":"staff.tools.select_pixel.see_punishment"},"autoPainter":{"paint":"staff.tools.auto_painter.paint","missing":"staff.tools.auto_painter.missing","incorrect":"staff.tools.auto_painter.incorrect","showOnLeaderboard":"staff.tools.auto_painter.show_on_leaderboard","transparent":"staff.tools.auto_painter.transparent","noCharges":"staff.tools.auto_painter.no_charges","asUser":"staff.tools.auto_painter.as_user","noSizeLimit":"staff.tools.auto_painter.no_size_limit"},"wayback":"staff.tools.wayback"},"ui":{"themeDarkMode":"staff.ui.theme.dark_mode","tooglePixelArt":"staff.ui.toggle_pixel_art"},"cosmetics":{"viewCosmetics":"staff.cosmetics.view_cosmetics","manageCosmetics":"staff.cosmetics.manage_cosmetics","assignCosmetics":"staff.cosmetics.assign_cosmetics"},"commerce":{"viewCatalog":"staff.commerce.view_catalog","viewFinancials":"staff.commerce.view_financials","viewPurchases":"staff.commerce.view_purchases","viewCustomerPii":"staff.commerce.view_customer_pii","viewSync":"staff.commerce.view_sync","viewAudit":"staff.commerce.view_audit","draftChanges":"staff.commerce.draft_changes","approveChanges":"staff.commerce.approve_changes","publishChanges":"staff.commerce.publish_changes","managePromotions":"staff.commerce.manage_promotions","manageCoupons":"staff.commerce.manage_coupons","retrySync":"staff.commerce.retry_sync","reconcile":"staff.commerce.reconcile","emergency":"staff.commerce.emergency","manageSettings":"staff.commerce.manage_settings","export":"staff.commerce.export","manageProducts":"staff.commerce.manage_products"}}`),
     settings: {
       tools: {
         wayback: {
@@ -8103,30 +8116,30 @@ var Y = {
       memberPageSize: 50
     }
   },
-  cu = Y,
-  lu = Y.seasons,
-  uu = Y.seasons.length - 1,
-  du = Y.seasons[uu].zoom,
-  fu = Y.seasons[uu].tileSize,
-  pu = Y.permissions,
-  mu = Y.settings,
-  hu = Y.platforms.android,
-  gu = hu.googlePlayBilling.price;
+  bu = X,
+  xu = X.seasons,
+  Su = X.seasons.length - 1,
+  Cu = X.seasons[Su].zoom,
+  wu = X.seasons[Su].tileSize,
+  Tu = X.permissions,
+  Eu = X.settings,
+  Du = X.platforms.android,
+  Ou = Du.googlePlayBilling.price;
 
-function _u(e) {
-  return cu.countries[e - 1]
+function ku(e) {
+  return bu.countries[e - 1]
 }
 
-function vu(e) {
-  return vu.map.get(e)
+function Au(e) {
+  return Au.map.get(e)
 }(function(e) {
-  e.map = yu(e.sharedProducts = Object.entries(cu.products).map(([e, t]) => ({
+  e.map = ju(e.sharedProducts = Object.entries(bu.products).map(([e, t]) => ({
     ...t,
     productId: e
   })).filter(e => `lookupKey` in e), e => e.lookupKey)
-})(vu || (vu = {}));
+})(Au || (Au = {}));
 
-function yu(e, t) {
+function ju(e, t) {
   let n = new Map;
   for (let r in e) {
     let i = Reflect.get(e, r),
@@ -8135,12 +8148,12 @@ function yu(e, t) {
   }
   return n
 }
-var bu = 5e3,
-  xu = 4,
-  X = 64,
-  Su = 8;
+var Mu = 5e3,
+  Nu = 4,
+  Pu = 64,
+  Fu = 8;
 
-function Cu(e) {
+function Iu(e) {
   let t = Array.isArray(e.locations) ? e.locations.map(t => ({
     ...t,
     opacity: t.opacity ?? e.opacity,
@@ -8160,12 +8173,12 @@ function Cu(e) {
   }
 }
 
-function wu(e) {
+function Lu(e) {
   let t = e.maxX - e.minX + 1,
     n = e.maxY - e.minY + 1;
   if (t <= 0 || n <= 0) return [];
-  let r = Math.min(t, bu),
-    i = Math.max(1, Math.floor(bu / r)),
+  let r = Math.min(t, Mu),
+    i = Math.max(1, Math.floor(Mu / r)),
     a = [];
   for (let t = e.minY; t <= e.maxY; t += i)
     for (let n = e.minX; n <= e.maxX; n += r) a.push({
@@ -8177,35 +8190,35 @@ function wu(e) {
   return a
 }
 
-function Tu(e) {
+function Ru(e) {
   let t = [],
-    n = Math.floor(e.minX / X),
-    r = Math.floor(e.maxX / X),
-    i = Math.floor(e.minY / X),
-    a = Math.floor(e.maxY / X);
+    n = Math.floor(e.minX / Pu),
+    r = Math.floor(e.maxX / Pu),
+    i = Math.floor(e.minY / Pu),
+    a = Math.floor(e.maxY / Pu);
   for (let o = i; o <= a; o += 1)
     for (let i = n; i <= r; i += 1) t.push({
-      minX: Math.max(e.minX, i * X),
-      minY: Math.max(e.minY, o * X),
-      maxX: Math.min(e.maxX, (i + 1) * X - 1),
-      maxY: Math.min(e.maxY, (o + 1) * X - 1)
+      minX: Math.max(e.minX, i * Pu),
+      minY: Math.max(e.minY, o * Pu),
+      maxX: Math.min(e.maxX, (i + 1) * Pu - 1),
+      maxY: Math.min(e.maxY, (o + 1) * Pu - 1)
     });
   return t
 }
 
-function Eu(e) {
+function zu(e) {
   let t = (e == null ? void 0 : e.role) ?? (e == null ? void 0 : e.alliance_role);
   return t === `mod` || t === `admin` || t === `leader` ? t : `member`
 }
 
-function Du(e) {
+function Bu(e) {
   return class extends e {
     async getAlliance() {
       let e = await this.request(`/alliance`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return e.json();
-      if (e.status !== K.NOT_FOUND) throw Error(g.unexpected_server_error())
+      if (e.status === q.OK) return e.json();
+      if (e.status !== q.NOT_FOUND) throw Error(g.unexpected_server_error())
     }
     async createAlliance(e) {
       let t = await this.request(`/alliance`, {
@@ -8215,18 +8228,18 @@ function Du(e) {
           name: e
         })
       });
-      if (t.status === K.OK) return t.json();
-      if (t.status === K.BAD_REQUEST) {
+      if (t.status === q.OK) return t.json();
+      if (t.status === q.BAD_REQUEST) {
         let e = await t.json();
-        throw e.error === `max_characters` ? new J(g.alliance_name_exceeded_the_maximum_number_of_characters(), t.status) : e.error === `invalid_name` ? new J(g.invalid_name(), t.status) : e.error === `name_taken` ? new J(g.alliance_name_already_taken(), t.status) : e.error == `empty_name` ? new J(g.alliance_with_empty_name(), t.status) : new J(g.unexpected_server_error(), t.status)
+        throw e.error === `max_characters` ? new Y(g.alliance_name_exceeded_the_maximum_number_of_characters(), t.status) : e.error === `invalid_name` ? new Y(g.invalid_name(), t.status) : e.error === `name_taken` ? new Y(g.alliance_name_already_taken(), t.status) : e.error == `empty_name` ? new Y(g.alliance_with_empty_name(), t.status) : new Y(g.unexpected_server_error(), t.status)
       }
-      throw t.status === K.FORBIDDEN ? (await t.json().catch(() => ({}))).error === `not_enough_droplets` ? Error(g.not_enough_droplets()) : Error(g.you_are_already_in_an_alliance()) : Error(g.unexpected_server_error())
+      throw t.status === q.FORBIDDEN ? (await t.json().catch(() => ({}))).error === `not_enough_droplets` ? Error(g.not_enough_droplets()) : Error(g.you_are_already_in_an_alliance()) : Error(g.unexpected_server_error())
     }
     async leaveAlliance() {
       if ((await this.request(`/alliance/leave`, {
           method: `POST`,
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async updateAllianceDescription(e) {
       let t = await this.request(`/alliance/update-description`, {
@@ -8236,19 +8249,19 @@ function Du(e) {
           description: e
         })
       });
-      if (t.status === K.OK) return t.json();
-      if (t.status === K.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
-      if (t.status === K.BAD_REQUEST) {
+      if (t.status === q.OK) return t.json();
+      if (t.status === q.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
+      if (t.status === q.BAD_REQUEST) {
         let e = await t.json().catch(() => ({}));
         throw Error(e.error === `invalid_markdown` ? g.alliance_description_invalid_markdown() : g.exceeded_max_chars())
       }
-      throw t.status === K.CONFLICT ? Error(g.alliance_description_credit_required()) : Error(g.unexpected_server_error())
+      throw t.status === q.CONFLICT ? Error(g.alliance_description_credit_required()) : Error(g.unexpected_server_error())
     }
     async getAllianceStore() {
       let e = await this.request(`/alliance/store`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return e.json();
+      if (e.status === q.OK) return e.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceCoinLedger(e) {
@@ -8256,7 +8269,7 @@ function Du(e) {
         n = await this.request(`/alliance/economy/ledger${t}`, {
           credentials: `include`
         });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async donateToAlliance(e, t) {
@@ -8268,7 +8281,7 @@ function Du(e) {
           idempotencyKey: t
         })
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       let r = await n.json().catch(() => ({}));
       throw r.error === `not_enough_droplets` ? Error(g.not_enough_droplets()) : r.error === `invalid_donation` ? Error(g.alliance_donation_invalid()) : Error(g.unexpected_server_error())
     }
@@ -8281,7 +8294,7 @@ function Du(e) {
           idempotencyKey: crypto.randomUUID()
         })
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(g.alliance_not_enough_coins()) : n.error === `already_unlocked` ? Error(g.alliance_already_unlocked()) : n.error === `headquarters_not_unlocked` ? Error(g.alliance_hq_not_unlocked()) : n.error === `headquarters_upgrade_prerequisite` ? Error(g.alliance_hq_upgrade_prerequisite()) : n.error === `template_upgrade_prerequisite` ? Error(g.alliance_template_upgrade_prerequisite()) : Error(g.unexpected_server_error())
     }
@@ -8291,11 +8304,11 @@ function Du(e) {
       let n = await this.request(`/alliance/templates${t.size?`?${t}`:``}`, {
         credentials: `include`
       });
-      if (n.status === K.OK) {
+      if (n.status === q.OK) {
         let e = await n.json();
         return {
           ...e,
-          templates: (e.templates ?? []).map(Cu),
+          templates: (e.templates ?? []).map(Iu),
           usedBytes: e.usedBytes ?? 0,
           byteLimit: e.byteLimit ?? 67108864,
           draftOptions: e.draftOptions ?? []
@@ -8311,9 +8324,9 @@ function Du(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === K.CREATED || r.status === K.OK) return Cu(await r.json());
+      if (r.status === q.CREATED || r.status === q.OK) return Iu(await r.json());
       let i = await r.json().catch(() => ({}));
-      throw i.error === `template_limit_reached` ? Error(g.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(g.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(g.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : r.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      throw i.error === `template_limit_reached` ? Error(g.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(g.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(g.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : r.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async patchAllianceTemplateMetadata(e, t) {
       let n = await this.request(`/alliance/templates/${e}`, {
@@ -8324,8 +8337,8 @@ function Du(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === K.OK) return Cu(await n.json());
-      throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : n.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (n.status === q.OK) return Iu(await n.json());
+      throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : n.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async patchAllianceTemplatePlacement(e, t) {
       let n = await this.request(`/alliance/templates/${e}/placement`, {
@@ -8336,9 +8349,9 @@ function Du(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       let r = await n.json().catch(() => ({}));
-      throw r.error === `invalid_template_placement` ? Error(g.alliance_template_invalid_placement()) : r.error === `template_location_not_selected` ? Error(g.alliance_template_location_not_selected()) : n.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      throw r.error === `invalid_template_placement` ? Error(g.alliance_template_invalid_placement()) : r.error === `template_location_not_selected` ? Error(g.alliance_template_location_not_selected()) : n.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async updateAllianceTemplate(e, t) {
       let n = new FormData;
@@ -8348,16 +8361,16 @@ function Du(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === K.OK) return Cu(await r.json());
+      if (r.status === q.OK) return Iu(await r.json());
       let i = await r.json().catch(() => ({}));
-      throw i.error === `template_image_changed` ? Error(g.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(g.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(g.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : r.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      throw i.error === `template_image_changed` ? Error(g.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(g.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(g.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(g.alliance_template_upload_rate_limited()) : r.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async deleteAllianceTemplate(e) {
       let t = await this.request(`/alliance/templates/${e}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.NO_CONTENT) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.NO_CONTENT) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async renameOwnAlliance(e) {
       let t = await this.request(`/alliance/rename`, {
@@ -8368,7 +8381,7 @@ function Du(e) {
           idempotencyKey: crypto.randomUUID()
         })
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(g.alliance_not_enough_coins()) : n.error === `invalid_name` ? Error(g.invalid_name()) : n.error === `name_taken` ? Error(g.alliance_name_already_taken()) : n.error === `name_unchanged` ? Error(g.alliance_name_unchanged()) : n.error === `max_characters` ? Error(g.alliance_name_exceeded_the_maximum_number_of_characters()) : Error(g.unexpected_server_error())
     }
@@ -8376,7 +8389,7 @@ function Du(e) {
       let t = await this.request(`/alliance/assets/${e}`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.unexpected_server_error())
     }
     async createAllianceAssetDraft(e, t) {
@@ -8390,22 +8403,22 @@ function Du(e) {
           } : {}
         })
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw (await n.json().catch(() => ({}))).error === `not_enough_alliance_coins` ? Error(g.alliance_not_enough_coins()) : Error(g.unexpected_server_error())
     }
     async getAllianceAssetCanvas(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/canvas`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceAssetRevision(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/canvas?metadataOnly=true`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      if (t.status !== K.FORBIDDEN && t.status !== K.NOT_FOUND) throw Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      if (t.status !== q.FORBIDDEN && t.status !== q.NOT_FOUND) throw Error(g.unexpected_server_error())
     }
     async paintAllianceAsset(e, t) {
       let n = JSON.stringify({
@@ -8414,19 +8427,19 @@ function Du(e) {
         r = await this.request(`/alliance/assets/drafts/${e}/paint`, {
           method: `POST`,
           credentials: `include`,
-          headers: await W.getHeaders(n),
+          headers: await G.getHeaders(n),
           body: n
         }).catch(e => {
-          throw e instanceof q ? new q(g.alliance_asset_paint_rate_limited()) : e
+          throw e instanceof J ? new J(g.alliance_asset_paint_rate_limited()) : e
         });
-      if (r.status === K.OK) return r.json();
+      if (r.status === q.OK) return r.json();
       let i = await r.json().catch(() => ({}));
       if (i.error === `challenge-required` && i.tier) {
-        if (await il(i.tier)) return this.paintAllianceAsset(e, t);
+        if (await gl(i.tier)) return this.paintAllianceAsset(e, t);
         throw Error(g.challenge_verification_not_completed())
       }
       if (i.error === `verification-required`) {
-        let n = await Lo().get();
+        let n = await Xo().get();
         if (!n.sealed_result) throw Error(g.unexpected_server_error());
         return await this.verifyAnticheat(n.sealed_result), this.paintAllianceAsset(e, t)
       }
@@ -8440,33 +8453,33 @@ function Du(e) {
           publish: t
         })
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async equipAllianceAssetVersion(e) {
       if ((await this.request(`/alliance/assets/versions/${e}/select`, {
           method: `POST`,
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async unequipAllianceAsset(e) {
       if ((await this.request(`/alliance/assets/${e}/unpublish`, {
           method: `POST`,
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async deleteAllianceAssetVersion(e) {
       let t = await this.request(`/alliance/assets/versions/${e}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw (await t.json().catch(() => ({}))).error === `asset_version_selected` ? Error(g.alliance_asset_unequip_before_delete()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw (await t.json().catch(() => ({}))).error === `asset_version_selected` ? Error(g.alliance_asset_unequip_before_delete()) : Error(g.unexpected_server_error())
     }
     async getAllianceAssetEditors(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/editors`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.unexpected_server_error())
     }
     async grantAllianceAssetEditor(e, t) {
@@ -8477,13 +8490,13 @@ function Du(e) {
           userId: t
         })
       });
-      if (n.status !== K.OK) throw (await n.json().catch(() => ({}))).error === `editor_already_granted` ? Error(g.alliance_asset_editor_already_added()) : Error(g.unexpected_server_error())
+      if (n.status !== q.OK) throw (await n.json().catch(() => ({}))).error === `editor_already_granted` ? Error(g.alliance_asset_editor_already_added()) : Error(g.unexpected_server_error())
     }
     async revokeAllianceAssetEditor(e, t) {
       if ((await this.request(`/alliance/assets/drafts/${e}/editors/${t}`, {
           method: `DELETE`,
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async copyAllianceAssetEditors(e, t) {
       let n = await this.request(`/alliance/assets/drafts/${e}/editors/copy`, {
@@ -8493,12 +8506,12 @@ function Du(e) {
           sourceDraftId: t
         })
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceAwards(e, t = 0) {
       let n = await this.request(`/alliances/${e}/awards?page=${t}`, {});
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async setAllianceFeaturedAwards(e) {
@@ -8508,7 +8521,7 @@ function Du(e) {
           body: JSON.stringify({
             awardKeys: e
           })
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async updateAllianceHeadquarters(e, t) {
       let n = await this.request(`/alliance/update-headquarters`, {
@@ -8519,8 +8532,8 @@ function Du(e) {
           longitude: t
         })
       });
-      if (n.status === K.OK) return;
-      if (n.status === K.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
+      if (n.status === q.OK) return;
+      if (n.status === q.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
       let r = await n.json().catch(() => ({}));
       throw r.error === `headquarters_credit_required` ? Error(g.alliance_hq_credit_required()) : r.error === `headquarters_not_unlocked` ? Error(g.alliance_hq_not_unlocked()) : r.error === `headquarters_locked` ? Error(g.alliance_hq_locked()) : Error(g.unexpected_server_error())
     }
@@ -8528,7 +8541,7 @@ function Du(e) {
       let e = await this.request(`/alliance/headquarters`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return e.json();
+      if (e.status === q.OK) return e.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceHeadquartersCanvas(e = {}) {
@@ -8539,7 +8552,7 @@ function Du(e) {
           credentials: `include`,
           signal: e.signal
         });
-      if (r.status === K.OK) return r.json();
+      if (r.status === q.OK) return r.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceHeadquartersManifest(e = {}) {
@@ -8556,8 +8569,8 @@ function Du(e) {
           credentials: `include`,
           signal: t.signal
         });
-      if (i.status === K.OK) return i.json();
-      throw new J(g.unexpected_server_error(), i.status)
+      if (i.status === q.OK) return i.json();
+      throw new Y(g.unexpected_server_error(), i.status)
     }
     async getAllianceHeadquartersSnapshot(e, t, n) {
       return this.getAllianceHeadquartersSnapshotAt(`/alliance/headquarters/snapshot`, e, t, `include`, n)
@@ -8578,8 +8591,8 @@ function Du(e) {
         }),
         signal: i
       });
-      if (a.status === K.OK) return a.arrayBuffer();
-      throw new J(g.unexpected_server_error(), a.status)
+      if (a.status === q.OK) return a.arrayBuffer();
+      throw new Y(g.unexpected_server_error(), a.status)
     }
     async unlockAllianceHeadquarters(e) {
       let t = await this.request(`/alliance/headquarters/unlock`, {
@@ -8590,7 +8603,7 @@ function Du(e) {
           ...e ?? {}
         })
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(g.alliance_not_enough_coins()) : n.error === `already_unlocked` ? Error(g.alliance_already_unlocked()) : n.error === `headquarters_anchor_required` ? Error(g.alliance_hq_anchor_required()) : Error(g.unexpected_server_error())
     }
@@ -8603,7 +8616,7 @@ function Du(e) {
           size: e
         })
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(g.alliance_not_enough_coins()) : n.error === `headquarters_size_prerequisite` ? Error(g.alliance_hq_size_prerequisite()) : Error(g.unexpected_server_error())
     }
@@ -8615,19 +8628,19 @@ function Du(e) {
         r = await this.request(`/alliance/headquarters/paint`, {
           method: `POST`,
           credentials: `include`,
-          headers: await W.getHeaders(n),
+          headers: await G.getHeaders(n),
           body: n
         }).catch(e => {
-          throw e instanceof q ? new q(g.alliance_asset_paint_rate_limited()) : e
+          throw e instanceof J ? new J(g.alliance_asset_paint_rate_limited()) : e
         });
-      if (r.status === K.OK) return r.json();
+      if (r.status === q.OK) return r.json();
       let i = await r.json().catch(() => ({}));
       if (i.error === `challenge-required` && i.tier) {
-        if (await il(i.tier)) return this.paintAllianceHeadquarters(e, t);
+        if (await gl(i.tier)) return this.paintAllianceHeadquarters(e, t);
         throw Error(g.challenge_verification_not_completed())
       }
       if (i.error === `verification-required`) {
-        let n = await Lo().get();
+        let n = await Xo().get();
         if (!n.sealed_result) throw Error(g.unexpected_server_error());
         return await this.verifyAnticheat(n.sealed_result), this.paintAllianceHeadquarters(e, t)
       }
@@ -8637,22 +8650,22 @@ function Du(e) {
       let n = await this.request(`/alliance/headquarters/pixel?x=${e}&y=${t}`, {
         credentials: `include`
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceHqLeaderboard(e) {
       let t = await this.request(`/alliance/headquarters/leaderboard/${e}`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.alliance_hq_leaderboard_load_failed())
+      if (t.status === q.OK) return t.json();
+      throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.alliance_hq_leaderboard_load_failed())
     }
     async getAllianceHqTimeouts(e) {
       let t = e ? `?before=${e}` : ``,
         n = await this.request(`/alliance/headquarters/timeouts${t}`, {
           credentials: `include`
         });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async createAllianceHqTimeout(e, t, n) {
@@ -8665,8 +8678,8 @@ function Du(e) {
           reason: n
         })
       });
-      if (r.status === K.OK) return r.json();
-      if (r.status === K.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
+      if (r.status === q.OK) return r.json();
+      if (r.status === q.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
       let i = await r.json().catch(() => ({}));
       throw i.error === `headquarters_timeout_active` ? Error(g.alliance_hq_timeout_already_active()) : i.error === `invalid_timeout_reason` ? Error(g.alliance_hq_timeout_reason_required()) : Error(g.unexpected_server_error())
     }
@@ -8678,29 +8691,29 @@ function Du(e) {
           reason: t
         })
       });
-      if (n.status === K.OK) return;
-      if (n.status === K.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
+      if (n.status === q.OK) return;
+      if (n.status === q.FORBIDDEN) throw Error(g.you_are_not_allowed_to_do_this());
       let r = await n.json().catch(() => ({}));
       throw r.error === `headquarters_timeout_inactive` ? Error(g.alliance_hq_timeout_inactive()) : r.error === `invalid_timeout_reason` ? Error(g.alliance_hq_timeout_reason_required()) : Error(g.unexpected_server_error())
     }
     async getPublicAllianceHeadquarters(e) {
       let t = await this.request(`/alliances/${e}/headquarters`, {});
-      if (t.status === K.OK) return t.json();
-      if (t.status !== K.NOT_FOUND) throw Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      if (t.status !== q.NOT_FOUND) throw Error(g.unexpected_server_error())
     }
     async allianceLeaderboard(e) {
       let t = await this.request(`/alliance/leaderboard/${e}`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.leaderboard_disabled_temporarily())
+      if (t.status === q.OK) return t.json();
+      throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.leaderboard_disabled_temporarily())
     }
     async getAllianceInvites() {
       let e = await this.request(`/alliance/invites`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return e.json();
-      throw e.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (e.status === q.OK) return e.json();
+      throw e.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async createAllianceInvite(e) {
       let t = await this.request(`/alliance/invites`, {
@@ -8711,15 +8724,15 @@ function Du(e) {
           maxUses: e.maxUses ?? null
         })
       });
-      if (t.status === K.OK) return t.json();
-      throw t.status === K.BAD_REQUEST ? (await t.json().catch(() => ({}))).error === `max_invites` ? Error(g.alliance_invite_limit_reached()) : Error(g.unexpected_server_error()) : t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      throw t.status === q.BAD_REQUEST ? (await t.json().catch(() => ({}))).error === `max_invites` ? Error(g.alliance_invite_limit_reached()) : Error(g.unexpected_server_error()) : t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async revokeAllianceInvite(e) {
       let t = await this.request(`/alliance/invites/${e}/revoke`, {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async getAllianceGallery(e) {
       let t = new URLSearchParams({
@@ -8728,7 +8741,7 @@ function Du(e) {
       });
       e.query && t.set(`q`, e.query), e.joinPolicy && t.set(`joinPolicy`, e.joinPolicy);
       let n = await this.request(`/alliances?${t.toString()}`, {});
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getPublicAllianceHeadquartersPins(e) {
@@ -8739,13 +8752,13 @@ function Du(e) {
           maxLng: e.maxLng.toFixed(5)
         }),
         n = await this.request(`/alliances/headquarters/pins?${t.toString()}`, {});
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getPublicAlliance(e) {
       let t = await this.request(`/alliances/${e}`, {});
-      if (t.status === K.OK) return t.json();
-      if (t.status !== K.NOT_FOUND) throw Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      if (t.status !== q.NOT_FOUND) throw Error(g.unexpected_server_error())
     }
     async getPublicAllianceMembers(e, t) {
       let n = new URLSearchParams({
@@ -8755,15 +8768,15 @@ function Du(e) {
       });
       t.query && n.set(`q`, t.query);
       let r = await this.request(`/alliances/${e}/members?${n.toString()}`, {});
-      if (r.status === K.OK) return r.json();
+      if (r.status === q.OK) return r.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceViewerState(e) {
       let t = await this.request(`/alliances/${e}/viewer`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      if (t.status !== K.UNAUTHORIZED) throw Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      if (t.status !== q.UNAUTHORIZED) throw Error(g.unexpected_server_error())
     }
     async directJoinAlliance(e) {
       let t = await this.request(`/alliances/${e}/join`, {
@@ -8777,17 +8790,17 @@ function Du(e) {
         method: `POST`,
         credentials: `include`
       });
-      return t.status === K.TOO_MANY_REQUESTS ? `cooldown` : this.mapJoinOutcome(t)
+      return t.status === q.TOO_MANY_REQUESTS ? `cooldown` : this.mapJoinOutcome(t)
     }
     async mapJoinOutcome(e) {
       switch (e.status) {
-        case K.OK:
+        case q.OK:
           return `success`;
-        case K.FORBIDDEN:
+        case q.FORBIDDEN:
           return (await e.json().catch(() => ({}))).error === `banned` ? `banned` : `policy`;
-        case K.CONFLICT:
+        case q.CONFLICT:
           return `in-alliance`;
-        case K.NOT_FOUND:
+        case q.NOT_FOUND:
           return `not-found`;
         default:
           return `error`
@@ -8798,14 +8811,14 @@ function Du(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK && t.status !== K.CONFLICT) throw Error(g.unexpected_server_error())
+      if (t.status !== q.OK && t.status !== q.CONFLICT) throw Error(g.unexpected_server_error())
     }
     async getAllianceJoinRequests(e) {
       let t = await this.request(`/alliance/join-requests?page=${e}`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status === q.OK) return t.json();
+      throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async reviewAllianceJoinRequest(e, t) {
       let n = await this.request(`/alliance/join-requests/${e}/review`, {
@@ -8815,9 +8828,9 @@ function Du(e) {
           accept: t
         })
       });
-      if (n.status === K.OK) return `success`;
-      if (n.status === K.CONFLICT) return `stale`;
-      throw n.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (n.status === q.OK) return `success`;
+      if (n.status === q.CONFLICT) return `stale`;
+      throw n.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async kickAllianceMember(e) {
       let t = await this.request(`/alliance/kick`, {
@@ -8827,7 +8840,7 @@ function Du(e) {
           kickedUserId: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async removeAllianceAdmin(e) {
       let t = await this.request(`/alliance/remove-admin`, {
@@ -8837,7 +8850,7 @@ function Du(e) {
           demotedUserId: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async setOwnAllianceMemberRole(e, t) {
       let n = await this.request(`/alliance/members/${e}/role`, {
@@ -8847,14 +8860,14 @@ function Du(e) {
           role: t
         })
       });
-      if (n.status !== K.OK) throw n.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (n.status !== q.OK) throw n.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async getAllianceRolePermissions() {
       let e = await this.request(`/alliance/role-permissions`, {
         credentials: `include`
       });
-      if (e.status === K.OK) return e.json();
-      throw e.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (e.status === q.OK) return e.json();
+      throw e.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async updateAllianceRolePermissions(e) {
       let t = await this.request(`/alliance/role-permissions`, {
@@ -8864,7 +8877,7 @@ function Du(e) {
           roles: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async transferAllianceLeadership(e) {
       let t = await this.request(`/alliance/transfer-leadership`, {
@@ -8874,7 +8887,7 @@ function Du(e) {
           newLeaderUserId: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async updateAllianceSettings(e) {
       let t = await this.request(`/alliance/settings`, {
@@ -8882,7 +8895,7 @@ function Du(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async setAllianceDiscordInvite(e) {
       let t = await this.request(`/alliance/discord-invite`, {
@@ -8892,15 +8905,15 @@ function Du(e) {
           url: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.BAD_REQUEST ? Error(g.alliance_discord_invite_invalid()) : t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.BAD_REQUEST ? Error(g.alliance_discord_invite_invalid()) : t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async getAllianceActivity(e) {
       let t = e ? `?cursor=${e}` : ``,
         n = await this.request(`/alliance/activity${t}`, {
           credentials: `include`
         });
-      if (n.status === K.OK) return n.json();
-      throw n.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (n.status === q.OK) return n.json();
+      throw n.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async reportAlliance(e) {
       let t = JSON.stringify({
@@ -8917,15 +8930,15 @@ function Du(e) {
         n = await this.request(`/report/alliance`, {
           method: `POST`,
           credentials: `include`,
-          headers: await W.getHeaders(t),
+          headers: await G.getHeaders(t),
           body: t
         });
-      if (n.status === K.OK || n.status === K.FORBIDDEN) {
+      if (n.status === q.OK || n.status === q.FORBIDDEN) {
         let t = await n.json().catch(() => ({}));
         if ((t == null ? void 0 : t.reason) === `target_cooldown`) throw Error(g.alliance_report_cooldown());
-        if (n.status === K.OK && typeof(t == null ? void 0 : t.success) == `boolean`) return t;
-        if (n.status === K.FORBIDDEN && (t == null ? void 0 : t.error) === `challenge-required` && t.tier) {
-          if (await il(t.tier)) return this.reportAlliance(e);
+        if (n.status === q.OK && typeof(t == null ? void 0 : t.success) == `boolean`) return t;
+        if (n.status === q.FORBIDDEN && (t == null ? void 0 : t.error) === `challenge-required` && t.tier) {
+          if (await gl(t.tier)) return this.reportAlliance(e);
           throw Error(g.challenge_verification_not_completed())
         }
       }
@@ -8936,16 +8949,16 @@ function Du(e) {
           method: `POST`,
           credentials: `include`
         })).status) {
-        case K.OK:
+        case q.OK:
           return `success`;
-        case K.ALREADY_REPORTED:
+        case q.ALREADY_REPORTED:
           return `in-another-alliance`;
-        case K.UNAUTHORIZED:
+        case q.UNAUTHORIZED:
           return `not-logged-in`;
-        case K.FORBIDDEN:
+        case q.FORBIDDEN:
           return `banned`;
-        case K.BAD_REQUEST:
-        case K.NOT_FOUND:
+        case q.BAD_REQUEST:
+        case q.NOT_FOUND:
           return `invalid-invite`;
         default:
           return `error`
@@ -8960,7 +8973,7 @@ function Du(e) {
       let n = await this.request(`/alliance/members/${e.page}?${t.toString()}`, {
         credentials: `include`
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceBannedMembers(e) {
@@ -8971,7 +8984,7 @@ function Du(e) {
       let n = await this.request(`/alliance/members/banned/${e.page}?${t.toString()}`, {
         credentials: `include`
       });
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.unexpected_server_error())
     }
     async getAllianceById(e) {
@@ -8979,8 +8992,8 @@ function Du(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === K.NOT_FOUND) return;
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status === q.NOT_FOUND) return;
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       let n = await t.json();
       return {
         id: Number(n.id),
@@ -8998,7 +9011,7 @@ function Du(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json();
       return (Array.isArray(r) ? r : []).map(e => ({
         id: Number(e.id),
@@ -9015,21 +9028,21 @@ function Du(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/awards`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.unexpected_server_error())
     }
     async getAdminAllianceTemplates(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/templates`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
-      throw new J(g.unexpected_server_error(), t.status)
+      if (t.status === q.OK) return t.json();
+      throw new Y(g.unexpected_server_error(), t.status)
     }
     async getAdminAllianceAssets(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/assets`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.unexpected_server_error())
     }
     async getAdminAllianceAssetEvents(e, t, n) {
@@ -9037,7 +9050,7 @@ function Du(e) {
         i = await this.request(`/staff/dashboard/alliances/${e}/assets/drafts/${t}/events${r}`, {
           credentials: `include`
         });
-      if (i.status === K.OK) return i.json();
+      if (i.status === q.OK) return i.json();
       throw Error(g.unexpected_server_error())
     }
     async moderateAdminAllianceAssetVersion(e, t, n, r) {
@@ -9048,7 +9061,7 @@ function Du(e) {
             ...n,
             reason: r
           })
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async moderateAdminAllianceAssetDraft(e, t, n, r) {
       if ((await this.request(`/staff/dashboard/alliances/${e}/assets/drafts/${t}/moderation`, {
@@ -9058,25 +9071,25 @@ function Du(e) {
             ...n,
             reason: r
           })
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async getAllianceHqWaybackEvents(e, t) {
       let n = new URLSearchParams;
-      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? mu.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
+      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? Eu.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/events?${n.toString()}`, {
         credentials: `include`
       });
-      if (r.status === K.NOT_FOUND) throw Error(g.alliances_not_found());
-      if (r.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (r.status === q.NOT_FOUND) throw Error(g.alliances_not_found());
+      if (r.status !== q.OK) throw Error(g.unexpected_server_error());
       return r.json()
     }
     async getAdminAllianceHqArea(e, t) {
-      let n = wu(t);
+      let n = Lu(t);
       if (n.length === 0) throw Error(g.unexpected_server_error());
       let r = await this.getAdminAllianceHqAreaChunk(e, n[0]),
         i = [...r.pixels];
-      for (let t = 1; t < n.length; t += xu) {
-        let a = await Promise.all(n.slice(t, t + xu).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
+      for (let t = 1; t < n.length; t += Nu) {
+        let a = await Promise.all(n.slice(t, t + Nu).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
         for (let e of a) i.push(...e.pixels)
       }
       return {
@@ -9087,11 +9100,11 @@ function Du(e) {
     }
     async getAdminAllianceHqSelectArea(e, t, n) {
       var r;
-      let i = Tu(t),
+      let i = Ru(t),
         a = Array(i.length),
         o = 0,
         s = Array.from({
-          length: Math.min(Su, i.length)
+          length: Math.min(Fu, i.length)
         }, async () => {
           for (; o < i.length;) {
             let t = o;
@@ -9117,7 +9130,7 @@ function Du(e) {
         i = await this.request(`/staff/dashboard/alliances/${e}/headquarters/area?${r.toString()}`, {
           credentials: `include`
         });
-      if (i.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (i.status !== q.OK) throw Error(g.unexpected_server_error());
       let a = await i.arrayBuffer(),
         o = (t.maxX - t.minX + 1) * (t.maxY - t.minY + 1);
       if (a.byteLength !== o * 13) throw Error(g.unexpected_server_error());
@@ -9155,14 +9168,14 @@ function Du(e) {
       let i = await this.request(`/staff/dashboard/alliances/${e}/headquarters/area?${r.toString()}`, {
         credentials: `include`
       });
-      if (i.status === K.CONTENT_TOO_LARGE || i.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (i.status === q.CONTENT_TOO_LARGE || i.status !== q.OK) throw Error(g.unexpected_server_error());
       return i.json()
     }
     async reverseAdminAllianceHqPixels(e, t, n, r = !1) {
       let i = 0,
         a = 0;
-      for (let o = 0; o < t.length; o += bu) {
-        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + bu), n, r);
+      for (let o = 0; o < t.length; o += Mu) {
+        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + Mu), n, r);
         i += s.reversed, a = s.eventHwm
       }
       return {
@@ -9182,9 +9195,9 @@ function Du(e) {
           })
         }),
         a = await i.json().catch(() => ({}));
-      if (i.status === K.CONTENT_TOO_LARGE) throw Error(g.alliance_hq_select_area_history_too_large());
-      if (i.status === K.NOT_FOUND) throw Error(g.reverse_no_modifications());
-      if (i.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (i.status === q.CONTENT_TOO_LARGE) throw Error(g.alliance_hq_select_area_history_too_large());
+      if (i.status === q.NOT_FOUND) throw Error(g.reverse_no_modifications());
+      if (i.status !== q.OK) throw Error(g.unexpected_server_error());
       return a
     }
     async getAllianceFull(e) {
@@ -9192,8 +9205,8 @@ function Du(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === K.NOT_FOUND) return null;
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status === q.NOT_FOUND) return null;
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       let n = await t.json(),
         r = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
       return {
@@ -9238,7 +9251,7 @@ function Du(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: Eu(e),
+          role: zu(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         }))
@@ -9257,12 +9270,12 @@ function Du(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status === K.NOT_FOUND) return {
+      if (r.status === q.NOT_FOUND) return {
         members: [],
         total: 0,
         filteredTotal: 0
       };
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       let i = await r.json(),
         a = Array.isArray(i == null ? void 0 : i.members) ? i.members : [];
       return {
@@ -9274,7 +9287,7 @@ function Du(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: Eu(e),
+          role: zu(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         })),
@@ -9290,7 +9303,7 @@ function Du(e) {
           name: t
         })
       });
-      if (n.status === K.BAD_REQUEST || n.status === K.CONFLICT) {
+      if (n.status === q.BAD_REQUEST || n.status === q.CONFLICT) {
         let e = await n.json().catch(() => ({}));
         switch (e == null ? void 0 : e.error) {
           case `invalid_name`:
@@ -9306,7 +9319,7 @@ function Du(e) {
           default:
             throw Error(g.unexpected_server_error())
         }
-      } else if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      } else if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async updateAdminAllianceDescription(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/description`, {
@@ -9316,12 +9329,12 @@ function Du(e) {
           description: t
         })
       });
-      if (n.status === K.OK) return n.json();
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.OK) return n.json();
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json().catch(() => ({}));
         throw Error(e.error === `invalid_markdown` ? g.alliance_description_invalid_markdown() : g.exceeded_max_chars())
       }
-      throw new J(g.unexpected_server_error(), n.status)
+      throw new Y(g.unexpected_server_error(), n.status)
     }
     async changeAllianceLeader(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/leader`, {
@@ -9331,18 +9344,18 @@ function Du(e) {
           newLeaderUserId: t
         })
       });
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json();
         throw (e == null ? void 0 : e.error) === `user_not_in_alliance` ? Error(g.leader_must_be_in_alliance()) : Error(g.unexpected_server_error())
       }
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async getAllianceBanTargets(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/ban-targets`, {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async banAllAllianceMembers(e, t, n) {
@@ -9354,7 +9367,7 @@ function Du(e) {
           notes: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async setAllianceMemberRole(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/members/${t}/role`, {
@@ -9364,21 +9377,21 @@ function Du(e) {
           role: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async removeAllianceMember(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/members/${t}/remove`, {
         method: `POST`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async getAdminAllianceRevisions(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/revisions?kind=${t}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAdminAllianceHistory(e, t = {}) {
@@ -9388,7 +9401,7 @@ function Du(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     async hideAdminAllianceRevision(e, t, n) {
@@ -9400,7 +9413,7 @@ function Du(e) {
           revisionId: n
         })
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async suspendAdminAllianceVisibility(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/suspend-visibility`, {
@@ -9410,7 +9423,7 @@ function Du(e) {
           discoverability: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async moderateAdminAllianceHeadquarters(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/moderation`, {
@@ -9421,8 +9434,8 @@ function Du(e) {
           reason: n
         })
       });
-      if (r.status === K.NOT_FOUND) throw Error(g.alliance_ticket_no_headquarters());
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status === q.NOT_FOUND) throw Error(g.alliance_ticket_no_headquarters());
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async restoreAdminAlliance(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/restore`, {
@@ -9432,18 +9445,18 @@ function Du(e) {
           newLeaderUserId: t
         })
       });
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json().catch(() => ({}));
         throw (e == null ? void 0 : e.error) === `user_not_found` ? Error(g.alliances_invalid_id()) : (e == null ? void 0 : e.error) === `user_already_in_alliance` ? Error(g.alliance_staff_restore_leader_in_alliance()) : (e == null ? void 0 : e.error) === `alliance_not_archived` ? Error(g.alliance_staff_restore_not_archived()) : Error(g.unexpected_server_error())
       }
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async archiveAdminAlliance(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/archive`, {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async punishAdminAllianceMembers(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/punish-members`, {
@@ -9457,7 +9470,7 @@ function Du(e) {
           notes: t.notes ?? ``
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async giveAllianceAdmin(e) {
       let t = await this.request(`/alliance/give-admin`, {
@@ -9467,7 +9480,7 @@ function Du(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async banAllianceUser(e) {
       let t = await this.request(`/alliance/ban`, {
@@ -9477,13 +9490,13 @@ function Du(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
     async equipFlag(e) {
       if ((await this.request(`/flag/equip/${e}`, {
           method: `POST`,
           credentials: `include`
-        })).status !== K.OK) throw Error(g.unexpected_server_error())
+        })).status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async unbanAllianceUser(e) {
       let t = await this.request(`/alliance/unban`, {
@@ -9493,20 +9506,20 @@ function Du(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw t.status === K.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.FORBIDDEN ? Error(g.you_are_not_allowed_to_do_this()) : Error(g.unexpected_server_error())
     }
   }
 }
-var Ou = [`None`, `PoW`, `Turnstile`, `hCaptcha`, `OTP`];
+var Vu = [`None`, `PoW`, `Turnstile`, `hCaptcha`, `OTP`];
 
-function ku(e) {
+function Hu(e) {
   return class extends e {
     async getUserAnticheat(e) {
       let t = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(e)}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return await t.json()
     }
     async getAnticheatStats(e, t) {
@@ -9514,7 +9527,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAnticheatSignals(e, t) {
@@ -9522,7 +9535,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAnticheatUserJourney(e, t, n) {
@@ -9530,7 +9543,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     async getAnticheatLive() {
@@ -9538,7 +9551,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async getAnticheatShadow(e, t) {
@@ -9546,7 +9559,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAnticheatSignalAnalysis(e, t, n) {
@@ -9554,7 +9567,7 @@ function ku(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     async getAnticheatJson(e, t = {}) {
@@ -9563,7 +9576,7 @@ function ku(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     getAnticheatHealth() {
@@ -9605,13 +9618,13 @@ function ku(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
   }
 }
 
-function Au(e) {
+function Uu(e) {
   return class extends e {
     async autoReviewBan(e) {
       let t = await this.request(`/staff/dashboard/users/auto-review-ban`, {
@@ -9621,7 +9634,7 @@ function Au(e) {
           userId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return await t.json()
     }
     async getUserAppeals(e) {
@@ -9631,7 +9644,7 @@ function Au(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json(),
         i = Array.isArray(r == null ? void 0 : r.appeals) ? r.appeals : [];
       return {
@@ -9646,21 +9659,21 @@ function Au(e) {
         } : {
           message: e
         }),
-        r = await W.getHeaders(n),
+        r = await G.getHeaders(n),
         i = await this.request(`/report/appeal`, {
           method: `POST`,
           credentials: `include`,
           body: n,
           headers: r
         });
-      if (i.status === K.FORBIDDEN) {
+      if (i.status === q.FORBIDDEN) {
         let n = await i.json();
         if ((n == null ? void 0 : n.error) === `challenge-required` && n.tier) {
-          if (await il(n.tier)) return this.submitBanAppeal(e, t);
-          throw new J(g.challenge_verification_not_completed(), i.status)
+          if (await gl(n.tier)) return this.submitBanAppeal(e, t);
+          throw new Y(g.challenge_verification_not_completed(), i.status)
         }
       }
-      if (i.status !== K.OK && i.status !== K.ALREADY_REPORTED) throw new J(g.unexpected_server_error(), i.status);
+      if (i.status !== q.OK && i.status !== q.ALREADY_REPORTED) throw new Y(g.unexpected_server_error(), i.status);
       return i.status
     }
     async getOpenAppeals() {
@@ -9668,7 +9681,7 @@ function Au(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async postSolveAppeal(e, t) {
@@ -9679,7 +9692,7 @@ function Au(e) {
           approved: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return await n.json()
     }
     async getUserLastAppeal() {
@@ -9687,7 +9700,7 @@ function Au(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.appealDate) ?? null
     }
@@ -9696,7 +9709,7 @@ function Au(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return await e.json()
     }
     async getPendingAppealsCount() {
@@ -9704,21 +9717,21 @@ function Au(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.appeals) ?? 0
     }
   }
 }
 
-function ju(e) {
+function Wu(e) {
   return class extends e {
     async getDeviceAttestChallenge() {
       let e = await this.request(`/device/attest/challenge`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return (await e.json()).challenge
     }
     async postDeviceAttest(e, t) {
@@ -9733,13 +9746,13 @@ function ju(e) {
           attestation: t
         })
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status)
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status)
     }
     async getDevicePreauthChallenge() {
       let e = await this.request(`/device/preauth/challenge`, {
         method: `GET`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return (await e.json()).challenge
     }
     async postDevicePreauth(e) {
@@ -9750,7 +9763,7 @@ function ju(e) {
         },
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(await t.json().then(e => e.error).catch(() => void 0) ?? g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(await t.json().then(e => e.error).catch(() => void 0) ?? g.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async postDeviceCheck(e) {
@@ -9764,7 +9777,7 @@ function ju(e) {
           token: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getAppStoreAccountToken(e) {
       let t = await this.request(`/payment/appstore/account-token`, {
@@ -9774,7 +9787,7 @@ function ju(e) {
           challenge: e
         })
       });
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return (await t.json()).token
     }
     async getAppStoreConsumptionConsent(e) {
@@ -9783,7 +9796,7 @@ function ju(e) {
         credentials: `include`,
         signal: e
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async setAppStoreConsumptionConsent(e) {
@@ -9798,7 +9811,7 @@ function ju(e) {
           version: `1`
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async verifyAppStorePurchase(e) {
@@ -9812,17 +9825,17 @@ function ju(e) {
           transactionId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
   }
 }
 
-function Mu(e) {
+function Gu(e) {
   if (!(e === void 0 || !Number.isFinite(e))) return Math.min(100, Math.max(1, Math.trunc(e)))
 }
 
-function Nu(e) {
+function Ku(e) {
   var t;
   if (!e) return null;
   let n = null,
@@ -9840,11 +9853,11 @@ function Nu(e) {
   let a = (n == null || (t = n.split(/[\\/]/).pop()) == null ? void 0 : t.trim()) ?? ``;
   return a && a !== `.` && a !== `..` ? a : null
 }
-async function Pu(e) {
+async function qu(e) {
   let t = await e.json().catch(() => ({}));
-  return new Fu(typeof t.message == `string` && t.message ? t.message : e.statusText, e.status, typeof t.error == `string` ? t.error : `unknown`, Array.isArray(t.fields) ? t.fields : [])
+  return new Ju(typeof t.message == `string` && t.message ? t.message : e.statusText, e.status, typeof t.error == `string` ? t.error : `unknown`, Array.isArray(t.fields) ? t.fields : [])
 }
-var Fu = class extends J {
+var Ju = class extends Y {
   constructor(e, t, n, r = []) {
     super(e, t), c(this, `code`, void 0), c(this, `fields`, void 0), this.code = n, this.fields = r
   }
@@ -9868,11 +9881,11 @@ function Q(e) {
   return n ? `?${n}` : ``
 }
 
-function Iu() {
+function Yu() {
   return crypto.randomUUID()
 }
 
-function Lu(e) {
+function Xu(e) {
   return class extends e {
     async commerceRequest(e, t) {
       let n = await this.request(e, {
@@ -9881,7 +9894,7 @@ function Lu(e) {
       });
       if (!n.ok) {
         let e = await n.json().catch(() => ({}));
-        throw new Fu(typeof e.message == `string` && e.message ? e.message : n.statusText, n.status, typeof e.error == `string` ? e.error : `unknown`, Array.isArray(e.fields) ? e.fields : [])
+        throw new Ju(typeof e.message == `string` && e.message ? e.message : n.statusText, n.status, typeof e.error == `string` ? e.error : `unknown`, Array.isArray(e.fields) ? e.fields : [])
       }
       return n.json()
     }
@@ -10068,18 +10081,18 @@ function Lu(e) {
       let t = await this.request(`/staff/commerce/analytics/export${Q({...e})}`, {
         throwOnStatus: !1
       });
-      if (!t.ok) throw await Pu(t);
+      if (!t.ok) throw await qu(t);
       let n = t.headers.get(`X-Commerce-Export-Rows`),
         r = t.headers.get(`X-Commerce-Export-Truncated`);
       return {
         blob: await t.blob(),
-        filename: Nu(t.headers.get(`Content-Disposition`)),
+        filename: Ku(t.headers.get(`Content-Disposition`)),
         rows: n !== null && /^\d+$/.test(n) ? Number(n) : null,
         truncated: r === `true` || r !== `false` && null
       }
     }
     listCommerceTransactions(e = {}) {
-      return this.commerceRequest(`/staff/commerce/purchases${Q({...e,limit:Mu(e.limit)})}`)
+      return this.commerceRequest(`/staff/commerce/purchases${Q({...e,limit:Gu(e.limit)})}`)
     }
     getCommerceTransaction(e) {
       return this.commerceRequest(`/staff/commerce/purchases/${e}`)
@@ -10093,13 +10106,13 @@ function Lu(e) {
         limit: n,
         ...r
       } = e;
-      return this.commerceRequest(`/staff/commerce/history${Q({...r,limit:Mu(n),type:t==null?void 0:t.join(`,`)})}`)
+      return this.commerceRequest(`/staff/commerce/history${Q({...r,limit:Gu(n),type:t==null?void 0:t.join(`,`)})}`)
     }
     async getStoreOffers(e) {
       let t = await this.request(`/store/offers${Q({platform:e})}`, {
         throwOnStatus: !1
       });
-      if (!t.ok) throw new J(t.statusText, t.status);
+      if (!t.ok) throw new Y(t.statusText, t.status);
       return t.json()
     }
     validateCoupon(e) {
@@ -10121,11 +10134,11 @@ function Lu(e) {
     }
   }
 }
-async function Ru(e) {
-  return new J(zu(await e.json().catch(() => null)), e.status)
+async function Zu(e) {
+  return new Y(Qu(await e.json().catch(() => null)), e.status)
 }
 
-function zu(e) {
+function Qu(e) {
   switch (e == null ? void 0 : e.error) {
     case `cosmetic_tag_exists`:
       return g.store_mgr_tag_exists();
@@ -10144,14 +10157,14 @@ function zu(e) {
   }
 }
 
-function Bu(e) {
+function $u(e) {
   return class extends e {
     async getUserFrames() {
       let e = await this.request(`/me/frames`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async postEquipUserFrame(e) {
@@ -10159,14 +10172,14 @@ function Bu(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getUserBadges() {
       let e = await this.request(`/me/badges`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async postEquipUserBadge(e) {
@@ -10175,14 +10188,14 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getStoreFrames() {
       let e = await this.request(`/store/frames`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async postBuyUserFrame(e) {
@@ -10190,10 +10203,10 @@ function Bu(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status === K.NOT_FOUND) throw Error(g.couldnt_complete_the_purchase_this_item_doesnt_exist());
-      if (t.status === K.FORBIDDEN) throw Error(g.you_do_not_have_enough_droplets_to_buy_this_item());
-      if (t.status === K.CONFLICT) throw Error(g.you_already_have_this_item());
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error())
+      if (t.status === q.NOT_FOUND) throw Error(g.couldnt_complete_the_purchase_this_item_doesnt_exist());
+      if (t.status === q.FORBIDDEN) throw Error(g.you_do_not_have_enough_droplets_to_buy_this_item());
+      if (t.status === q.CONFLICT) throw Error(g.you_already_have_this_item());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error())
     }
     async postEquipCosmetics(e) {
       let t = await this.request(`/me/cosmetic/equip`, {
@@ -10201,14 +10214,14 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getStoreNameCosmetics() {
       let e = await this.request(`/store/name`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return await e.json()
     }
     async postBuyCosmetic(e) {
@@ -10216,14 +10229,14 @@ function Bu(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getMyNameCosmetics() {
       let e = await this.request(`/me/cosmetics/name`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return await e.json()
     }
     async postCreateFrame(e) {
@@ -10234,7 +10247,7 @@ function Bu(e) {
         credentials: `include`,
         body: t
       });
-      if (n.status !== K.OK) throw await Ru(n);
+      if (n.status !== q.OK) throw await Zu(n);
       return n.json()
     }
     async postCreateFont(e) {
@@ -10243,7 +10256,7 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw await Ru(t);
+      if (t.status !== q.OK) throw await Zu(t);
       return t.json()
     }
     async postCreateStyle(e) {
@@ -10252,7 +10265,7 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw await Ru(t);
+      if (t.status !== q.OK) throw await Zu(t);
       return t.json()
     }
     async getAdminCosmetics(e) {
@@ -10265,7 +10278,7 @@ function Bu(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async putAdminCosmetic(e, t) {
@@ -10274,7 +10287,7 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw await Ru(n);
+      if (n.status !== q.OK) throw await Zu(n);
       return n.json()
     }
     async deleteAdminCosmetic(e) {
@@ -10282,7 +10295,7 @@ function Bu(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw await Ru(t)
+      if (t.status !== q.OK) throw await Zu(t)
     }
     async getAdminBadges(e) {
       let t = new URLSearchParams;
@@ -10292,7 +10305,7 @@ function Bu(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     async postAdminBadge(e) {
@@ -10301,7 +10314,7 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async putAdminBadge(e, t) {
@@ -10310,7 +10323,7 @@ function Bu(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async deleteAdminBadge(e) {
@@ -10318,7 +10331,7 @@ function Bu(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getR2Images(e) {
       let t = new URLSearchParams({
@@ -10329,7 +10342,7 @@ function Bu(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async postUploadR2Image(e) {
@@ -10340,7 +10353,7 @@ function Bu(e) {
         credentials: `include`,
         body: t
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async deleteR2Image(e) {
@@ -10348,17 +10361,17 @@ function Bu(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
   }
 }
-var Vu = [`all_owned`, `purchase_limit_reached`, `product_unavailable`];
+var ed = [`all_owned`, `purchase_limit_reached`, `product_unavailable`];
 
-function Hu(e) {
-  return Vu.includes(e)
+function td(e) {
+  return ed.includes(e)
 }
 
-function Uu(e, t = `bundles`) {
+function nd(e, t = `bundles`) {
   let n = t !== `bundles`;
   switch (e) {
     case `all_owned`:
@@ -10369,30 +10382,30 @@ function Uu(e, t = `bundles`) {
       return n ? g.store_pack_refusal_unavailable() : g.store_bundle_refusal_unavailable()
   }
 }
-var Wu = class extends Error {
+var rd = class extends Error {
     constructor(e) {
-      super(Uu(e)), c(this, `code`, void 0), this.code = e, this.name = `CatalogRefusalError`
+      super(nd(e)), c(this, `code`, void 0), this.code = e, this.name = `CatalogRefusalError`
     }
   },
-  Gu = class extends Error {
+  id = class extends Error {
     constructor(e) {
       super(g.store_bundle_price_changed()), c(this, `price`, void 0), this.price = e, this.name = `CatalogPriceChangedError`
     }
   };
-async function Ku(e) {
-  if (e.status !== K.CONFLICT) return null;
+async function ad(e) {
+  if (e.status !== q.CONFLICT) return null;
   let t = await e.clone().json().catch(() => null),
     n = t && typeof t == `object` ? t.code : void 0;
-  return Hu(n) ? new Wu(n) : null
+  return td(n) ? new rd(n) : null
 }
 
-function qu(e) {
+function od(e) {
   return class extends e {
     async getStoreCatalog(e) {
       let t = await this.request(`/store/catalog?platform=${e}`, {
         throwOnStatus: !1
       });
-      if (!t.ok) throw new J(t.statusText, t.status);
+      if (!t.ok) throw new Y(t.statusText, t.status);
       return t.json()
     }
     async getStoreCatalogMe(e) {
@@ -10400,7 +10413,7 @@ function qu(e) {
         credentials: `include`,
         throwOnStatus: !1
       });
-      if (!t.ok) throw new J(t.statusText, t.status);
+      if (!t.ok) throw new Y(t.statusText, t.status);
       return t.json()
     }
     async buyCatalogProduct(e, t) {
@@ -10419,22 +10432,22 @@ function qu(e) {
           grants: Array.isArray(e == null ? void 0 : e.grants) ? e.grants : []
         }
       }
-      if (n.status === K.CONFLICT) {
+      if (n.status === q.CONFLICT) {
         let e = await n.json().catch(() => null);
-        if ((e == null ? void 0 : e.code) === `price_changed` && Number.isSafeInteger(e.price) && e.price > 0) throw new Gu(e.price);
-        if (Hu(e == null ? void 0 : e.code)) throw new Wu(e.code)
+        if ((e == null ? void 0 : e.code) === `price_changed` && Number.isSafeInteger(e.price) && e.price > 0) throw new id(e.price);
+        if (td(e == null ? void 0 : e.code)) throw new rd(e.code)
       }
-      throw n.status === K.FORBIDDEN ? Error(g.store_bundle_not_enough_currency()) : n.status === K.NOT_FOUND ? new Wu(`product_unavailable`) : n.status === K.UNAUTHORIZED ? Error(g.you_are_not_logged_in()) : n.status === K.TOO_MANY_REQUESTS ? Error(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server()) : Error(g.unexpected_server_error())
+      throw n.status === q.FORBIDDEN ? Error(g.store_bundle_not_enough_currency()) : n.status === q.NOT_FOUND ? new rd(`product_unavailable`) : n.status === q.UNAUTHORIZED ? Error(g.you_are_not_logged_in()) : n.status === q.TOO_MANY_REQUESTS ? Error(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server()) : Error(g.unexpected_server_error())
     }
   }
 }
-var Ju = [`gift_self`, `gift_recipient_not_found`, `gift_recipient_unavailable`];
+var sd = [`gift_self`, `gift_recipient_not_found`, `gift_recipient_unavailable`];
 
-function Yu(e) {
-  return Ju.includes(e)
+function cd(e) {
+  return sd.includes(e)
 }
 
-function Xu(e) {
+function ld(e) {
   switch (e) {
     case `gift_self`:
       return g.store_gift_recipient_self();
@@ -10450,26 +10463,26 @@ function Xu(e) {
       return g.store_bundle_refusal_unavailable()
   }
 }
-var Zu = class extends Error {
+var ud = class extends Error {
   constructor(e) {
-    super(Xu(e)), c(this, `code`, void 0), this.code = e, this.name = `GiftRefusalError`
+    super(ld(e)), c(this, `code`, void 0), this.code = e, this.name = `GiftRefusalError`
   }
 };
-async function Qu(e) {
-  if (e.status !== K.CONFLICT) return null;
+async function dd(e) {
+  if (e.status !== q.CONFLICT) return null;
   let t = await e.clone().json().catch(() => null),
     n = t && typeof t == `object` ? t.code : void 0;
-  return Yu(n) || Hu(n) ? new Zu(n) : null
+  return cd(n) || td(n) ? new ud(n) : null
 }
 
-function $u(e) {
+function fd(e) {
   let t = e.trim().replace(/^#/, ``);
   if (!/^\d{1,10}$/.test(t)) return null;
   let n = Number(t);
   return n > 0 && n <= 2147483647 ? n : null
 }
 
-function ed(e) {
+function pd(e) {
   return class extends e {
     async getGiftRecipient(e, t) {
       let n = await this.request(`/store/gift-recipient/${e}`, {
@@ -10477,16 +10490,16 @@ function ed(e) {
           throwOnStatus: !1,
           signal: t
         }),
-        r = await Qu(n);
+        r = await dd(n);
       if (r) throw r;
-      if (n.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (n.status !== q.OK) throw Error(g.unexpected_server_error());
       return await n.json()
     }
   }
 }
-var td = 30 * R.minute;
+var md = 30 * z.minute;
 
-function nd(e) {
+function hd(e) {
   return class extends e {
     constructor(...e) {
       super(...e), c(this, `lastHotspotRequestAt`, 0)
@@ -10495,19 +10508,19 @@ function nd(e) {
       let r = new URLSearchParams;
       t && r.set(`country`, String(t)), n && r.set(`region`, String(n));
       let i = await this.request(`/leaderboard/player/${e}${r.size?`?${r}`:``}`);
-      if (i.status !== K.OK) throw Error(g.leaderboard_disabled_temporarily());
+      if (i.status !== q.OK) throw Error(g.leaderboard_disabled_temporarily());
       return i.json()
     }
     async leaderboardPlayerRank(e, t = 0, n = 0) {
       let r = new URLSearchParams;
       t && r.set(`country`, String(t)), n && r.set(`region`, String(n));
       let i = await this.request(`/leaderboard/player/${e}/me${r.size?`?${r}`:``}`);
-      if (i.status !== K.OK) throw Error(g.leaderboard_disabled_temporarily());
+      if (i.status !== q.OK) throw Error(g.leaderboard_disabled_temporarily());
       return i.json()
     }
     async leaderboardAllianceRank(e) {
       let t = await this.request(`/leaderboard/alliance/${e}/me`);
-      if (t.status !== K.OK) throw Error(g.leaderboard_disabled_temporarily());
+      if (t.status !== q.OK) throw Error(g.leaderboard_disabled_temporarily());
       return t.json()
     }
     async leaderboardPlayerRegions(e, t = ``, n = 0, r) {
@@ -10519,38 +10532,38 @@ function nd(e) {
         a = await this.request(`/leaderboard/player-regions?${i}`, {
           signal: r
         });
-      if (a.status !== K.OK) throw Error(g.leaderboard_disabled_temporarily());
+      if (a.status !== q.OK) throw Error(g.leaderboard_disabled_temporarily());
       return a.json()
     }
     async leaderboardAlliances(e) {
       let t = await this.request(`/leaderboard/alliance/${e}`);
-      if (t.status !== K.OK) throw Error(g.leaderboard_disabled_temporarily());
+      if (t.status !== q.OK) throw Error(g.leaderboard_disabled_temporarily());
       return t.json()
     }
     async leaderboardRegions(e, t = 0) {
       let n = await this.request(`/leaderboard/region/${e}/${t}`);
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.leaderboard_disabled_temporarily())
     }
     async leaderboardRegionPlayers(e, t) {
       let n = await this.request(`/leaderboard/region/players/${e}/${t}`);
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.leaderboard_disabled_temporarily())
     }
     async leaderboardRegionAlliances(e, t) {
       let n = await this.request(`/leaderboard/region/alliances/${e}/${t}`);
-      if (n.status === K.OK) return n.json();
+      if (n.status === q.OK) return n.json();
       throw Error(g.leaderboard_disabled_temporarily())
     }
     async leaderboardCountries(e) {
       let t = await this.request(`/leaderboard/country/${e}`, {
         credentials: `include`
       });
-      if (t.status === K.OK) return t.json();
+      if (t.status === q.OK) return t.json();
       throw Error(g.leaderboard_disabled_temporarily())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < td || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
+      Date.now() - this.lastHotspotRequestAt < md || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
         credentials: `include`,
         keepalive: !0,
         throwOnStatus: !1
@@ -10566,13 +10579,54 @@ function nd(e) {
     }
     async getRandomTile(e) {
       let t = await this.request(`/s${e}/tile/random`);
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return t.json()
     }
   }
 }
 
-function rd(e) {
+function gd(e) {
+  let t = new URLSearchParams({
+    since: e.since.toISOString(),
+    until: e.until.toISOString()
+  });
+  return e.userId && t.set(`userId`, String(e.userId)), e.beforeId && t.set(`beforeId`, String(e.beforeId)), t.toString()
+}
+async function _d(e) {
+  let t = await e.json().catch(() => null);
+  switch (t == null ? void 0 : t.error) {
+    case `invalid_filter`:
+      return new Y(g.view_logs_error_filter(), e.status);
+    case `view_not_found`:
+      return new Y(g.view_logs_error_code_not_found(), e.status);
+    case `invalid_code`:
+      return new Y(g.view_logs_error_code_invalid(), e.status);
+    default:
+      return new Y(g.unexpected_server_error(), e.status)
+  }
+}
+
+function vd(e) {
+  return class extends e {
+    async getDashboardTraceViews(e) {
+      let t = await this.request(`/staff/dashboard/view-logs/views?${gd(e)}`);
+      if (t.status !== q.OK) throw await _d(t);
+      return t.json()
+    }
+    async getDashboardTraceView(e) {
+      let t = await this.request(`/staff/dashboard/view-logs/views/${encodeURIComponent(e)}`);
+      if (t.status !== q.OK) throw await _d(t);
+      return t.json()
+    }
+    async getDashboardTraceEvents(e) {
+      let t = await this.request(`/staff/dashboard/view-logs/events?${gd(e)}`);
+      if (t.status !== q.OK) throw await _d(t);
+      return t.json()
+    }
+  }
+}
+
+function yd(e) {
   return class extends e {
     async postCaptchaSession(e, t = `include`) {
       let n = await this.request(`/anticheat/captcha/session`, {
@@ -10580,10 +10634,10 @@ function rd(e) {
         credentials: t,
         body: JSON.stringify(e),
         headers: {
-          "x-fp": await Fo()
+          "x-fp": await Jo()
         }
       });
-      if (!n.ok) throw n.status === 500 ? new J(g.unexpected_server_error(), n.status) : new J(g.invalid_captcha(), n.status);
+      if (!n.ok) throw n.status === 500 ? new Y(g.unexpected_server_error(), n.status) : new Y(g.invalid_captcha(), n.status);
       return n.json()
     }
     postOnboardingExperimentEvent(e) {
@@ -10636,11 +10690,11 @@ function rd(e) {
           event: e,
           data: t
         })
-      })).status === K.OK
+      })).status === q.OK
     }
   }
 }
-var id = {
+var bd = {
     griefing: g.griefing(),
     "multi-accounting": g.multi_accounting(),
     "hate-speech": g.hate_speech(),
@@ -10649,7 +10703,7 @@ var id = {
     "inappropriate-content": g.inappropriate_content(),
     other: g.breaking_the_rules()
   },
-  ad = {
+  xd = {
     doxxing: g.doxxing_description(),
     "hate-speech": g.hate_speech_description(),
     griefing: g.griefing_description(),
@@ -10658,7 +10712,7 @@ var id = {
     "inappropriate-content": g.inappropriate_content_description(),
     other: g.breaking_the_rules_description()
   },
-  od = {
+  Sd = {
     doxxing: `text-red-600`,
     "hate-speech": `text-red-400`,
     "inappropriate-content": `text-amber-500`,
@@ -10667,7 +10721,7 @@ var id = {
     griefing: `text-amber-200`,
     other: `text-cyan-600`
   },
-  sd = {
+  Cd = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -10676,7 +10730,7 @@ var id = {
     other: 5,
     griefing: 6
   },
-  cd = {
+  wd = {
     griefing: `topic-2`,
     "inappropriate-content": `topic-1`,
     bot: `topic-3`,
@@ -10685,21 +10739,21 @@ var id = {
     doxxing: `topic-1`,
     other: ``
   },
-  ld = 365 * R.day;
+  Td = 365 * z.day;
 
-function ud(e) {
+function Ed(e) {
   if (!e) return null;
   let t = (e instanceof Date ? e : new Date(e)).getTime();
   return Number.isFinite(t) ? t : null
 }
 
-function dd(e, t = Date.now()) {
-  let n = ud(e);
-  return n !== null && n - t >= ld
+function Dd(e, t = Date.now()) {
+  let n = Ed(e);
+  return n !== null && n - t >= Td
 }
 
-function fd(e, t = Date.now()) {
-  let n = ud(e);
+function Od(e, t = Date.now()) {
+  let n = Ed(e);
   if (n === null || n <= t) return {
     days: 0,
     hours: 0,
@@ -10712,7 +10766,7 @@ function fd(e, t = Date.now()) {
     minutes: r % 60
   }
 }
-var pd = [{
+var kd = [{
   key: `email`,
   example: `email:carlos*`
 }, {
@@ -10741,7 +10795,7 @@ var pd = [{
   example: `stripe:cus_ABC123`
 }];
 
-function md(e, t) {
+function Ad(e, t) {
   let n = t ?? ``;
   switch (e) {
     case `search_empty`:
@@ -10755,7 +10809,7 @@ function md(e, t) {
     case `search_unknown_filter`:
       return g.user_search_error_unknown_filter({
         filter: n,
-        filters: pd.map(e => e.key).join(`, `)
+        filters: kd.map(e => e.key).join(`, `)
       });
     case `search_invalid_value`:
       return g.user_search_error_invalid_value({
@@ -10778,16 +10832,16 @@ function md(e, t) {
   }
 }
 
-function hd(e) {
+function jd(e) {
   return class extends e {
     async getModeratorTickets() {
       let e = await this.request(`/staff/tickets/get`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let t = await e.json();
-      for (let e of t.tickets) e.reports.sort((e, t) => sd[e.reason] - sd[t.reason]);
+      for (let e of t.tickets) e.reports.sort((e, t) => Cd[e.reason] - Cd[t.reason]);
       return t
     }
     async countMyTicketsClosedToday() {
@@ -10795,7 +10849,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async getOpenTicketsCount() {
@@ -10803,7 +10857,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       let {
         tickets: t
       } = await e.json();
@@ -10814,7 +10868,7 @@ function hd(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async setTicketStatus(e, t, n, r, i) {
@@ -10829,14 +10883,14 @@ function hd(e) {
           ignoreReason: i
         })
       });
-      if (a.status !== K.OK && a.status !== K.BAD_REQUEST) throw new J(g.unexpected_server_error(), a.status)
+      if (a.status !== q.OK && a.status !== q.BAD_REQUEST) throw new Y(g.unexpected_server_error(), a.status)
     }
     async getLastResolvedTicket() {
       let e = await this.request(`/staff/tickets/reversals/last-resolved`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return (await e.json()).ticket
     }
     async getTicketReversalTicketInfo(e) {
@@ -10844,7 +10898,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async getReporterReportHistory(e, t) {
@@ -10852,7 +10906,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return (await n.json()).reports
     }
     async createTicketReversal(e) {
@@ -10861,11 +10915,11 @@ function hd(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === K.CONFLICT) {
+      if (t.status === q.CONFLICT) {
         let e = await t.json().catch(() => ({}));
-        throw (e == null ? void 0 : e.error) === `reversal_already_pending` ? new J(g.ticket_reversal_already_pending(), K.CONFLICT) : new J(g.unexpected_server_error(), K.CONFLICT)
+        throw (e == null ? void 0 : e.error) === `reversal_already_pending` ? new Y(g.ticket_reversal_already_pending(), q.CONFLICT) : new Y(g.unexpected_server_error(), q.CONFLICT)
       }
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async markTicketImproperlySolved(e) {
@@ -10876,7 +10930,7 @@ function hd(e) {
           ticketId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async reSolveTicket(e) {
@@ -10885,7 +10939,7 @@ function hd(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async listTicketReversals(e = {}) {
@@ -10896,7 +10950,7 @@ function hd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return (await r.json()).reversals ?? []
     }
     async getTicketReversal(e) {
@@ -10904,7 +10958,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return (await t.json()).reversal
     }
     async reviewTicketReversal(e, t, n) {
@@ -10916,16 +10970,16 @@ function hd(e) {
           notes: n
         })
       });
-      if (r.status === K.FORBIDDEN) throw new J(g.ticket_reversal_cannot_self_review(), K.FORBIDDEN);
-      if (r.status === K.CONFLICT) throw new J(g.ticket_reversal_already_reviewed(), K.CONFLICT);
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status)
+      if (r.status === q.FORBIDDEN) throw new Y(g.ticket_reversal_cannot_self_review(), q.FORBIDDEN);
+      if (r.status === q.CONFLICT) throw new Y(g.ticket_reversal_already_reviewed(), q.CONFLICT);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status)
     }
     async getOpenTicketsSummary() {
       let e = await this.request(`/staff/dashboard/summary/counters/tickets`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async getOpenReportsSummary() {
@@ -10933,7 +10987,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw new J(g.unexpected_server_error(), e.status);
+      if (e.status !== q.OK) throw new Y(g.unexpected_server_error(), e.status);
       return e.json()
     }
     async getBanAppealStats(e, t) {
@@ -10941,7 +10995,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json();
       return {
         items: r.items ?? [],
@@ -10953,7 +11007,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return (await n.json()).items.map(e => ({
         ...e,
         suspensionRate: (e.ban + e.timeout) / e.total
@@ -10964,7 +11018,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return (await n.json()).items.map(e => ({
         ...e,
         suspensionRate: (e.ban + e.timeout) / e.total
@@ -10978,7 +11032,7 @@ function hd(e) {
           userIds: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getUserInfoFull(e) {
@@ -10986,8 +11040,8 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.NOT_FOUND) {
-        if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.NOT_FOUND) {
+        if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
         return t.json()
       }
     }
@@ -10998,7 +11052,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async searchUsers(e) {
@@ -11006,11 +11060,11 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === K.BAD_REQUEST || t.status === K.UNPROCESSABLE_ENTITY) {
+      if (t.status === q.BAD_REQUEST || t.status === q.UNPROCESSABLE_ENTITY) {
         let e = await t.json().catch(() => null);
-        throw new J(md(e == null ? void 0 : e.error, e == null ? void 0 : e.field), t.status)
+        throw new Y(Ad(e == null ? void 0 : e.error, e == null ? void 0 : e.field), t.status)
       }
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getUserPunishments(e) {
@@ -11018,7 +11072,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return (await t.json()).punishments ?? []
     }
     async postPunishmentAnalysis(e) {
@@ -11027,11 +11081,11 @@ function hd(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === K.BAD_REQUEST) {
+      if (t.status === q.BAD_REQUEST) {
         let e = await t.json().catch(() => null);
-        throw new J((e == null ? void 0 : e.error) === `too_many_identifiers` ? g.punishment_analysis_too_many() : g.unexpected_server_error(), t.status)
+        throw new Y((e == null ? void 0 : e.error) === `too_many_identifiers` ? g.punishment_analysis_too_many() : g.unexpected_server_error(), t.status)
       }
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getPunishmentTicket(e) {
@@ -11039,7 +11093,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async overturnPunishment(e) {
@@ -11050,7 +11104,7 @@ function hd(e) {
           punishmentId: e
         })
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status)
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status)
     }
     async getUserNotes(e, t) {
       let n = t == `dashboard` ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(e)}` : `/staff/appeals/notes?userId=${encodeURIComponent(e)}`,
@@ -11058,7 +11112,7 @@ function hd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       return r.json()
     }
     async addUserNote(e, t, n) {
@@ -11071,14 +11125,14 @@ function hd(e) {
             note: t
           })
         });
-      if (i.status !== K.OK) throw new J(g.unexpected_server_error(), i.status)
+      if (i.status !== q.OK) throw new Y(g.unexpected_server_error(), i.status)
     }
     async getUserPermissions(e) {
       let t = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(e)}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async setUserPermissions(e, t) {
@@ -11090,16 +11144,16 @@ function hd(e) {
           permissions: Array.from(t)
         })
       });
-      if (n.status === K.FORBIDDEN) {
+      if (n.status === q.FORBIDDEN) {
         let e = await n.json().catch(() => null),
           t = new Map([
             [`financial_permission_self_grant`, g.permission_financial_self_grant],
             [`financial_permission_requires_admin`, g.permission_financial_requires_admin],
             [`permission_requires_staff`, g.permission_requires_staff]
           ]).get(e == null ? void 0 : e.error);
-        if (t) throw new J(t(), n.status)
+        if (t) throw new Y(t(), n.status)
       }
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json();
       return Array.isArray(r == null ? void 0 : r.permissions) ? r.permissions : []
     }
@@ -11108,7 +11162,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       let n = await t.json();
       return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(e => {
         var t, n;
@@ -11145,7 +11199,7 @@ function hd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (i.status !== K.OK) throw new J(g.unexpected_server_error(), i.status);
+      if (i.status !== q.OK) throw new Y(g.unexpected_server_error(), i.status);
       let a = await i.json(),
         o = Array.isArray(a == null ? void 0 : a.tickets) ? a.tickets : [];
       return {
@@ -11160,7 +11214,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       let r = await n.json(),
         i = Array.isArray(r == null ? void 0 : r.tickets) ? r.tickets : [],
         a = typeof(r == null ? void 0 : r.total) == `number` ? r.total : i.length;
@@ -11177,7 +11231,7 @@ function hd(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getTicketOverturnInfo(e) {
@@ -11185,7 +11239,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getModerationTranslate(e, t) {
@@ -11197,7 +11251,7 @@ function hd(e) {
             text: e
           })
         });
-      if (r.status !== K.OK) throw new J(g.unexpected_server_error(), r.status);
+      if (r.status !== q.OK) throw new Y(g.unexpected_server_error(), r.status);
       let i = await r.json();
       return i == null ? void 0 : i.translation
     }
@@ -11263,7 +11317,7 @@ function hd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getTicketsMetrics(e) {
@@ -11273,7 +11327,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getOnboardingMetrics(e) {
@@ -11287,7 +11341,7 @@ function hd(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
     async getNoticeMetrics(e) {
@@ -11300,13 +11354,13 @@ function hd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.json()
     }
   }
 }
 
-function gd(e) {
+function Md(e) {
   return class extends e {
     async notificationJSON(e, t = {}) {
       var n, r;
@@ -11334,7 +11388,7 @@ function gd(e) {
             cache: `no-store`,
             signal: i.signal
           });
-          if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+          if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
           return await n.json()
         })(), o])
       } finally {
@@ -11493,13 +11547,13 @@ function gd(e) {
     }
   }
 }
-var _d = [`coupon_invalid`, `coupon_expired`, `coupon_exhausted`, `coupon_not_eligible`, `coupon_not_applicable`, `promotions_unavailable`];
+var Nd = [`coupon_invalid`, `coupon_expired`, `coupon_exhausted`, `coupon_not_eligible`, `coupon_not_applicable`, `promotions_unavailable`];
 
-function vd(e) {
-  return _d.includes(e)
+function Pd(e) {
+  return Nd.includes(e)
 }
 
-function yd(e) {
+function Fd(e) {
   switch (e) {
     case `coupon_invalid`:
       return g.store_coupon_error_invalid();
@@ -11517,22 +11571,22 @@ function yd(e) {
       return g.store_coupon_error_rate_limited()
   }
 }
-var bd = class extends Error {
+var Id = class extends Error {
   constructor(e, t) {
-    super(yd(e)), c(this, `code`, void 0), c(this, `couponCode`, void 0), this.code = e, this.couponCode = t, this.name = `CouponError`
+    super(Fd(e)), c(this, `code`, void 0), c(this, `couponCode`, void 0), this.code = e, this.couponCode = t, this.name = `CouponError`
   }
 };
 
-function xd(e) {
+function Ld(e) {
   return typeof e == `object` && !!e && !Array.isArray(e)
 }
 
-function Sd(e) {
+function Rd(e) {
   return e === `stripe` || e === `fastspring`
 }
 
-function Cd(e) {
-  if (!xd(e)) return null;
+function zd(e) {
+  if (!Ld(e)) return null;
   let {
     id: t,
     name: n,
@@ -11546,7 +11600,7 @@ function Cd(e) {
   } = e;
   if (typeof t != `number` || !Number.isSafeInteger(t) || r !== `sale` && r !== `coupon` || i !== `percent` && i !== `fixed`) return null;
   let u = {};
-  if (xd(o))
+  if (Ld(o))
     for (let [e, t] of Object.entries(o)) /^[A-Z]{3}$/.test(e) && Number.isSafeInteger(t) && t > 0 && (u[e] = t);
   return {
     id: t,
@@ -11557,20 +11611,20 @@ function Cd(e) {
     fixedAmounts: Object.keys(u).length ? u : null,
     startsAt: typeof s == `string` ? s : ``,
     endsAt: typeof c == `string` ? c : ``,
-    providers: Array.isArray(l) ? l.filter(Sd) : [],
+    providers: Array.isArray(l) ? l.filter(Rd) : [],
     couponApplied: e.couponApplied === !0,
     couponSuperseded: e.couponSuperseded === !0
   }
 }
-async function wd(e, t) {
-  let n = e.status === K.TOO_MANY_REQUESTS && !!t;
-  if (e.status !== K.BAD_REQUEST && !n) return null;
+async function Bd(e, t) {
+  let n = e.status === q.TOO_MANY_REQUESTS && !!t;
+  if (e.status !== q.BAD_REQUEST && !n) return null;
   let r = await e.json().catch(() => null),
-    i = xd(r) ? r.error : null;
-  return n ? i === `rate_limited` ? new bd(`rate_limited`, t) : null : vd(i) ? new bd(i, t) : null
+    i = Ld(r) ? r.error : null;
+  return n ? i === `rate_limited` ? new Id(`rate_limited`, t) : null : Pd(i) ? new Id(i, t) : null
 }
 
-function Td(e) {
+function Vd(e) {
   return e ? {
     checkout_id: e.checkoutId,
     ...e.visitorId ? {
@@ -11580,29 +11634,29 @@ function Td(e) {
   } : {}
 }
 
-function Ed(e) {
-  return xd(e) ? {
+function Hd(e) {
+  return Ld(e) ? {
     ...e,
-    promotion: Cd(e.promotion)
+    promotion: zd(e.promotion)
   } : e
 }
-var Dd = [`open`, `complete`, `expired`],
-  Od = [`droplets`, `prism`];
+var Ud = [`open`, `complete`, `expired`],
+  Wd = [`droplets`, `prism`];
 
-function kd(e) {
-  return Od.map(t => ({
+function Gd(e) {
+  return Wd.map(t => ({
     currency: t,
     amount: e.reduce((e, n) => e + (n.currency === t ? n.amount : 0), 0)
   })).filter(e => e.amount > 0)
 }
 
-function Ad(e) {
+function Kd(e) {
   return class extends e {
     async driveStatus() {
       let e = await this.request(`/drive/status`, {
         credentials: `include`
       });
-      return e.status === K.OK && !!(await e.json()).connected
+      return e.status === q.OK && !!(await e.json()).connected
     }
     async driveConnect(e) {
       let t = await this.request(`/drive/connect`, {
@@ -11612,7 +11666,7 @@ function Ad(e) {
           code: e
         })
       });
-      if (t.status !== K.OK) throw Error(`drive connect failed: ${t.status}`);
+      if (t.status !== q.OK) throw Error(`drive connect failed: ${t.status}`);
       return t.json()
     }
     async driveToken() {
@@ -11620,8 +11674,8 @@ function Ad(e) {
         credentials: `include`,
         throwOnStatus: !1
       });
-      if (e.status === K.CONFLICT) return null;
-      if (e.status !== K.OK) throw Error(`drive token failed: ${e.status}`);
+      if (e.status === q.CONFLICT) return null;
+      if (e.status !== q.OK) throw Error(`drive token failed: ${e.status}`);
       return e.json()
     }
     async driveDisconnect() {
@@ -11644,20 +11698,20 @@ function Ad(e) {
             ...r ? {
               gift_recipient_id: r
             } : {},
-            ...Td(n)
+            ...Vd(n)
           })
         }),
-        a = await wd(i, t);
+        a = await Bd(i, t);
       if (a) throw a;
-      let o = r ? await Qu(i) : null;
+      let o = r ? await dd(i) : null;
       if (o) throw o;
-      let s = await Ku(i);
+      let s = await ad(i);
       if (s) throw s;
-      if (i.status === K.TOO_MANY_REQUESTS) throw new q(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
-      if (i.status === K.UNAUTHORIZED) throw Error(g.you_are_not_logged_in());
-      if (i.status === K.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.account_suspended_message());
-      if (i.status !== K.OK) throw i.status >= 500 || i.status === K.REQUEST_TIMEOUT ? new Kl(g.payment_checkout_failed()) : Error(g.payment_checkout_failed());
-      let c = Ed(await i.json()),
+      if (i.status === q.TOO_MANY_REQUESTS) throw new J(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
+      if (i.status === q.UNAUTHORIZED) throw Error(g.you_are_not_logged_in());
+      if (i.status === q.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.account_suspended_message());
+      if (i.status !== q.OK) throw i.status >= 500 || i.status === q.REQUEST_TIMEOUT ? new iu(g.payment_checkout_failed()) : Error(g.payment_checkout_failed());
+      let c = Hd(await i.json()),
         {
           expiresInMs: l
         } = c;
@@ -11684,7 +11738,7 @@ function Ad(e) {
       let {
         status: n
       } = await t.json();
-      return Dd.includes(n) ? n : null
+      return Ud.includes(n) ? n : null
     }
     async createFastspringSession(e, t = !1, n, r, i) {
       let a = await this.request(`/payment/fastspring/session`, {
@@ -11700,25 +11754,25 @@ function Ad(e) {
             ...i ? {
               gift_recipient_id: i
             } : {},
-            ...Td(r)
+            ...Vd(r)
           })
         }),
-        o = await wd(a, n);
+        o = await Bd(a, n);
       if (o) throw o;
-      let s = i ? await Qu(a) : null;
+      let s = i ? await dd(a) : null;
       if (s) throw s;
-      let c = await Ku(a);
+      let c = await ad(a);
       if (c) throw c;
-      if (a.status === K.TOO_MANY_REQUESTS) throw new q(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
-      if (a.status === K.UNAUTHORIZED) throw Error(g.you_are_not_logged_in());
-      if (a.status !== K.OK) {
-        if (a.status === K.FORBIDDEN) {
+      if (a.status === q.TOO_MANY_REQUESTS) throw new J(g.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
+      if (a.status === q.UNAUTHORIZED) throw Error(g.you_are_not_logged_in());
+      if (a.status !== q.OK) {
+        if (a.status === q.FORBIDDEN) {
           let e = await a.json().catch(() => null);
-          if ((e == null ? void 0 : e.code) === `payment_country_restricted`) throw new Gl(g.payment_country_restricted())
+          if ((e == null ? void 0 : e.code) === `payment_country_restricted`) throw new ru(g.payment_country_restricted())
         }
-        throw a.status >= 500 || a.status === K.REQUEST_TIMEOUT ? new Kl(g.payment_checkout_failed()) : Error(g.payment_checkout_failed())
+        throw a.status >= 500 || a.status === q.REQUEST_TIMEOUT ? new iu(g.payment_checkout_failed()) : Error(g.payment_checkout_failed())
       }
-      return Ed(await a.json())
+      return Hd(await a.json())
     }
     async refreshFastspringOrder(e) {
       let t = await this.request(`/payment/fastspring/refresh-order/${e}`, {
@@ -11732,7 +11786,7 @@ function Ad(e) {
       let e = await this.request(`/payment/fastspring/orders/last`, {
         credentials: `include`
       });
-      if (e.status === K.NOT_FOUND) return null;
+      if (e.status === q.NOT_FOUND) return null;
       if (!e.ok) throw Error(`Failed to get last FastSpring order: ${e.status} ${e.statusText}`);
       return await e.json()
     }
@@ -11751,14 +11805,14 @@ function Ad(e) {
           product: e
         })
       });
-      if (t.status !== K.OK) throw t.status === K.NOT_FOUND ? Error(g.couldnt_complete_the_purchase_this_item_doesnt_exist()) : t.status === K.FORBIDDEN ? Error(g.you_do_not_have_enough_droplets_to_buy_this_item()) : t.status === K.CONFLICT ? Error(g.you_already_have_this_item()) : Error(g.unexpected_server_error())
+      if (t.status !== q.OK) throw t.status === q.NOT_FOUND ? Error(g.couldnt_complete_the_purchase_this_item_doesnt_exist()) : t.status === q.FORBIDDEN ? Error(g.you_do_not_have_enough_droplets_to_buy_this_item()) : t.status === q.CONFLICT ? Error(g.you_already_have_this_item()) : Error(g.unexpected_server_error())
     }
     async getPlayAccountId() {
       let e = await this.request(`/payment/play/account-id`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (e.status !== q.OK) throw Error(g.unexpected_server_error());
       return e.json()
     }
     async verifyPlayPurchase(e) {
@@ -11770,12 +11824,12 @@ function Ad(e) {
         },
         body: JSON.stringify(e)
       });
-      if (t.status === K.BAD_REQUEST) {
+      if (t.status === q.BAD_REQUEST) {
         let e = await t.json().catch(() => ({}));
         throw Error((e == null ? void 0 : e.error) ?? `Invalid Play purchase`)
       }
-      if (t.status === K.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.account_suspended_message());
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status === q.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(g.account_suspended_message());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return t.json()
     }
     async verifyPendingPlayPurchases() {
@@ -11783,7 +11837,7 @@ function Ad(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (e.status !== q.OK) throw Error(g.unexpected_server_error());
       return e.json()
     }
     async getPlayClaimStatus(e) {
@@ -11791,14 +11845,14 @@ function Ad(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === K.NOT_FOUND) return {
+      if (t.status === q.NOT_FOUND) return {
         status: `unknown`,
         grant: {
           currency: `droplets`,
           amount: 0
         }
       };
-      if (t.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (t.status !== q.OK) throw Error(g.unexpected_server_error());
       return t.json()
     }
     async listPaymentHistory(e) {
@@ -11806,7 +11860,7 @@ function Ad(e) {
         n = await this.request(`/payment/history${t}`, {
           credentials: `include`
         });
-      if (n.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (n.status !== q.OK) throw Error(g.unexpected_server_error());
       return n.json()
     }
     async listPlayPurchaseHistory() {
@@ -11814,13 +11868,13 @@ function Ad(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (e.status !== q.OK) throw Error(g.unexpected_server_error());
       return e.json()
     }
   }
 }
 
-function jd(e, t) {
+function qd(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r),
@@ -11830,7 +11884,7 @@ function jd(e, t) {
   return n
 }
 
-function Md(e, t) {
+function Jd(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r);
@@ -11839,10 +11893,10 @@ function Md(e, t) {
   return n
 }
 
-function Nd(e) {
+function Yd(e) {
   return class extends e {
     async paint(e) {
-      let t = jd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let t = qd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         n = {
           season: e[0].season,
           tiles: Object.values(t).map(e => ({
@@ -11856,16 +11910,16 @@ function Nd(e) {
           }))
         },
         r = JSON.stringify(n),
-        i = await W.getHeaders(r),
+        i = await G.getHeaders(r),
         a = await this.request(`/paint`, {
           method: `POST`,
           body: r,
           headers: i,
           credentials: `include`
         });
-      if (a.status === K.OK) return await a.json().catch(() => ({}));
-      if (a.status === K.UNAUTHORIZED) throw Error(g.you_need_to_be_logged_in_to_paint());
-      if (a.status === K.FORBIDDEN) {
+      if (a.status === q.OK) return await a.json().catch(() => ({}));
+      if (a.status === q.UNAUTHORIZED) throw Error(g.you_need_to_be_logged_in_to_paint());
+      if (a.status === q.FORBIDDEN) {
         if (a.headers.get(`cf-mitigated`) === `challenge`) throw Error(g.ddos_message());
         let t = await a.json().catch(() => ({}));
         switch (t == null ? void 0 : t.error) {
@@ -11885,17 +11939,17 @@ function Nd(e) {
             throw Error(g.cannot_paint_over_event_pixel());
           case `challenge-required`:
             if (t.tier) {
-              if (await il(t.tier)) return this.paint(e);
+              if (await gl(t.tier)) return this.paint(e);
               throw Error(g.challenge_verification_not_completed())
             }
             throw console.error(`Challenge required but no tier provided`, t), Error(g.unexpected_server_error());
           case `verification-required`: {
-            let t = (await Lo().get()).sealed_result;
+            let t = (await Xo().get()).sealed_result;
             if (!t) throw Error(g.unexpected_server_error());
             return await this.verifyAnticheat(t), this.paint(e)
           }
         }
-        throw await L.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(g.you_do_not_have_enough_charges_to_paint()) : Error(g.unexpected_server_error())
+        throw await R.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(g.you_do_not_have_enough_charges_to_paint()) : Error(g.unexpected_server_error())
       }
       throw Error(g.unexpected_server_error())
     }
@@ -11911,7 +11965,7 @@ function Nd(e) {
         },
         credentials: `include`
       });
-      if (t.status !== K.OK) throw new J(g.unexpected_server_error(), t.status);
+      if (t.status !== q.OK) throw new Y(g.unexpected_server_error(), t.status);
       return t.json()
     }
     async getReverseTimestamps(e, t = {}) {
@@ -11932,7 +11986,7 @@ function Nd(e) {
         },
         credentials: `include`
       });
-      if (a.status !== K.OK) throw new J(g.unexpected_server_error(), a.status);
+      if (a.status !== q.OK) throw new Y(g.unexpected_server_error(), a.status);
       return a.json()
     }
     async getReversePreview(e, t) {
@@ -11953,7 +12007,7 @@ function Nd(e) {
         },
         credentials: `include`
       });
-      if (a.status !== K.OK) throw new J(g.unexpected_server_error(), a.status);
+      if (a.status !== q.OK) throw new Y(g.unexpected_server_error(), a.status);
       return a.json()
     }
     async getReverseTimelapse(e, t) {
@@ -11972,12 +12026,12 @@ function Nd(e) {
         },
         credentials: `include`
       });
-      if (n.status === K.BAD_REQUEST) {
+      if (n.status === q.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `timelapse_too_many_events` ? new J(g.select_area_timelapse_history_too_large(), K.BAD_REQUEST) : new J(typeof t == `string` && t ? t : g.unexpected_server_error(), K.BAD_REQUEST)
+        throw t === `timelapse_too_many_events` ? new Y(g.select_area_timelapse_history_too_large(), q.BAD_REQUEST) : new Y(typeof t == `string` && t ? t : g.unexpected_server_error(), q.BAD_REQUEST)
       }
-      if (n.status !== K.OK) throw new J(g.unexpected_server_error(), n.status);
+      if (n.status !== q.OK) throw new Y(g.unexpected_server_error(), n.status);
       return n.arrayBuffer()
     }
     async applyReverse(e, t) {
@@ -11998,28 +12052,28 @@ function Nd(e) {
         },
         credentials: `include`
       });
-      if (a.status !== K.OK) throw new J(g.unexpected_server_error(), a.status);
+      if (a.status !== q.OK) throw new Y(g.unexpected_server_error(), a.status);
       return a.json()
     }
     async sendPaintRequests(e, t, n, r) {
-      let i = jd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let i = qd(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         a = (await Promise.all(Object.values(i).map(async e => {
           let [r, i] = e[0].tile, a = e[0].season, o = {
             colors: e.map(e => e.colorIdx),
             coords: e.flatMap(e => e.pixel),
             csid: n
-          }, s = JSON.stringify(o), c = t(a, r, i), l = await W.getHeaders(s);
+          }, s = JSON.stringify(o), c = t(a, r, i), l = await G.getHeaders(s);
           return this.request(c, {
             method: `POST`,
             body: s,
             headers: l,
             credentials: `include`
           })
-        }))).filter(e => e.status !== K.OK);
+        }))).filter(e => e.status !== q.OK);
       if (a.length) {
         let e = a[0];
-        if (e.status === K.UNAUTHORIZED) throw Error(g.you_need_to_be_logged_in_to_paint());
-        if (e.status === K.FORBIDDEN) {
+        if (e.status === q.UNAUTHORIZED) throw Error(g.you_need_to_be_logged_in_to_paint());
+        if (e.status === q.FORBIDDEN) {
           if (e.headers.get(`cf-mitigated`) === `challenge`) throw Error(g.ddos_message());
           let t = await e.json().catch(() => ({}));
           switch (t == null ? void 0 : t.error) {
@@ -12036,14 +12090,14 @@ function Nd(e) {
             case `event-pixel-present`:
               throw Error(g.cannot_paint_over_event_pixel())
           }
-          throw await L.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(g.you_do_not_have_enough_charges_to_paint()) : Error(g.unexpected_server_error())
+          throw await R.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(g.you_do_not_have_enough_charges_to_paint()) : Error(g.unexpected_server_error())
         }
         throw Error(g.unexpected_server_error())
       }
     }
     async adminAutoPainterPaint(e, t, n, r = {}) {
-      let i = Pd(e),
-        a = await Fd(i),
+      let i = Xd(e),
+        a = await Zd(i),
         o = new FormData;
       o.append(`fingerprint`, t), o.append(`season`, i.season.toString()), o.append(`px0`, i.offsetX.toString()), o.append(`py0`, i.offsetY.toString()), o.append(`width`, i.width.toString()), o.append(`height`, i.height.toString()), o.append(`pixels`, e.length.toString()), o.append(`bitmap`, a, `auto-painter.png`), o.append(`userId`, n.toString()), o.append(`missing`, String(r.missing ?? !1)), o.append(`incorrect`, String(r.incorrect ?? !1)), o.append(`showOnLeaderboard`, String(r.showOnLeaderboard ?? !1));
       let s = await this.request(`/staff/tools/auto-painter/paint`, {
@@ -12051,7 +12105,7 @@ function Nd(e) {
         body: o,
         credentials: `include`
       });
-      if (s.status === K.FORBIDDEN) {
+      if (s.status === q.FORBIDDEN) {
         let t = await s.json().catch(() => null);
         if (typeof(t == null ? void 0 : t.charges) == `number`) throw Error(g.overlay_auto_paint_not_enough_charges({
           charges: Math.floor(t.charges),
@@ -12060,7 +12114,7 @@ function Nd(e) {
         let n = typeof(t == null ? void 0 : t.error) == `string` ? t.error.trim() : ``;
         throw Error(n && n !== `Forbidden` ? n : `Auto painter is restricted to administrators.`)
       }
-      if (s.status !== K.OK) throw Error(g.unexpected_server_error());
+      if (s.status !== q.OK) throw Error(g.unexpected_server_error());
       return s.json()
     }
     async getPixelInfo({
@@ -12073,7 +12127,7 @@ function Nd(e) {
       let o = await this.request(`/s${e}/pixel/${t}/${n}?${a.toString()}`, {
         credentials: `include`
       });
-      if (o.status !== K.OK) {
+      if (o.status !== q.OK) {
         let e = await o.text();
         throw Error(g.error_while_painting({
           err: e
@@ -12096,9 +12150,9 @@ function Nd(e) {
           },
           credentials: `include`
         });
-      if (i.status === K.UNAUTHORIZED) throw new J(g.overlay_participants_login_required(), i.status);
-      if (i.status === K.CONTENT_TOO_LARGE) throw new J(g.overlay_participants_too_large(), i.status);
-      if (i.status !== K.OK) throw new J(g.unexpected_server_error(), i.status);
+      if (i.status === q.UNAUTHORIZED) throw new Y(g.overlay_participants_login_required(), i.status);
+      if (i.status === q.CONTENT_TOO_LARGE) throw new Y(g.overlay_participants_too_large(), i.status);
+      if (i.status !== q.OK) throw new Y(g.unexpected_server_error(), i.status);
       return i.json()
     }
     async getPixelAreaInfo({
@@ -12110,7 +12164,7 @@ function Nd(e) {
       let s = await this.request(`/staff/tools/select-area/s${e}/${t}/${n}?x0=${r}&y0=${i}&x1=${a}&y1=${o}`, {
         credentials: `include`
       });
-      if (s.status !== K.OK) {
+      if (s.status !== q.OK) {
         let e = await s.text();
         throw console.error(`Error while fetching pixel area info`, e), Error(g.unexpected_server_error())
       }
@@ -12131,13 +12185,13 @@ function Nd(e) {
   }
 }
 
-function Pd(e) {
+function Xd(e) {
   var t;
   if (!e.length) throw Error(`Auto painter request does not contain any pixels.`);
   let n = e[0].season;
   for (let t of e)
     if (t.season !== n) throw Error(`Auto painter requests cannot mix seasons.`);
-  let r = (t = cu.seasons) == null ? void 0 : t[n];
+  let r = (t = bu.seasons) == null ? void 0 : t[n];
   if (!r) throw Error(`Invalid season selected for auto painter request.`);
   let i = r.tileSize,
     a = 1 / 0,
@@ -12164,7 +12218,7 @@ function Pd(e) {
     }
     of l) {
     var p;
-    let r = (p = cu.colors) == null ? void 0 : p[n];
+    let r = (p = bu.colors) == null ? void 0 : p[n];
     if (!r) throw Error(`Unknown palette color index: ${n}`);
     let i = e - a,
       s = ((t - o) * u + i) * 4,
@@ -12180,8 +12234,8 @@ function Pd(e) {
     season: n
   }
 }
-async function Fd(e) {
-  let t = Id(e.width, e.height),
+async function Zd(e) {
+  let t = Qd(e.width, e.height),
     n = t.getContext(`2d`);
   if (!n) throw Error(`Canvas API is not available to encode auto painter bitmap.`);
   let r = n.createImageData(e.width, e.height);
@@ -12198,7 +12252,7 @@ async function Fd(e) {
   })
 }
 
-function Id(e, t) {
+function Qd(e, t) {
   if (typeof OffscreenCanvas < `u`) return new OffscreenCanvas(e, t);
   if (typeof document < `u`) {
     let n = document.createElement(`canvas`);
@@ -12206,96 +12260,96 @@ function Id(e, t) {
   }
   throw Error(`Canvas API is not available in the current environment.`)
 }
-var Ld = `/staff/dashboard/metrics/players`;
-async function Rd(e) {
+var $d = `/staff/dashboard/metrics/players`;
+async function ef(e) {
   let t = await e.json().catch(() => null);
   switch (t == null ? void 0 : t.error) {
     case `range_too_long`:
-      return new J(g.player_metrics_error_range_too_long(), e.status);
+      return new Y(g.player_metrics_error_range_too_long(), e.status);
     case `end_must_be_after_start`:
-      return new J(g.invalid_date_range(), e.status);
+      return new Y(g.invalid_date_range(), e.status);
     case `query_timeout`:
-      return new J(g.player_metrics_error_timeout(), e.status);
+      return new Y(g.player_metrics_error_timeout(), e.status);
     case `analytics_unavailable`:
-      return new J(g.player_metrics_error_unavailable(), e.status);
+      return new Y(g.player_metrics_error_unavailable(), e.status);
     case `too_many_dashboards`:
-      return new J(g.player_metrics_error_too_many_dashboards(), e.status);
+      return new Y(g.player_metrics_error_too_many_dashboards(), e.status);
     case `share_not_allowed`:
-      return new J(g.player_metrics_error_share_not_allowed(), e.status);
+      return new Y(g.player_metrics_error_share_not_allowed(), e.status);
     case `too_many_widgets`:
-      return new J(g.player_metrics_error_too_many_widgets(), e.status);
+      return new Y(g.player_metrics_error_too_many_widgets(), e.status);
     case `invalid_name`:
-      return new J(g.player_metrics_error_invalid_name(), e.status)
+      return new Y(g.player_metrics_error_invalid_name(), e.status)
   }
-  return new J(g.unexpected_server_error(), e.status)
+  return new Y(g.unexpected_server_error(), e.status)
 }
 
-function zd(e) {
+function tf(e) {
   return class extends e {
     async getPlayerMetricsOptions() {
-      let e = await this.request(`${Ld}/options`, {
+      let e = await this.request(`${$d}/options`, {
         method: `GET`
       });
-      if (e.status !== K.OK) throw await Rd(e);
+      if (e.status !== q.OK) throw await ef(e);
       return e.json()
     }
     async queryPlayerMetrics(e, t) {
-      let n = await this.request(`${Ld}/query`, {
+      let n = await this.request(`${$d}/query`, {
         method: `POST`,
         body: JSON.stringify(e),
         signal: t
       });
-      if (n.status !== K.OK) throw await Rd(n);
+      if (n.status !== q.OK) throw await ef(n);
       return n.json()
     }
     async getPlayerDashboards() {
-      let e = await this.request(`${Ld}/dashboards`, {
+      let e = await this.request(`${$d}/dashboards`, {
         method: `GET`
       });
-      if (e.status !== K.OK) throw await Rd(e);
+      if (e.status !== q.OK) throw await ef(e);
       return e.json()
     }
     async createPlayerDashboard(e) {
-      let t = await this.request(`${Ld}/dashboards`, {
+      let t = await this.request(`${$d}/dashboards`, {
         method: `POST`,
         body: JSON.stringify(e)
       });
-      if (t.status !== K.CREATED) throw await Rd(t);
+      if (t.status !== q.CREATED) throw await ef(t);
       return t.json()
     }
     async updatePlayerDashboard(e, t) {
-      let n = await this.request(`${Ld}/dashboards/${e}`, {
+      let n = await this.request(`${$d}/dashboards/${e}`, {
         method: `PUT`,
         body: JSON.stringify(t)
       });
-      if (n.status !== K.OK) throw await Rd(n);
+      if (n.status !== q.OK) throw await ef(n);
       return n.json()
     }
     async deletePlayerDashboard(e) {
-      let t = await this.request(`${Ld}/dashboards/${e}`, {
+      let t = await this.request(`${$d}/dashboards/${e}`, {
         method: `DELETE`
       });
-      if (t.status !== K.NO_CONTENT) throw await Rd(t)
+      if (t.status !== q.NO_CONTENT) throw await ef(t)
     }
     async setPlayerDashboardDefault(e) {
-      let t = await this.request(`${Ld}/dashboards/default`, {
+      let t = await this.request(`${$d}/dashboards/default`, {
         method: `PUT`,
         body: JSON.stringify({
           key: e
         })
       });
-      if (t.status !== K.NO_CONTENT) throw await Rd(t)
+      if (t.status !== q.NO_CONTENT) throw await ef(t)
     }
   }
 }
 
-function Bd(e) {
+function nf(e) {
   return class extends e {
     async protectionRequest(e, t) {
       let n = await this.request(`/staff/dashboard/protections${e}`, t);
       if (!n.ok) {
         let e = await n.json().catch(() => ({}));
-        throw new J(n.status === 409 ? g.protection_conflict() : e.error === `protection_bypass_user` ? g.protection_bypass_invalid() : n.status === 400 ? g.protection_invalid() : g.protection_failed(), n.status)
+        throw new Y(n.status === 409 ? g.protection_conflict() : e.error === `protection_bypass_user` ? g.protection_bypass_invalid() : n.status === 400 ? g.protection_invalid() : g.protection_failed(), n.status)
       }
       return n
     }
@@ -12321,12 +12375,12 @@ function Bd(e) {
     }
   }
 }
-var Vd = `/staff/dashboard/metrics/revenue`,
-  Hd = [`onboardingArm`, `loginMethod`, `alliance`, `device`, `os`, `browser`],
-  Ud = [`lt5`, `5_20`, `20_50`, `50_100`, `100_500`, `500_1000`, `gte1000`],
-  Wd = [`today`, `1d`, `5d`, `30d`, `90d`, `180d`, `365d`];
+var rf = `/staff/dashboard/metrics/revenue`,
+  af = [`onboardingArm`, `loginMethod`, `alliance`, `device`, `os`, `browser`],
+  of = [`lt5`, `5_20`, `20_50`, `50_100`, `100_500`, `500_1000`, `gte1000`],
+  sf = [`today`, `1d`, `5d`, `30d`, `90d`, `180d`, `365d`];
 
-function Gd(e, t = {}) {
+function cf(e, t = {}) {
   let n = new URLSearchParams({
       start: e.start,
       end: e.end,
@@ -12345,7 +12399,7 @@ function Gd(e, t = {}) {
   return n.toString()
 }
 
-function Kd(e, t) {
+function lf(e, t) {
   switch (e) {
     case `range_too_long`:
       return g.player_metrics_error_range_too_long();
@@ -12391,52 +12445,52 @@ function Kd(e, t) {
     case `request_in_progress`:
       return g.revenue_target_error_busy()
   }
-  return t === K.SERVICE_UNAVAILABLE ? g.revenue_error_unavailable() : g.unexpected_server_error()
+  return t === q.SERVICE_UNAVAILABLE ? g.revenue_error_unavailable() : g.unexpected_server_error()
 }
-var qd = class extends J {
+var uf = class extends Y {
   constructor(e, t, n) {
     super(e, t), c(this, `code`, void 0), this.code = n
   }
 };
-async function Jd(e) {
+async function df(e) {
   let t = await e.json().catch(() => null),
     n = typeof(t == null ? void 0 : t.error) == `string` ? t.error : ``,
     r = Number(e.headers.get(`Retry-After`));
-  return new qd(n === `rate_limited` && Number.isFinite(r) && r > 0 ? g.revenue_export_rate_limited_wait({
+  return new uf(n === `rate_limited` && Number.isFinite(r) && r > 0 ? g.revenue_export_rate_limited_wait({
     seconds: Math.ceil(r)
-  }) : Kd(n, e.status), e.status, n)
+  }) : lf(n, e.status), e.status, n)
 }
 
-function Yd(e) {
+function ff(e) {
   return class extends e {
     async revenueGet(e, t = ``, n) {
-      let r = await this.request(`${Vd}${e}${t?`?${t}`:``}`, {
+      let r = await this.request(`${rf}${e}${t?`?${t}`:``}`, {
         method: `GET`,
         signal: n,
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Jd(r);
+      if (r.status !== q.OK) throw await df(r);
       return r.json()
     }
     getRevenueOptions() {
       return this.revenueGet(`/options`)
     }
     getRevenueOverview(e, t) {
-      return this.revenueGet(`/overview`, Gd(e), t)
+      return this.revenueGet(`/overview`, cf(e), t)
     }
     getRevenueCustomers(e, t, n) {
       let r = {
         cohorts: t.cohorts
       };
-      return t.experiment && (r.experiment = t.experiment), this.revenueGet(`/customers`, Gd(e, r), n)
+      return t.experiment && (r.experiment = t.experiment), this.revenueGet(`/customers`, cf(e, r), n)
     }
     getRevenueTopSpenders(e, t, n) {
-      return this.revenueGet(`/customers/top-spenders`, Gd(e, {
+      return this.revenueGet(`/customers/top-spenders`, cf(e, {
         limit: t
       }), n)
     }
     getRevenueProductsGeo(e, t) {
-      return this.revenueGet(`/products-geo`, Gd(e), t)
+      return this.revenueGet(`/products-geo`, cf(e), t)
     }
     getRevenueFxLive(e) {
       return this.revenueGet(`/fx/live`, ``, e)
@@ -12446,13 +12500,13 @@ function Yd(e) {
       return this.revenueGet(`/fx/history`, n.toString(), t)
     }
     getRevenuePromotions(e, t) {
-      return this.revenueGet(`/promotions`, Gd(e), t)
+      return this.revenueGet(`/promotions`, cf(e), t)
     }
     getRevenueEconomy(e, t) {
-      return this.revenueGet(`/economy`, Gd(e), t)
+      return this.revenueGet(`/economy`, cf(e), t)
     }
     getRevenueQuality(e, t) {
-      return this.revenueGet(`/quality`, Gd(e), t)
+      return this.revenueGet(`/quality`, cf(e), t)
     }
     getRevenueTargets(e, t) {
       return this.revenueGet(`/targets`, `year=${e}`, t)
@@ -12463,7 +12517,7 @@ function Yd(e) {
         note: t.note
       };
       t.lockVersion != null && (n.lockVersion = t.lockVersion);
-      let r = await this.request(`${Vd}/targets/${encodeURIComponent(e)}`, {
+      let r = await this.request(`${rf}/targets/${encodeURIComponent(e)}`, {
         method: `PUT`,
         headers: {
           "Content-Type": `application/json`,
@@ -12472,40 +12526,40 @@ function Yd(e) {
         body: JSON.stringify(n),
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Jd(r)
+      if (r.status !== q.OK) throw await df(r)
     }
     async deleteRevenueTarget(e, t) {
-      let n = await this.request(`${Vd}/targets/${encodeURIComponent(e)}?lockVersion=${t}`, {
+      let n = await this.request(`${rf}/targets/${encodeURIComponent(e)}?lockVersion=${t}`, {
         method: `DELETE`,
         headers: {
           "Idempotency-Key": crypto.randomUUID()
         },
         throwOnStatus: !1
       });
-      if (n.status !== K.OK) throw await Jd(n)
+      if (n.status !== q.OK) throw await df(n)
     }
     async downloadRevenueExport(e, t, n = {}) {
-      let r = await this.request(`${Vd}/export?${Gd(e,{...n,section:t})}`, {
+      let r = await this.request(`${rf}/export?${cf(e,{...n,section:t})}`, {
         method: `GET`,
         throwOnStatus: !1
       });
-      if (r.status !== K.OK) throw await Jd(r);
+      if (r.status !== q.OK) throw await df(r);
       let i = r.headers.get(`X-Revenue-Export-Rows`);
       return {
         blob: await r.blob(),
-        filename: Nu(r.headers.get(`Content-Disposition`)),
+        filename: Ku(r.headers.get(`Content-Disposition`)),
         rows: i !== null && /^\d+$/.test(i) ? Number(i) : null
       }
     }
   }
 }
 
-function Xd(e) {
+function pf(e) {
   return class extends e {
     validWaybackInput(e) {
       let t = Number.isFinite(e.timestamp) && Number.isInteger(e.timestamp) && e.timestamp >= 0 && e.timestamp <= this.getEstimatedServerNowMs(),
-        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < lu.length,
-        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= mu.tools.wayback.limit,
+        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < xu.length,
+        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= Eu.tools.wayback.limit,
         i = Number.isFinite(e.tileX) && Number.isFinite(e.tileY) && Number.isInteger(e.tileX) && Number.isInteger(e.tileY) && e.tileX >= 0 && e.tileY >= 0,
         a = e.cursorTs !== void 0,
         o = e.cursorUserId !== void 0,
@@ -12530,13 +12584,13 @@ function Xd(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (i.status === K.FORBIDDEN) throw Error(`Access denied`);
-      if (i.status !== K.OK) throw Error(`Failed to fetch wayback events`);
+      if (i.status === q.FORBIDDEN) throw Error(`Access denied`);
+      if (i.status !== q.OK) throw Error(`Failed to fetch wayback events`);
       return i.json()
     }
   }
 }
-var $ = new class extends Lu(Bd(au(su(Du(ku(Au(ju(Bu(nd(rd(hd(gd(Ad(Nd(zd(Yd(qu(ed(Xd(ru)))))))))))))))))))) {}(m);
+var $ = new class extends Xu(nf(_u(yu(Bu(Hu(Uu(Wu($u(hd(yd(jd(Md(Kd(Yd(tf(ff(od(pd(pf(vd(hu))))))))))))))))))))) {}(m);
 typeof window < `u` && u(() => {
   let e = $.online;
   l(() => {
@@ -12545,5 +12599,5 @@ typeof window < `u` && u(() => {
   })
 });
 export {
-  Hl as $, fu as A, ws as At, iu as B, yt as Bt, Uu as C, Ks as Ct, hu as D, us as Dt, Ou as E, zs as Et, pu as F, xs as Ft, Yl as G, le as Gt, Zl as H, gt as Ht, vu as I, N as It, Kl as J, Xl as K, _u as L, Fo as Lt, lu as M, Ms as Mt, mu as N, gs as Nt, uu as O, hs as Ot, cu as P, Ds as Pt, zl as Q, ou as R, xt as Rt, Wu as S, Gs as St, Iu as T, Hs as Tt, Jl as U, oe as Ut, Ql as V, _t as Vt, ql as W, ce as Wt, K as X, q as Y, Rl as Z, id as _, ic as _t, qd as a, cl as at, $u as b, Js as bt, kd as c, pl as ct, pd as d, il as dt, Vl as et, fd as f, W as ft, ad as g, L as gt, od as h, _c as ht, Ud as i, xl as it, du as j, Ns as jt, gu as k, Ts as kt, yd as l, fl as lt, cd as m, gc as mt, Wd as n, bl as nt, Md as o, G as ot, dd as p, R as pt, Gl as q, Hd as r, Sl as rt, bd as s, hl as st, $ as t, Bl as tt, vd as u, ml as ut, sd as v, ac as vt, Fu as w, qs as wt, Gu as x, Ws as xt, Zu as y, I as yt, J as z, bt as zt
+  eu as $, oe as $t, wu as A, Is as At, gu as B, Mt as Bt, nd as C, ic as Ct, Du as D, Cs as Dt, Vu as E, Zs as Et, Tu as F, Ps as Ft, su as G, fe as Gt, lu as H, kt as Ht, Au as I, N as It, iu as J, Ce as Jt, cu as K, pe as Kt, ku as L, Jo as Lt, xu as M, Ws as Mt, Eu as N, ks as Nt, Su as O, Os as Ot, bu as P, zs as Pt, Zl as Q, _e as Qt, vu as R, Pt as Rt, rd as S, rc as St, Yu as T, ec as Tt, ou as U, he as Ut, uu as V, At as Vt, au as W, me as Wt, q as X, xe as Xt, J as Y, we as Yt, Xl as Z, Se as Zt, bd as _, gc as _t, uf as a, bl as at, fd as b, oc as bt, Gd as c, Tl as ct, kd as d, gl as dt, ce as en, $l as et, Od as f, G as ft, xd as g, R as gt, Sd as h, kc as ht, of as i, Nl as it, Cu as j, Gs as jt, Ou as k, Ls as kt, Fd as l, wl as lt, wd as m, Oc as mt, sf as n, Ml as nt, Jd as o, K as ot, Dd as p, z as pt, ru as q, ge as qt, af as r, Pl as rt, Id as s, Dl as st, $ as t, le as tn, Ql as tt, Pd as u, El as ut, Cd as v, _c as vt, Ju as w, ac as wt, id as x, nc as xt, ud as y, L as yt, Y as z, Nt as zt
 };
