@@ -1,44 +1,50 @@
 import {
-  Gt as e,
-  Ht as t,
-  Ut as n,
-  Vt as r,
-  Wt as i,
-  un as a
+  C as e,
+  Y as t,
+  en as n,
+  et as r,
+  jt as i,
+  o as a,
+  rt as o,
+  tn as s,
+  tt as c
 } from "./DXDHrD2o.js";
-var o, s, c, l, u, d, f = 9,
-  p = 95,
-  m = 45,
-  h = 5;
+import "./B8UK1oE5.js";
+import {
+  r as l
+} from "./DduSK_CN.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = o(`<svg><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"></path></svg>`),
+  f = o(`<svg><path d="M4 20h3v-2h4v4h2v-4h4v2h-2v4H9v-4H7v2H2v-5h2v3Zm18 2h-5v-2h3v-3h2v5ZM6 11H2v2h4v4H4v-2H0V9h4V7h2v4Zm14-2h4v6h-4v2h-2v-4h4v-2h-4V7h2v2Zm-6 7h-4v-2h4v2Zm-4-2H8v-4h2v4Zm6 0h-2v-4h2v4Zm-2-4h-4V8h4v2ZM7 4H4v3H2V2h5v2Zm8 0h2V2h5v5h-2V4h-3v2h-4V2h-2v4H7V4h2V0h6v4Z"></path></svg>`);
 
-function g(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, h) >>> 2
-}
-
-function _(e = ``, t = p, n = m, r = g) {
-  let i = r(e),
-    a = i % f * (360 / f);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(o = globalThis.customElements) != null && o.get(`minidenticon-svg`) || (s = globalThis.customElements) == null || s.define(`minidenticon-svg`, (u = new WeakMap, d = new WeakSet, c = class extends HTMLElement {
-  constructor(...t) {
-    super(...t), e(this, d), i(this, u, !1)
-  }
-  connectedCallback() {
-    n(d, this, v).call(this), t(u, this, !0)
-  }
-  attributeChangedCallback() {
-    r(u, this) && n(d, this, v).call(this)
-  }
-}, a(c, `observedAttributes`, [`username`, `saturation`, `lightness`]), l = {
-  _: {}
-}, c));
-
-function v() {
-  var e;
-  let t = c.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    r = t.join(`,`);
-  this.innerHTML = (e = n(c, c, l)._)[r] ?? (e[r] = _(...t))
+function p(o, p) {
+  s(p, !0);
+  let m = l(),
+    h = a(p, u);
+  var g = c(),
+    _ = i(g),
+    v = t => {
+      var n = d();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...h
+      })), r(t, n)
+    },
+    y = t => {
+      var n = f();
+      e(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 0 24 24`,
+        fill: `currentColor`,
+        ...h
+      })), r(t, n)
+    };
+  t(_, e => {
+    m.standard ? e(v) : e(y, -1)
+  }), r(o, g), n()
 }
 export {
-  _ as t
+  p as t
 };

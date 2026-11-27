@@ -1,50 +1,99 @@
 import {
-  C as e,
-  Y as t,
-  en as n,
-  et as r,
-  jt as i,
-  o as a,
-  rt as o,
-  tn as s,
-  tt as c
+  At as e,
+  Bt as t,
+  Ct as n,
+  F as r,
+  M as i,
+  N as a,
+  T as o,
+  W as s,
+  Y as c,
+  a as l,
+  cn as u,
+  en as d,
+  et as f,
+  fn as p,
+  jt as m,
+  nt as h,
+  ot as g,
+  pt as _,
+  st as v,
+  tn as y,
+  tt as b
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  r as l
-} from "./DR6rqLaN.js";
-var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  d = o(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`),
-  f = o(`<svg><path d="M5 21H3v-2h2v2Zm4 0H7v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2Zm4 0h-2v-2h2v2ZM5 17H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM5 9H3V7h2v2Zm16 0h-2V7h2v2ZM5 5H3V3h2v2Zm4 0H7V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Zm4 0h-2V3h2v2Z"></path></svg>`);
+  wt as x
+} from "./oPC4dsku.js";
+import {
+  t as S
+} from "./dV_hY48k.js";
+import {
+  t as C
+} from "./N8CrrYHb.js";
 
-function p(o, p) {
-  s(p, !0);
-  let m = l(),
-    h = a(p, u);
-  var g = c(),
-    _ = i(g),
-    v = t => {
-      var n = d();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...h
-      })), r(t, n)
-    },
-    y = t => {
-      var n = f();
-      e(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 0 24 24`,
-        fill: `currentColor`,
-        ...h
-      })), r(t, n)
-    };
-  t(_, e => {
-    m.standard ? e(v) : e(y, -1)
-  }), r(o, g), n()
+function w(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
 }
+
+function T(e) {
+  typeof window > `u` || window.open(w(e), `_blank`, `noopener,noreferrer`)
+}
+var E = h(`<span data-private="" role="link" tabindex="0"><!></span>`),
+  D = h(`<a data-private="" target="_blank" rel="noopener noreferrer"><!></a>`),
+  O = h(`<span data-private=""><!></span>`);
+
+function k(h, g) {
+  y(g, !0);
+  let k = l(g, `mode`, 3, `anchor`),
+    A = l(g, `class`, 3, ``),
+    j = l(g, `linkClass`, 19, A),
+    M = l(g, `textClass`, 19, A),
+    N = t(() => g.userId != null && g.userId > 0 && x.hasAnyPermission(C.dashboard.users)),
+    P = t(() => g.userId == null ? `` : w(g.userId));
+
+  function F(e) {
+    e.stopPropagation()
+  }
+
+  function I(e) {
+    g.userId == null || g.userId <= 0 || (e.preventDefault(), e.stopPropagation(), T(g.userId))
+  }
+
+  function L(e) {
+    (e.key === `Enter` || e.key === ` `) && I(e)
+  }
+  var R = b(),
+    z = m(R),
+    B = t => {
+      var a = b(),
+        l = m(a),
+        d = t => {
+          var a = E(),
+            o = e(a);
+          s(o, () => g.children ?? p), u(a), r(a, () => S(g.title)), n(() => i(a, 1, `cursor-pointer hover:underline ${j()}`)), v(`pointerdown`, a, F), v(`click`, a, I), v(`keydown`, a, L), f(t, a)
+        },
+        h = t => {
+          var a = D(),
+            c = e(a);
+          s(c, () => g.children ?? p), u(a), r(a, () => S(g.title)), n(() => {
+            i(a, 1, `cursor-pointer hover:underline ${j()}`), o(a, `href`, _(P))
+          }), v(`pointerdown`, a, F), v(`click`, a, F), f(t, a)
+        };
+      c(l, e => {
+        k() === `inline` ? e(d) : e(h, -1)
+      }), f(t, a)
+    },
+    V = t => {
+      var o = O(),
+        c = e(o);
+      s(c, () => g.children ?? p), u(o), r(o, () => S(g.title)), n(() => i(o, 1, a(M()))), f(t, o)
+    };
+  c(z, e => {
+    _(N) ? e(B) : e(V, -1)
+  }), f(h, R), d()
+}
+g([`pointerdown`, `click`, `keydown`]);
 export {
-  p as t
+  w as n, k as t
 };
