@@ -2,98 +2,70 @@ import {
   At as e,
   Bt as t,
   Ct as n,
-  F as r,
-  M as i,
-  N as a,
-  T as o,
-  W as s,
-  Y as c,
-  a as l,
-  cn as u,
-  en as d,
-  et as f,
-  fn as p,
-  jt as m,
-  nt as h,
-  ot as g,
-  pt as _,
-  st as v,
-  tn as y,
-  tt as b
+  M as r,
+  Mt as i,
+  Q as a,
+  Y as o,
+  a as s,
+  cn as c,
+  en as l,
+  et as u,
+  j as d,
+  jt as f,
+  nt as p,
+  pt as m,
+  tn as h
 } from "./DXDHrD2o.js";
 import "./B8UK1oE5.js";
 import {
-  wt as x
-} from "./oPC4dsku.js";
+  t as g
+} from "./CiD7DrzL.js";
 import {
-  t as S
-} from "./dV_hY48k.js";
-import {
-  t as C
-} from "./N8CrrYHb.js";
+  i as _
+} from "./Ba3MSsmk.js";
+var v = p(`<span> </span>`),
+  y = p(`<span> </span> <!>`, 1);
 
-function w(e) {
-  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
-}
-
-function T(e) {
-  typeof window > `u` || window.open(w(e), `_blank`, `noopener,noreferrer`)
-}
-var E = h(`<span data-private="" role="link" tabindex="0"><!></span>`),
-  D = h(`<a data-private="" target="_blank" rel="noopener noreferrer"><!></a>`),
-  O = h(`<span data-private=""><!></span>`);
-
-function k(h, g) {
-  y(g, !0);
-  let k = l(g, `mode`, 3, `anchor`),
-    A = l(g, `class`, 3, ``),
-    j = l(g, `linkClass`, 19, A),
-    M = l(g, `textClass`, 19, A),
-    N = t(() => g.userId != null && g.userId > 0 && x.hasAnyPermission(C.dashboard.users)),
-    P = t(() => g.userId == null ? `` : w(g.userId));
-
-  function F(e) {
-    e.stopPropagation()
-  }
-
-  function I(e) {
-    g.userId == null || g.userId <= 0 || (e.preventDefault(), e.stopPropagation(), T(g.userId))
-  }
-
-  function L(e) {
-    (e.key === `Enter` || e.key === ` `) && I(e)
-  }
-  var R = b(),
-    z = m(R),
-    B = t => {
-      var a = b(),
-        l = m(a),
-        d = t => {
-          var a = E(),
-            o = e(a);
-          s(o, () => g.children ?? p), u(a), r(a, () => S(g.title)), n(() => i(a, 1, `cursor-pointer hover:underline ${j()}`)), v(`pointerdown`, a, F), v(`click`, a, I), v(`keydown`, a, L), f(t, a)
-        },
-        h = t => {
-          var a = D(),
-            c = e(a);
-          s(c, () => g.children ?? p), u(a), r(a, () => S(g.title)), n(() => {
-            i(a, 1, `cursor-pointer hover:underline ${j()}`), o(a, `href`, _(P))
-          }), v(`pointerdown`, a, F), v(`click`, a, F), f(t, a)
-        };
-      c(l, e => {
-        k() === `inline` ? e(d) : e(h, -1)
-      }), f(t, a)
+function b(p, b) {
+  h(b, !0);
+  let x = s(b, `showId`, 3, !0),
+    S = s(b, `class`, 3, ``),
+    C = t(() => {
+      var e;
+      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
+    }),
+    w = t(() => _(b.id ?? 0));
+  g(p, {
+    get userId() {
+      return b.id
     },
-    V = t => {
-      var o = O(),
-        c = e(o);
-      s(c, () => g.children ?? p), u(o), r(o, () => S(g.title)), n(() => i(o, 1, a(M()))), f(t, o)
-    };
-  c(z, e => {
-    _(N) ? e(B) : e(V, -1)
-  }), f(h, R), d()
+    get class() {
+      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
+    },
+    children: (t, s) => {
+      var l = y(),
+        p = f(l),
+        h = e(p, !0);
+      c(p);
+      var g = i(p, 2),
+        _ = t => {
+          var i = v(),
+            o = e(i);
+          c(i), n(() => {
+            r(i, 1, `${m(w)??``} ${b.idClass??``??``}`), a(o, `#${b.id??``}`)
+          }), u(t, i)
+        };
+      o(g, e => {
+        x() && e(_)
+      }), n(() => {
+        r(p, 1, `inline-block ${(m(C)?m(w):``)??``}`), d(p, m(C)), a(h, b.name)
+      }), u(t, l)
+    },
+    $$slots: {
+      default: !0
+    }
+  }), l()
 }
-g([`pointerdown`, `click`, `keydown`]);
 export {
-  w as n, k as t
+  b as t
 };

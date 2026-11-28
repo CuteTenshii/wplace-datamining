@@ -4,7 +4,7 @@ import {
 import {
   b as t,
   y as n
-} from "./DwCiYwB3.js";
+} from "./C9ha5Qk0.js";
 import {
   n as r
 } from "./pKOrQQBa.js";
@@ -344,7 +344,7 @@ function F() {
   let e = `${r}/frontend/errors`;
   return P = new O({
     appVersion: n,
-    playerBuild: `9d052fd7c59c8098fe7d9a7`,
+    playerBuild: `fe1d47ed301dbc9f1a26e0b`,
     appOrigins: N,
     visitorId: M,
     path: () => location.pathname,

@@ -1,200 +1,201 @@
 import {
-  At as e,
-  Bt as t,
-  Ct as n,
-  Ft as r,
-  G as i,
-  Gt as a,
-  Ht as o,
-  Lt as s,
-  M as c,
-  Mt as l,
-  N as u,
-  T as d,
-  Ut as f,
-  Vt as p,
-  Wt as m,
-  Y as h,
-  a as g,
-  cn as _,
-  en as v,
-  et as y,
-  f as b,
-  j as x,
-  nt as S,
-  o as C,
-  pt as w,
-  tn as T,
-  un as E,
-  wt as D
-} from "./DXDHrD2o.js";
-import "./B8UK1oE5.js";
-import {
-  t as O
-} from "./DxdGK6Xj.js";
-var k = S(`<canvas></canvas>`);
+  H as e
+} from "./A7V6N8We.js";
+var t = [`text-red-500`, `text-orange-500`, `text-yellow-500`, `text-lime-500`, `text-emerald-500`, `text-teal-500`, `text-cyan-500`, `text-sky-500`, `text-indigo-500`, `text-violet-500`, `text-purple-500`, `text-fuchsia-500`, `text-pink-500`, `text-rose-500`],
+  n = [`bg-red-500/10`, `bg-orange-500/10`, `bg-yellow-500/10`, `bg-lime-500/10`, `bg-emerald-500/10`, `bg-teal-500/10`, `bg-cyan-500/10`, `bg-sky-500/10`, `bg-indigo-500/10`, `bg-violet-500/10`, `bg-purple-500/10`, `bg-fuchsia-500/10`, `bg-pink-500/10`, `bg-rose-500/10`];
 
-function A(e, t) {
-  T(t, !0);
-  let i = g(t, `alt`, 3, ``),
-    a = g(t, `class`, 3, ``),
-    o = s(void 0),
-    l = s(void 0),
-    u = s({
-      width: 0,
-      height: 0
-    });
-  D(() => {
-    let e = new Image,
-      n = !1;
-    return e.src = t.src, e.decode().then(() => {
-      var i;
-      n || (r(l, e), (i = t.onload) == null || i.call(t))
-    }, () => {
-      var e;
-      n || (r(l, void 0), (e = t.onerror) == null || e.call(t))
-    }), () => {
-      n = !0
+function r(e) {
+  return t[e % t.length]
+}
+
+function i(e) {
+  return n[e % n.length]
+}
+
+function a({
+  r: e,
+  g: t,
+  b: n
+}) {
+  function r(e) {
+    return e.toString(16).padStart(2, `0`)
+  }
+  return `#${r(e)}${r(t)}${r(n)}`
+}
+
+function o(e) {
+  return e = e.trim().replace(`#`, ``), e.length === 3 && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]), e.length === 6 ? {
+    r: Number(`0x` + e.slice(0, 2)),
+    g: Number(`0x` + e.slice(2, 4)),
+    b: Number(`0x` + e.slice(4, 6))
+  } : {
+    r: 0,
+    g: 0,
+    b: 0
+  }
+}
+
+function s(t) {
+  t = Math.min(t, e.colors.length - 1);
+  let [n, r, i] = e.colors[t].rgb;
+  return {
+    r: n,
+    g: r,
+    b: i,
+    a: t === 0 ? 0 : 255
+  }
+}
+var c = 2 * Math.PI,
+  l = 6103515625,
+  u = .5235987755982988,
+  d = .10471975511965977,
+  f = 1.0995574287564276,
+  p = 4.799655442984406,
+  m = .4363323129985824;
+
+function h(e) {
+  let t = e * e;
+  return t * t * t * e
+}
+
+function g(e, t) {
+  let n = Math.atan2(e, t);
+  return n < 0 ? n + c : n
+}
+var _ = new Float64Array(256);
+for (let e = 0; e < 256; e++) {
+  let t = e / 255;
+  _[e] = t > .04045 ? ((t + .055) / 1.055) ** 2.4 : t / 12.92
+}
+
+function v(e) {
+  let t = _[e.r],
+    n = _[e.g],
+    r = _[e.b],
+    i = (t * .4124 + n * .3576 + r * .1805) / .95047,
+    a = t * .2126 + n * .7152 + r * .0722,
+    o = (t * .0193 + n * .1192 + r * .9505) / 1.08883;
+  return i = i > .008856 ? Math.cbrt(i) : 7.787 * i + 16 / 116, a = a > .008856 ? Math.cbrt(a) : 7.787 * a + 16 / 116, o = o > .008856 ? Math.cbrt(o) : 7.787 * o + 16 / 116, {
+    l: 116 * a - 16,
+    a: 500 * (i - a),
+    b: 200 * (a - o)
+  }
+}
+var y = e.colors.map((e, t) => ({
+    idx: t,
+    lab: v({
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
+    })
+  })).filter(e => e.idx !== 0),
+  b = e.colors.map((e, t) => ({
+    idx: t,
+    rgb: {
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
     }
-  }), D(() => {
-    let e = w(o);
-    if (!e) return;
-    let t = () => {
-        let t = window.devicePixelRatio || 1;
-        r(u, {
-          width: Math.round(e.clientWidth * t),
-          height: Math.round(e.clientHeight * t)
-        })
-      },
-      n = new ResizeObserver(([e]) => {
-        var n;
-        let i = (n = e.devicePixelContentBoxSize) == null ? void 0 : n[0];
-        i ? r(u, {
-          width: i.inlineSize,
-          height: i.blockSize
-        }) : t()
-      });
-    try {
-      return n.observe(e, {
-        box: `device-pixel-content-box`
-      }), () => n.disconnect()
-    } catch {
-      return n.observe(e), window.addEventListener(`resize`, t), () => {
-        n.disconnect(), window.removeEventListener(`resize`, t)
-      }
-    }
-  });
+  })).filter(e => e.idx !== 0),
+  x = Array(e.colors.length);
+for (let e of y) x[e.idx] = e;
+var S = Array(e.colors.length);
+for (let e of b) S[e.idx] = e;
 
-  function f(e, t) {
-    let {
-      width: n,
-      height: r
-    } = w(u);
-    if (e.width !== n && (e.width = n), e.height !== r && (e.height = r), !n || !r) return;
-    let i = e.getContext(`2d`);
-    if (!i || (i.clearRect(0, 0, n, r), !t)) return;
-    let a = Math.max(n / t.naturalWidth, r / t.naturalHeight),
-      o = t.naturalWidth * a,
-      s = t.naturalHeight * a;
-    i.imageSmoothingEnabled = !1, i.drawImage(t, (n - o) / 2, (r - s) / 2, o, s)
+function C(e, t, n) {
+  let r = y[0].idx,
+    i = Number.MAX_VALUE,
+    a = n && n.length > 0,
+    o = a ? n.length : y.length;
+  for (let s = 0; s < o; s++) {
+    let o = a ? x[n[s]] : y[s];
+    if (!o) continue;
+    let c = t(e, o.lab);
+    (c < i || c === i && o.idx < r) && (r = o.idx, i = c)
   }
-  D(() => {
-    let e = w(o);
-    if (!e) return;
-    let t = w(l);
-    f(e, t);
-    let n = () => f(e, t);
-    return e.addEventListener(`contextrestored`, n), () => e.removeEventListener(`contextrestored`, n)
-  });
-  var p = k();
-  b(p, e => r(o, e), () => w(o)), n(() => {
-    c(p, 1, `block ${a()??``}`), d(p, `role`, i() ? `img` : void 0), d(p, `aria-label`, i() || void 0), d(p, `aria-hidden`, !i() || void 0)
-  }), y(e, p), v()
-}
-var j, M, N, P, F, I, L = 9,
-  R = 95,
-  z = 45,
-  B = 5;
-
-function V(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, B) >>> 2
+  return r
 }
 
-function H(e = ``, t = R, n = z, r = V) {
-  let i = r(e),
-    a = i % L * (360 / L);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(j = globalThis.customElements) != null && j.get(`minidenticon-svg`) || (M = globalThis.customElements) == null || M.define(`minidenticon-svg`, (F = new WeakMap, I = new WeakSet, N = class extends HTMLElement {
-  constructor(...e) {
-    super(...e), a(this, I), m(this, F, !1)
+function w(e, t) {
+  let n = b[0].idx,
+    r = Number.MAX_VALUE,
+    i = t && t.length > 0,
+    a = i ? t.length : b.length;
+  for (let o = 0; o < a; o++) {
+    let a = i ? S[t[o]] : b[o];
+    if (!a) continue;
+    let s = O(e, a.rgb);
+    (s < r || s === r && a.idx < n) && (n = a.idx, r = s)
   }
-  connectedCallback() {
-    f(I, this, U).call(this), o(F, this, !0)
-  }
-  attributeChangedCallback() {
-    p(F, this) && f(I, this, U).call(this)
-  }
-}, E(N, `observedAttributes`, [`username`, `saturation`, `lightness`]), P = {
-  _: {}
-}, N));
-
-function U() {
-  var e;
-  let t = N.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    n = t.join(`,`);
-  this.innerHTML = (e = f(N, N, P)._)[n] ?? (e[n] = H(...t))
+  return n
 }
-var W = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
-  G = S(`<div></div>`);
 
-function K(e, r) {
-  T(r, !0), C(r, W);
-  let a = t(() => r.seed && r.seed.length > 0 ? r.seed : r.userId.toString());
-  var o = G();
-  i(o, () => H(w(a), 95, 45), !0), _(o), n(() => c(o, 1, `bg-base-200 minidenticon size-full ${r.class??``??``}`, `svelte-15zr69j`)), y(e, o), v()
+function T(e, t = `lab`, n) {
+  return t === `compuphase` ? w(e, n) : C(v(e), t === `ciede2000` ? D : E, n)
 }
-var q = S(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
-  J = S(`<div><div><!></div> <!></div>`);
 
-function Y(t, r) {
-  T(r, !0);
-  var i = J(),
-    a = e(i);
-  x(a, `width: 67.76785714285714%`);
-  var o = e(a),
-    s = e => {
-      K(e, {
-        get userId() {
-          return r.userId
-        },
-        get seed() {
-          return r.avatarSeed
-        }
-      })
-    },
-    f = e => {
-      A(e, {
-        class: `bg-base-200 size-full`,
-        get src() {
-          return r.pictureUrl
-        },
-        alt: `User profile`
-      })
-    };
-  h(o, e => {
-    r.pictureUrl ? e(f, -1) : e(s)
-  }), _(a);
-  var p = l(a, 2),
-    m = e => {
-      var t = q();
-      x(t, `scale: 114.99999999999999%;`), n(() => d(t, `src`, r.frameUrl)), y(e, t)
-    };
-  h(p, e => {
-    r.frameUrl && e(m)
-  }), _(i), n((e, t) => {
-    c(i, 1, e), c(a, 1, t)
-  }, [() => u(O(`relative isolate inline-grid size-10 place-items-center`, r.class)), () => u(O(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), y(t, i), v()
+function E(e, t) {
+  let n = e.l - t.l,
+    r = e.a - t.a,
+    i = e.b - t.b,
+    a = Math.sqrt(e.a * e.a + e.b * e.b),
+    o = a - Math.sqrt(t.a * t.a + t.b * t.b),
+    s = r * r + i * i - o * o;
+  s = s < 0 ? 0 : Math.sqrt(s);
+  let c = 1 + .045 * a,
+    l = 1 + .015 * a,
+    u = o / c,
+    d = s / l,
+    f = n * n + u * u + d * d;
+  return f < 0 ? 0 : Math.sqrt(f)
+}
+
+function D(e, t) {
+  let n = h((Math.sqrt(e.a * e.a + e.b * e.b) + Math.sqrt(t.a * t.a + t.b * t.b)) * .5),
+    r = .5 * (1 - Math.sqrt(n / (n + l))),
+    i = (1 + r) * e.a,
+    a = (1 + r) * t.a,
+    o = Math.sqrt(i * i + e.b * e.b),
+    s = Math.sqrt(a * a + t.b * t.b),
+    _ = o * s,
+    v = o === 0 ? 0 : g(e.b, i),
+    y = s === 0 ? 0 : g(t.b, a),
+    b = t.l - e.l,
+    x = s - o,
+    S = 0;
+  _ !== 0 && (S = y - v, S > Math.PI ? S -= c : S < -Math.PI && (S += c));
+  let C = _ === 0 ? 0 : 2 * Math.sqrt(_) * Math.sin(S * .5),
+    w = (e.l + t.l) * .5,
+    T = (o + s) * .5,
+    E = v + y;
+  _ !== 0 && (Math.abs(v - y) > Math.PI ? E = E < c ? (E + c) * .5 : (E - c) * .5 : E *= .5);
+  let D = 1 - .17 * Math.cos(E - u) + .24 * Math.cos(2 * E) + .32 * Math.cos(3 * E + d) - .2 * Math.cos(4 * E - f),
+    O = (E - p) / m,
+    k = u * Math.exp(-(O * O)),
+    A = h(T),
+    j = 2 * Math.sqrt(A / (A + l)),
+    M = w - 50,
+    N = M * M,
+    P = 1 + .015 * N / Math.sqrt(20 + N),
+    F = 1 + .045 * T,
+    I = 1 + .015 * T * D,
+    L = -Math.sin(2 * k) * j,
+    R = b / P,
+    z = x / F,
+    B = C / I,
+    V = R * R + z * z + B * B + L * z * B;
+  return V > 0 ? V : 0
+}
+
+function O(e, t) {
+  let n = (e.r + t.r) / 2,
+    r = e.r - t.r,
+    i = e.g - t.g,
+    a = e.b - t.b,
+    o = 2 + n / 256,
+    s = 2 + (255 - n) / 256;
+  return o * r * r + 4 * i * i + s * a * a
 }
 export {
-  A as i, K as n, H as r, Y as t
+  o as a, r as i, i as n, a as o, T as r, s as t
 };

@@ -1,272 +1,609 @@
 import {
-  n as e
-} from "./BFn3PD48.js";
+  Ft as e,
+  Gt as t,
+  Ht as n,
+  Lt as r,
+  Nt as i,
+  Ut as a,
+  Vt as o,
+  Wt as s,
+  _t as c,
+  pt as l
+} from "./DXDHrD2o.js";
 import {
-  t
-} from "./8HR2Zb1u.js";
-import {
-  t as n
+  t as u
 } from "./Oa2KIPWU.js";
-var r = {
-  BIF: 0,
-  CLP: 0,
-  DJF: 0,
-  GNF: 0,
-  ISK: 0,
-  JPY: 0,
-  KMF: 0,
-  KRW: 0,
-  PYG: 0,
-  RWF: 0,
-  UGX: 0,
-  UYI: 0,
-  VND: 0,
-  VUV: 0,
-  XAF: 0,
-  XOF: 0,
-  XPF: 0,
-  BHD: 3,
-  IQD: 3,
-  JOD: 3,
-  KWD: 3,
-  LYD: 3,
-  OMR: 3,
-  TND: 3,
-  CLF: 4,
-  UYW: 4
-};
+import {
+  H as d,
+  t as f
+} from "./A7V6N8We.js";
+import {
+  u as p
+} from "./BsoS_nIA.js";
+import {
+  d as m,
+  f as ee
+} from "./CSUnFkPf.js";
+var h = 6e4;
+3 * h;
+var te = 15e4,
+  ne = 15e3,
+  re = 5e3,
+  ie = 6e4,
+  g = 250,
+  _ = 1e4,
+  ae = [`stripe`, `fastspring`],
+  oe = [`everyone`, `new_customers`, `returning_customers`],
+  v = /^[A-Z]{3}$/,
+  se = /^[1-9]\d{0,9}$/,
+  ce = 2147483647;
 
-function i(e) {
-  return r[e.toUpperCase()] ?? 2
+function le(e) {
+  return e.iosShell ? `ios` : e.twa ? `android` : `web`
 }
-
-function a(e, t) {
-  let n = i(t),
-    r = e < 0,
-    a = Math.abs(Math.trunc(e)).toString();
-  if (n === 0) return (r ? `-` : ``) + a;
-  let o = a.padStart(n + 1, `0`);
-  return (r ? `-` : ``) + o.slice(0, o.length - n) + `.` + o.slice(o.length - n)
-}
-
-function o(e, t) {
-  let n = e.trim().replace(`,`, `.`);
-  if (!/^\d+(\.\d+)?$/.test(n)) return null;
-  let r = i(t),
-    [a, o = ``] = n.split(`.`),
-    s = o.replace(/0+$/, ``);
-  if (s.length > r) return null;
-  let c = (a + s.padEnd(r, `0`)).replace(/^0+(?=\d)/, ``),
-    l = Number(c);
-  return Number.isSafeInteger(l) ? l : null
-}
-
-function s(e, t, n) {
-  let r = i(t);
-  try {
-    return new Intl.NumberFormat(n ?? d(), {
-      style: `currency`,
-      currency: t.toUpperCase(),
-      minimumFractionDigits: r,
-      maximumFractionDigits: r
-    }).format(Number(a(e, t)))
-  } catch {
-    return `${a(e,t)} ${t.toUpperCase()}`
-  }
-}
-
-function c(e, t = !0) {
-  let n = e / 100,
-    r = Number.isInteger(n) ? n.toFixed(0) : n.toFixed(2).replace(/0+$/, ``);
-  return !t || e === 0 ? `${r}%` : `${e>0?`+`:``}${r}%`
-}
-
-function l(e, t) {
-  return new Intl.NumberFormat(t ?? d()).format(e)
-}
-
-function u(e, t) {
-  if (!e) return `-`;
-  let n = new Date(e);
-  return Number.isNaN(n.getTime()) ? `-` : new Intl.DateTimeFormat(t ?? d(), {
-    dateStyle: `medium`,
-    timeStyle: `short`
-  }).format(n)
-}
-
-function d() {
-  return t(e())
-}
-var f = [`stripe`, `fastspring`, `google_play`, `app_store`];
-
-function p(e) {
-  switch (e) {
-    case `stripe`:
-      return `Stripe`;
-    case `fastspring`:
-      return `FastSpring`;
-    case `google_play`:
-      return `Google Play`;
-    case `app_store`:
-      return `App Store`;
-    case `abacatepay`:
-      return `AbacatePay`;
-    default:
-      return n.commerce_provider_unknown()
-  }
-}
-var m = {
-    neutral: `badge-ghost`,
-    info: `badge-info`,
-    success: `badge-success badge-soft`,
-    warning: `badge-warning badge-soft`,
-    error: `badge-error badge-soft`
-  },
-  h = {
-    draft: `neutral`,
-    awaiting_approval: `warning`,
-    approved: `info`,
-    scheduled: `info`,
-    queued: `info`,
-    applying: `info`,
-    verifying: `info`,
-    active: `success`,
-    partially_applied: `error`,
-    failed: `error`,
-    manual_action_required: `warning`,
-    reconciling: `info`,
-    cancelled: `neutral`,
-    rejected: `neutral`,
-    rolled_back: `neutral`
-  },
-  g = {
-    pending: `neutral`,
-    queued: `info`,
-    applying: `info`,
-    verifying: `info`,
-    succeeded: `success`,
-    failed: `error`,
-    unknown_outcome: `warning`,
-    manual_action_required: `warning`,
-    cancelled: `neutral`,
-    skipped: `neutral`
-  },
-  _ = {
-    draft: `neutral`,
-    awaiting_approval: `warning`,
-    approved: `info`,
-    provisioning: `info`,
-    scheduled: `info`,
-    active: `success`,
-    partially_available: `warning`,
-    ended: `neutral`,
-    cancelled: `neutral`,
-    failed: `error`,
-    rejected: `neutral`
-  },
-  v = {
-    SUPPORTED_AUTOMATICALLY: `success`,
-    SUPPORTED_WITH_LIMITATIONS: `info`,
-    REQUIRES_MANUAL_ACTION: `warning`,
-    UNSUPPORTED: `error`,
-    NOT_VERIFIED: `neutral`
-  };
+var ue = `fastspring`;
 
 function y(e) {
-  return h[e] ?? `neutral`
+  return (e == null ? void 0 : e.toUpperCase()) === `BR` ? `BRL` : `USD`
 }
 
-function b(e) {
-  return g[e] ?? `neutral`
+function b(e, t) {
+  return t.toUpperCase() === `BRL` ? e * 4 : e
 }
 
-function x(e) {
-  return _[e] ?? `neutral`
+function x(e, t) {
+  let n = t.toUpperCase();
+  return n === `USD` ? `$${ee(e,n)}` : n === `BRL` ? `R$${ee(e,n).replace(`.`,`,`)}` : m(e, n)
 }
 
-function S(e) {
-  return v[e] ?? `neutral`
+function S(e, t, n) {
+  if (!Number.isSafeInteger(e) || e <= 0) return null;
+  let r = t.toUpperCase(),
+    i;
+  if (n.discountType === `percent`) {
+    let t = n.percentBps;
+    if (!C(t)) return null;
+    let r = e * t;
+    if (!Number.isSafeInteger(r)) return null;
+    let a = r % _;
+    i = (r - a) / _ + +(a * 2 >= _)
+  } else if (n.discountType === `fixed`) {
+    var a;
+    let e = (a = n.fixedAmounts) == null ? void 0 : a[r];
+    if (typeof e != `number` || !Number.isSafeInteger(e) || e <= 0) return null;
+    i = e
+  } else return null;
+  let o = e - i;
+  return i <= 0 || o <= 0 ? null : {
+    currency: r,
+    originalMinor: e,
+    discountMinor: i,
+    finalMinor: o
+  }
 }
-var C = {
-  draft: () => n.commerce_status_draft(),
-  awaiting_approval: () => n.commerce_status_awaiting_approval(),
-  approved: () => n.commerce_status_approved(),
-  scheduled: () => n.commerce_status_scheduled(),
-  queued: () => n.commerce_status_queued(),
-  applying: () => n.commerce_status_applying(),
-  verifying: () => n.commerce_status_verifying(),
-  active: () => n.commerce_status_active(),
-  partially_applied: () => n.commerce_status_partially_applied(),
-  failed: () => n.commerce_status_failed(),
-  manual_action_required: () => n.commerce_status_manual_action_required(),
-  reconciling: () => n.commerce_status_reconciling(),
-  cancelled: () => n.commerce_status_cancelled(),
-  rejected: () => n.commerce_status_rejected(),
-  rolled_back: () => n.commerce_status_rolled_back(),
-  pending: () => n.commerce_status_pending(),
-  payment_pending: () => n.commerce_status_payment_pending(),
-  approval_pending: () => n.commerce_status_approval_pending(),
-  succeeded: () => n.commerce_status_succeeded(),
-  unknown_outcome: () => n.commerce_status_unknown_outcome(),
-  skipped: () => n.commerce_status_skipped(),
-  provisioning: () => n.commerce_status_provisioning(),
-  partially_available: () => n.commerce_status_partially_available(),
-  publishing: () => n.commerce_status_publishing(),
-  published: () => n.commerce_status_published(),
-  ended: () => n.commerce_status_ended(),
-  paid: () => n.commerce_status_paid(),
-  refunded: () => n.commerce_status_refunded(),
-  partially_refunded: () => n.commerce_status_partially_refunded(),
-  disputed: () => n.commerce_status_disputed(),
-  chargeback: () => n.commerce_status_chargeback(),
-  ok: () => n.commerce_status_ok(),
-  missing: () => n.commerce_status_missing(),
-  error: () => n.commerce_status_error(),
-  not_configured: () => n.commerce_status_not_configured(),
-  unsupported: () => n.commerce_status_unsupported(),
-  reserved: () => n.commerce_status_reserved(),
-  redeemed: () => n.commerce_status_redeemed(),
-  released: () => n.commerce_status_released(),
-  ready: () => n.commerce_status_ready(),
-  partially_ready: () => n.commerce_status_partially_ready(),
-  deactivated: () => n.commerce_status_deactivated()
-};
+
+function C(e) {
+  return typeof e == `number` && Number.isInteger(e) && e > 0 && e <= 9e3
+}
 
 function w(e) {
-  let t = C[e];
-  if (t) return t();
-  let n = e.replace(/_/g, ` `);
-  return n.charAt(0).toUpperCase() + n.slice(1)
+  return typeof e == `object` && !!e && !Array.isArray(e)
 }
 
 function T(e) {
-  switch (e) {
-    case `SUPPORTED_AUTOMATICALLY`:
-      return n.commerce_capability_automatic();
-    case `SUPPORTED_WITH_LIMITATIONS`:
-      return n.commerce_capability_limited();
-    case `REQUIRES_MANUAL_ACTION`:
-      return n.commerce_capability_manual();
-    case `UNSUPPORTED`:
-      return n.commerce_capability_unsupported();
-    case `NOT_VERIFIED`:
-      return n.commerce_capability_not_verified()
+  return ae.includes(e)
+}
+
+function de(e) {
+  return oe.includes(e)
+}
+
+function E(e) {
+  return typeof e == `number` && Number.isSafeInteger(e) && e > 0
+}
+
+function fe(e) {
+  return e == null ? null : typeof e == `number` && Number.isInteger(e) && e > 0 && e <= ce ? e : void 0
+}
+
+function pe(e) {
+  if (!Array.isArray(e)) return [];
+  let t = [];
+  for (let n of e) {
+    if (!w(n)) continue;
+    let {
+      currency: e,
+      amountMinor: r
+    } = n;
+    typeof e != `string` || !v.test(e) || E(r) && t.push({
+      currency: e,
+      amountMinor: r
+    })
+  }
+  return t
+}
+
+function me(e) {
+  if (!w(e)) return null;
+  let t = {};
+  for (let [n, r] of Object.entries(e)) v.test(n) && E(r) && (t[n] = r);
+  return Object.keys(t).length ? t : null
+}
+
+function he(e) {
+  if (!w(e)) return null;
+  let {
+    id: t,
+    kind: n,
+    discountType: r,
+    percentBps: i,
+    fixedAmounts: a,
+    startsAt: o,
+    endsAt: s,
+    providers: c,
+    eligibility: l
+  } = e;
+  if (typeof t != `number` || !Number.isSafeInteger(t) || n !== `sale` || typeof o != `string` || typeof s != `string`) return null;
+  let u = Date.parse(o),
+    d = Date.parse(s);
+  if (!Number.isFinite(u) || !Number.isFinite(d) || d <= u) return null;
+  let f = Array.isArray(c) ? c.filter(T) : [];
+  if (!f.length || !de(l)) return null;
+  let p = fe(e.perUserLimit);
+  if (p === void 0) return null;
+  let m = {
+    id: t,
+    kind: n,
+    startsAt: o,
+    endsAt: s,
+    providers: f,
+    eligibility: l,
+    perUserLimit: p
+  };
+  if (r === `percent`) return C(i) ? {
+    ...m,
+    discountType: r,
+    percentBps: i,
+    fixedAmounts: null
+  } : null;
+  if (r === `fixed`) {
+    let e = me(a);
+    return e ? {
+      ...m,
+      discountType: r,
+      percentBps: null,
+      fixedAmounts: e
+    } : null
+  }
+  return null
+}
+
+function ge(e) {
+  if (!w(e) || !w(e.products)) return null;
+  let t = {};
+  for (let [n, r] of Object.entries(e.products)) {
+    if (!se.test(n) || !w(r)) continue;
+    let e = {};
+    if (w(r.prices))
+      for (let [t, n] of Object.entries(r.prices)) {
+        if (!T(t)) continue;
+        let r = pe(n);
+        r.length && (e[t] = r)
+      }
+    t[n] = {
+      promotion: he(r.promotion),
+      prices: e
+    }
+  }
+  return {
+    revision: typeof e.revision == `string` ? e.revision : ``,
+    generatedAt: typeof e.generatedAt == `string` ? e.generatedAt : ``,
+    promotionsEnabled: e.promotionsEnabled === !0,
+    couponEntry: e.couponEntry === !0,
+    products: t
   }
 }
-var E = `\\t\\n\\v\\f\\r \\u0085\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000`,
-  D = RegExp(`^[${E}]+|[${E}]+$`, `g`);
+var _e = Object.entries(d.products).flatMap(([e, t]) => {
+  if (t.priceCurrency !== `fiat` || !t.lookupKey) return [];
+  let n = t.items.map(e => e.name),
+    r = n.includes(`Prism`) ? `prism` : n.includes(`Droplet`) ? `droplets` : null;
+  return r ? [{
+    productId: Number(e),
+    priceCents: t.price ?? 0,
+    currency: r
+  }] : []
+});
 
-function O(e) {
-  return e.replace(D, ``)
+function ve(e) {
+  let t = e && p.hidden(e);
+  if (!e || !t) return [];
+  let n = [`droplets`, `prism`].flatMap(t => p.products(e, t).filter(e => e.priceCurrency === `fiat`).map(e => ({
+    productId: e.id,
+    priceCents: e.price,
+    currency: t
+  })));
+  return [..._e.filter(e => !t.has(e.productId)), ...n]
+}
+
+function D(e) {
+  let t = e.filter(e => (e == null ? void 0 : e.kind) === `sale`);
+  if (!t.length) return null;
+  let n = Math.min(...t.map(e => e.endsAt)),
+    r = t.map(e => e.promotion.discountType === `percent` ? e.promotion.percentBps : null);
+  if (r.some(e => typeof e != `number`)) return {
+    kind: `generic`,
+    endsAt: n
+  };
+  let i = r,
+    a = Math.max(...i);
+  return {
+    kind: i.every(e => e === a) ? `percent` : `up_to`,
+    percentBps: a,
+    endsAt: n
+  }
+}
+
+function O(e, t) {
+  return new Intl.NumberFormat(t ?? A(), {
+    maximumFractionDigits: 2
+  }).format(e / 100)
+}
+
+function ye(e) {
+  return e.promotion.discountType === `percent` && e.promotion.percentBps ? u.store_offer_badge_percent({
+    percent: O(e.promotion.percentBps)
+  }) : u.store_offer_badge_fixed({
+    amount: x(e.estimate.discountMinor, e.estimate.currency)
+  })
+}
+
+function be(e) {
+  switch (e) {
+    case `new_customers`:
+      return u.store_offer_new_customers_only();
+    case `returning_customers`:
+      return u.store_offer_returning_customers_only();
+    case `everyone`:
+      return null
+  }
+}
+
+function xe(e) {
+  return typeof e != `number` || !Number.isInteger(e) || e <= 0 ? null : u.store_offer_per_customer_limit({
+    count: new Intl.NumberFormat(A()).format(e)
+  })
+}
+
+function Se(e) {
+  return e.kind === `generic` ? `%` : u.store_offer_badge_percent({
+    percent: O(e.percentBps)
+  })
+}
+
+function Ce(e) {
+  return e ? {
+    label: Se(e),
+    title: k(e)
+  } : null
 }
 
 function k(e) {
-  return [...O(e)].length
+  if (e.kind === `generic`) return u.store_offer_notice_generic();
+  let t = O(e.percentBps);
+  return e.kind === `percent` ? u.store_offer_notice_percent({
+    percent: t
+  }) : u.store_offer_notice_up_to({
+    percent: t
+  })
 }
 
-function A(e) {
-  return e * 2
+function we(e, t) {
+  let n = e - t;
+  if (!Number.isFinite(n) || n <= 0) return null;
+  let r = Math.ceil(n / 6e4);
+  if (r < 60) return u.store_offer_ends_in_minutes({
+    minutes: r
+  });
+  let i = Math.floor(r / 60);
+  return i < 24 ? u.store_offer_ends_in_hours({
+    hours: i,
+    minutes: r % 60
+  }) : u.store_offer_ends_in_days({
+    days: Math.floor(i / 24),
+    hours: i % 24
+  })
 }
+
+function Te(e) {
+  return new Date(e).toISOString()
+}
+
+function A() {
+  return typeof navigator > `u` ? void 0 : navigator.language
+}
+var Ee = /^[A-Z0-9]{4,32}$/;
+
+function De(e) {
+  return e.toUpperCase().replace(/[\s_-]+/g, ``)
+}
+
+function j(e, t) {
+  let n = (Array.isArray(e.estimate) ? e.estimate : []).filter(e => w(e) && typeof e.currency == `string` && v.test(e.currency) && E(e.originalMinor) && E(e.discountedMinor) && e.discountedMinor <= e.originalMinor);
+  return n.find(e => e.currency === t.toUpperCase()) ?? n[0] ?? null
+}
+
+function Oe(e, t) {
+  var n;
+  let r = e.promotion;
+  if ((r == null ? void 0 : r.discountType) === `percent` && C(r.percentBps)) return u.store_offer_badge_percent({
+    percent: O(r.percentBps)
+  });
+  let i = t.toUpperCase(),
+    a = (r == null ? void 0 : r.discountType) === `fixed` ? (n = r.fixedAmounts) == null ? void 0 : n[i] : void 0;
+  if (E(a)) return u.store_offer_badge_fixed({
+    amount: x(a, i)
+  });
+  let o = j(e, t);
+  return !o || o.discountedMinor >= o.originalMinor ? null : u.store_offer_badge_fixed({
+    amount: x(o.originalMinor - o.discountedMinor, o.currency)
+  })
+}
+
+function ke(e, t) {
+  return new Promise((n, r) => {
+    let i = setTimeout(() => r(Error(`Store offers request timed out`)), t);
+    e.then(e => {
+      clearTimeout(i), n(e)
+    }, e => {
+      clearTimeout(i), r(e)
+    })
+  })
+}
+
+function Ae() {
+  return f.hasServerTimeEstimate() ? f.getEstimatedServerNowMs() : Date.now()
+}
+var M = new WeakMap,
+  N = new WeakMap,
+  P = new WeakMap,
+  F = new WeakMap,
+  I = new WeakMap,
+  L = new WeakMap,
+  R = new WeakMap,
+  z = new WeakMap,
+  B = new WeakMap,
+  V = new WeakMap,
+  H = new WeakMap,
+  U = new WeakMap,
+  W = new WeakMap,
+  G = new WeakSet,
+  K = new WeakMap,
+  je = class {
+    get now() {
+      return l(o(M, this))
+    }
+    set now(t) {
+      e(o(M, this), t, !0)
+    }
+    constructor(e = {}) {
+      t(this, G), s(this, M, r(i(Date.now()))), s(this, N, r(null)), s(this, P, r(!1)), s(this, F, r(null)), s(this, I, []), s(this, L, !1), s(this, R, 0), s(this, z, null), s(this, B, -1 / 0), s(this, V, void 0), s(this, H, void 0), s(this, U, void 0), s(this, W, void 0), s(this, K, () => {
+        if (o(L, this)) {
+          if (a(G, this, X).call(this)) {
+            clearTimeout(o(V, this)), clearTimeout(o(H, this));
+            return
+          }
+          a(G, this, Q).call(this), o(W, this).call(this) - o(B, this) >= a(G, this, Y).call(this) ? this.refresh() : a(G, this, Z).call(this)
+        }
+      }), n(U, this, e.client), n(W, this, e.clock ?? Ae)
+    }
+    get platform() {
+      return l(o(F, this))
+    }
+    get failed() {
+      return l(o(P, this))
+    }
+    get couponEntry() {
+      var e;
+      return ((e = a(G, this, J).call(this)) == null ? void 0 : e.couponEntry) === !0
+    }
+    watch(e, t = {}) {
+      return c(() => {
+        let n = {
+          platform: e,
+          background: t.background === !0
+        };
+        o(I, this).push(n), a(G, this, Pe).call(this, e);
+        let r = !0;
+        return () => c(() => {
+          if (!r) return;
+          r = !1;
+          let e = o(I, this).indexOf(n);
+          e >= 0 && o(I, this).splice(e, 1);
+          let t = o(I, this).at(-1);
+          t ? t.platform !== l(o(F, this)) && a(G, this, Pe).call(this, t.platform) : a(G, this, Fe).call(this)
+        })
+      })
+    }
+    refresh() {
+      let t = l(o(F, this));
+      if (!t) return Promise.resolve();
+      if (o(z, this)) return o(z, this);
+      let r = o(R, this),
+        i = o(U, this) ?? f;
+      n(B, this, o(W, this).call(this)), clearTimeout(o(V, this));
+      let s = (async () => {
+        let n = null;
+        try {
+          n = ge(await ke(i.getStoreOffers(t), ne))
+        } catch {
+          n = null
+        }
+        r === o(R, this) && (n ? (e(o(N, this), {
+          offers: n,
+          platform: t,
+          fetchedAt: o(W, this).call(this)
+        }), e(o(P, this), !1)) : e(o(P, this), !0))
+      })().finally(() => {
+        o(z, this) === s && n(z, this, null), !(r !== o(R, this) || !o(L, this)) && (a(G, this, Q).call(this), a(G, this, Z).call(this))
+      });
+      return n(z, this, s), s
+    }
+    promotionFor(e, t) {
+      var n;
+      let r = (n = a(G, this, J).call(this)) == null || (n = n.products[String(e)]) == null ? void 0 : n.promotion;
+      if (!r || !r.providers.includes(t)) return null;
+      let i = Date.parse(r.startsAt),
+        o = Date.parse(r.endsAt);
+      return this.now >= i && this.now < o ? r : null
+    }
+    saleSummary(e, t) {
+      let n = y(e);
+      return D(ve(l(o(F, this))).filter(e => !t || e.currency === t).map(e => {
+        var t;
+        return (t = this.packPricing({
+          productId: e.productId,
+          provider: `fastspring`,
+          currency: n,
+          fallbackMinor: b(e.priceCents, n)
+        })) == null ? void 0 : t.offer
+      }))
+    }
+    verifiedPrices(e, t) {
+      var n;
+      return ((n = a(G, this, Ne).call(this)) == null || (n = n.products[String(e)]) == null || (n = n.prices) == null ? void 0 : n[t]) ?? []
+    }
+    verifiedPrice(e, t, n) {
+      let r = n.toUpperCase();
+      return this.verifiedPrices(e, t).find(e => e.currency === r) ?? null
+    }
+    packPricing(e) {
+      if (l(o(F, this)) !== `web`) return null;
+      let t = this.verifiedPrice(e.productId, e.provider, e.currency),
+        n = t ? {
+          amountMinor: t.amountMinor,
+          currency: t.currency,
+          verified: !0
+        } : {
+          amountMinor: e.fallbackMinor,
+          currency: e.currency.toUpperCase(),
+          verified: !1
+        },
+        r = this.promotionFor(e.productId, e.provider),
+        i = r ? S(n.amountMinor, n.currency, r) : null,
+        s = r && i ? {
+          kind: `sale`,
+          promotion: r,
+          estimate: i,
+          verifiedPrice: n.verified,
+          endsAt: Date.parse(r.endsAt)
+        } : null,
+        c = a(G, this, Me).call(this, e, n);
+      return {
+        price: n,
+        offer: c && (!s || c.estimate.discountMinor >= s.estimate.discountMinor) ? c : s,
+        sale: s
+      }
+    }
+  };
+
+function Me(e, t) {
+  let n = e.coupon;
+  if (!n || !n.validation.productIds.includes(e.productId)) return null;
+  let {
+    promotion: r
+  } = n.validation, i = Date.parse(r.endsAt);
+  if (!Number.isFinite(i) || this.now >= i) return null;
+  let a = S(t.amountMinor, t.currency, r);
+  return a ? {
+    kind: `coupon`,
+    code: n.code,
+    promotion: r,
+    estimate: a,
+    verifiedPrice: t.verified,
+    endsAt: i
+  } : null
+}
+
+function q() {
+  let e = l(o(N, this));
+  return l(o(F, this)) === `web` && (e == null ? void 0 : e.platform) === `web` ? e : null
+}
+
+function J() {
+  let e = a(G, this, q).call(this);
+  return !e || l(o(P, this)) || !e.offers.promotionsEnabled ? null : this.now - e.fetchedAt <= 18e4 ? e.offers : null
+}
+
+function Ne() {
+  let e = a(G, this, q).call(this);
+  return e && this.now - e.fetchedAt <= 6e5 ? e.offers : null
+}
+
+function Pe(t) {
+  if (o(L, this) || (n(L, this, !0), typeof document < `u` && document.addEventListener(`visibilitychange`, o(K, this))), p.load(t), a(G, this, Q).call(this), l(o(F, this)) !== t) {
+    var r;
+    e(o(F, this), t, !0), n(R, this, (r = o(R, this), r++, r)), n(z, this, null), this.refresh();
+    return
+  }
+  o(W, this).call(this) - o(B, this) >= re ? this.refresh() : a(G, this, Z).call(this)
+}
+
+function Fe() {
+  n(L, this, !1), clearTimeout(o(V, this)), clearTimeout(o(H, this)), typeof document < `u` && document.removeEventListener(`visibilitychange`, o(K, this))
+}
+
+function Y() {
+  return o(I, this).some(e => !e.background) ? h : te
+}
+
+function X() {
+  return typeof document < `u` && document.visibilityState === `hidden`
+}
+
+function Z() {
+  if (clearTimeout(o(V, this)), !o(L, this) || a(G, this, X).call(this) || o(z, this)) return;
+  let e = Math.max(0, o(B, this) + a(G, this, Y).call(this) - o(W, this).call(this));
+  n(V, this, setTimeout(() => void this.refresh(), e))
+}
+
+function Q() {
+  this.now = o(W, this).call(this), clearTimeout(o(H, this)), !(!o(L, this) || a(G, this, X).call(this)) && n(H, this, setTimeout(() => a(G, this, Q).call(this), a(G, this, Ie).call(this)))
+}
+
+function Ie() {
+  var e;
+  let t = ie,
+    n = ((e = a(G, this, q).call(this)) == null ? void 0 : e.offers.products) ?? {};
+  for (let e of Object.values(n)) {
+    let n = e.promotion;
+    if (n)
+      for (let e of [Date.parse(n.startsAt), Date.parse(n.endsAt)]) {
+        let n = e - this.now;
+        n > 0 && n + g < t && (t = n + g)
+      }
+  }
+  return Math.max(t, g)
+}
+var Le = new je,
+  $ = new WeakMap,
+  Re = new class {
+    constructor() {
+      s(this, $, r(null))
+    }
+    get(e) {
+      let t = l(o($, this));
+      return t && t.userId === e ? t.coupon : null
+    }
+    set(t, n) {
+      e(o($, this), {
+        userId: t,
+        coupon: n
+      })
+    }
+    clear() {
+      e(o($, this), null)
+    }
+  };
 export {
-  w as _, y as a, O as b, c, s as d, a as f, p as g, x as h, S as i, l, o as m, m as n, i as o, b as p, T as r, d as s, f as t, u, A as v, k as y
+  Re as _, b as a, D as b, O as c, ye as d, be as f, k as g, Ce as h, j as i, Te as l, le as m, Ee as n, we as o, xe as p, Oe as r, x as s, ue as t, De as u, y as v, Le as y
 };
